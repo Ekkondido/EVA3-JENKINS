@@ -42,15 +42,24 @@ pipeline {
 
         stage('OWASP ZAP') {
 
-            // Aqui se ejecutaran las pruebas con
+            // Aqui se ejecutarán las pruebas con
             // OWASP ZAP para identificar vulnerabilidades
             // en la aplicacion web
 
             steps {
 
-                echo 'Iniciando analisis de seguridad con OWASP ZAP...'
-                echo 'Analisis OWASP ZAP ejecutado correctamente.'
+                echo 'Levantando OWASP ZAP...'
 
+                sh '''
+                docker run --rm \
+                --network host \
+                -v $(pwd):/zap/wrk \
+                zaproxy/zap-stable zap-baseline.py \
+                -t http://host.docker.internal:5000 \
+                -r zap_report.html || true
+                '''
+
+                echo 'Analisis OWASP ZAP finalizado.'
             }
         }
 
