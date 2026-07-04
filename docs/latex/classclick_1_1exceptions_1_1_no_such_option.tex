@@ -1,0 +1,107 @@
+\doxysection{click.\+exceptions.\+No\+Such\+Option Class Reference}
+\hypertarget{classclick_1_1exceptions_1_1_no_such_option}{}\label{classclick_1_1exceptions_1_1_no_such_option}\index{click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}}
+Inheritance diagram for click.\+exceptions.\+No\+Such\+Option:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classclick_1_1exceptions_1_1_no_such_option}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_no_such_option_aed03be111a71e2050377a5943213fcfa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str option\+\_\+name, str\texorpdfstring{$\vert$}{|}None message=None, cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None possibilities=None, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_no_such_option_aff31ba899acf4a6bebc5cc2afb05e656}{format\+\_\+message}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8489ab131524a44ac4963612f098136e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a27c981468758539972f69cad7059ff12}{show}} (self, t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9532e6c3023bd3594d6434968e01c6ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a67438805915c78e3476dc301f090321a}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_no_such_option_acc55925a4fe725c2757568ccb1b1379e}{option\+\_\+name}} .Final\+[str]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_no_such_option_a51b96e7579b7252c9984f2d6bfa6ff69}{possibilities}} .Final\+[list\+[str]\+ \texorpdfstring{$\vert$}{|} None]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8943db49f348999b204674239df428da}{ctx}} \texorpdfstring{$\vert$}{|} None
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_aedfb8dbb0a07bad5ce95a27ba20e1b99}{cmd}} .Final\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} \texorpdfstring{$\vert$}{|} None]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9ce68058dcdd0ae47e514a3228169fa5}{exit\+\_\+code}} = 1
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9502a75db86e10ad064d0c3729747c5c}{show\+\_\+color}} .Final\+[bool \texorpdfstring{$\vert$}{|} None]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a1087cf7aca1bda4a78f4393fb54401f7}{message}} .Final\+[str]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Raised if Click attempted to handle an option that does not exist.
+
+.. versionadded:: 4.0
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1exceptions_1_1_no_such_option_doc-constructors}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_aed03be111a71e2050377a5943213fcfa}\index{click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_no_such_option_aed03be111a71e2050377a5943213fcfa} 
+ None click.\+exceptions.\+No\+Such\+Option.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{option\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{message}{ = {\ttfamily None}, }\item[{cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{possibilities}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None }]{ctx}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1exceptions_1_1_no_such_option_doc-func-members}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_aff31ba899acf4a6bebc5cc2afb05e656}\index{click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}!format\_message@{format\_message}}
+\index{format\_message@{format\_message}!click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}}
+\doxysubsubsection{\texorpdfstring{format\_message()}{format\_message()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_no_such_option_aff31ba899acf4a6bebc5cc2afb05e656} 
+ str click.\+exceptions.\+No\+Such\+Option.\+format\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a5e93db6aba438eac1b85dc7613b6bcdd}{click.\+exceptions.\+Click\+Exception}}.
+
+
+
+\label{classclick_1_1exceptions_1_1_no_such_option_doc-variable-members}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_acc55925a4fe725c2757568ccb1b1379e}\index{click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}!option\_name@{option\_name}}
+\index{option\_name@{option\_name}!click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}}
+\doxysubsubsection{\texorpdfstring{option\_name}{option\_name}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_no_such_option_acc55925a4fe725c2757568ccb1b1379e} 
+t click.\+exceptions.\+No\+Such\+Option.\+option\+\_\+name .Final\+[str]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1exceptions_1_1_no_such_option_a51b96e7579b7252c9984f2d6bfa6ff69}\index{click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}!possibilities@{possibilities}}
+\index{possibilities@{possibilities}!click.exceptions.NoSuchOption@{click.exceptions.NoSuchOption}}
+\doxysubsubsection{\texorpdfstring{possibilities}{possibilities}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_no_such_option_a51b96e7579b7252c9984f2d6bfa6ff69} 
+t click.\+exceptions.\+No\+Such\+Option.\+possibilities .Final\+[list\+[str]\+ \texorpdfstring{$\vert$}{|} None]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

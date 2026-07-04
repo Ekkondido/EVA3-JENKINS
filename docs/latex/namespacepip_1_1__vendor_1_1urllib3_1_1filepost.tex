@@ -1,0 +1,84 @@
+\doxysection{pip.\+\_\+vendor.\+urllib3.\+filepost Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost}{}\label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae4df7c6df57452d357cf9565c6eaf95c}{choose\+\_\+boundary}} ()
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae6d039ce45dcbfb966e02c446b0befee}{iter\+\_\+field\+\_\+objects}} (fields)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a16ea1d42f6d5fda11df14dc64d9efb65}{iter\+\_\+fields}} (fields)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_abbbd92feabefb180ccf897262e6ac2d5}{encode\+\_\+multipart\+\_\+formdata}} (fields, boundary=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a2a5d5572fb732d51d8b96d026cfdfb87}{writer}} = codecs.\+lookup("{}utf-\/8"{})\+[3]\+
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae4df7c6df57452d357cf9565c6eaf95c}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}!choose\_boundary@{choose\_boundary}}
+\index{choose\_boundary@{choose\_boundary}!pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{choose\_boundary()}{choose\_boundary()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae4df7c6df57452d357cf9565c6eaf95c} 
+choose\+\_\+boundary (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Our embarrassingly-simple replacement for mimetools.choose_boundary.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_abbbd92feabefb180ccf897262e6ac2d5}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}!encode\_multipart\_formdata@{encode\_multipart\_formdata}}
+\index{encode\_multipart\_formdata@{encode\_multipart\_formdata}!pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{encode\_multipart\_formdata()}{encode\_multipart\_formdata()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_abbbd92feabefb180ccf897262e6ac2d5} 
+encode\+\_\+multipart\+\_\+formdata (\begin{DoxyParamCaption}\item[{}]{fields}{, }\item[{}]{boundary}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode a dictionary of ``fields`` using the multipart/form-data MIME format.
+
+:param fields:
+    Dictionary of fields or list of (key, :class:`~urllib3.fields.RequestField`).
+
+:param boundary:
+    If not specified, then a random boundary will be generated using
+    :func:`urllib3.filepost.choose_boundary`.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae6d039ce45dcbfb966e02c446b0befee}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}!iter\_field\_objects@{iter\_field\_objects}}
+\index{iter\_field\_objects@{iter\_field\_objects}!pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{iter\_field\_objects()}{iter\_field\_objects()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_ae6d039ce45dcbfb966e02c446b0befee} 
+iter\+\_\+field\+\_\+objects (\begin{DoxyParamCaption}\item[{}]{fields}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterate over fields.
+
+Supports list of (k, v) tuples and dicts, and lists of
+:class:`~urllib3.fields.RequestField`.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a16ea1d42f6d5fda11df14dc64d9efb65}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}!iter\_fields@{iter\_fields}}
+\index{iter\_fields@{iter\_fields}!pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{iter\_fields()}{iter\_fields()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a16ea1d42f6d5fda11df14dc64d9efb65} 
+iter\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{fields}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}.. deprecated:: 1.6
+
+Iterate over fields.
+
+The addition of :class:`~urllib3.fields.RequestField` makes this function
+obsolete. Instead, use :func:`iter_field_objects`, which returns
+:class:`~urllib3.fields.RequestField` objects.
+
+Supports list of (k, v) tuples and dicts.
+\end{DoxyVerb}
+ 
+
+\label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a2a5d5572fb732d51d8b96d026cfdfb87}\index{pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}!writer@{writer}}
+\index{writer@{writer}!pip.\_vendor.urllib3.filepost@{pip.\_vendor.urllib3.filepost}}
+\doxysubsubsection{\texorpdfstring{writer}{writer}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1filepost_a2a5d5572fb732d51d8b96d026cfdfb87} 
+pip.\+\_\+vendor.\+urllib3.\+filepost.\+writer = codecs.\+lookup("{}utf-\/8"{})\+[3]\+}
+

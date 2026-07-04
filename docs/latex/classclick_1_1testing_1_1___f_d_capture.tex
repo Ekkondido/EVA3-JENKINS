@@ -1,0 +1,94 @@
+\doxysection{click.\+testing.\+\_\+\+FDCapture Class Reference}
+\hypertarget{classclick_1_1testing_1_1___f_d_capture}{}\label{classclick_1_1testing_1_1___f_d_capture}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_a4ea40ea87f63341c103da3a446aede7d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int targetfd)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_a166de99c6cc4f21672bf93553e31568e}{start}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_a9978f176c0473e8019ef2c3db7283e27}{stop}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_af712d586c3c30fb0da492f5b2409ea09}{saved\+\_\+fd}} = -\/1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_a43773b197bf29b119b1338be78c1a956}{\+\_\+targetfd}} = targetfd
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1testing_1_1___f_d_capture_a1375ff34b1400870b76e7de44eaa3789}{\+\_\+tmpfile}} .Binary\+IO \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Redirect a file descriptor to a temporary file for capture.
+
+Saves the current target of *targetfd* via :func:`os.dup`, then
+redirects it to a temporary file via :func:`os.dup2`. On
+:meth:`stop`, restores the original ``fd`` and returns the captured
+bytes. Inspired by Pytest's ``FDCapture``.
+
+.. versionadded:: 8.4.0
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1testing_1_1___f_d_capture_doc-constructors}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_a4ea40ea87f63341c103da3a446aede7d}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_a4ea40ea87f63341c103da3a446aede7d} 
+ None click.\+testing.\+\_\+\+FDCapture.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{targetfd}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1testing_1_1___f_d_capture_doc-func-members}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_a166de99c6cc4f21672bf93553e31568e}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!start@{start}}
+\index{start@{start}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_a166de99c6cc4f21672bf93553e31568e} 
+ None click.\+testing.\+\_\+\+FDCapture.\+start (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_a9978f176c0473e8019ef2c3db7283e27}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!stop@{stop}}
+\index{stop@{stop}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_a9978f176c0473e8019ef2c3db7283e27} 
+ bytes click.\+testing.\+\_\+\+FDCapture.\+stop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1testing_1_1___f_d_capture_doc-variable-members}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_a43773b197bf29b119b1338be78c1a956}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!\_targetfd@{\_targetfd}}
+\index{\_targetfd@{\_targetfd}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{\_targetfd}{\_targetfd}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_a43773b197bf29b119b1338be78c1a956} 
+click.\+testing.\+\_\+\+FDCapture.\+\_\+targetfd = targetfd\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_a1375ff34b1400870b76e7de44eaa3789}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!\_tmpfile@{\_tmpfile}}
+\index{\_tmpfile@{\_tmpfile}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{\_tmpfile}{\_tmpfile}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_a1375ff34b1400870b76e7de44eaa3789} 
+t click.\+testing.\+\_\+\+FDCapture.\+\_\+tmpfile .Binary\+IO \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1testing_1_1___f_d_capture_af712d586c3c30fb0da492f5b2409ea09}\index{click.testing.\_FDCapture@{click.testing.\_FDCapture}!saved\_fd@{saved\_fd}}
+\index{saved\_fd@{saved\_fd}!click.testing.\_FDCapture@{click.testing.\_FDCapture}}
+\doxysubsubsection{\texorpdfstring{saved\_fd}{saved\_fd}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___f_d_capture_af712d586c3c30fb0da492f5b2409ea09} 
+click.\+testing.\+\_\+\+FDCapture.\+saved\+\_\+fd = -\/1}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2testing_8py}{testing.\+py}}\end{DoxyCompactItemize}

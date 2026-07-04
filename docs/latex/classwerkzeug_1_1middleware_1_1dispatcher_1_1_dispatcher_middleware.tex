@@ -1,0 +1,71 @@
+\doxysection{werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware}{}\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a13c171210a518fff04f43ba026aa330a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app, dict\+[str, WSGIApplication]\+\texorpdfstring{$\vert$}{|}None mounts=None)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a9e93051681be68ea8411496fc37c3c86}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a2fddac85e22892311c55e1f6dda825b6}{app}} = app
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_addf0f710f166141f2c9c14873afc07a0}{mounts}} = mounts or \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Combine multiple applications as a single WSGI application.
+Requests are dispatched to an application based on the path it is
+mounted under.
+
+:param app: The WSGI application to dispatch to if the request
+    doesn't match a mounted path.
+:param mounts: Maps path prefixes to applications for dispatching.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a13c171210a518fff04f43ba026aa330a}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a13c171210a518fff04f43ba026aa330a} 
+ None werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{, }\item[{dict\+[str, WSGIApplication]\+ \texorpdfstring{$\vert$}{|} None }]{mounts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a9e93051681be68ea8411496fc37c3c86}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a9e93051681be68ea8411496fc37c3c86} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a2fddac85e22892311c55e1f6dda825b6}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}!app@{app}}
+\index{app@{app}!werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_a2fddac85e22892311c55e1f6dda825b6} 
+werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware.\+app = app}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_addf0f710f166141f2c9c14873afc07a0}\index{werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}!mounts@{mounts}}
+\index{mounts@{mounts}!werkzeug.middleware.dispatcher.DispatcherMiddleware@{werkzeug.middleware.dispatcher.DispatcherMiddleware}}
+\doxysubsubsection{\texorpdfstring{mounts}{mounts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1dispatcher_1_1_dispatcher_middleware_addf0f710f166141f2c9c14873afc07a0} 
+werkzeug.\+middleware.\+dispatcher.\+Dispatcher\+Middleware.\+mounts = mounts or \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{dispatcher_8py}{dispatcher.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var namespacejinja2_1_1ext =
+[
+    [ "_TranslationsBasic", "classjinja2_1_1ext_1_1___translations_basic.html", "classjinja2_1_1ext_1_1___translations_basic" ],
+    [ "_TranslationsContext", "classjinja2_1_1ext_1_1___translations_context.html", "classjinja2_1_1ext_1_1___translations_context" ],
+    [ "Extension", "classjinja2_1_1ext_1_1_extension.html", "classjinja2_1_1ext_1_1_extension" ],
+    [ "InternationalizationExtension", "classjinja2_1_1ext_1_1_internationalization_extension.html", "classjinja2_1_1ext_1_1_internationalization_extension" ],
+    [ "ExprStmtExtension", "classjinja2_1_1ext_1_1_expr_stmt_extension.html", "classjinja2_1_1ext_1_1_expr_stmt_extension" ],
+    [ "LoopControlExtension", "classjinja2_1_1ext_1_1_loop_control_extension.html", "classjinja2_1_1ext_1_1_loop_control_extension" ],
+    [ "DebugExtension", "classjinja2_1_1ext_1_1_debug_extension.html", "classjinja2_1_1ext_1_1_debug_extension" ],
+    [ "_CommentFinder", "classjinja2_1_1ext_1_1___comment_finder.html", "classjinja2_1_1ext_1_1___comment_finder" ],
+    [ "_gettext_alias", "namespacejinja2_1_1ext.html#af0963b20b9fb1f1e5303d2237cc656b0", null ],
+    [ "_make_new_gettext", "namespacejinja2_1_1ext.html#ab379e19fa7566f037da6aad72631b38b", null ],
+    [ "_make_new_ngettext", "namespacejinja2_1_1ext.html#a246e2e65d4bb9c4290b8add74fc30ca4", null ],
+    [ "_make_new_npgettext", "namespacejinja2_1_1ext.html#a12e7538884b0d19e801bdc6632037726", null ],
+    [ "_make_new_pgettext", "namespacejinja2_1_1ext.html#a7cf6400184a3f39264fade700411ac1f", null ],
+    [ "babel_extract", "namespacejinja2_1_1ext.html#a67a1736674a1ceb032df86bec829c4eb", null ],
+    [ "extract_from_ast", "namespacejinja2_1_1ext.html#a471ed81a2fa346a09eb9ad6ccc9e2beb", null ],
+    [ "_SupportedTranslations", "namespacejinja2_1_1ext.html#a856269add060c2f715cf661ec813f544", null ],
+    [ "_ws_re", "namespacejinja2_1_1ext.html#a6118c75bd7a83142f1786017768e2c39", null ],
+    [ "debug", "namespacejinja2_1_1ext.html#a353c1e044b0fa9c00a4d8e2a68beba29", null ],
+    [ "do", "namespacejinja2_1_1ext.html#a40cd37910dc05061cb0bce62d7d17896", null ],
+    [ "GETTEXT_FUNCTIONS", "namespacejinja2_1_1ext.html#a7948d20afe021f411ec389734e46e665", null ],
+    [ "i18n", "namespacejinja2_1_1ext.html#a9deaf3252f2123ea2183b911dda8703f", null ],
+    [ "loopcontrols", "namespacejinja2_1_1ext.html#abaf23b61539b0326b5a6baea25dc119e", null ]
+];

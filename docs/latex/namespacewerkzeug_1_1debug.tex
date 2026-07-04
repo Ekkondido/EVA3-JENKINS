@@ -1,0 +1,81 @@
+\doxysection{werkzeug.\+debug Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1debug}{}\label{namespacewerkzeug_1_1debug}\index{werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1console}{console}}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr}{repr}}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1tbtools}{tbtools}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1___console_frame}{\+\_\+\+Console\+Frame}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application}{Debugged\+Application}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_ae04b91bed2b4f5dc1458d486e51fb772}{hash\+\_\+pin}} (str pin)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_ad7072030d81d890e78a22da4166fdac2}{get\+\_\+machine\+\_\+id}} ()
+\item 
+tuple\+[str, str]\+\texorpdfstring{$\vert$}{|}tuple\+[None, None]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_a42b4afe90dcf0ab60a689f74621cd983}{get\+\_\+pin\+\_\+and\+\_\+cookie\+\_\+name}} (WSGIApplication app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_a9aee9a24903da3726c62b75af04bad63}{PIN\+\_\+\+TIME}} = 60 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 24 \texorpdfstring{$\ast$}{*} 7
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_a3f4e63871cffe330e3a4e1b3a3a9b5f5}{\+\_\+machine\+\_\+id}} = None
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1debug_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1debug_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_ad7072030d81d890e78a22da4166fdac2}\index{werkzeug.debug@{werkzeug.debug}!get\_machine\_id@{get\_machine\_id}}
+\index{get\_machine\_id@{get\_machine\_id}!werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection{\texorpdfstring{get\_machine\_id()}{get\_machine\_id()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_ad7072030d81d890e78a22da4166fdac2} 
+ str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} None get\+\_\+machine\+\_\+id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacewerkzeug_1_1debug_a42b4afe90dcf0ab60a689f74621cd983}\index{werkzeug.debug@{werkzeug.debug}!get\_pin\_and\_cookie\_name@{get\_pin\_and\_cookie\_name}}
+\index{get\_pin\_and\_cookie\_name@{get\_pin\_and\_cookie\_name}!werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection{\texorpdfstring{get\_pin\_and\_cookie\_name()}{get\_pin\_and\_cookie\_name()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_a42b4afe90dcf0ab60a689f74621cd983} 
+ tuple\+[str, str]\+ \texorpdfstring{$\vert$}{|} tuple\+[None, None]\+ get\+\_\+pin\+\_\+and\+\_\+cookie\+\_\+name (\begin{DoxyParamCaption}\item[{WSGIApplication}]{app}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given an application object this returns a semi-stable 9 digit pin
+code and a random key.  The hope is that this is stable between
+restarts to not make debugging particularly frustrating.  If the pin
+was forcefully disabled this returns `None`.
+
+Second item in the resulting tuple is the cookie name for remembering.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1debug_ae04b91bed2b4f5dc1458d486e51fb772}\index{werkzeug.debug@{werkzeug.debug}!hash\_pin@{hash\_pin}}
+\index{hash\_pin@{hash\_pin}!werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection{\texorpdfstring{hash\_pin()}{hash\_pin()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_ae04b91bed2b4f5dc1458d486e51fb772} 
+ str hash\+\_\+pin (\begin{DoxyParamCaption}\item[{str}]{pin}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacewerkzeug_1_1debug_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1debug_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_a3f4e63871cffe330e3a4e1b3a3a9b5f5}\index{werkzeug.debug@{werkzeug.debug}!\_machine\_id@{\_machine\_id}}
+\index{\_machine\_id@{\_machine\_id}!werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection{\texorpdfstring{\_machine\_id}{\_machine\_id}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_a3f4e63871cffe330e3a4e1b3a3a9b5f5} 
+str werkzeug.\+debug.\+\_\+machine\+\_\+id = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1debug_a9aee9a24903da3726c62b75af04bad63}\index{werkzeug.debug@{werkzeug.debug}!PIN\_TIME@{PIN\_TIME}}
+\index{PIN\_TIME@{PIN\_TIME}!werkzeug.debug@{werkzeug.debug}}
+\doxysubsubsection{\texorpdfstring{PIN\_TIME}{PIN\_TIME}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_a9aee9a24903da3726c62b75af04bad63} 
+int werkzeug.\+debug.\+PIN\+\_\+\+TIME = 60 \texorpdfstring{$\ast$}{*} 60 \texorpdfstring{$\ast$}{*} 24 \texorpdfstring{$\ast$}{*} 7}
+

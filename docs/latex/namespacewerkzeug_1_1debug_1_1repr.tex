@@ -1,0 +1,139 @@
+\doxysection{werkzeug.\+debug.\+repr Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1debug_1_1repr}{}\label{namespacewerkzeug_1_1debug_1_1repr}\index{werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1___helper}{\+\_\+\+Helper}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}{Debug\+Repr\+Generator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_ae425f2d1b57afde7a03c3e4cbf52968d}{debug\+\_\+repr}} (object obj)
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a4a4dbc9e11e736bd6367da138064d7b6}{dump}} (object obj=\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531}{missing}})
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_adb4333876c9e6f6294016adc71f8257f}{\+\_\+add\+\_\+subclass\+\_\+info}} (str inner, object obj, type\texorpdfstring{$\vert$}{|}tuple\+[type,...]\+ base)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}{Debug\+Repr\+Generator}}, t.\+Iterable\+[t.\+Any]\+, bool]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}} (str left, str right, type base, int limit=8)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531}{missing}} = object()
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f}{\+\_\+paragraph\+\_\+re}} = re.\+compile(r"{}(?:\+\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\texorpdfstring{$\vert$}{|}\textbackslash{}n)\{2,\}"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a88b8e551d4b7441c36c8fa4a8488860d}{Regex\+Type}} = type(\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f}{\+\_\+paragraph\+\_\+re}})
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13}{HELP\+\_\+\+HTML}}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32}{OBJECT\+\_\+\+DUMP\+\_\+\+HTML}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_aac25d68fdb2a2f91409b44172d51e34f}{helper}} = \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1___helper}{\+\_\+\+Helper}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Object representations for debugging purposes. Unlike the default
+repr, these expose more information and produce HTML instead of ASCII.
+
+Together with the CSS and JavaScript of the debugger this gives a
+colorful and more compact output.
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1debug_1_1repr_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_adb4333876c9e6f6294016adc71f8257f}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!\_add\_subclass\_info@{\_add\_subclass\_info}}
+\index{\_add\_subclass\_info@{\_add\_subclass\_info}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{\_add\_subclass\_info()}{\_add\_subclass\_info()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_adb4333876c9e6f6294016adc71f8257f} 
+ str \+\_\+add\+\_\+subclass\+\_\+info (\begin{DoxyParamCaption}\item[{str}]{inner}{, }\item[{object}]{obj}{, }\item[{type \texorpdfstring{$\vert$}{|} tuple\+[type, ...]\+}]{base}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!\_sequence\_repr\_maker@{\_sequence\_repr\_maker}}
+\index{\_sequence\_repr\_maker@{\_sequence\_repr\_maker}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{\_sequence\_repr\_maker()}{\_sequence\_repr\_maker()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}{Debug\+Repr\+Generator}}, t.\+Iterable\+[t.\+Any]\+, bool]\+, str]\+ \+\_\+sequence\+\_\+repr\+\_\+maker (\begin{DoxyParamCaption}\item[{str}]{left}{, }\item[{str}]{right}{, }\item[{type}]{base}{, }\item[{int }]{limit}{ = {\ttfamily 8}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_ae425f2d1b57afde7a03c3e4cbf52968d}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!debug\_repr@{debug\_repr}}
+\index{debug\_repr@{debug\_repr}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{debug\_repr()}{debug\_repr()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_ae425f2d1b57afde7a03c3e4cbf52968d} 
+ str debug\+\_\+repr (\begin{DoxyParamCaption}\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a debug repr of an object as HTML string.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a4a4dbc9e11e736bd6367da138064d7b6}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!dump@{dump}}
+\index{dump@{dump}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a4a4dbc9e11e736bd6367da138064d7b6} 
+ None dump (\begin{DoxyParamCaption}\item[{object }]{obj}{ = {\ttfamily \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531}{missing}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Print the object details to stdout._write (for the interactive
+console of the web debugger.
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1debug_1_1repr_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!\_paragraph\_re@{\_paragraph\_re}}
+\index{\_paragraph\_re@{\_paragraph\_re}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{\_paragraph\_re}{\_paragraph\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f} 
+werkzeug.\+debug.\+repr.\+\_\+paragraph\+\_\+re = re.\+compile(r"{}(?:\+\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\texorpdfstring{$\vert$}{|}\textbackslash{}n)\{2,\}"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!HELP\_HTML@{HELP\_HTML}}
+\index{HELP\_HTML@{HELP\_HTML}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{HELP\_HTML}{HELP\_HTML}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_ae211fab23ce1e8ce2b35c3effc675d13} 
+str werkzeug.\+debug.\+repr.\+HELP\+\_\+\+HTML}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{<div\ class=box>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ <h3>\%(title)s</h3>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ <pre\ class=help>\%(text)s</pre>}}
+\DoxyCodeLine{\textcolor{stringliteral}{</div>\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_aac25d68fdb2a2f91409b44172d51e34f}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!helper@{helper}}
+\index{helper@{helper}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{helper}{helper}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_aac25d68fdb2a2f91409b44172d51e34f} 
+werkzeug.\+debug.\+repr.\+helper = \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1___helper}{\+\_\+\+Helper}}()}
+
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!missing@{missing}}
+\index{missing@{missing}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{missing}{missing}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a57b6e8c03ef6cd25cd9eb6d08f0db531} 
+werkzeug.\+debug.\+repr.\+missing = object()}
+
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!OBJECT\_DUMP\_HTML@{OBJECT\_DUMP\_HTML}}
+\index{OBJECT\_DUMP\_HTML@{OBJECT\_DUMP\_HTML}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{OBJECT\_DUMP\_HTML}{OBJECT\_DUMP\_HTML}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a5576d7746af35aaeeb573cc6b88b3a32} 
+str werkzeug.\+debug.\+repr.\+OBJECT\+\_\+\+DUMP\+\_\+\+HTML}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{<div\ class=box>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ <h3>\%(title)s</h3>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \%(repr)s}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ <table>\%(items)s</table>}}
+\DoxyCodeLine{\textcolor{stringliteral}{</div>\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1debug_1_1repr_a88b8e551d4b7441c36c8fa4a8488860d}\index{werkzeug.debug.repr@{werkzeug.debug.repr}!RegexType@{RegexType}}
+\index{RegexType@{RegexType}!werkzeug.debug.repr@{werkzeug.debug.repr}}
+\doxysubsubsection{\texorpdfstring{RegexType}{RegexType}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1debug_1_1repr_a88b8e551d4b7441c36c8fa4a8488860d} 
+werkzeug.\+debug.\+repr.\+Regex\+Type = type(\doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a1306c32d3433f897a8551eaed5c89b9f}{\+\_\+paragraph\+\_\+re}})}
+

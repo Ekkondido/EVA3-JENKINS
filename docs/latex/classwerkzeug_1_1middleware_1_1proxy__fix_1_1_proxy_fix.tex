@@ -1,0 +1,173 @@
+\doxysection{werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix}{}\label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a56147d6e8b1abc65a3b54d4ec8f071b6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app, int x\+\_\+for=1, int x\+\_\+proto=1, int x\+\_\+host=0, int x\+\_\+port=0, int x\+\_\+prefix=0)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a62d8e0079a687f70f7dcdf90d026666e}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a4926007da3fb8e5d17c1a767d8eeaa55}{app}} = app
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ae62132b88cf662ed78a4472da6c524bb}{x\+\_\+for}} = x\+\_\+for
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a6c6039d2afeec2c83bfef0f3055ea4f3}{x\+\_\+proto}} = x\+\_\+proto
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a88454910086b7b21d93c543ff326582b}{x\+\_\+host}} = x\+\_\+host
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_aeb582810af46c238ccb950462ea165b7}{x\+\_\+port}} = x\+\_\+port
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ab7b802b6d15f509018bb92560c5fe84d}{x\+\_\+prefix}} = x\+\_\+prefix
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ad3f97682c9ecca97ddd36a68e190815a}{\+\_\+get\+\_\+real\+\_\+value}} (self, int trusted, str\texorpdfstring{$\vert$}{|}None value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Adjust the WSGI environ based on ``X-Forwarded-`` that proxies in
+front of the application may set.
+
+-   ``X-Forwarded-For`` sets ``REMOTE_ADDR``.
+-   ``X-Forwarded-Proto`` sets ``wsgi.url_scheme``.
+-   ``X-Forwarded-Host`` sets ``HTTP_HOST``, ``SERVER_NAME``, and
+    ``SERVER_PORT``.
+-   ``X-Forwarded-Port`` sets ``HTTP_HOST`` and ``SERVER_PORT``.
+-   ``X-Forwarded-Prefix`` sets ``SCRIPT_NAME``.
+
+You must tell the middleware how many proxies set each header so it
+knows what values to trust. It is a security issue to trust values
+that came from the client rather than a proxy.
+
+The original values of the headers are stored in the WSGI
+environ as ``werkzeug.proxy_fix.orig``, a dict.
+
+:param app: The WSGI application to wrap.
+:param x_for: Number of values to trust for ``X-Forwarded-For``.
+:param x_proto: Number of values to trust for ``X-Forwarded-Proto``.
+:param x_host: Number of values to trust for ``X-Forwarded-Host``.
+:param x_port: Number of values to trust for ``X-Forwarded-Port``.
+:param x_prefix: Number of values to trust for
+    ``X-Forwarded-Prefix``.
+
+.. code-block:: python
+
+    from werkzeug.middleware.proxy_fix import ProxyFix
+    # App is behind one proxy that sets the -For and -Host headers.
+    app = ProxyFix(app, x_for=1, x_host=1)
+
+.. versionchanged:: 1.0
+    The ``num_proxies`` argument and attribute; the ``get_remote_addr`` method; and
+    the environ keys ``orig_remote_addr``, ``orig_wsgi_url_scheme``, and
+    ``orig_http_host`` were removed.
+
+.. versionchanged:: 0.15
+    All headers support multiple values. Each header is configured with a separate
+    number of trusted proxies.
+
+.. versionchanged:: 0.15
+    Original WSGI environ values are stored in the ``werkzeug.proxy_fix.orig`` dict.
+
+.. versionchanged:: 0.15
+    Support ``X-Forwarded-Port`` and ``X-Forwarded-Prefix``.
+
+.. versionchanged:: 0.15
+    ``X-Forwarded-Host`` and ``X-Forwarded-Port`` modify
+    ``SERVER_NAME`` and ``SERVER_PORT``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a56147d6e8b1abc65a3b54d4ec8f071b6}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a56147d6e8b1abc65a3b54d4ec8f071b6} 
+ None werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{, }\item[{int }]{x\+\_\+for}{ = {\ttfamily 1}, }\item[{int }]{x\+\_\+proto}{ = {\ttfamily 1}, }\item[{int }]{x\+\_\+host}{ = {\ttfamily 0}, }\item[{int }]{x\+\_\+port}{ = {\ttfamily 0}, }\item[{int }]{x\+\_\+prefix}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a62d8e0079a687f70f7dcdf90d026666e}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a62d8e0079a687f70f7dcdf90d026666e} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modify the WSGI environ based on the various ``Forwarded``
+headers before calling the wrapped application. Store the
+original environ values in ``werkzeug.proxy_fix.orig_{key}``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ad3f97682c9ecca97ddd36a68e190815a}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!\_get\_real\_value@{\_get\_real\_value}}
+\index{\_get\_real\_value@{\_get\_real\_value}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{\_get\_real\_value()}{\_get\_real\_value()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ad3f97682c9ecca97ddd36a68e190815a} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+\_\+get\+\_\+real\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{trusted}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Get the real value from a list header based on the configured
+number of trusted proxies.
+
+:param trusted: Number of values to trust in the header.
+:param value: Comma separated list header value to parse.
+:return: The real value, or ``None`` if there are fewer values
+    than the number of trusted proxies.
+
+.. versionchanged:: 1.0
+    Renamed from ``_get_trusted_comma``.
+
+.. versionadded:: 0.15
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a4926007da3fb8e5d17c1a767d8eeaa55}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!app@{app}}
+\index{app@{app}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a4926007da3fb8e5d17c1a767d8eeaa55} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+app = app}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ae62132b88cf662ed78a4472da6c524bb}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!x\_for@{x\_for}}
+\index{x\_for@{x\_for}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{x\_for}{x\_for}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ae62132b88cf662ed78a4472da6c524bb} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+x\+\_\+for = x\+\_\+for}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a88454910086b7b21d93c543ff326582b}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!x\_host@{x\_host}}
+\index{x\_host@{x\_host}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{x\_host}{x\_host}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a88454910086b7b21d93c543ff326582b} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+x\+\_\+host = x\+\_\+host}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_aeb582810af46c238ccb950462ea165b7}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!x\_port@{x\_port}}
+\index{x\_port@{x\_port}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{x\_port}{x\_port}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_aeb582810af46c238ccb950462ea165b7} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+x\+\_\+port = x\+\_\+port}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ab7b802b6d15f509018bb92560c5fe84d}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!x\_prefix@{x\_prefix}}
+\index{x\_prefix@{x\_prefix}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{x\_prefix}{x\_prefix}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_ab7b802b6d15f509018bb92560c5fe84d} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+x\+\_\+prefix = x\+\_\+prefix}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a6c6039d2afeec2c83bfef0f3055ea4f3}\index{werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}!x\_proto@{x\_proto}}
+\index{x\_proto@{x\_proto}!werkzeug.middleware.proxy\_fix.ProxyFix@{werkzeug.middleware.proxy\_fix.ProxyFix}}
+\doxysubsubsection{\texorpdfstring{x\_proto}{x\_proto}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1proxy__fix_1_1_proxy_fix_a6c6039d2afeec2c83bfef0f3055ea4f3} 
+werkzeug.\+middleware.\+proxy\+\_\+fix.\+Proxy\+Fix.\+x\+\_\+proto = x\+\_\+proto}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{proxy__fix_8py}{proxy\+\_\+fix.\+py}}\end{DoxyCompactItemize}

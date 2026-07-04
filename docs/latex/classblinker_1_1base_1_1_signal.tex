@@ -1,0 +1,409 @@
+\doxysection{blinker.\+base.\+Signal Class Reference}
+\hypertarget{classblinker_1_1base_1_1_signal}{}\label{classblinker_1_1base_1_1_signal}\index{blinker.base.Signal@{blinker.base.Signal}}
+Inheritance diagram for blinker.\+base.\+Signal:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblinker_1_1base_1_1_signal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a762b77947ec4806f583092d2ff2c9b94}{receiver\+\_\+connected}} (self)
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_ae89ce881d90bd7dfcfc64a1cfe37339d}{receiver\+\_\+disconnected}} (self)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a42347cdab832d09d6cb06d96acd65084}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None doc=None)
+\item 
+\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a33954175c283633c5313cf20bc3d6454}{connect}} (self, \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}} receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}}, bool weak=True)
+\item 
+c.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+, \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a3f4e728748595a6b8af2b8f78f8d0870}{connect\+\_\+via}} (self, t.\+Any sender, bool weak=False)
+\item 
+c.\+Generator\+[None, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a036b6b6e91bd7b89024bc7ef7d2a989b}{connected\+\_\+to}} (self, c.\+Callable\+[..., t.\+Any]\+ receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}})
+\item 
+c.\+Generator\+[None, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a7ad55cc7b5aa25e20ea870cb050174d4}{muted}} (self)
+\item 
+list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_abfdc67934666948838fc682e5ecea81c}{send}} (self, t.\+Any\texorpdfstring{$\vert$}{|}None sender=None, \texorpdfstring{$\ast$}{*}, c.\+Callable\+[\+[c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+]\+, c.\+Callable\+[..., t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None \+\_\+async\+\_\+wrapper=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a5227ccb7839e3f37479ea59fc81e9bab}{send\+\_\+async}} (self, t.\+Any\texorpdfstring{$\vert$}{|}None sender=None, \texorpdfstring{$\ast$}{*}, c.\+Callable\+[\+[c.\+Callable\+[..., t.\+Any]\+]\+, c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+]\+\texorpdfstring{$\vert$}{|}None \+\_\+sync\+\_\+wrapper=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+bool \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a76b970587a5832c6e3fa150caf0ee31e}{has\+\_\+receivers\+\_\+for}} (self, t.\+Any sender)
+\item 
+c.\+Generator\+[c.\+Callable\+[..., t.\+Any]\+, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a54b01684851b3f760f50117f2dfc8f81}{receivers\+\_\+for}} (self, t.\+Any sender)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a1c47667de95766867c12f329ce52ec62}{disconnect}} (self, c.\+Callable\+[..., t.\+Any]\+ receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a56609d148d1510694e8456baf0d153d4}{receivers}}
+\item 
+bool \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a2543dc3a666455dd9598c15f2f8153cf}{is\+\_\+muted}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}} = ANY
+\item 
+type \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a101b80969c019e35617f0f8ba7b771d0}{set\+\_\+class}} = set
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a32eaab05e6e030acc3221640e361d50c}{\+\_\+disconnect}} (self, c.\+Hashable receiver\+\_\+id, c.\+Hashable sender\+\_\+id)
+\item 
+c.\+Callable\+[\+[weakref.\+ref\+[c.\+Callable\+[..., t.\+Any]\+]\+]\+, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a8afeeaf2722d4b737f92c92fbd402a6a}{\+\_\+make\+\_\+cleanup\+\_\+receiver}} (self, c.\+Hashable receiver\+\_\+id)
+\item 
+c.\+Callable\+[\+[weakref.\+ref\+[t.\+Any]\+]\+, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a2c021ae23f2d7142ed409b605cb9718a}{\+\_\+make\+\_\+cleanup\+\_\+sender}} (self, c.\+Hashable sender\+\_\+id)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a957217628ce35afe8f96c4969c229a15}{\+\_\+cleanup\+\_\+bookkeeping}} (self)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a80d8bd170474ea5901108d742cb78ce0}{\+\_\+clear\+\_\+state}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[t.\+Any, set\+[t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_aad89acfe8ce612b0e7b2cd83d82dae23}{\+\_\+by\+\_\+receiver}} = defaultdict(self.\+set\+\_\+class)
+\item 
+dict\+[t.\+Any, set\+[t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a06adfcc2913ef57be40828fd58099a77}{\+\_\+by\+\_\+sender}} = defaultdict(self.\+set\+\_\+class)
+\item 
+dict \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_ac9f460c5f6fab122136c6dfbd2313293}{\+\_\+weak\+\_\+senders}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A notification emitter.
+
+:param doc: The docstring for the signal.
+\end{DoxyVerb}
+ 
+
+\label{classblinker_1_1base_1_1_signal_doc-constructors}
+\Hypertarget{classblinker_1_1base_1_1_signal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classblinker_1_1base_1_1_signal_a42347cdab832d09d6cb06d96acd65084}\index{blinker.base.Signal@{blinker.base.Signal}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a42347cdab832d09d6cb06d96acd65084} 
+ None blinker.\+base.\+Signal.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{doc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classblinker_1_1base_1_1_signal_doc-func-members}
+\Hypertarget{classblinker_1_1base_1_1_signal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classblinker_1_1base_1_1_signal_a957217628ce35afe8f96c4969c229a15}\index{blinker.base.Signal@{blinker.base.Signal}!\_cleanup\_bookkeeping@{\_cleanup\_bookkeeping}}
+\index{\_cleanup\_bookkeeping@{\_cleanup\_bookkeeping}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_cleanup\_bookkeeping()}{\_cleanup\_bookkeeping()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a957217628ce35afe8f96c4969c229a15} 
+ None blinker.\+base.\+Signal.\+\_\+cleanup\+\_\+bookkeeping (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Prune unused sender/receiver bookkeeping. Not threadsafe.
+
+Connecting & disconnecting leaves behind a small amount of bookkeeping
+data. Typical workloads using Blinker, for example in most web apps,
+Flask, CLI scripts, etc., are not adversely affected by this
+bookkeeping.
+
+With a long-running process performing dynamic signal routing with high
+volume, e.g. connecting to function closures, senders are all unique
+object instances. Doing all of this over and over may cause memory usage
+to grow due to extraneous bookkeeping. (An empty ``set`` for each stale
+sender/receiver pair.)
+
+This method will prune that bookkeeping away, with the caveat that such
+pruning is not threadsafe. The risk is that cleanup of a fully
+disconnected receiver/sender pair occurs while another thread is
+connecting that same pair. If you are in the highly dynamic, unique
+receiver/sender situation that has lead you to this method, that failure
+mode is perhaps not a big deal for you.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a80d8bd170474ea5901108d742cb78ce0}\index{blinker.base.Signal@{blinker.base.Signal}!\_clear\_state@{\_clear\_state}}
+\index{\_clear\_state@{\_clear\_state}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_clear\_state()}{\_clear\_state()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a80d8bd170474ea5901108d742cb78ce0} 
+ None blinker.\+base.\+Signal.\+\_\+clear\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Disconnect all receivers and senders. Useful for tests.\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a32eaab05e6e030acc3221640e361d50c}\index{blinker.base.Signal@{blinker.base.Signal}!\_disconnect@{\_disconnect}}
+\index{\_disconnect@{\_disconnect}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_disconnect()}{\_disconnect()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a32eaab05e6e030acc3221640e361d50c} 
+ None blinker.\+base.\+Signal.\+\_\+disconnect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{c.\+Hashable}]{receiver\+\_\+id}{, }\item[{c.\+Hashable}]{sender\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a8afeeaf2722d4b737f92c92fbd402a6a}\index{blinker.base.Signal@{blinker.base.Signal}!\_make\_cleanup\_receiver@{\_make\_cleanup\_receiver}}
+\index{\_make\_cleanup\_receiver@{\_make\_cleanup\_receiver}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_make\_cleanup\_receiver()}{\_make\_cleanup\_receiver()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a8afeeaf2722d4b737f92c92fbd402a6a} 
+ c.\+Callable\+[\+[weakref.\+ref\+[c.\+Callable\+[..., t.\+Any]\+]\+]\+, None]\+ blinker.\+base.\+Signal.\+\_\+make\+\_\+cleanup\+\_\+receiver (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{c.\+Hashable     }]{receiver\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a callback function to disconnect a weakly referenced
+receiver when it is garbage collected.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a2c021ae23f2d7142ed409b605cb9718a}\index{blinker.base.Signal@{blinker.base.Signal}!\_make\_cleanup\_sender@{\_make\_cleanup\_sender}}
+\index{\_make\_cleanup\_sender@{\_make\_cleanup\_sender}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_make\_cleanup\_sender()}{\_make\_cleanup\_sender()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a2c021ae23f2d7142ed409b605cb9718a} 
+ c.\+Callable\+[\+[weakref.\+ref\+[t.\+Any]\+]\+, None]\+ blinker.\+base.\+Signal.\+\_\+make\+\_\+cleanup\+\_\+sender (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{c.\+Hashable     }]{sender\+\_\+id}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a callback function to disconnect all receivers for a weakly
+referenced sender when it is garbage collected.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a33954175c283633c5313cf20bc3d6454}\index{blinker.base.Signal@{blinker.base.Signal}!connect@{connect}}
+\index{connect@{connect}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a33954175c283633c5313cf20bc3d6454} 
+ \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}} blinker.\+base.\+Signal.\+connect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}}]{receiver}{, }\item[{t.\+Any }]{sender}{ = {\ttfamily \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}}}, }\item[{bool }]{weak}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connect ``receiver`` to be called when the signal is sent by
+``sender``.
+
+:param receiver: The callable to call when :meth:`send` is called with
+    the given ``sender``, passing ``sender`` as a positional argument
+    along with any extra keyword arguments.
+:param sender: Any object or :data:`ANY`. ``receiver`` will only be
+    called when :meth:`send` is called with this sender. If ``ANY``, the
+    receiver will be called for any sender. A receiver may be connected
+    to multiple senders by calling :meth:`connect` multiple times.
+:param weak: Track the receiver with a :mod:`weakref`. The receiver will
+    be automatically disconnected when it is garbage collected. When
+    connecting a receiver defined within a function, set to ``False``,
+    otherwise it will be disconnected when the function scope ends.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a3f4e728748595a6b8af2b8f78f8d0870}\index{blinker.base.Signal@{blinker.base.Signal}!connect\_via@{connect\_via}}
+\index{connect\_via@{connect\_via}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{connect\_via()}{connect\_via()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a3f4e728748595a6b8af2b8f78f8d0870} 
+ c.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+, \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+ blinker.\+base.\+Signal.\+connect\+\_\+via (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{sender}{, }\item[{bool }]{weak}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Connect the decorated function to be called when the signal is sent
+by ``sender``.
+
+The decorated function will be called when :meth:`send` is called with
+the given ``sender``, passing ``sender`` as a positional argument along
+with any extra keyword arguments.
+
+:param sender: Any object or :data:`ANY`. ``receiver`` will only be
+    called when :meth:`send` is called with this sender. If ``ANY``, the
+    receiver will be called for any sender. A receiver may be connected
+    to multiple senders by calling :meth:`connect` multiple times.
+:param weak: Track the receiver with a :mod:`weakref`. The receiver will
+    be automatically disconnected when it is garbage collected. When
+    connecting a receiver defined within a function, set to ``False``,
+    otherwise it will be disconnected when the function scope ends.=
+
+.. versionadded:: 1.1
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a036b6b6e91bd7b89024bc7ef7d2a989b}\index{blinker.base.Signal@{blinker.base.Signal}!connected\_to@{connected\_to}}
+\index{connected\_to@{connected\_to}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{connected\_to()}{connected\_to()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a036b6b6e91bd7b89024bc7ef7d2a989b} 
+ c.\+Generator\+[None, None, None]\+ blinker.\+base.\+Signal.\+connected\+\_\+to (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{c.\+Callable\+[..., t.\+Any]\+}]{receiver}{, }\item[{t.\+Any }]{sender}{ = {\ttfamily \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager that temporarily connects ``receiver`` to the
+signal while a ``with`` block executes. When the block exits, the
+receiver is disconnected. Useful for tests.
+
+:param receiver: The callable to call when :meth:`send` is called with
+    the given ``sender``, passing ``sender`` as a positional argument
+    along with any extra keyword arguments.
+:param sender: Any object or :data:`ANY`. ``receiver`` will only be
+    called when :meth:`send` is called with this sender. If ``ANY``, the
+    receiver will be called for any sender.
+
+.. versionadded:: 1.1
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a1c47667de95766867c12f329ce52ec62}\index{blinker.base.Signal@{blinker.base.Signal}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a1c47667de95766867c12f329ce52ec62} 
+ None blinker.\+base.\+Signal.\+disconnect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{c.\+Callable\+[..., t.\+Any]\+}]{receiver}{, }\item[{t.\+Any }]{sender}{ = {\ttfamily \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Disconnect ``receiver`` from being called when the signal is sent by
+``sender``.
+
+:param receiver: A connected receiver callable.
+:param sender: Disconnect from only this sender. By default, disconnect
+    from all senders.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a76b970587a5832c6e3fa150caf0ee31e}\index{blinker.base.Signal@{blinker.base.Signal}!has\_receivers\_for@{has\_receivers\_for}}
+\index{has\_receivers\_for@{has\_receivers\_for}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{has\_receivers\_for()}{has\_receivers\_for()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a76b970587a5832c6e3fa150caf0ee31e} 
+ bool blinker.\+base.\+Signal.\+has\+\_\+receivers\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{sender}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if there is at least one receiver that will be called with the
+given ``sender``. A receiver connected to :data:`ANY` will always be
+called, regardless of sender. Does not check if weakly referenced
+receivers are still live. See :meth:`receivers_for` for a stronger
+search.
+
+:param sender: Check for receivers connected to this sender, in addition
+    to those connected to :data:`ANY`.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a7ad55cc7b5aa25e20ea870cb050174d4}\index{blinker.base.Signal@{blinker.base.Signal}!muted@{muted}}
+\index{muted@{muted}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{muted()}{muted()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a7ad55cc7b5aa25e20ea870cb050174d4} 
+ c.\+Generator\+[None, None, None]\+ blinker.\+base.\+Signal.\+muted (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A context manager that temporarily disables the signal. No receivers
+will be called if the signal is sent, until the ``with`` block exits.
+Useful for tests.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a762b77947ec4806f583092d2ff2c9b94}\index{blinker.base.Signal@{blinker.base.Signal}!receiver\_connected@{receiver\_connected}}
+\index{receiver\_connected@{receiver\_connected}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{receiver\_connected()}{receiver\_connected()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a762b77947ec4806f583092d2ff2c9b94} 
+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} blinker.\+base.\+Signal.\+receiver\+\_\+connected (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emitted at the end of each :meth:`connect` call.
+
+The signal sender is the signal instance, and the :meth:`connect`
+arguments are passed through: ``receiver``, ``sender``, and ``weak``.
+
+.. versionadded:: 1.2
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_ae89ce881d90bd7dfcfc64a1cfe37339d}\index{blinker.base.Signal@{blinker.base.Signal}!receiver\_disconnected@{receiver\_disconnected}}
+\index{receiver\_disconnected@{receiver\_disconnected}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{receiver\_disconnected()}{receiver\_disconnected()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_ae89ce881d90bd7dfcfc64a1cfe37339d} 
+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} blinker.\+base.\+Signal.\+receiver\+\_\+disconnected (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Emitted at the end of each :meth:`disconnect` call.
+
+The sender is the signal instance, and the :meth:`disconnect` arguments
+are passed through: ``receiver`` and ``sender``.
+
+This signal is emitted **only** when :meth:`disconnect` is called
+explicitly. This signal cannot be emitted by an automatic disconnect
+when a weakly referenced receiver or sender goes out of scope, as the
+instance is no longer be available to be used as the sender for this
+signal.
+
+An alternative approach is available by subscribing to
+:attr:`receiver_connected` and setting up a custom weakref cleanup
+callback on weak receivers and senders.
+
+.. versionadded:: 1.2
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a54b01684851b3f760f50117f2dfc8f81}\index{blinker.base.Signal@{blinker.base.Signal}!receivers\_for@{receivers\_for}}
+\index{receivers\_for@{receivers\_for}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{receivers\_for()}{receivers\_for()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a54b01684851b3f760f50117f2dfc8f81} 
+ c.\+Generator\+[c.\+Callable\+[..., t.\+Any]\+, None, None]\+ blinker.\+base.\+Signal.\+receivers\+\_\+for (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any     }]{sender}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield each receiver to be called for ``sender``, in addition to those
+to be called for :data:`ANY`. Weakly referenced receivers that are not
+live will be disconnected and skipped.
+
+:param sender: Yield receivers connected to this sender, in addition
+    to those connected to :data:`ANY`.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_abfdc67934666948838fc682e5ecea81c}\index{blinker.base.Signal@{blinker.base.Signal}!send@{send}}
+\index{send@{send}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_abfdc67934666948838fc682e5ecea81c} 
+ list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ blinker.\+base.\+Signal.\+send (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{sender}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{c.\+Callable\+[             \+[c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+]\+, c.\+Callable\+[..., t.\+Any]\+         ]\+         \texorpdfstring{$\vert$}{|} None }]{\+\_\+async\+\_\+wrapper}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call all receivers that are connected to the given ``sender``
+or :data:`ANY`. Each receiver is called with ``sender`` as a positional
+argument along with any extra keyword arguments. Return a list of
+``(receiver, return value)`` tuples.
+
+The order receivers are called is undefined, but can be influenced by
+setting :attr:`set_class`.
+
+If a receiver raises an exception, that exception will propagate up.
+This makes debugging straightforward, with an assumption that correctly
+implemented receivers will not raise.
+
+:param sender: Call receivers connected to this sender, in addition to
+    those connected to :data:`ANY`.
+:param _async_wrapper: Will be called on any receivers that are async
+    coroutines to turn them into sync callables. For example, could run
+    the receiver with an event loop.
+:param kwargs: Extra keyword arguments to pass to each receiver.
+
+.. versionchanged:: 1.7
+    Added the ``_async_wrapper`` argument.
+\end{DoxyVerb}
+ \Hypertarget{classblinker_1_1base_1_1_signal_a5227ccb7839e3f37479ea59fc81e9bab}\index{blinker.base.Signal@{blinker.base.Signal}!send\_async@{send\_async}}
+\index{send\_async@{send\_async}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{send\_async()}{send\_async()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a5227ccb7839e3f37479ea59fc81e9bab} 
+ list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ blinker.\+base.\+Signal.\+send\+\_\+async (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{sender}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{c.\+Callable\+[             \+[c.\+Callable\+[..., t.\+Any]\+]\+, c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+         ]\+         \texorpdfstring{$\vert$}{|} None }]{\+\_\+sync\+\_\+wrapper}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Await all receivers that are connected to the given ``sender``
+or :data:`ANY`. Each receiver is called with ``sender`` as a positional
+argument along with any extra keyword arguments. Return a list of
+``(receiver, return value)`` tuples.
+
+The order receivers are called is undefined, but can be influenced by
+setting :attr:`set_class`.
+
+If a receiver raises an exception, that exception will propagate up.
+This makes debugging straightforward, with an assumption that correctly
+implemented receivers will not raise.
+
+:param sender: Call receivers connected to this sender, in addition to
+    those connected to :data:`ANY`.
+:param _sync_wrapper: Will be called on any receivers that are sync
+    callables to turn them into async coroutines. For example,
+    could call the receiver in a thread.
+:param kwargs: Extra keyword arguments to pass to each receiver.
+
+.. versionadded:: 1.7
+\end{DoxyVerb}
+ 
+
+\label{classblinker_1_1base_1_1_signal_doc-variable-members}
+\Hypertarget{classblinker_1_1base_1_1_signal_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classblinker_1_1base_1_1_signal_aad89acfe8ce612b0e7b2cd83d82dae23}\index{blinker.base.Signal@{blinker.base.Signal}!\_by\_receiver@{\_by\_receiver}}
+\index{\_by\_receiver@{\_by\_receiver}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_by\_receiver}{\_by\_receiver}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_aad89acfe8ce612b0e7b2cd83d82dae23} 
+blinker.\+base.\+Signal.\+\_\+by\+\_\+receiver = defaultdict(self.\+set\+\_\+class)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a06adfcc2913ef57be40828fd58099a77}\index{blinker.base.Signal@{blinker.base.Signal}!\_by\_sender@{\_by\_sender}}
+\index{\_by\_sender@{\_by\_sender}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_by\_sender}{\_by\_sender}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a06adfcc2913ef57be40828fd58099a77} 
+blinker.\+base.\+Signal.\+\_\+by\+\_\+sender = defaultdict(self.\+set\+\_\+class)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_ac9f460c5f6fab122136c6dfbd2313293}\index{blinker.base.Signal@{blinker.base.Signal}!\_weak\_senders@{\_weak\_senders}}
+\index{\_weak\_senders@{\_weak\_senders}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{\_weak\_senders}{\_weak\_senders}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_ac9f460c5f6fab122136c6dfbd2313293} 
+dict blinker.\+base.\+Signal.\+\_\+weak\+\_\+senders = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}\index{blinker.base.Signal@{blinker.base.Signal}!ANY@{ANY}}
+\index{ANY@{ANY}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{ANY}{ANY}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f} 
+blinker.\+base.\+Signal.\+ANY = ANY\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a2543dc3a666455dd9598c15f2f8153cf}\index{blinker.base.Signal@{blinker.base.Signal}!is\_muted@{is\_muted}}
+\index{is\_muted@{is\_muted}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{is\_muted}{is\_muted}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a2543dc3a666455dd9598c15f2f8153cf} 
+bool blinker.\+base.\+Signal.\+is\+\_\+muted = False}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a56609d148d1510694e8456baf0d153d4}\index{blinker.base.Signal@{blinker.base.Signal}!receivers@{receivers}}
+\index{receivers@{receivers}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{receivers}{receivers}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a56609d148d1510694e8456baf0d153d4} 
+dict\+[ blinker.\+base.\+Signal.\+receivers}
+
+\Hypertarget{classblinker_1_1base_1_1_signal_a101b80969c019e35617f0f8ba7b771d0}\index{blinker.base.Signal@{blinker.base.Signal}!set\_class@{set\_class}}
+\index{set\_class@{set\_class}!blinker.base.Signal@{blinker.base.Signal}}
+\doxysubsubsection{\texorpdfstring{set\_class}{set\_class}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_signal_a101b80969c019e35617f0f8ba7b771d0} 
+type blinker.\+base.\+Signal.\+set\+\_\+class = set\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+blinker/\+\doxymbox{\hyperlink{blinker_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

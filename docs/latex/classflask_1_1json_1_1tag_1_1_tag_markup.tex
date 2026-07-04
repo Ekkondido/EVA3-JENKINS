@@ -1,0 +1,86 @@
+\doxysection{flask.\+json.\+tag.\+Tag\+Markup Class Reference}
+\hypertarget{classflask_1_1json_1_1tag_1_1_tag_markup}{}\label{classflask_1_1json_1_1tag_1_1_tag_markup}\index{flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}}
+Inheritance diagram for flask.\+json.\+tag.\+Tag\+Markup:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1json_1_1tag_1_1_tag_markup}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_ac3b176fabe7731e2ecfb4e7231a3eeac}{check}} (self, t.\+Any value)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_aa4f46016dbb44b434f1cc3abbae0ce0d}{to\+\_\+json}} (self, t.\+Any value)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup_aff3f33f94cef46c120815f9c07cb3c29}{to\+\_\+python}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{flask.\+json.\+tag.\+JSONTag}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a5bc8516d154b8e01f866ae9f54d8760a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}{Tagged\+JSONSerializer}} serializer)
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8ff3a34b976a9f1daccf3b7dd8043ff2}{tag}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{flask.\+json.\+tag.\+JSONTag}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a8ee80c87f85f11f60a83deebd78e78ba}{serializer}} = serializer
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{flask.\+json.\+tag.\+JSONTag}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a0f483863de7f796ad49702a77c9ef405}{key}} = "{}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Serialize anything matching the :class:`~markupsafe.Markup` API by
+having a ``__html__`` method to the result of that method. Always
+deserializes to an instance of :class:`~markupsafe.Markup`.\end{DoxyVerb}
+ 
+
+\label{classflask_1_1json_1_1tag_1_1_tag_markup_doc-func-members}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tag_markup_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tag_markup_ac3b176fabe7731e2ecfb4e7231a3eeac}\index{flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}!check@{check}}
+\index{check@{check}!flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}}
+\doxysubsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tag_markup_ac3b176fabe7731e2ecfb4e7231a3eeac} 
+ bool flask.\+json.\+tag.\+Tag\+Markup.\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the given value should be tagged by this tag.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a973f8661af0cceec2360acf3b7041651}{flask.\+json.\+tag.\+JSONTag}}.
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tag_markup_aa4f46016dbb44b434f1cc3abbae0ce0d}\index{flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}!to\_json@{to\_json}}
+\index{to\_json@{to\_json}!flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}}
+\doxysubsubsection{\texorpdfstring{to\_json()}{to\_json()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tag_markup_aa4f46016dbb44b434f1cc3abbae0ce0d} 
+ t.\+Any flask.\+json.\+tag.\+Tag\+Markup.\+to\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the Python object to an object that is a valid JSON type.
+The tag will be added later.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_a0eb2775553dff48c4a6d54056c63d8f5}{flask.\+json.\+tag.\+JSONTag}}.
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tag_markup_aff3f33f94cef46c120815f9c07cb3c29}\index{flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}!to\_python@{to\_python}}
+\index{to\_python@{to\_python}!flask.json.tag.TagMarkup@{flask.json.tag.TagMarkup}}
+\doxysubsubsection{\texorpdfstring{to\_python()}{to\_python()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tag_markup_aff3f33f94cef46c120815f9c07cb3c29} 
+ t.\+Any flask.\+json.\+tag.\+Tag\+Markup.\+to\+\_\+python (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the JSON representation back to the correct type. The tag
+will already be removed.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag_ad853d5061ce76509b94e4a31ec636fda}{flask.\+json.\+tag.\+JSONTag}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+json/\+\doxymbox{\hyperlink{tag_8py}{tag.\+py}}\end{DoxyCompactItemize}

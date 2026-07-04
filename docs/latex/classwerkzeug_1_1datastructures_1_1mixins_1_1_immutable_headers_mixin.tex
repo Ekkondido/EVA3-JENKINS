@@ -1,0 +1,155 @@
+\doxysection{werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin}{}\label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+Inheritance diagram for werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aac71c9317d3620d56736b9a9306e2260}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, t.\+Any key, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a3c4bd1e2e7905cf462dd2b8b114def7d}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, t.\+Any key, t.\+Any value)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ab09876b9c88558bf6c7fe9a40b4ebf8c}{set}} (self, t.\+Any key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a550dc3154e34777aa8602ba2ad915d92}{setlist}} (self, t.\+Any key, t.\+Any values)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a5d7fee582df4a865778acbf7138fcb70}{add}} (self, t.\+Any key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aa9cd5c4b4bbd80f785fe747616e268d0}{add\+\_\+header}} (self, t.\+Any key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a163f12b63070e44a1af2b5f0ed79c109}{remove}} (self, t.\+Any key)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a94708a63605d08e5c19f06460cb89ed7}{extend}} (self, t.\+Any arg, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ac6275849f2043ebdafea755b7fb01a1d}{update}} (self, t.\+Any arg, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aff8eadc89e162d6f414e013c63efdaad}{\+\_\+\+\_\+ior\+\_\+\+\_\+}} (self, t.\+Any other)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ae4091c322877c4b4bb59ade384e0524a}{insert}} (self, t.\+Any pos, t.\+Any value)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aec08f3f7bb58486ea0c8e0dcecb100c8}{pop}} (self, t.\+Any key=None, t.\+Any default=\+\_\+missing)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_acf14724cb27f1e295af648573f7a816a}{popitem}} (self)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a380c5f262f35b139bcd3fe92e29d16b8}{setdefault}} (self, t.\+Any key, t.\+Any default)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a84971de389f5f2d573b477be06665bbd}{setlistdefault}} (self, t.\+Any key, t.\+Any default)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Makes a :class:`Headers` immutable.  We do not mark them as
+hashable though since the only usecase for this datastructure
+in Werkzeug is a view on a mutable structure.
+
+.. versionchanged:: 3.1
+    Disallow ``|=`` operator.
+
+.. versionadded:: 0.5
+
+:private:
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aac71c9317d3620d56736b9a9306e2260}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aac71c9317d3620d56736b9a9306e2260} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aff8eadc89e162d6f414e013c63efdaad}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!\_\_ior\_\_@{\_\_ior\_\_}}
+\index{\_\_ior\_\_@{\_\_ior\_\_}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_ior\_\_()}{\_\_ior\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aff8eadc89e162d6f414e013c63efdaad} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+\_\+\+\_\+ior\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a3c4bd1e2e7905cf462dd2b8b114def7d}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a3c4bd1e2e7905cf462dd2b8b114def7d} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a5d7fee582df4a865778acbf7138fcb70}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!add@{add}}
+\index{add@{add}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a5d7fee582df4a865778acbf7138fcb70} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aa9cd5c4b4bbd80f785fe747616e268d0}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!add\_header@{add\_header}}
+\index{add\_header@{add\_header}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{add\_header()}{add\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aa9cd5c4b4bbd80f785fe747616e268d0} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+add\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a94708a63605d08e5c19f06460cb89ed7}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!extend@{extend}}
+\index{extend@{extend}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a94708a63605d08e5c19f06460cb89ed7} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+extend (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{arg}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ae4091c322877c4b4bb59ade384e0524a}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!insert@{insert}}
+\index{insert@{insert}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ae4091c322877c4b4bb59ade384e0524a} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+insert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{pos}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aec08f3f7bb58486ea0c8e0dcecb100c8}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_aec08f3f7bb58486ea0c8e0dcecb100c8} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any }]{key}{ = {\ttfamily None}, }\item[{t.\+Any }]{default}{ = {\ttfamily \+\_\+missing}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_acf14724cb27f1e295af648573f7a816a}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!popitem@{popitem}}
+\index{popitem@{popitem}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{popitem()}{popitem()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_acf14724cb27f1e295af648573f7a816a} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+popitem (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a163f12b63070e44a1af2b5f0ed79c109}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!remove@{remove}}
+\index{remove@{remove}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a163f12b63070e44a1af2b5f0ed79c109} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ab09876b9c88558bf6c7fe9a40b4ebf8c}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!set@{set}}
+\index{set@{set}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ab09876b9c88558bf6c7fe9a40b4ebf8c} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a380c5f262f35b139bcd3fe92e29d16b8}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a380c5f262f35b139bcd3fe92e29d16b8} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a550dc3154e34777aa8602ba2ad915d92}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!setlist@{setlist}}
+\index{setlist@{setlist}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{setlist()}{setlist()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a550dc3154e34777aa8602ba2ad915d92} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+setlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{values}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a84971de389f5f2d573b477be06665bbd}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!setlistdefault@{setlistdefault}}
+\index{setlistdefault@{setlistdefault}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{setlistdefault()}{setlistdefault()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_a84971de389f5f2d573b477be06665bbd} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+setlistdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{key}{, }\item[{t.\+Any}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ac6275849f2043ebdafea755b7fb01a1d}\index{werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}!update@{update}}
+\index{update@{update}!werkzeug.datastructures.mixins.ImmutableHeadersMixin@{werkzeug.datastructures.mixins.ImmutableHeadersMixin}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1mixins_1_1_immutable_headers_mixin_ac6275849f2043ebdafea755b7fb01a1d} 
+ t.\+No\+Return werkzeug.\+datastructures.\+mixins.\+Immutable\+Headers\+Mixin.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{arg}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{mixins_8py}{mixins.\+py}}\end{DoxyCompactItemize}

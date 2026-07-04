@@ -1,0 +1,379 @@
+\doxysection{click.\+\_\+compat Namespace Reference}
+\hypertarget{namespaceclick_1_1__compat}{}\label{namespaceclick_1_1__compat}\index{click.\_compat@{click.\_compat}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__compat_1_1___non_closing_text_i_o_wrapper}{\+\_\+\+Non\+Closing\+Text\+IOWrapper}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream}{\+\_\+\+Fixup\+Stream}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__compat_1_1___atomic_file}{\+\_\+\+Atomic\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_ace58e7cfe2a4c2747a73b9c436591f24}{\+\_\+make\+\_\+text\+\_\+stream}} (t.\+Binary\+IO stream, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors, bool force\+\_\+readable=False, bool force\+\_\+writable=False)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_a03ffb21298f6dcefe38ceb28f06b1958}{is\+\_\+ascii\+\_\+encoding}} (str encoding)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__compat_af10a14cc5529e817a078116e2e296e91}{get\+\_\+best\+\_\+encoding}} (t.\+IO\+[t.\+Any]\+ stream)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_afccca6913b4d137a32edfc354a8262dd}{\+\_\+is\+\_\+binary\+\_\+reader}} (t.\+IO\+[t.\+Any]\+ stream, bool default=False)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_aa3befa542c25e3144250bdb4274a832d}{\+\_\+is\+\_\+binary\+\_\+writer}} (t.\+IO\+[t.\+Any]\+ stream, bool default=False)
+\item 
+t.\+Binary\+IO\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1__compat_a1b3ae656c1613fe9bf97ecaeeccd66cb}{\+\_\+find\+\_\+binary\+\_\+reader}} (t.\+IO\+[t.\+Any]\+ stream)
+\item 
+t.\+Binary\+IO\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1__compat_a2b21bfb541250de05bc15709d92b5161}{\+\_\+find\+\_\+binary\+\_\+writer}} (t.\+IO\+[t.\+Any]\+ stream)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_ac1f6197c785e4585c945bcb16387f879}{\+\_\+stream\+\_\+is\+\_\+misconfigured}} (t.\+Text\+IO stream)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_acf7ad6bfc979e5303eef1c968e8a53a6}{\+\_\+is\+\_\+compat\+\_\+stream\+\_\+attr}} (t.\+Text\+IO stream, str attr, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_ad9e57b6d7bd347ff10df5d8dadc26768}{\+\_\+is\+\_\+compatible\+\_\+text\+\_\+stream}} (t.\+Text\+IO stream, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a3f7a53eb7675f01f2e0472df5accfb16}{\+\_\+force\+\_\+correct\+\_\+text\+\_\+stream}} (t.\+IO\+[t.\+Any]\+ text\+\_\+stream, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors, t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+, bool]\+, bool]\+ is\+\_\+binary, t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+]\+, t.\+Binary\+IO\texorpdfstring{$\vert$}{|}None]\+ find\+\_\+binary, bool force\+\_\+readable=False, bool force\+\_\+writable=False)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a319afec77a178c669495097f9fccdb28}{\+\_\+force\+\_\+correct\+\_\+text\+\_\+reader}} (t.\+IO\+[t.\+Any]\+ text\+\_\+reader, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors, bool force\+\_\+readable=False)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a6355dbec67fdb3ba345d111248c41ec9}{\+\_\+force\+\_\+correct\+\_\+text\+\_\+writer}} (t.\+IO\+[t.\+Any]\+ text\+\_\+writer, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors, bool force\+\_\+writable=False)
+\item 
+t.\+Binary\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a1f88f1100c5becbb060d74fd11bd8064}{get\+\_\+binary\+\_\+stdin}} ()
+\item 
+t.\+Binary\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_af468213bf7c1777f9c44dd7de4c24036}{get\+\_\+binary\+\_\+stdout}} ()
+\item 
+t.\+Binary\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a5a6861a7221314226fb61e2db0a361bd}{get\+\_\+binary\+\_\+stderr}} ()
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_adc5a1458314e082dd216aff5935ab049}{get\+\_\+text\+\_\+stdin}} (str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors=None)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_aea8edf25330914c3f6a7c76a53d63d16}{get\+\_\+text\+\_\+stdout}} (str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors=None)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_ac608a85e650ee906f698efcba2523da2}{get\+\_\+text\+\_\+stderr}} (str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors=None)
+\item 
+t.\+IO\+[t.\+Any]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_acadb20b1a6bbac8fcf192100f4057c04}{\+\_\+wrap\+\_\+io\+\_\+open}} (str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}int file, str mode, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors)
+\item 
+tuple\+[t.\+IO\+[t.\+Any]\+, bool]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_af2a83c4cf8f0205671d7fe7e0f882923}{open\+\_\+stream}} (str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ filename, str mode="{}r"{}, str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors="{}strict"{}, bool atomic=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__compat_a74de13b66437cb5f91fb9e1a0ab1d751}{strip\+\_\+ansi}} (str value)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_a6a97941449863b5ad6667e3bbc6662b3}{\+\_\+is\+\_\+jupyter\+\_\+kernel\+\_\+output}} (t.\+IO\+[t.\+Any]\+ stream)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_a57425f62b144a9c766fc0c0208da4565}{should\+\_\+strip\+\_\+ansi}} (t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None stream=None, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__compat_a9e101fa4acc2ab3714bd36fe878907f6}{\+\_\+get\+\_\+argv\+\_\+encoding}} ()
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4ce736da159b1739d78f5a729b8a1de7}{auto\+\_\+wrap\+\_\+for\+\_\+ansi}} (t.\+Text\+IO stream, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Text\+IO\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1__compat_ab19e94296fc9f5898645acd0e422fb1c}{\+\_\+get\+\_\+windows\+\_\+console\+\_\+stream}} (t.\+Text\+IO f, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors)
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__compat_ad588aa349d6ca81a5f00cc780d8e003a}{term\+\_\+len}} (str x)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__compat_a9a43cef71eb55a1e1b319d1ad52fbbbf}{isatty}} (t.\+IO\+[t.\+Any]\+ stream)
+\item 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}} (t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None]\+ src\+\_\+func, t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO]\+ wrapper\+\_\+func)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__compat_a141320728338341ad6f73e9ed11bab24}{CYGWIN}} = sys.\+platform.\+startswith("{}cygwin"{})
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__compat_adb6bbcba150de4a2c2a480f035fbe90d}{WIN}} = sys.\+platform.\+startswith("{}win"{})
+\item 
+t \doxymbox{\hyperlink{namespaceclick_1_1__compat_a7475a6f2d2c8ce791e3555f4947313e7}{auto\+\_\+wrap\+\_\+for\+\_\+ansi}} = None
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__compat_a49158a89baf5ef2b7f3507dfb08254ac}{\+\_\+ansi\+\_\+re}} = re.\+compile(r"{}\textbackslash{}033\textbackslash{}\+[\+[;?0-\/9]\+\texorpdfstring{$\ast$}{*}\+[a-\/zA-\/Z]\+"{})
+\item 
+cabc \doxymbox{\hyperlink{namespaceclick_1_1__compat_a69d6fe0c7ca6b4b26da0854630a8842b}{\+\_\+ansi\+\_\+stream\+\_\+wrappers}} = Weak\+Key\+Dictionary()
+\item 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_a9e59f07029d9a4e7aef6d677c64fee96}{\+\_\+default\+\_\+text\+\_\+stdin}} = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stdin, \doxymbox{\hyperlink{namespaceclick_1_1__compat_adc5a1458314e082dd216aff5935ab049}{get\+\_\+text\+\_\+stdin}})
+\item 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_a9fc35f08bad2e3d47cefa93091e0c780}{\+\_\+default\+\_\+text\+\_\+stdout}} = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stdout, \doxymbox{\hyperlink{namespaceclick_1_1__compat_aea8edf25330914c3f6a7c76a53d63d16}{get\+\_\+text\+\_\+stdout}})
+\item 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespaceclick_1_1__compat_a315b0e871a58fed6baff27e16abe5d2b}{\+\_\+default\+\_\+text\+\_\+stderr}} = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stderr, \doxymbox{\hyperlink{namespaceclick_1_1__compat_ac608a85e650ee906f698efcba2523da2}{get\+\_\+text\+\_\+stderr}})
+\item 
+dict \doxymbox{\hyperlink{namespaceclick_1_1__compat_a12f62cd04a8a346acc4dc84a162eae47}{binary\+\_\+streams}}
+\item 
+dict \doxymbox{\hyperlink{namespaceclick_1_1__compat_afb20c0de9c513b524b3b9fa46d7df010}{text\+\_\+streams}}
+\end{DoxyCompactItemize}
+
+
+\label{namespaceclick_1_1__compat_doc-func-members}
+\Hypertarget{namespaceclick_1_1__compat_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceclick_1_1__compat_a1b3ae656c1613fe9bf97ecaeeccd66cb}\index{click.\_compat@{click.\_compat}!\_find\_binary\_reader@{\_find\_binary\_reader}}
+\index{\_find\_binary\_reader@{\_find\_binary\_reader}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_find\_binary\_reader()}{\_find\_binary\_reader()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a1b3ae656c1613fe9bf97ecaeeccd66cb} 
+ t.\+Binary\+IO \texorpdfstring{$\vert$}{|} None \+\_\+find\+\_\+binary\+\_\+reader (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a2b21bfb541250de05bc15709d92b5161}\index{click.\_compat@{click.\_compat}!\_find\_binary\_writer@{\_find\_binary\_writer}}
+\index{\_find\_binary\_writer@{\_find\_binary\_writer}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_find\_binary\_writer()}{\_find\_binary\_writer()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a2b21bfb541250de05bc15709d92b5161} 
+ t.\+Binary\+IO \texorpdfstring{$\vert$}{|} None \+\_\+find\+\_\+binary\+\_\+writer (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a319afec77a178c669495097f9fccdb28}\index{click.\_compat@{click.\_compat}!\_force\_correct\_text\_reader@{\_force\_correct\_text\_reader}}
+\index{\_force\_correct\_text\_reader@{\_force\_correct\_text\_reader}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_force\_correct\_text\_reader()}{\_force\_correct\_text\_reader()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a319afec77a178c669495097f9fccdb28} 
+ t.\+Text\+IO \+\_\+force\+\_\+correct\+\_\+text\+\_\+reader (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{text\+\_\+reader}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{errors}{, }\item[{bool }]{force\+\_\+readable}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a3f7a53eb7675f01f2e0472df5accfb16}\index{click.\_compat@{click.\_compat}!\_force\_correct\_text\_stream@{\_force\_correct\_text\_stream}}
+\index{\_force\_correct\_text\_stream@{\_force\_correct\_text\_stream}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_force\_correct\_text\_stream()}{\_force\_correct\_text\_stream()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a3f7a53eb7675f01f2e0472df5accfb16} 
+ t.\+Text\+IO \+\_\+force\+\_\+correct\+\_\+text\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{text\+\_\+stream}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{errors}{, }\item[{t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+, bool]\+, bool]\+}]{is\+\_\+binary}{, }\item[{t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+]\+, t.\+Binary\+IO \texorpdfstring{$\vert$}{|} None]\+}]{find\+\_\+binary}{, }\item[{bool }]{force\+\_\+readable}{ = {\ttfamily False}, }\item[{bool }]{force\+\_\+writable}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a6355dbec67fdb3ba345d111248c41ec9}\index{click.\_compat@{click.\_compat}!\_force\_correct\_text\_writer@{\_force\_correct\_text\_writer}}
+\index{\_force\_correct\_text\_writer@{\_force\_correct\_text\_writer}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_force\_correct\_text\_writer()}{\_force\_correct\_text\_writer()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a6355dbec67fdb3ba345d111248c41ec9} 
+ t.\+Text\+IO \+\_\+force\+\_\+correct\+\_\+text\+\_\+writer (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{text\+\_\+writer}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{errors}{, }\item[{bool }]{force\+\_\+writable}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a9e101fa4acc2ab3714bd36fe878907f6}\index{click.\_compat@{click.\_compat}!\_get\_argv\_encoding@{\_get\_argv\_encoding}}
+\index{\_get\_argv\_encoding@{\_get\_argv\_encoding}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_get\_argv\_encoding()}{\_get\_argv\_encoding()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a9e101fa4acc2ab3714bd36fe878907f6} 
+str \+\_\+get\+\_\+argv\+\_\+encoding (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_ab19e94296fc9f5898645acd0e422fb1c}\index{click.\_compat@{click.\_compat}!\_get\_windows\_console\_stream@{\_get\_windows\_console\_stream}}
+\index{\_get\_windows\_console\_stream@{\_get\_windows\_console\_stream}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_get\_windows\_console\_stream()}{\_get\_windows\_console\_stream()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ab19e94296fc9f5898645acd0e422fb1c} 
+ t.\+Text\+IO \texorpdfstring{$\vert$}{|} None \+\_\+get\+\_\+windows\+\_\+console\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None     }]{errors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_afccca6913b4d137a32edfc354a8262dd}\index{click.\_compat@{click.\_compat}!\_is\_binary\_reader@{\_is\_binary\_reader}}
+\index{\_is\_binary\_reader@{\_is\_binary\_reader}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_is\_binary\_reader()}{\_is\_binary\_reader()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_afccca6913b4d137a32edfc354a8262dd} 
+ bool \+\_\+is\+\_\+binary\+\_\+reader (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{, }\item[{bool }]{default}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_aa3befa542c25e3144250bdb4274a832d}\index{click.\_compat@{click.\_compat}!\_is\_binary\_writer@{\_is\_binary\_writer}}
+\index{\_is\_binary\_writer@{\_is\_binary\_writer}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_is\_binary\_writer()}{\_is\_binary\_writer()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_aa3befa542c25e3144250bdb4274a832d} 
+ bool \+\_\+is\+\_\+binary\+\_\+writer (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{, }\item[{bool }]{default}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_acf7ad6bfc979e5303eef1c968e8a53a6}\index{click.\_compat@{click.\_compat}!\_is\_compat\_stream\_attr@{\_is\_compat\_stream\_attr}}
+\index{\_is\_compat\_stream\_attr@{\_is\_compat\_stream\_attr}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_is\_compat\_stream\_attr()}{\_is\_compat\_stream\_attr()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_acf7ad6bfc979e5303eef1c968e8a53a6} 
+ bool \+\_\+is\+\_\+compat\+\_\+stream\+\_\+attr (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{stream}{, }\item[{str}]{attr}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}A stream attribute is compatible if it is equal to the
+desired value or the desired value is unset and the attribute
+has a value.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_ad9e57b6d7bd347ff10df5d8dadc26768}\index{click.\_compat@{click.\_compat}!\_is\_compatible\_text\_stream@{\_is\_compatible\_text\_stream}}
+\index{\_is\_compatible\_text\_stream@{\_is\_compatible\_text\_stream}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_is\_compatible\_text\_stream()}{\_is\_compatible\_text\_stream()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ad9e57b6d7bd347ff10df5d8dadc26768} 
+ bool \+\_\+is\+\_\+compatible\+\_\+text\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{stream}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if a stream's encoding and errors attributes are
+compatible with the desired values.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_a6a97941449863b5ad6667e3bbc6662b3}\index{click.\_compat@{click.\_compat}!\_is\_jupyter\_kernel\_output@{\_is\_jupyter\_kernel\_output}}
+\index{\_is\_jupyter\_kernel\_output@{\_is\_jupyter\_kernel\_output}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_is\_jupyter\_kernel\_output()}{\_is\_jupyter\_kernel\_output()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a6a97941449863b5ad6667e3bbc6662b3} 
+ bool \+\_\+is\+\_\+jupyter\+\_\+kernel\+\_\+output (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}\index{click.\_compat@{click.\_compat}!\_make\_cached\_stream\_func@{\_make\_cached\_stream\_func}}
+\index{\_make\_cached\_stream\_func@{\_make\_cached\_stream\_func}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_make\_cached\_stream\_func()}{\_make\_cached\_stream\_func()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80} 
+ t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO \texorpdfstring{$\vert$}{|} None]\+ \+\_\+make\+\_\+cached\+\_\+stream\+\_\+func (\begin{DoxyParamCaption}\item[{t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO \texorpdfstring{$\vert$}{|} None]\+}]{src\+\_\+func}{, }\item[{t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO]\+}]{wrapper\+\_\+func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_ace58e7cfe2a4c2747a73b9c436591f24}\index{click.\_compat@{click.\_compat}!\_make\_text\_stream@{\_make\_text\_stream}}
+\index{\_make\_text\_stream@{\_make\_text\_stream}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_make\_text\_stream()}{\_make\_text\_stream()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ace58e7cfe2a4c2747a73b9c436591f24} 
+ t.\+Text\+IO \+\_\+make\+\_\+text\+\_\+stream (\begin{DoxyParamCaption}\item[{t.\+Binary\+IO}]{stream}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{errors}{, }\item[{bool }]{force\+\_\+readable}{ = {\ttfamily False}, }\item[{bool }]{force\+\_\+writable}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_ac1f6197c785e4585c945bcb16387f879}\index{click.\_compat@{click.\_compat}!\_stream\_is\_misconfigured@{\_stream\_is\_misconfigured}}
+\index{\_stream\_is\_misconfigured@{\_stream\_is\_misconfigured}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_stream\_is\_misconfigured()}{\_stream\_is\_misconfigured()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ac1f6197c785e4585c945bcb16387f879} 
+ bool \+\_\+stream\+\_\+is\+\_\+misconfigured (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{stream}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}A stream is misconfigured if its encoding is ASCII.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_acadb20b1a6bbac8fcf192100f4057c04}\index{click.\_compat@{click.\_compat}!\_wrap\_io\_open@{\_wrap\_io\_open}}
+\index{\_wrap\_io\_open@{\_wrap\_io\_open}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_wrap\_io\_open()}{\_wrap\_io\_open()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_acadb20b1a6bbac8fcf192100f4057c04} 
+ t.\+IO\+[t.\+Any]\+ \+\_\+wrap\+\_\+io\+\_\+open (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} int}]{file}{, }\item[{str}]{mode}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{encoding}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{errors}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Handles not passing ``encoding`` and ``errors`` in binary mode.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_a4ce736da159b1739d78f5a729b8a1de7}\index{click.\_compat@{click.\_compat}!auto\_wrap\_for\_ansi@{auto\_wrap\_for\_ansi}}
+\index{auto\_wrap\_for\_ansi@{auto\_wrap\_for\_ansi}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{auto\_wrap\_for\_ansi()}{auto\_wrap\_for\_ansi()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a4ce736da159b1739d78f5a729b8a1de7} 
+ t.\+Text\+IO auto\+\_\+wrap\+\_\+for\+\_\+ansi (\begin{DoxyParamCaption}\item[{t.\+Text\+IO}]{stream}{, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Support ANSI color and style codes on Windows by wrapping a
+stream with colorama.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_af10a14cc5529e817a078116e2e296e91}\index{click.\_compat@{click.\_compat}!get\_best\_encoding@{get\_best\_encoding}}
+\index{get\_best\_encoding@{get\_best\_encoding}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_best\_encoding()}{get\_best\_encoding()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_af10a14cc5529e817a078116e2e296e91} 
+ str get\+\_\+best\+\_\+encoding (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the default stream encoding if not found.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_a5a6861a7221314226fb61e2db0a361bd}\index{click.\_compat@{click.\_compat}!get\_binary\_stderr@{get\_binary\_stderr}}
+\index{get\_binary\_stderr@{get\_binary\_stderr}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_binary\_stderr()}{get\_binary\_stderr()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a5a6861a7221314226fb61e2db0a361bd} 
+ t.\+Binary\+IO get\+\_\+binary\+\_\+stderr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_a1f88f1100c5becbb060d74fd11bd8064}\index{click.\_compat@{click.\_compat}!get\_binary\_stdin@{get\_binary\_stdin}}
+\index{get\_binary\_stdin@{get\_binary\_stdin}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_binary\_stdin()}{get\_binary\_stdin()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a1f88f1100c5becbb060d74fd11bd8064} 
+ t.\+Binary\+IO get\+\_\+binary\+\_\+stdin (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_af468213bf7c1777f9c44dd7de4c24036}\index{click.\_compat@{click.\_compat}!get\_binary\_stdout@{get\_binary\_stdout}}
+\index{get\_binary\_stdout@{get\_binary\_stdout}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_binary\_stdout()}{get\_binary\_stdout()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_af468213bf7c1777f9c44dd7de4c24036} 
+ t.\+Binary\+IO get\+\_\+binary\+\_\+stdout (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_ac608a85e650ee906f698efcba2523da2}\index{click.\_compat@{click.\_compat}!get\_text\_stderr@{get\_text\_stderr}}
+\index{get\_text\_stderr@{get\_text\_stderr}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_text\_stderr()}{get\_text\_stderr()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ac608a85e650ee906f698efcba2523da2} 
+ t.\+Text\+IO get\+\_\+text\+\_\+stderr (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_adc5a1458314e082dd216aff5935ab049}\index{click.\_compat@{click.\_compat}!get\_text\_stdin@{get\_text\_stdin}}
+\index{get\_text\_stdin@{get\_text\_stdin}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_text\_stdin()}{get\_text\_stdin()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_adc5a1458314e082dd216aff5935ab049} 
+ t.\+Text\+IO get\+\_\+text\+\_\+stdin (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_aea8edf25330914c3f6a7c76a53d63d16}\index{click.\_compat@{click.\_compat}!get\_text\_stdout@{get\_text\_stdout}}
+\index{get\_text\_stdout@{get\_text\_stdout}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{get\_text\_stdout()}{get\_text\_stdout()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_aea8edf25330914c3f6a7c76a53d63d16} 
+ t.\+Text\+IO get\+\_\+text\+\_\+stdout (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_a03ffb21298f6dcefe38ceb28f06b1958}\index{click.\_compat@{click.\_compat}!is\_ascii\_encoding@{is\_ascii\_encoding}}
+\index{is\_ascii\_encoding@{is\_ascii\_encoding}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{is\_ascii\_encoding()}{is\_ascii\_encoding()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a03ffb21298f6dcefe38ceb28f06b1958} 
+ bool is\+\_\+ascii\+\_\+encoding (\begin{DoxyParamCaption}\item[{str}]{encoding}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if a given encoding is ascii.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1__compat_a9a43cef71eb55a1e1b319d1ad52fbbbf}\index{click.\_compat@{click.\_compat}!isatty@{isatty}}
+\index{isatty@{isatty}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{isatty()}{isatty()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a9a43cef71eb55a1e1b319d1ad52fbbbf} 
+ bool isatty (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+}]{stream}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_af2a83c4cf8f0205671d7fe7e0f882923}\index{click.\_compat@{click.\_compat}!open\_stream@{open\_stream}}
+\index{open\_stream@{open\_stream}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{open\_stream()}{open\_stream()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_af2a83c4cf8f0205671d7fe7e0f882923} 
+ tuple\+[t.\+IO\+[t.\+Any]\+, bool]\+ open\+\_\+stream (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{filename}{, }\item[{str }]{mode}{ = {\ttfamily "{}r"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{bool }]{atomic}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_a57425f62b144a9c766fc0c0208da4565}\index{click.\_compat@{click.\_compat}!should\_strip\_ansi@{should\_strip\_ansi}}
+\index{should\_strip\_ansi@{should\_strip\_ansi}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{should\_strip\_ansi()}{should\_strip\_ansi()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a57425f62b144a9c766fc0c0208da4565} 
+ bool should\+\_\+strip\+\_\+ansi (\begin{DoxyParamCaption}\item[{t.\+IO\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{stream}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_a74de13b66437cb5f91fb9e1a0ab1d751}\index{click.\_compat@{click.\_compat}!strip\_ansi@{strip\_ansi}}
+\index{strip\_ansi@{strip\_ansi}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{strip\_ansi()}{strip\_ansi()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a74de13b66437cb5f91fb9e1a0ab1d751} 
+ str strip\+\_\+ansi (\begin{DoxyParamCaption}\item[{str}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1__compat_ad588aa349d6ca81a5f00cc780d8e003a}\index{click.\_compat@{click.\_compat}!term\_len@{term\_len}}
+\index{term\_len@{term\_len}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{term\_len()}{term\_len()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_ad588aa349d6ca81a5f00cc780d8e003a} 
+ int term\+\_\+len (\begin{DoxyParamCaption}\item[{str}]{x}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespaceclick_1_1__compat_doc-var-members}
+\Hypertarget{namespaceclick_1_1__compat_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceclick_1_1__compat_a49158a89baf5ef2b7f3507dfb08254ac}\index{click.\_compat@{click.\_compat}!\_ansi\_re@{\_ansi\_re}}
+\index{\_ansi\_re@{\_ansi\_re}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_ansi\_re}{\_ansi\_re}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a49158a89baf5ef2b7f3507dfb08254ac} 
+click.\+\_\+compat.\+\_\+ansi\+\_\+re = re.\+compile(r"{}\textbackslash{}033\textbackslash{}\+[\+[;?0-\/9]\+\texorpdfstring{$\ast$}{*}\+[a-\/zA-\/Z]\+"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a69d6fe0c7ca6b4b26da0854630a8842b}\index{click.\_compat@{click.\_compat}!\_ansi\_stream\_wrappers@{\_ansi\_stream\_wrappers}}
+\index{\_ansi\_stream\_wrappers@{\_ansi\_stream\_wrappers}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_ansi\_stream\_wrappers}{\_ansi\_stream\_wrappers}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a69d6fe0c7ca6b4b26da0854630a8842b} 
+cabc click.\+\_\+compat.\+\_\+ansi\+\_\+stream\+\_\+wrappers = Weak\+Key\+Dictionary()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a315b0e871a58fed6baff27e16abe5d2b}\index{click.\_compat@{click.\_compat}!\_default\_text\_stderr@{\_default\_text\_stderr}}
+\index{\_default\_text\_stderr@{\_default\_text\_stderr}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_default\_text\_stderr}{\_default\_text\_stderr}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a315b0e871a58fed6baff27e16abe5d2b} 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO \texorpdfstring{$\vert$}{|} None]\+ click.\+\_\+compat.\+\_\+default\+\_\+text\+\_\+stderr = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stderr, \doxymbox{\hyperlink{namespaceclick_1_1__compat_ac608a85e650ee906f698efcba2523da2}{get\+\_\+text\+\_\+stderr}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a9e59f07029d9a4e7aef6d677c64fee96}\index{click.\_compat@{click.\_compat}!\_default\_text\_stdin@{\_default\_text\_stdin}}
+\index{\_default\_text\_stdin@{\_default\_text\_stdin}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_default\_text\_stdin}{\_default\_text\_stdin}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a9e59f07029d9a4e7aef6d677c64fee96} 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO \texorpdfstring{$\vert$}{|} None]\+ click.\+\_\+compat.\+\_\+default\+\_\+text\+\_\+stdin = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stdin, \doxymbox{\hyperlink{namespaceclick_1_1__compat_adc5a1458314e082dd216aff5935ab049}{get\+\_\+text\+\_\+stdin}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a9fc35f08bad2e3d47cefa93091e0c780}\index{click.\_compat@{click.\_compat}!\_default\_text\_stdout@{\_default\_text\_stdout}}
+\index{\_default\_text\_stdout@{\_default\_text\_stdout}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{\_default\_text\_stdout}{\_default\_text\_stdout}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a9fc35f08bad2e3d47cefa93091e0c780} 
+t.\+Callable\+[\+[$\,$]\+, t.\+Text\+IO \texorpdfstring{$\vert$}{|} None]\+ click.\+\_\+compat.\+\_\+default\+\_\+text\+\_\+stdout = \doxymbox{\hyperlink{namespaceclick_1_1__compat_a4e34f767afda14080f44408b8da65e80}{\+\_\+make\+\_\+cached\+\_\+stream\+\_\+func}}(lambda:\+ sys.\+stdout, \doxymbox{\hyperlink{namespaceclick_1_1__compat_aea8edf25330914c3f6a7c76a53d63d16}{get\+\_\+text\+\_\+stdout}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1__compat_a7475a6f2d2c8ce791e3555f4947313e7}\index{click.\_compat@{click.\_compat}!auto\_wrap\_for\_ansi@{auto\_wrap\_for\_ansi}}
+\index{auto\_wrap\_for\_ansi@{auto\_wrap\_for\_ansi}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{auto\_wrap\_for\_ansi}{auto\_wrap\_for\_ansi}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a7475a6f2d2c8ce791e3555f4947313e7} 
+t click.\+\_\+compat.\+auto\+\_\+wrap\+\_\+for\+\_\+ansi = None}
+
+\Hypertarget{namespaceclick_1_1__compat_a12f62cd04a8a346acc4dc84a162eae47}\index{click.\_compat@{click.\_compat}!binary\_streams@{binary\_streams}}
+\index{binary\_streams@{binary\_streams}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{binary\_streams}{binary\_streams}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a12f62cd04a8a346acc4dc84a162eae47} 
+dict click.\+\_\+compat.\+binary\+\_\+streams}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stdin"{}}:\ get\_binary\_stdin,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stdout"{}}:\ get\_binary\_stdout,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stderr"{}}:\ get\_binary\_stderr,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclick_1_1__compat_a141320728338341ad6f73e9ed11bab24}\index{click.\_compat@{click.\_compat}!CYGWIN@{CYGWIN}}
+\index{CYGWIN@{CYGWIN}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{CYGWIN}{CYGWIN}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_a141320728338341ad6f73e9ed11bab24} 
+click.\+\_\+compat.\+CYGWIN = sys.\+platform.\+startswith("{}cygwin"{})}
+
+\Hypertarget{namespaceclick_1_1__compat_afb20c0de9c513b524b3b9fa46d7df010}\index{click.\_compat@{click.\_compat}!text\_streams@{text\_streams}}
+\index{text\_streams@{text\_streams}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{text\_streams}{text\_streams}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_afb20c0de9c513b524b3b9fa46d7df010} 
+dict click.\+\_\+compat.\+text\+\_\+streams}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stdin"{}}:\ get\_text\_stdin,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stdout"{}}:\ get\_text\_stdout,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}stderr"{}}:\ get\_text\_stderr,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclick_1_1__compat_adb6bbcba150de4a2c2a480f035fbe90d}\index{click.\_compat@{click.\_compat}!WIN@{WIN}}
+\index{WIN@{WIN}!click.\_compat@{click.\_compat}}
+\doxysubsubsection{\texorpdfstring{WIN}{WIN}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1__compat_adb6bbcba150de4a2c2a480f035fbe90d} 
+click.\+\_\+compat.\+WIN = sys.\+platform.\+startswith("{}win"{})}
+

@@ -1,0 +1,120 @@
+\doxysection{werkzeug.\+local.\+Local\+Manager Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local_manager}{}\label{classwerkzeug_1_1local_1_1_local_manager}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_ad87128585a6f1874c34c71d2f6903be0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, None\texorpdfstring{$\vert$}{|}(\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[t.\+Any]\+]\+) locals=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_a79fe09e265b4446fd9a975cd0011a73b}{cleanup}} (self)
+\item 
+WSGIApplication \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_ad488e13f6d688a23943b86c66a4af571}{make\+\_\+middleware}} (self, WSGIApplication app)
+\item 
+WSGIApplication \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_a719ce54ac46ec1cfeb80e4f68f769d8d}{middleware}} (self, WSGIApplication func)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_a21fb498b3998e0cf270b249677a9d6bd}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_a56af21c0ab282beed37dbcc49ba366bc}{locals}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_manager_ac6eaa11288753aa79bb331c55723c6e1}{cleanup}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manage releasing the data for the current context in one or more
+:class:`Local` and :class:`LocalStack` objects.
+
+This should not be needed for modern use cases, and may be removed
+in the future.
+
+:param locals: A local or list of locals to manage.
+
+.. versionchanged:: 2.1
+    The ``ident_func`` was removed.
+
+.. versionchanged:: 0.7
+    The ``ident_func`` parameter was added.
+
+.. versionchanged:: 0.6.1
+    The :func:`release_local` function can be used instead of a
+    manager.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_manager_doc-constructors}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_ad87128585a6f1874c34c71d2f6903be0}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_ad87128585a6f1874c34c71d2f6903be0} 
+ None werkzeug.\+local.\+Local\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{None         \texorpdfstring{$\vert$}{|} (\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[t.\+Any]\+]\+) }]{locals}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1_local_manager_doc-func-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_a21fb498b3998e0cf270b249677a9d6bd}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_a21fb498b3998e0cf270b249677a9d6bd} 
+ str werkzeug.\+local.\+Local\+Manager.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_a79fe09e265b4446fd9a975cd0011a73b}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{cleanup()}{cleanup()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_a79fe09e265b4446fd9a975cd0011a73b} 
+ None werkzeug.\+local.\+Local\+Manager.\+cleanup (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Release the data in the locals for this context. Call this at
+the end of each request or use :meth:`make_middleware`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_manager_ad488e13f6d688a23943b86c66a4af571}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!make\_middleware@{make\_middleware}}
+\index{make\_middleware@{make\_middleware}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{make\_middleware()}{make\_middleware()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_ad488e13f6d688a23943b86c66a4af571} 
+ WSGIApplication werkzeug.\+local.\+Local\+Manager.\+make\+\_\+middleware (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wrap a WSGI application so that local data is released
+automatically after the response has been sent for a request.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_manager_a719ce54ac46ec1cfeb80e4f68f769d8d}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!middleware@{middleware}}
+\index{middleware@{middleware}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{middleware()}{middleware()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_a719ce54ac46ec1cfeb80e4f68f769d8d} 
+ WSGIApplication werkzeug.\+local.\+Local\+Manager.\+middleware (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`make_middleware` but used as a decorator on the
+WSGI application function.
+
+.. code-block:: python
+
+    @manager.middleware
+    def application(environ, start_response):
+        ...
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_manager_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_ac6eaa11288753aa79bb331c55723c6e1}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!cleanup@{cleanup}}
+\index{cleanup@{cleanup}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{cleanup}{cleanup}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_ac6eaa11288753aa79bb331c55723c6e1} 
+werkzeug.\+local.\+Local\+Manager.\+cleanup}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_manager_a56af21c0ab282beed37dbcc49ba366bc}\index{werkzeug.local.LocalManager@{werkzeug.local.LocalManager}!locals@{locals}}
+\index{locals@{locals}!werkzeug.local.LocalManager@{werkzeug.local.LocalManager}}
+\doxysubsubsection{\texorpdfstring{locals}{locals}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_manager_a56af21c0ab282beed37dbcc49ba366bc} 
+list werkzeug.\+local.\+Local\+Manager.\+locals = \+[$\,$]\+}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{local_8py}{local.\+py}}\end{DoxyCompactItemize}

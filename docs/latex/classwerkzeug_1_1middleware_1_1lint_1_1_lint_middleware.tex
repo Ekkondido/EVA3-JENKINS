@@ -1,0 +1,108 @@
+\doxysection{werkzeug.\+middleware.\+lint.\+Lint\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware}{}\label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aae95ad175aefc3d897b2f27433a9c4d4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_af96fedf00192772e0b24036992f0c8e1}{check\+\_\+environ}} (self, WSGIEnvironment environ)
+\item 
+tuple\+[int, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a179285c4e9dc7e418e19ba8da617d251}{check\+\_\+start\+\_\+response}} (self, str status, list\+[tuple\+[str, str]\+]\+ headers, None\texorpdfstring{$\vert$}{|}(tuple\+[type\+[Base\+Exception]\+, Base\+Exception, Traceback\+Type]\+) exc\+\_\+info)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a73b8ebb232b824678cec8a0d1c0ed56d}{check\+\_\+headers}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} headers)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a55efff19de678b0ca7dd62cb10ff2ad3}{check\+\_\+iterator}} (self, t.\+Iterable\+[bytes]\+ app\+\_\+iter)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aed44155a62041a0dfd8c2d99167486cd}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_ad394b3f513afef202b87cd79c07c603f}{app}} = app
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Warns about common errors in the WSGI and HTTP behavior of the
+server and wrapped application. Some of the issues it checks are:
+
+-   invalid status codes
+-   non-bytes sent to the WSGI server
+-   strings returned from the WSGI application
+-   non-empty conditional responses
+-   unquoted etags
+-   relative URLs in the Location header
+-   unsafe calls to wsgi.input
+-   unclosed iterators
+
+Error information is emitted using the :mod:`warnings` module.
+
+:param app: The WSGI application to wrap.
+
+.. code-block:: python
+
+    from werkzeug.middleware.lint import LintMiddleware
+    app = LintMiddleware(app)
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aae95ad175aefc3d897b2f27433a9c4d4}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aae95ad175aefc3d897b2f27433a9c4d4} 
+ None werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aed44155a62041a0dfd8c2d99167486cd}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_aed44155a62041a0dfd8c2d99167486cd} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_af96fedf00192772e0b24036992f0c8e1}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!check\_environ@{check\_environ}}
+\index{check\_environ@{check\_environ}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_environ()}{check\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_af96fedf00192772e0b24036992f0c8e1} 
+ None werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+check\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a73b8ebb232b824678cec8a0d1c0ed56d}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!check\_headers@{check\_headers}}
+\index{check\_headers@{check\_headers}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_headers()}{check\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a73b8ebb232b824678cec8a0d1c0ed56d} 
+ None werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+check\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}}]{headers}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a55efff19de678b0ca7dd62cb10ff2ad3}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!check\_iterator@{check\_iterator}}
+\index{check\_iterator@{check\_iterator}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_iterator()}{check\_iterator()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a55efff19de678b0ca7dd62cb10ff2ad3} 
+ None werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+check\+\_\+iterator (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+}]{app\+\_\+iter}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a179285c4e9dc7e418e19ba8da617d251}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!check\_start\_response@{check\_start\_response}}
+\index{check\_start\_response@{check\_start\_response}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{check\_start\_response()}{check\_start\_response()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_a179285c4e9dc7e418e19ba8da617d251} 
+ tuple\+[int, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+check\+\_\+start\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{status}{, }\item[{list\+[tuple\+[str, str]\+]\+}]{headers}{, }\item[{None \texorpdfstring{$\vert$}{|} (tuple\+[type\+[Base\+Exception]\+, Base\+Exception, Traceback\+Type]\+)}]{exc\+\_\+info}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_ad394b3f513afef202b87cd79c07c603f}\index{werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}!app@{app}}
+\index{app@{app}!werkzeug.middleware.lint.LintMiddleware@{werkzeug.middleware.lint.LintMiddleware}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware_ad394b3f513afef202b87cd79c07c603f} 
+werkzeug.\+middleware.\+lint.\+Lint\+Middleware.\+app = app}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{lint_8py}{lint.\+py}}\end{DoxyCompactItemize}

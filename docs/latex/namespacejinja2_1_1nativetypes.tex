@@ -1,0 +1,36 @@
+\doxysection{jinja2.\+nativetypes Namespace Reference}
+\hypertarget{namespacejinja2_1_1nativetypes}{}\label{namespacejinja2_1_1nativetypes}\index{jinja2.nativetypes@{jinja2.nativetypes}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_code_generator}{Native\+Code\+Generator}}
+\item 
+class \doxymbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_environment}{Native\+Environment}}
+\item 
+class \doxymbox{\hyperlink{classjinja2_1_1nativetypes_1_1_native_template}{Native\+Template}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Optional\+[t.\+Any]\+ \doxymbox{\hyperlink{namespacejinja2_1_1nativetypes_a40520a92f50672d3591a37f1a1a56c1e}{native\+\_\+concat}} (t.\+Iterable\+[t.\+Any]\+ values)
+\end{DoxyCompactItemize}
+
+
+\label{namespacejinja2_1_1nativetypes_doc-func-members}
+\Hypertarget{namespacejinja2_1_1nativetypes_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejinja2_1_1nativetypes_a40520a92f50672d3591a37f1a1a56c1e}\index{jinja2.nativetypes@{jinja2.nativetypes}!native\_concat@{native\_concat}}
+\index{native\_concat@{native\_concat}!jinja2.nativetypes@{jinja2.nativetypes}}
+\doxysubsubsection{\texorpdfstring{native\_concat()}{native\_concat()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1nativetypes_a40520a92f50672d3591a37f1a1a56c1e} 
+ t.\+Optional\+[t.\+Any]\+ native\+\_\+concat (\begin{DoxyParamCaption}\item[{t.\+Iterable\+[t.\+Any]\+}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a native Python type from the list of compiled nodes. If
+the result is a single node, its value is returned. Otherwise, the
+nodes are concatenated as strings. If the result can be parsed with
+:func:`ast.literal_eval`, the parsed value is returned. Otherwise,
+the string is returned.
+
+:param values: Iterable of outputs to concatenate.
+\end{DoxyVerb}
+ 

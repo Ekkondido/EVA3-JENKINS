@@ -1,0 +1,123 @@
+\doxysection{click.\+exceptions.\+Bad\+Parameter Class Reference}
+\hypertarget{classclick_1_1exceptions_1_1_bad_parameter}{}\label{classclick_1_1exceptions_1_1_bad_parameter}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+Inheritance diagram for click.\+exceptions.\+Bad\+Parameter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classclick_1_1exceptions_1_1_bad_parameter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_ae1d880a5dda83d1fdf44433f97dd2b2c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}\texorpdfstring{$\vert$}{|}None param=None, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None param\+\_\+hint=None)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1}{format\+\_\+message}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8489ab131524a44ac4963612f098136e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a27c981468758539972f69cad7059ff12}{show}} (self, t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9532e6c3023bd3594d6434968e01c6ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a67438805915c78e3476dc301f090321a}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_a3b5b54ec5f675c578632b474eb547aea}{param}} \texorpdfstring{$\vert$}{|} None
+\item 
+cabc \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_parameter_a2e4c84c03a6bb034a7d2801f74d085ea}{param\+\_\+hint}} .Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8943db49f348999b204674239df428da}{ctx}} \texorpdfstring{$\vert$}{|} None
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_aedfb8dbb0a07bad5ce95a27ba20e1b99}{cmd}} .Final\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} \texorpdfstring{$\vert$}{|} None]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9ce68058dcdd0ae47e514a3228169fa5}{exit\+\_\+code}} = 1
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9502a75db86e10ad064d0c3729747c5c}{show\+\_\+color}} .Final\+[bool \texorpdfstring{$\vert$}{|} None]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a1087cf7aca1bda4a78f4393fb54401f7}{message}} .Final\+[str]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An exception that formats out a standardized error message for a
+bad parameter.  This is useful when thrown from a callback or type as
+Click will attach contextual information to it (for instance, which
+parameter it is).
+
+.. versionadded:: 2.0
+
+:param param: the parameter object that caused this error.  This can
+              be left out, and Click will attach this info itself
+              if possible.
+:param param_hint: a string that shows up as parameter name.  This
+                   can be used as alternative to `param` in cases
+                   where custom validation should happen.  If it is
+                   a string it's used as such, if it's a list then
+                   each item is quoted and separated.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1exceptions_1_1_bad_parameter_doc-constructors}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_ae1d880a5dda83d1fdf44433f97dd2b2c}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_ae1d880a5dda83d1fdf44433f97dd2b2c} 
+ None click.\+exceptions.\+Bad\+Parameter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None }]{ctx}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} \texorpdfstring{$\vert$}{|} None }]{param}{ = {\ttfamily None}, }\item[{cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{param\+\_\+hint}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1exceptions_1_1_bad_parameter_doc-func-members}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!format\_message@{format\_message}}
+\index{format\_message@{format\_message}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{format\_message()}{format\_message()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_a658d9a7d80ab51f4a8075416bbc320d1} 
+ str click.\+exceptions.\+Bad\+Parameter.\+format\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a5e93db6aba438eac1b85dc7613b6bcdd}{click.\+exceptions.\+Click\+Exception}}.
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_missing_parameter_a54a19e656f00ade023f049c0d410eb0a}{click.\+exceptions.\+Missing\+Parameter}}.
+
+
+
+\label{classclick_1_1exceptions_1_1_bad_parameter_doc-variable-members}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a3b5b54ec5f675c578632b474eb547aea}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!param@{param}}
+\index{param@{param}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{param}{param}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_a3b5b54ec5f675c578632b474eb547aea} 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} click.\+exceptions.\+Bad\+Parameter.\+param \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1exceptions_1_1_bad_parameter_a2e4c84c03a6bb034a7d2801f74d085ea}\index{click.exceptions.BadParameter@{click.exceptions.BadParameter}!param\_hint@{param\_hint}}
+\index{param\_hint@{param\_hint}!click.exceptions.BadParameter@{click.exceptions.BadParameter}}
+\doxysubsubsection{\texorpdfstring{param\_hint}{param\_hint}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_parameter_a2e4c84c03a6bb034a7d2801f74d085ea} 
+cabc click.\+exceptions.\+Bad\+Parameter.\+param\+\_\+hint .Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

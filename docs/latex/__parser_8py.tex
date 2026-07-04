@@ -1,0 +1,104 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+pip/\+\+\_\+vendor/\+tomli/\+\+\_\+parser.py File Reference}
+\hypertarget{__parser_8py}{}\label{__parser_8py}\index{venv/Lib/site-\/packages/pip/\_vendor/tomli/\_parser.py@{venv/Lib/site-\/packages/pip/\_vendor/tomli/\_parser.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_t_o_m_l_decode_error}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+TOMLDecode\+Error}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_flags}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+Flags}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_nested_dict}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+Nested\+Dict}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_output}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+Output}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip}{pip}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__vendor}{pip.\+\_\+vendor}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli}{pip.\+\_\+vendor.\+tomli}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser}{pip.\+\_\+vendor.\+tomli.\+\_\+parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[str, Any]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a488145e11e9f5b915d75b00b1d6d5817}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+load}} (Binary\+IO \+\_\+\+\_\+fp, \texorpdfstring{$\ast$}{*}, Parse\+Float parse\+\_\+float=float)
+\item 
+dict\+[str, Any]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a28ea233e7ddd5f22f41f3f435c99971b}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+loads}} (str \+\_\+\+\_\+s, \texorpdfstring{$\ast$}{*}, Parse\+Float parse\+\_\+float=float)
+\item 
+Pos \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_aeb3d232f5260e2087c980283053f922a}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+skip\+\_\+chars}} (str src, Pos pos, Iterable\+[str]\+ chars)
+\item 
+Pos \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_ad02fbb8d8e7807a3bb82f87380a9da6e}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+skip\+\_\+until}} (str src, Pos pos, str expect, \texorpdfstring{$\ast$}{*}, frozenset\+[str]\+ error\+\_\+on, bool error\+\_\+on\+\_\+eof)
+\item 
+Pos \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a6c74a852d490720ff8b5fc833b87b80f}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+skip\+\_\+comment}} (str src, Pos pos)
+\item 
+Pos \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_ab0765fa430bdd033751f75f4005e8635}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+skip\+\_\+comments\+\_\+and\+\_\+array\+\_\+ws}} (str src, Pos pos)
+\item 
+tuple\+[Pos, Key]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_aece711a7bc37d4c91039a5e5e2e8e992}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+create\+\_\+dict\+\_\+rule}} (str src, Pos pos, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_output}{Output}} out)
+\item 
+tuple\+[Pos, Key]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a268939bbf45ad303210c60ad4a203af3}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+create\+\_\+list\+\_\+rule}} (str src, Pos pos, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_output}{Output}} out)
+\item 
+Pos \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a6af387e2b62ec963c7cbbd5f9d236691}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+key\+\_\+value\+\_\+rule}} (str src, Pos pos, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_output}{Output}} out, Key header, Parse\+Float parse\+\_\+float)
+\item 
+tuple\+[Pos, Key, Any]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a760c1bbb03281ffdb6e7acb94a1b9c1d}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+key\+\_\+value\+\_\+pair}} (str src, Pos pos, Parse\+Float parse\+\_\+float)
+\item 
+tuple\+[Pos, Key]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a07f26d6b29a9c708db2c36969fb1d87f}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+key}} (str src, Pos pos)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a3fe3307e0295ba1a44a40263ba4a11d1}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+key\+\_\+part}} (str src, Pos pos)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_af2cfa8f7ac838fb8c184874e88ba55b9}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+one\+\_\+line\+\_\+basic\+\_\+str}} (str src, Pos pos)
+\item 
+tuple\+[Pos, list]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a7550d2731b82849fd7d294d7269d1591}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+array}} (str src, Pos pos, Parse\+Float parse\+\_\+float)
+\item 
+tuple\+[Pos, dict]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a35047fde9765c65e1d9cc6eeacebfcc4}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+inline\+\_\+table}} (str src, Pos pos, Parse\+Float parse\+\_\+float)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a30c34e8f0c30ce7efcdda8f29abbb91f}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+basic\+\_\+str\+\_\+escape}} (str src, Pos pos, \texorpdfstring{$\ast$}{*}, bool multiline=False)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_ae0e2122fda1ed1686e09df03b7ff9f31}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+basic\+\_\+str\+\_\+escape\+\_\+multiline}} (str src, Pos pos)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a3a14d3370ef6cc9f6fdca869028930c3}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+hex\+\_\+char}} (str src, Pos pos, int hex\+\_\+len)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a9335706e517eca11091c7957a87251b3}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+literal\+\_\+str}} (str src, Pos pos)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a62e563c6ff16968fc2699ade5006685a}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+multiline\+\_\+str}} (str src, Pos pos, \texorpdfstring{$\ast$}{*}, bool literal)
+\item 
+tuple\+[Pos, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a4e84c88551a4d46ff5ba147a8c964276}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+basic\+\_\+str}} (str src, Pos pos, \texorpdfstring{$\ast$}{*}, bool multiline)
+\item 
+tuple\+[Pos, Any]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a58b87cebd216cf40e61d6a229b1920cc}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+parse\+\_\+value}} (str src, Pos pos, Parse\+Float parse\+\_\+float)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tomli_1_1__parser_1_1_t_o_m_l_decode_error}{TOMLDecode\+Error}} \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_ac465941d2439d422ddc146f8e9da37b5}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+suffixed\+\_\+err}} (str src, Pos pos, str msg)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a20f52dd3323c35248ad76ccf56caf9e3}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+is\+\_\+unicode\+\_\+scalar\+\_\+value}} (int codepoint)
+\item 
+Parse\+Float \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_aacbee078975e6980f98a3d3f6d045399}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+make\+\_\+safe\+\_\+parse\+\_\+float}} (Parse\+Float parse\+\_\+float)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a4a03c280fec37286a39dc8bc813f4dfc}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ASCII\+\_\+\+CTRL}} = frozenset(chr(i) for i in range(32)) \texorpdfstring{$\vert$}{|} frozenset(chr(127))
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a9c5464402f41abc525843bced756cdcb}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ILLEGAL\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a4a03c280fec37286a39dc8bc813f4dfc}{ASCII\+\_\+\+CTRL}} -\/ frozenset("{}\textbackslash{}t"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a85651e06dd43daff05446ffbdf004207}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ILLEGAL\+\_\+\+MULTILINE\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a4a03c280fec37286a39dc8bc813f4dfc}{ASCII\+\_\+\+CTRL}} -\/ frozenset("{}\textbackslash{}t\textbackslash{}n"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a8e6ad75092b9652e1a9ddd256bbbf6a3}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ILLEGAL\+\_\+\+LITERAL\+\_\+\+STR\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a9c5464402f41abc525843bced756cdcb}{ILLEGAL\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a003e06322728701a44ea464ef9c9f4eb}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ILLEGAL\+\_\+\+MULTILINE\+\_\+\+LITERAL\+\_\+\+STR\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a85651e06dd43daff05446ffbdf004207}{ILLEGAL\+\_\+\+MULTILINE\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a037c408406f54781979cc5cb5cf10208}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+ILLEGAL\+\_\+\+COMMENT\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a9c5464402f41abc525843bced756cdcb}{ILLEGAL\+\_\+\+BASIC\+\_\+\+STR\+\_\+\+CHARS}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a08a25f3e9810f4a2860812bbd3ef7191}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+TOML\+\_\+\+WS}} = frozenset("{} \textbackslash{}t"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a312be93eb77789770ff65f68f06ee7a9}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+TOML\+\_\+\+WS\+\_\+\+AND\+\_\+\+NEWLINE}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a08a25f3e9810f4a2860812bbd3ef7191}{TOML\+\_\+\+WS}} \texorpdfstring{$\vert$}{|} frozenset("{}\textbackslash{}n"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_abefd58e7c95ffebe6e54c0b94529f2fb}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+BARE\+\_\+\+KEY\+\_\+\+CHARS}} = frozenset(string.\+ascii\+\_\+letters + string.\+digits + "{}-\/\+\_\+"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a60f19c7306b99d3a5fd74eb9fc483a14}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+KEY\+\_\+\+INITIAL\+\_\+\+CHARS}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_abefd58e7c95ffebe6e54c0b94529f2fb}{BARE\+\_\+\+KEY\+\_\+\+CHARS}} \texorpdfstring{$\vert$}{|} frozenset("{}\textbackslash{}"{}\textquotesingle{}"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a0d5cfa97027bbf1412a09e0a6b0a96d8}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+HEXDIGIT\+\_\+\+CHARS}} = frozenset(string.\+hexdigits)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tomli_1_1__parser_a587ee0858661cce88e8bb49eeec547bb}{pip.\+\_\+vendor.\+tomli.\+\_\+parser.\+BASIC\+\_\+\+STR\+\_\+\+ESCAPE\+\_\+\+REPLACEMENTS}}
+\end{DoxyCompactItemize}

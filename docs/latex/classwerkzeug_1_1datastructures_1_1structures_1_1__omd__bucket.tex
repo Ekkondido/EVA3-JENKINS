@@ -1,0 +1,90 @@
+\doxysection{werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}{}\label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+Inheritance diagram for werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a86e50d8ddf413931d718cb5462c7f316}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1___ordered_multi_dict}{\+\_\+\+Ordered\+Multi\+Dict}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+ omd, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}} value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a9bfee159e2c3098142d7eaf053b0e530}{unlink}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1___ordered_multi_dict}{\+\_\+\+Ordered\+Multi\+Dict}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+ omd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}{\+\_\+omd\+\_\+bucket}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_aa935d87b1541e6c8cc1d656073e27af9}{prev}} = omd.\+\_\+last\+\_\+bucket
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a39b5aebb4086ac9d0fead96c68cf4bac}{key}} = key
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a189934f34fcb3eed91368caee56e1915}{value}} = value
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}{\+\_\+omd\+\_\+bucket}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a3b9c4c90195b4cadbea699821d76810d}{next}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps values in the :class:`OrderedMultiDict`.  This makes it
+possible to keep an order over multiple different keys.  It requires
+a lot of extra memory and slows down access a lot, but makes it
+possible to access elements in O(1) and iterate in O(n).
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a86e50d8ddf413931d718cb5462c7f316}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a86e50d8ddf413931d718cb5462c7f316} 
+ None werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1___ordered_multi_dict}{\+\_\+\+Ordered\+Multi\+Dict}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+}]{omd}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}}]{key}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a9bfee159e2c3098142d7eaf053b0e530}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!unlink@{unlink}}
+\index{unlink@{unlink}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{unlink()}{unlink()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a9bfee159e2c3098142d7eaf053b0e530} 
+ None werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+unlink (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1___ordered_multi_dict}{\+\_\+\+Ordered\+Multi\+Dict}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+}]{omd}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a39b5aebb4086ac9d0fead96c68cf4bac}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!key@{key}}
+\index{key@{key}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a39b5aebb4086ac9d0fead96c68cf4bac} 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}} werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+key = key}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a3b9c4c90195b4cadbea699821d76810d}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!next@{next}}
+\index{next@{next}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a3b9c4c90195b4cadbea699821d76810d} 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}{\+\_\+omd\+\_\+bucket}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+ \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+next = None}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_aa935d87b1541e6c8cc1d656073e27af9}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!prev@{prev}}
+\index{prev@{prev}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{prev}{prev}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_aa935d87b1541e6c8cc1d656073e27af9} 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket}{\+\_\+omd\+\_\+bucket}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+ \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+prev = omd.\+\_\+last\+\_\+bucket}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a189934f34fcb3eed91368caee56e1915}\index{werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}!value@{value}}
+\index{value@{value}!werkzeug.datastructures.structures.\_omd\_bucket@{werkzeug.datastructures.structures.\_omd\_bucket}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1structures_1_1__omd__bucket_a189934f34fcb3eed91368caee56e1915} 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}} werkzeug.\+datastructures.\+structures.\+\_\+omd\+\_\+bucket.\+value = value}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{werkzeug_2datastructures_2structures_8py}{structures.\+py}}\end{DoxyCompactItemize}

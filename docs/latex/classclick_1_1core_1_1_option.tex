@@ -1,0 +1,522 @@
+\doxysection{click.\+core.\+Option Class Reference}
+\hypertarget{classclick_1_1core_1_1_option}{}\label{classclick_1_1core_1_1_option}\index{click.core.Option@{click.core.Option}}
+Inheritance diagram for click.\+core.\+Option:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classclick_1_1core_1_1_option}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_option_acadafb447416bb2e68e8d7f86659c6c1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None param\+\_\+decls=None, bool\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None show\+\_\+default=None, bool\texorpdfstring{$\vert$}{|}str prompt=False, bool\texorpdfstring{$\vert$}{|}str confirmation\+\_\+prompt=False, bool prompt\+\_\+required=True, bool hide\+\_\+input=False, bool\texorpdfstring{$\vert$}{|}None is\+\_\+flag=None, t.\+Any flag\+\_\+value=UNSET, bool multiple=False, bool count=False, bool allow\+\_\+from\+\_\+autoenv=True, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{types.\+Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Any\texorpdfstring{$\vert$}{|}None type=None, str\texorpdfstring{$\vert$}{|}None help=None, bool hidden=False, bool show\+\_\+choices=True, bool show\+\_\+envvar=False, bool\texorpdfstring{$\vert$}{|}str deprecated=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any attrs)
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a96d0998f348e8d66072c0d2f2bfef14e}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a87db663b5773346e2bd42d9bf7f6fbed}{get\+\_\+default}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, bool call=True)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a8489920ec17b9ca063eb81418cde5436}{get\+\_\+error\+\_\+hint}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a2ff532f811fb463ffd3e2951a3901924}{add\+\_\+to\+\_\+parser}} (self, \doxymbox{\hyperlink{classclick_1_1parser_1_1___option_parser}{\+\_\+\+Option\+Parser}} parser, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+tuple\+[str, str]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a61ebeb7733ec985a8e9a2989c8df30ad}{get\+\_\+help\+\_\+record}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+\doxymbox{\hyperlink{classclick_1_1types_1_1_option_help_extra}{types.\+Option\+Help\+Extra}} \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a8eaadbd56baf43769b7f23ab66d8d1f5}{get\+\_\+help\+\_\+extra}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_option_aaf35eeeea1d19844cba56ffe34189728}{prompt\+\_\+for\+\_\+value}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a22664a3f386217a1e5a85046cc65a890}{resolve\+\_\+envvar\+\_\+value}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a3e1fb0920695847609834159fa25b570}{value\+\_\+from\+\_\+envvar}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+tuple\+[t.\+Any, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a93657074df780405498db3a5633a6717}{consume\+\_\+value}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, cabc.\+Mapping\+[str, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+ opts)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a4591b6ce1950cf7febbef5448fc58962}{process\+\_\+value}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a0d57a9a79273efd50bcb49474c8aefd7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None param\+\_\+decls=None, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{types.\+Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Any\texorpdfstring{$\vert$}{|}None type=None, bool required=False, t.\+Any\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None default=UNSET, t.\+Callable\+[\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}, t.\+Any]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None callback=None, int\texorpdfstring{$\vert$}{|}None nargs=None, bool multiple=False, str\texorpdfstring{$\vert$}{|}None metavar=None, bool expose\+\_\+value=True, bool is\+\_\+eager=False, str\texorpdfstring{$\vert$}{|}cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None envvar=None, t.\+Callable\+[\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}, str]\+, list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+\texorpdfstring{$\vert$}{|}list\+[str]\+]\+\texorpdfstring{$\vert$}{|}None shell\+\_\+complete=None, bool\texorpdfstring{$\vert$}{|}str deprecated=False)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a1d612eb79ccff30c0177a3a17ecbd31c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a5a3b4b8916064b1b6b83dc6a5cabf04c}{human\+\_\+readable\+\_\+name}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_afe6329ea38227eb55ed8129deb91fd2d}{make\+\_\+metavar}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a9dde660da8df05a08e76b6e70b86c7de}{type\+\_\+cast\+\_\+value}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, t.\+Any value)
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a9645d04720cc1bdaeb889395057468ec}{value\+\_\+is\+\_\+missing}} (self, t.\+Any value)
+\item 
+tuple\+[t.\+Any, list\+[str]\+]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a6f4b72c372a481aad0fa924a14c332b9}{handle\+\_\+parse\+\_\+result}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, cabc.\+Mapping\+[str, t.\+Any]\+ opts, list\+[str]\+ args)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a8a45e6a5ee2a74177839a6534cd44bf2}{get\+\_\+usage\+\_\+pieces}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a16b28d2e4244798b99a6a74c7bcbd02c}{shell\+\_\+complete}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a25a011859cea26846bdbde67448e9b73}{prompt\+\_\+required}} = prompt\+\_\+required
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a5d0be3da27c34f4600b0ef4c5ea75eac}{hide\+\_\+input}} = hide\+\_\+input
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a5f3ecdce173c29dcaa8f7a637a85b59b}{hidden}} = hidden
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a6d730d79585c0ccfcc83e3dbc6f256d5}{is\+\_\+flag}} = bool(is\+\_\+flag)
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a1c812f3624dfa2828a6d87054a0f0755}{is\+\_\+bool\+\_\+flag}} = self.\+is\+\_\+flag and isinstance(self.\+type, \doxymbox{\hyperlink{classclick_1_1types_1_1_bool_param_type}{types.\+Bool\+Param\+Type}})
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a56a652cddbd49672db286b27b5f362bc}{count}} = count
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a788556f66eec8e0fb7b1c521214f7638}{allow\+\_\+from\+\_\+autoenv}} = allow\+\_\+from\+\_\+autoenv
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a02927d06417284107830dc240b2364ed}{show\+\_\+choices}} = show\+\_\+choices
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_option_a99618cad3772663f46a4bf43b92eea44}{show\+\_\+envvar}} = show\+\_\+envvar
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_aace6716e13fcf098eaa78614aed5310f}{name}}
+\item 
+\doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{types.\+Param\+Type}}\+[t.\+Any]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_ad0e150b7857dd8f590d7aa865d1ef911}{type}} = \doxymbox{\hyperlink{namespaceclick_1_1types_a39f493b8ffa1594c99455028022998c6}{types.\+convert\+\_\+type}}(type, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a74d979cbff78773e1f328ae0f3b3151a}{default}})
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a00b5a92c3eb60e1436bdc318c8065c67}{required}} = required
+\item 
+int \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_acfef675e8a5e789107d41e2bed13f38f}{nargs}} = nargs
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a4cda95ec2c7408123f2d5f22823d480c}{multiple}} = multiple
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_afa7ce655c7aaf8d25d34ebf8c37c21c1}{expose\+\_\+value}} = expose\+\_\+value
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_abee11b561b87473cd1b6fadb668a639d}{is\+\_\+eager}} = is\+\_\+eager
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a2be26b8267f5da44f399532a84e6ff18}{prompt}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_option_af2264016f4854f1c40133550efe4d9e1}{confirmation\+\_\+prompt}} \texorpdfstring{$\vert$}{|} str
+\item 
+t \doxymbox{\hyperlink{classclick_1_1core_1_1_option_ae2c00317c288f47c767a83cde7e7f782}{flag\+\_\+value}} .Any
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a3dfd926f7c49f93293edfd40e1c3b28c}{help}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a9210a94aed12b170577b915b2f222921}{show\+\_\+default}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_af0f790740cdb02620e518bfa777df35b}{param\+\_\+type\+\_\+name}} = "{}parameter"{}
+\item 
+list \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a6d02c012d8d912fb0510026eb136470c}{opts}} \+[str]\+
+\item 
+list \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_add572e719cdba58055e0131464587434}{secondary\+\_\+opts}} \+[str]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a062174e59028776abf976ef0476d70d8}{callback}} .Callable\+[\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}, t.\+Any]\+, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None
+\item 
+t \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a74d979cbff78773e1f328ae0f3b3151a}{default}} .Any \texorpdfstring{$\vert$}{|} t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a544f33d8f2dae9cd3f2885bd3ceba649}{metavar}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a0813e4d42a996544bdb93e8a8ca8fc1f}{envvar}} \texorpdfstring{$\vert$}{|} cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a07a5700b322963dfbfd7b677dcf0ebb5}{deprecated}} \texorpdfstring{$\vert$}{|} str
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[str, list\+[str]\+, list\+[str]\+]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a5b17680a8c21b7abdba69139535f6af3}{\+\_\+parse\+\_\+decls}} (self, cabc.\+Sequence\+[str]\+ decls, bool expose\+\_\+value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_option_a4d28666ba0da1e021121746d802eb543}{\+\_\+flag\+\_\+needs\+\_\+value}} = self.\+prompt is not None and not self.\+prompt\+\_\+required
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_af9c107eaa8f570f61cba8de279ee8e86}{\+\_\+default\+\_\+explicit}} = \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a74d979cbff78773e1f328ae0f3b3151a}{default}} is not UNSET
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+core.\+Parameter}}}
+\begin{DoxyCompactItemize}
+\item 
+list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a5a35af05c3d84bb3d9d3646903c91221}{\+\_\+custom\+\_\+shell\+\_\+complete}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Options are usually optional values on the command line and
+have some extra features that arguments don't have.
+
+All other parameters are passed onwards to the parameter constructor.
+
+:param show_default: Show the default value for this option in its
+    help text. Values are not shown by default, unless
+    :attr:`Context.show_default` is ``True``. If this value is a
+    string, it shows that string in parentheses instead of the
+    actual value. This is particularly useful for dynamic options.
+    For single option boolean flags, the default remains hidden if
+    its value is ``False``.
+:param show_envvar: Controls if an environment variable should be
+    shown on the help page and error messages.
+    Normally, environment variables are not shown.
+:param prompt: If set to ``True`` or a non empty string then the
+    user will be prompted for input. If set to ``True`` the prompt
+    will be the option name capitalized. A deprecated option cannot be
+    prompted.
+:param confirmation_prompt: Prompt a second time to confirm the
+    value if it was prompted for. Can be set to a string instead of
+    ``True`` to customize the message.
+:param prompt_required: If set to ``False``, the user will be
+    prompted for input only when the option was specified as a flag
+    without a value.
+:param hide_input: If this is ``True`` then the input on the prompt
+    will be hidden from the user. This is useful for password input.
+:param is_flag: forces this option to act as a flag.  The default is
+                auto detection.
+:param flag_value: which value should be used for this flag if it's
+                   enabled.  This is set to a boolean automatically if
+                   the option string contains a slash to mark two options.
+:param multiple: if this is set to `True` then the argument is accepted
+                 multiple times and recorded.  This is similar to ``nargs``
+                 in how it works but supports arbitrary number of
+                 arguments.
+:param count: this flag makes an option increment an integer.
+:param allow_from_autoenv: if this is enabled then the value of this
+                           parameter will be pulled from an environment
+                           variable in case a prefix is defined on the
+                           context.
+:param help: the help string.
+:param hidden: hide this option from help outputs.
+:param attrs: Other command arguments described in :class:`Parameter`.
+
+.. versionchanged:: 8.4.0
+    Non-basic ``flag_value`` types (not ``str``, ``int``, ``float``, or
+    ``bool``) are passed through unchanged instead of being stringified.
+    Previously, ``type=click.UNPROCESSED`` was required to preserve them.
+
+.. versionchanged:: 8.2
+    ``envvar`` used with ``flag_value`` will always use the ``flag_value``,
+    previously it would use the value of the environment variable.
+
+.. versionchanged:: 8.1
+    Help text indentation is cleaned here instead of only in the
+    ``@option`` decorator.
+
+.. versionchanged:: 8.1
+    The ``show_default`` parameter overrides
+    ``Context.show_default``.
+
+.. versionchanged:: 8.1
+    The default of a single option boolean flag is not shown if the
+    default value is ``False``.
+
+.. versionchanged:: 8.0.1
+    ``type`` is detected from ``flag_value`` if given, for basic Python
+    types (``str``, ``int``, ``float``, ``bool``).
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1core_1_1_option_doc-constructors}
+\Hypertarget{classclick_1_1core_1_1_option_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1core_1_1_option_acadafb447416bb2e68e8d7f86659c6c1}\index{click.core.Option@{click.core.Option}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_acadafb447416bb2e68e8d7f86659c6c1} 
+ None click.\+core.\+Option.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{param\+\_\+decls}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{show\+\_\+default}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{prompt}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{confirmation\+\_\+prompt}{ = {\ttfamily False}, }\item[{bool }]{prompt\+\_\+required}{ = {\ttfamily True}, }\item[{bool }]{hide\+\_\+input}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{is\+\_\+flag}{ = {\ttfamily None}, }\item[{t.\+Any }]{flag\+\_\+value}{ = {\ttfamily UNSET}, }\item[{bool }]{multiple}{ = {\ttfamily False}, }\item[{bool }]{count}{ = {\ttfamily False}, }\item[{bool }]{allow\+\_\+from\+\_\+autoenv}{ = {\ttfamily True}, }\item[{\doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{types.\+Param\+Type}}\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} t.\+Any \texorpdfstring{$\vert$}{|} None }]{type}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{help}{ = {\ttfamily None}, }\item[{bool }]{hidden}{ = {\ttfamily False}, }\item[{bool }]{show\+\_\+choices}{ = {\ttfamily True}, }\item[{bool }]{show\+\_\+envvar}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{deprecated}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{attrs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1core_1_1_option_doc-func-members}
+\Hypertarget{classclick_1_1core_1_1_option_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1core_1_1_option_a5b17680a8c21b7abdba69139535f6af3}\index{click.core.Option@{click.core.Option}!\_parse\_decls@{\_parse\_decls}}
+\index{\_parse\_decls@{\_parse\_decls}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{\_parse\_decls()}{\_parse\_decls()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a5b17680a8c21b7abdba69139535f6af3} 
+ tuple\+[str, list\+[str]\+, list\+[str]\+]\+ click.\+core.\+Option.\+\_\+parse\+\_\+decls (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Sequence\+[str]\+}]{decls}{, }\item[{bool     }]{expose\+\_\+value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a8b3084d113453eb624b1abcb3df270b7}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a2ff532f811fb463ffd3e2951a3901924}\index{click.core.Option@{click.core.Option}!add\_to\_parser@{add\_to\_parser}}
+\index{add\_to\_parser@{add\_to\_parser}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{add\_to\_parser()}{add\_to\_parser()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a2ff532f811fb463ffd3e2951a3901924} 
+ None click.\+core.\+Option.\+add\+\_\+to\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1parser_1_1___option_parser}{\+\_\+\+Option\+Parser}}}]{parser}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_abbd70bad31d54fb8f2d6fa71657dbd15}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a93657074df780405498db3a5633a6717}\index{click.core.Option@{click.core.Option}!consume\_value@{consume\_value}}
+\index{consume\_value@{consume\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{consume\_value()}{consume\_value()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a93657074df780405498db3a5633a6717} 
+ tuple\+[t.\+Any, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_source}{Parameter\+Source}}]\+ click.\+core.\+Option.\+consume\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{cabc.\+Mapping\+[str, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+     }]{opts}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For :class:`Option`, the value can be collected from an interactive prompt
+if the option is a flag that needs a value (and the :attr:`prompt` property is
+set).
+
+Additionally, this method handles flag option that are activated without a
+value, in which case the :attr:`flag_value` is returned.
+
+:meta private:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a51d5a71576e2096fcb64ae45450c8156}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a87db663b5773346e2bd42d9bf7f6fbed}\index{click.core.Option@{click.core.Option}!get\_default@{get\_default}}
+\index{get\_default@{get\_default}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{get\_default()}{get\_default()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a87db663b5773346e2bd42d9bf7f6fbed} 
+ t.\+Any \texorpdfstring{$\vert$}{|} t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None click.\+core.\+Option.\+get\+\_\+default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{bool }]{call}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the default value for this option.
+
+For non-boolean flag options, ``default=True`` is treated as a sentinel
+meaning "activate this flag by default" and is resolved to
+:attr:`flag_value`.  For example, with ``--upper/--lower`` feature
+switches where ``flag_value="upper"`` and ``default=True``, the default
+resolves to ``"upper"``.
+
+.. caution::
+    This substitution only applies to non-boolean flags
+    (:attr:`is_bool_flag` is ``False``). For boolean flags, ``True`` is
+    a legitimate Python value and ``default=True`` is returned as-is.
+
+.. versionchanged:: 8.3.3
+    ``default=True`` is no longer substituted with ``flag_value`` for
+    boolean flags, fixing negative boolean flags like
+    ``flag_value=False, default=True``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a01289a46c2882684b3575b78eef82c37}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a8489920ec17b9ca063eb81418cde5436}\index{click.core.Option@{click.core.Option}!get\_error\_hint@{get\_error\_hint}}
+\index{get\_error\_hint@{get\_error\_hint}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{get\_error\_hint()}{get\_error\_hint()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a8489920ec17b9ca063eb81418cde5436} 
+ str click.\+core.\+Option.\+get\+\_\+error\+\_\+hint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a stringified version of the param for use in error messages to
+indicate which param caused the error.
+
+.. versionchanged:: 8.4.0
+    ``ctx`` can be ``None``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_aa023954c7cd9cd439215ea7a107f3c3c}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a8eaadbd56baf43769b7f23ab66d8d1f5}\index{click.core.Option@{click.core.Option}!get\_help\_extra@{get\_help\_extra}}
+\index{get\_help\_extra@{get\_help\_extra}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{get\_help\_extra()}{get\_help\_extra()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a8eaadbd56baf43769b7f23ab66d8d1f5} 
+ \doxymbox{\hyperlink{classclick_1_1types_1_1_option_help_extra}{types.\+Option\+Help\+Extra}} click.\+core.\+Option.\+get\+\_\+help\+\_\+extra (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1core_1_1_option_a61ebeb7733ec985a8e9a2989c8df30ad}\index{click.core.Option@{click.core.Option}!get\_help\_record@{get\_help\_record}}
+\index{get\_help\_record@{get\_help\_record}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{get\_help\_record()}{get\_help\_record()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a61ebeb7733ec985a8e9a2989c8df30ad} 
+ tuple\+[str, str]\+ \texorpdfstring{$\vert$}{|} None click.\+core.\+Option.\+get\+\_\+help\+\_\+record (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a5241b9728fdaade9809252e8b4851771}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a4591b6ce1950cf7febbef5448fc58962}\index{click.core.Option@{click.core.Option}!process\_value@{process\_value}}
+\index{process\_value@{process\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{process\_value()}{process\_value()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a4591b6ce1950cf7febbef5448fc58962} 
+ t.\+Any click.\+core.\+Option.\+process\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process the value of this parameter:
+
+1. Type cast the value using :meth:`type_cast_value`.
+2. Check if the value is missing (see: :meth:`value_is_missing`), and raise
+   :exc:`MissingParameter` if it is required.
+3. If a :attr:`callback` is set, call it to have the value replaced by the
+   result of the callback. If the value was not set, the callback receive
+   ``None``. This keep the legacy behavior as it was before the introduction of
+   the :attr:`UNSET` sentinel.
+
+:meta private:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a0f5cf95030a023d56e6c4dc5bd7891f8}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_aaf35eeeea1d19844cba56ffe34189728}\index{click.core.Option@{click.core.Option}!prompt\_for\_value@{prompt\_for\_value}}
+\index{prompt\_for\_value@{prompt\_for\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{prompt\_for\_value()}{prompt\_for\_value()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_aaf35eeeea1d19844cba56ffe34189728} 
+ t.\+Any click.\+core.\+Option.\+prompt\+\_\+for\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is an alternative flow that can be activated in the full
+value processing if a value does not exist.  It will prompt the
+user until a valid value exists and then returns the processed
+value as result.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_option_a22664a3f386217a1e5a85046cc65a890}\index{click.core.Option@{click.core.Option}!resolve\_envvar\_value@{resolve\_envvar\_value}}
+\index{resolve\_envvar\_value@{resolve\_envvar\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{resolve\_envvar\_value()}{resolve\_envvar\_value()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a22664a3f386217a1e5a85046cc65a890} 
+ str \texorpdfstring{$\vert$}{|} None click.\+core.\+Option.\+resolve\+\_\+envvar\+\_\+value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:class:`Option` resolves its environment variable the same way as
+:func:`Parameter.resolve_envvar_value`, but it also supports
+:attr:`Context.auto_envvar_prefix`. If we could not find an environment from
+the :attr:`envvar` property, we fallback on :attr:`Context.auto_envvar_prefix`
+to build dynamiccaly the environment variable name using the
+:python:`{ctx.auto_envvar_prefix}_{self.name.upper()}` template.
+
+:meta private:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a5180aa92f5f84d9eb4d5b985aa9a559b}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a96d0998f348e8d66072c0d2f2bfef14e}\index{click.core.Option@{click.core.Option}!to\_info\_dict@{to\_info\_dict}}
+\index{to\_info\_dict@{to\_info\_dict}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{to\_info\_dict()}{to\_info\_dict()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a96d0998f348e8d66072c0d2f2bfef14e} 
+ dict\+[str, t.\+Any]\+ click.\+core.\+Option.\+to\+\_\+info\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}.. versionchanged:: 8.3.0
+    Returns ``None`` for the :attr:`flag_value` if it was not set.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a62d0ac71c8bedee07b3350ed7d58fa67}{click.\+core.\+Parameter}}.
+
+\Hypertarget{classclick_1_1core_1_1_option_a3e1fb0920695847609834159fa25b570}\index{click.core.Option@{click.core.Option}!value\_from\_envvar@{value\_from\_envvar}}
+\index{value\_from\_envvar@{value\_from\_envvar}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{value\_from\_envvar()}{value\_from\_envvar()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a3e1fb0920695847609834159fa25b570} 
+ t.\+Any click.\+core.\+Option.\+value\+\_\+from\+\_\+envvar (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}For :class:`Option`, this method processes the raw environment variable
+string the same way as :func:`Parameter.value_from_envvar` does.
+
+But in the case of non-boolean flags, the value is analyzed to determine if the
+flag is activated or not, and returns a boolean of its activation, or the
+:attr:`flag_value` if the latter is set.
+
+This method also takes care of repeated options (i.e. options with
+:attr:`multiple` set to ``True``).
+
+:meta private:
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter_a1a9ce4ac43421959e19cf2c5a5390249}{click.\+core.\+Parameter}}.
+
+
+
+\label{classclick_1_1core_1_1_option_doc-variable-members}
+\Hypertarget{classclick_1_1core_1_1_option_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1core_1_1_option_a4d28666ba0da1e021121746d802eb543}\index{click.core.Option@{click.core.Option}!\_flag\_needs\_value@{\_flag\_needs\_value}}
+\index{\_flag\_needs\_value@{\_flag\_needs\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{\_flag\_needs\_value}{\_flag\_needs\_value}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a4d28666ba0da1e021121746d802eb543} 
+str click.\+core.\+Option.\+\_\+flag\+\_\+needs\+\_\+value = self.\+prompt is not None and not self.\+prompt\+\_\+required\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a788556f66eec8e0fb7b1c521214f7638}\index{click.core.Option@{click.core.Option}!allow\_from\_autoenv@{allow\_from\_autoenv}}
+\index{allow\_from\_autoenv@{allow\_from\_autoenv}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{allow\_from\_autoenv}{allow\_from\_autoenv}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a788556f66eec8e0fb7b1c521214f7638} 
+click.\+core.\+Option.\+allow\+\_\+from\+\_\+autoenv = allow\+\_\+from\+\_\+autoenv}
+
+\Hypertarget{classclick_1_1core_1_1_option_af2264016f4854f1c40133550efe4d9e1}\index{click.core.Option@{click.core.Option}!confirmation\_prompt@{confirmation\_prompt}}
+\index{confirmation\_prompt@{confirmation\_prompt}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{confirmation\_prompt}{confirmation\_prompt}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_af2264016f4854f1c40133550efe4d9e1} 
+bool click.\+core.\+Option.\+confirmation\+\_\+prompt \texorpdfstring{$\vert$}{|} str\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a56a652cddbd49672db286b27b5f362bc}\index{click.core.Option@{click.core.Option}!count@{count}}
+\index{count@{count}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{count}{count}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a56a652cddbd49672db286b27b5f362bc} 
+click.\+core.\+Option.\+count = count}
+
+\Hypertarget{classclick_1_1core_1_1_option_ae2c00317c288f47c767a83cde7e7f782}\index{click.core.Option@{click.core.Option}!flag\_value@{flag\_value}}
+\index{flag\_value@{flag\_value}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{flag\_value}{flag\_value}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_ae2c00317c288f47c767a83cde7e7f782} 
+t click.\+core.\+Option.\+flag\+\_\+value .Any\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a3dfd926f7c49f93293edfd40e1c3b28c}\index{click.core.Option@{click.core.Option}!help@{help}}
+\index{help@{help}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a3dfd926f7c49f93293edfd40e1c3b28c} 
+str click.\+core.\+Option.\+help \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a5f3ecdce173c29dcaa8f7a637a85b59b}\index{click.core.Option@{click.core.Option}!hidden@{hidden}}
+\index{hidden@{hidden}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{hidden}{hidden}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a5f3ecdce173c29dcaa8f7a637a85b59b} 
+click.\+core.\+Option.\+hidden = hidden}
+
+\Hypertarget{classclick_1_1core_1_1_option_a5d0be3da27c34f4600b0ef4c5ea75eac}\index{click.core.Option@{click.core.Option}!hide\_input@{hide\_input}}
+\index{hide\_input@{hide\_input}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{hide\_input}{hide\_input}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a5d0be3da27c34f4600b0ef4c5ea75eac} 
+click.\+core.\+Option.\+hide\+\_\+input = hide\+\_\+input}
+
+\Hypertarget{classclick_1_1core_1_1_option_a1c812f3624dfa2828a6d87054a0f0755}\index{click.core.Option@{click.core.Option}!is\_bool\_flag@{is\_bool\_flag}}
+\index{is\_bool\_flag@{is\_bool\_flag}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{is\_bool\_flag}{is\_bool\_flag}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a1c812f3624dfa2828a6d87054a0f0755} 
+click.\+core.\+Option.\+is\+\_\+bool\+\_\+flag = self.\+is\+\_\+flag and isinstance(self.\+type, \doxymbox{\hyperlink{classclick_1_1types_1_1_bool_param_type}{types.\+Bool\+Param\+Type}})}
+
+\Hypertarget{classclick_1_1core_1_1_option_a6d730d79585c0ccfcc83e3dbc6f256d5}\index{click.core.Option@{click.core.Option}!is\_flag@{is\_flag}}
+\index{is\_flag@{is\_flag}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{is\_flag}{is\_flag}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a6d730d79585c0ccfcc83e3dbc6f256d5} 
+click.\+core.\+Option.\+is\+\_\+flag = bool(is\+\_\+flag)}
+
+\Hypertarget{classclick_1_1core_1_1_option_a2be26b8267f5da44f399532a84e6ff18}\index{click.core.Option@{click.core.Option}!prompt@{prompt}}
+\index{prompt@{prompt}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{prompt}{prompt}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a2be26b8267f5da44f399532a84e6ff18} 
+click.\+core.\+Option.\+prompt \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a25a011859cea26846bdbde67448e9b73}\index{click.core.Option@{click.core.Option}!prompt\_required@{prompt\_required}}
+\index{prompt\_required@{prompt\_required}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{prompt\_required}{prompt\_required}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a25a011859cea26846bdbde67448e9b73} 
+click.\+core.\+Option.\+prompt\+\_\+required = prompt\+\_\+required}
+
+\Hypertarget{classclick_1_1core_1_1_option_a02927d06417284107830dc240b2364ed}\index{click.core.Option@{click.core.Option}!show\_choices@{show\_choices}}
+\index{show\_choices@{show\_choices}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{show\_choices}{show\_choices}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a02927d06417284107830dc240b2364ed} 
+click.\+core.\+Option.\+show\+\_\+choices = show\+\_\+choices}
+
+\Hypertarget{classclick_1_1core_1_1_option_a9210a94aed12b170577b915b2f222921}\index{click.core.Option@{click.core.Option}!show\_default@{show\_default}}
+\index{show\_default@{show\_default}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{show\_default}{show\_default}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a9210a94aed12b170577b915b2f222921} 
+click.\+core.\+Option.\+show\+\_\+default \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_option_a99618cad3772663f46a4bf43b92eea44}\index{click.core.Option@{click.core.Option}!show\_envvar@{show\_envvar}}
+\index{show\_envvar@{show\_envvar}!click.core.Option@{click.core.Option}}
+\doxysubsubsection{\texorpdfstring{show\_envvar}{show\_envvar}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_option_a99618cad3772663f46a4bf43b92eea44} 
+click.\+core.\+Option.\+show\+\_\+envvar = show\+\_\+envvar}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2core_8py}{core.\+py}}\end{DoxyCompactItemize}

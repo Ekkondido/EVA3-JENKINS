@@ -1,0 +1,174 @@
+\doxysection{werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator Class Reference}
+\hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}{}\label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aa78de7b02bf75b340f1607cae9083ca1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aab676a35e73d202bfcfdc48fea5d6771}{regex\+\_\+repr}} (self, t.\+Pattern\+[t.\+Any\+Str]\+ obj)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_afde5c17a6f641797e831c527175a4001}{string\+\_\+repr}} (self, str\texorpdfstring{$\vert$}{|}bytes obj, int limit=70)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_abd64c75a3a6f251d35791ed0e2d1125f}{dict\+\_\+repr}} (self, dict\+[int, None]\+\texorpdfstring{$\vert$}{|}dict\+[str, int]\+\texorpdfstring{$\vert$}{|}dict\+[str\texorpdfstring{$\vert$}{|}int, int]\+ d, bool recursive, int limit=5)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a547f41c1bb119a5d7faf5347a353bddb}{object\+\_\+repr}} (self, t.\+Any obj)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a4490d2c2e27309e33ece6ebcd5c55fb7}{dispatch\+\_\+repr}} (self, t.\+Any obj, bool recursive)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3ea2fac2c68536c5ed933d0764217d76}{fallback\+\_\+repr}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aeadf795074fe1582eaadb63c48668e97}{repr}} (self, object obj)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab7908183bb2f42eae8cc1f6d136769ce}{dump\+\_\+object}} (self, object obj)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a572dda6a11485cf178dde38e0f8d887f}{dump\+\_\+locals}} (self, dict\+[str, t.\+Any]\+ d)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_af4ad3e489923c397cdb9925156a32040}{render\+\_\+object\+\_\+dump}} (self, list\+[tuple\+[str, str]\+]\+ items, str title, str\texorpdfstring{$\vert$}{|}None repr=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a923c355c4bd98a9849ed46326b3665db}{list\+\_\+repr}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}\+["{}, "{}]\+"{}, list)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a7836d6e460b1133ba4d167bde655bc5a}{tuple\+\_\+repr}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}("{}, "{})"{}, tuple)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab1060b09b38870640f80cbaf13182c90}{set\+\_\+repr}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}set(\+["{}, "{}]\+)"{}, set)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3cb94a35d2d66ffbf673e0ce31248707}{frozenset\+\_\+repr}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}frozenset(\+["{}, "{}]\+)"{}, frozenset)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_acc542a0466f5b3cbd07e531ccd021666}{deque\+\_\+repr}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ad4ba6a2a45190520610fa5fa64867dca}{\+\_\+stack}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-constructors}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aa78de7b02bf75b340f1607cae9083ca1}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aa78de7b02bf75b340f1607cae9083ca1} 
+ None werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-func-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_abd64c75a3a6f251d35791ed0e2d1125f}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!dict\_repr@{dict\_repr}}
+\index{dict\_repr@{dict\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{dict\_repr()}{dict\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_abd64c75a3a6f251d35791ed0e2d1125f} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+dict\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict\+[int, None]\+ \texorpdfstring{$\vert$}{|} dict\+[str, int]\+ \texorpdfstring{$\vert$}{|} dict\+[str \texorpdfstring{$\vert$}{|} int, int]\+}]{d}{, }\item[{bool}]{recursive}{, }\item[{int }]{limit}{ = {\ttfamily 5}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a4490d2c2e27309e33ece6ebcd5c55fb7}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!dispatch\_repr@{dispatch\_repr}}
+\index{dispatch\_repr@{dispatch\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{dispatch\_repr()}{dispatch\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a4490d2c2e27309e33ece6ebcd5c55fb7} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+dispatch\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{obj}{, }\item[{bool}]{recursive}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a572dda6a11485cf178dde38e0f8d887f}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!dump\_locals@{dump\_locals}}
+\index{dump\_locals@{dump\_locals}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{dump\_locals()}{dump\_locals()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a572dda6a11485cf178dde38e0f8d887f} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+dump\+\_\+locals (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict\+[str, t.\+Any]\+}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab7908183bb2f42eae8cc1f6d136769ce}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!dump\_object@{dump\_object}}
+\index{dump\_object@{dump\_object}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{dump\_object()}{dump\_object()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab7908183bb2f42eae8cc1f6d136769ce} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+dump\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3ea2fac2c68536c5ed933d0764217d76}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!fallback\_repr@{fallback\_repr}}
+\index{fallback\_repr@{fallback\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{fallback\_repr()}{fallback\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3ea2fac2c68536c5ed933d0764217d76} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+fallback\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a547f41c1bb119a5d7faf5347a353bddb}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!object\_repr@{object\_repr}}
+\index{object\_repr@{object\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{object\_repr()}{object\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a547f41c1bb119a5d7faf5347a353bddb} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+object\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aab676a35e73d202bfcfdc48fea5d6771}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!regex\_repr@{regex\_repr}}
+\index{regex\_repr@{regex\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{regex\_repr()}{regex\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aab676a35e73d202bfcfdc48fea5d6771} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+regex\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Pattern\+[t.\+Any\+Str]\+}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_af4ad3e489923c397cdb9925156a32040}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!render\_object\_dump@{render\_object\_dump}}
+\index{render\_object\_dump@{render\_object\_dump}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{render\_object\_dump()}{render\_object\_dump()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_af4ad3e489923c397cdb9925156a32040} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+render\+\_\+object\+\_\+dump (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[tuple\+[str, str]\+]\+}]{items}{, }\item[{str}]{title}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{repr}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aeadf795074fe1582eaadb63c48668e97}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!repr@{repr}}
+\index{repr@{repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{repr()}{repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_aeadf795074fe1582eaadb63c48668e97} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_afde5c17a6f641797e831c527175a4001}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!string\_repr@{string\_repr}}
+\index{string\_repr@{string\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{string\_repr()}{string\_repr()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_afde5c17a6f641797e831c527175a4001} 
+ str werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+string\+\_\+repr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{obj}{, }\item[{int }]{limit}{ = {\ttfamily 70}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ad4ba6a2a45190520610fa5fa64867dca}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!\_stack@{\_stack}}
+\index{\_stack@{\_stack}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{\_stack}{\_stack}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ad4ba6a2a45190520610fa5fa64867dca} 
+list werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+\_\+stack = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_acc542a0466f5b3cbd07e531ccd021666}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!deque\_repr@{deque\_repr}}
+\index{deque\_repr@{deque\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{deque\_repr}{deque\_repr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_acc542a0466f5b3cbd07e531ccd021666} 
+werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+deque\+\_\+repr\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_sequence\_repr\_maker(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{'<span\ class="{}module"{}>collections.</span>deque(['},\ \textcolor{stringliteral}{"{}])"{}},\ deque}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3cb94a35d2d66ffbf673e0ce31248707}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!frozenset\_repr@{frozenset\_repr}}
+\index{frozenset\_repr@{frozenset\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{frozenset\_repr}{frozenset\_repr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a3cb94a35d2d66ffbf673e0ce31248707} 
+werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+frozenset\+\_\+repr = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}frozenset(\+["{}, "{}]\+)"{}, frozenset)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a923c355c4bd98a9849ed46326b3665db}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!list\_repr@{list\_repr}}
+\index{list\_repr@{list\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{list\_repr}{list\_repr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a923c355c4bd98a9849ed46326b3665db} 
+werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+list\+\_\+repr = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}\+["{}, "{}]\+"{}, list)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab1060b09b38870640f80cbaf13182c90}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!set\_repr@{set\_repr}}
+\index{set\_repr@{set\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{set\_repr}{set\_repr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_ab1060b09b38870640f80cbaf13182c90} 
+werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+set\+\_\+repr = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}set(\+["{}, "{}]\+)"{}, set)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a7836d6e460b1133ba4d167bde655bc5a}\index{werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}!tuple\_repr@{tuple\_repr}}
+\index{tuple\_repr@{tuple\_repr}!werkzeug.debug.repr.DebugReprGenerator@{werkzeug.debug.repr.DebugReprGenerator}}
+\doxysubsubsection{\texorpdfstring{tuple\_repr}{tuple\_repr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1repr_1_1_debug_repr_generator_a7836d6e460b1133ba4d167bde655bc5a} 
+werkzeug.\+debug.\+repr.\+Debug\+Repr\+Generator.\+tuple\+\_\+repr = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1repr_a9af507bc52c5831c42f4554d4ac1a9a2}{\+\_\+sequence\+\_\+repr\+\_\+maker}}("{}("{}, "{})"{}, tuple)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+debug/\+\doxymbox{\hyperlink{werkzeug_2debug_2repr_8py}{repr.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,75 @@
+var namespacejinja2 =
+[
+    [ "_identifier", "namespacejinja2_1_1__identifier.html", [
+      [ "pattern", "namespacejinja2_1_1__identifier.html#a0d26e5a4c772ff8fc0b9892ffd335d09", null ]
+    ] ],
+    [ "async_utils", "namespacejinja2_1_1async__utils.html", "namespacejinja2_1_1async__utils" ],
+    [ "bccache", "namespacejinja2_1_1bccache.html", "namespacejinja2_1_1bccache" ],
+    [ "compiler", "namespacejinja2_1_1compiler.html", "namespacejinja2_1_1compiler" ],
+    [ "constants", "namespacejinja2_1_1constants.html", [
+      [ "LOREM_IPSUM_WORDS", "namespacejinja2_1_1constants.html#a9cda6e794d3009b2b73dc03f0edea052", null ]
+    ] ],
+    [ "debug", "namespacejinja2_1_1debug.html", [
+      [ "fake_traceback", "namespacejinja2_1_1debug.html#a7fe89807e1c62f70e1e22dbb93786203", null ],
+      [ "get_template_locals", "namespacejinja2_1_1debug.html#a3d99701dbc1858437133d0439d22d7b8", null ],
+      [ "rewrite_traceback_stack", "namespacejinja2_1_1debug.html#a28bd152d87d5aee7c7496dbf5d578a6e", null ]
+    ] ],
+    [ "defaults", "namespacejinja2_1_1defaults.html", [
+      [ "BLOCK_END_STRING", "namespacejinja2_1_1defaults.html#ae2d07193a1d3c9e11e048e3d4d5db73b", null ],
+      [ "BLOCK_START_STRING", "namespacejinja2_1_1defaults.html#a0bbb5b382f5a442626e1a5f30dc8dd49", null ],
+      [ "COMMENT_END_STRING", "namespacejinja2_1_1defaults.html#aaec53d1ba191aeeb8425c44e418ca96c", null ],
+      [ "COMMENT_START_STRING", "namespacejinja2_1_1defaults.html#a74432ab9566c462a4024c36ff9cb3139", null ],
+      [ "DEFAULT_NAMESPACE", "namespacejinja2_1_1defaults.html#a6894b44d15c2ca3eab4f71576b51546d", null ],
+      [ "DEFAULT_POLICIES", "namespacejinja2_1_1defaults.html#a42b2d3f5d5b9ddd0f369379c697a0947", null ],
+      [ "KEEP_TRAILING_NEWLINE", "namespacejinja2_1_1defaults.html#a9068f6a49f2fab747339e81a3ea42796", null ],
+      [ "LINE_COMMENT_PREFIX", "namespacejinja2_1_1defaults.html#af8aad3ca10e7924ed49b36fff44949ad", null ],
+      [ "LINE_STATEMENT_PREFIX", "namespacejinja2_1_1defaults.html#ae86b86bc1bd8c282c0dbe6f154b2c3e9", null ],
+      [ "LSTRIP_BLOCKS", "namespacejinja2_1_1defaults.html#aad257adba4fa5358bb1e4f5f88c99803", null ],
+      [ "NEWLINE_SEQUENCE", "namespacejinja2_1_1defaults.html#aaf3bdb8e4fb5e644771139028dd0e7e7", null ],
+      [ "TRIM_BLOCKS", "namespacejinja2_1_1defaults.html#aa9b26eb61d53d98efefaa0cd7fd7fece", null ],
+      [ "VARIABLE_END_STRING", "namespacejinja2_1_1defaults.html#ac5667f67ad91b73659cbd8a4737eff49", null ],
+      [ "VARIABLE_START_STRING", "namespacejinja2_1_1defaults.html#ac18b4303223e0355b6870991f2d0ae31", null ]
+    ] ],
+    [ "environment", "namespacejinja2_1_1environment.html", "namespacejinja2_1_1environment" ],
+    [ "exceptions", "namespacejinja2_1_1exceptions.html", "namespacejinja2_1_1exceptions" ],
+    [ "ext", "namespacejinja2_1_1ext.html", "namespacejinja2_1_1ext" ],
+    [ "filters", "namespacejinja2_1_1filters.html", "namespacejinja2_1_1filters" ],
+    [ "idtracking", "namespacejinja2_1_1idtracking.html", "namespacejinja2_1_1idtracking" ],
+    [ "lexer", "namespacejinja2_1_1lexer.html", "namespacejinja2_1_1lexer" ],
+    [ "loaders", "namespacejinja2_1_1loaders.html", "namespacejinja2_1_1loaders" ],
+    [ "meta", "namespacejinja2_1_1meta.html", "namespacejinja2_1_1meta" ],
+    [ "nativetypes", "namespacejinja2_1_1nativetypes.html", "namespacejinja2_1_1nativetypes" ],
+    [ "nodes", "namespacejinja2_1_1nodes.html", "namespacejinja2_1_1nodes" ],
+    [ "optimizer", "namespacejinja2_1_1optimizer.html", "namespacejinja2_1_1optimizer" ],
+    [ "parser", "namespacejinja2_1_1parser.html", "namespacejinja2_1_1parser" ],
+    [ "runtime", "namespacejinja2_1_1runtime.html", "namespacejinja2_1_1runtime" ],
+    [ "sandbox", "namespacejinja2_1_1sandbox.html", "namespacejinja2_1_1sandbox" ],
+    [ "tests", "namespacejinja2_1_1tests.html", [
+      [ "test_boolean", "namespacejinja2_1_1tests.html#a8997950e2a8a598ea1741ee43a87418e", null ],
+      [ "test_defined", "namespacejinja2_1_1tests.html#acf8cd631165e04e9f73c8eff118e64f5", null ],
+      [ "test_divisibleby", "namespacejinja2_1_1tests.html#ac14b750fbc82d76bbe76452bfa9a7104", null ],
+      [ "test_escaped", "namespacejinja2_1_1tests.html#af0c89ab60c9b6ed6c96fbdbcc04856a1", null ],
+      [ "test_even", "namespacejinja2_1_1tests.html#a557366a866afb321c2fca208681517e9", null ],
+      [ "test_false", "namespacejinja2_1_1tests.html#affd7f5c6120a67f723abf9a0bcf15266", null ],
+      [ "test_filter", "namespacejinja2_1_1tests.html#acaf765711a9bc79f87c1578e423a6af5", null ],
+      [ "test_float", "namespacejinja2_1_1tests.html#a8c14dfaf226e99c4b988ae2922137f52", null ],
+      [ "test_in", "namespacejinja2_1_1tests.html#a08b8a5326f471d36829df25e2594eb4b", null ],
+      [ "test_integer", "namespacejinja2_1_1tests.html#a8b44584871229fb343333fc4a0de2212", null ],
+      [ "test_iterable", "namespacejinja2_1_1tests.html#a595833ed31a0ffc40f6342337f157066", null ],
+      [ "test_lower", "namespacejinja2_1_1tests.html#aa44997efec0dfc3ccff34cbf46e042d9", null ],
+      [ "test_mapping", "namespacejinja2_1_1tests.html#ae6e1414911404a3034f2475c4506bf05", null ],
+      [ "test_none", "namespacejinja2_1_1tests.html#adecf730582adb8a3d7cfbe58a74c266f", null ],
+      [ "test_number", "namespacejinja2_1_1tests.html#a7d49607b4962c7aefb3c79827a5bedb1", null ],
+      [ "test_odd", "namespacejinja2_1_1tests.html#a49461e54de224317bbd9927d8fe2b844", null ],
+      [ "test_sameas", "namespacejinja2_1_1tests.html#a1b95510427c6ae113e1e32e980dcd94f", null ],
+      [ "test_sequence", "namespacejinja2_1_1tests.html#a0b5110c719e0c8adb5f4378892893d81", null ],
+      [ "test_string", "namespacejinja2_1_1tests.html#ad73ecb428ec71d4095c1e9caa0b61c51", null ],
+      [ "test_test", "namespacejinja2_1_1tests.html#a06b5ba1d38db0a4bfe9f7b70ad70360e", null ],
+      [ "test_true", "namespacejinja2_1_1tests.html#aba6b5c85fd004aff315438374d3fea64", null ],
+      [ "test_undefined", "namespacejinja2_1_1tests.html#a96aa05400e1550436cbf7c76325d1e3f", null ],
+      [ "test_upper", "namespacejinja2_1_1tests.html#a57ea9c4a6511bf87c7f49ceb33ef3819", null ],
+      [ "TESTS", "namespacejinja2_1_1tests.html#af52b9c50ce4d16881513b8d6546bb8eb", null ]
+    ] ],
+    [ "utils", "namespacejinja2_1_1utils.html", "namespacejinja2_1_1utils" ],
+    [ "visitor", "namespacejinja2_1_1visitor.html", "namespacejinja2_1_1visitor" ]
+];

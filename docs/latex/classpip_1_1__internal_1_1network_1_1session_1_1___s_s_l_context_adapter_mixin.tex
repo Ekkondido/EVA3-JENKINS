@@ -1,0 +1,67 @@
+\doxysection{pip.\+\_\+internal.\+network.\+session.\+\_\+\+SSLContext\+Adapter\+Mixin Class Reference}
+\hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin}{}\label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin}\index{pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}}
+Inheritance diagram for pip.\+\_\+internal.\+network.\+session.\+\_\+\+SSLContext\+Adapter\+Mixin:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.333333cm]{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_a63fe7964f9f374a3d4d648bf00461987}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}, Optional\+["{}SSLContext"{}]\+ ssl\+\_\+context=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+"{}Pool\+Manager"{} \doxymbox{\hyperlink{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_ac8886a150f034d03f2e621c8c51c7851}{init\+\_\+poolmanager}} (self, int connections, int maxsize, bool block=DEFAULT\+\_\+\+POOLBLOCK, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any pool\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_af405de0f28e68122800885fc60770c39}{\+\_\+ssl\+\_\+context}} = ssl\+\_\+context
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Mixin to add the ``ssl_context`` constructor argument to HTTP adapters.
+
+The additional argument is forwarded directly to the pool manager. This allows us
+to dynamically decide what SSL store to use at runtime, which is used to implement
+the optional ``truststore`` backend.
+\end{DoxyVerb}
+ 
+
+\label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_a63fe7964f9f374a3d4d648bf00461987}\index{pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_a63fe7964f9f374a3d4d648bf00461987} 
+ None pip.\+\_\+internal.\+network.\+session.\+\_\+\+SSLContext\+Adapter\+Mixin.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{Optional\+["{}SSLContext"{}]\+ }]{ssl\+\_\+context}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_ac8886a150f034d03f2e621c8c51c7851}\index{pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}!init\_poolmanager@{init\_poolmanager}}
+\index{init\_poolmanager@{init\_poolmanager}!pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}}
+\doxysubsubsection{\texorpdfstring{init\_poolmanager()}{init\_poolmanager()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_ac8886a150f034d03f2e621c8c51c7851} 
+ "{}Pool\+Manager"{} pip.\+\_\+internal.\+network.\+session.\+\_\+\+SSLContext\+Adapter\+Mixin.\+init\+\_\+poolmanager (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{connections}{, }\item[{int}]{maxsize}{, }\item[{bool }]{block}{ = {\ttfamily DEFAULT\+\_\+POOLBLOCK}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{pool\+\_\+kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_af405de0f28e68122800885fc60770c39}\index{pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}!\_ssl\_context@{\_ssl\_context}}
+\index{\_ssl\_context@{\_ssl\_context}!pip.\_internal.network.session.\_SSLContextAdapterMixin@{pip.\_internal.network.session.\_SSLContextAdapterMixin}}
+\doxysubsubsection{\texorpdfstring{\_ssl\_context}{\_ssl\_context}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1network_1_1session_1_1___s_s_l_context_adapter_mixin_af405de0f28e68122800885fc60770c39} 
+pip.\+\_\+internal.\+network.\+session.\+\_\+\+SSLContext\+Adapter\+Mixin.\+\_\+ssl\+\_\+context = ssl\+\_\+context\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+pip/\+\+\_\+internal/\+network/\+\doxymbox{\hyperlink{session_8py}{session.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,175 @@
+\doxysection{jinja2.\+idtracking.\+Symbols Class Reference}
+\hypertarget{classjinja2_1_1idtracking_1_1_symbols}{}\label{classjinja2_1_1idtracking_1_1_symbols}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a0bbaf32afb827ea7bbb8530c153eec61}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\+["{}Symbols"{}]\+ parent=None, t.\+Optional\+[int]\+ level=None)
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_ad708c5e963e303132d741ca9375971ed}{analyze\+\_\+node}} (self, \doxymbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}} node, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Optional\+[t.\+Any]\+ \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a232f6269f8bef69463f45a0412d65e6b}{find\+\_\+load}} (self, str target)
+\item 
+t.\+Optional\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a91e9e8db16920e687a5321e9e178fc4b}{find\+\_\+ref}} (self, str name)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a805643e617b2ef49034d28ff65583fb9}{ref}} (self, str name)
+\item 
+"{}te.\+Self"{} \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a4aa75d285fa8e3e4969cc02168062c1b}{copy}} (self)
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a9fc42ce391d75001f15fa23eb3c196ba}{store}} (self, str name)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_ada14c2f34633b6f699af552a52045546}{declare\+\_\+parameter}} (self, str name)
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_aa545d30d57ce25da7ebb0ead888eb90a}{load}} (self, str name)
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_ab334e7c93f2914b5e7ca397f97f57dd4}{branch\+\_\+update}} (self, t.\+Sequence\+["{}Symbols"{}]\+ branch\+\_\+symbols)
+\item 
+t.\+Dict\+[str, str]\+ \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a7b9f58a7af4830ad013eedf9cdda5b3a}{dump\+\_\+stores}} (self)
+\item 
+t.\+Set\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a4348a39c6dec96c3a1d3ee5129bc6332}{dump\+\_\+param\+\_\+targets}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_aaa9ae7c2ef93d425c8f12be61c5e1c83}{level}} = level
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a8d83c89000be7e51399fe42f70dabb78}{parent}} = parent
+\item 
+dict \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a8fda624098c71da3bb5a47c46e0fd8ac}{refs}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_aa9fe687761cb24c3bbf74b0a8e15daeb}{loads}} = \{\}
+\item 
+t.\+Set\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_aa9b865004fdd83d0ff6b0b6394fb6955}{stores}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols_a84252acec816063ede1004057e37920b}{\+\_\+define\+\_\+ref}} (self, str name, t.\+Optional\+[t.\+Tuple\+[str, t.\+Optional\+[str]\+]\+]\+ load=None)
+\end{DoxyCompactItemize}
+
+
+\label{classjinja2_1_1idtracking_1_1_symbols_doc-constructors}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a0bbaf32afb827ea7bbb8530c153eec61}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a0bbaf32afb827ea7bbb8530c153eec61} 
+ None jinja2.\+idtracking.\+Symbols.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Optional\+["{}Symbols"{}]\+ }]{parent}{ = {\ttfamily None}, }\item[{t.\+Optional\+[int]\+ }]{level}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1idtracking_1_1_symbols_doc-func-members}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a84252acec816063ede1004057e37920b}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!\_define\_ref@{\_define\_ref}}
+\index{\_define\_ref@{\_define\_ref}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{\_define\_ref()}{\_define\_ref()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a84252acec816063ede1004057e37920b} 
+ str jinja2.\+idtracking.\+Symbols.\+\_\+define\+\_\+ref (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Optional\+[t.\+Tuple\+[str, t.\+Optional\+[str]\+]\+]\+ }]{load}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_ad708c5e963e303132d741ca9375971ed}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!analyze\_node@{analyze\_node}}
+\index{analyze\_node@{analyze\_node}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{analyze\_node()}{analyze\_node()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_ad708c5e963e303132d741ca9375971ed} 
+ None jinja2.\+idtracking.\+Symbols.\+analyze\+\_\+node (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classjinja2_1_1nodes_1_1_node}{nodes.\+Node}}}]{node}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_ab334e7c93f2914b5e7ca397f97f57dd4}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!branch\_update@{branch\_update}}
+\index{branch\_update@{branch\_update}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{branch\_update()}{branch\_update()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_ab334e7c93f2914b5e7ca397f97f57dd4} 
+ None jinja2.\+idtracking.\+Symbols.\+branch\+\_\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\+["{}Symbols"{}]\+}]{branch\+\_\+symbols}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a4aa75d285fa8e3e4969cc02168062c1b}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!copy@{copy}}
+\index{copy@{copy}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a4aa75d285fa8e3e4969cc02168062c1b} 
+ "{}te.\+Self"{} jinja2.\+idtracking.\+Symbols.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_ada14c2f34633b6f699af552a52045546}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!declare\_parameter@{declare\_parameter}}
+\index{declare\_parameter@{declare\_parameter}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{declare\_parameter()}{declare\_parameter()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_ada14c2f34633b6f699af552a52045546} 
+ str jinja2.\+idtracking.\+Symbols.\+declare\+\_\+parameter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a4348a39c6dec96c3a1d3ee5129bc6332}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!dump\_param\_targets@{dump\_param\_targets}}
+\index{dump\_param\_targets@{dump\_param\_targets}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{dump\_param\_targets()}{dump\_param\_targets()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a4348a39c6dec96c3a1d3ee5129bc6332} 
+ t.\+Set\+[str]\+ jinja2.\+idtracking.\+Symbols.\+dump\+\_\+param\+\_\+targets (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a7b9f58a7af4830ad013eedf9cdda5b3a}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!dump\_stores@{dump\_stores}}
+\index{dump\_stores@{dump\_stores}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{dump\_stores()}{dump\_stores()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a7b9f58a7af4830ad013eedf9cdda5b3a} 
+ t.\+Dict\+[str, str]\+ jinja2.\+idtracking.\+Symbols.\+dump\+\_\+stores (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a232f6269f8bef69463f45a0412d65e6b}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!find\_load@{find\_load}}
+\index{find\_load@{find\_load}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{find\_load()}{find\_load()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a232f6269f8bef69463f45a0412d65e6b} 
+ t.\+Optional\+[t.\+Any]\+ jinja2.\+idtracking.\+Symbols.\+find\+\_\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{target}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a91e9e8db16920e687a5321e9e178fc4b}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!find\_ref@{find\_ref}}
+\index{find\_ref@{find\_ref}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{find\_ref()}{find\_ref()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a91e9e8db16920e687a5321e9e178fc4b} 
+ t.\+Optional\+[str]\+ jinja2.\+idtracking.\+Symbols.\+find\+\_\+ref (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_aa545d30d57ce25da7ebb0ead888eb90a}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!load@{load}}
+\index{load@{load}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_aa545d30d57ce25da7ebb0ead888eb90a} 
+ None jinja2.\+idtracking.\+Symbols.\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a805643e617b2ef49034d28ff65583fb9}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!ref@{ref}}
+\index{ref@{ref}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{ref()}{ref()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a805643e617b2ef49034d28ff65583fb9} 
+ str jinja2.\+idtracking.\+Symbols.\+ref (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a9fc42ce391d75001f15fa23eb3c196ba}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!store@{store}}
+\index{store@{store}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{store()}{store()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a9fc42ce391d75001f15fa23eb3c196ba} 
+ None jinja2.\+idtracking.\+Symbols.\+store (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1idtracking_1_1_symbols_doc-variable-members}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_aaa9ae7c2ef93d425c8f12be61c5e1c83}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!level@{level}}
+\index{level@{level}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_aaa9ae7c2ef93d425c8f12be61c5e1c83} 
+int jinja2.\+idtracking.\+Symbols.\+level = level}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_aa9fe687761cb24c3bbf74b0a8e15daeb}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!loads@{loads}}
+\index{loads@{loads}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{loads}{loads}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_aa9fe687761cb24c3bbf74b0a8e15daeb} 
+dict jinja2.\+idtracking.\+Symbols.\+loads = \{\}}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a8d83c89000be7e51399fe42f70dabb78}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!parent@{parent}}
+\index{parent@{parent}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a8d83c89000be7e51399fe42f70dabb78} 
+jinja2.\+idtracking.\+Symbols.\+parent = parent}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_a8fda624098c71da3bb5a47c46e0fd8ac}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!refs@{refs}}
+\index{refs@{refs}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{refs}{refs}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_a8fda624098c71da3bb5a47c46e0fd8ac} 
+dict jinja2.\+idtracking.\+Symbols.\+refs = \{\}}
+
+\Hypertarget{classjinja2_1_1idtracking_1_1_symbols_aa9b865004fdd83d0ff6b0b6394fb6955}\index{jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}!stores@{stores}}
+\index{stores@{stores}!jinja2.idtracking.Symbols@{jinja2.idtracking.Symbols}}
+\doxysubsubsection{\texorpdfstring{stores}{stores}}
+{\footnotesize\ttfamily \label{classjinja2_1_1idtracking_1_1_symbols_aa9b865004fdd83d0ff6b0b6394fb6955} 
+jinja2.\+idtracking.\+Symbols.\+stores = set()}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+jinja2/\+\doxymbox{\hyperlink{idtracking_8py}{idtracking.\+py}}\end{DoxyCompactItemize}

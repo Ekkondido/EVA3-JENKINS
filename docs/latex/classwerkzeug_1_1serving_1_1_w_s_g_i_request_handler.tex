@@ -1,0 +1,183 @@
+\doxysection{werkzeug.\+serving.\+WSGIRequest\+Handler Class Reference}
+\hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{}\label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+Inheritance diagram for werkzeug.\+serving.\+WSGIRequest\+Handler:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa6317a5e0345291822e420bd88a6150a}{server\+\_\+version}} (self)
+\item 
+WSGIEnvironment \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_abc2287428611ee8dee2ea47f2385cde9}{make\+\_\+environ}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0cd6839b70f00c74746233a3ce7b75a9}{run\+\_\+wsgi}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0788f8bcf9773239e72692f79753447d}{handle}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa62ad897b4230c86fceffeada0dadef9}{connection\+\_\+dropped}} (self, Base\+Exception error, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a7a738e0407af7edbe038e0375e69b806}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a981544360de0f38cbc5a10ac6708fef2}{address\+\_\+string}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0b4cb2ec8bb1e4fc360334b55223b5f0}{port\+\_\+integer}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a52d5b5100c35f0c9bb52909ae17964a8}{log\+\_\+request}} (self, int\texorpdfstring{$\vert$}{|}str code="{}-\/"{}, int\texorpdfstring{$\vert$}{|}str size="{}-\/"{})
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aff71a364aa0f8b3211e7fa72f92cd6c8}{log\+\_\+error}} (self, str format, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a18c01ddb6b99577968415979d520d676}{log\+\_\+message}} (self, str format, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa1c3d49f9d41b0df601b4e23d8e5a10a}{log}} (self, str type, str message, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aeb94fd9acd9d989d4df9ce97c964a921}{client\+\_\+address}}
+\item 
+WSGIEnvironment \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_ada83236545122ba847f535fe8bc1537f}{environ}} = self.\+make\+\_\+environ()
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_af6c88119aede5b30405559735ce66edb}{connection}}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a4c63373d2ae4146a995b89d6894d2714}{close\+\_\+connection}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a8b678c787cb169b57a2cf26a78c94210}{\+\_\+control\+\_\+char\+\_\+table}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A request handler that implements WSGI dispatching.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_doc-func-members}
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a7a738e0407af7edbe038e0375e69b806}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a7a738e0407af7edbe038e0375e69b806} 
+ t.\+Any werkzeug.\+serving.\+WSGIRequest\+Handler.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a981544360de0f38cbc5a10ac6708fef2}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!address\_string@{address\_string}}
+\index{address\_string@{address\_string}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{address\_string()}{address\_string()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a981544360de0f38cbc5a10ac6708fef2} 
+ str werkzeug.\+serving.\+WSGIRequest\+Handler.\+address\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa62ad897b4230c86fceffeada0dadef9}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!connection\_dropped@{connection\_dropped}}
+\index{connection\_dropped@{connection\_dropped}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{connection\_dropped()}{connection\_dropped()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa62ad897b4230c86fceffeada0dadef9} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+connection\+\_\+dropped (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception}]{error}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called if the connection was closed by the client.  By default
+nothing happens.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0788f8bcf9773239e72692f79753447d}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!handle@{handle}}
+\index{handle@{handle}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0788f8bcf9773239e72692f79753447d} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+handle (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Handles a request ignoring dropped connections.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa1c3d49f9d41b0df601b4e23d8e5a10a}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!log@{log}}
+\index{log@{log}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa1c3d49f9d41b0df601b4e23d8e5a10a} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{type}{, }\item[{str}]{message}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aff71a364aa0f8b3211e7fa72f92cd6c8}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!log\_error@{log\_error}}
+\index{log\_error@{log\_error}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_error()}{log\_error()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aff71a364aa0f8b3211e7fa72f92cd6c8} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+log\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{format}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a18c01ddb6b99577968415979d520d676}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!log\_message@{log\_message}}
+\index{log\_message@{log\_message}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_message()}{log\_message()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a18c01ddb6b99577968415979d520d676} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+log\+\_\+message (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{format}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a52d5b5100c35f0c9bb52909ae17964a8}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!log\_request@{log\_request}}
+\index{log\_request@{log\_request}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{log\_request()}{log\_request()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a52d5b5100c35f0c9bb52909ae17964a8} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+log\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} str }]{code}{ = {\ttfamily "{}-\/"{}}, }\item[{int \texorpdfstring{$\vert$}{|} str }]{size}{ = {\ttfamily "{}-\/"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_abc2287428611ee8dee2ea47f2385cde9}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!make\_environ@{make\_environ}}
+\index{make\_environ@{make\_environ}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{make\_environ()}{make\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_abc2287428611ee8dee2ea47f2385cde9} 
+ WSGIEnvironment werkzeug.\+serving.\+WSGIRequest\+Handler.\+make\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0b4cb2ec8bb1e4fc360334b55223b5f0}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!port\_integer@{port\_integer}}
+\index{port\_integer@{port\_integer}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{port\_integer()}{port\_integer()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0b4cb2ec8bb1e4fc360334b55223b5f0} 
+ int werkzeug.\+serving.\+WSGIRequest\+Handler.\+port\+\_\+integer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0cd6839b70f00c74746233a3ce7b75a9}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!run\_wsgi@{run\_wsgi}}
+\index{run\_wsgi@{run\_wsgi}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{run\_wsgi()}{run\_wsgi()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a0cd6839b70f00c74746233a3ce7b75a9} 
+ None werkzeug.\+serving.\+WSGIRequest\+Handler.\+run\+\_\+wsgi (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa6317a5e0345291822e420bd88a6150a}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!server\_version@{server\_version}}
+\index{server\_version@{server\_version}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{server\_version()}{server\_version()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aa6317a5e0345291822e420bd88a6150a} 
+ str werkzeug.\+serving.\+WSGIRequest\+Handler.\+server\+\_\+version (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a8b678c787cb169b57a2cf26a78c94210}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!\_control\_char\_table@{\_control\_char\_table}}
+\index{\_control\_char\_table@{\_control\_char\_table}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{\_control\_char\_table}{\_control\_char\_table}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a8b678c787cb169b57a2cf26a78c94210} 
+werkzeug.\+serving.\+WSGIRequest\+Handler.\+\_\+control\+\_\+char\+\_\+table\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ str.maketrans(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \{c:\ rf\textcolor{stringliteral}{"{}\(\backslash\)x\{c:02x\}"{}}\ \textcolor{keywordflow}{for}\ c\ \textcolor{keywordflow}{in}\ [*range(0x20),\ *range(0x7F,\ 0xA0)]\}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aeb94fd9acd9d989d4df9ce97c964a921}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!client\_address@{client\_address}}
+\index{client\_address@{client\_address}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{client\_address}{client\_address}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_aeb94fd9acd9d989d4df9ce97c964a921} 
+werkzeug.\+serving.\+WSGIRequest\+Handler.\+client\+\_\+address}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a4c63373d2ae4146a995b89d6894d2714}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!close\_connection@{close\_connection}}
+\index{close\_connection@{close\_connection}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{close\_connection}{close\_connection}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_a4c63373d2ae4146a995b89d6894d2714} 
+bool werkzeug.\+serving.\+WSGIRequest\+Handler.\+close\+\_\+connection = True}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_af6c88119aede5b30405559735ce66edb}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!connection@{connection}}
+\index{connection@{connection}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{connection}{connection}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_af6c88119aede5b30405559735ce66edb} 
+werkzeug.\+serving.\+WSGIRequest\+Handler.\+connection}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_ada83236545122ba847f535fe8bc1537f}\index{werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}!environ@{environ}}
+\index{environ@{environ}!werkzeug.serving.WSGIRequestHandler@{werkzeug.serving.WSGIRequestHandler}}
+\doxysubsubsection{\texorpdfstring{environ}{environ}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler_ada83236545122ba847f535fe8bc1537f} 
+WSGIEnvironment werkzeug.\+serving.\+WSGIRequest\+Handler.\+environ = self.\+make\+\_\+environ()}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{serving_8py}{serving.\+py}}\end{DoxyCompactItemize}

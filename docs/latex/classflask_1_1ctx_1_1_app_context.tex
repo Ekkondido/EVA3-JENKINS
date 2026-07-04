@@ -1,0 +1,113 @@
+\doxysection{flask.\+ctx.\+App\+Context Class Reference}
+\hypertarget{classflask_1_1ctx_1_1_app_context}{}\label{classflask_1_1ctx_1_1_app_context}\index{flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_afc89ce102ff817a068ceb418d0f236fc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de}{push}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a6bd1654fcab0babd1541ffe44c18619a}{pop}} (self, Base\+Exception\texorpdfstring{$\vert$}{|}None exc=\doxymbox{\hyperlink{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}{\+\_\+sentinel}})
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context}{App\+Context}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_abf54e6b735e0cfbdf818b7f56a88a5e8}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a5006a46bf1f9d705f2654f6bd1d93d8d}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None tb)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_afedfea382f969e70e105c8467bf4f4fb}{app}} = app
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_acbd57b3c4dc26ae8c471d67b9c127051}{url\+\_\+adapter}} = app.\+create\+\_\+url\+\_\+adapter(None)
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals}{\+\_\+\+App\+Ctx\+Globals}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a707cd1dfc38976e579425a5cf501b00c}{g}} = app.\+app\+\_\+ctx\+\_\+globals\+\_\+class()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context_a3d9fd977a913f6e94909e0280240105a}{\+\_\+cv\+\_\+tokens}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The app context contains application-specific information. An app
+context is created and pushed at the beginning of each request if
+one is not already active. An app context is also pushed when
+running CLI commands.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1ctx_1_1_app_context_doc-constructors}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_afc89ce102ff817a068ceb418d0f236fc}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_afc89ce102ff817a068ceb418d0f236fc} 
+ None flask.\+ctx.\+App\+Context.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1ctx_1_1_app_context_doc-func-members}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_abf54e6b735e0cfbdf818b7f56a88a5e8}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_abf54e6b735e0cfbdf818b7f56a88a5e8} 
+ \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context}{App\+Context}} flask.\+ctx.\+App\+Context.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a5006a46bf1f9d705f2654f6bd1d93d8d}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a5006a46bf1f9d705f2654f6bd1d93d8d} 
+ None flask.\+ctx.\+App\+Context.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+value}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a6bd1654fcab0babd1541ffe44c18619a}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!pop@{pop}}
+\index{pop@{pop}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a6bd1654fcab0babd1541ffe44c18619a} 
+ None flask.\+ctx.\+App\+Context.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None }]{exc}{ = {\ttfamily \doxymbox{\hyperlink{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}{\+\_\+sentinel}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pops the app context.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!push@{push}}
+\index{push@{push}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a3d9f3a670d23bcf8bfee33a236a1a5de} 
+ None flask.\+ctx.\+App\+Context.\+push (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Binds the app context to the current context.\end{DoxyVerb}
+ 
+
+\label{classflask_1_1ctx_1_1_app_context_doc-variable-members}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a3d9fd977a913f6e94909e0280240105a}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!\_cv\_tokens@{\_cv\_tokens}}
+\index{\_cv\_tokens@{\_cv\_tokens}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{\_cv\_tokens}{\_cv\_tokens}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a3d9fd977a913f6e94909e0280240105a} 
+flask.\+ctx.\+App\+Context.\+\_\+cv\+\_\+tokens = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1ctx_1_1_app_context_afedfea382f969e70e105c8467bf4f4fb}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!app@{app}}
+\index{app@{app}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_afedfea382f969e70e105c8467bf4f4fb} 
+flask.\+ctx.\+App\+Context.\+app = app}
+
+\Hypertarget{classflask_1_1ctx_1_1_app_context_a707cd1dfc38976e579425a5cf501b00c}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!g@{g}}
+\index{g@{g}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{g}{g}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_a707cd1dfc38976e579425a5cf501b00c} 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals}{\+\_\+\+App\+Ctx\+Globals}} flask.\+ctx.\+App\+Context.\+g = app.\+app\+\_\+ctx\+\_\+globals\+\_\+class()}
+
+\Hypertarget{classflask_1_1ctx_1_1_app_context_acbd57b3c4dc26ae8c471d67b9c127051}\index{flask.ctx.AppContext@{flask.ctx.AppContext}!url\_adapter@{url\_adapter}}
+\index{url\_adapter@{url\_adapter}!flask.ctx.AppContext@{flask.ctx.AppContext}}
+\doxysubsubsection{\texorpdfstring{url\_adapter}{url\_adapter}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_app_context_acbd57b3c4dc26ae8c471d67b9c127051} 
+flask.\+ctx.\+App\+Context.\+url\+\_\+adapter = app.\+create\+\_\+url\+\_\+adapter(None)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{ctx_8py}{ctx.\+py}}\end{DoxyCompactItemize}

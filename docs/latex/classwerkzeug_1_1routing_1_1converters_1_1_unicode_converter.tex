@@ -1,0 +1,74 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Unicode\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}\index{werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Unicode\+Converter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a256dde5683cf0e5c75748d18364ef381}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, int minlength=1, int\texorpdfstring{$\vert$}{|}None maxlength=None, int\texorpdfstring{$\vert$}{|}None length=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ae811c0804f922bfa94faca0ce08c8ba9}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a60de83dd55661e1fb19a8fe7715b7b38}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_af426e3846cce79c58b47883f68e340e5}{to\+\_\+python}} (self, str value)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a9546ee9bcb6581892af49dc593f34189}{to\+\_\+url}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ac3165f6aed5de185cfb0a376141f58ae}{map}} = map
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a58c08951318a393de7287d301a711f7a}{regex}} = "{}\+[\texorpdfstring{$^\wedge$}{\string^}/\+]\++"{}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a3964efeaab67b9d38bb6df51ade9f0cb}{weight}} = 100
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_aa07d39368f07ef0d47bcf8576e05122d}{part\+\_\+isolating}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This converter is the default converter and accepts any string but
+only one path segment.  Thus the string can not include a slash.
+
+This is the default validator.
+
+Example::
+
+    Rule('/pages/<page>'),
+    Rule('/<string(length=2):lang_code>')
+
+:param map: the :class:`Map`.
+:param minlength: the minimum length of the string.  Must be greater
+                  or equal 1.
+:param maxlength: the maximum length of the string.
+:param length: the exact length of the string.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a256dde5683cf0e5c75748d18364ef381}\index{werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.converters.UnicodeConverter@{werkzeug.routing.converters.UnicodeConverter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_unicode_converter_a256dde5683cf0e5c75748d18364ef381} 
+ None werkzeug.\+routing.\+converters.\+Unicode\+Converter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{, }\item[{int }]{minlength}{ = {\ttfamily 1}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{maxlength}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{length}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{converters_8py}{converters.\+py}}\end{DoxyCompactItemize}

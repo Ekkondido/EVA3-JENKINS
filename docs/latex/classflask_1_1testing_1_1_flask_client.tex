@@ -1,0 +1,256 @@
+\doxysection{flask.\+testing.\+Flask\+Client Class Reference}
+\hypertarget{classflask_1_1testing_1_1_flask_client}{}\label{classflask_1_1testing_1_1_flask_client}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+Inheritance diagram for flask.\+testing.\+Flask\+Client:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1testing_1_1_flask_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_ae608452545ba7c137e9e786dc6a13ea3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Iterator\+[\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}]\+ \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a8d0c3819f164c0c457a08277a272b36a}{session\+\_\+transaction}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_ac4064e13064025553ae45370959f5c39}{open}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, bool buffered=False, bool follow\+\_\+redirects=False, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client}{Flask\+Client}} \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a2d3bfc56761aa4e6671d7783a8376248}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a7dfe8790c97f20a9dfa891478dc0f5e5}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None tb)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client}{werkzeug.\+test.\+Client}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a4e61f218c4bbd02ade23f6b396b21496}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication application, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}}]\+\texorpdfstring{$\vert$}{|}None response\+\_\+wrapper=None, bool use\+\_\+cookies=True, bool allow\+\_\+subdomain\+\_\+redirects=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie}{Cookie}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_acde2153ccc6141e7529bb3f1c0bda286}{get\+\_\+cookie}} (self, str key, str domain="{}localhost"{}, str path="{}/\+"{})
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_afafc43462a523a900251add71bc57bf0}{set\+\_\+cookie}} (self, str key, str value="{}"{}, \texorpdfstring{$\ast$}{*}, str domain="{}localhost"{}, bool origin\+\_\+only=True, str path="{}/\+"{}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_ac3e43dfa436ae2cf29fa0f316e74bc0c}{delete\+\_\+cookie}} (self, str key, \texorpdfstring{$\ast$}{*}, str domain="{}localhost"{}, str path="{}/\+"{})
+\item 
+tuple\+[t.\+Iterable\+[bytes]\+, str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a632d7551e3c5a1aa8ca60c4e64fb51a3}{run\+\_\+wsgi\+\_\+app}} (self, WSGIEnvironment environ, bool buffered=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a9ac1e02a3367103928d23ba654a283dd}{resolve\+\_\+redirect}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} response, bool buffered=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a934d91d875936675794e564a14ee34cc}{get}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_affb48db216771629955b7c46339b3442}{post}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a32a1bae184cce0e3d02fcf319c327819}{put}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a3bbc12e021aa5b95fd916dd6ddb98f0a}{delete}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_ab9c78ee2f778d064a36faeed7f9fdba5}{patch}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_addfa2c1cb835321793cf0b8ce32e76cb}{options}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a97c04dd721276d6ca4c698ab6efb44e7}{head}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_af260665b42168add0592a6f6fc599b8b}{trace}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kw)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a8b4f19df0d31108afcb65ae87ade1a62}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a3310e2700da6798b636e549b90dcf875}{preserve\+\_\+context}} = False
+\item 
+dict \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a92be1e09d7bb5094dcb5ea046ad6b83c}{environ\+\_\+base}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client}{werkzeug.\+test.\+Client}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_aa0b596a3d11683a018305b11e32625a0}{application}} = application
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_afcd8674c057a49ed94bcb28d85c4fa8f}{response\+\_\+wrapper}} = t.\+cast(type\+["{}Test\+Response"{}]\+, response\+\_\+wrapper)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_adeeb9bc77510f8037639780e4ff40bba}{allow\+\_\+subdomain\+\_\+redirects}} = allow\+\_\+subdomain\+\_\+redirects
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+WSGIEnvironment \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a60ff9490fd5b99111f30d94292967ee6}{\+\_\+copy\+\_\+environ}} (self, WSGIEnvironment other)
+\item 
+Base\+Request \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a5ce287c3726be3770dad25a1805efcfc}{\+\_\+request\+\_\+from\+\_\+builder\+\_\+args}} (self, tuple\+[t.\+Any,...]\+ args, dict\+[str, t.\+Any]\+ kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client}{werkzeug.\+test.\+Client}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a4b2a92ba179d821832d634625234eb38}{\+\_\+add\+\_\+cookies\+\_\+to\+\_\+wsgi}} (self, WSGIEnvironment environ)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_ae4854102cae20d7683a1bae1fc47d3e0}{\+\_\+update\+\_\+cookies\+\_\+from\+\_\+response}} (self, str server\+\_\+name, str path, list\+[str]\+ headers)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_a0ffe378faf4c1ff74b5f1b900b412f90}{\+\_\+new\+\_\+contexts}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client_af3ba396f8170831cb8aaff0fb58711fe}{\+\_\+context\+\_\+stack}} = Exit\+Stack()
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client}{werkzeug.\+test.\+Client}}}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a3a3426a69384c31ba075bbb488a1434b}{\+\_\+cookies}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Works like a regular Werkzeug test client but has knowledge about
+Flask's contexts to defer the cleanup of the request context until
+the end of a ``with`` block. For general information about how to
+use this class refer to :class:`werkzeug.test.Client`.
+
+.. versionchanged:: 0.12
+   `app.test_client()` includes preset default environment, which can be
+   set after instantiation of the `app.test_client()` object in
+   `client.environ_base`.
+
+Basic usage is outlined in the :doc:`/testing` chapter.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1testing_1_1_flask_client_doc-constructors}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_ae608452545ba7c137e9e786dc6a13ea3}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_ae608452545ba7c137e9e786dc6a13ea3} 
+ None flask.\+testing.\+Flask\+Client.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1testing_1_1_flask_client_doc-func-members}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a2d3bfc56761aa4e6671d7783a8376248}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a2d3bfc56761aa4e6671d7783a8376248} 
+ \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_client}{Flask\+Client}} flask.\+testing.\+Flask\+Client.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a7dfe8790c97f20a9dfa891478dc0f5e5}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a7dfe8790c97f20a9dfa891478dc0f5e5} 
+ None flask.\+testing.\+Flask\+Client.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+value}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a60ff9490fd5b99111f30d94292967ee6}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_copy\_environ@{\_copy\_environ}}
+\index{\_copy\_environ@{\_copy\_environ}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_copy\_environ()}{\_copy\_environ()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a60ff9490fd5b99111f30d94292967ee6} 
+ WSGIEnvironment flask.\+testing.\+Flask\+Client.\+\_\+copy\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a5ce287c3726be3770dad25a1805efcfc}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_request\_from\_builder\_args@{\_request\_from\_builder\_args}}
+\index{\_request\_from\_builder\_args@{\_request\_from\_builder\_args}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_request\_from\_builder\_args()}{\_request\_from\_builder\_args()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a5ce287c3726be3770dad25a1805efcfc} 
+ Base\+Request flask.\+testing.\+Flask\+Client.\+\_\+request\+\_\+from\+\_\+builder\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[t.\+Any, ...]\+}]{args}{, }\item[{dict\+[str, t.\+Any]\+     }]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_ac4064e13064025553ae45370959f5c39}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!open@{open}}
+\index{open@{open}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_ac4064e13064025553ae45370959f5c39} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}} flask.\+testing.\+Flask\+Client.\+open (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{bool }]{buffered}{ = {\ttfamily False}, }\item[{bool }]{follow\+\_\+redirects}{ = {\ttfamily False}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate an environ dict from the given arguments, make a
+request to the application using it, and return the response.
+
+:param args: Passed to :class:`EnvironBuilder` to create the
+    environ for the request. If a single arg is passed, it can
+    be an existing :class:`EnvironBuilder` or an environ dict.
+:param buffered: Convert the iterator returned by the app into
+    a list. If the iterator has a ``close()`` method, it is
+    called automatically.
+:param follow_redirects: Make additional requests to follow HTTP
+    redirects until a non-redirect status is returned.
+    :attr:`TestResponse.history` lists the intermediate
+    responses.
+
+.. versionchanged:: 2.1
+    Removed the ``as_tuple`` parameter.
+
+.. versionchanged:: 2.0
+    The request input stream is closed when calling
+    ``response.close()``. Input streams for redirects are
+    automatically closed.
+
+.. versionchanged:: 0.5
+    If a dict is provided as file in the dict for the ``data``
+    parameter the content type has to be called ``content_type``
+    instead of ``mimetype``. This change was made for
+    consistency with :class:`werkzeug.FileWrapper`.
+
+.. versionchanged:: 0.5
+    Added the ``follow_redirects`` parameter.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_a449c393cf577d5ef69ce9c9a5be232d5}{werkzeug.\+test.\+Client}}.
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a8d0c3819f164c0c457a08277a272b36a}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!session\_transaction@{session\_transaction}}
+\index{session\_transaction@{session\_transaction}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{session\_transaction()}{session\_transaction()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a8d0c3819f164c0c457a08277a272b36a} 
+ t.\+Iterator\+[\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}]\+ flask.\+testing.\+Flask\+Client.\+session\+\_\+transaction (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}When used in combination with a ``with`` statement this opens a
+session transaction.  This can be used to modify the session that
+the test client uses.  Once the ``with`` block is left the session is
+stored back.
+
+::
+
+    with client.session_transaction() as session:
+        session['value'] = 42
+
+Internally this is implemented by going through a temporary test
+request context and since session handling could depend on
+request variables this function accepts the same arguments as
+:meth:`~flask.Flask.test_request_context` which are directly
+passed through.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1testing_1_1_flask_client_doc-variable-members}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_af3ba396f8170831cb8aaff0fb58711fe}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_context\_stack@{\_context\_stack}}
+\index{\_context\_stack@{\_context\_stack}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_context\_stack}{\_context\_stack}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_af3ba396f8170831cb8aaff0fb58711fe} 
+flask.\+testing.\+Flask\+Client.\+\_\+context\+\_\+stack = Exit\+Stack()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a0ffe378faf4c1ff74b5f1b900b412f90}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!\_new\_contexts@{\_new\_contexts}}
+\index{\_new\_contexts@{\_new\_contexts}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{\_new\_contexts}{\_new\_contexts}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a0ffe378faf4c1ff74b5f1b900b412f90} 
+list flask.\+testing.\+Flask\+Client.\+\_\+new\+\_\+contexts = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a92be1e09d7bb5094dcb5ea046ad6b83c}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!environ\_base@{environ\_base}}
+\index{environ\_base@{environ\_base}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{environ\_base}{environ\_base}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a92be1e09d7bb5094dcb5ea046ad6b83c} 
+dict flask.\+testing.\+Flask\+Client.\+environ\+\_\+base}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}REMOTE\_ADDR"{}}:\ \textcolor{stringliteral}{"{}127.0.0.1"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}HTTP\_USER\_AGENT"{}}:\ f\textcolor{stringliteral}{"{}Werkzeug/\{\_get\_werkzeug\_version()\}"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{classflask_1_1testing_1_1_flask_client_a3310e2700da6798b636e549b90dcf875}\index{flask.testing.FlaskClient@{flask.testing.FlaskClient}!preserve\_context@{preserve\_context}}
+\index{preserve\_context@{preserve\_context}!flask.testing.FlaskClient@{flask.testing.FlaskClient}}
+\doxysubsubsection{\texorpdfstring{preserve\_context}{preserve\_context}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_client_a3310e2700da6798b636e549b90dcf875} 
+bool flask.\+testing.\+Flask\+Client.\+preserve\+\_\+context = False}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{flask_2testing_8py}{testing.\+py}}\end{DoxyCompactItemize}

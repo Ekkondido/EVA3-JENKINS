@@ -1,0 +1,200 @@
+\doxysection{werkzeug.\+exceptions.\+HTTPException Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{}\label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+Inheritance diagram for werkzeug.\+exceptions.\+HTTPException:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0d8a19174840b51ceef98fc364f5d382}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None description=None, Sans\+IOResponse\texorpdfstring{$\vert$}{|}None response=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6b038d20ffee4cfc6ce685fb77a916d8}{get\+\_\+description}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a9fcb5d237149aa5aef16bd3ea80ca806}{get\+\_\+body}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+list\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a3b9c21a13fbae8da2a7e68219d57bae0}{get\+\_\+headers}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+WSGIResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a32ba7c541a3703887bd3ff72cdc7abc0}{get\+\_\+response}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}WSGIRequest\texorpdfstring{$\vert$}{|}None environ=..., None scope=None)
+\item 
+Sans\+IOResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2aa7c6642fa3651784ee99f03a338d83}{get\+\_\+response}} (self, None environ=None, dict\+[str, t.\+Any]\+ scope=...)
+\item 
+WSGIResponse\texorpdfstring{$\vert$}{|}Sans\+IOResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a7e88f9694dc5957f5066f40d2660ec00}{get\+\_\+response}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}WSGIRequest\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a95daa580a0da57c740406a763f071d04}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afddecf68a26a6346d1a52c8cd4fa04e9}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ab89d493a5635f2b83f7076295d133a71}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6d6a55731e46c7596e3b45923e3ad60b}{response}} = response
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af3f54aa9d2498b71340e8a3c6da0cc0d}{code}} = None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ad983d9b48b30c3e86709b9f3289562f2}{description}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The base class for all HTTP exceptions. This exception can be called as a WSGI
+application to render a default error page or you can catch the subclasses
+of it independently and render nicer error messages.
+
+.. versionchanged:: 2.1
+    Removed the ``wrap`` class method.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-constructors}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0d8a19174840b51ceef98fc364f5d382}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0d8a19174840b51ceef98fc364f5d382} 
+ None werkzeug.\+exceptions.\+HTTPException.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{description}{ = {\ttfamily None}, }\item[{Sans\+IOResponse \texorpdfstring{$\vert$}{|} None }]{response}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-func-members}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a95daa580a0da57c740406a763f071d04}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a95daa580a0da57c740406a763f071d04} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+exceptions.\+HTTPException.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the exception as WSGI application.
+
+:param environ: the WSGI environment.
+:param start_response: the response callable provided by the WSGI
+                       server.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ab89d493a5635f2b83f7076295d133a71}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ab89d493a5635f2b83f7076295d133a71} 
+ str werkzeug.\+exceptions.\+HTTPException.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afddecf68a26a6346d1a52c8cd4fa04e9}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afddecf68a26a6346d1a52c8cd4fa04e9} 
+ str werkzeug.\+exceptions.\+HTTPException.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a9fcb5d237149aa5aef16bd3ea80ca806}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_body@{get\_body}}
+\index{get\_body@{get\_body}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_body()}{get\_body()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a9fcb5d237149aa5aef16bd3ea80ca806} 
+ str werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+body (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the HTML body.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6b038d20ffee4cfc6ce685fb77a916d8}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_description@{get\_description}}
+\index{get\_description@{get\_description}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_description()}{get\_description()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6b038d20ffee4cfc6ce685fb77a916d8} 
+ str werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+description (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the description.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a3b9c21a13fbae8da2a7e68219d57bae0}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_headers@{get\_headers}}
+\index{get\_headers@{get\_headers}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_headers()}{get\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a3b9c21a13fbae8da2a7e68219d57bae0} 
+ list\+[tuple\+[str, str]\+]\+ werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a list of headers.\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1___retry_after_a4d2b5221eda5853346a972de85aff02e}{werkzeug.\+exceptions.\+\_\+\+Retry\+After}}, \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_method_not_allowed_a8d72ce7899db66461bf84fc50add77af}{werkzeug.\+exceptions.\+Method\+Not\+Allowed}}, \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_requested_range_not_satisfiable_a981913e6140695c51f1d8a015fad8323}{werkzeug.\+exceptions.\+Requested\+Range\+Not\+Satisfiable}}, and \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_unauthorized_ab4976a68ce8d30c7b96c0fbfd0ac09eb}{werkzeug.\+exceptions.\+Unauthorized}}.
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2aa7c6642fa3651784ee99f03a338d83}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2aa7c6642fa3651784ee99f03a338d83} 
+ Sans\+IOResponse werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{None }]{environ}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ }]{scope}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_request_redirect_a4f9833e7e3c2dcb4baf520f81852126d}{werkzeug.\+routing.\+exceptions.\+Request\+Redirect}}.
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a32ba7c541a3703887bd3ff72cdc7abc0}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a32ba7c541a3703887bd3ff72cdc7abc0} 
+ WSGIResponse werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} WSGIRequest \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily ...}, }\item[{None }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_request_redirect_a4f9833e7e3c2dcb4baf520f81852126d}{werkzeug.\+routing.\+exceptions.\+Request\+Redirect}}.
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a7e88f9694dc5957f5066f40d2660ec00}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!get\_response@{get\_response}}
+\index{get\_response@{get\_response}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{get\_response()}{get\_response()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a7e88f9694dc5957f5066f40d2660ec00} 
+ WSGIResponse \texorpdfstring{$\vert$}{|} Sans\+IOResponse werkzeug.\+exceptions.\+HTTPException.\+get\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} WSGIRequest \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{scope}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a response object.
+
+:param environ: A WSGI environ dict or request object. If given, may be
+    used to customize the response based on the request.
+:param scope: An ASGI scope dict. If given, may be used to customize the
+    response based on the request.
+:return: A WSGI :class:`werkzeug.wrappers.Response` if called without
+    arguments or with ``environ``. A sans-IO
+    :class:`werkzeug.sansio.Response` for ASGI if called with
+    ``scope``.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_request_redirect_a4f9833e7e3c2dcb4baf520f81852126d}{werkzeug.\+routing.\+exceptions.\+Request\+Redirect}}.
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!name@{name}}
+\index{name@{name}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798} 
+ str werkzeug.\+exceptions.\+HTTPException.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The status name.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af3f54aa9d2498b71340e8a3c6da0cc0d}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!code@{code}}
+\index{code@{code}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{code}{code}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af3f54aa9d2498b71340e8a3c6da0cc0d} 
+werkzeug.\+exceptions.\+HTTPException.\+code = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ad983d9b48b30c3e86709b9f3289562f2}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!description@{description}}
+\index{description@{description}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ad983d9b48b30c3e86709b9f3289562f2} 
+str werkzeug.\+exceptions.\+HTTPException.\+description = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_bad_request_key_error_a645d88fb88233289553f74ddb476905f}{werkzeug.\+exceptions.\+Bad\+Request\+Key\+Error}}, and \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_bad_request_key_error_aa21828717269fa21cd8395538955de35}{werkzeug.\+exceptions.\+Bad\+Request\+Key\+Error}}.
+
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6d6a55731e46c7596e3b45923e3ad60b}\index{werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}!response@{response}}
+\index{response@{response}!werkzeug.exceptions.HTTPException@{werkzeug.exceptions.HTTPException}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6d6a55731e46c7596e3b45923e3ad60b} 
+werkzeug.\+exceptions.\+HTTPException.\+response = response}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{werkzeug_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

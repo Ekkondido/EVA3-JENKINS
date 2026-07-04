@@ -1,0 +1,79 @@
+\doxysection{werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher}{}\label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a03f975d47992f5cdfaa8cc788d27e2ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bool merge\+\_\+slashes)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_abeba683b5818d9e0df75febbe3b3e6de}{add}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}} rule)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a36504589574e350a9fbc0d2523f83f4e}{update}} (self)
+\item 
+tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mutable\+Mapping\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_adb1857b573b7ce31daafc7f5a2a00650}{match}} (self, str domain, str path, str method, bool websocket)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a5c3feefddedd0dd0bac427b0e69e381e}{merge\+\_\+slashes}} = merge\+\_\+slashes
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_ae0ace475d66f58772dd09437d7355e05}{\+\_\+root}} = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state}{State}}()
+\end{DoxyCompactItemize}
+
+
+\label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a03f975d47992f5cdfaa8cc788d27e2ad}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a03f975d47992f5cdfaa8cc788d27e2ad} 
+ None werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{merge\+\_\+slashes}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_abeba683b5818d9e0df75febbe3b3e6de}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!add@{add}}
+\index{add@{add}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_abeba683b5818d9e0df75febbe3b3e6de} 
+ None werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}}]{rule}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_adb1857b573b7ce31daafc7f5a2a00650}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!match@{match}}
+\index{match@{match}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_adb1857b573b7ce31daafc7f5a2a00650} 
+ tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mutable\+Mapping\+[str, t.\+Any]\+]\+ werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{domain}{, }\item[{str}]{path}{, }\item[{str}]{method}{, }\item[{bool     }]{websocket}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a36504589574e350a9fbc0d2523f83f4e}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!update@{update}}
+\index{update@{update}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a36504589574e350a9fbc0d2523f83f4e} 
+ None werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+update (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_ae0ace475d66f58772dd09437d7355e05}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!\_root@{\_root}}
+\index{\_root@{\_root}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{\_root}{\_root}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_ae0ace475d66f58772dd09437d7355e05} 
+werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+\_\+root = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1matcher_1_1_state}{State}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a5c3feefddedd0dd0bac427b0e69e381e}\index{werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}!merge\_slashes@{merge\_slashes}}
+\index{merge\_slashes@{merge\_slashes}!werkzeug.routing.matcher.StateMachineMatcher@{werkzeug.routing.matcher.StateMachineMatcher}}
+\doxysubsubsection{\texorpdfstring{merge\_slashes}{merge\_slashes}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1matcher_1_1_state_machine_matcher_a5c3feefddedd0dd0bac427b0e69e381e} 
+werkzeug.\+routing.\+matcher.\+State\+Machine\+Matcher.\+merge\+\_\+slashes = merge\+\_\+slashes}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{matcher_8py}{matcher.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,25 @@
+var classwerkzeug_1_1test_1_1_client =
+[
+    [ "__init__", "classwerkzeug_1_1test_1_1_client.html#a4e61f218c4bbd02ade23f6b396b21496", null ],
+    [ "__repr__", "classwerkzeug_1_1test_1_1_client.html#a8b4f19df0d31108afcb65ae87ade1a62", null ],
+    [ "_add_cookies_to_wsgi", "classwerkzeug_1_1test_1_1_client.html#a4b2a92ba179d821832d634625234eb38", null ],
+    [ "_update_cookies_from_response", "classwerkzeug_1_1test_1_1_client.html#ae4854102cae20d7683a1bae1fc47d3e0", null ],
+    [ "delete", "classwerkzeug_1_1test_1_1_client.html#a3bbc12e021aa5b95fd916dd6ddb98f0a", null ],
+    [ "delete_cookie", "classwerkzeug_1_1test_1_1_client.html#ac3e43dfa436ae2cf29fa0f316e74bc0c", null ],
+    [ "get", "classwerkzeug_1_1test_1_1_client.html#a934d91d875936675794e564a14ee34cc", null ],
+    [ "get_cookie", "classwerkzeug_1_1test_1_1_client.html#acde2153ccc6141e7529bb3f1c0bda286", null ],
+    [ "head", "classwerkzeug_1_1test_1_1_client.html#a97c04dd721276d6ca4c698ab6efb44e7", null ],
+    [ "open", "classwerkzeug_1_1test_1_1_client.html#a449c393cf577d5ef69ce9c9a5be232d5", null ],
+    [ "options", "classwerkzeug_1_1test_1_1_client.html#addfa2c1cb835321793cf0b8ce32e76cb", null ],
+    [ "patch", "classwerkzeug_1_1test_1_1_client.html#ab9c78ee2f778d064a36faeed7f9fdba5", null ],
+    [ "post", "classwerkzeug_1_1test_1_1_client.html#affb48db216771629955b7c46339b3442", null ],
+    [ "put", "classwerkzeug_1_1test_1_1_client.html#a32a1bae184cce0e3d02fcf319c327819", null ],
+    [ "resolve_redirect", "classwerkzeug_1_1test_1_1_client.html#a9ac1e02a3367103928d23ba654a283dd", null ],
+    [ "run_wsgi_app", "classwerkzeug_1_1test_1_1_client.html#a632d7551e3c5a1aa8ca60c4e64fb51a3", null ],
+    [ "set_cookie", "classwerkzeug_1_1test_1_1_client.html#afafc43462a523a900251add71bc57bf0", null ],
+    [ "trace", "classwerkzeug_1_1test_1_1_client.html#af260665b42168add0592a6f6fc599b8b", null ],
+    [ "_cookies", "classwerkzeug_1_1test_1_1_client.html#a3a3426a69384c31ba075bbb488a1434b", null ],
+    [ "allow_subdomain_redirects", "classwerkzeug_1_1test_1_1_client.html#adeeb9bc77510f8037639780e4ff40bba", null ],
+    [ "application", "classwerkzeug_1_1test_1_1_client.html#aa0b596a3d11683a018305b11e32625a0", null ],
+    [ "response_wrapper", "classwerkzeug_1_1test_1_1_client.html#afcd8674c057a49ed94bcb28d85c4fa8f", null ]
+];

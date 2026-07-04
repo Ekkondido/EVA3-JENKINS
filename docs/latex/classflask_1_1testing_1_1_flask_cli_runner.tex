@@ -1,0 +1,113 @@
+\doxysection{flask.\+testing.\+Flask\+Cli\+Runner Class Reference}
+\hypertarget{classflask_1_1testing_1_1_flask_cli_runner}{}\label{classflask_1_1testing_1_1_flask_cli_runner}\index{flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}}
+Inheritance diagram for flask.\+testing.\+Flask\+Cli\+Runner:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1testing_1_1_flask_cli_runner}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_cli_runner_a9a297b733d9f9c7069318dceead43545}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\doxymbox{\hyperlink{classclick_1_1testing_1_1_result}{Result}} \doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_cli_runner_a7ef583a3b6b40083f6aeff2e6de83dcb}{invoke}} (self, t.\+Any cli=None, t.\+Any args=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner}{click.\+testing.\+Cli\+Runner}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_afd9c364aa9dcfd429ad90813ae835aab}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str charset="{}utf-\/8"{}, cabc.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None env=None, bool echo\+\_\+stdin=False, bool catch\+\_\+exceptions=True, \doxymbox{\hyperlink{namespaceclick_1_1testing_ad5860bc5aefb6c2c814bab57662abd90}{Capture\+Mode}} capture="{}sys"{})
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a57f916729a9228746af5d7dd6a2bac9a}{get\+\_\+default\+\_\+prog\+\_\+name}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} cli)
+\item 
+cabc.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_aff4b0a8cee54ca898cc12b31ecd8d0be}{make\+\_\+env}} (self, cabc.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None overrides=None)
+\item 
+cabc.\+Generator\+[tuple\+[io.\+Bytes\+IO, io.\+Bytes\+IO, io.\+Bytes\+IO]\+]\+ \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_af90de8efe5b712ab66880c778c55d2f4}{isolation}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None input=None, cabc.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None env=None, bool color=False)
+\item 
+cabc.\+Generator\+[str]\+ \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a1c5d6b0f075c2ad02be361563b0879fb}{isolated\+\_\+filesystem}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None temp\+\_\+dir=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1testing_1_1_flask_cli_runner_a89be1bafa26844c26dccaf9ad86eae7e}{app}} = app
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner}{click.\+testing.\+Cli\+Runner}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a88e841ca5ecfa6ade07f398969dc2361}{charset}} = charset
+\item 
+\doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a12c3af31f93950279a8d27c3fdce1d6c}{echo\+\_\+stdin}} = echo\+\_\+stdin
+\item 
+\doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a6d0d00d9f0243d5ba8d7bb41e7c625d2}{catch\+\_\+exceptions}} = catch\+\_\+exceptions
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a3777040a045188f80987d84a49806f30}{capture}} = capture
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner}{click.\+testing.\+Cli\+Runner}}}
+\begin{DoxyCompactItemize}
+\item 
+cabc \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a9f16516db848099a443f9c2bd2d72d9f}{env}} .Mapping\+[str, str \texorpdfstring{$\vert$}{|} None]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :class:`~click.testing.CliRunner` for testing a Flask app's
+CLI commands. Typically created using
+:meth:`~flask.Flask.test_cli_runner`. See :ref:`testing-cli`.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1testing_1_1_flask_cli_runner_doc-constructors}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_a9a297b733d9f9c7069318dceead43545}\index{flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_cli_runner_a9a297b733d9f9c7069318dceead43545} 
+ None flask.\+testing.\+Flask\+Cli\+Runner.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1testing_1_1_flask_cli_runner_doc-func-members}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_a7ef583a3b6b40083f6aeff2e6de83dcb}\index{flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}!invoke@{invoke}}
+\index{invoke@{invoke}!flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_cli_runner_a7ef583a3b6b40083f6aeff2e6de83dcb} 
+ \doxymbox{\hyperlink{classclick_1_1testing_1_1_result}{Result}} flask.\+testing.\+Flask\+Cli\+Runner.\+invoke (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any }]{cli}{ = {\ttfamily None}, }\item[{t.\+Any }]{args}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Invokes a CLI command in an isolated environment. See
+:meth:`CliRunner.invoke <click.testing.CliRunner.invoke>` for
+full method documentation. See :ref:`testing-cli` for examples.
+
+If the ``obj`` argument is not given, passes an instance of
+:class:`~flask.cli.ScriptInfo` that knows how to load the Flask
+app being tested.
+
+:param cli: Command object to invoke. Default is the app's
+    :attr:`~flask.app.Flask.cli` group.
+:param args: List of strings to invoke the command with.
+
+:return: a :class:`~click.testing.Result` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1testing_1_1_cli_runner_a25978b114f0bed9a16555fb5c31969e8}{click.\+testing.\+Cli\+Runner}}.
+
+
+
+\label{classflask_1_1testing_1_1_flask_cli_runner_doc-variable-members}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1testing_1_1_flask_cli_runner_a89be1bafa26844c26dccaf9ad86eae7e}\index{flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}!app@{app}}
+\index{app@{app}!flask.testing.FlaskCliRunner@{flask.testing.FlaskCliRunner}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classflask_1_1testing_1_1_flask_cli_runner_a89be1bafa26844c26dccaf9ad86eae7e} 
+flask.\+testing.\+Flask\+Cli\+Runner.\+app = app}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{flask_2testing_8py}{testing.\+py}}\end{DoxyCompactItemize}

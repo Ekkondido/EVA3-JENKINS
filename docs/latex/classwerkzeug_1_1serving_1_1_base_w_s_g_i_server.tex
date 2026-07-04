@@ -1,0 +1,192 @@
+\doxysection{werkzeug.\+serving.\+Base\+WSGIServer Class Reference}
+\hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{}\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+Inheritance diagram for werkzeug.\+serving.\+Base\+WSGIServer:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a6df1d2198baf078423e5aa51c8d43caf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str host, int port, WSGIApplication app, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None handler=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None, int\texorpdfstring{$\vert$}{|}None fd=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e}{log}} (self, str type, str message, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a}{serve\+\_\+forever}} (self, float poll\+\_\+interval=0.\+5)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a34203e3dc51a939755010ec48062c133}{handle\+\_\+error}} (self, t.\+Any request, tuple\+[str, int]\+\texorpdfstring{$\vert$}{|}str client\+\_\+address)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68}{log\+\_\+startup}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}{host}} = host
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}{port}} = port
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7}{app}} = app
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd}{passthrough\+\_\+errors}} = passthrough\+\_\+errors
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}{address\+\_\+family}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}{select\+\_\+address\+\_\+family}}(\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}{host}}, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}{port}})
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8}{socket}} = socket.\+fromfd(fd, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}{address\+\_\+family}}, socket.\+SOCK\+\_\+\+STREAM)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60}{server\+\_\+address}} = self.\+socket.\+getsockname()
+\item 
+ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a2f24435fb0a229bae565a4ccf0b9eb85}{ssl\+\_\+context}} = ssl\+\_\+context
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d}{multithread}} = False
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6}{multiprocess}} = False
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc}{request\+\_\+queue\+\_\+size}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}{LISTEN\+\_\+\+QUEUE}}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072}{allow\+\_\+reuse\+\_\+address}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_abc3867b0c2ccc4df8f58e9290004d795}{\+\_\+server\+\_\+version}} = f"{}\+Werkzeug/\+\{importlib.\+metadata.\+version(\textquotesingle{}\doxymbox{\hyperlink{namespacewerkzeug}{werkzeug}}\textquotesingle{})\}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI server that that handles one request at a time.
+
+Use :func:`make_server` to create a server instance.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-constructors}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a6df1d2198baf078423e5aa51c8d43caf}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a6df1d2198baf078423e5aa51c8d43caf} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{host}{, }\item[{int}]{port}{, }\item[{WSGIApplication}]{app}{, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+ \texorpdfstring{$\vert$}{|} None }]{handler}{ = {\ttfamily None}, }\item[{bool }]{passthrough\+\_\+errors}{ = {\ttfamily False}, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}} \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+context}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{fd}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-func-members}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a34203e3dc51a939755010ec48062c133}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!handle\_error@{handle\_error}}
+\index{handle\_error@{handle\_error}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{handle\_error()}{handle\_error()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a34203e3dc51a939755010ec48062c133} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+handle\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{request}{, }\item[{tuple\+[str, int]\+ \texorpdfstring{$\vert$}{|} str     }]{client\+\_\+address}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!log@{log}}
+\index{log@{log}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+log (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{type}{, }\item[{str}]{message}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!log\_startup@{log\_startup}}
+\index{log\_startup@{log\_startup}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{log\_startup()}{log\_startup()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+log\+\_\+startup (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show information about the address when starting the server.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!serve\_forever@{serve\_forever}}
+\index{serve\_forever@{serve\_forever}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{serve\_forever()}{serve\_forever()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a} 
+ None werkzeug.\+serving.\+Base\+WSGIServer.\+serve\+\_\+forever (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float }]{poll\+\_\+interval}{ = {\ttfamily 0.5}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_abc3867b0c2ccc4df8f58e9290004d795}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!\_server\_version@{\_server\_version}}
+\index{\_server\_version@{\_server\_version}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{\_server\_version}{\_server\_version}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_abc3867b0c2ccc4df8f58e9290004d795} 
+str werkzeug.\+serving.\+Base\+WSGIServer.\+\_\+server\+\_\+version = f"{}\+Werkzeug/\+\{importlib.\+metadata.\+version(\textquotesingle{}\doxymbox{\hyperlink{namespacewerkzeug}{werkzeug}}\textquotesingle{})\}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!address\_family@{address\_family}}
+\index{address\_family@{address\_family}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{address\_family}{address\_family}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+address\+\_\+family = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}{select\+\_\+address\+\_\+family}}(\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}{host}}, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}{port}})}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!allow\_reuse\_address@{allow\_reuse\_address}}
+\index{allow\_reuse\_address@{allow\_reuse\_address}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{allow\_reuse\_address}{allow\_reuse\_address}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072} 
+bool werkzeug.\+serving.\+Base\+WSGIServer.\+allow\+\_\+reuse\+\_\+address = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!app@{app}}
+\index{app@{app}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+app = app}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!host@{host}}
+\index{host@{host}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{host}{host}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1} 
+str werkzeug.\+serving.\+Base\+WSGIServer.\+host = host}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!multiprocess@{multiprocess}}
+\index{multiprocess@{multiprocess}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{multiprocess}{multiprocess}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6} 
+bool werkzeug.\+serving.\+Base\+WSGIServer.\+multiprocess = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!multithread@{multithread}}
+\index{multithread@{multithread}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{multithread}{multithread}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d} 
+bool werkzeug.\+serving.\+Base\+WSGIServer.\+multithread = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!passthrough\_errors@{passthrough\_errors}}
+\index{passthrough\_errors@{passthrough\_errors}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{passthrough\_errors}{passthrough\_errors}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+passthrough\+\_\+errors = passthrough\+\_\+errors}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!port@{port}}
+\index{port@{port}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{port}{port}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+port = port}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!request\_queue\_size@{request\_queue\_size}}
+\index{request\_queue\_size@{request\_queue\_size}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{request\_queue\_size}{request\_queue\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+request\+\_\+queue\+\_\+size = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}{LISTEN\+\_\+\+QUEUE}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!server\_address@{server\_address}}
+\index{server\_address@{server\_address}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{server\_address}{server\_address}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+server\+\_\+address = self.\+socket.\+getsockname()}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!socket@{socket}}
+\index{socket@{socket}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{socket}{socket}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8} 
+werkzeug.\+serving.\+Base\+WSGIServer.\+socket = socket.\+fromfd(fd, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}{address\+\_\+family}}, socket.\+SOCK\+\_\+\+STREAM)}
+
+\Hypertarget{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a2f24435fb0a229bae565a4ccf0b9eb85}\index{werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}!ssl\_context@{ssl\_context}}
+\index{ssl\_context@{ssl\_context}!werkzeug.serving.BaseWSGIServer@{werkzeug.serving.BaseWSGIServer}}
+\doxysubsubsection{\texorpdfstring{ssl\_context}{ssl\_context}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a2f24435fb0a229bae565a4ccf0b9eb85} 
+ssl.\+SSLContext \texorpdfstring{$\vert$}{|} None werkzeug.\+serving.\+Base\+WSGIServer.\+ssl\+\_\+context = ssl\+\_\+context}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{serving_8py}{serving.\+py}}\end{DoxyCompactItemize}

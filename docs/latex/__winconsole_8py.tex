@@ -1,0 +1,94 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+click/\+\+\_\+winconsole.py File Reference}
+\hypertarget{__winconsole_8py}{}\label{__winconsole_8py}\index{venv/Lib/site-\/packages/click/\_winconsole.py@{venv/Lib/site-\/packages/click/\_winconsole.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__winconsole_1_1_py__buffer}{click.\+\_\+winconsole.\+Py\+\_\+buffer}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__winconsole_1_1___windows_console_raw_i_o_base}{click.\+\_\+winconsole.\+\_\+\+Windows\+Console\+Raw\+IOBase}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__winconsole_1_1___windows_console_reader}{click.\+\_\+winconsole.\+\_\+\+Windows\+Console\+Reader}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__winconsole_1_1___windows_console_writer}{click.\+\_\+winconsole.\+\_\+\+Windows\+Console\+Writer}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__winconsole_1_1_console_stream}{click.\+\_\+winconsole.\+Console\+Stream}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick}{click}}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick_1_1__winconsole}{click.\+\_\+winconsole}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Array\+[c\+\_\+char]\+ \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a5cb0a00bf709a0176d835d78c9923210}{click.\+\_\+winconsole.\+get\+\_\+buffer}} (Buffer obj, bool writable=False)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ac51908c939b0987a62375fb73641d287}{click.\+\_\+winconsole.\+\_\+get\+\_\+text\+\_\+stdin}} (t.\+Binary\+IO buffer\+\_\+stream)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ae51c9165b0aefe6c98dd62ff23fbafba}{click.\+\_\+winconsole.\+\_\+get\+\_\+text\+\_\+stdout}} (t.\+Binary\+IO buffer\+\_\+stream)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a95769ae60bd3654f6dd081f5377220d9}{click.\+\_\+winconsole.\+\_\+get\+\_\+text\+\_\+stderr}} (t.\+Binary\+IO buffer\+\_\+stream)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a7f2b20ec942b2332b8c79223f933fb30}{click.\+\_\+winconsole.\+\_\+is\+\_\+console}} (t.\+Text\+IO f)
+\item 
+t.\+Text\+IO\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ab19e94296fc9f5898645acd0e422fb1c}{click.\+\_\+winconsole.\+\_\+get\+\_\+windows\+\_\+console\+\_\+stream}} (t.\+Text\+IO f, str\texorpdfstring{$\vert$}{|}None encoding, str\texorpdfstring{$\vert$}{|}None errors)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a70b0eecc63b6fd94d525450740b77582}{click.\+\_\+winconsole.\+c\+\_\+ssize\+\_\+p}} = POINTER(c\+\_\+ssize\+\_\+t)
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_af165f3aa5f37ca83a4ba3b5caef8486e}{click.\+\_\+winconsole.\+kernel32}} = windll.\+kernel32
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a6e215d1203d1a93a25d5d9f88b1f9812}{click.\+\_\+winconsole.\+Get\+Std\+Handle}} = kernel32.\+Get\+Std\+Handle
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_aaeef18d392c6264aec738a94577b6a7e}{click.\+\_\+winconsole.\+Read\+ConsoleW}} = kernel32.\+Read\+ConsoleW
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ac1a094c2d8a477bdfcb62c0ae08e9211}{click.\+\_\+winconsole.\+Write\+ConsoleW}} = kernel32.\+Write\+ConsoleW
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a3ebdd446b27fb4922df75b8b9474a9fb}{click.\+\_\+winconsole.\+Get\+Console\+Mode}} = kernel32.\+Get\+Console\+Mode
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ac19c9e2f9077339c9cac2c6951878351}{click.\+\_\+winconsole.\+Get\+Last\+Error}} = kernel32.\+Get\+Last\+Error
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a230e22c7f96649f3846bd494873e3fd1}{click.\+\_\+winconsole.\+Get\+Command\+LineW}} = WINFUNCTYPE(LPWSTR)(("{}Get\+Command\+Line\+W"{}, windll.\+kernel32))
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_aa26247b485f5468b22edabe37ea21b0a}{click.\+\_\+winconsole.\+Command\+Line\+To\+ArgvW}}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_aa609361eada3539756149a26e2a0b2b1}{click.\+\_\+winconsole.\+Local\+Free}} = WINFUNCTYPE(c\+\_\+void\+\_\+p, c\+\_\+void\+\_\+p)(("{}Local\+Free"{}, windll.\+kernel32))
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_acac7c3ad664a6ca4486a24059698a0a6}{click.\+\_\+winconsole.\+STDIN\+\_\+\+HANDLE}} = \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a6e215d1203d1a93a25d5d9f88b1f9812}{Get\+Std\+Handle}}(-\/10)
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a287bdec4be313127853c3981d1f41519}{click.\+\_\+winconsole.\+STDOUT\+\_\+\+HANDLE}} = \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a6e215d1203d1a93a25d5d9f88b1f9812}{Get\+Std\+Handle}}(-\/11)
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a94fd6865603e39a3bb0cb8c92f35698c}{click.\+\_\+winconsole.\+STDERR\+\_\+\+HANDLE}} = \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a6e215d1203d1a93a25d5d9f88b1f9812}{Get\+Std\+Handle}}(-\/12)
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a75406d5ab0a78fd5f0a3dbff747debb6}{click.\+\_\+winconsole.\+Py\+BUF\+\_\+\+SIMPLE}} = 0
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_aafe2b1eb1ffaf8158c380f6de9f4d80c}{click.\+\_\+winconsole.\+Py\+BUF\+\_\+\+WRITABLE}} = 1
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a2c7c3c594d75a9b2cd57f98732936582}{click.\+\_\+winconsole.\+ERROR\+\_\+\+SUCCESS}} = 0
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a3a4813ccc1e2dc1753752f4bb60a7a25}{click.\+\_\+winconsole.\+ERROR\+\_\+\+NOT\+\_\+\+ENOUGH\+\_\+\+MEMORY}} = 8
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a2f454b8bdb40ed170fc9e4152ab7248a}{click.\+\_\+winconsole.\+ERROR\+\_\+\+OPERATION\+\_\+\+ABORTED}} = 995
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a741ed0c1bd4f1de164e2ae9c368877e7}{click.\+\_\+winconsole.\+STDIN\+\_\+\+FILENO}} = 0
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a82531cb812b19639dfd8d0131bfc8eaa}{click.\+\_\+winconsole.\+STDOUT\+\_\+\+FILENO}} = 1
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ac7fa8868be851323df18412f02c514fd}{click.\+\_\+winconsole.\+STDERR\+\_\+\+FILENO}} = 2
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_acad583b8826d1d297ce7a278d4dd7908}{click.\+\_\+winconsole.\+EOF}} = b"{}\textbackslash{}x1a"{}
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_afb1319d2b2970f001d0ede164fa9d94d}{click.\+\_\+winconsole.\+MAX\+\_\+\+BYTES\+\_\+\+WRITTEN}} = 32767
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a16404a4d00155c771811142851703c7c}{click.\+\_\+winconsole.\+get\+\_\+buffer}} = None
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ab21dda40c13d8cc5429f8f9667d3f2a4}{click.\+\_\+winconsole.\+Py\+Object\+\_\+\+Get\+Buffer}}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__winconsole_a6e960250ebda8f3d3ee54af43ee41f5a}{click.\+\_\+winconsole.\+Py\+Buffer\+\_\+\+Release}} = pythonapi.\+Py\+Buffer\+\_\+\+Release
+\item 
+dict \doxymbox{\hyperlink{namespaceclick_1_1__winconsole_ac953917d02385b4544c756008c964dde}{click.\+\_\+winconsole.\+\_\+stream\+\_\+factories}}
+\end{DoxyCompactItemize}

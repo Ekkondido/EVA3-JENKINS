@@ -1,0 +1,50 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Path\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_path_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_path_converter}\index{werkzeug.routing.converters.PathConverter@{werkzeug.routing.converters.PathConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Path\+Converter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_path_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ae811c0804f922bfa94faca0ce08c8ba9}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a60de83dd55661e1fb19a8fe7715b7b38}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_af426e3846cce79c58b47883f68e340e5}{to\+\_\+python}} (self, str value)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a9546ee9bcb6581892af49dc593f34189}{to\+\_\+url}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ac3165f6aed5de185cfb0a376141f58ae}{map}} = map
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a58c08951318a393de7287d301a711f7a}{regex}} = "{}\+[\texorpdfstring{$^\wedge$}{\string^}/\+]\++"{}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a3964efeaab67b9d38bb6df51ade9f0cb}{weight}} = 100
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_aa07d39368f07ef0d47bcf8576e05122d}{part\+\_\+isolating}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Like the default :class:`UnicodeConverter`, but it also matches
+slashes.  This is useful for wikis and similar applications::
+
+    Rule('/<path:wikipage>')
+    Rule('/<path:wikipage>/edit')
+
+:param map: the :class:`Map`.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{converters_8py}{converters.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,1038 @@
+\doxysection{app.\+App Class Reference}
+\hypertarget{classapp_1_1_app}{}\label{classapp_1_1_app}\index{app.App@{app.App}}
+Inheritance diagram for app.\+App:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classapp_1_1_app}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_adaf35b550798a622bea1c02c3e6cf00e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str import\+\_\+name, str\texorpdfstring{$\vert$}{|}None static\+\_\+url\+\_\+path=None, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None static\+\_\+folder="{}static"{}, str\texorpdfstring{$\vert$}{|}None static\+\_\+host=None, bool host\+\_\+matching=False, bool subdomain\+\_\+matching=False, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None template\+\_\+folder="{}templates"{}, str\texorpdfstring{$\vert$}{|}None instance\+\_\+path=None, bool instance\+\_\+relative\+\_\+config=False, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None)
+\item 
+str \doxymbox{\hyperlink{classapp_1_1_app_a34dc71054b4729efdd119770a1e1b5a9}{name}} (self)
+\item 
+logging.\+Logger \doxymbox{\hyperlink{classapp_1_1_app_a01035d7c6a9bc7efd5246f69febfd534}{logger}} (self)
+\item 
+Environment \doxymbox{\hyperlink{classapp_1_1_app_a25925fc84319dd210b97d28e162ef328}{jinja\+\_\+env}} (self)
+\item 
+Environment \doxymbox{\hyperlink{classapp_1_1_app_a2f67fc1fe0f8a40048f84e2d833c6d01}{create\+\_\+jinja\+\_\+environment}} (self)
+\item 
+Config \doxymbox{\hyperlink{classapp_1_1_app_a06b952cce6870e96e654fe9f28d4622d}{make\+\_\+config}} (self, bool instance\+\_\+relative=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} \doxymbox{\hyperlink{classapp_1_1_app_a0ab4921b011c7c252a9de276ed1fec39}{make\+\_\+aborter}} (self)
+\item 
+str \doxymbox{\hyperlink{classapp_1_1_app_a592a1320999b1e74028a4f04b474abc8}{auto\+\_\+find\+\_\+instance\+\_\+path}} (self)
+\item 
+Dispatching\+Jinja\+Loader \doxymbox{\hyperlink{classapp_1_1_app_aea1c80125e7f08f5566aa02b4024ef0e}{create\+\_\+global\+\_\+jinja\+\_\+loader}} (self)
+\item 
+bool \doxymbox{\hyperlink{classapp_1_1_app_a2ea34cfa133dcccdfc125d406e568ec5}{select\+\_\+jinja\+\_\+autoescape}} (self, str\texorpdfstring{$\vert$}{|}None filename)
+\item 
+bool \doxymbox{\hyperlink{classapp_1_1_app_a21f8c976e19cc0227e6b1e98890c50d6}{debug}} (self)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_ae0e57fb399610435ea5aed5f577fff6a}{debug}} (self, bool value)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_a1989fa75adae81f3f1ae244e4af51caa}{register\+\_\+blueprint}} (self, \doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}} blueprint, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Values\+View\+[\doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}}]\+ \doxymbox{\hyperlink{classapp_1_1_app_a4ce5735a38e184ff060495984e55471d}{iter\+\_\+blueprints}} (self)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_a748aee617c59ccebc15080d94684fb1b}{add\+\_\+url\+\_\+rule}} (self, str rule, str\texorpdfstring{$\vert$}{|}None endpoint=None, ft.\+Route\+Callable\texorpdfstring{$\vert$}{|}None view\+\_\+func=None, bool\texorpdfstring{$\vert$}{|}None provide\+\_\+automatic\+\_\+options=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a69fcd0ceef3c2eabc5fd3b07666d891c}{T\+\_\+template\+\_\+filter}}]\+, \doxymbox{\hyperlink{namespaceapp_a69fcd0ceef3c2eabc5fd3b07666d891c}{T\+\_\+template\+\_\+filter}}]\+ \doxymbox{\hyperlink{classapp_1_1_app_afede98e9add80c508874484b85991c8e}{template\+\_\+filter}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_a971c844e1a488b7940becac6b7d8cbb6}{add\+\_\+template\+\_\+filter}} (self, ft.\+Template\+Filter\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a4aec4c9ee1ba83a1fffc22ef7ed8e19c}{T\+\_\+template\+\_\+test}}]\+, \doxymbox{\hyperlink{namespaceapp_a4aec4c9ee1ba83a1fffc22ef7ed8e19c}{T\+\_\+template\+\_\+test}}]\+ \doxymbox{\hyperlink{classapp_1_1_app_ab92f926be1e115a34afcc184b77e5613}{template\+\_\+test}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_a99069227a44608a1cbc7832c639168e1}{add\+\_\+template\+\_\+test}} (self, ft.\+Template\+Test\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a68041338693fb1d07fb1be65f03ed1c1}{T\+\_\+template\+\_\+global}}]\+, \doxymbox{\hyperlink{namespaceapp_a68041338693fb1d07fb1be65f03ed1c1}{T\+\_\+template\+\_\+global}}]\+ \doxymbox{\hyperlink{classapp_1_1_app_afc3c373de47c75b7ff15f33257b2948b}{template\+\_\+global}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_a514129e4b7bda91401b353e61e97a44c}{add\+\_\+template\+\_\+global}} (self, ft.\+Template\+Global\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+\doxymbox{\hyperlink{namespaceapp_ad871b37e5e47db4953b9b7470acad784}{T\+\_\+teardown}} \doxymbox{\hyperlink{classapp_1_1_app_ac59c666a391dca8f33fea44e4488d95c}{teardown\+\_\+appcontext}} (self, \doxymbox{\hyperlink{namespaceapp_ad871b37e5e47db4953b9b7470acad784}{T\+\_\+teardown}} f)
+\item 
+\doxymbox{\hyperlink{namespaceapp_acbc282d69aa16190b790321192f935d6}{T\+\_\+shell\+\_\+context\+\_\+processor}} \doxymbox{\hyperlink{classapp_1_1_app_acc133f3168d086d8a0cefca3b3b3a03e}{shell\+\_\+context\+\_\+processor}} (self, \doxymbox{\hyperlink{namespaceapp_acbc282d69aa16190b790321192f935d6}{T\+\_\+shell\+\_\+context\+\_\+processor}} f)
+\item 
+bool \doxymbox{\hyperlink{classapp_1_1_app_a81fc16ab995252b9dc81aef1cea8faf6}{trap\+\_\+http\+\_\+exception}} (self, Exception e)
+\item 
+bool \doxymbox{\hyperlink{classapp_1_1_app_a317fd63f2f58f08b971a9a416d6f835c}{should\+\_\+ignore\+\_\+error}} (self, Base\+Exception\texorpdfstring{$\vert$}{|}None error)
+\item 
+Base\+Response \doxymbox{\hyperlink{classapp_1_1_app_afa9d7eba6a7a6631c0cc0a16241db757}{redirect}} (self, str location, int code=302)
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_af0dcd16d1088ef7f960c9354ccb2cbc7}{inject\+\_\+url\+\_\+defaults}} (self, str endpoint, dict\+[str, t.\+Any]\+ values)
+\item 
+str \doxymbox{\hyperlink{classapp_1_1_app_a99f1c4ca0c0ef1cbcffe0e989646484f}{handle\+\_\+url\+\_\+build\+\_\+error}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_build_error}{Build\+Error}} error, str endpoint, dict\+[str, t.\+Any]\+ values)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a9c200c8c94eadd5837d8d3dcbe2552cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str import\+\_\+name, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None static\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None static\+\_\+url\+\_\+path=None, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None template\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None)
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a0a7fc956d2e523362515e2fe792c63ac}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a01aea2fc380a523604a4d83d9bf8e36f}{static\+\_\+folder}} (self)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab2146e5d44420275f30e45fb53b6b1b8}{static\+\_\+folder}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6a1f33ff69342d44c1af6c703d530151}{has\+\_\+static\+\_\+folder}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_abe2a104857946e152a5f1a2545550ab7}{static\+\_\+url\+\_\+path}} (self)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a393b13a41f0dc397679507372b610d02}{static\+\_\+url\+\_\+path}} (self, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a1f7f49a57728e69eeae97b04c1dbcdde}{jinja\+\_\+loader}} (self)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_acadc7995410fa193945e56438d5e2b2e}{get}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a325b2a672738437bc5aa7300465f5705}{post}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a607ebfcb1bdb03b42a5dde85bc8d69e3}{put}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ad8b2355c0441251f9e4aa56fa424efba}{delete}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6f6ed03933024b22a2397e9755ad0115}{patch}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a285cc0d854951561496089ebcd250052}{route}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a33185677e2d2573626fb3e3b7f114e55}{endpoint}} (self, str endpoint)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}{T\+\_\+before\+\_\+request}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ad1546f508345e29b290998f9a465c6fe}{before\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}{T\+\_\+before\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}{T\+\_\+after\+\_\+request}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a24ed4e468a0099bf681ba5f1058c6bee}{after\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}{T\+\_\+after\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}{T\+\_\+teardown}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a7c74a8687780d21df2ecdb780afc8b25}{teardown\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}{T\+\_\+teardown}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}{T\+\_\+template\+\_\+context\+\_\+processor}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a3f6372e98460286444443a2e9d272396}{context\+\_\+processor}} (self, \doxymbox{\hyperlink{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}{T\+\_\+template\+\_\+context\+\_\+processor}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a677110782eab2387f5dae4a1c40251af}{url\+\_\+value\+\_\+preprocessor}} (self, \doxymbox{\hyperlink{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}{T\+\_\+url\+\_\+defaults}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_afc7a17e1a930ad8763c7f05038c76dd3}{url\+\_\+defaults}} (self, \doxymbox{\hyperlink{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}{T\+\_\+url\+\_\+defaults}} f)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}{T\+\_\+error\+\_\+handler}}]\+, \doxymbox{\hyperlink{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}{T\+\_\+error\+\_\+handler}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a9ebf0e8ece66d2cfdec489bed6d415ca}{errorhandler}} (self, type\+[Exception]\+\texorpdfstring{$\vert$}{|}int code\+\_\+or\+\_\+exception)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_adfb04cc856af75d7d4d3f6ee9f585cd7}{register\+\_\+error\+\_\+handler}} (self, type\+[Exception]\+\texorpdfstring{$\vert$}{|}int code\+\_\+or\+\_\+exception, ft.\+Error\+Handler\+Callable f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_ad18bd548a3eb768349fd63c732f2b4ad}{instance\+\_\+path}} = instance\+\_\+path
+\item 
+Config \doxymbox{\hyperlink{classapp_1_1_app_aa87aae7b84eb99d10cb26d50f9cffa6f}{config}} = self.\+make\+\_\+config(instance\+\_\+relative\+\_\+config)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} \doxymbox{\hyperlink{classapp_1_1_app_af046cfd85eb9da90c467a2074db73a9e}{aborter}} = self.\+make\+\_\+aborter()
+\item 
+JSONProvider \doxymbox{\hyperlink{classapp_1_1_app_a8cc1cb39f435fc9a7e257de7dc127b70}{json}} = self.\+json\+\_\+provider\+\_\+class(self)
+\item 
+list\+[ \doxymbox{\hyperlink{classapp_1_1_app_ab9927426b499d638215511fc52fe57ae}{url\+\_\+build\+\_\+error\+\_\+handlers}}
+\item 
+list \doxymbox{\hyperlink{classapp_1_1_app_a5eda0b16ee345933446ff200a4a4af07}{teardown\+\_\+appcontext\+\_\+funcs}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classapp_1_1_app_aef97528b059a02ea232e4f3b34c9dfae}{shell\+\_\+context\+\_\+processors}} = \+[$\,$]\+
+\item 
+dict \doxymbox{\hyperlink{classapp_1_1_app_a7958448d9111f647c19b422ea5cb5856}{blueprints}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classapp_1_1_app_a30be95ad91d30f5ded86a2fad85f71f9}{extensions}} = \{\}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a481a9ca251dbc9576ac7643fed3774be}{url\+\_\+map}} = self.\+url\+\_\+map\+\_\+class(host\+\_\+matching=host\+\_\+matching)
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a4b1ec843288af78b29bbe9a62e5cb6a7}{subdomain\+\_\+matching}} = subdomain\+\_\+matching
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a70fe9646e4a11501457bd2b0183a567c}{import\+\_\+name}} = import\+\_\+name
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac4851ea3bf9edad7f25ab94b882025b5}{static\+\_\+folder}} = static\+\_\+folder
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab6c6ea6ac4dfdfce5d76097c737fbbe9}{static\+\_\+url\+\_\+path}} = static\+\_\+url\+\_\+path
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a0122c59050445d73bb8a6c2e8fd39d46}{template\+\_\+folder}} = template\+\_\+folder
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac408d68b2facaca0f88b8235269fb152}{root\+\_\+path}} = root\+\_\+path
+\item 
+dict \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab2504480ecc9f6a787b7f44f20444f97}{view\+\_\+functions}} = \{\}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac4632909f676b9bc155e10f373ad5426}{error\+\_\+handler\+\_\+spec}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a2c7ae86de91f588e84dbdf7b279c6011}{before\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab877dcc83d762dc78baa055ef513afed}{after\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a43497c1918d6055cbecaac1c5c52fade}{teardown\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab22d56c8bd060739981757471595b2a6}{template\+\_\+context\+\_\+processors}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a22595a42a693976065a1b1cbc1c2c430}{url\+\_\+value\+\_\+preprocessors}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6d5bb64d21df767a80118c1557c56c61}{url\+\_\+default\+\_\+functions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_ae554c0bd9702fa20e83e6603cd203609}{aborter\+\_\+class}} = \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a7bfc7d21deddaa1b10ff8c0419407d19}{jinja\+\_\+environment}} = Environment
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_ae08104d47108ccb061406b45a4633e1d}{app\+\_\+ctx\+\_\+globals\+\_\+class}} = \+\_\+\+App\+Ctx\+Globals
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a1ac5f7a0d9f0105a2e5c22cd685d3cbe}{config\+\_\+class}} = Config
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a320253ead51e49bd80890d3b9edc1652}{testing}} = Config\+Attribute\+[bool]\+("{}TESTING"{})
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a278481a163ae1243a4a28eb10ca739b7}{secret\+\_\+key}} = Config\+Attribute\+[t.\+Union\+[str, bytes, None]\+]\+("{}SECRET\+\_\+\+KEY"{})
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_ac72fddf53f55258d9845e76e8a79a68b}{permanent\+\_\+session\+\_\+lifetime}}
+\item 
+type \doxymbox{\hyperlink{classapp_1_1_app_ab1fd491fa4a8fed2b99906591e74d122}{json\+\_\+provider\+\_\+class}} = Default\+JSONProvider
+\item 
+dict \doxymbox{\hyperlink{classapp_1_1_app_aa02b659301605041cfa9232d67265a65}{jinja\+\_\+options}} = \{\}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_a1a94b96c28380dd78eea771cf07d5a6e}{url\+\_\+rule\+\_\+class}} = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}
+\item 
+\doxymbox{\hyperlink{classapp_1_1_app_acf0b76d1fe31f6b9fc72e388856136f9}{url\+\_\+map\+\_\+class}} = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}
+\item 
+type \doxymbox{\hyperlink{classapp_1_1_app_a813d5f3343a8f172f53ed1796f018f8e}{test\+\_\+client\+\_\+class}} = None
+\item 
+type \doxymbox{\hyperlink{classapp_1_1_app_a91c48ee8aca3da75a273676554468f8e}{test\+\_\+cli\+\_\+runner\+\_\+class}} = None
+\item 
+dict \doxymbox{\hyperlink{classapp_1_1_app_a41b758ebd03517fdbbdba2c28f13244c}{default\+\_\+config}} \+[str, t.\+Any]\+
+\item 
+type \doxymbox{\hyperlink{classapp_1_1_app_acccdc9606b22ce930f9826477609009c}{response\+\_\+class}} \+[\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}}]\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classapp_1_1_app_aae31e9a1b541e43d56854baa878e8f28}{\+\_\+check\+\_\+setup\+\_\+finished}} (self, str f\+\_\+name)
+\item 
+ft.\+Error\+Handler\+Callable\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classapp_1_1_app_a659420696f8f91a5a084c68d53e4be5e}{\+\_\+find\+\_\+error\+\_\+handler}} (self, Exception e, list\+[str]\+ blueprints)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_affe0235bae4b947eece9f7d9c9e92532}{\+\_\+method\+\_\+route}} (self, str method, str rule, dict\+[str, t.\+Any]\+ options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classapp_1_1_app_ae0730333e945cf3a8595c60ec1a8311e}{\+\_\+got\+\_\+first\+\_\+request}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[type\+[Exception]\+, int\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a7be58c24cc765c952fe0290635797da1}{\+\_\+get\+\_\+exc\+\_\+class\+\_\+and\+\_\+code}} (type\+[Exception]\+\texorpdfstring{$\vert$}{|}int exc\+\_\+class\+\_\+or\+\_\+code)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_aed73996facad3e45651c89bd2faca075}{\+\_\+static\+\_\+folder}} = None
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_aac7655eb16238a01825f3360339769c1}{\+\_\+static\+\_\+url\+\_\+path}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The flask object implements a WSGI application and acts as the central
+object.  It is passed the name of the module or package of the
+application.  Once it is created it will act as a central registry for
+the view functions, the URL rules, template configuration and much more.
+
+The name of the package is used to resolve resources from inside the
+package or the folder the module is contained in depending on if the
+package parameter resolves to an actual python package (a folder with
+an :file:`__init__.py` file inside) or a standard module (just a ``.py`` file).
+
+For more information about resource loading, see :func:`open_resource`.
+
+Usually you create a :class:`Flask` instance in your main module or
+in the :file:`__init__.py` file of your package like this::
+
+    from flask import Flask
+    app = Flask(__name__)
+
+.. admonition:: About the First Parameter
+
+    The idea of the first parameter is to give Flask an idea of what
+    belongs to your application.  This name is used to find resources
+    on the filesystem, can be used by extensions to improve debugging
+    information and a lot more.
+
+    So it's important what you provide there.  If you are using a single
+    module, `__name__` is always the correct value.  If you however are
+    using a package, it's usually recommended to hardcode the name of
+    your package there.
+
+    For example if your application is defined in :file:`yourapplication/app.py`
+    you should create it with one of the two versions below::
+
+        app = Flask('yourapplication')
+        app = Flask(__name__.split('.')[0])
+
+    Why is that?  The application will work even with `__name__`, thanks
+    to how resources are looked up.  However it will make debugging more
+    painful.  Certain extensions can make assumptions based on the
+    import name of your application.  For example the Flask-SQLAlchemy
+    extension will look for the code in your application that triggered
+    an SQL query in debug mode.  If the import name is not properly set
+    up, that debugging information is lost.  (For example it would only
+    pick up SQL queries in `yourapplication.app` and not
+    `yourapplication.views.frontend`)
+
+.. versionadded:: 0.7
+   The `static_url_path`, `static_folder`, and `template_folder`
+   parameters were added.
+
+.. versionadded:: 0.8
+   The `instance_path` and `instance_relative_config` parameters were
+   added.
+
+.. versionadded:: 0.11
+   The `root_path` parameter was added.
+
+.. versionadded:: 1.0
+   The ``host_matching`` and ``static_host`` parameters were added.
+
+.. versionadded:: 1.0
+   The ``subdomain_matching`` parameter was added. Subdomain
+   matching needs to be enabled manually now. Setting
+   :data:`SERVER_NAME` does not implicitly enable it.
+
+:param import_name: the name of the application package
+:param static_url_path: can be used to specify a different path for the
+                        static files on the web.  Defaults to the name
+                        of the `static_folder` folder.
+:param static_folder: The folder with static files that is served at
+    ``static_url_path``. Relative to the application ``root_path``
+    or an absolute path. Defaults to ``'static'``.
+:param static_host: the host to use when adding the static route.
+    Defaults to None. Required when using ``host_matching=True``
+    with a ``static_folder`` configured.
+:param host_matching: set ``url_map.host_matching`` attribute.
+    Defaults to False.
+:param subdomain_matching: consider the subdomain relative to
+    :data:`SERVER_NAME` when matching routes. Defaults to False.
+:param template_folder: the folder that contains the templates that should
+                        be used by the application.  Defaults to
+                        ``'templates'`` folder in the root path of the
+                        application.
+:param instance_path: An alternative instance path for the application.
+                      By default the folder ``'instance'`` next to the
+                      package or module is assumed to be the instance
+                      path.
+:param instance_relative_config: if set to ``True`` relative filenames
+                                 for loading the config are assumed to
+                                 be relative to the instance path instead
+                                 of the application root.
+:param root_path: The path to the root of the application files.
+    This should only be set manually when it can't be detected
+    automatically, such as for namespace packages.
+\end{DoxyVerb}
+ 
+
+\label{classapp_1_1_app_doc-constructors}
+\Hypertarget{classapp_1_1_app_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classapp_1_1_app_adaf35b550798a622bea1c02c3e6cf00e}\index{app.App@{app.App}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_adaf35b550798a622bea1c02c3e6cf00e} 
+ None app.\+App.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{import\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{static\+\_\+url\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{static\+\_\+folder}{ = {\ttfamily "{}static"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{static\+\_\+host}{ = {\ttfamily None}, }\item[{bool }]{host\+\_\+matching}{ = {\ttfamily False}, }\item[{bool }]{subdomain\+\_\+matching}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{template\+\_\+folder}{ = {\ttfamily "{}templates"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{instance\+\_\+path}{ = {\ttfamily None}, }\item[{bool }]{instance\+\_\+relative\+\_\+config}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{root\+\_\+path}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classapp_1_1_app_doc-func-members}
+\Hypertarget{classapp_1_1_app_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classapp_1_1_app_aae31e9a1b541e43d56854baa878e8f28}\index{app.App@{app.App}!\_check\_setup\_finished@{\_check\_setup\_finished}}
+\index{\_check\_setup\_finished@{\_check\_setup\_finished}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{\_check\_setup\_finished()}{\_check\_setup\_finished()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_aae31e9a1b541e43d56854baa878e8f28} 
+ None app.\+App.\+\_\+check\+\_\+setup\+\_\+finished (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{f\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a742d43785a00bf2ffcafc085d1aa60f2}{scaffold.\+Scaffold}}.
+
+\Hypertarget{classapp_1_1_app_a659420696f8f91a5a084c68d53e4be5e}\index{app.App@{app.App}!\_find\_error\_handler@{\_find\_error\_handler}}
+\index{\_find\_error\_handler@{\_find\_error\_handler}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{\_find\_error\_handler()}{\_find\_error\_handler()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a659420696f8f91a5a084c68d53e4be5e} 
+ ft.\+Error\+Handler\+Callable \texorpdfstring{$\vert$}{|} None app.\+App.\+\_\+find\+\_\+error\+\_\+handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception}]{e}{, }\item[{list\+[str]\+     }]{blueprints}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a registered error handler for an exception in this order:
+blueprint handler for a specific code, app handler for a specific code,
+blueprint handler for an exception class, app handler for an exception
+class, or ``None`` if a suitable handler is not found.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a971c844e1a488b7940becac6b7d8cbb6}\index{app.App@{app.App}!add\_template\_filter@{add\_template\_filter}}
+\index{add\_template\_filter@{add\_template\_filter}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{add\_template\_filter()}{add\_template\_filter()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a971c844e1a488b7940becac6b7d8cbb6} 
+ None app.\+App.\+add\+\_\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Filter\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template filter.  Works exactly like the
+:meth:`template_filter` decorator.
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a514129e4b7bda91401b353e61e97a44c}\index{app.App@{app.App}!add\_template\_global@{add\_template\_global}}
+\index{add\_template\_global@{add\_template\_global}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{add\_template\_global()}{add\_template\_global()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a514129e4b7bda91401b353e61e97a44c} 
+ None app.\+App.\+add\+\_\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Global\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template global function. Works exactly like the
+:meth:`template_global` decorator.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global function, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a99069227a44608a1cbc7832c639168e1}\index{app.App@{app.App}!add\_template\_test@{add\_template\_test}}
+\index{add\_template\_test@{add\_template\_test}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{add\_template\_test()}{add\_template\_test()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a99069227a44608a1cbc7832c639168e1} 
+ None app.\+App.\+add\+\_\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Test\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a custom template test.  Works exactly like the
+:meth:`template_test` decorator.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a748aee617c59ccebc15080d94684fb1b}\index{app.App@{app.App}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a748aee617c59ccebc15080d94684fb1b} 
+ None app.\+App.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{endpoint}{ = {\ttfamily None}, }\item[{ft.\+Route\+Callable \texorpdfstring{$\vert$}{|} None }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{provide\+\_\+automatic\+\_\+options}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a rule for routing incoming requests and building
+URLs. The :meth:`route` decorator is a shortcut to call this
+with the ``view_func`` argument. These are equivalent:
+
+.. code-block:: python
+
+    @app.route("/")
+    def index():
+        ...
+
+.. code-block:: python
+
+    def index():
+        ...
+
+    app.add_url_rule("/", view_func=index)
+
+See :ref:`url-route-registrations`.
+
+The endpoint name for the route defaults to the name of the view
+function if the ``endpoint`` parameter isn't passed. An error
+will be raised if a function has already been registered for the
+endpoint.
+
+The ``methods`` parameter defaults to ``["GET"]``. ``HEAD`` is
+always added automatically, and ``OPTIONS`` is added
+automatically by default.
+
+``view_func`` does not necessarily need to be passed, but if the
+rule should participate in routing an endpoint name must be
+associated with a view function at some point with the
+:meth:`endpoint` decorator.
+
+.. code-block:: python
+
+    app.add_url_rule("/", endpoint="index")
+
+    @app.endpoint("index")
+    def index():
+        ...
+
+If ``view_func`` has a ``required_methods`` attribute, those
+methods are added to the passed and automatic methods. If it
+has a ``provide_automatic_methods`` attribute, it is used as the
+default if the parameter is not passed.
+
+:param rule: The URL rule string.
+:param endpoint: The endpoint name to associate with the rule
+    and view function. Used when routing and building URLs.
+    Defaults to ``view_func.__name__``.
+:param view_func: The view function to associate with the
+    endpoint name.
+:param provide_automatic_options: Add the ``OPTIONS`` method and
+    respond to ``OPTIONS`` requests automatically.
+:param options: Extra options passed to the
+    :class:`~werkzeug.routing.Rule` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac8068de2847188d4c12448257d4fa40f}{scaffold.\+Scaffold}}.
+
+\Hypertarget{classapp_1_1_app_a592a1320999b1e74028a4f04b474abc8}\index{app.App@{app.App}!auto\_find\_instance\_path@{auto\_find\_instance\_path}}
+\index{auto\_find\_instance\_path@{auto\_find\_instance\_path}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{auto\_find\_instance\_path()}{auto\_find\_instance\_path()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a592a1320999b1e74028a4f04b474abc8} 
+ str app.\+App.\+auto\+\_\+find\+\_\+instance\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tries to locate the instance path if it was not provided to the
+constructor of the application class.  It will basically calculate
+the path to a folder named ``instance`` next to your main file or
+the package.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_aea1c80125e7f08f5566aa02b4024ef0e}\index{app.App@{app.App}!create\_global\_jinja\_loader@{create\_global\_jinja\_loader}}
+\index{create\_global\_jinja\_loader@{create\_global\_jinja\_loader}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{create\_global\_jinja\_loader()}{create\_global\_jinja\_loader()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_aea1c80125e7f08f5566aa02b4024ef0e} 
+ Dispatching\+Jinja\+Loader app.\+App.\+create\+\_\+global\+\_\+jinja\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the loader for the Jinja environment.  Can be used to
+override just the loader and keeping the rest unchanged.  It's
+discouraged to override this function.  Instead one should override
+the :meth:`jinja_loader` function instead.
+
+The global loader dispatches between the loaders of the application
+and the individual blueprints.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a2f67fc1fe0f8a40048f84e2d833c6d01}\index{app.App@{app.App}!create\_jinja\_environment@{create\_jinja\_environment}}
+\index{create\_jinja\_environment@{create\_jinja\_environment}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{create\_jinja\_environment()}{create\_jinja\_environment()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a2f67fc1fe0f8a40048f84e2d833c6d01} 
+ Environment app.\+App.\+create\+\_\+jinja\+\_\+environment (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classapp_1_1_app_a21f8c976e19cc0227e6b1e98890c50d6}\index{app.App@{app.App}!debug@{debug}}
+\index{debug@{debug}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a21f8c976e19cc0227e6b1e98890c50d6} 
+ bool app.\+App.\+debug (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether debug mode is enabled. When using ``flask run`` to start the
+development server, an interactive debugger will be shown for unhandled
+exceptions, and the server will be reloaded when code changes. This maps to the
+:data:`DEBUG` config key. It may not behave as expected if set late.
+
+**Do not enable debug mode when deploying in production.**
+
+Default: ``False``
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_ae0e57fb399610435ea5aed5f577fff6a}\index{app.App@{app.App}!debug@{debug}}
+\index{debug@{debug}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{debug()}{debug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ae0e57fb399610435ea5aed5f577fff6a} 
+ None app.\+App.\+debug (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classapp_1_1_app_a99f1c4ca0c0ef1cbcffe0e989646484f}\index{app.App@{app.App}!handle\_url\_build\_error@{handle\_url\_build\_error}}
+\index{handle\_url\_build\_error@{handle\_url\_build\_error}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{handle\_url\_build\_error()}{handle\_url\_build\_error()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a99f1c4ca0c0ef1cbcffe0e989646484f} 
+ str app.\+App.\+handle\+\_\+url\+\_\+build\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1exceptions_1_1_build_error}{Build\+Error}}}]{error}{, }\item[{str}]{endpoint}{, }\item[{dict\+[str, t.\+Any]\+     }]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called by :meth:`.url_for` if a
+:exc:`~werkzeug.routing.BuildError` was raised. If this returns
+a value, it will be returned by ``url_for``, otherwise the error
+will be re-raised.
+
+Each function in :attr:`url_build_error_handlers` is called with
+``error``, ``endpoint`` and ``values``. If a function returns
+``None`` or raises a ``BuildError``, it is skipped. Otherwise,
+its return value is returned by ``url_for``.
+
+:param error: The active ``BuildError`` being handled.
+:param endpoint: The endpoint being built.
+:param values: The keyword arguments passed to ``url_for``.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_af0dcd16d1088ef7f960c9354ccb2cbc7}\index{app.App@{app.App}!inject\_url\_defaults@{inject\_url\_defaults}}
+\index{inject\_url\_defaults@{inject\_url\_defaults}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{inject\_url\_defaults()}{inject\_url\_defaults()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_af0dcd16d1088ef7f960c9354ccb2cbc7} 
+ None app.\+App.\+inject\+\_\+url\+\_\+defaults (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{endpoint}{, }\item[{dict\+[str, t.\+Any]\+}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Injects the URL defaults for the given endpoint directly into
+the values dictionary passed.  This is used internally and
+automatically called on URL building.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a4ce5735a38e184ff060495984e55471d}\index{app.App@{app.App}!iter\_blueprints@{iter\_blueprints}}
+\index{iter\_blueprints@{iter\_blueprints}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{iter\_blueprints()}{iter\_blueprints()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a4ce5735a38e184ff060495984e55471d} 
+ t.\+Values\+View\+[\doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}}]\+ app.\+App.\+iter\+\_\+blueprints (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iterates over all blueprints by the order they were registered.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a25925fc84319dd210b97d28e162ef328}\index{app.App@{app.App}!jinja\_env@{jinja\_env}}
+\index{jinja\_env@{jinja\_env}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{jinja\_env()}{jinja\_env()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a25925fc84319dd210b97d28e162ef328} 
+ Environment app.\+App.\+jinja\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Jinja environment used to load templates.
+
+The environment is created the first time this property is
+accessed. Changing :attr:`jinja_options` after that will have no
+effect.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a01035d7c6a9bc7efd5246f69febfd534}\index{app.App@{app.App}!logger@{logger}}
+\index{logger@{logger}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{logger()}{logger()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a01035d7c6a9bc7efd5246f69febfd534} 
+ logging.\+Logger app.\+App.\+logger (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A standard Python :class:`~logging.Logger` for the app, with
+the same name as :attr:`name`.
+
+In debug mode, the logger's :attr:`~logging.Logger.level` will
+be set to :data:`~logging.DEBUG`.
+
+If there are no handlers configured, a default handler will be
+added. See :doc:`/logging` for more information.
+
+.. versionchanged:: 1.1.0
+    The logger takes the same name as :attr:`name` rather than
+    hard-coding ``"flask.app"``.
+
+.. versionchanged:: 1.0.0
+    Behavior was simplified. The logger is always named
+    ``"flask.app"``. The level is only set during configuration,
+    it doesn't check ``app.debug`` each time. Only one format is
+    used, not different ones depending on ``app.debug``. No
+    handlers are removed, and a handler is only added if no
+    handlers are already configured.
+
+.. versionadded:: 0.3
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a0ab4921b011c7c252a9de276ed1fec39}\index{app.App@{app.App}!make\_aborter@{make\_aborter}}
+\index{make\_aborter@{make\_aborter}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{make\_aborter()}{make\_aborter()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a0ab4921b011c7c252a9de276ed1fec39} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} app.\+App.\+make\+\_\+aborter (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create the object to assign to :attr:`aborter`. That object
+is called by :func:`flask.abort` to raise HTTP errors, and can
+be called directly as well.
+
+By default, this creates an instance of :attr:`aborter_class`,
+which defaults to :class:`werkzeug.exceptions.Aborter`.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a06b952cce6870e96e654fe9f28d4622d}\index{app.App@{app.App}!make\_config@{make\_config}}
+\index{make\_config@{make\_config}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{make\_config()}{make\_config()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a06b952cce6870e96e654fe9f28d4622d} 
+ Config app.\+App.\+make\+\_\+config (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{instance\+\_\+relative}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to create the config attribute by the Flask constructor.
+The `instance_relative` parameter is passed in from the constructor
+of Flask (there named `instance_relative_config`) and indicates if
+the config should be relative to the instance path or the root path
+of the application.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a34dc71054b4729efdd119770a1e1b5a9}\index{app.App@{app.App}!name@{name}}
+\index{name@{name}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a34dc71054b4729efdd119770a1e1b5a9} 
+ str app.\+App.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name of the application.  This is usually the import name
+with the difference that it's guessed from the run file if the
+import name is main.  This name is used as a display name when
+Flask needs the name of the application.  It can be set and overridden
+to change the value.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_afa9d7eba6a7a6631c0cc0a16241db757}\index{app.App@{app.App}!redirect@{redirect}}
+\index{redirect@{redirect}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_afa9d7eba6a7a6631c0cc0a16241db757} 
+ Base\+Response app.\+App.\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{location}{, }\item[{int }]{code}{ = {\ttfamily 302}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a redirect response object.
+
+This is called by :func:`flask.redirect`, and can be called
+directly as well.
+
+:param location: The URL to redirect to.
+:param code: The status code for the redirect.
+
+.. versionadded:: 2.2
+    Moved from ``flask.redirect``, which calls this method.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a1989fa75adae81f3f1ae244e4af51caa}\index{app.App@{app.App}!register\_blueprint@{register\_blueprint}}
+\index{register\_blueprint@{register\_blueprint}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{register\_blueprint()}{register\_blueprint()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a1989fa75adae81f3f1ae244e4af51caa} 
+ None app.\+App.\+register\+\_\+blueprint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}}}]{blueprint}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a :class:`~flask.Blueprint` on the application. Keyword
+arguments passed to this method will override the defaults set on the
+blueprint.
+
+Calls the blueprint's :meth:`~flask.Blueprint.register` method after
+recording the blueprint in the application's :attr:`blueprints`.
+
+:param blueprint: The blueprint to register.
+:param url_prefix: Blueprint routes will be prefixed with this.
+:param subdomain: Blueprint routes will match on this subdomain.
+:param url_defaults: Blueprint routes will use these default values for
+    view arguments.
+:param options: Additional keyword arguments are passed to
+    :class:`~flask.blueprints.BlueprintSetupState`. They can be
+    accessed in :meth:`~flask.Blueprint.record` callbacks.
+
+.. versionchanged:: 2.0.1
+    The ``name`` option can be used to change the (pre-dotted)
+    name the blueprint is registered with. This allows the same
+    blueprint to be registered multiple times with unique names
+    for ``url_for``.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a2ea34cfa133dcccdfc125d406e568ec5}\index{app.App@{app.App}!select\_jinja\_autoescape@{select\_jinja\_autoescape}}
+\index{select\_jinja\_autoescape@{select\_jinja\_autoescape}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{select\_jinja\_autoescape()}{select\_jinja\_autoescape()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a2ea34cfa133dcccdfc125d406e568ec5} 
+ bool app.\+App.\+select\+\_\+jinja\+\_\+autoescape (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns ``True`` if autoescaping should be active for the given
+template name. If no template name is given, returns `True`.
+
+.. versionchanged:: 2.2
+    Autoescaping is now enabled by default for ``.svg`` files.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_acc133f3168d086d8a0cefca3b3b3a03e}\index{app.App@{app.App}!shell\_context\_processor@{shell\_context\_processor}}
+\index{shell\_context\_processor@{shell\_context\_processor}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{shell\_context\_processor()}{shell\_context\_processor()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_acc133f3168d086d8a0cefca3b3b3a03e} 
+ \doxymbox{\hyperlink{namespaceapp_acbc282d69aa16190b790321192f935d6}{T\+\_\+shell\+\_\+context\+\_\+processor}} app.\+App.\+shell\+\_\+context\+\_\+processor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceapp_acbc282d69aa16190b790321192f935d6}{T\+\_\+shell\+\_\+context\+\_\+processor}}     }]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a shell context processor function.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a317fd63f2f58f08b971a9a416d6f835c}\index{app.App@{app.App}!should\_ignore\_error@{should\_ignore\_error}}
+\index{should\_ignore\_error@{should\_ignore\_error}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{should\_ignore\_error()}{should\_ignore\_error()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a317fd63f2f58f08b971a9a416d6f835c} 
+ bool app.\+App.\+should\+\_\+ignore\+\_\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{error}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is called to figure out if an error should be ignored
+or not as far as the teardown system is concerned.  If this
+function returns ``True`` then the teardown handlers will not be
+passed the error.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_ac59c666a391dca8f33fea44e4488d95c}\index{app.App@{app.App}!teardown\_appcontext@{teardown\_appcontext}}
+\index{teardown\_appcontext@{teardown\_appcontext}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{teardown\_appcontext()}{teardown\_appcontext()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ac59c666a391dca8f33fea44e4488d95c} 
+ \doxymbox{\hyperlink{namespaceapp_ad871b37e5e47db4953b9b7470acad784}{T\+\_\+teardown}} app.\+App.\+teardown\+\_\+appcontext (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceapp_ad871b37e5e47db4953b9b7470acad784}{T\+\_\+teardown}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a function to be called when the application
+context is popped. The application context is typically popped
+after the request context for each request, at the end of CLI
+commands, or after a manually pushed context ends.
+
+.. code-block:: python
+
+    with app.app_context():
+        ...
+
+When the ``with`` block exits (or ``ctx.pop()`` is called), the
+teardown functions are called just before the app context is
+made inactive. Since a request context typically also manages an
+application context it would also be called when you pop a
+request context.
+
+When a teardown function was called because of an unhandled
+exception it will be passed an error object. If an
+:meth:`errorhandler` is registered, it will handle the exception
+and the teardown will not receive it.
+
+Teardown functions must avoid raising exceptions. If they
+execute code that might fail they must surround that code with a
+``try``/``except`` block and log any errors.
+
+The return values of teardown functions are ignored.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_afede98e9add80c508874484b85991c8e}\index{app.App@{app.App}!template\_filter@{template\_filter}}
+\index{template\_filter@{template\_filter}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{template\_filter()}{template\_filter()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_afede98e9add80c508874484b85991c8e} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a69fcd0ceef3c2eabc5fd3b07666d891c}{T\+\_\+template\+\_\+filter}}]\+, \doxymbox{\hyperlink{namespaceapp_a69fcd0ceef3c2eabc5fd3b07666d891c}{T\+\_\+template\+\_\+filter}}]\+ app.\+App.\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register custom template filter.
+You can specify a name for the filter, otherwise the function
+name will be used. Example::
+
+  @app.template_filter()
+  def reverse(s):
+      return s[::-1]
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_afc3c373de47c75b7ff15f33257b2948b}\index{app.App@{app.App}!template\_global@{template\_global}}
+\index{template\_global@{template\_global}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{template\_global()}{template\_global()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_afc3c373de47c75b7ff15f33257b2948b} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a68041338693fb1d07fb1be65f03ed1c1}{T\+\_\+template\+\_\+global}}]\+, \doxymbox{\hyperlink{namespaceapp_a68041338693fb1d07fb1be65f03ed1c1}{T\+\_\+template\+\_\+global}}]\+ app.\+App.\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register a custom template global function.
+You can specify a name for the global function, otherwise the function
+name will be used. Example::
+
+    @app.template_global()
+    def double(n):
+        return 2 * n
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global function, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_ab92f926be1e115a34afcc184b77e5613}\index{app.App@{app.App}!template\_test@{template\_test}}
+\index{template\_test@{template\_test}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{template\_test()}{template\_test()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ab92f926be1e115a34afcc184b77e5613} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceapp_a4aec4c9ee1ba83a1fffc22ef7ed8e19c}{T\+\_\+template\+\_\+test}}]\+, \doxymbox{\hyperlink{namespaceapp_a4aec4c9ee1ba83a1fffc22ef7ed8e19c}{T\+\_\+template\+\_\+test}}]\+ app.\+App.\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A decorator that is used to register custom template test.
+You can specify a name for the test, otherwise the function
+name will be used. Example::
+
+  @app.template_test()
+  def is_prime(n):
+      if n == 2:
+          return True
+      for i in range(2, int(math.ceil(math.sqrt(n))) + 1):
+          if n % i == 0:
+              return False
+      return True
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classapp_1_1_app_a81fc16ab995252b9dc81aef1cea8faf6}\index{app.App@{app.App}!trap\_http\_exception@{trap\_http\_exception}}
+\index{trap\_http\_exception@{trap\_http\_exception}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{trap\_http\_exception()}{trap\_http\_exception()}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a81fc16ab995252b9dc81aef1cea8faf6} 
+ bool app.\+App.\+trap\+\_\+http\+\_\+exception (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Exception}]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if an HTTP exception should be trapped or not.  By default
+this will return ``False`` for all exceptions except for a bad request
+key error if ``TRAP_BAD_REQUEST_ERRORS`` is set to ``True``.  It
+also returns ``True`` if ``TRAP_HTTP_EXCEPTIONS`` is set to ``True``.
+
+This is called for all HTTP exceptions raised by a view function.
+If it returns ``True`` for any exception the error handler for this
+exception is not called and it shows up as regular exception in the
+traceback.  This is helpful for debugging implicitly raised HTTP
+exceptions.
+
+.. versionchanged:: 1.0
+    Bad request errors are not trapped by default in debug mode.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ 
+
+\label{classapp_1_1_app_doc-variable-members}
+\Hypertarget{classapp_1_1_app_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classapp_1_1_app_ae0730333e945cf3a8595c60ec1a8311e}\index{app.App@{app.App}!\_got\_first\_request@{\_got\_first\_request}}
+\index{\_got\_first\_request@{\_got\_first\_request}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{\_got\_first\_request}{\_got\_first\_request}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ae0730333e945cf3a8595c60ec1a8311e} 
+bool app.\+App.\+\_\+got\+\_\+first\+\_\+request = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classapp_1_1_app_af046cfd85eb9da90c467a2074db73a9e}\index{app.App@{app.App}!aborter@{aborter}}
+\index{aborter@{aborter}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{aborter}{aborter}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_af046cfd85eb9da90c467a2074db73a9e} 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}} app.\+App.\+aborter = self.\+make\+\_\+aborter()}
+
+\Hypertarget{classapp_1_1_app_ae554c0bd9702fa20e83e6603cd203609}\index{app.App@{app.App}!aborter\_class@{aborter\_class}}
+\index{aborter\_class@{aborter\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{aborter\_class}{aborter\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ae554c0bd9702fa20e83e6603cd203609} 
+app.\+App.\+aborter\+\_\+class = \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter}{Aborter}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_ae08104d47108ccb061406b45a4633e1d}\index{app.App@{app.App}!app\_ctx\_globals\_class@{app\_ctx\_globals\_class}}
+\index{app\_ctx\_globals\_class@{app\_ctx\_globals\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{app\_ctx\_globals\_class}{app\_ctx\_globals\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ae08104d47108ccb061406b45a4633e1d} 
+app.\+App.\+app\+\_\+ctx\+\_\+globals\+\_\+class = \+\_\+\+App\+Ctx\+Globals\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a7958448d9111f647c19b422ea5cb5856}\index{app.App@{app.App}!blueprints@{blueprints}}
+\index{blueprints@{blueprints}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{blueprints}{blueprints}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a7958448d9111f647c19b422ea5cb5856} 
+dict app.\+App.\+blueprints = \{\}}
+
+\Hypertarget{classapp_1_1_app_aa87aae7b84eb99d10cb26d50f9cffa6f}\index{app.App@{app.App}!config@{config}}
+\index{config@{config}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{config}{config}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_aa87aae7b84eb99d10cb26d50f9cffa6f} 
+Config app.\+App.\+config = self.\+make\+\_\+config(instance\+\_\+relative\+\_\+config)}
+
+\Hypertarget{classapp_1_1_app_a1ac5f7a0d9f0105a2e5c22cd685d3cbe}\index{app.App@{app.App}!config\_class@{config\_class}}
+\index{config\_class@{config\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{config\_class}{config\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a1ac5f7a0d9f0105a2e5c22cd685d3cbe} 
+app.\+App.\+config\+\_\+class = Config\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a41b758ebd03517fdbbdba2c28f13244c}\index{app.App@{app.App}!default\_config@{default\_config}}
+\index{default\_config@{default\_config}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{default\_config}{default\_config}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a41b758ebd03517fdbbdba2c28f13244c} 
+dict app.\+App.\+default\+\_\+config \+[str, t.\+Any]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a30be95ad91d30f5ded86a2fad85f71f9}\index{app.App@{app.App}!extensions@{extensions}}
+\index{extensions@{extensions}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{extensions}{extensions}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a30be95ad91d30f5ded86a2fad85f71f9} 
+dict app.\+App.\+extensions = \{\}}
+
+\Hypertarget{classapp_1_1_app_ad18bd548a3eb768349fd63c732f2b4ad}\index{app.App@{app.App}!instance\_path@{instance\_path}}
+\index{instance\_path@{instance\_path}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{instance\_path}{instance\_path}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ad18bd548a3eb768349fd63c732f2b4ad} 
+app.\+App.\+instance\+\_\+path = instance\+\_\+path}
+
+\Hypertarget{classapp_1_1_app_a7bfc7d21deddaa1b10ff8c0419407d19}\index{app.App@{app.App}!jinja\_environment@{jinja\_environment}}
+\index{jinja\_environment@{jinja\_environment}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{jinja\_environment}{jinja\_environment}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a7bfc7d21deddaa1b10ff8c0419407d19} 
+app.\+App.\+jinja\+\_\+environment = Environment\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_aa02b659301605041cfa9232d67265a65}\index{app.App@{app.App}!jinja\_options@{jinja\_options}}
+\index{jinja\_options@{jinja\_options}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{jinja\_options}{jinja\_options}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_aa02b659301605041cfa9232d67265a65} 
+dict app.\+App.\+jinja\+\_\+options = \{\}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a8cc1cb39f435fc9a7e257de7dc127b70}\index{app.App@{app.App}!json@{json}}
+\index{json@{json}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a8cc1cb39f435fc9a7e257de7dc127b70} 
+JSONProvider app.\+App.\+json = self.\+json\+\_\+provider\+\_\+class(self)}
+
+\Hypertarget{classapp_1_1_app_ab1fd491fa4a8fed2b99906591e74d122}\index{app.App@{app.App}!json\_provider\_class@{json\_provider\_class}}
+\index{json\_provider\_class@{json\_provider\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{json\_provider\_class}{json\_provider\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ab1fd491fa4a8fed2b99906591e74d122} 
+type app.\+App.\+json\+\_\+provider\+\_\+class = Default\+JSONProvider\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_ac72fddf53f55258d9845e76e8a79a68b}\index{app.App@{app.App}!permanent\_session\_lifetime@{permanent\_session\_lifetime}}
+\index{permanent\_session\_lifetime@{permanent\_session\_lifetime}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{permanent\_session\_lifetime}{permanent\_session\_lifetime}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ac72fddf53f55258d9845e76e8a79a68b} 
+app.\+App.\+permanent\+\_\+session\+\_\+lifetime\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ ConfigAttribute[timedelta](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}PERMANENT\_SESSION\_LIFETIME"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ get\_converter=\_make\_timedelta,\ \ \textcolor{comment}{\#\ type:\ ignore[arg-\/type]}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classapp_1_1_app_acccdc9606b22ce930f9826477609009c}\index{app.App@{app.App}!response\_class@{response\_class}}
+\index{response\_class@{response\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{response\_class}{response\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_acccdc9606b22ce930f9826477609009c} 
+type app.\+App.\+response\+\_\+class \+[\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}}]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a278481a163ae1243a4a28eb10ca739b7}\index{app.App@{app.App}!secret\_key@{secret\_key}}
+\index{secret\_key@{secret\_key}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{secret\_key}{secret\_key}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a278481a163ae1243a4a28eb10ca739b7} 
+app.\+App.\+secret\+\_\+key = Config\+Attribute\+[t.\+Union\+[str, bytes, None]\+]\+("{}SECRET\+\_\+\+KEY"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_aef97528b059a02ea232e4f3b34c9dfae}\index{app.App@{app.App}!shell\_context\_processors@{shell\_context\_processors}}
+\index{shell\_context\_processors@{shell\_context\_processors}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{shell\_context\_processors}{shell\_context\_processors}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_aef97528b059a02ea232e4f3b34c9dfae} 
+list app.\+App.\+shell\+\_\+context\+\_\+processors = \+[$\,$]\+}
+
+\Hypertarget{classapp_1_1_app_a4b1ec843288af78b29bbe9a62e5cb6a7}\index{app.App@{app.App}!subdomain\_matching@{subdomain\_matching}}
+\index{subdomain\_matching@{subdomain\_matching}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{subdomain\_matching}{subdomain\_matching}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a4b1ec843288af78b29bbe9a62e5cb6a7} 
+app.\+App.\+subdomain\+\_\+matching = subdomain\+\_\+matching}
+
+\Hypertarget{classapp_1_1_app_a5eda0b16ee345933446ff200a4a4af07}\index{app.App@{app.App}!teardown\_appcontext\_funcs@{teardown\_appcontext\_funcs}}
+\index{teardown\_appcontext\_funcs@{teardown\_appcontext\_funcs}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{teardown\_appcontext\_funcs}{teardown\_appcontext\_funcs}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a5eda0b16ee345933446ff200a4a4af07} 
+list app.\+App.\+teardown\+\_\+appcontext\+\_\+funcs = \+[$\,$]\+}
+
+\Hypertarget{classapp_1_1_app_a91c48ee8aca3da75a273676554468f8e}\index{app.App@{app.App}!test\_cli\_runner\_class@{test\_cli\_runner\_class}}
+\index{test\_cli\_runner\_class@{test\_cli\_runner\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{test\_cli\_runner\_class}{test\_cli\_runner\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a91c48ee8aca3da75a273676554468f8e} 
+type app.\+App.\+test\+\_\+cli\+\_\+runner\+\_\+class = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a813d5f3343a8f172f53ed1796f018f8e}\index{app.App@{app.App}!test\_client\_class@{test\_client\_class}}
+\index{test\_client\_class@{test\_client\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{test\_client\_class}{test\_client\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a813d5f3343a8f172f53ed1796f018f8e} 
+type app.\+App.\+test\+\_\+client\+\_\+class = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a320253ead51e49bd80890d3b9edc1652}\index{app.App@{app.App}!testing@{testing}}
+\index{testing@{testing}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{testing}{testing}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a320253ead51e49bd80890d3b9edc1652} 
+app.\+App.\+testing = Config\+Attribute\+[bool]\+("{}TESTING"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_ab9927426b499d638215511fc52fe57ae}\index{app.App@{app.App}!url\_build\_error\_handlers@{url\_build\_error\_handlers}}
+\index{url\_build\_error\_handlers@{url\_build\_error\_handlers}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{url\_build\_error\_handlers}{url\_build\_error\_handlers}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_ab9927426b499d638215511fc52fe57ae} 
+list\+[ app.\+App.\+url\+\_\+build\+\_\+error\+\_\+handlers}
+
+\Hypertarget{classapp_1_1_app_a481a9ca251dbc9576ac7643fed3774be}\index{app.App@{app.App}!url\_map@{url\_map}}
+\index{url\_map@{url\_map}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{url\_map}{url\_map}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a481a9ca251dbc9576ac7643fed3774be} 
+app.\+App.\+url\+\_\+map = self.\+url\+\_\+map\+\_\+class(host\+\_\+matching=host\+\_\+matching)}
+
+\Hypertarget{classapp_1_1_app_acf0b76d1fe31f6b9fc72e388856136f9}\index{app.App@{app.App}!url\_map\_class@{url\_map\_class}}
+\index{url\_map\_class@{url\_map\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{url\_map\_class}{url\_map\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_acf0b76d1fe31f6b9fc72e388856136f9} 
+app.\+App.\+url\+\_\+map\+\_\+class = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classapp_1_1_app_a1a94b96c28380dd78eea771cf07d5a6e}\index{app.App@{app.App}!url\_rule\_class@{url\_rule\_class}}
+\index{url\_rule\_class@{url\_rule\_class}!app.App@{app.App}}
+\doxysubsubsection{\texorpdfstring{url\_rule\_class}{url\_rule\_class}}
+{\footnotesize\ttfamily \label{classapp_1_1_app_a1a94b96c28380dd78eea771cf07d5a6e} 
+app.\+App.\+url\+\_\+rule\+\_\+class = \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+sansio/\+\doxymbox{\hyperlink{sansio_2app_8py}{app.\+py}}\end{DoxyCompactItemize}

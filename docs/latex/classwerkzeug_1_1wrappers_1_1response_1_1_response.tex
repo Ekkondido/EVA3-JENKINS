@@ -1,0 +1,795 @@
+\doxysection{werkzeug.\+wrappers.\+response.\+Response Class Reference}
+\hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response}{}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+Inheritance diagram for werkzeug.\+wrappers.\+response.\+Response:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1wrappers_1_1response_1_1_response}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a818c47258b59e5a9c82ac567f46eb9c7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\+[bytes]\+\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None response=None, int\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}HTTPStatus\texorpdfstring{$\vert$}{|}None status=None, t.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}t.\+Iterable\+[str]\+]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None headers=None, str\texorpdfstring{$\vert$}{|}None mimetype=None, str\texorpdfstring{$\vert$}{|}None content\+\_\+type=None, bool direct\+\_\+passthrough=False)
+\item 
+t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a9b930d9e5d953ee1f5f1aed2584c6cec}{call\+\_\+on\+\_\+close}} (self, t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+ func)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1f75e12823813548700df2755046dbf3}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a826a601dd674e1d92142d7b652270378}{force\+\_\+type}} (cls, \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} response, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_af19de7210e1815ec2cd77b0afa5135e0}{from\+\_\+app}} (cls, WSGIApplication app, WSGIEnvironment environ, bool buffered=False)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a97be9c73628e84adc2dc2e5fcec93451}{get\+\_\+data}} (self, t.\+Literal\+[False]\+ as\+\_\+text=False)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a62c0f3238aff2b76ae15a8aaf809c139}{get\+\_\+data}} (self, t.\+Literal\+[True]\+ as\+\_\+text)
+\item 
+bytes\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac6c286d88da02d0b75a435318319e972}{get\+\_\+data}} (self, bool as\+\_\+text=False)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aeba9f67fcbb161bc9a70d7061bc6df84}{set\+\_\+data}} (self, bytes\texorpdfstring{$\vert$}{|}str value)
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6ba0b0df00f93f8955b5e881be3d2c52}{calculate\+\_\+content\+\_\+length}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a27cb191821f624adfa92b029f2a82e71}{make\+\_\+sequence}} (self)
+\item 
+t.\+Iterator\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a023f39d217774fdc40a20d721ebf72e7}{iter\+\_\+encoded}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aecb2f41497504447b92a5a559d01b808}{is\+\_\+streamed}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a74725f5697627e5a535ad0f73941b93e}{is\+\_\+sequence}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa761fe11c5dccb7797bcc4c84f2a9188}{close}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a48953d4cd3a5b2bb2041709085bd101b}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2899eab847f78f67818e15869c955754}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, tb)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2a94ef11ae57e1af13c2496a71425a4e}{freeze}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a4302ea206869c2e6d6928ce78dff714a}{get\+\_\+wsgi\+\_\+headers}} (self, WSGIEnvironment environ)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a31dc0847a705fe40e062eeab49f07353}{get\+\_\+app\+\_\+iter}} (self, WSGIEnvironment environ)
+\item 
+tuple\+[t.\+Iterable\+[bytes]\+, str, list\+[tuple\+[str, str]\+]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac42c1045c808d3b902e24abb696622ec}{get\+\_\+wsgi\+\_\+response}} (self, WSGIEnvironment environ)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab5305675c72ebc67917e488b777350a7}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1e10a2056a4bf6e46bdf37dda6af5268}{json}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a229892ef4545da7ea28a70a68c214ca3}{get\+\_\+json}} (self, bool force=..., t.\+Literal\+[False]\+ silent=...)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8ebe35c838c7b7510361865ba5eab184}{get\+\_\+json}} (self, bool force=..., bool silent=...)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7cf909ed5160ba765e41eb762201b893}{get\+\_\+json}} (self, bool force=False, bool silent=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}{Response\+Stream}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1d77278f7dd0fe1898b6c7c1cf89515e}{stream}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a5790ffb1bdc42b44d965279a18107806}{make\+\_\+conditional}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}} request\+\_\+or\+\_\+environ, bool\texorpdfstring{$\vert$}{|}str accept\+\_\+ranges=False, int\texorpdfstring{$\vert$}{|}None complete\+\_\+length=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8255cd97059cce326a06045bc6202655}{add\+\_\+etag}} (self, bool overwrite=False, bool weak=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0ec9909b9746373fa20e18d51a8979f6}{direct\+\_\+passthrough}} = direct\+\_\+passthrough
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a526f6202560901f6a2a771d88b8ea4a7}{is\+\_\+sequence}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab6af4dd20d7a2d3ec55d50e67434eb82}{close}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a90ce178d13c22c9d3e5c82af826ae52f}{status}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7c0c9ba2dd78b95c9d121295be320f73}{is\+\_\+json}}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aaa65a66f0629629252591cf8e28b0909}{status\+\_\+code}} = 206:\+
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b9c6f2bc8ab6b5ed33ddf3128342a6}{accept\+\_\+ranges}} = accept\+\_\+ranges
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_afd56a0c365857f67a39f480bc1a3c72c}{content\+\_\+length}} = content\+\_\+length
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a3c6ac75e36311955c0ca9da7edb976fe}{content\+\_\+range}} = content\+\_\+range\+\_\+header
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0d8f3176ddef90b4e9a7395423aecdff}{headers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6d73051aeb621334231ee0aaa9b7c6a8}{implicit\+\_\+sequence\+\_\+conversion}} = True
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b87c809d21a2d845dd666f17b97787}{autocorrect\+\_\+location\+\_\+header}} = False
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa3bfb96a33da650b30df3a9833cdd709}{automatically\+\_\+set\+\_\+content\+\_\+length}} = True
+\item 
+t \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1a678f1ec800868761f2fa50846cc740}{response}} .Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} t.\+Iterable\+[bytes]\+
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a494559dcccdf814849a5253372a44b94}{json\+\_\+module}} = \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1e10a2056a4bf6e46bdf37dda6af5268}{json}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a15ab1669d3913e3004b1117516d791b5}{\+\_\+ensure\+\_\+sequence}} (self, bool mutable=False)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2f78ae7c3ab947c3ffae70d2eb837ad8}{\+\_\+wrap\+\_\+range\+\_\+response}} (self, int start, int length)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8e7b1cd60ee900d311653896ddadb0b4}{\+\_\+is\+\_\+range\+\_\+request\+\_\+processable}} (self, WSGIEnvironment environ)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6b2ea1e01f01e9b41b0c579c0d0e282a}{\+\_\+process\+\_\+range\+\_\+request}} (self, WSGIEnvironment environ, int\texorpdfstring{$\vert$}{|}None complete\+\_\+length, bool\texorpdfstring{$\vert$}{|}str accept\+\_\+ranges)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_af9d3b7b5a0fab27bc34472dfa9c78e06}{\+\_\+on\+\_\+close}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2d1822b5ebf0d2bf1ef9fe2da08d766a}{data}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents an outgoing WSGI HTTP response with body, status, and
+headers. Has properties and methods for using the functionality
+defined by various HTTP specs.
+
+The response body is flexible to support different use cases. The
+simple form is passing bytes, or a string which will be encoded as
+UTF-8. Passing an iterable of bytes or strings makes this a
+streaming response. A generator is particularly useful for building
+a CSV file in memory or using SSE (Server Sent Events). A file-like
+object is also iterable, although the
+:func:`~werkzeug.utils.send_file` helper should be used in that
+case.
+
+The response object is itself a WSGI application callable. When
+called (:meth:`__call__`) with ``environ`` and ``start_response``,
+it will pass its status and headers to ``start_response`` then
+return its body as an iterable.
+
+.. code-block:: python
+
+    from werkzeug.wrappers.response import Response
+
+    def index():
+        return Response("Hello, World!")
+
+    def application(environ, start_response):
+        path = environ.get("PATH_INFO") or "/"
+
+        if path == "/":
+            response = index()
+        else:
+            response = Response("Not Found", status=404)
+
+        return response(environ, start_response)
+
+:param response: The data for the body of the response. A string or
+    bytes, or tuple or list of strings or bytes, for a fixed-length
+    response, or any other iterable of strings or bytes for a
+    streaming response. Defaults to an empty body.
+:param status: The status code for the response. Either an int, in
+    which case the default status message is added, or a string in
+    the form ``{code} {message}``, like ``404 Not Found``. Defaults
+    to 200.
+:param headers: A :class:`~werkzeug.datastructures.Headers` object,
+    or a list of ``(key, value)`` tuples that will be converted to a
+    ``Headers`` object.
+:param mimetype: The mime type (content type without charset or
+    other parameters) of the response. If the value starts with
+    ``text/`` (or matches some other special cases), the charset
+    will be added to create the ``content_type``.
+:param content_type: The full content type of the response.
+    Overrides building the value from ``mimetype``.
+:param direct_passthrough: Pass the response body directly through
+    as the WSGI iterable. This can be used when the body is a binary
+    file or other iterator of bytes, to skip some unnecessary
+    checks. Use :func:`~werkzeug.utils.send_file` instead of setting
+    this manually.
+
+.. versionchanged:: 2.1
+    Old ``BaseResponse`` and mixin classes were removed.
+
+.. versionchanged:: 2.0
+    Combine ``BaseResponse`` and mixins into a single ``Response``
+    class.
+
+.. versionchanged:: 0.5
+    The ``direct_passthrough`` parameter was added.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a818c47258b59e5a9c82ac567f46eb9c7}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a818c47258b59e5a9c82ac567f46eb9c7} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+ \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} t.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{response}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} HTTPStatus \texorpdfstring{$\vert$}{|} None }]{status}{ = {\ttfamily None}, }\item[{t.\+Mapping\+[str, str \texorpdfstring{$\vert$}{|} t.\+Iterable\+[str]\+]\+         \texorpdfstring{$\vert$}{|} t.\+Iterable\+[tuple\+[str, str]\+]\+         \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{mimetype}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+type}{ = {\ttfamily None}, }\item[{bool }]{direct\+\_\+passthrough}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab5305675c72ebc67917e488b777350a7}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab5305675c72ebc67917e488b777350a7} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+wrappers.\+response.\+Response.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Process this response as WSGI application.
+
+:param environ: the WSGI environment.
+:param start_response: the response callable provided by the WSGI
+                       server.
+:return: an application iterator
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a48953d4cd3a5b2bb2041709085bd101b}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a48953d4cd3a5b2bb2041709085bd101b} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} werkzeug.\+wrappers.\+response.\+Response.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2899eab847f78f67818e15869c955754}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2899eab847f78f67818e15869c955754} 
+werkzeug.\+wrappers.\+response.\+Response.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+value}{, }\item[{}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1f75e12823813548700df2755046dbf3}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1f75e12823813548700df2755046dbf3} 
+ str werkzeug.\+wrappers.\+response.\+Response.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a15ab1669d3913e3004b1117516d791b5}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_ensure\_sequence@{\_ensure\_sequence}}
+\index{\_ensure\_sequence@{\_ensure\_sequence}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_sequence()}{\_ensure\_sequence()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a15ab1669d3913e3004b1117516d791b5} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+\_\+ensure\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{mutable}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This method can be called by methods that need a sequence.  If
+`mutable` is true, it will also ensure that the response sequence
+is a standard Python list.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8e7b1cd60ee900d311653896ddadb0b4}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_is\_range\_request\_processable@{\_is\_range\_request\_processable}}
+\index{\_is\_range\_request\_processable@{\_is\_range\_request\_processable}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_is\_range\_request\_processable()}{\_is\_range\_request\_processable()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8e7b1cd60ee900d311653896ddadb0b4} 
+ bool werkzeug.\+wrappers.\+response.\+Response.\+\_\+is\+\_\+range\+\_\+request\+\_\+processable (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return ``True`` if `Range` header is present and if underlying
+resource is considered unchanged when compared with `If-Range` header.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6b2ea1e01f01e9b41b0c579c0d0e282a}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_process\_range\_request@{\_process\_range\_request}}
+\index{\_process\_range\_request@{\_process\_range\_request}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_process\_range\_request()}{\_process\_range\_request()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6b2ea1e01f01e9b41b0c579c0d0e282a} 
+ bool werkzeug.\+wrappers.\+response.\+Response.\+\_\+process\+\_\+range\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{complete\+\_\+length}{, }\item[{bool \texorpdfstring{$\vert$}{|} str}]{accept\+\_\+ranges}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Handle Range Request related headers (RFC7233).  If `Accept-Ranges`
+header is valid, and Range Request is processable, we set the headers
+as described by the RFC, and wrap the underlying response in a
+RangeWrapper.
+
+Returns ``True`` if Range Request can be fulfilled, ``False`` otherwise.
+
+:raises: :class:`~werkzeug.exceptions.RequestedRangeNotSatisfiable`
+         if `Range` header could not be parsed or satisfied.
+
+.. versionchanged:: 3.2
+    Adds the ``Accept-Ranges`` header if ``accept_ranges`` is passed,
+    even if this is not a satisfiable range request.
+
+.. versionchanged:: 2.0
+    Returns ``False`` if the length is 0.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2f78ae7c3ab947c3ffae70d2eb837ad8}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_wrap\_range\_response@{\_wrap\_range\_response}}
+\index{\_wrap\_range\_response@{\_wrap\_range\_response}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_wrap\_range\_response()}{\_wrap\_range\_response()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2f78ae7c3ab947c3ffae70d2eb837ad8} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+\_\+wrap\+\_\+range\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{start}{, }\item[{int}]{length}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Wrap existing Response in case of Range Request context.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8255cd97059cce326a06045bc6202655}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!add\_etag@{add\_etag}}
+\index{add\_etag@{add\_etag}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{add\_etag()}{add\_etag()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8255cd97059cce326a06045bc6202655} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+add\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{overwrite}{ = {\ttfamily False}, }\item[{bool }]{weak}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add an etag for the current response if there is none yet.
+
+.. versionchanged:: 2.0
+    SHA-1 is used to generate the value. MD5 may not be
+    available in some environments.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6ba0b0df00f93f8955b5e881be3d2c52}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!calculate\_content\_length@{calculate\_content\_length}}
+\index{calculate\_content\_length@{calculate\_content\_length}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{calculate\_content\_length()}{calculate\_content\_length()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6ba0b0df00f93f8955b5e881be3d2c52} 
+ int \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+response.\+Response.\+calculate\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the content length if available or `None` otherwise.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a9b930d9e5d953ee1f5f1aed2584c6cec}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!call\_on\_close@{call\_on\_close}}
+\index{call\_on\_close@{call\_on\_close}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{call\_on\_close()}{call\_on\_close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a9b930d9e5d953ee1f5f1aed2584c6cec} 
+ t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+ werkzeug.\+wrappers.\+response.\+Response.\+call\+\_\+on\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\+[\+[$\,$]\+, t.\+Any]\+}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a function to the internal list of functions that should
+be called as part of closing down the response.  Since 0.7 this
+function also returns the function that was passed so that this
+can be used as a decorator.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa761fe11c5dccb7797bcc4c84f2a9188}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!close@{close}}
+\index{close@{close}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa761fe11c5dccb7797bcc4c84f2a9188} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the wrapped response if possible.  You can also use the object
+in a with statement which will automatically close it.
+
+.. versionadded:: 0.9
+   Can now be used in a with statement.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a826a601dd674e1d92142d7b652270378}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!force\_type@{force\_type}}
+\index{force\_type@{force\_type}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{force\_type()}{force\_type()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a826a601dd674e1d92142d7b652270378} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} werkzeug.\+wrappers.\+response.\+Response.\+force\+\_\+type (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}}}]{response}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} None }]{environ}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Enforce that the WSGI response is a response object of the current
+type.  Werkzeug will use the :class:`Response` internally in many
+situations like the exceptions.  If you call :meth:`get_response` on an
+exception you will get back a regular :class:`Response` object, even
+if you are using a custom subclass.
+
+This method can enforce a given response type, and it will also
+convert arbitrary WSGI callables into response objects if an environ
+is provided::
+
+    # convert a Werkzeug response object into an instance of the
+    # MyResponseClass subclass.
+    response = MyResponseClass.force_type(response)
+
+    # convert any WSGI application into a response object
+    response = MyResponseClass.force_type(response, environ)
+
+This is especially useful if you want to post-process responses in
+the main dispatcher and use functionality provided by your subclass.
+
+Keep in mind that this will modify response objects in place if
+possible!
+
+:param response: a response object or wsgi application.
+:param environ: a WSGI environment object.
+:return: a response object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2a94ef11ae57e1af13c2496a71425a4e}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!freeze@{freeze}}
+\index{freeze@{freeze}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{freeze()}{freeze()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2a94ef11ae57e1af13c2496a71425a4e} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+freeze (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make the response object ready to be pickled. Does the
+following:
+
+*   Buffer the response into a list, ignoring
+    :attr:`implicity_sequence_conversion` and
+    :attr:`direct_passthrough`.
+*   Set the ``Content-Length`` header.
+*   Generate an ``ETag`` header if one is not already set.
+
+.. versionchanged:: 2.1
+    Removed the ``no_etag`` parameter.
+
+.. versionchanged:: 2.0
+    An ``ETag`` header is always added.
+
+.. versionchanged:: 0.6
+    The ``Content-Length`` header is set.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_af19de7210e1815ec2cd77b0afa5135e0}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!from\_app@{from\_app}}
+\index{from\_app@{from\_app}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{from\_app()}{from\_app()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_af19de7210e1815ec2cd77b0afa5135e0} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} werkzeug.\+wrappers.\+response.\+Response.\+from\+\_\+app (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{WSGIApplication}]{app}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{bool }]{buffered}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new response object from an application output.  This
+works best if you pass it an application that returns a generator all
+the time.  Sometimes applications may use the `write()` callable
+returned by the `start_response` function.  This tries to resolve such
+edge cases automatically.  But if you don't get the expected output
+you should set `buffered` to `True` which enforces buffering.
+
+:param app: the WSGI application to execute.
+:param environ: the WSGI environment to execute against.
+:param buffered: set to `True` to enforce buffering.
+:return: a response object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a31dc0847a705fe40e062eeab49f07353}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_app\_iter@{get\_app\_iter}}
+\index{get\_app\_iter@{get\_app\_iter}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_app\_iter()}{get\_app\_iter()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a31dc0847a705fe40e062eeab49f07353} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+app\+\_\+iter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the application iterator for the given environ.  Depending
+on the request method and the current status code the return value
+might be an empty response rather than the one from the response.
+
+If the request method is `HEAD` or the status code is in a range
+where the HTTP specification requires an empty response, an empty
+iterable is returned.
+
+.. versionadded:: 0.6
+
+:param environ: the WSGI environment of the request.
+:return: a response iterable.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac6c286d88da02d0b75a435318319e972}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac6c286d88da02d0b75a435318319e972} 
+ bytes \texorpdfstring{$\vert$}{|} str werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{as\+\_\+text}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The string representation of the response body.  Whenever you call
+this property the response iterable is encoded and flattened.  This
+can lead to unwanted behavior if you stream big data.
+
+This behavior can be disabled by setting
+:attr:`implicit_sequence_conversion` to `False`.
+
+If `as_text` is set to `True` the return value will be a decoded
+string.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a97be9c73628e84adc2dc2e5fcec93451}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a97be9c73628e84adc2dc2e5fcec93451} 
+ bytes werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Literal\+[False]\+ }]{as\+\_\+text}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a62c0f3238aff2b76ae15a8aaf809c139}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a62c0f3238aff2b76ae15a8aaf809c139} 
+ str werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Literal\+[True]\+}]{as\+\_\+text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8ebe35c838c7b7510361865ba5eab184}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a8ebe35c838c7b7510361865ba5eab184} 
+ t.\+Any \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily ...}, }\item[{bool }]{silent}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a229892ef4545da7ea28a70a68c214ca3}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a229892ef4545da7ea28a70a68c214ca3} 
+ t.\+Any werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily ...}, }\item[{t.\+Literal\+[False]\+ }]{silent}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7cf909ed5160ba765e41eb762201b893}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7cf909ed5160ba765e41eb762201b893} 
+ t.\+Any \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily False}, }\item[{bool }]{silent}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse :attr:`data` as JSON. Useful during testing.
+
+If the mimetype does not indicate JSON
+(:mimetype:`application/json`, see :attr:`is_json`), this
+returns ``None``.
+
+Unlike :meth:`Request.get_json`, the result is not cached.
+
+:param force: Ignore the mimetype and always try to parse JSON.
+:param silent: Silence parsing errors and return ``None``
+    instead.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a4302ea206869c2e6d6928ce78dff714a}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_wsgi\_headers@{get\_wsgi\_headers}}
+\index{get\_wsgi\_headers@{get\_wsgi\_headers}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_wsgi\_headers()}{get\_wsgi\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a4302ea206869c2e6d6928ce78dff714a} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+wsgi\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is automatically called right before the response is started
+and returns headers modified for the given environment.  It returns a
+copy of the headers from the response with some modifications applied
+if necessary.
+
+For example the location header (if present) is joined with the root
+URL of the environment.  Also the content length is automatically set
+to zero here for certain status codes.
+
+.. versionchanged:: 0.6
+   Previously that function was called `fix_headers` and modified
+   the response object in place.  Also since 0.6, IRIs in location
+   and content-location headers are handled properly.
+
+   Also starting with 0.6, Werkzeug will attempt to set the content
+   length if it is able to figure it out on its own.  This is the
+   case if all the strings in the response iterable are already
+   encoded and the iterable is buffered.
+
+:param environ: the WSGI environment of the request.
+:return: returns a new :class:`~werkzeug.datastructures.Headers`
+         object.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac42c1045c808d3b902e24abb696622ec}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!get\_wsgi\_response@{get\_wsgi\_response}}
+\index{get\_wsgi\_response@{get\_wsgi\_response}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_wsgi\_response()}{get\_wsgi\_response()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_ac42c1045c808d3b902e24abb696622ec} 
+ tuple\+[t.\+Iterable\+[bytes]\+, str, list\+[tuple\+[str, str]\+]\+]\+ werkzeug.\+wrappers.\+response.\+Response.\+get\+\_\+wsgi\+\_\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment     }]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the final WSGI response as tuple.  The first item in
+the tuple is the application iterator, the second the status and
+the third the list of headers.  The response returned is created
+specially for the given environment.  For example if the request
+method in the WSGI environment is ``'HEAD'`` the response will
+be empty and only the headers and status code will be present.
+
+.. versionadded:: 0.6
+
+:param environ: the WSGI environment of the request.
+:return: an ``(app_iter, status, headers)`` tuple.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a74725f5697627e5a535ad0f73941b93e}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!is\_sequence@{is\_sequence}}
+\index{is\_sequence@{is\_sequence}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{is\_sequence()}{is\_sequence()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a74725f5697627e5a535ad0f73941b93e} 
+ bool werkzeug.\+wrappers.\+response.\+Response.\+is\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the iterator is buffered, this property will be `True`.  A
+response object will consider an iterator to be buffered if the
+response attribute is a list or tuple.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_aecb2f41497504447b92a5a559d01b808}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!is\_streamed@{is\_streamed}}
+\index{is\_streamed@{is\_streamed}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{is\_streamed()}{is\_streamed()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_aecb2f41497504447b92a5a559d01b808} 
+ bool werkzeug.\+wrappers.\+response.\+Response.\+is\+\_\+streamed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the response is streamed (the response is not an iterable with
+a length information) this property is `True`.  In this case streamed
+means that there is no information about the number of iterations.
+This is usually `True` if a generator is passed to the response object.
+
+This is useful for checking before applying some sort of post
+filtering that should not take place for streamed responses.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a023f39d217774fdc40a20d721ebf72e7}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!iter\_encoded@{iter\_encoded}}
+\index{iter\_encoded@{iter\_encoded}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{iter\_encoded()}{iter\_encoded()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a023f39d217774fdc40a20d721ebf72e7} 
+ t.\+Iterator\+[bytes]\+ werkzeug.\+wrappers.\+response.\+Response.\+iter\+\_\+encoded (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Iter the response encoded with the encoding of the response.
+If the response object is invoked as WSGI application the return
+value of this method is used as application iterator unless
+:attr:`direct_passthrough` was activated.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1e10a2056a4bf6e46bdf37dda6af5268}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!json@{json}}
+\index{json@{json}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1e10a2056a4bf6e46bdf37dda6af5268} 
+ t.\+Any \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+response.\+Response.\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed JSON data if :attr:`mimetype` indicates JSON
+(:mimetype:`application/json`, see :attr:`is_json`).
+
+Calls :meth:`get_json` with default arguments.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a5790ffb1bdc42b44d965279a18107806}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!make\_conditional@{make\_conditional}}
+\index{make\_conditional@{make\_conditional}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{make\_conditional()}{make\_conditional()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a5790ffb1bdc42b44d965279a18107806} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} werkzeug.\+wrappers.\+response.\+Response.\+make\+\_\+conditional (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}}}]{request\+\_\+or\+\_\+environ}{, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{accept\+\_\+ranges}{ = {\ttfamily False}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{complete\+\_\+length}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make the response conditional to the request.  This method works
+best if an etag was defined for the response already.  The `add_etag`
+method can be used to do that.  If called without etag just the date
+header is set.
+
+This does nothing if the request method in the request or environ is
+anything but GET or HEAD.
+
+For optimal performance when handling range requests, it's recommended
+that your response data object implements `seekable`, `seek` and `tell`
+methods as described by :py:class:`io.IOBase`.  Objects returned by
+:meth:`~werkzeug.wsgi.wrap_file` automatically implement those methods.
+
+It does not remove the body of the response because that's something
+the :meth:`__call__` function does for us automatically.
+
+Returns self so that you can do ``return resp.make_conditional(req)``
+but modifies the object in-place.
+
+:param request_or_environ: a request object or WSGI environment to be
+                           used to make the response conditional
+                           against.
+:param accept_ranges: This parameter dictates the value of
+                      `Accept-Ranges` header. If ``False`` (default),
+                      the header is not set. If ``True``, it will be set
+                      to ``"bytes"``. If it's a string, it will use this
+                      value.
+:param complete_length: Will be used only in valid Range Requests.
+                        It will set `Content-Range` complete length
+                        value and compute `Content-Length` real value.
+                        This parameter is mandatory for successful
+                        Range Requests completion.
+:raises: :class:`~werkzeug.exceptions.RequestedRangeNotSatisfiable`
+         if `Range` header could not be parsed or satisfied.
+
+.. versionchangedd: 3.2
+    Adds the ``Accept-Ranges`` header if ``accept_ranges`` is passed,
+    even if this is not a satisfiable range request.
+
+.. versionchanged:: 2.0
+    Range processing is skipped if length is 0 instead of
+    raising a 416 Range Not Satisfiable error.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a27cb191821f624adfa92b029f2a82e71}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!make\_sequence@{make\_sequence}}
+\index{make\_sequence@{make\_sequence}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{make\_sequence()}{make\_sequence()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a27cb191821f624adfa92b029f2a82e71} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+make\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts the response iterator in a list.  By default this happens
+automatically if required.  If `implicit_sequence_conversion` is
+disabled, this method is not automatically called and some properties
+might raise exceptions.  This also encodes all the items.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_aeba9f67fcbb161bc9a70d7061bc6df84}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!set\_data@{set\_data}}
+\index{set\_data@{set\_data}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{set\_data()}{set\_data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_aeba9f67fcbb161bc9a70d7061bc6df84} 
+ None werkzeug.\+wrappers.\+response.\+Response.\+set\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} str}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets a new string as response.  The value must be a string or
+bytes. If a string is set it's encoded to the charset of the
+response (utf-8 by default).
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1d77278f7dd0fe1898b6c7c1cf89515e}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!stream@{stream}}
+\index{stream@{stream}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1d77278f7dd0fe1898b6c7c1cf89515e} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}{Response\+Stream}} werkzeug.\+wrappers.\+response.\+Response.\+stream (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The response iterable as write-only stream.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_af9d3b7b5a0fab27bc34472dfa9c78e06}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!\_on\_close@{\_on\_close}}
+\index{\_on\_close@{\_on\_close}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_on\_close}{\_on\_close}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_af9d3b7b5a0fab27bc34472dfa9c78e06} 
+list werkzeug.\+wrappers.\+response.\+Response.\+\_\+on\+\_\+close = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b9c6f2bc8ab6b5ed33ddf3128342a6}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!accept\_ranges@{accept\_ranges}}
+\index{accept\_ranges@{accept\_ranges}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{accept\_ranges}{accept\_ranges}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b9c6f2bc8ab6b5ed33ddf3128342a6} 
+werkzeug.\+wrappers.\+response.\+Response.\+accept\+\_\+ranges = accept\+\_\+ranges}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b87c809d21a2d845dd666f17b97787}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!autocorrect\_location\_header@{autocorrect\_location\_header}}
+\index{autocorrect\_location\_header@{autocorrect\_location\_header}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{autocorrect\_location\_header}{autocorrect\_location\_header}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a82b87c809d21a2d845dd666f17b97787} 
+bool werkzeug.\+wrappers.\+response.\+Response.\+autocorrect\+\_\+location\+\_\+header = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa3bfb96a33da650b30df3a9833cdd709}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!automatically\_set\_content\_length@{automatically\_set\_content\_length}}
+\index{automatically\_set\_content\_length@{automatically\_set\_content\_length}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{automatically\_set\_content\_length}{automatically\_set\_content\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_aa3bfb96a33da650b30df3a9833cdd709} 
+bool werkzeug.\+wrappers.\+response.\+Response.\+automatically\+\_\+set\+\_\+content\+\_\+length = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab6af4dd20d7a2d3ec55d50e67434eb82}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!close@{close}}
+\index{close@{close}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{close}{close}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_ab6af4dd20d7a2d3ec55d50e67434eb82} 
+werkzeug.\+wrappers.\+response.\+Response.\+close}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_afd56a0c365857f67a39f480bc1a3c72c}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_length}{content\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_afd56a0c365857f67a39f480bc1a3c72c} 
+werkzeug.\+wrappers.\+response.\+Response.\+content\+\_\+length = content\+\_\+length}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a3c6ac75e36311955c0ca9da7edb976fe}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!content\_range@{content\_range}}
+\index{content\_range@{content\_range}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_range}{content\_range}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a3c6ac75e36311955c0ca9da7edb976fe} 
+werkzeug.\+wrappers.\+response.\+Response.\+content\+\_\+range = content\+\_\+range\+\_\+header}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0ec9909b9746373fa20e18d51a8979f6}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!direct\_passthrough@{direct\_passthrough}}
+\index{direct\_passthrough@{direct\_passthrough}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{direct\_passthrough}{direct\_passthrough}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0ec9909b9746373fa20e18d51a8979f6} 
+werkzeug.\+wrappers.\+response.\+Response.\+direct\+\_\+passthrough = direct\+\_\+passthrough}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0d8f3176ddef90b4e9a7395423aecdff}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!headers@{headers}}
+\index{headers@{headers}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a0d8f3176ddef90b4e9a7395423aecdff} 
+werkzeug.\+wrappers.\+response.\+Response.\+headers}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6d73051aeb621334231ee0aaa9b7c6a8}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!implicit\_sequence\_conversion@{implicit\_sequence\_conversion}}
+\index{implicit\_sequence\_conversion@{implicit\_sequence\_conversion}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{implicit\_sequence\_conversion}{implicit\_sequence\_conversion}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a6d73051aeb621334231ee0aaa9b7c6a8} 
+bool werkzeug.\+wrappers.\+response.\+Response.\+implicit\+\_\+sequence\+\_\+conversion = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7c0c9ba2dd78b95c9d121295be320f73}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!is\_json@{is\_json}}
+\index{is\_json@{is\_json}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{is\_json}{is\_json}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a7c0c9ba2dd78b95c9d121295be320f73} 
+werkzeug.\+wrappers.\+response.\+Response.\+is\+\_\+json}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a526f6202560901f6a2a771d88b8ea4a7}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!is\_sequence@{is\_sequence}}
+\index{is\_sequence@{is\_sequence}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{is\_sequence}{is\_sequence}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a526f6202560901f6a2a771d88b8ea4a7} 
+werkzeug.\+wrappers.\+response.\+Response.\+is\+\_\+sequence}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a494559dcccdf814849a5253372a44b94}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!json\_module@{json\_module}}
+\index{json\_module@{json\_module}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{json\_module}{json\_module}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a494559dcccdf814849a5253372a44b94} 
+werkzeug.\+wrappers.\+response.\+Response.\+json\+\_\+module = \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1e10a2056a4bf6e46bdf37dda6af5268}{json}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1a678f1ec800868761f2fa50846cc740}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!response@{response}}
+\index{response@{response}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a1a678f1ec800868761f2fa50846cc740} 
+werkzeug.\+wrappers.\+response.\+Response.\+response .Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} t.\+Iterable\+[bytes]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a90ce178d13c22c9d3e5c82af826ae52f}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!status@{status}}
+\index{status@{status}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a90ce178d13c22c9d3e5c82af826ae52f} 
+werkzeug.\+wrappers.\+response.\+Response.\+status}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_aaa65a66f0629629252591cf8e28b0909}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!status\_code@{status\_code}}
+\index{status\_code@{status\_code}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{status\_code}{status\_code}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_aaa65a66f0629629252591cf8e28b0909} 
+int werkzeug.\+wrappers.\+response.\+Response.\+status\+\_\+code = 206:\+}
+
+
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-property-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2d1822b5ebf0d2bf1ef9fe2da08d766a}\index{werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}!data@{data}}
+\index{data@{data}!werkzeug.wrappers.response.Response@{werkzeug.wrappers.response.Response}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_a2d1822b5ebf0d2bf1ef9fe2da08d766a} 
+werkzeug.\+wrappers.\+response.\+Response.\+data\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ get\_data,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ set\_data,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}A\ descriptor\ that\ calls\ :meth:`get\_data`\ and\ :meth:`set\_data`."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+wrappers/\+\doxymbox{\hyperlink{werkzeug_2wrappers_2response_8py}{response.\+py}}\end{DoxyCompactItemize}

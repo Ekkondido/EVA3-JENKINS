@@ -1,0 +1,126 @@
+\doxysection{werkzeug.\+test Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1test}{}\label{namespacewerkzeug_1_1test}\index{werkzeug.test@{werkzeug.test}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_environ_builder}{Environ\+Builder}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client_redirect_error}{Client\+Redirect\+Error}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_client}{Client}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_test_response}{Test\+Response}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie}{Cookie}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[t.\+IO\+[bytes]\+, int, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1test_aca2073c1c0f04e7dad370dd87cc4fde2}{stream\+\_\+encode\+\_\+multipart}} (t.\+Mapping\+[str, t.\+Any]\+ data, bool use\+\_\+tempfile=True, int threshold=1024 \texorpdfstring{$\ast$}{*}500, str\texorpdfstring{$\vert$}{|}None boundary=None)
+\item 
+tuple\+[str, bytes]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1test_a3836b9a87fe9fc4b22c91f44e9c44aae}{encode\+\_\+multipart}} (t.\+Mapping\+[str, t.\+Any]\+ values, str\texorpdfstring{$\vert$}{|}None boundary=None)
+\item 
+t.\+Iterator\+[tuple\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1test_a557f03ae80ba4b9401f56b0bc6e2873f}{\+\_\+iter\+\_\+data}} (t.\+Mapping\+[str, t.\+Any]\+ data)
+\item 
+WSGIEnvironment \doxymbox{\hyperlink{namespacewerkzeug_1_1test_a462b4f3086913647e44373b7f4b40272}{create\+\_\+environ}} (\texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+tuple\+[t.\+Iterable\+[bytes]\+, str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1test_abb830791d4d635769863b03a561beb09}{run\+\_\+wsgi\+\_\+app}} (WSGIApplication app, WSGIEnvironment environ, bool buffered=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1test_aec1fc017cf8eafa406c8ba86e9d4617c}{\+\_\+\+TAny\+Multi\+Dict}} = t.\+Type\+Var("{}\+\_\+\+TAny\+Multi\+Dict"{}, bound="{}Multi\+Dict\+[t.\+Any, t.\+Any]\+"{})
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1test_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1test_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1test_a557f03ae80ba4b9401f56b0bc6e2873f}\index{werkzeug.test@{werkzeug.test}!\_iter\_data@{\_iter\_data}}
+\index{\_iter\_data@{\_iter\_data}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{\_iter\_data()}{\_iter\_data()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_a557f03ae80ba4b9401f56b0bc6e2873f} 
+ t.\+Iterator\+[tuple\+[str, t.\+Any]\+]\+ \+\_\+iter\+\_\+data (\begin{DoxyParamCaption}\item[{t.\+Mapping\+[str, t.\+Any]\+}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Iterate over a mapping that might have a list of values, yielding
+all key, value pairs. Almost like iter_multi_items but only allows
+lists, not tuples, of values so tuples can be used for files.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1test_a462b4f3086913647e44373b7f4b40272}\index{werkzeug.test@{werkzeug.test}!create\_environ@{create\_environ}}
+\index{create\_environ@{create\_environ}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{create\_environ()}{create\_environ()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_a462b4f3086913647e44373b7f4b40272} 
+ WSGIEnvironment create\+\_\+environ (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new WSGI environ dict based on the values passed.  The first
+parameter should be the path of the request which defaults to '/'.  The
+second one can either be an absolute path (in that case the host is
+localhost:80) or a full path to the request with scheme, netloc port and
+the path to the script.
+
+This accepts the same arguments as the :class:`EnvironBuilder`
+constructor.
+
+.. versionchanged:: 0.5
+   This function is now a thin wrapper over :class:`EnvironBuilder` which
+   was added in 0.5.  The `headers`, `environ_base`, `environ_overrides`
+   and `charset` parameters were added.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1test_a3836b9a87fe9fc4b22c91f44e9c44aae}\index{werkzeug.test@{werkzeug.test}!encode\_multipart@{encode\_multipart}}
+\index{encode\_multipart@{encode\_multipart}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{encode\_multipart()}{encode\_multipart()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_a3836b9a87fe9fc4b22c91f44e9c44aae} 
+ tuple\+[str, bytes]\+ encode\+\_\+multipart (\begin{DoxyParamCaption}\item[{t.\+Mapping\+[str, t.\+Any]\+}]{values}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{boundary}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like `stream_encode_multipart` but returns a tuple in the form
+(``boundary``, ``data``) where data is bytes.
+
+.. versionchanged:: 3.0
+    The ``charset`` parameter was removed.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1test_abb830791d4d635769863b03a561beb09}\index{werkzeug.test@{werkzeug.test}!run\_wsgi\_app@{run\_wsgi\_app}}
+\index{run\_wsgi\_app@{run\_wsgi\_app}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{run\_wsgi\_app()}{run\_wsgi\_app()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_abb830791d4d635769863b03a561beb09} 
+ tuple\+[t.\+Iterable\+[bytes]\+, str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ run\+\_\+wsgi\+\_\+app (\begin{DoxyParamCaption}\item[{WSGIApplication}]{app}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{bool }]{buffered}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple in the form (app_iter, status, headers) of the
+application output.  This works best if you pass it an application that
+returns an iterator all the time.
+
+Sometimes applications may use the `write()` callable returned
+by the `start_response` function.  This tries to resolve such edge
+cases automatically.  But if you don't get the expected output you
+should set `buffered` to `True` which enforces buffering.
+
+If passed an invalid WSGI application the behavior of this function is
+undefined.  Never pass non-conforming WSGI applications to this function.
+
+:param app: the application to execute.
+:param buffered: set to `True` to enforce buffering.
+:return: tuple in the form ``(app_iter, status, headers)``
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1test_aca2073c1c0f04e7dad370dd87cc4fde2}\index{werkzeug.test@{werkzeug.test}!stream\_encode\_multipart@{stream\_encode\_multipart}}
+\index{stream\_encode\_multipart@{stream\_encode\_multipart}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{stream\_encode\_multipart()}{stream\_encode\_multipart()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_aca2073c1c0f04e7dad370dd87cc4fde2} 
+ tuple\+[t.\+IO\+[bytes]\+, int, str]\+ stream\+\_\+encode\+\_\+multipart (\begin{DoxyParamCaption}\item[{t.\+Mapping\+[str, t.\+Any]\+}]{data}{, }\item[{bool }]{use\+\_\+tempfile}{ = {\ttfamily True}, }\item[{int }]{threshold}{ = {\ttfamily 1024~\texorpdfstring{$\ast$}{*}~500}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{boundary}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Encode a dict of values (either strings or file descriptors or
+:class:`FileStorage` objects.) into a multipart encoded string stored
+in a file descriptor.
+
+.. versionchanged:: 3.0
+    The ``charset`` parameter was removed.
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1test_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1test_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1test_aec1fc017cf8eafa406c8ba86e9d4617c}\index{werkzeug.test@{werkzeug.test}!\_TAnyMultiDict@{\_TAnyMultiDict}}
+\index{\_TAnyMultiDict@{\_TAnyMultiDict}!werkzeug.test@{werkzeug.test}}
+\doxysubsubsection{\texorpdfstring{\_TAnyMultiDict}{\_TAnyMultiDict}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1test_aec1fc017cf8eafa406c8ba86e9d4617c} 
+werkzeug.\+test.\+\_\+\+TAny\+Multi\+Dict = t.\+Type\+Var("{}\+\_\+\+TAny\+Multi\+Dict"{}, bound="{}Multi\+Dict\+[t.\+Any, t.\+Any]\+"{})\hspace{0.3cm}{\ttfamily [protected]}}
+

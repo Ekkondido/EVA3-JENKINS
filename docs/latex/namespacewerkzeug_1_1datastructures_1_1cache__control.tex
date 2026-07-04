@@ -1,0 +1,44 @@
+\doxysection{werkzeug.\+datastructures.\+cache\+\_\+control Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1datastructures_1_1cache__control}{}\label{namespacewerkzeug_1_1datastructures_1_1cache__control}\index{werkzeug.datastructures.cache\_control@{werkzeug.datastructures.cache\_control}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{\+\_\+\+Cache\+Control}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_request_cache_control}{Request\+Cache\+Control}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}{Response\+Cache\+Control}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}} (str key, t.\+Any empty, type\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None type, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None doc=None)
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1datastructures_1_1cache__control_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1datastructures_1_1cache__control_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}\index{werkzeug.datastructures.cache\_control@{werkzeug.datastructures.cache\_control}!cache\_control\_property@{cache\_control\_property}}
+\index{cache\_control\_property@{cache\_control\_property}!werkzeug.datastructures.cache\_control@{werkzeug.datastructures.cache\_control}}
+\doxysubsubsection{\texorpdfstring{cache\_control\_property()}{cache\_control\_property()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7} 
+ t.\+Any cache\+\_\+control\+\_\+property (\begin{DoxyParamCaption}\item[{str}]{key}{, }\item[{t.\+Any}]{empty}{, }\item[{type\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} None}]{type}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{doc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a new property object for a cache header. Useful if you
+want to add support for a cache extension in a subclass.
+
+:param key: The attribute name present in the parsed cache-control header dict.
+:param empty: The value to use if the key is present without a value.
+:param type: The type to convert the string value to instead of a string. If
+    conversion raises a ``ValueError``, the returned value is ``None``.
+:param doc: The docstring for the property. If not given, it is generated
+    based on the other params.
+
+.. versionchanged:: 3.1
+    Added the ``doc`` param.
+
+.. versionchanged:: 2.0
+    Renamed from ``cache_property``.
+\end{DoxyVerb}
+ 

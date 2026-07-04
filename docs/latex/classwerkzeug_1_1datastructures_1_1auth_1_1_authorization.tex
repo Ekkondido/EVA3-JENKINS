@@ -1,0 +1,170 @@
+\doxysection{werkzeug.\+datastructures.\+auth.\+Authorization Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization}{}\label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a69fbeaee9705a1be26a15dc56109f73d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str auth\+\_\+type, dict\+[str, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None data=None, str\texorpdfstring{$\vert$}{|}None token=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a560367920a247a987ac82463f56ba97d}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_aa84c1e76f6365127bf246770fb32cb10}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, str name)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a25f583912a6c948973f07b0b1246dbec}{get}} (self, str key, str\texorpdfstring{$\vert$}{|}None default=None)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a371cf5930560f2946e990fc91f802714}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, str key)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a23d8479f56604548f13477a4d6fa16fe}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+te.\+Self\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_ae64c4a403ea526fc515f725d6c2637f6}{from\+\_\+header}} (cls, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a547412495bd42e977464540bd4e1dcef}{to\+\_\+header}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5652774edabd18b8558f5733711fb17a}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5fb95e01e534d50cd35c62cf5eacebbc}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a0f69a5d9ed14b8b16a84b3942d6d3dfd}{type}} = auth\+\_\+type
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a2da221a90c5a522ab902a26bf2e1fbed}{parameters}} = data
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_af20559005b35688978c19afb18dfb02f}{token}} = token
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents the parts of an ``Authorization`` request header.
+
+:attr:`.Request.authorization` returns an instance if the header is set.
+
+An instance can be used with the test :class:`.Client` request methods' ``auth``
+parameter to send the header in test requests.
+
+Depending on the auth scheme, either :attr:`parameters` or :attr:`token` will be
+set. The ``Basic`` scheme's token is decoded into the ``username`` and ``password``
+parameters.
+
+For convenience, ``auth["key"]`` and ``auth.key`` both access the key in the
+:attr:`parameters` dict, along with ``auth.get("key")`` and ``"key" in auth``.
+
+.. versionchanged:: 2.3
+    The ``token`` parameter and attribute was added to support auth schemes that use
+    a token instead of parameters, such as ``Bearer``.
+
+.. versionchanged:: 2.3
+    The object is no longer a ``dict``.
+
+.. versionchanged:: 0.5
+    The object is an immutable dict.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a69fbeaee9705a1be26a15dc56109f73d}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a69fbeaee9705a1be26a15dc56109f73d} 
+ None werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{auth\+\_\+type}{, }\item[{dict\+[str, str \texorpdfstring{$\vert$}{|} None]\+ \texorpdfstring{$\vert$}{|} None }]{data}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{token}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a371cf5930560f2946e990fc91f802714}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a371cf5930560f2946e990fc91f802714} 
+ bool werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a23d8479f56604548f13477a4d6fa16fe}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a23d8479f56604548f13477a4d6fa16fe} 
+ bool werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a560367920a247a987ac82463f56ba97d}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a560367920a247a987ac82463f56ba97d} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_aa84c1e76f6365127bf246770fb32cb10}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_aa84c1e76f6365127bf246770fb32cb10} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5fb95e01e534d50cd35c62cf5eacebbc}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5fb95e01e534d50cd35c62cf5eacebbc} 
+ str werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5652774edabd18b8558f5733711fb17a}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a5652774edabd18b8558f5733711fb17a} 
+ str werkzeug.\+datastructures.\+auth.\+Authorization.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_ae64c4a403ea526fc515f725d6c2637f6}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!from\_header@{from\_header}}
+\index{from\_header@{from\_header}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{from\_header()}{from\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_ae64c4a403ea526fc515f725d6c2637f6} 
+ te.\+Self \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+auth.\+Authorization.\+from\+\_\+header (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse an ``Authorization`` header value and return an instance, or ``None``
+if the value is empty.
+
+:param value: The header value to parse.
+
+.. versionadded:: 2.3
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a25f583912a6c948973f07b0b1246dbec}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a25f583912a6c948973f07b0b1246dbec} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+auth.\+Authorization.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a547412495bd42e977464540bd4e1dcef}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a547412495bd42e977464540bd4e1dcef} 
+ str werkzeug.\+datastructures.\+auth.\+Authorization.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce an ``Authorization`` header value representing this data.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a2da221a90c5a522ab902a26bf2e1fbed}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!parameters@{parameters}}
+\index{parameters@{parameters}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{parameters}{parameters}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a2da221a90c5a522ab902a26bf2e1fbed} 
+werkzeug.\+datastructures.\+auth.\+Authorization.\+parameters = data}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_af20559005b35688978c19afb18dfb02f}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!token@{token}}
+\index{token@{token}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{token}{token}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_af20559005b35688978c19afb18dfb02f} 
+werkzeug.\+datastructures.\+auth.\+Authorization.\+token = token}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a0f69a5d9ed14b8b16a84b3942d6d3dfd}\index{werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}!type@{type}}
+\index{type@{type}!werkzeug.datastructures.auth.Authorization@{werkzeug.datastructures.auth.Authorization}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1auth_1_1_authorization_a0f69a5d9ed14b8b16a84b3942d6d3dfd} 
+str werkzeug.\+datastructures.\+auth.\+Authorization.\+type = auth\+\_\+type}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{werkzeug_2datastructures_2auth_8py}{auth.\+py}}\end{DoxyCompactItemize}

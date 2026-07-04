@@ -1,0 +1,183 @@
+\doxysection{werkzeug.\+routing.\+rules Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1routing_1_1rules}{}\label{namespacewerkzeug_1_1routing_1_1rules}\index{werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_weighting}{Weighting}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_part}{Rule\+Part}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}{Subdomain}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount}{Submount}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix}{Endpoint\+Prefix}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template}{Rule\+Template}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_factory}{Rule\+Template\+Factory}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_acae3df307ee08b2b0d1e8e455581ea6e}{\+\_\+find}} (str value, str target, int pos)
+\item 
+None\texorpdfstring{$\vert$}{|}bool\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a54c33df321a294a85bab992c933d5374}{\+\_\+pythonize}} (str value)
+\item 
+tuple\+[tuple\+[t.\+Any,...]\+, dict\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_ad5721800757b15d9f091664d0c53449e}{parse\+\_\+converter\+\_\+args}} (str argstr)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}} \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a4860e28b9760cf1728a1dc3982fae3ba}{\+\_\+prefix\+\_\+names}} (str src, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}}]\+ expected\+\_\+type)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a8506a7b4eda514c57dbd89cbf8d79857}{\+\_\+part\+\_\+re}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_ae28ca7ac349cea0d350dca84a17ce731}{\+\_\+simple\+\_\+rule\+\_\+re}} = re.\+compile(r"{}$<$(\+[\texorpdfstring{$^\wedge$}{\string^}$>$]\++)$>$"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a98581b345eed8b7a185081f6bc4f0c92}{\+\_\+converter\+\_\+args\+\_\+re}}
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a1af258c4e2c4594f40189ea160d2418f}{\+\_\+\+PYTHON\+\_\+\+CONSTANTS}} = \{"{}None"{}:\+ None, "{}True"{}:\+ True, "{}False"{}:\+ False\}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}} = t.\+Type\+Var("{}\+\_\+\+ASTT"{}, bound=ast.\+AST)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a8c82882d76b4af0ebb124d9710776f2f}{\+\_\+\+CALL\+\_\+\+CONVERTER\+\_\+\+CODE\+\_\+\+FMT}} = "{}self.\+\_\+converters\+[\{elem!r\}]\+.to\+\_\+url()"{}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a56b65a08ea261a8bb1ecd50941c5bdf8}{\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+CODE}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}} \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_ae2d0d8f26ea89fcbe95fa543a02acfad}{\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+AST}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a4860e28b9760cf1728a1dc3982fae3ba}{\+\_\+prefix\+\_\+names}}(\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a56b65a08ea261a8bb1ecd50941c5bdf8}{\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+CODE}}, ast.\+If)
+\item 
+tuple \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a08c709583c8a5c2818772281e9d743c2}{\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+AST\+\_\+\+NAMES}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1routing_1_1rules_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_acae3df307ee08b2b0d1e8e455581ea6e}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_find@{\_find}}
+\index{\_find@{\_find}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_find()}{\_find()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_acae3df307ee08b2b0d1e8e455581ea6e} 
+ int \+\_\+find (\begin{DoxyParamCaption}\item[{str}]{value}{, }\item[{str}]{target}{, }\item[{int}]{pos}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the *target* in *value* after *pos*.
+
+Returns the *value* length if *target* isn't found.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a4860e28b9760cf1728a1dc3982fae3ba}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_prefix\_names@{\_prefix\_names}}
+\index{\_prefix\_names@{\_prefix\_names}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_prefix\_names()}{\_prefix\_names()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a4860e28b9760cf1728a1dc3982fae3ba} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}} \+\_\+prefix\+\_\+names (\begin{DoxyParamCaption}\item[{str}]{src}{, }\item[{type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}}]\+}]{expected\+\_\+type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}ast parse and prefix names with `.` to avoid collision with user vars\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a54c33df321a294a85bab992c933d5374}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_pythonize@{\_pythonize}}
+\index{\_pythonize@{\_pythonize}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_pythonize()}{\_pythonize()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a54c33df321a294a85bab992c933d5374} 
+ None \texorpdfstring{$\vert$}{|} bool \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} float \texorpdfstring{$\vert$}{|} str \+\_\+pythonize (\begin{DoxyParamCaption}\item[{str}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_ad5721800757b15d9f091664d0c53449e}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!parse\_converter\_args@{parse\_converter\_args}}
+\index{parse\_converter\_args@{parse\_converter\_args}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{parse\_converter\_args()}{parse\_converter\_args()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_ad5721800757b15d9f091664d0c53449e} 
+ tuple\+[tuple\+[t.\+Any, ...]\+, dict\+[str, t.\+Any]\+]\+ parse\+\_\+converter\+\_\+args (\begin{DoxyParamCaption}\item[{str}]{argstr}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacewerkzeug_1_1routing_1_1rules_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_ASTT@{\_ASTT}}
+\index{\_ASTT@{\_ASTT}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_ASTT}{\_ASTT}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8} 
+werkzeug.\+routing.\+rules.\+\_\+\+ASTT = t.\+Type\+Var("{}\+\_\+\+ASTT"{}, bound=ast.\+AST)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a8c82882d76b4af0ebb124d9710776f2f}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_CALL\_CONVERTER\_CODE\_FMT@{\_CALL\_CONVERTER\_CODE\_FMT}}
+\index{\_CALL\_CONVERTER\_CODE\_FMT@{\_CALL\_CONVERTER\_CODE\_FMT}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_CALL\_CONVERTER\_CODE\_FMT}{\_CALL\_CONVERTER\_CODE\_FMT}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a8c82882d76b4af0ebb124d9710776f2f} 
+str werkzeug.\+routing.\+rules.\+\_\+\+CALL\+\_\+\+CONVERTER\+\_\+\+CODE\+\_\+\+FMT = "{}self.\+\_\+converters\+[\{elem!r\}]\+.to\+\_\+url()"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a98581b345eed8b7a185081f6bc4f0c92}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_converter\_args\_re@{\_converter\_args\_re}}
+\index{\_converter\_args\_re@{\_converter\_args\_re}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_converter\_args\_re}{\_converter\_args\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a98581b345eed8b7a185081f6bc4f0c92} 
+werkzeug.\+routing.\+rules.\+\_\+converter\+\_\+args\+\_\+re\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ re.VERBOSE,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_ae2d0d8f26ea89fcbe95fa543a02acfad}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_IF\_KWARGS\_URL\_ENCODE\_AST@{\_IF\_KWARGS\_URL\_ENCODE\_AST}}
+\index{\_IF\_KWARGS\_URL\_ENCODE\_AST@{\_IF\_KWARGS\_URL\_ENCODE\_AST}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_IF\_KWARGS\_URL\_ENCODE\_AST}{\_IF\_KWARGS\_URL\_ENCODE\_AST}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_ae2d0d8f26ea89fcbe95fa543a02acfad} 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a10e3c39ca93a954d99f707c63eb737d8}{\+\_\+\+ASTT}} werkzeug.\+routing.\+rules.\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+AST = \doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a4860e28b9760cf1728a1dc3982fae3ba}{\+\_\+prefix\+\_\+names}}(\doxymbox{\hyperlink{namespacewerkzeug_1_1routing_1_1rules_a56b65a08ea261a8bb1ecd50941c5bdf8}{\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+CODE}}, ast.\+If)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a56b65a08ea261a8bb1ecd50941c5bdf8}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_IF\_KWARGS\_URL\_ENCODE\_CODE@{\_IF\_KWARGS\_URL\_ENCODE\_CODE}}
+\index{\_IF\_KWARGS\_URL\_ENCODE\_CODE@{\_IF\_KWARGS\_URL\_ENCODE\_CODE}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_IF\_KWARGS\_URL\_ENCODE\_CODE}{\_IF\_KWARGS\_URL\_ENCODE\_CODE}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a56b65a08ea261a8bb1ecd50941c5bdf8} 
+str werkzeug.\+routing.\+rules.\+\_\+\+IF\+\_\+\+KWARGS\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+CODE\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{if\ kwargs:}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ params\ =\ self.\_encode\_query\_vars(kwargs)}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ q\ =\ "{}?"{}\ if\ params\ else\ "{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{else:}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ q\ =\ params\ =\ "{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a8506a7b4eda514c57dbd89cbf8d79857}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_part\_re@{\_part\_re}}
+\index{\_part\_re@{\_part\_re}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_part\_re}{\_part\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a8506a7b4eda514c57dbd89cbf8d79857} 
+werkzeug.\+routing.\+rules.\+\_\+part\+\_\+re\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ re.VERBOSE,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a1af258c4e2c4594f40189ea160d2418f}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_PYTHON\_CONSTANTS@{\_PYTHON\_CONSTANTS}}
+\index{\_PYTHON\_CONSTANTS@{\_PYTHON\_CONSTANTS}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_PYTHON\_CONSTANTS}{\_PYTHON\_CONSTANTS}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a1af258c4e2c4594f40189ea160d2418f} 
+dict werkzeug.\+routing.\+rules.\+\_\+\+PYTHON\+\_\+\+CONSTANTS = \{"{}None"{}:\+ None, "{}True"{}:\+ True, "{}False"{}:\+ False\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_ae28ca7ac349cea0d350dca84a17ce731}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_simple\_rule\_re@{\_simple\_rule\_re}}
+\index{\_simple\_rule\_re@{\_simple\_rule\_re}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_simple\_rule\_re}{\_simple\_rule\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_ae28ca7ac349cea0d350dca84a17ce731} 
+werkzeug.\+routing.\+rules.\+\_\+simple\+\_\+rule\+\_\+re = re.\+compile(r"{}$<$(\+[\texorpdfstring{$^\wedge$}{\string^}$>$]\++)$>$"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1routing_1_1rules_a08c709583c8a5c2818772281e9d743c2}\index{werkzeug.routing.rules@{werkzeug.routing.rules}!\_URL\_ENCODE\_AST\_NAMES@{\_URL\_ENCODE\_AST\_NAMES}}
+\index{\_URL\_ENCODE\_AST\_NAMES@{\_URL\_ENCODE\_AST\_NAMES}!werkzeug.routing.rules@{werkzeug.routing.rules}}
+\doxysubsubsection{\texorpdfstring{\_URL\_ENCODE\_AST\_NAMES}{\_URL\_ENCODE\_AST\_NAMES}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1routing_1_1rules_a08c709583c8a5c2818772281e9d743c2} 
+tuple werkzeug.\+routing.\+rules.\+\_\+\+URL\+\_\+\+ENCODE\+\_\+\+AST\+\_\+\+NAMES\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \_prefix\_names(\textcolor{stringliteral}{"{}q"{}},\ ast.Name),}
+\DoxyCodeLine{\ \ \ \ \_prefix\_names(\textcolor{stringliteral}{"{}params"{}},\ ast.Name),}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

@@ -1,0 +1,191 @@
+\doxysection{werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder Class Reference}
+\hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder}{}\label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a3973a3a9626f74007d71c16d21c74d0d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bytes boundary, int\texorpdfstring{$\vert$}{|}None max\+\_\+form\+\_\+memory\+\_\+size=None, \texorpdfstring{$\ast$}{*}, int\texorpdfstring{$\vert$}{|}None max\+\_\+parts=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8d3ec3b08ece193c776284aa771f6a2a}{receive\+\_\+data}} (self, bytes\texorpdfstring{$\vert$}{|}None data)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_event}{Event}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_abc8fdaefa4f1724bafc763b343f63b6f}{next\+\_\+event}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab0780aa807fcfb1119c364a1e5d4ec0a}{buffer}} = bytearray()
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afe4be66f28cbd449a7d3a33ba521bc0c}{complete}} = False
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a1db4cf713dcd4c5750a7b58ab592ca2a}{max\+\_\+form\+\_\+memory\+\_\+size}} = max\+\_\+form\+\_\+memory\+\_\+size
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a96d5409aa87ad64ca3a4350d671850d5}{max\+\_\+parts}} = max\+\_\+parts
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e8144e9ed0df6000e09cc1452e4a148}{state}} = \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_state_a0546900a59682859699805cbd3566b59}{State.\+PREAMBLE}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8805902f899bc6aec1df633640655270}{boundary}} = boundary
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afc6d89b317dfc9339975dfbcc0796b0f}{preamble\+\_\+re}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ac01f4c95725f4a709e1d73d4525af56c}{boundary\+\_\+re}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e80bc2ae4a22a25642d52399ba3d492}{\+\_\+parse\+\_\+headers}} (self, bytes\texorpdfstring{$\vert$}{|}bytearray data)
+\item 
+tuple\+[bytes, int, bool]\+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab7713e977e6545941bf696ba9a98e86a}{\+\_\+parse\+\_\+data}} (self, bytes\texorpdfstring{$\vert$}{|}bytearray data, \texorpdfstring{$\ast$}{*}, bool start)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_aae578caff1a897092e9e8a355fd9197a}{\+\_\+last\+\_\+partial\+\_\+boundary\+\_\+index}} (self, bytes\texorpdfstring{$\vert$}{|}bytearray data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afd2f2a349a2dbc777a18a34af3e468c7}{\+\_\+search\+\_\+position}} = 0
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a91adf68f96558dd04a15a4b89e91cce7}{\+\_\+parts\+\_\+decoded}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Decodes a multipart message as bytes into Python events.
+
+The part data is returned as available to allow the caller to save
+the data from memory to disk, if desired.
+
+.. versionchanged:: 3.1.4
+    Handle chunks that split a``\r\n`` sequence.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-constructors}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a3973a3a9626f74007d71c16d21c74d0d}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a3973a3a9626f74007d71c16d21c74d0d} 
+ None werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{boundary}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+form\+\_\+memory\+\_\+size}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+parts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-func-members}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_aae578caff1a897092e9e8a355fd9197a}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_last\_partial\_boundary\_index@{\_last\_partial\_boundary\_index}}
+\index{\_last\_partial\_boundary\_index@{\_last\_partial\_boundary\_index}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_last\_partial\_boundary\_index()}{\_last\_partial\_boundary\_index()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_aae578caff1a897092e9e8a355fd9197a} 
+ int werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+last\+\_\+partial\+\_\+boundary\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab7713e977e6545941bf696ba9a98e86a}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_parse\_data@{\_parse\_data}}
+\index{\_parse\_data@{\_parse\_data}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_parse\_data()}{\_parse\_data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab7713e977e6545941bf696ba9a98e86a} 
+ tuple\+[bytes, int, bool]\+ werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+parse\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray}]{data}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool     }]{start}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e80bc2ae4a22a25642d52399ba3d492}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_parse\_headers@{\_parse\_headers}}
+\index{\_parse\_headers@{\_parse\_headers}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_parse\_headers()}{\_parse\_headers()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e80bc2ae4a22a25642d52399ba3d492} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+parse\+\_\+headers (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_abc8fdaefa4f1724bafc763b343f63b6f}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!next\_event@{next\_event}}
+\index{next\_event@{next\_event}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{next\_event()}{next\_event()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_abc8fdaefa4f1724bafc763b343f63b6f} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_event}{Event}} werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+next\+\_\+event (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8d3ec3b08ece193c776284aa771f6a2a}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!receive\_data@{receive\_data}}
+\index{receive\_data@{receive\_data}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{receive\_data()}{receive\_data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8d3ec3b08ece193c776284aa771f6a2a} 
+ None werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+receive\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} None}]{data}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a91adf68f96558dd04a15a4b89e91cce7}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_parts\_decoded@{\_parts\_decoded}}
+\index{\_parts\_decoded@{\_parts\_decoded}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_parts\_decoded}{\_parts\_decoded}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a91adf68f96558dd04a15a4b89e91cce7} 
+int werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+parts\+\_\+decoded = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afd2f2a349a2dbc777a18a34af3e468c7}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!\_search\_position@{\_search\_position}}
+\index{\_search\_position@{\_search\_position}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{\_search\_position}{\_search\_position}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afd2f2a349a2dbc777a18a34af3e468c7} 
+int werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+\_\+search\+\_\+position = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8805902f899bc6aec1df633640655270}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!boundary@{boundary}}
+\index{boundary@{boundary}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{boundary}{boundary}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a8805902f899bc6aec1df633640655270} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+boundary = boundary}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ac01f4c95725f4a709e1d73d4525af56c}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!boundary\_re@{boundary\_re}}
+\index{boundary\_re@{boundary\_re}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{boundary\_re}{boundary\_re}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ac01f4c95725f4a709e1d73d4525af56c} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+boundary\+\_\+re}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ rb\textcolor{stringliteral}{"{}\%s-\/-\/\%s(-\/-\/[\string^\(\backslash\)S\(\backslash\)n\(\backslash\)r]*\%s?|[\string^\(\backslash\)S\(\backslash\)n\(\backslash\)r]*\%s)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \%\ (LINE\_BREAK,\ re.escape(boundary),\ LINE\_BREAK,\ LINE\_BREAK),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ re.MULTILINE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab0780aa807fcfb1119c364a1e5d4ec0a}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!buffer@{buffer}}
+\index{buffer@{buffer}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_ab0780aa807fcfb1119c364a1e5d4ec0a} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+buffer = bytearray()}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afe4be66f28cbd449a7d3a33ba521bc0c}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!complete@{complete}}
+\index{complete@{complete}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{complete}{complete}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afe4be66f28cbd449a7d3a33ba521bc0c} 
+bool werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+complete = False}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a1db4cf713dcd4c5750a7b58ab592ca2a}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!max\_form\_memory\_size@{max\_form\_memory\_size}}
+\index{max\_form\_memory\_size@{max\_form\_memory\_size}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{max\_form\_memory\_size}{max\_form\_memory\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a1db4cf713dcd4c5750a7b58ab592ca2a} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+max\+\_\+form\+\_\+memory\+\_\+size = max\+\_\+form\+\_\+memory\+\_\+size}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a96d5409aa87ad64ca3a4350d671850d5}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!max\_parts@{max\_parts}}
+\index{max\_parts@{max\_parts}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{max\_parts}{max\_parts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a96d5409aa87ad64ca3a4350d671850d5} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+max\+\_\+parts = max\+\_\+parts}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afc6d89b317dfc9339975dfbcc0796b0f}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!preamble\_re@{preamble\_re}}
+\index{preamble\_re@{preamble\_re}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{preamble\_re}{preamble\_re}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_afc6d89b317dfc9339975dfbcc0796b0f} 
+werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+preamble\+\_\+re}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ rb\textcolor{stringliteral}{"{}\%s?-\/-\/\%s(-\/-\/[\string^\(\backslash\)S\(\backslash\)n\(\backslash\)r]*\%s?|[\string^\(\backslash\)S\(\backslash\)n\(\backslash\)r]*\%s)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \%\ (LINE\_BREAK,\ re.escape(boundary),\ LINE\_BREAK,\ LINE\_BREAK),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ re.MULTILINE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e8144e9ed0df6000e09cc1452e4a148}\index{werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}!state@{state}}
+\index{state@{state}!werkzeug.sansio.multipart.MultipartDecoder@{werkzeug.sansio.multipart.MultipartDecoder}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder_a5e8144e9ed0df6000e09cc1452e4a148} 
+bool werkzeug.\+sansio.\+multipart.\+Multipart\+Decoder.\+state = \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_state_a0546900a59682859699805cbd3566b59}{State.\+PREAMBLE}}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+sansio/\+\doxymbox{\hyperlink{multipart_8py}{multipart.\+py}}\end{DoxyCompactItemize}

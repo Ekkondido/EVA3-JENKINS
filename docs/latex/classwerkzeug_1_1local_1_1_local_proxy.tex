@@ -1,0 +1,124 @@
+\doxysection{werkzeug.\+local.\+Local\+Proxy Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local_proxy}{}\label{classwerkzeug_1_1local_1_1_local_proxy}\index{werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}}
+Inheritance diagram for werkzeug.\+local.\+Local\+Proxy:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1local_1_1_local_proxy}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy_a18f93e43dd16d2723d762f51d2ed985f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Context\+Var\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[$\,$]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+ local, str\texorpdfstring{$\vert$}{|}None name=None, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None unbound\+\_\+message=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy_a66495fc1633833d06aaee9a60543ce4d}{\+\_\+get\+\_\+current\+\_\+object}} .Callable\+[\+[$\,$]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A proxy to the object bound to a context-local object. All
+operations on the proxy are forwarded to the bound object. If no
+object is bound, a ``RuntimeError`` is raised.
+
+:param local: The context-local object that provides the proxied
+    object.
+:param name: Proxy this attribute from the proxied object.
+:param unbound_message: The error message to show if the
+    context-local object is unbound.
+
+Proxy a :class:`~contextvars.ContextVar` to make it easier to
+access. Pass a name to proxy that attribute.
+
+.. code-block:: python
+
+    _request_var = ContextVar("request")
+    request = LocalProxy(_request_var)
+    session = LocalProxy(_request_var, "session")
+
+Proxy an attribute on a :class:`Local` namespace by calling the
+local with the attribute name:
+
+.. code-block:: python
+
+    data = Local()
+    user = data("user")
+
+Proxy the top item on a :class:`LocalStack` by calling the local.
+Pass a name to proxy that attribute.
+
+.. code-block::
+
+    app_stack = LocalStack()
+    current_app = app_stack()
+    g = app_stack("g")
+
+Pass a function to proxy the return value from that function. This
+was previously used to access attributes of local objects before
+that was supported directly.
+
+.. code-block:: python
+
+    session = LocalProxy(lambda: request.session)
+
+``__repr__`` and ``__class__`` are proxied, so ``repr(x)`` and
+``isinstance(x, cls)`` will look like the proxied object. Use
+``issubclass(type(x), LocalProxy)`` to check if an object is a
+proxy.
+
+.. code-block:: python
+
+    repr(user)  # <User admin>
+    isinstance(user, User)  # True
+    issubclass(type(user), LocalProxy)  # True
+
+.. versionchanged:: 2.2.2
+    ``__wrapped__`` is set when wrapping an object, not only when
+    wrapping a function, to prevent doctest from failing.
+
+.. versionchanged:: 2.2
+    Can proxy a ``ContextVar`` or ``LocalStack`` directly.
+
+.. versionchanged:: 2.2
+    The ``name`` parameter can be used with any proxied object, not
+    only ``Local``.
+
+.. versionchanged:: 2.2
+    Added the ``unbound_message`` parameter.
+
+.. versionchanged:: 2.0
+    Updated proxied attributes and methods to reflect the current
+    data model.
+
+.. versionchanged:: 0.6.1
+    The class can be instantiated with a callable.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_proxy_doc-constructors}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_a18f93e43dd16d2723d762f51d2ed985f}\index{werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_proxy_a18f93e43dd16d2723d762f51d2ed985f} 
+ None werkzeug.\+local.\+Local\+Proxy.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Context\+Var\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local}{Local}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack}{Local\+Stack}}\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+ \texorpdfstring{$\vert$}{|} t.\+Callable\+[\+[$\,$]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+}]{local}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{unbound\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1_local_proxy_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_proxy_a66495fc1633833d06aaee9a60543ce4d}\index{werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}!\_get\_current\_object@{\_get\_current\_object}}
+\index{\_get\_current\_object@{\_get\_current\_object}!werkzeug.local.LocalProxy@{werkzeug.local.LocalProxy}}
+\doxysubsubsection{\texorpdfstring{\_get\_current\_object}{\_get\_current\_object}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_proxy_a66495fc1633833d06aaee9a60543ce4d} 
+t werkzeug.\+local.\+Local\+Proxy.\+\_\+get\+\_\+current\+\_\+object .Callable\+[\+[$\,$]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{local_8py}{local.\+py}}\end{DoxyCompactItemize}

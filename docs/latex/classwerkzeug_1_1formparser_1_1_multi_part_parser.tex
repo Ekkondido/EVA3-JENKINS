@@ -1,0 +1,108 @@
+\doxysection{werkzeug.\+formparser.\+Multi\+Part\+Parser Class Reference}
+\hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser}{}\label{classwerkzeug_1_1formparser_1_1_multi_part_parser}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_ad65b17efd42a31e6cd9ef7fee160009a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_t_stream_factory}{TStream\+Factory}}\texorpdfstring{$\vert$}{|}None stream\+\_\+factory=None, int\texorpdfstring{$\vert$}{|}None max\+\_\+form\+\_\+memory\+\_\+size=None, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None cls=None, int buffer\+\_\+size=64 \texorpdfstring{$\ast$}{*}1024, int\texorpdfstring{$\vert$}{|}None max\+\_\+form\+\_\+parts=None)
+\item 
+te.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a20078f48921083e44ccdbc8400bb58ff}{fail}} (self, str message)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a9fa76d2277d9f1aa80f75fda1675ca0f}{get\+\_\+part\+\_\+charset}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} headers)
+\item 
+t.\+IO\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_ac5ae28bcec64ddbabac66c111438e087}{start\+\_\+file\+\_\+streaming}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_file}{File}} event, int\texorpdfstring{$\vert$}{|}None total\+\_\+content\+\_\+length)
+\item 
+tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, str]\+, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}{File\+Storage}}]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a8da14482a0e01986a6caaaad63b28e3e}{parse}} (self, t.\+IO\+[bytes]\+ stream, bytes boundary, int\texorpdfstring{$\vert$}{|}None content\+\_\+length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a7b356e52bf6eb777749d9b9d209efa92}{max\+\_\+form\+\_\+memory\+\_\+size}} = max\+\_\+form\+\_\+memory\+\_\+size
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_aeb95e902d93e408b21cf6829e0e9fceb}{max\+\_\+form\+\_\+parts}} = max\+\_\+form\+\_\+parts
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_acb30ea7bb0c3f6295af2622af40dedf8}{stream\+\_\+factory}} = stream\+\_\+factory
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a92a9a3c5c18f625f99dd41c5e3774a90}{cls}} = cls
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_multi_part_parser_a290bf26815d563877e8f2071e9279110}{buffer\+\_\+size}} = buffer\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\label{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-constructors}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_ad65b17efd42a31e6cd9ef7fee160009a}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_ad65b17efd42a31e6cd9ef7fee160009a} 
+ None werkzeug.\+formparser.\+Multi\+Part\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_t_stream_factory}{TStream\+Factory}} \texorpdfstring{$\vert$}{|} None }]{stream\+\_\+factory}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+form\+\_\+memory\+\_\+size}{ = {\ttfamily None}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+]\+ \texorpdfstring{$\vert$}{|} None }]{cls}{ = {\ttfamily None}, }\item[{int }]{buffer\+\_\+size}{ = {\ttfamily 64~\texorpdfstring{$\ast$}{*}~1024}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+form\+\_\+parts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-func-members}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a20078f48921083e44ccdbc8400bb58ff}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!fail@{fail}}
+\index{fail@{fail}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{fail()}{fail()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a20078f48921083e44ccdbc8400bb58ff} 
+ te.\+No\+Return werkzeug.\+formparser.\+Multi\+Part\+Parser.\+fail (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{message}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a9fa76d2277d9f1aa80f75fda1675ca0f}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!get\_part\_charset@{get\_part\_charset}}
+\index{get\_part\_charset@{get\_part\_charset}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{get\_part\_charset()}{get\_part\_charset()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a9fa76d2277d9f1aa80f75fda1675ca0f} 
+ str werkzeug.\+formparser.\+Multi\+Part\+Parser.\+get\+\_\+part\+\_\+charset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}}]{headers}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a8da14482a0e01986a6caaaad63b28e3e}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!parse@{parse}}
+\index{parse@{parse}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a8da14482a0e01986a6caaaad63b28e3e} 
+ tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, str]\+, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}{File\+Storage}}]\+]\+ werkzeug.\+formparser.\+Multi\+Part\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+}]{stream}{, }\item[{bytes}]{boundary}{, }\item[{int \texorpdfstring{$\vert$}{|} None     }]{content\+\_\+length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_ac5ae28bcec64ddbabac66c111438e087}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!start\_file\_streaming@{start\_file\_streaming}}
+\index{start\_file\_streaming@{start\_file\_streaming}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{start\_file\_streaming()}{start\_file\_streaming()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_ac5ae28bcec64ddbabac66c111438e087} 
+ t.\+IO\+[bytes]\+ werkzeug.\+formparser.\+Multi\+Part\+Parser.\+start\+\_\+file\+\_\+streaming (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_file}{File}}}]{event}{, }\item[{int \texorpdfstring{$\vert$}{|} None     }]{total\+\_\+content\+\_\+length}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a290bf26815d563877e8f2071e9279110}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!buffer\_size@{buffer\_size}}
+\index{buffer\_size@{buffer\_size}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{buffer\_size}{buffer\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a290bf26815d563877e8f2071e9279110} 
+werkzeug.\+formparser.\+Multi\+Part\+Parser.\+buffer\+\_\+size = buffer\+\_\+size}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a92a9a3c5c18f625f99dd41c5e3774a90}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!cls@{cls}}
+\index{cls@{cls}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{cls}{cls}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a92a9a3c5c18f625f99dd41c5e3774a90} 
+werkzeug.\+formparser.\+Multi\+Part\+Parser.\+cls = cls}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_a7b356e52bf6eb777749d9b9d209efa92}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!max\_form\_memory\_size@{max\_form\_memory\_size}}
+\index{max\_form\_memory\_size@{max\_form\_memory\_size}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{max\_form\_memory\_size}{max\_form\_memory\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_a7b356e52bf6eb777749d9b9d209efa92} 
+werkzeug.\+formparser.\+Multi\+Part\+Parser.\+max\+\_\+form\+\_\+memory\+\_\+size = max\+\_\+form\+\_\+memory\+\_\+size}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_aeb95e902d93e408b21cf6829e0e9fceb}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!max\_form\_parts@{max\_form\_parts}}
+\index{max\_form\_parts@{max\_form\_parts}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{max\_form\_parts}{max\_form\_parts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_aeb95e902d93e408b21cf6829e0e9fceb} 
+werkzeug.\+formparser.\+Multi\+Part\+Parser.\+max\+\_\+form\+\_\+parts = max\+\_\+form\+\_\+parts}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_multi_part_parser_acb30ea7bb0c3f6295af2622af40dedf8}\index{werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}!stream\_factory@{stream\_factory}}
+\index{stream\_factory@{stream\_factory}!werkzeug.formparser.MultiPartParser@{werkzeug.formparser.MultiPartParser}}
+\doxysubsubsection{\texorpdfstring{stream\_factory}{stream\_factory}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_multi_part_parser_acb30ea7bb0c3f6295af2622af40dedf8} 
+werkzeug.\+formparser.\+Multi\+Part\+Parser.\+stream\+\_\+factory = stream\+\_\+factory}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{formparser_8py}{formparser.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Subdomain Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Subdomain:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1rules_1_1_subdomain}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a6fbbe87b7185622618ff3628f168232f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str subdomain, t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}]\+ rules)
+\item 
+t.\+Iterator\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a5efc2f11ccb50d79ae599d579ab5a706}{get\+\_\+rules}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_adbc032f8a5f7cbdb7f5f34ef34580a1b}{subdomain}} = subdomain
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_afdf8cffa71aa572984060025b014a852}{rules}} = rules
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}All URLs provided by this factory have the subdomain set to a
+specific domain. For example if you want to use the subdomain for
+the current language this can be a good setup::
+
+    url_map = Map([
+        Rule('/', endpoint='#select_language'),
+        Subdomain('<string(length=2):lang_code>', [
+            Rule('/', endpoint='index'),
+            Rule('/about', endpoint='about'),
+            Rule('/help', endpoint='help')
+        ])
+    ])
+
+All the rules except for the ``'#select_language'`` endpoint will now
+listen on a two letter long subdomain that holds the language code
+for the current request.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a6fbbe87b7185622618ff3628f168232f}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a6fbbe87b7185622618ff3628f168232f} 
+ None werkzeug.\+routing.\+rules.\+Subdomain.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{subdomain}{, }\item[{t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}]\+}]{rules}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a5efc2f11ccb50d79ae599d579ab5a706}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a5efc2f11ccb50d79ae599d579ab5a706} 
+ t.\+Iterator\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ werkzeug.\+routing.\+rules.\+Subdomain.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_adf35b876e1c3edd9e2367b385a19b66f}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}.
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_afdf8cffa71aa572984060025b014a852}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}!rules@{rules}}
+\index{rules@{rules}!werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_afdf8cffa71aa572984060025b014a852} 
+werkzeug.\+routing.\+rules.\+Subdomain.\+rules = rules}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_adbc032f8a5f7cbdb7f5f34ef34580a1b}\index{werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}!subdomain@{subdomain}}
+\index{subdomain@{subdomain}!werkzeug.routing.rules.Subdomain@{werkzeug.routing.rules.Subdomain}}
+\doxysubsubsection{\texorpdfstring{subdomain}{subdomain}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_adbc032f8a5f7cbdb7f5f34ef34580a1b} 
+werkzeug.\+routing.\+rules.\+Subdomain.\+subdomain = subdomain}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{rules_8py}{rules.\+py}}\end{DoxyCompactItemize}

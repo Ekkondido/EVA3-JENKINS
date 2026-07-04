@@ -1,0 +1,62 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+pip/\+\+\_\+internal/\+req/\+constructors.py File Reference}
+\hypertarget{constructors_8py}{}\label{constructors_8py}\index{venv/Lib/site-\/packages/pip/\_internal/req/constructors.py@{venv/Lib/site-\/packages/pip/\_internal/req/constructors.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1constructors_1_1_requirement_parts}{pip.\+\_\+internal.\+req.\+constructors.\+Requirement\+Parts}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip}{pip}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal}{pip.\+\_\+internal}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req}{pip.\+\_\+internal.\+req}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors}{pip.\+\_\+internal.\+req.\+constructors}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\+[str, Optional\+[str]\+]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a4e27fa480a31b0501008a6447c63ace5}{pip.\+\_\+internal.\+req.\+constructors.\+\_\+strip\+\_\+extras}} (str path)
+\item 
+Set\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_abe4dd2e33eaad26c2849bb106291e279}{pip.\+\_\+internal.\+req.\+constructors.\+convert\+\_\+extras}} (Optional\+[str]\+ extras)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}{Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a3efae9cb605e50181fb3171efd3fb905}{pip.\+\_\+internal.\+req.\+constructors.\+\_\+set\+\_\+requirement\+\_\+extras}} (\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1requirements_1_1_requirement}{Requirement}} req, Set\+[str]\+ new\+\_\+extras)
+\item 
+Tuple\+[Optional\+[str]\+, str, Set\+[str]\+]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a4328daea06c72f6bfbcc3e6e43155bca}{pip.\+\_\+internal.\+req.\+constructors.\+parse\+\_\+editable}} (str editable\+\_\+req)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_aadfe5bfdb44b6ce0f78f542457f71465}{pip.\+\_\+internal.\+req.\+constructors.\+check\+\_\+first\+\_\+requirement\+\_\+in\+\_\+file}} (str filename)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_adba10d418eb208f504ccc20f03d88705}{pip.\+\_\+internal.\+req.\+constructors.\+deduce\+\_\+helpful\+\_\+msg}} (str req)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1constructors_1_1_requirement_parts}{Requirement\+Parts}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a61a2123dc12bf9312fc0e538259de939}{pip.\+\_\+internal.\+req.\+constructors.\+parse\+\_\+req\+\_\+from\+\_\+editable}} (str editable\+\_\+req)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a35610366ef156c0b5661afb404787d1c}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+editable}} (str editable\+\_\+req, Optional\+[Union\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}, str]\+]\+ comes\+\_\+from=None, \texorpdfstring{$\ast$}{*}, Optional\+[bool]\+ use\+\_\+pep517=None, bool isolated=False, Optional\+[List\+[str]\+]\+ global\+\_\+options=None, Optional\+[Dict\+[str, List\+[str]\+]\+]\+ hash\+\_\+options=None, bool constraint=False, bool user\+\_\+supplied=False, bool permit\+\_\+editable\+\_\+wheels=False, Optional\+[Dict\+[str, Union\+[str, List\+[str]\+]\+]\+]\+ config\+\_\+settings=None)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ab47aa139e791c5cb46a8af27d2d71c1f}{pip.\+\_\+internal.\+req.\+constructors.\+\_\+looks\+\_\+like\+\_\+path}} (str name)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_af7869dd3ac4e8a9097d4594cbfb190ed}{pip.\+\_\+internal.\+req.\+constructors.\+\_\+get\+\_\+url\+\_\+from\+\_\+path}} (str path, str name)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1constructors_1_1_requirement_parts}{Requirement\+Parts}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ab855948f855942106878a5e33e57b286}{pip.\+\_\+internal.\+req.\+constructors.\+parse\+\_\+req\+\_\+from\+\_\+line}} (str name, Optional\+[str]\+ line\+\_\+source)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a2eaac859bd7fdf20e21131ccfe2ee948}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+line}} (str name, Optional\+[Union\+[str, \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+]\+ comes\+\_\+from=None, \texorpdfstring{$\ast$}{*}, Optional\+[bool]\+ use\+\_\+pep517=None, bool isolated=False, Optional\+[List\+[str]\+]\+ global\+\_\+options=None, Optional\+[Dict\+[str, List\+[str]\+]\+]\+ hash\+\_\+options=None, bool constraint=False, Optional\+[str]\+ line\+\_\+source=None, bool user\+\_\+supplied=False, Optional\+[Dict\+[str, Union\+[str, List\+[str]\+]\+]\+]\+ config\+\_\+settings=None)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a7cf47c92d1eaa97adfcc94c4b52ae9e5}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+req\+\_\+string}} (str req\+\_\+string, Optional\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ comes\+\_\+from=None, bool isolated=False, Optional\+[bool]\+ use\+\_\+pep517=None, bool user\+\_\+supplied=False)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_aeb4f8fd9ab0dd389bd1f156d5a592797}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+parsed\+\_\+requirement}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__file_1_1_parsed_requirement}{Parsed\+Requirement}} parsed\+\_\+req, bool isolated=False, Optional\+[bool]\+ use\+\_\+pep517=None, bool user\+\_\+supplied=False, Optional\+[Dict\+[str, Union\+[str, List\+[str]\+]\+]\+]\+ config\+\_\+settings=None)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a030764676e3a84e6a5f9391b3772760d}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+from\+\_\+link\+\_\+and\+\_\+ireq}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link, \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} ireq)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ad55c6852aca38c8286bb19b1f5ff8947}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+drop\+\_\+extras}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} ireq)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ade9ae3e1c0a5900cd50ec78cfd555ab7}{pip.\+\_\+internal.\+req.\+constructors.\+install\+\_\+req\+\_\+extend\+\_\+extras}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} ireq, Collection\+[str]\+ extras)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_a3fa73cdce7cd1839ac123a5fea17055d}{pip.\+\_\+internal.\+req.\+constructors.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors_ae91c811dff5ff188e8d6847af9823118}{pip.\+\_\+internal.\+req.\+constructors.\+operators}} = Specifier.\+\_\+operators.\+keys()
+\end{DoxyCompactItemize}

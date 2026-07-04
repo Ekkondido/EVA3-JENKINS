@@ -1,0 +1,165 @@
+\doxysection{scaffold Namespace Reference}
+\hypertarget{namespacescaffold}{}\label{namespacescaffold}\index{scaffold@{scaffold}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{Scaffold}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}} \doxymbox{\hyperlink{namespacescaffold_a4f0d45ffeed7af70b57397102048c0d4}{setupmethod}} (\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}} f)
+\item 
+str \doxymbox{\hyperlink{namespacescaffold_afcc4023a779b05f8a8f6303b7b309aa6}{\+\_\+endpoint\+\_\+from\+\_\+view\+\_\+func}} (ft.\+Route\+Callable view\+\_\+func)
+\item 
+str \doxymbox{\hyperlink{namespacescaffold_ac3bb1e91cac26404799f637512d0de63}{\+\_\+find\+\_\+package\+\_\+path}} (str import\+\_\+name)
+\item 
+tuple\+[str\texorpdfstring{$\vert$}{|}None, str]\+ \doxymbox{\hyperlink{namespacescaffold_a483e52ccaef13e1a505e7a54bd86da4f}{find\+\_\+package}} (str import\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a02e1127333471ce8220fc2e80e32136f}{\+\_\+sentinel}} = object()
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}} = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}{T\+\_\+after\+\_\+request}} = t.\+Type\+Var("{}T\+\_\+after\+\_\+request"{}, bound=ft.\+After\+Request\+Callable\+[t.\+Any]\+)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}{T\+\_\+before\+\_\+request}} = t.\+Type\+Var("{}T\+\_\+before\+\_\+request"{}, bound=ft.\+Before\+Request\+Callable)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}{T\+\_\+error\+\_\+handler}} = t.\+Type\+Var("{}T\+\_\+error\+\_\+handler"{}, bound=ft.\+Error\+Handler\+Callable)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}{T\+\_\+teardown}} = t.\+Type\+Var("{}T\+\_\+teardown"{}, bound=ft.\+Teardown\+Callable)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}{T\+\_\+template\+\_\+context\+\_\+processor}}
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}{T\+\_\+url\+\_\+defaults}} = t.\+Type\+Var("{}T\+\_\+url\+\_\+defaults"{}, bound=ft.\+URLDefault\+Callable)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}{T\+\_\+url\+\_\+value\+\_\+preprocessor}}
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}} = t.\+Type\+Var("{}T\+\_\+route"{}, bound=ft.\+Route\+Callable)
+\end{DoxyCompactItemize}
+
+
+\label{namespacescaffold_doc-func-members}
+\Hypertarget{namespacescaffold_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacescaffold_afcc4023a779b05f8a8f6303b7b309aa6}\index{scaffold@{scaffold}!\_endpoint\_from\_view\_func@{\_endpoint\_from\_view\_func}}
+\index{\_endpoint\_from\_view\_func@{\_endpoint\_from\_view\_func}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{\_endpoint\_from\_view\_func()}{\_endpoint\_from\_view\_func()}}
+{\footnotesize\ttfamily \label{namespacescaffold_afcc4023a779b05f8a8f6303b7b309aa6} 
+ str \+\_\+endpoint\+\_\+from\+\_\+view\+\_\+func (\begin{DoxyParamCaption}\item[{ft.\+Route\+Callable}]{view\+\_\+func}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Internal helper that returns the default endpoint for a given
+function.  This always is the function name.
+\end{DoxyVerb}
+ \Hypertarget{namespacescaffold_ac3bb1e91cac26404799f637512d0de63}\index{scaffold@{scaffold}!\_find\_package\_path@{\_find\_package\_path}}
+\index{\_find\_package\_path@{\_find\_package\_path}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{\_find\_package\_path()}{\_find\_package\_path()}}
+{\footnotesize\ttfamily \label{namespacescaffold_ac3bb1e91cac26404799f637512d0de63} 
+ str \+\_\+find\+\_\+package\+\_\+path (\begin{DoxyParamCaption}\item[{str}]{import\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the path that contains the package or module.\end{DoxyVerb}
+ \Hypertarget{namespacescaffold_a483e52ccaef13e1a505e7a54bd86da4f}\index{scaffold@{scaffold}!find\_package@{find\_package}}
+\index{find\_package@{find\_package}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{find\_package()}{find\_package()}}
+{\footnotesize\ttfamily \label{namespacescaffold_a483e52ccaef13e1a505e7a54bd86da4f} 
+ tuple\+[str \texorpdfstring{$\vert$}{|} None, str]\+ find\+\_\+package (\begin{DoxyParamCaption}\item[{str}]{import\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find the prefix that a package is installed under, and the path
+that it would be imported from.
+
+The prefix is the directory containing the standard directory
+hierarchy (lib, bin, etc.). If the package is not installed to the
+system (:attr:`sys.prefix`) or a virtualenv (``site-packages``),
+``None`` is returned.
+
+The path is the entry in :attr:`sys.path` that contains the package
+for import. If the package is not installed, it's assumed that the
+package was imported from the current working directory.
+\end{DoxyVerb}
+ \Hypertarget{namespacescaffold_a4f0d45ffeed7af70b57397102048c0d4}\index{scaffold@{scaffold}!setupmethod@{setupmethod}}
+\index{setupmethod@{setupmethod}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{setupmethod()}{setupmethod()}}
+{\footnotesize\ttfamily \label{namespacescaffold_a4f0d45ffeed7af70b57397102048c0d4} 
+ \doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}} setupmethod (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}}}]{f}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacescaffold_doc-var-members}
+\Hypertarget{namespacescaffold_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacescaffold_a02e1127333471ce8220fc2e80e32136f}\index{scaffold@{scaffold}!\_sentinel@{\_sentinel}}
+\index{\_sentinel@{\_sentinel}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{\_sentinel}{\_sentinel}}
+{\footnotesize\ttfamily \label{namespacescaffold_a02e1127333471ce8220fc2e80e32136f} 
+scaffold.\+\_\+sentinel = object()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}\index{scaffold@{scaffold}!F@{F}}
+\index{F@{F}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \label{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55} 
+scaffold.\+F = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)}
+
+\Hypertarget{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}\index{scaffold@{scaffold}!T\_after\_request@{T\_after\_request}}
+\index{T\_after\_request@{T\_after\_request}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_after\_request}{T\_after\_request}}
+{\footnotesize\ttfamily \label{namespacescaffold_ad51561b916ef632d6e28c646095e9f13} 
+scaffold.\+T\+\_\+after\+\_\+request = t.\+Type\+Var("{}T\+\_\+after\+\_\+request"{}, bound=ft.\+After\+Request\+Callable\+[t.\+Any]\+)}
+
+\Hypertarget{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}\index{scaffold@{scaffold}!T\_before\_request@{T\_before\_request}}
+\index{T\_before\_request@{T\_before\_request}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_before\_request}{T\_before\_request}}
+{\footnotesize\ttfamily \label{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6} 
+scaffold.\+T\+\_\+before\+\_\+request = t.\+Type\+Var("{}T\+\_\+before\+\_\+request"{}, bound=ft.\+Before\+Request\+Callable)}
+
+\Hypertarget{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}\index{scaffold@{scaffold}!T\_error\_handler@{T\_error\_handler}}
+\index{T\_error\_handler@{T\_error\_handler}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_error\_handler}{T\_error\_handler}}
+{\footnotesize\ttfamily \label{namespacescaffold_ab68a621547f9be476de4b0711cbc5368} 
+scaffold.\+T\+\_\+error\+\_\+handler = t.\+Type\+Var("{}T\+\_\+error\+\_\+handler"{}, bound=ft.\+Error\+Handler\+Callable)}
+
+\Hypertarget{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}\index{scaffold@{scaffold}!T\_route@{T\_route}}
+\index{T\_route@{T\_route}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_route}{T\_route}}
+{\footnotesize\ttfamily \label{namespacescaffold_a7017790a8379cf472002e9bab4e39de6} 
+scaffold.\+T\+\_\+route = t.\+Type\+Var("{}T\+\_\+route"{}, bound=ft.\+Route\+Callable)}
+
+\Hypertarget{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}\index{scaffold@{scaffold}!T\_teardown@{T\_teardown}}
+\index{T\_teardown@{T\_teardown}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_teardown}{T\_teardown}}
+{\footnotesize\ttfamily \label{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6} 
+scaffold.\+T\+\_\+teardown = t.\+Type\+Var("{}T\+\_\+teardown"{}, bound=ft.\+Teardown\+Callable)}
+
+\Hypertarget{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}\index{scaffold@{scaffold}!T\_template\_context\_processor@{T\_template\_context\_processor}}
+\index{T\_template\_context\_processor@{T\_template\_context\_processor}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_template\_context\_processor}{T\_template\_context\_processor}}
+{\footnotesize\ttfamily \label{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689} 
+scaffold.\+T\+\_\+template\+\_\+context\+\_\+processor}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.TypeVar(}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}T\_template\_context\_processor"{}},\ bound=ft.TemplateContextProcessorCallable}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}\index{scaffold@{scaffold}!T\_url\_defaults@{T\_url\_defaults}}
+\index{T\_url\_defaults@{T\_url\_defaults}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_url\_defaults}{T\_url\_defaults}}
+{\footnotesize\ttfamily \label{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf} 
+scaffold.\+T\+\_\+url\+\_\+defaults = t.\+Type\+Var("{}T\+\_\+url\+\_\+defaults"{}, bound=ft.\+URLDefault\+Callable)}
+
+\Hypertarget{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}\index{scaffold@{scaffold}!T\_url\_value\_preprocessor@{T\_url\_value\_preprocessor}}
+\index{T\_url\_value\_preprocessor@{T\_url\_value\_preprocessor}!scaffold@{scaffold}}
+\doxysubsubsection{\texorpdfstring{T\_url\_value\_preprocessor}{T\_url\_value\_preprocessor}}
+{\footnotesize\ttfamily \label{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8} 
+scaffold.\+T\+\_\+url\+\_\+value\+\_\+preprocessor}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.TypeVar(}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}T\_url\_value\_preprocessor"{}},\ bound=ft.URLValuePreprocessorCallable}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

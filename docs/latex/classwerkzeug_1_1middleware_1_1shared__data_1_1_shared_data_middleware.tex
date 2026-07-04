@@ -1,0 +1,209 @@
+\doxysection{werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware}{}\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9110135fe2e3c7636ce9c6fb59236867}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app,(cabc.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[tuple\+[str, str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+]\+]\+) exports, None disallow=None, bool cache=True, int cache\+\_\+timeout=60 \texorpdfstring{$\ast$}{*}60 \texorpdfstring{$\ast$}{*}12, str fallback\+\_\+mimetype="{}application/\+octet-\/stream"{})
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc}{is\+\_\+allowed}} (self, str filename)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ae1680a1599f189a45c25687a7540d29b}{get\+\_\+file\+\_\+loader}} (self, str filename)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a437b8826b1ee49ab497300ed695f2bed}{get\+\_\+package\+\_\+loader}} (self, str package, str package\+\_\+path)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ab007eb315335cc2ca43d23d496e0b701}{get\+\_\+directory\+\_\+loader}} (self, str directory)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a68f689261d22e5d361fcdef5ccce024c}{generate\+\_\+etag}} (self, datetime mtime, int file\+\_\+size, str real\+\_\+filename)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a256a9f1832954ffda5ee7cf45e75c66d}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a76307359ef68f1c16cf6c36deacb7f9e}{app}} = app
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9d2e27e12f0ff1ad28f3c45070887324}{exports}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ad36264422416820931bb78252451954c}{cache}} = cache
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af887552107f07092c25964f547bc30f7}{cache\+\_\+timeout}} = cache\+\_\+timeout
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a081b0484ad0ab494d68fae38d577baf7}{is\+\_\+allowed}} = lambda x:\+ not fnmatch(x, disallow)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_aee8fa30c6737c0c629f923733717caf5}{fallback\+\_\+mimetype}} = fallback\+\_\+mimetype
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_af489ecdc471ba7fdd3feb8aea9f5c290}{\+\_\+\+TOpener}} \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a6cf97221dcae920fd04346a91f84ed5b}{\+\_\+opener}} (self, str filename)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI middleware which provides static content for development
+environments or simple server setups. Its usage is quite simple::
+
+    import os
+    from werkzeug.middleware.shared_data import SharedDataMiddleware
+
+    app = SharedDataMiddleware(app, {
+        '/shared': os.path.join(os.path.dirname(__file__), 'shared')
+    })
+
+The contents of the folder ``./shared`` will now be available on
+``http://example.com/shared/``.  This is pretty useful during development
+because a standalone media server is not required. Files can also be
+mounted on the root folder and still continue to use the application because
+the shared data middleware forwards all unhandled requests to the
+application, even if the requests are below one of the shared folders.
+
+If `pkg_resources` is available you can also tell the middleware to serve
+files from package data::
+
+    app = SharedDataMiddleware(app, {
+        '/static': ('myapplication', 'static')
+    })
+
+This will then serve the ``static`` folder in the `myapplication`
+Python package.
+
+The optional `disallow` parameter can be a list of :func:`~fnmatch.fnmatch`
+rules for files that are not accessible from the web.  If `cache` is set to
+`False` no caching headers are sent.
+
+Currently the middleware does not support non-ASCII filenames. If the
+encoding on the file system happens to match the encoding of the URI it may
+work but this could also be by accident. We strongly suggest using ASCII
+only file names for static files.
+
+The middleware will guess the mimetype using the Python `mimetype`
+module.  If it's unable to figure out the charset it will fall back
+to `fallback_mimetype`.
+
+:param app: the application to wrap.  If you don't want to wrap an
+            application you can pass it :exc:`NotFound`.
+:param exports: a list or dict of exported files and folders.
+:param disallow: a list of :func:`~fnmatch.fnmatch` rules.
+:param cache: enable or disable caching headers.
+:param cache_timeout: the cache timeout in seconds for the headers.
+:param fallback_mimetype: The fallback mimetype for unknown files.
+
+.. versionchanged:: 1.0
+    The default ``fallback_mimetype`` is
+    ``application/octet-stream``. If a filename looks like a text
+    mimetype, the ``utf-8`` charset is added to it.
+
+.. versionadded:: 0.6
+    Added ``fallback_mimetype``.
+
+.. versionchanged:: 0.5
+    Added ``cache_timeout``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9110135fe2e3c7636ce9c6fb59236867}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9110135fe2e3c7636ce9c6fb59236867} 
+ None werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{, }\item[{(             cabc.\+Mapping\+[str, str \texorpdfstring{$\vert$}{|} tuple\+[str, str]\+]\+             \texorpdfstring{$\vert$}{|} t.\+Iterable\+[tuple\+[str, str \texorpdfstring{$\vert$}{|} tuple\+[str, str]\+]\+]\+         )}]{exports}{, }\item[{None }]{disallow}{ = {\ttfamily None}, }\item[{bool }]{cache}{ = {\ttfamily True}, }\item[{int }]{cache\+\_\+timeout}{ = {\ttfamily 60~\texorpdfstring{$\ast$}{*}~60~\texorpdfstring{$\ast$}{*}~12}, }\item[{str }]{fallback\+\_\+mimetype}{ = {\ttfamily "{}application/\+octet-\/stream"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a256a9f1832954ffda5ee7cf45e75c66d}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a256a9f1832954ffda5ee7cf45e75c66d} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a6cf97221dcae920fd04346a91f84ed5b}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!\_opener@{\_opener}}
+\index{\_opener@{\_opener}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_opener()}{\_opener()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a6cf97221dcae920fd04346a91f84ed5b} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_af489ecdc471ba7fdd3feb8aea9f5c290}{\+\_\+\+TOpener}} werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+\_\+opener (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a68f689261d22e5d361fcdef5ccce024c}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!generate\_etag@{generate\_etag}}
+\index{generate\_etag@{generate\_etag}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{generate\_etag()}{generate\_etag()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a68f689261d22e5d361fcdef5ccce024c} 
+ str werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+generate\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{datetime}]{mtime}{, }\item[{int}]{file\+\_\+size}{, }\item[{str}]{real\+\_\+filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ab007eb315335cc2ca43d23d496e0b701}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!get\_directory\_loader@{get\_directory\_loader}}
+\index{get\_directory\_loader@{get\_directory\_loader}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_directory\_loader()}{get\_directory\_loader()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ab007eb315335cc2ca43d23d496e0b701} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+get\+\_\+directory\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{directory}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ae1680a1599f189a45c25687a7540d29b}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!get\_file\_loader@{get\_file\_loader}}
+\index{get\_file\_loader@{get\_file\_loader}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_file\_loader()}{get\_file\_loader()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ae1680a1599f189a45c25687a7540d29b} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+get\+\_\+file\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a437b8826b1ee49ab497300ed695f2bed}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!get\_package\_loader@{get\_package\_loader}}
+\index{get\_package\_loader@{get\_package\_loader}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{get\_package\_loader()}{get\_package\_loader()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a437b8826b1ee49ab497300ed695f2bed} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1shared__data_abf23e85a5c825c38a0366a832b16e951}{\+\_\+\+TLoader}} werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+get\+\_\+package\+\_\+loader (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{package}{, }\item[{str}]{package\+\_\+path}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!is\_allowed@{is\_allowed}}
+\index{is\_allowed@{is\_allowed}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_allowed()}{is\_allowed()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a85f11017666b7229e028db2a2640a0cc} 
+ bool werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+is\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses can override this method to disallow the access to
+certain files.  However by providing `disallow` in the constructor
+this method is overwritten.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a76307359ef68f1c16cf6c36deacb7f9e}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!app@{app}}
+\index{app@{app}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a76307359ef68f1c16cf6c36deacb7f9e} 
+werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+app = app}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ad36264422416820931bb78252451954c}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!cache@{cache}}
+\index{cache@{cache}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{cache}{cache}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_ad36264422416820931bb78252451954c} 
+werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+cache = cache}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af887552107f07092c25964f547bc30f7}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!cache\_timeout@{cache\_timeout}}
+\index{cache\_timeout@{cache\_timeout}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{cache\_timeout}{cache\_timeout}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_af887552107f07092c25964f547bc30f7} 
+werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+cache\+\_\+timeout = cache\+\_\+timeout}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9d2e27e12f0ff1ad28f3c45070887324}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!exports@{exports}}
+\index{exports@{exports}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{exports}{exports}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a9d2e27e12f0ff1ad28f3c45070887324} 
+list werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+exports = \+[$\,$]\+}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_aee8fa30c6737c0c629f923733717caf5}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!fallback\_mimetype@{fallback\_mimetype}}
+\index{fallback\_mimetype@{fallback\_mimetype}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{fallback\_mimetype}{fallback\_mimetype}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_aee8fa30c6737c0c629f923733717caf5} 
+werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+fallback\+\_\+mimetype = fallback\+\_\+mimetype}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a081b0484ad0ab494d68fae38d577baf7}\index{werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}!is\_allowed@{is\_allowed}}
+\index{is\_allowed@{is\_allowed}!werkzeug.middleware.shared\_data.SharedDataMiddleware@{werkzeug.middleware.shared\_data.SharedDataMiddleware}}
+\doxysubsubsection{\texorpdfstring{is\_allowed}{is\_allowed}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1shared__data_1_1_shared_data_middleware_a081b0484ad0ab494d68fae38d577baf7} 
+werkzeug.\+middleware.\+shared\+\_\+data.\+Shared\+Data\+Middleware.\+is\+\_\+allowed = lambda x:\+ not fnmatch(x, disallow)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{shared__data_8py}{shared\+\_\+data.\+py}}\end{DoxyCompactItemize}

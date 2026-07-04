@@ -1,0 +1,129 @@
+\doxysection{click.\+\_\+textwrap.\+Text\+Wrapper Class Reference}
+\hypertarget{classclick_1_1__textwrap_1_1_text_wrapper}{}\label{classclick_1_1__textwrap_1_1_text_wrapper}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+Inheritance diagram for click.\+\_\+textwrap.\+Text\+Wrapper:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1__textwrap_1_1_text_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+cabc.\+Iterator\+[None]\+ \doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a8a27fadebc53d1bb60f904962b692521}{extra\+\_\+indent}} (self, str indent)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a580d6b392d54f2e9205a198d57c63cdc}{indent\+\_\+only}} (self, str text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_afe29b8fb7b0224994b68bb8d3e0af300}{break\+\_\+long\+\_\+words}}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_ab26c1b21399c3c4a9a256d1ce1445202}{width}}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a9f618c789b3561f995f017d0fe0c0c53}{placeholder}}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_aed1c24eb0b86c4ebb02b5ef9313545f4}{initial\+\_\+indent}} = old\+\_\+initial\+\_\+indent
+\item 
+\doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a07d6ae9fac303d897eba94f263d3c74d}{subsequent\+\_\+indent}} = old\+\_\+subsequent\+\_\+indent
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a27c439e5f2888b3db9bb4fe7206f8d80}{\+\_\+handle\+\_\+long\+\_\+word}} (self, list\+[str]\+ reversed\+\_\+chunks, list\+[str]\+ cur\+\_\+line, int cur\+\_\+len, int width)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classclick_1_1__textwrap_1_1_text_wrapper_a84f4066b35aa847a8778f2a1766eab8b}{\+\_\+wrap\+\_\+chunks}} (self, list\+[str]\+ chunks)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}``textwrap.TextWrapper`` variant that measures widths by visible
+character count.
+
+ANSI escape sequences embedded in chunks, indents, or the placeholder are
+excluded from the width budget. Without this, styled help text (a styled
+``Usage:`` prefix, a colorized option name, ...) would be wrapped earlier
+than its visible length warrants and tokens would split mid-word.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1__textwrap_1_1_text_wrapper_doc-func-members}
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a27c439e5f2888b3db9bb4fe7206f8d80}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!\_handle\_long\_word@{\_handle\_long\_word}}
+\index{\_handle\_long\_word@{\_handle\_long\_word}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{\_handle\_long\_word()}{\_handle\_long\_word()}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a27c439e5f2888b3db9bb4fe7206f8d80} 
+ None click.\+\_\+textwrap.\+Text\+Wrapper.\+\_\+handle\+\_\+long\+\_\+word (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[str]\+}]{reversed\+\_\+chunks}{, }\item[{list\+[str]\+}]{cur\+\_\+line}{, }\item[{int}]{cur\+\_\+len}{, }\item[{int}]{width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a84f4066b35aa847a8778f2a1766eab8b}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!\_wrap\_chunks@{\_wrap\_chunks}}
+\index{\_wrap\_chunks@{\_wrap\_chunks}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{\_wrap\_chunks()}{\_wrap\_chunks()}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a84f4066b35aa847a8778f2a1766eab8b} 
+ list\+[str]\+ click.\+\_\+textwrap.\+Text\+Wrapper.\+\_\+wrap\+\_\+chunks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[str]\+}]{chunks}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Wrap chunks counting widths in visible characters.
+
+Mirrors the algorithm of :meth:`textwrap.TextWrapper._wrap_chunks`
+with every width measurement routed through
+:func:`click._compat.term_len` instead of :func:`len`, so ANSI escape
+bytes in chunks, indents, or the placeholder do not inflate the count.
+
+.. seealso::
+    :class:`textwrap.TextWrapper` in the Python standard library documentation:
+    https://docs.python.org/3/library/textwrap.html#textwrap.TextWrapper
+
+    Reference implementation in CPython:
+    https://github.com/python/cpython/blob/main/Lib/textwrap.py
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a8a27fadebc53d1bb60f904962b692521}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!extra\_indent@{extra\_indent}}
+\index{extra\_indent@{extra\_indent}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{extra\_indent()}{extra\_indent()}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a8a27fadebc53d1bb60f904962b692521} 
+ cabc.\+Iterator\+[None]\+ click.\+\_\+textwrap.\+Text\+Wrapper.\+extra\+\_\+indent (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{indent}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a580d6b392d54f2e9205a198d57c63cdc}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!indent\_only@{indent\_only}}
+\index{indent\_only@{indent\_only}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{indent\_only()}{indent\_only()}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a580d6b392d54f2e9205a198d57c63cdc} 
+ str click.\+\_\+textwrap.\+Text\+Wrapper.\+indent\+\_\+only (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1__textwrap_1_1_text_wrapper_doc-variable-members}
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_afe29b8fb7b0224994b68bb8d3e0af300}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!break\_long\_words@{break\_long\_words}}
+\index{break\_long\_words@{break\_long\_words}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{break\_long\_words}{break\_long\_words}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_afe29b8fb7b0224994b68bb8d3e0af300} 
+click.\+\_\+textwrap.\+Text\+Wrapper.\+break\+\_\+long\+\_\+words}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_aed1c24eb0b86c4ebb02b5ef9313545f4}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!initial\_indent@{initial\_indent}}
+\index{initial\_indent@{initial\_indent}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{initial\_indent}{initial\_indent}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_aed1c24eb0b86c4ebb02b5ef9313545f4} 
+click.\+\_\+textwrap.\+Text\+Wrapper.\+initial\+\_\+indent = old\+\_\+initial\+\_\+indent}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a9f618c789b3561f995f017d0fe0c0c53}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!placeholder@{placeholder}}
+\index{placeholder@{placeholder}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{placeholder}{placeholder}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a9f618c789b3561f995f017d0fe0c0c53} 
+click.\+\_\+textwrap.\+Text\+Wrapper.\+placeholder}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_a07d6ae9fac303d897eba94f263d3c74d}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!subsequent\_indent@{subsequent\_indent}}
+\index{subsequent\_indent@{subsequent\_indent}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{subsequent\_indent}{subsequent\_indent}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_a07d6ae9fac303d897eba94f263d3c74d} 
+click.\+\_\+textwrap.\+Text\+Wrapper.\+subsequent\+\_\+indent = old\+\_\+subsequent\+\_\+indent}
+
+\Hypertarget{classclick_1_1__textwrap_1_1_text_wrapper_ab26c1b21399c3c4a9a256d1ce1445202}\index{click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}!width@{width}}
+\index{width@{width}!click.\_textwrap.TextWrapper@{click.\_textwrap.TextWrapper}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classclick_1_1__textwrap_1_1_text_wrapper_ab26c1b21399c3c4a9a256d1ce1445202} 
+click.\+\_\+textwrap.\+Text\+Wrapper.\+width}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{__textwrap_8py}{\+\_\+textwrap.\+py}}\end{DoxyCompactItemize}

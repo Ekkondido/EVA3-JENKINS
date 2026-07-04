@@ -1,0 +1,850 @@
+\doxysection{werkzeug.\+sansio.\+response.\+Response Class Reference}
+\hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response}{}\label{classwerkzeug_1_1sansio_1_1response_1_1_response}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_afb139d1200c4255d56c0a9c7ce19fc61}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}HTTPStatus\texorpdfstring{$\vert$}{|}None status=None, t.\+Mapping\+[str, str\texorpdfstring{$\vert$}{|}t.\+Iterable\+[str]\+]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None headers=None, str\texorpdfstring{$\vert$}{|}None mimetype=None, str\texorpdfstring{$\vert$}{|}None content\+\_\+type=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_afb393821bee79034072d243cea780d16}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a6d65b29fc1b3adf02bf87fe8be4d3e0c}{status\+\_\+code}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_aa51948304b4886a9f70879dc50f0fb6b}{status\+\_\+code}} (self, int code)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ad28785ac07f4f88f96201f3e3de55f49}{status}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac63be4f6c20de0e3766a7835979d7f73}{status}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}HTTPStatus value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_af244bf6013dbeaedfb2060576ceccc6f}{set\+\_\+cookie}} (self, str key, str value="{}"{}, timedelta\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None max\+\_\+age=None, str\texorpdfstring{$\vert$}{|}datetime\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}None expires=None, str\texorpdfstring{$\vert$}{|}None path="{}/\+"{}, str\texorpdfstring{$\vert$}{|}None domain=None, bool secure=False, bool httponly=False, str\texorpdfstring{$\vert$}{|}None samesite=None, bool partitioned=False)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a006f05d97500752b18d9d0b8360507e4}{delete\+\_\+cookie}} (self, str key, str\texorpdfstring{$\vert$}{|}None path="{}/\+"{}, str\texorpdfstring{$\vert$}{|}None domain=None, bool secure=False, bool httponly=False, str\texorpdfstring{$\vert$}{|}None samesite=None, bool partitioned=False)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a94900959ebf977ba0fca62ba57c91ee7}{is\+\_\+json}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac9039e6f1f7d3679ee7d9d29f9517aed}{mimetype}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_afbbce47d9bf4f8909317ee3ef60d21b2}{mimetype}} (self, str value)
+\item 
+dict\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac8221b6b9f4b944c436eeba6ea46aa44}{mimetype\+\_\+params}} (self)
+\item 
+datetime\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a6c5ddef28da3481457ae7ae47035ef89}{retry\+\_\+after}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_aa7e210180f7466abc7d1a80de71b086f}{retry\+\_\+after}} (self, datetime\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}{Response\+Cache\+Control}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a7393cf90a32da237b7fcbdf089b5cffd}{cache\+\_\+control}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a282f58cc75483d514373930d77c3b99b}{set\+\_\+etag}} (self, str etag, bool weak=False)
+\item 
+tuple\+[str, bool]\+\texorpdfstring{$\vert$}{|}tuple\+[None, None]\+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac7077cba2f5b122ba0d773fd25e3b37a}{get\+\_\+etag}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a4841b64b25bb239d07b6efc7c8582906}{content\+\_\+range}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac164be5cf059e5baebb0c8edc89e6d52}{content\+\_\+range}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a3536f91af9ca7d0cda9be07f8468edf5}{www\+\_\+authenticate}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a183ee9413e14e315a379af034c7261d8}{www\+\_\+authenticate}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}}\texorpdfstring{$\vert$}{|}list\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}}]\+\texorpdfstring{$\vert$}{|}None value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a55286bda52ab192248c96222285aa6ac}{www\+\_\+authenticate}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a4d5c861d3b30f6fe2733a07c6f68f776}{content\+\_\+security\+\_\+policy}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a65f7c2c4068c2e1dc12ae7acc21225a8}{content\+\_\+security\+\_\+policy}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_af5d5e367efeabdcfecc9953861106e83}{content\+\_\+security\+\_\+policy\+\_\+report\+\_\+only}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a84ad097ffc8ada69425a648570dcb8f1}{content\+\_\+security\+\_\+policy\+\_\+report\+\_\+only}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ad685e2c59192a8f63cbad351f4f6fe59}{access\+\_\+control\+\_\+allow\+\_\+credentials}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ae001109e54791a855661d22f310845a3}{access\+\_\+control\+\_\+allow\+\_\+credentials}} (self, bool\texorpdfstring{$\vert$}{|}None value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a5de7d2712630257b50e83c8e741ccbfe}{headers}} = headers
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a2f7bad94d8cc205ac06d0ace90f8c2a5}{status}} = status
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a5a6d0324b5c0e64eedb51dc1e1032e7b}{www\+\_\+authenticate}} = value
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ae1f6037aefe456bf278c397a1ba99cff}{default\+\_\+status}} = 200
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a16dae50b5ac3d93619058345748fa538}{default\+\_\+mimetype}} = "{}text/\+plain"{}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ac606df987b88c6d88e1d6d75d57ebf11}{max\+\_\+cookie\+\_\+size}} = 4093
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a8c4e64a2969b2533f85e529038ad536f}{location}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ab877954a03f9383f86d3b7675405f898}{age}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a961233a4d0850bec78dd1b209e716ece}{content\+\_\+type}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ada52b8890447e3670b1950263afa3b6f}{content\+\_\+length}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a8227fd293e4fee0e804df5a80ff1cd74}{content\+\_\+location}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a485a09a85a15828c8e53a23faaadcb90}{content\+\_\+encoding}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a95f14245c7b45a8156657ef9b6cdcd8c}{content\+\_\+md5}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_af4e0fa4045c0478982c69011a5c11f5f}{date}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a8bba01ea7a210e10d5ad87b7afe4938e}{expires}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a89d2d7d5810965393cc079626ece0402}{last\+\_\+modified}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a2512aad39a8e3aa092629ea911326aec}{vary}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a2eadd8ceabc89c878b613964d8679d92}{content\+\_\+language}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_af42fe0e9e76f6d3d0019661ff38d21e3}{allow}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a9ebaf61191427968370fa91e833bdc9a}{accept\+\_\+ranges}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a96532ded8012a1053bd1de6aae772c2e}{access\+\_\+control\+\_\+allow\+\_\+headers}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a833153c7ebe3f0d68cccc1857c3d4768}{access\+\_\+control\+\_\+allow\+\_\+methods}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a6e66ee92633ff765e877482ce351f589}{access\+\_\+control\+\_\+allow\+\_\+origin}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ae53aa45482255ec0100db24c0075a519}{access\+\_\+control\+\_\+expose\+\_\+headers}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_ab1093c012bf0e246a05a670f28865133}{access\+\_\+control\+\_\+max\+\_\+age}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_aa64638eebe52c33beb4d41eb0dc62145}{cross\+\_\+origin\+\_\+opener\+\_\+policy}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_abd1ee149e92546bc571f19e6538139f5}{cross\+\_\+origin\+\_\+embedder\+\_\+policy}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[str, int]\+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_a3f15ce6d5b1b099b3dbb9bae8fdacc94}{\+\_\+clean\+\_\+status}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}HTTPStatus value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_af74bf61adc996304b9f3c7e90a51e379}{\+\_\+status}}
+\item 
+tuple\+[str, int]\+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response_aecdd646c37decb760af270f3b2322725}{\+\_\+status\+\_\+code}} = self.\+\_\+clean\+\_\+status(value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents the non-IO parts of an HTTP response, specifically the
+status and headers but not the body.
+
+This class is not meant for general use. It should only be used when
+implementing WSGI, ASGI, or another HTTP application spec. Werkzeug
+provides a WSGI implementation at :cls:`werkzeug.wrappers.Response`.
+
+:param status: The status code for the response. Either an int, in
+    which case the default status message is added, or a string in
+    the form ``{code} {message}``, like ``404 Not Found``. Defaults
+    to 200.
+:param headers: A :class:`~werkzeug.datastructures.Headers` object,
+    or a list of ``(key, value)`` tuples that will be converted to a
+    ``Headers`` object.
+:param mimetype: The mime type (content type without charset or
+    other parameters) of the response. If the value starts with
+    ``text/`` (or matches some other special cases), the charset
+    will be added to create the ``content_type``.
+:param content_type: The full content type of the response.
+    Overrides building the value from ``mimetype``.
+
+.. versionchanged:: 3.0
+    The ``charset`` attribute was removed.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-constructors}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_afb139d1200c4255d56c0a9c7ce19fc61}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_afb139d1200c4255d56c0a9c7ce19fc61} 
+ None werkzeug.\+sansio.\+response.\+Response.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} HTTPStatus \texorpdfstring{$\vert$}{|} None }]{status}{ = {\ttfamily None}, }\item[{t.\+Mapping\+[str, str \texorpdfstring{$\vert$}{|} t.\+Iterable\+[str]\+]\+         \texorpdfstring{$\vert$}{|} t.\+Iterable\+[tuple\+[str, str]\+]\+         \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{mimetype}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-func-members}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_afb393821bee79034072d243cea780d16}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_afb393821bee79034072d243cea780d16} 
+ str werkzeug.\+sansio.\+response.\+Response.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a3f15ce6d5b1b099b3dbb9bae8fdacc94}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!\_clean\_status@{\_clean\_status}}
+\index{\_clean\_status@{\_clean\_status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_clean\_status()}{\_clean\_status()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a3f15ce6d5b1b099b3dbb9bae8fdacc94} 
+ tuple\+[str, int]\+ werkzeug.\+sansio.\+response.\+Response.\+\_\+clean\+\_\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} HTTPStatus}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ad685e2c59192a8f63cbad351f4f6fe59}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_allow\_credentials@{access\_control\_allow\_credentials}}
+\index{access\_control\_allow\_credentials@{access\_control\_allow\_credentials}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_allow\_credentials()}{access\_control\_allow\_credentials()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ad685e2c59192a8f63cbad351f4f6fe59} 
+ bool werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+allow\+\_\+credentials (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Whether credentials can be shared by the browser to
+JavaScript code. As part of the preflight request it indicates
+whether credentials can be used on the cross origin request.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ae001109e54791a855661d22f310845a3}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_allow\_credentials@{access\_control\_allow\_credentials}}
+\index{access\_control\_allow\_credentials@{access\_control\_allow\_credentials}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_allow\_credentials()}{access\_control\_allow\_credentials()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ae001109e54791a855661d22f310845a3} 
+ None werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+allow\+\_\+credentials (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a7393cf90a32da237b7fcbdf089b5cffd}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!cache\_control@{cache\_control}}
+\index{cache\_control@{cache\_control}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{cache\_control()}{cache\_control()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a7393cf90a32da237b7fcbdf089b5cffd} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}{Response\+Cache\+Control}} werkzeug.\+sansio.\+response.\+Response.\+cache\+\_\+control (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Cache-Control general-header field is used to specify
+directives that MUST be obeyed by all caching mechanisms along the
+request/response chain.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a4841b64b25bb239d07b6efc7c8582906}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_range@{content\_range}}
+\index{content\_range@{content\_range}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_range()}{content\_range()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a4841b64b25bb239d07b6efc7c8582906} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}} werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+range (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The ``Content-Range`` header as a
+:class:`~werkzeug.datastructures.ContentRange` object. Available
+even if the header is not set.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac164be5cf059e5baebb0c8edc89e6d52}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_range@{content\_range}}
+\index{content\_range@{content\_range}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_range()}{content\_range()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac164be5cf059e5baebb0c8edc89e6d52} 
+ None werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+range (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a4d5c861d3b30f6fe2733a07c6f68f776}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_security\_policy@{content\_security\_policy}}
+\index{content\_security\_policy@{content\_security\_policy}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_security\_policy()}{content\_security\_policy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a4d5c861d3b30f6fe2733a07c6f68f776} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+security\+\_\+policy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The ``Content-Security-Policy`` header as a
+:class:`~werkzeug.datastructures.ContentSecurityPolicy` object. Available
+even if the header is not set.
+
+The Content-Security-Policy header adds an additional layer of
+security to help detect and mitigate certain types of attacks.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a65f7c2c4068c2e1dc12ae7acc21225a8}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_security\_policy@{content\_security\_policy}}
+\index{content\_security\_policy@{content\_security\_policy}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_security\_policy()}{content\_security\_policy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a65f7c2c4068c2e1dc12ae7acc21225a8} 
+ None werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+security\+\_\+policy (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None     }]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_af5d5e367efeabdcfecc9953861106e83}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_security\_policy\_report\_only@{content\_security\_policy\_report\_only}}
+\index{content\_security\_policy\_report\_only@{content\_security\_policy\_report\_only}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_security\_policy\_report\_only()}{content\_security\_policy\_report\_only()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_af5d5e367efeabdcfecc9953861106e83} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+security\+\_\+policy\+\_\+report\+\_\+only (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The ``Content-Security-policy-report-only`` header as a
+:class:`~werkzeug.datastructures.ContentSecurityPolicy` object. Available
+even if the header is not set.
+
+The Content-Security-Policy-Report-Only header adds a csp policy
+that is not enforced but is reported thereby helping detect
+certain types of attacks.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a84ad097ffc8ada69425a648570dcb8f1}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_security\_policy\_report\_only@{content\_security\_policy\_report\_only}}
+\index{content\_security\_policy\_report\_only@{content\_security\_policy\_report\_only}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_security\_policy\_report\_only()}{content\_security\_policy\_report\_only()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a84ad097ffc8ada69425a648570dcb8f1} 
+ None werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+security\+\_\+policy\+\_\+report\+\_\+only (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1csp_1_1_content_security_policy}{Content\+Security\+Policy}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None     }]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a006f05d97500752b18d9d0b8360507e4}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!delete\_cookie@{delete\_cookie}}
+\index{delete\_cookie@{delete\_cookie}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{delete\_cookie()}{delete\_cookie()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a006f05d97500752b18d9d0b8360507e4} 
+ None werkzeug.\+sansio.\+response.\+Response.\+delete\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily "{}/\+"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{domain}{ = {\ttfamily None}, }\item[{bool }]{secure}{ = {\ttfamily False}, }\item[{bool }]{httponly}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{samesite}{ = {\ttfamily None}, }\item[{bool }]{partitioned}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Delete a cookie.  Fails silently if key doesn't exist.
+
+:param key: the key (name) of the cookie to be deleted.
+:param path: if the cookie that should be deleted was limited to a
+             path, the path has to be defined here.
+:param domain: if the cookie that should be deleted was limited to a
+               domain, that domain has to be defined here.
+:param secure: If ``True``, the cookie will only be available
+    via HTTPS.
+:param httponly: Disallow JavaScript access to the cookie.
+:param samesite: Limit the scope of the cookie to only be
+    attached to requests that are "same-site".
+:param partitioned: If ``True``, the cookie will be partitioned.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac7077cba2f5b122ba0d773fd25e3b37a}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!get\_etag@{get\_etag}}
+\index{get\_etag@{get\_etag}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{get\_etag()}{get\_etag()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac7077cba2f5b122ba0d773fd25e3b37a} 
+ tuple\+[str, bool]\+ \texorpdfstring{$\vert$}{|} tuple\+[None, None]\+ werkzeug.\+sansio.\+response.\+Response.\+get\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a tuple in the form ``(etag, is_weak)``.  If there is no
+ETag the return value is ``(None, None)``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a94900959ebf977ba0fca62ba57c91ee7}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!is\_json@{is\_json}}
+\index{is\_json@{is\_json}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{is\_json()}{is\_json()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a94900959ebf977ba0fca62ba57c91ee7} 
+ bool werkzeug.\+sansio.\+response.\+Response.\+is\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the mimetype indicates JSON data, either
+:mimetype:`application/json` or :mimetype:`application/*+json`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac9039e6f1f7d3679ee7d9d29f9517aed}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{mimetype()}{mimetype()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac9039e6f1f7d3679ee7d9d29f9517aed} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+sansio.\+response.\+Response.\+mimetype (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype (content type without charset etc.)\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_afbbce47d9bf4f8909317ee3ef60d21b2}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{mimetype()}{mimetype()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_afbbce47d9bf4f8909317ee3ef60d21b2} 
+ None werkzeug.\+sansio.\+response.\+Response.\+mimetype (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac8221b6b9f4b944c436eeba6ea46aa44}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!mimetype\_params@{mimetype\_params}}
+\index{mimetype\_params@{mimetype\_params}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{mimetype\_params()}{mimetype\_params()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac8221b6b9f4b944c436eeba6ea46aa44} 
+ dict\+[str, str]\+ werkzeug.\+sansio.\+response.\+Response.\+mimetype\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype parameters as dict. For example if the
+content type is ``text/html; charset=utf-8`` the params would be
+``{'charset': 'utf-8'}``.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a6c5ddef28da3481457ae7ae47035ef89}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!retry\_after@{retry\_after}}
+\index{retry\_after@{retry\_after}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{retry\_after()}{retry\_after()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a6c5ddef28da3481457ae7ae47035ef89} 
+ datetime \texorpdfstring{$\vert$}{|} None werkzeug.\+sansio.\+response.\+Response.\+retry\+\_\+after (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The Retry-After response-header field can be used with a
+503 (Service Unavailable) response to indicate how long the
+service is expected to be unavailable to the requesting client.
+
+Time in seconds until expiration or date.
+
+.. versionchanged:: 2.0
+    The datetime object is timezone-aware.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_aa7e210180f7466abc7d1a80de71b086f}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!retry\_after@{retry\_after}}
+\index{retry\_after@{retry\_after}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{retry\_after()}{retry\_after()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_aa7e210180f7466abc7d1a80de71b086f} 
+ None werkzeug.\+sansio.\+response.\+Response.\+retry\+\_\+after (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{datetime \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_af244bf6013dbeaedfb2060576ceccc6f}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!set\_cookie@{set\_cookie}}
+\index{set\_cookie@{set\_cookie}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{set\_cookie()}{set\_cookie()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_af244bf6013dbeaedfb2060576ceccc6f} 
+ None werkzeug.\+sansio.\+response.\+Response.\+set\+\_\+cookie (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str }]{value}{ = {\ttfamily "{}"{}}, }\item[{timedelta \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+age}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} datetime \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} float \texorpdfstring{$\vert$}{|} None }]{expires}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily "{}/\+"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{domain}{ = {\ttfamily None}, }\item[{bool }]{secure}{ = {\ttfamily False}, }\item[{bool }]{httponly}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{samesite}{ = {\ttfamily None}, }\item[{bool }]{partitioned}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sets a cookie.
+
+A warning is raised if the size of the cookie header exceeds
+:attr:`max_cookie_size`, but the header will still be set.
+
+:param key: the key (name) of the cookie to be set.
+:param value: the value of the cookie.
+:param max_age: should be a number of seconds, or `None` (default) if
+                the cookie should last only as long as the client's
+                browser session.
+:param expires: should be a `datetime` object or UNIX timestamp.
+:param path: limits the cookie to a given path, per default it will
+             span the whole domain.
+:param domain: if you want to set a cross-domain cookie.  For example,
+               ``domain="example.com"`` will set a cookie that is
+               readable by the domain ``www.example.com``,
+               ``foo.example.com`` etc.  Otherwise, a cookie will only
+               be readable by the domain that set it.
+:param secure: If ``True``, the cookie will only be available
+    via HTTPS.
+:param httponly: Disallow JavaScript access to the cookie.
+:param samesite: Limit the scope of the cookie to only be
+    attached to requests that are "same-site".
+:param partitioned: If ``True``, the cookie will be partitioned.
+
+.. versionchanged:: 3.1
+    The ``partitioned`` parameter was added.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a282f58cc75483d514373930d77c3b99b}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!set\_etag@{set\_etag}}
+\index{set\_etag@{set\_etag}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{set\_etag()}{set\_etag()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a282f58cc75483d514373930d77c3b99b} 
+ None werkzeug.\+sansio.\+response.\+Response.\+set\+\_\+etag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{, }\item[{bool }]{weak}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set the etag, and override the old one if there was one.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ad28785ac07f4f88f96201f3e3de55f49}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!status@{status}}
+\index{status@{status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ad28785ac07f4f88f96201f3e3de55f49} 
+ str werkzeug.\+sansio.\+response.\+Response.\+status (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The HTTP status code as a string.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac63be4f6c20de0e3766a7835979d7f73}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!status@{status}}
+\index{status@{status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{status()}{status()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac63be4f6c20de0e3766a7835979d7f73} 
+ None werkzeug.\+sansio.\+response.\+Response.\+status (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} HTTPStatus}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a6d65b29fc1b3adf02bf87fe8be4d3e0c}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!status\_code@{status\_code}}
+\index{status\_code@{status\_code}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{status\_code()}{status\_code()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a6d65b29fc1b3adf02bf87fe8be4d3e0c} 
+ int werkzeug.\+sansio.\+response.\+Response.\+status\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The HTTP status code as a number.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_aa51948304b4886a9f70879dc50f0fb6b}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!status\_code@{status\_code}}
+\index{status\_code@{status\_code}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{status\_code()}{status\_code()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_aa51948304b4886a9f70879dc50f0fb6b} 
+ None werkzeug.\+sansio.\+response.\+Response.\+status\+\_\+code (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{code}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a55286bda52ab192248c96222285aa6ac}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!www\_authenticate@{www\_authenticate}}
+\index{www\_authenticate@{www\_authenticate}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{www\_authenticate()}{www\_authenticate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a55286bda52ab192248c96222285aa6ac} 
+ None werkzeug.\+sansio.\+response.\+Response.\+www\+\_\+authenticate (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a3536f91af9ca7d0cda9be07f8468edf5}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!www\_authenticate@{www\_authenticate}}
+\index{www\_authenticate@{www\_authenticate}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{www\_authenticate()}{www\_authenticate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a3536f91af9ca7d0cda9be07f8468edf5} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}} werkzeug.\+sansio.\+response.\+Response.\+www\+\_\+authenticate (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The ``WWW-Authenticate`` header parsed into a :class:`.WWWAuthenticate`
+object. Modifying the object will modify the header value.
+
+This header is not set by default. To set this header, assign an instance of
+:class:`.WWWAuthenticate` to this attribute.
+
+.. code-block:: python
+
+    response.www_authenticate = WWWAuthenticate(
+        "basic", {"realm": "Authentication Required"}
+    )
+
+Multiple values for this header can be sent to give the client multiple options.
+Assign a list to set multiple headers. However, modifying the items in the list
+will not automatically update the header values, and accessing this attribute
+will only ever return the first value.
+
+To unset this header, assign ``None`` or use ``del``.
+
+.. versionchanged:: 2.3
+    This attribute can be assigned to set the header. A list can be assigned
+    to set multiple header values. Use ``del`` to unset the header.
+
+.. versionchanged:: 2.3
+    :class:`WWWAuthenticate` is no longer a ``dict``. The ``token`` attribute
+    was added for auth challenges that use a token instead of parameters.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a183ee9413e14e315a379af034c7261d8}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!www\_authenticate@{www\_authenticate}}
+\index{www\_authenticate@{www\_authenticate}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{www\_authenticate()}{www\_authenticate()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a183ee9413e14e315a379af034c7261d8} 
+ None werkzeug.\+sansio.\+response.\+Response.\+www\+\_\+authenticate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}} \texorpdfstring{$\vert$}{|} list\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1auth_1_1_w_w_w_authenticate}{WWWAuthenticate}}]\+ \texorpdfstring{$\vert$}{|} None     }]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_af74bf61adc996304b9f3c7e90a51e379}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!\_status@{\_status}}
+\index{\_status@{\_status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_status}{\_status}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_af74bf61adc996304b9f3c7e90a51e379} 
+werkzeug.\+sansio.\+response.\+Response.\+\_\+status\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_aecdd646c37decb760af270f3b2322725}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!\_status\_code@{\_status\_code}}
+\index{\_status\_code@{\_status\_code}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{\_status\_code}{\_status\_code}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_aecdd646c37decb760af270f3b2322725} 
+tuple\+[str, int]\+ werkzeug.\+sansio.\+response.\+Response.\+\_\+status\+\_\+code = self.\+\_\+clean\+\_\+status(value)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a9ebaf61191427968370fa91e833bdc9a}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!accept\_ranges@{accept\_ranges}}
+\index{accept\_ranges@{accept\_ranges}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{accept\_ranges}{accept\_ranges}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a9ebaf61191427968370fa91e833bdc9a} 
+werkzeug.\+sansio.\+response.\+Response.\+accept\+\_\+ranges\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Accept-\/Ranges"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a96532ded8012a1053bd1de6aae772c2e}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_allow\_headers@{access\_control\_allow\_headers}}
+\index{access\_control\_allow\_headers@{access\_control\_allow\_headers}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_allow\_headers}{access\_control\_allow\_headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a96532ded8012a1053bd1de6aae772c2e} 
+werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+allow\+\_\+headers\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Headers"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=parse\_set\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=dump\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}Which\ headers\ can\ be\ sent\ with\ the\ cross\ origin\ request."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a833153c7ebe3f0d68cccc1857c3d4768}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_allow\_methods@{access\_control\_allow\_methods}}
+\index{access\_control\_allow\_methods@{access\_control\_allow\_methods}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_allow\_methods}{access\_control\_allow\_methods}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a833153c7ebe3f0d68cccc1857c3d4768} 
+werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+allow\+\_\+methods\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Methods"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=parse\_set\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=dump\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}Which\ methods\ can\ be\ used\ for\ the\ cross\ origin\ request."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a6e66ee92633ff765e877482ce351f589}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_allow\_origin@{access\_control\_allow\_origin}}
+\index{access\_control\_allow\_origin@{access\_control\_allow\_origin}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_allow\_origin}{access\_control\_allow\_origin}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a6e66ee92633ff765e877482ce351f589} 
+werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+allow\+\_\+origin\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Allow-\/Origin"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}The\ origin\ or\ '*'\ for\ any\ origin\ that\ may\ make\ cross\ origin\ requests."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ae53aa45482255ec0100db24c0075a519}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_expose\_headers@{access\_control\_expose\_headers}}
+\index{access\_control\_expose\_headers@{access\_control\_expose\_headers}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_expose\_headers}{access\_control\_expose\_headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ae53aa45482255ec0100db24c0075a519} 
+werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+expose\+\_\+headers\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Expose-\/Headers"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=parse\_set\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=dump\_header,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}Which\ headers\ can\ be\ shared\ by\ the\ browser\ to\ JavaScript\ code."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ab1093c012bf0e246a05a670f28865133}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!access\_control\_max\_age@{access\_control\_max\_age}}
+\index{access\_control\_max\_age@{access\_control\_max\_age}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{access\_control\_max\_age}{access\_control\_max\_age}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ab1093c012bf0e246a05a670f28865133} 
+werkzeug.\+sansio.\+response.\+Response.\+access\+\_\+control\+\_\+max\+\_\+age\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Access-\/Control-\/Max-\/Age"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=int,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=str,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=\textcolor{stringliteral}{"{}The\ maximum\ age\ in\ seconds\ the\ access\ control\ settings\ can\ be\ cached\ for."{}},}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ab877954a03f9383f86d3b7675405f898}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!age@{age}}
+\index{age@{age}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{age}{age}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ab877954a03f9383f86d3b7675405f898} 
+werkzeug.\+sansio.\+response.\+Response.\+age\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Age"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ parse\_age,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_age,\ \ \textcolor{comment}{\#\ type:\ ignore}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_af42fe0e9e76f6d3d0019661ff38d21e3}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!allow@{allow}}
+\index{allow@{allow}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{allow}{allow}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_af42fe0e9e76f6d3d0019661ff38d21e3} 
+werkzeug.\+sansio.\+response.\+Response.\+allow\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_set\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Allow"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a485a09a85a15828c8e53a23faaadcb90}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_encoding@{content\_encoding}}
+\index{content\_encoding@{content\_encoding}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_encoding}{content\_encoding}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a485a09a85a15828c8e53a23faaadcb90} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+encoding\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Encoding"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a2eadd8ceabc89c878b613964d8679d92}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_language@{content\_language}}
+\index{content\_language@{content\_language}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_language}{content\_language}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a2eadd8ceabc89c878b613964d8679d92} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+language\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_set\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Language"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ada52b8890447e3670b1950263afa3b6f}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_length}{content\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ada52b8890447e3670b1950263afa3b6f} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+length\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Length"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ int,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ str,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a8227fd293e4fee0e804df5a80ff1cd74}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_location@{content\_location}}
+\index{content\_location@{content\_location}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_location}{content\_location}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a8227fd293e4fee0e804df5a80ff1cd74} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+location\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Location"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a95f14245c7b45a8156657ef9b6cdcd8c}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_md5@{content\_md5}}
+\index{content\_md5@{content\_md5}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_md5}{content\_md5}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a95f14245c7b45a8156657ef9b6cdcd8c} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+md5\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/MD5"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a961233a4d0850bec78dd1b209e716ece}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{content\_type}{content\_type}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a961233a4d0850bec78dd1b209e716ece} 
+werkzeug.\+sansio.\+response.\+Response.\+content\+\_\+type\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Content-\/Type"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_abd1ee149e92546bc571f19e6538139f5}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!cross\_origin\_embedder\_policy@{cross\_origin\_embedder\_policy}}
+\index{cross\_origin\_embedder\_policy@{cross\_origin\_embedder\_policy}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{cross\_origin\_embedder\_policy}{cross\_origin\_embedder\_policy}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_abd1ee149e92546bc571f19e6538139f5} 
+werkzeug.\+sansio.\+response.\+Response.\+cross\+\_\+origin\+\_\+embedder\+\_\+policy\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[COEP](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Cross-\/Origin-\/Embedder-\/Policy"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=\textcolor{keyword}{lambda}\ value:\ COEP(value),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=\textcolor{keyword}{lambda}\ value:\ value.value,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=COEP.UNSAFE\_NONE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_aa64638eebe52c33beb4d41eb0dc62145}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!cross\_origin\_opener\_policy@{cross\_origin\_opener\_policy}}
+\index{cross\_origin\_opener\_policy@{cross\_origin\_opener\_policy}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{cross\_origin\_opener\_policy}{cross\_origin\_opener\_policy}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_aa64638eebe52c33beb4d41eb0dc62145} 
+werkzeug.\+sansio.\+response.\+Response.\+cross\+\_\+origin\+\_\+opener\+\_\+policy\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[COOP](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Cross-\/Origin-\/Opener-\/Policy"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ load\_func=\textcolor{keyword}{lambda}\ value:\ COOP(value),}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ dump\_func=\textcolor{keyword}{lambda}\ value:\ value.value,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ default=COOP.UNSAFE\_NONE,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_af4e0fa4045c0478982c69011a5c11f5f}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!date@{date}}
+\index{date@{date}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{date}{date}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_af4e0fa4045c0478982c69011a5c11f5f} 
+werkzeug.\+sansio.\+response.\+Response.\+date\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Date"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ parse\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ http\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a16dae50b5ac3d93619058345748fa538}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!default\_mimetype@{default\_mimetype}}
+\index{default\_mimetype@{default\_mimetype}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{default\_mimetype}{default\_mimetype}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a16dae50b5ac3d93619058345748fa538} 
+str werkzeug.\+sansio.\+response.\+Response.\+default\+\_\+mimetype = "{}text/\+plain"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ae1f6037aefe456bf278c397a1ba99cff}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!default\_status@{default\_status}}
+\index{default\_status@{default\_status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{default\_status}{default\_status}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ae1f6037aefe456bf278c397a1ba99cff} 
+int werkzeug.\+sansio.\+response.\+Response.\+default\+\_\+status = 200\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a8bba01ea7a210e10d5ad87b7afe4938e}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!expires@{expires}}
+\index{expires@{expires}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{expires}{expires}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a8bba01ea7a210e10d5ad87b7afe4938e} 
+werkzeug.\+sansio.\+response.\+Response.\+expires\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Expires"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ parse\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ http\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a5de7d2712630257b50e83c8e741ccbfe}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!headers@{headers}}
+\index{headers@{headers}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a5de7d2712630257b50e83c8e741ccbfe} 
+werkzeug.\+sansio.\+response.\+Response.\+headers = headers}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a89d2d7d5810965393cc079626ece0402}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!last\_modified@{last\_modified}}
+\index{last\_modified@{last\_modified}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{last\_modified}{last\_modified}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a89d2d7d5810965393cc079626ece0402} 
+werkzeug.\+sansio.\+response.\+Response.\+last\+\_\+modified\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Last-\/Modified"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{keywordtype}{None},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ parse\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ http\_date,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a8c4e64a2969b2533f85e529038ad536f}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!location@{location}}
+\index{location@{location}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{location}{location}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a8c4e64a2969b2533f85e529038ad536f} 
+werkzeug.\+sansio.\+response.\+Response.\+location\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ header\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Location"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_ac606df987b88c6d88e1d6d75d57ebf11}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!max\_cookie\_size@{max\_cookie\_size}}
+\index{max\_cookie\_size@{max\_cookie\_size}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{max\_cookie\_size}{max\_cookie\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_ac606df987b88c6d88e1d6d75d57ebf11} 
+int werkzeug.\+sansio.\+response.\+Response.\+max\+\_\+cookie\+\_\+size = 4093\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a2f7bad94d8cc205ac06d0ace90f8c2a5}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!status@{status}}
+\index{status@{status}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{status}{status}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a2f7bad94d8cc205ac06d0ace90f8c2a5} 
+str werkzeug.\+sansio.\+response.\+Response.\+status = status}
+
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a2512aad39a8e3aa092629ea911326aec}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!vary@{vary}}
+\index{vary@{vary}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{vary}{vary}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a2512aad39a8e3aa092629ea911326aec} 
+werkzeug.\+sansio.\+response.\+Response.\+vary\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \_set\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Vary"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1sansio_1_1response_1_1_response_a5a6d0324b5c0e64eedb51dc1e1032e7b}\index{werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}!www\_authenticate@{www\_authenticate}}
+\index{www\_authenticate@{www\_authenticate}!werkzeug.sansio.response.Response@{werkzeug.sansio.response.Response}}
+\doxysubsubsection{\texorpdfstring{www\_authenticate}{www\_authenticate}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1sansio_1_1response_1_1_response_a5a6d0324b5c0e64eedb51dc1e1032e7b} 
+werkzeug.\+sansio.\+response.\+Response.\+www\+\_\+authenticate = value}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+sansio/\+\doxymbox{\hyperlink{werkzeug_2sansio_2response_8py}{response.\+py}}\end{DoxyCompactItemize}

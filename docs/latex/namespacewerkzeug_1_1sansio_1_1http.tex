@@ -1,0 +1,106 @@
+\doxysection{werkzeug.\+sansio.\+http Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1sansio_1_1http}{}\label{namespacewerkzeug_1_1sansio_1_1http}\index{werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_a6e9bdf210b1455d07653432eea2ac4e3}{is\+\_\+resource\+\_\+modified}} (str\texorpdfstring{$\vert$}{|}None http\+\_\+range=None, str\texorpdfstring{$\vert$}{|}None http\+\_\+if\+\_\+range=None, str\texorpdfstring{$\vert$}{|}None http\+\_\+if\+\_\+modified\+\_\+since=None, str\texorpdfstring{$\vert$}{|}None http\+\_\+if\+\_\+none\+\_\+match=None, str\texorpdfstring{$\vert$}{|}None http\+\_\+if\+\_\+match=None, str\texorpdfstring{$\vert$}{|}None etag=None, bytes\texorpdfstring{$\vert$}{|}None data=None, datetime\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None last\+\_\+modified=None, bool ignore\+\_\+if\+\_\+range=True)
+\item 
+bytes \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_a1784f0f0d456da3cc90c6e957804e676}{\+\_\+cookie\+\_\+unslash\+\_\+replace}} (t.\+Match\+[bytes]\+ m)
+\item 
+ds.\+Multi\+Dict\+[str, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_a9c6559d6cab617dc18772137fdcf75cf}{parse\+\_\+cookie}} (str\texorpdfstring{$\vert$}{|}None cookie=None, type\+[ds.\+Multi\+Dict\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None cls=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_a547bceaec9b5c9636edebd5a7a598585}{\+\_\+etag\+\_\+re}} = re.\+compile(r\textquotesingle{}(\+[Ww]\+/\+)?(?:\+"{}(.\texorpdfstring{$\ast$}{*}?)"{}\texorpdfstring{$\vert$}{|}(.\texorpdfstring{$\ast$}{*}?))(?:\+\textbackslash{}s\texorpdfstring{$\ast$}{*},\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\$)\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_addb59025e9f66832a25acaae3f741ad0}{\+\_\+cookie\+\_\+re}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1http_aa063cac12df7b209d581846398cc13f1}{\+\_\+cookie\+\_\+unslash\+\_\+re}} = re.\+compile(rb"{}\textbackslash{}\textbackslash{}(\+[0-\/3]\+\+[0-\/7]\+\{2\}\texorpdfstring{$\vert$}{|}.)"{})
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1sansio_1_1http_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_a1784f0f0d456da3cc90c6e957804e676}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!\_cookie\_unslash\_replace@{\_cookie\_unslash\_replace}}
+\index{\_cookie\_unslash\_replace@{\_cookie\_unslash\_replace}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{\_cookie\_unslash\_replace()}{\_cookie\_unslash\_replace()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_a1784f0f0d456da3cc90c6e957804e676} 
+ bytes \+\_\+cookie\+\_\+unslash\+\_\+replace (\begin{DoxyParamCaption}\item[{t.\+Match\+[bytes]\+}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_a6e9bdf210b1455d07653432eea2ac4e3}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!is\_resource\_modified@{is\_resource\_modified}}
+\index{is\_resource\_modified@{is\_resource\_modified}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{is\_resource\_modified()}{is\_resource\_modified()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_a6e9bdf210b1455d07653432eea2ac4e3} 
+ bool is\+\_\+resource\+\_\+modified (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+range}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+if\+\_\+range}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+if\+\_\+modified\+\_\+since}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+if\+\_\+none\+\_\+match}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+if\+\_\+match}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{etag}{ = {\ttfamily None}, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{data}{ = {\ttfamily None}, }\item[{datetime \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{last\+\_\+modified}{ = {\ttfamily None}, }\item[{bool }]{ignore\+\_\+if\+\_\+range}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convenience method for conditional requests.
+:param http_range: Range HTTP header
+:param http_if_range: If-Range HTTP header
+:param http_if_modified_since: If-Modified-Since HTTP header
+:param http_if_none_match: If-None-Match HTTP header
+:param http_if_match: If-Match HTTP header
+:param etag: the etag for the response for comparison.
+:param data: or alternatively the data of the response to automatically
+             generate an etag using :func:`generate_etag`.
+:param last_modified: an optional date of the last modification.
+:param ignore_if_range: If `False`, `If-Range` header will be taken into
+                        account.
+:return: `True` if the resource was modified, otherwise `False`.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1sansio_1_1http_a9c6559d6cab617dc18772137fdcf75cf}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!parse\_cookie@{parse\_cookie}}
+\index{parse\_cookie@{parse\_cookie}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{parse\_cookie()}{parse\_cookie()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_a9c6559d6cab617dc18772137fdcf75cf} 
+ ds.\+Multi\+Dict\+[str, str]\+ parse\+\_\+cookie (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{cookie}{ = {\ttfamily None}, }\item[{type\+[ds.\+Multi\+Dict\+[str, str]\+]\+ \texorpdfstring{$\vert$}{|} None }]{cls}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse a cookie from a string.
+
+The same key can be provided multiple times, the values are stored
+in-order. The default :class:`MultiDict` will have the first value
+first, and all values can be retrieved with
+:meth:`MultiDict.getlist`.
+
+:param cookie: The cookie header as a string.
+:param cls: A dict-like class to store the parsed cookies in.
+    Defaults to :class:`MultiDict`.
+
+.. versionchanged:: 3.0
+    Passing bytes, and the ``charset`` and ``errors`` parameters, were removed.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1sansio_1_1http_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_addb59025e9f66832a25acaae3f741ad0}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!\_cookie\_re@{\_cookie\_re}}
+\index{\_cookie\_re@{\_cookie\_re}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{\_cookie\_re}{\_cookie\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_addb59025e9f66832a25acaae3f741ad0} 
+werkzeug.\+sansio.\+http.\+\_\+cookie\+\_\+re\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ flags=re.ASCII\ |\ re.VERBOSE,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_aa063cac12df7b209d581846398cc13f1}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!\_cookie\_unslash\_re@{\_cookie\_unslash\_re}}
+\index{\_cookie\_unslash\_re@{\_cookie\_unslash\_re}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{\_cookie\_unslash\_re}{\_cookie\_unslash\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_aa063cac12df7b209d581846398cc13f1} 
+werkzeug.\+sansio.\+http.\+\_\+cookie\+\_\+unslash\+\_\+re = re.\+compile(rb"{}\textbackslash{}\textbackslash{}(\+[0-\/3]\+\+[0-\/7]\+\{2\}\texorpdfstring{$\vert$}{|}.)"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1http_a547bceaec9b5c9636edebd5a7a598585}\index{werkzeug.sansio.http@{werkzeug.sansio.http}!\_etag\_re@{\_etag\_re}}
+\index{\_etag\_re@{\_etag\_re}!werkzeug.sansio.http@{werkzeug.sansio.http}}
+\doxysubsubsection{\texorpdfstring{\_etag\_re}{\_etag\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1http_a547bceaec9b5c9636edebd5a7a598585} 
+werkzeug.\+sansio.\+http.\+\_\+etag\+\_\+re = re.\+compile(r\textquotesingle{}(\+[Ww]\+/\+)?(?:\+"{}(.\texorpdfstring{$\ast$}{*}?)"{}\texorpdfstring{$\vert$}{|}(.\texorpdfstring{$\ast$}{*}?))(?:\+\textbackslash{}s\texorpdfstring{$\ast$}{*},\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\$)\textquotesingle{})\hspace{0.3cm}{\ttfamily [protected]}}
+

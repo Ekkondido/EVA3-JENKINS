@@ -1,9 +1,41 @@
 from flask import Flask, request, render_template_string, session, redirect, url_for, flash
 import sqlite3
 import os
+from prometheus_client import Counter, generate_latest, CONTENT_TYPE_LATEST
 import hashlib
 
 app = Flask(__name__)
+REQUEST_COUNT = Counter(
+    "http_requests_total",
+    "Total de peticiones HTTP"
+)
+
+
+@app.after_request
+def add_security_headers(response):
+
+    response.headers["X-Frame-Options"] = "DENY"
+
+    response.headers["X-Content-Type-Options"] = "nosniff"
+
+    response.headers["Content-Security-Policy"] = (
+        "default-src 'self'; "
+        "script-src 'self'; "
+        "style-src 'self' 'unsafe-inline'; "
+        "img-src 'self' data:;"
+    )
+
+    response.headers["Permissions-Policy"] = (
+        "geolocation=(), microphone=(), camera=()"
+    )
+
+    return response
+
+
+@app.before_request
+def before_request():
+    REQUEST_COUNT.inc()
+
 app.secret_key = os.urandom(24)
 
 
@@ -120,6 +152,33 @@ def admin():
 
     return 'Welcome to the admin panel!'
 
+@app.route("/buscar")
+def buscar():
+    query = request.args.get("q", "")
+
+    return render_template_string(f"""
+    <html>
+    <body>
+        <h2>Buscador</h2>
+
+        <form>
+            <input name="q">
+            <input type="submit">
+        </form>
+
+        Resultado:
+        {query}
+    </body>
+    </html>
+    """)
+
+
+@app.route("/metrics")
+def metrics():
+    return generate_latest(), 200, {
+        "Content-Type": CONTENT_TYPE_LATEST
+    }
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0", port=5000, debug=True)
+

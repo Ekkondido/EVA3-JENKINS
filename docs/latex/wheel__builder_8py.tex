@@ -1,0 +1,45 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+pip/\+\+\_\+internal/\+wheel\+\_\+builder.py File Reference}
+\hypertarget{wheel__builder_8py}{}\label{wheel__builder_8py}\index{venv/Lib/site-\/packages/pip/\_internal/wheel\_builder.py@{venv/Lib/site-\/packages/pip/\_internal/wheel\_builder.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip}{pip}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal}{pip.\+\_\+internal}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder}{pip.\+\_\+internal.\+wheel\+\_\+builder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a01b6e23cced2517dcf940ef2be450dcd}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+contains\+\_\+egg\+\_\+info}} (str s)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a266728586050f277194b8c253d8f6227}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+should\+\_\+build}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, bool need\+\_\+wheel)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a8d27ceb50e7e745855cd610eaed1e097}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+should\+\_\+build\+\_\+for\+\_\+wheel\+\_\+command}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a900beb923ac9e56c634c37c5a81b053c}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+should\+\_\+build\+\_\+for\+\_\+install\+\_\+command}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req)
+\item 
+Optional\+[bool]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a37f32c7e59f2aa93ea1f0527c00ee732}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+should\+\_\+cache}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a293e5aed4b9197063ba262d5dcabc238}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+get\+\_\+cache\+\_\+dir}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_wheel_cache}{Wheel\+Cache}} wheel\+\_\+cache)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_abd2c208c5410c5fd7219fafa56d5be36}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+verify\+\_\+one}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, str wheel\+\_\+path)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a9fd95548eb45f631d3539260bd00f285}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+build\+\_\+one}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, str output\+\_\+dir, bool verify, List\+[str]\+ build\+\_\+options, List\+[str]\+ global\+\_\+options, bool editable)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a1bd9c6a9f0aafff0088889f18914accc}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+build\+\_\+one\+\_\+inside\+\_\+env}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, str output\+\_\+dir, List\+[str]\+ build\+\_\+options, List\+[str]\+ global\+\_\+options, bool editable)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a500c857b0aee5e0b8992897c64aa9184}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+clean\+\_\+one\+\_\+legacy}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}} req, List\+[str]\+ global\+\_\+options)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_ad8206fa8e5856a00e6283c148f53bfa6}{Build\+Result}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_aa75d6d46518f4bbca90e33d0184891cb}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+build}} (Iterable\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ requirements, \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_wheel_cache}{Wheel\+Cache}} wheel\+\_\+cache, bool verify, List\+[str]\+ build\+\_\+options, List\+[str]\+ global\+\_\+options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a84898e3516b9c46fa75845a249fc5200}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_a6eda6c4baed2364813bdf9c3e7317720}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+\_\+egg\+\_\+info\+\_\+re}} = re.\+compile(r"{}(\+[a-\/z0-\/9\+\_\+.]\++)-\/(\+[a-\/z0-\/9\+\_\+.!+-\/]\++)"{}, re.\+IGNORECASE)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1wheel__builder_ad8206fa8e5856a00e6283c148f53bfa6}{pip.\+\_\+internal.\+wheel\+\_\+builder.\+Build\+Result}} = Tuple\+[List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+, List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+]\+
+\end{DoxyCompactItemize}

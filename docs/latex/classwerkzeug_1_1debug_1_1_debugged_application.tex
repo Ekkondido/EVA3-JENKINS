@@ -1,0 +1,328 @@
+\doxysection{werkzeug.\+debug.\+Debugged\+Application Class Reference}
+\hypertarget{classwerkzeug_1_1debug_1_1_debugged_application}{}\label{classwerkzeug_1_1debug_1_1_debugged_application}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ab2d65561c54040636b81decc415054ea}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app, bool evalex=False, str request\+\_\+key="{}werkzeug.\+request"{}, str console\+\_\+path="{}/\+console"{}, t.\+Callable\+[\+[$\,$]\+, dict\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None console\+\_\+init\+\_\+func=None, bool show\+\_\+hidden\+\_\+frames=False, bool pin\+\_\+security=True, bool pin\+\_\+logging=True)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a1995351de0fb70bb44e8127574233608}{pin}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a018e434bfa876174bed6b7186b76a1d2}{pin}} (self, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a6e639ea415b0af5e7bdd24bcadc8bbb1}{pin\+\_\+cookie\+\_\+name}} (self)
+\item 
+t.\+Iterator\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_af8ffa1b0506b1197742c1682e6fbb681}{debug\+\_\+application}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a1ec01130ab075b942fe85b09a7a00965}{execute\+\_\+command}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request, str command, \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_frame_summary}{Debug\+Frame\+Summary}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1___console_frame}{\+\_\+\+Console\+Frame}} frame)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_abb1cb4c75c02372d7aefc9dabda5f78a}{display\+\_\+console}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a0e499942eb71ee43e8cf44db78906c78}{get\+\_\+resource}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request, str filename)
+\item 
+bool\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a49ff48534385af02ea5d4f99d97dd662}{check\+\_\+pin\+\_\+trust}} (self, WSGIEnvironment environ)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ad2daf1d3e1f60ee701fc5e98fbfffa79}{check\+\_\+host\+\_\+trust}} (self, WSGIEnvironment environ)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ab4e6634ff52a53102b05e763405b5c14}{pin\+\_\+auth}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a08ca9b4c16745e16d6d0b9e1f0330ca2}{log\+\_\+pin\+\_\+request}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}} request)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a0f3b634f5fb1e8b6b9a913de5667fac1}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a806151ef1247ed8f033da5fb48468022}{app}} = app
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a676ba9e0b4deaa7ddc6c524b190d8633}{evalex}} = evalex
+\item 
+dict \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a3f5b84a7519b668f9bd7695338fd2ceb}{frames}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a33335807735aa370b3045fa1c485d6fe}{frame\+\_\+contexts}} = \{\}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_aa1e4c4985541a8818f46e777efe8803e}{request\+\_\+key}} = request\+\_\+key
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ab2b3b6a22c3ee8fd7742506a86bf2546}{console\+\_\+path}} = console\+\_\+path
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a5da237ef8193909a3379a2e1e725dfe6}{console\+\_\+init\+\_\+func}} = console\+\_\+init\+\_\+func
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ac7263ee09ef5d09af25e373dbb133d79}{show\+\_\+hidden\+\_\+frames}} = show\+\_\+hidden\+\_\+frames
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a750897e8aec74a9d9aa41fac7265fbd6}{secret}} = gen\+\_\+salt(20)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ae94d6475ef3b4f3d8f89211b3e052753}{pin\+\_\+logging}} = pin\+\_\+logging
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ab03e4b3d7fca28e5434b9fcc57f1e54e}{pin}}
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a0ae3d37d499d48f59e665c9b7279e36c}{trusted\+\_\+hosts}} = \+["{}.localhost"{}, "{}127.\+0.\+0.\+1"{}]\+
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a8e8076af58c1953e34e5253134553335}{pin\+\_\+cookie\+\_\+name}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a81fbc17c69541214b6f520b6573177e4}{\+\_\+fail\+\_\+pin\+\_\+auth}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_a2b7463f4c21262aee39b12db78b0157a}{\+\_\+failed\+\_\+pin\+\_\+auth}} = Value("{}B"{})
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_ad1f071edca43dbfcd7c05e78c7b79278}{\+\_\+pin\+\_\+cookie}} = pin\+\_\+cookie
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1_debugged_application_af7102005942164d7fe43d9b53f4df78a}{\+\_\+pin}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Enables debugging support for a given application::
+
+    from werkzeug.debug import DebuggedApplication
+    from myapp import app
+    app = DebuggedApplication(app, evalex=True)
+
+The ``evalex`` argument allows evaluating expressions in any frame
+of a traceback. This works by preserving each frame with its local
+state. Some state, such as context globals, cannot be restored with
+the frame by default. When ``evalex`` is enabled,
+``environ["werkzeug.debug.preserve_context"]`` will be a callable
+that takes a context manager, and can be called multiple times.
+Each context manager will be entered before evaluating code in the
+frame, then exited again, so they can perform setup and cleanup for
+each call.
+
+:param app: the WSGI application to run debugged.
+:param evalex: enable exception evaluation feature (interactive
+               debugging).  This requires a non-forking server.
+:param request_key: The key that points to the request object in this
+                    environment.  This parameter is ignored in current
+                    versions.
+:param console_path: the URL for a general purpose console.
+:param console_init_func: the function that is executed before starting
+                          the general purpose console.  The return value
+                          is used as initial namespace.
+:param show_hidden_frames: by default hidden traceback frames are skipped.
+                           You can show them by setting this parameter
+                           to `True`.
+:param pin_security: can be used to disable the pin based security system.
+:param pin_logging: enables the logging of the pin system.
+
+.. versionchanged:: 2.2
+    Added the ``werkzeug.debug.preserve_context`` environ key.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1debug_1_1_debugged_application_doc-constructors}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ab2d65561c54040636b81decc415054ea}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ab2d65561c54040636b81decc415054ea} 
+ None werkzeug.\+debug.\+Debugged\+Application.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{, }\item[{bool }]{evalex}{ = {\ttfamily False}, }\item[{str }]{request\+\_\+key}{ = {\ttfamily "{}werkzeug.request"{}}, }\item[{str }]{console\+\_\+path}{ = {\ttfamily "{}/\+console"{}}, }\item[{t.\+Callable\+[\+[$\,$]\+, dict\+[str, t.\+Any]\+]\+ \texorpdfstring{$\vert$}{|} None }]{console\+\_\+init\+\_\+func}{ = {\ttfamily None}, }\item[{bool }]{show\+\_\+hidden\+\_\+frames}{ = {\ttfamily False}, }\item[{bool }]{pin\+\_\+security}{ = {\ttfamily True}, }\item[{bool }]{pin\+\_\+logging}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1debug_1_1_debugged_application_doc-func-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a0f3b634f5fb1e8b6b9a913de5667fac1}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a0f3b634f5fb1e8b6b9a913de5667fac1} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+debug.\+Debugged\+Application.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Dispatch the requests.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a81fbc17c69541214b6f520b6573177e4}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_fail\_pin\_auth@{\_fail\_pin\_auth}}
+\index{\_fail\_pin\_auth@{\_fail\_pin\_auth}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_fail\_pin\_auth()}{\_fail\_pin\_auth()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a81fbc17c69541214b6f520b6573177e4} 
+ None werkzeug.\+debug.\+Debugged\+Application.\+\_\+fail\+\_\+pin\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ad2daf1d3e1f60ee701fc5e98fbfffa79}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!check\_host\_trust@{check\_host\_trust}}
+\index{check\_host\_trust@{check\_host\_trust}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{check\_host\_trust()}{check\_host\_trust()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ad2daf1d3e1f60ee701fc5e98fbfffa79} 
+ bool werkzeug.\+debug.\+Debugged\+Application.\+check\+\_\+host\+\_\+trust (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a49ff48534385af02ea5d4f99d97dd662}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!check\_pin\_trust@{check\_pin\_trust}}
+\index{check\_pin\_trust@{check\_pin\_trust}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{check\_pin\_trust()}{check\_pin\_trust()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a49ff48534385af02ea5d4f99d97dd662} 
+ bool \texorpdfstring{$\vert$}{|} None werkzeug.\+debug.\+Debugged\+Application.\+check\+\_\+pin\+\_\+trust (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the request passed the pin test.  This returns `True` if the
+request is trusted on a pin/cookie basis and returns `False` if not.
+Additionally if the cookie's stored pin hash is wrong it will return
+`None` so that appropriate action can be taken.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_af8ffa1b0506b1197742c1682e6fbb681}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!debug\_application@{debug\_application}}
+\index{debug\_application@{debug\_application}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{debug\_application()}{debug\_application()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_af8ffa1b0506b1197742c1682e6fbb681} 
+ t.\+Iterator\+[bytes]\+ werkzeug.\+debug.\+Debugged\+Application.\+debug\+\_\+application (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the application and conserve the traceback frames.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_abb1cb4c75c02372d7aefc9dabda5f78a}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!display\_console@{display\_console}}
+\index{display\_console@{display\_console}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{display\_console()}{display\_console()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_abb1cb4c75c02372d7aefc9dabda5f78a} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} werkzeug.\+debug.\+Debugged\+Application.\+display\+\_\+console (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display a standalone shell.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a1ec01130ab075b942fe85b09a7a00965}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!execute\_command@{execute\_command}}
+\index{execute\_command@{execute\_command}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{execute\_command()}{execute\_command()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a1ec01130ab075b942fe85b09a7a00965} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} werkzeug.\+debug.\+Debugged\+Application.\+execute\+\_\+command (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{, }\item[{str}]{command}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_frame_summary}{Debug\+Frame\+Summary}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1___console_frame}{\+\_\+\+Console\+Frame}}}]{frame}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Execute a command in a console.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a0e499942eb71ee43e8cf44db78906c78}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!get\_resource@{get\_resource}}
+\index{get\_resource@{get\_resource}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{get\_resource()}{get\_resource()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a0e499942eb71ee43e8cf44db78906c78} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} werkzeug.\+debug.\+Debugged\+Application.\+get\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a static resource from the shared folder.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a08ca9b4c16745e16d6d0b9e1f0330ca2}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!log\_pin\_request@{log\_pin\_request}}
+\index{log\_pin\_request@{log\_pin\_request}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{log\_pin\_request()}{log\_pin\_request()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a08ca9b4c16745e16d6d0b9e1f0330ca2} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} werkzeug.\+debug.\+Debugged\+Application.\+log\+\_\+pin\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Log the pin if needed.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a1995351de0fb70bb44e8127574233608}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin@{pin}}
+\index{pin@{pin}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin()}{pin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a1995351de0fb70bb44e8127574233608} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+debug.\+Debugged\+Application.\+pin (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a018e434bfa876174bed6b7186b76a1d2}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin@{pin}}
+\index{pin@{pin}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin()}{pin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a018e434bfa876174bed6b7186b76a1d2} 
+ None werkzeug.\+debug.\+Debugged\+Application.\+pin (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ab4e6634ff52a53102b05e763405b5c14}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin\_auth@{pin\_auth}}
+\index{pin\_auth@{pin\_auth}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin\_auth()}{pin\_auth()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ab4e6634ff52a53102b05e763405b5c14} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} werkzeug.\+debug.\+Debugged\+Application.\+pin\+\_\+auth (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Authenticates with the pin.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a6e639ea415b0af5e7bdd24bcadc8bbb1}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin\_cookie\_name@{pin\_cookie\_name}}
+\index{pin\_cookie\_name@{pin\_cookie\_name}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin\_cookie\_name()}{pin\_cookie\_name()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a6e639ea415b0af5e7bdd24bcadc8bbb1} 
+ str werkzeug.\+debug.\+Debugged\+Application.\+pin\+\_\+cookie\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The name of the pin cookie.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1debug_1_1_debugged_application_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a2b7463f4c21262aee39b12db78b0157a}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_failed\_pin\_auth@{\_failed\_pin\_auth}}
+\index{\_failed\_pin\_auth@{\_failed\_pin\_auth}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_failed\_pin\_auth}{\_failed\_pin\_auth}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a2b7463f4c21262aee39b12db78b0157a} 
+werkzeug.\+debug.\+Debugged\+Application.\+\_\+failed\+\_\+pin\+\_\+auth = Value("{}B"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_af7102005942164d7fe43d9b53f4df78a}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_pin@{\_pin}}
+\index{\_pin@{\_pin}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_pin}{\_pin}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_af7102005942164d7fe43d9b53f4df78a} 
+werkzeug.\+debug.\+Debugged\+Application.\+\_\+pin \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ad1f071edca43dbfcd7c05e78c7b79278}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!\_pin\_cookie@{\_pin\_cookie}}
+\index{\_pin\_cookie@{\_pin\_cookie}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{\_pin\_cookie}{\_pin\_cookie}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ad1f071edca43dbfcd7c05e78c7b79278} 
+werkzeug.\+debug.\+Debugged\+Application.\+\_\+pin\+\_\+cookie = pin\+\_\+cookie\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a806151ef1247ed8f033da5fb48468022}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!app@{app}}
+\index{app@{app}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a806151ef1247ed8f033da5fb48468022} 
+werkzeug.\+debug.\+Debugged\+Application.\+app = app}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a5da237ef8193909a3379a2e1e725dfe6}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!console\_init\_func@{console\_init\_func}}
+\index{console\_init\_func@{console\_init\_func}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{console\_init\_func}{console\_init\_func}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a5da237ef8193909a3379a2e1e725dfe6} 
+werkzeug.\+debug.\+Debugged\+Application.\+console\+\_\+init\+\_\+func = console\+\_\+init\+\_\+func}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ab2b3b6a22c3ee8fd7742506a86bf2546}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!console\_path@{console\_path}}
+\index{console\_path@{console\_path}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{console\_path}{console\_path}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ab2b3b6a22c3ee8fd7742506a86bf2546} 
+werkzeug.\+debug.\+Debugged\+Application.\+console\+\_\+path = console\+\_\+path}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a676ba9e0b4deaa7ddc6c524b190d8633}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!evalex@{evalex}}
+\index{evalex@{evalex}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{evalex}{evalex}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a676ba9e0b4deaa7ddc6c524b190d8633} 
+werkzeug.\+debug.\+Debugged\+Application.\+evalex = evalex}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a33335807735aa370b3045fa1c485d6fe}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!frame\_contexts@{frame\_contexts}}
+\index{frame\_contexts@{frame\_contexts}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{frame\_contexts}{frame\_contexts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a33335807735aa370b3045fa1c485d6fe} 
+dict werkzeug.\+debug.\+Debugged\+Application.\+frame\+\_\+contexts = \{\}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a3f5b84a7519b668f9bd7695338fd2ceb}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!frames@{frames}}
+\index{frames@{frames}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{frames}{frames}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a3f5b84a7519b668f9bd7695338fd2ceb} 
+dict werkzeug.\+debug.\+Debugged\+Application.\+frames = \{\}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ab03e4b3d7fca28e5434b9fcc57f1e54e}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin@{pin}}
+\index{pin@{pin}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin}{pin}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ab03e4b3d7fca28e5434b9fcc57f1e54e} 
+werkzeug.\+debug.\+Debugged\+Application.\+pin}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a8e8076af58c1953e34e5253134553335}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin\_cookie\_name@{pin\_cookie\_name}}
+\index{pin\_cookie\_name@{pin\_cookie\_name}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin\_cookie\_name}{pin\_cookie\_name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a8e8076af58c1953e34e5253134553335} 
+werkzeug.\+debug.\+Debugged\+Application.\+pin\+\_\+cookie\+\_\+name}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ae94d6475ef3b4f3d8f89211b3e052753}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!pin\_logging@{pin\_logging}}
+\index{pin\_logging@{pin\_logging}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{pin\_logging}{pin\_logging}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ae94d6475ef3b4f3d8f89211b3e052753} 
+werkzeug.\+debug.\+Debugged\+Application.\+pin\+\_\+logging = pin\+\_\+logging}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_aa1e4c4985541a8818f46e777efe8803e}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!request\_key@{request\_key}}
+\index{request\_key@{request\_key}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{request\_key}{request\_key}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_aa1e4c4985541a8818f46e777efe8803e} 
+werkzeug.\+debug.\+Debugged\+Application.\+request\+\_\+key = request\+\_\+key}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a750897e8aec74a9d9aa41fac7265fbd6}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!secret@{secret}}
+\index{secret@{secret}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{secret}{secret}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a750897e8aec74a9d9aa41fac7265fbd6} 
+werkzeug.\+debug.\+Debugged\+Application.\+secret = gen\+\_\+salt(20)}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_ac7263ee09ef5d09af25e373dbb133d79}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!show\_hidden\_frames@{show\_hidden\_frames}}
+\index{show\_hidden\_frames@{show\_hidden\_frames}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{show\_hidden\_frames}{show\_hidden\_frames}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_ac7263ee09ef5d09af25e373dbb133d79} 
+werkzeug.\+debug.\+Debugged\+Application.\+show\+\_\+hidden\+\_\+frames = show\+\_\+hidden\+\_\+frames}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1_debugged_application_a0ae3d37d499d48f59e665c9b7279e36c}\index{werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}!trusted\_hosts@{trusted\_hosts}}
+\index{trusted\_hosts@{trusted\_hosts}!werkzeug.debug.DebuggedApplication@{werkzeug.debug.DebuggedApplication}}
+\doxysubsubsection{\texorpdfstring{trusted\_hosts}{trusted\_hosts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1_debugged_application_a0ae3d37d499d48f59e665c9b7279e36c} 
+werkzeug.\+debug.\+Debugged\+Application.\+trusted\+\_\+hosts = \+["{}.localhost"{}, "{}127.\+0.\+0.\+1"{}]\+}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+debug/\+\doxymbox{\hyperlink{werkzeug_2debug_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

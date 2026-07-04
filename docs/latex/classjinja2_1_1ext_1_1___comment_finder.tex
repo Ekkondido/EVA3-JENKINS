@@ -1,0 +1,92 @@
+\doxysection{jinja2.\+ext.\+\_\+\+Comment\+Finder Class Reference}
+\hypertarget{classjinja2_1_1ext_1_1___comment_finder}{}\label{classjinja2_1_1ext_1_1___comment_finder}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_ac8a69a99b4690bb5be69e691c64fc6b1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Sequence\+[t.\+Tuple\+[int, str, str]\+]\+ tokens, t.\+Sequence\+[str]\+ comment\+\_\+tags)
+\item 
+t.\+List\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_a5f6c4139c03285c1bfd141318b4dd0c3}{find\+\_\+backwards}} (self, int offset)
+\item 
+t.\+List\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_ad1bbeab67b9cda0ed281851dda2b44d4}{find\+\_\+comments}} (self, int lineno)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_a1e322e0278f912addf7b1fc7f0488f60}{tokens}} = tokens
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_a5a613705704d35099528ab7b1585c637}{comment\+\_\+tags}} = comment\+\_\+tags
+\item 
+int \doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_a73085220aed707dc3b615c452cfbc9cc}{offset}} = 0
+\item 
+int \doxymbox{\hyperlink{classjinja2_1_1ext_1_1___comment_finder_a126dba3dbf799590703c84d977b52f08}{last\+\_\+lineno}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper class to find comments in a token stream.  Can only
+find comments for gettext calls forwards.  Once the comment
+from line 4 is found, a comment for line 1 will not return a
+usable value.
+\end{DoxyVerb}
+ 
+
+\label{classjinja2_1_1ext_1_1___comment_finder_doc-constructors}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_ac8a69a99b4690bb5be69e691c64fc6b1}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_ac8a69a99b4690bb5be69e691c64fc6b1} 
+ None jinja2.\+ext.\+\_\+\+Comment\+Finder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\+[t.\+Tuple\+[int, str, str]\+]\+}]{tokens}{, }\item[{t.\+Sequence\+[str]\+     }]{comment\+\_\+tags}{}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1ext_1_1___comment_finder_doc-func-members}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_a5f6c4139c03285c1bfd141318b4dd0c3}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!find\_backwards@{find\_backwards}}
+\index{find\_backwards@{find\_backwards}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{find\_backwards()}{find\_backwards()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_a5f6c4139c03285c1bfd141318b4dd0c3} 
+ t.\+List\+[str]\+ jinja2.\+ext.\+\_\+\+Comment\+Finder.\+find\+\_\+backwards (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_ad1bbeab67b9cda0ed281851dda2b44d4}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!find\_comments@{find\_comments}}
+\index{find\_comments@{find\_comments}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{find\_comments()}{find\_comments()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_ad1bbeab67b9cda0ed281851dda2b44d4} 
+ t.\+List\+[str]\+ jinja2.\+ext.\+\_\+\+Comment\+Finder.\+find\+\_\+comments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{lineno}{}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1ext_1_1___comment_finder_doc-variable-members}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_a5a613705704d35099528ab7b1585c637}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!comment\_tags@{comment\_tags}}
+\index{comment\_tags@{comment\_tags}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{comment\_tags}{comment\_tags}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_a5a613705704d35099528ab7b1585c637} 
+jinja2.\+ext.\+\_\+\+Comment\+Finder.\+comment\+\_\+tags = comment\+\_\+tags}
+
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_a126dba3dbf799590703c84d977b52f08}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!last\_lineno@{last\_lineno}}
+\index{last\_lineno@{last\_lineno}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{last\_lineno}{last\_lineno}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_a126dba3dbf799590703c84d977b52f08} 
+int jinja2.\+ext.\+\_\+\+Comment\+Finder.\+last\+\_\+lineno = 0}
+
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_a73085220aed707dc3b615c452cfbc9cc}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!offset@{offset}}
+\index{offset@{offset}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_a73085220aed707dc3b615c452cfbc9cc} 
+int jinja2.\+ext.\+\_\+\+Comment\+Finder.\+offset = 0}
+
+\Hypertarget{classjinja2_1_1ext_1_1___comment_finder_a1e322e0278f912addf7b1fc7f0488f60}\index{jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}!tokens@{tokens}}
+\index{tokens@{tokens}!jinja2.ext.\_CommentFinder@{jinja2.ext.\_CommentFinder}}
+\doxysubsubsection{\texorpdfstring{tokens}{tokens}}
+{\footnotesize\ttfamily \label{classjinja2_1_1ext_1_1___comment_finder_a1e322e0278f912addf7b1fc7f0488f60} 
+jinja2.\+ext.\+\_\+\+Comment\+Finder.\+tokens = tokens}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+jinja2/\+\doxymbox{\hyperlink{jinja2_2ext_8py}{ext.\+py}}\end{DoxyCompactItemize}

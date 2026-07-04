@@ -1,0 +1,83 @@
+\doxysection{itsdangerous.\+signer.\+HMACAlgorithm Class Reference}
+\hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm}{}\label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm}\index{itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}}
+Inheritance diagram for itsdangerous.\+signer.\+HMACAlgorithm:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_ac1678c399968e51199988066b8931fa4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Any digest\+\_\+method=None)
+\item 
+bytes \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_af704cc443e6910a9ff9f839c40ea60bb}{get\+\_\+signature}} (self, bytes key, bytes value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_signing_algorithm}{itsdangerous.\+signer.\+Signing\+Algorithm}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_signing_algorithm_a05c3c19600d3f43d4416fadb20266746}{verify\+\_\+signature}} (self, bytes key, bytes value, bytes sig)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_afccb7d09777db3e215f4a46bbfd01f01}{digest\+\_\+method}} = digest\+\_\+method
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_a276fd54a926e4c031b2e3539ccfcfaef}{default\+\_\+digest\+\_\+method}} = staticmethod(\doxymbox{\hyperlink{namespaceitsdangerous_1_1signer_a9020cdb227cf71ad272afad3114fb624}{\+\_\+lazy\+\_\+sha1}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provides signature generation using HMACs.\end{DoxyVerb}
+ 
+
+\label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-constructors}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_ac1678c399968e51199988066b8931fa4}\index{itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_ac1678c399968e51199988066b8931fa4} 
+itsdangerous.\+signer.\+HMACAlgorithm.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any }]{digest\+\_\+method}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-func-members}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_af704cc443e6910a9ff9f839c40ea60bb}\index{itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}!get\_signature@{get\_signature}}
+\index{get\_signature@{get\_signature}!itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}}
+\doxysubsubsection{\texorpdfstring{get\_signature()}{get\_signature()}}
+{\footnotesize\ttfamily \label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_af704cc443e6910a9ff9f839c40ea60bb} 
+ bytes itsdangerous.\+signer.\+HMACAlgorithm.\+get\+\_\+signature (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{key}{, }\item[{bytes}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the signature for the given key and value.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classitsdangerous_1_1signer_1_1_signing_algorithm_a00073d058aa23c2ba55c5ea33cfd1a88}{itsdangerous.\+signer.\+Signing\+Algorithm}}.
+
+
+
+\label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-variable-members}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_a276fd54a926e4c031b2e3539ccfcfaef}\index{itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}!default\_digest\_method@{default\_digest\_method}}
+\index{default\_digest\_method@{default\_digest\_method}!itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}}
+\doxysubsubsection{\texorpdfstring{default\_digest\_method}{default\_digest\_method}}
+{\footnotesize\ttfamily \label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_a276fd54a926e4c031b2e3539ccfcfaef} 
+t itsdangerous.\+signer.\+HMACAlgorithm.\+default\+\_\+digest\+\_\+method = staticmethod(\doxymbox{\hyperlink{namespaceitsdangerous_1_1signer_a9020cdb227cf71ad272afad3114fb624}{\+\_\+lazy\+\_\+sha1}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_afccb7d09777db3e215f4a46bbfd01f01}\index{itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}!digest\_method@{digest\_method}}
+\index{digest\_method@{digest\_method}!itsdangerous.signer.HMACAlgorithm@{itsdangerous.signer.HMACAlgorithm}}
+\doxysubsubsection{\texorpdfstring{digest\_method}{digest\_method}}
+{\footnotesize\ttfamily \label{classitsdangerous_1_1signer_1_1_h_m_a_c_algorithm_afccb7d09777db3e215f4a46bbfd01f01} 
+t.\+Any itsdangerous.\+signer.\+HMACAlgorithm.\+digest\+\_\+method = digest\+\_\+method}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+itsdangerous/\+\doxymbox{\hyperlink{signer_8py}{signer.\+py}}\end{DoxyCompactItemize}

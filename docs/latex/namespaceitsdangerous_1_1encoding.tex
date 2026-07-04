@@ -1,0 +1,96 @@
+\doxysection{itsdangerous.\+encoding Namespace Reference}
+\hypertarget{namespaceitsdangerous_1_1encoding}{}\label{namespaceitsdangerous_1_1encoding}\index{itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a9ee93b45066d7e00026e5f1343b37afb}{want\+\_\+bytes}} (str\texorpdfstring{$\vert$}{|}bytes s, str encoding="{}utf-\/8"{}, str errors="{}strict"{})
+\item 
+bytes \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_ae20e46dbfed8bdd5135c54866ce54f9e}{base64\+\_\+encode}} (str\texorpdfstring{$\vert$}{|}bytes string)
+\item 
+bytes \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a7c286d6c2f613360d41c6ed8df5908c0}{base64\+\_\+decode}} (str\texorpdfstring{$\vert$}{|}bytes string)
+\item 
+bytes \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_ad8d5fbaef15217c300bb565b6d436462}{int\+\_\+to\+\_\+bytes}} (int num)
+\item 
+int \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a33801949ac0d222557324372855578ef}{bytes\+\_\+to\+\_\+int}} (bytes bytestr)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a281194ff866fd17ab26f855e9712f012}{\+\_\+base64\+\_\+alphabet}} = f"{}\{string.\+ascii\+\_\+letters\}\{string.\+digits\}-\/\+\_\+="{}.encode("{}ascii"{})
+\item 
+\doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a1ce5710f705112d8c5d3641b48964207}{\+\_\+int64\+\_\+struct}} = struct.\+Struct("{}$>$Q"{})
+\item 
+\doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a4110f019bb854fa434d7134d8b7d8328}{\+\_\+int\+\_\+to\+\_\+bytes}} = \+\_\+int64\+\_\+struct.\+pack
+\item 
+\doxymbox{\hyperlink{namespaceitsdangerous_1_1encoding_a90915e7e99c18e6664e5439c02ca50e7}{\+\_\+bytes\+\_\+to\+\_\+int}} = t.\+cast("{}t.\+Callable\+[\+[bytes]\+, tuple\+[int]\+]\+"{}, \+\_\+int64\+\_\+struct.\+unpack)
+\end{DoxyCompactItemize}
+
+
+\label{namespaceitsdangerous_1_1encoding_doc-func-members}
+\Hypertarget{namespaceitsdangerous_1_1encoding_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceitsdangerous_1_1encoding_a7c286d6c2f613360d41c6ed8df5908c0}\index{itsdangerous.encoding@{itsdangerous.encoding}!base64\_decode@{base64\_decode}}
+\index{base64\_decode@{base64\_decode}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{base64\_decode()}{base64\_decode()}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a7c286d6c2f613360d41c6ed8df5908c0} 
+ bytes base64\+\_\+decode (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Base64 decode a URL-safe string of bytes or text. The result is
+bytes.
+\end{DoxyVerb}
+ \Hypertarget{namespaceitsdangerous_1_1encoding_ae20e46dbfed8bdd5135c54866ce54f9e}\index{itsdangerous.encoding@{itsdangerous.encoding}!base64\_encode@{base64\_encode}}
+\index{base64\_encode@{base64\_encode}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{base64\_encode()}{base64\_encode()}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_ae20e46dbfed8bdd5135c54866ce54f9e} 
+ bytes base64\+\_\+encode (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Base64 encode a string of bytes or text. The resulting bytes are
+safe to use in URLs.
+\end{DoxyVerb}
+ \Hypertarget{namespaceitsdangerous_1_1encoding_a33801949ac0d222557324372855578ef}\index{itsdangerous.encoding@{itsdangerous.encoding}!bytes\_to\_int@{bytes\_to\_int}}
+\index{bytes\_to\_int@{bytes\_to\_int}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{bytes\_to\_int()}{bytes\_to\_int()}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a33801949ac0d222557324372855578ef} 
+ int bytes\+\_\+to\+\_\+int (\begin{DoxyParamCaption}\item[{bytes}]{bytestr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceitsdangerous_1_1encoding_ad8d5fbaef15217c300bb565b6d436462}\index{itsdangerous.encoding@{itsdangerous.encoding}!int\_to\_bytes@{int\_to\_bytes}}
+\index{int\_to\_bytes@{int\_to\_bytes}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{int\_to\_bytes()}{int\_to\_bytes()}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_ad8d5fbaef15217c300bb565b6d436462} 
+ bytes int\+\_\+to\+\_\+bytes (\begin{DoxyParamCaption}\item[{int}]{num}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceitsdangerous_1_1encoding_a9ee93b45066d7e00026e5f1343b37afb}\index{itsdangerous.encoding@{itsdangerous.encoding}!want\_bytes@{want\_bytes}}
+\index{want\_bytes@{want\_bytes}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{want\_bytes()}{want\_bytes()}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a9ee93b45066d7e00026e5f1343b37afb} 
+ bytes want\+\_\+bytes (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes}]{s}{, }\item[{str }]{encoding}{ = {\ttfamily "{}utf-\/8"{}}, }\item[{str }]{errors}{ = {\ttfamily "{}strict"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{namespaceitsdangerous_1_1encoding_doc-var-members}
+\Hypertarget{namespaceitsdangerous_1_1encoding_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceitsdangerous_1_1encoding_a281194ff866fd17ab26f855e9712f012}\index{itsdangerous.encoding@{itsdangerous.encoding}!\_base64\_alphabet@{\_base64\_alphabet}}
+\index{\_base64\_alphabet@{\_base64\_alphabet}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{\_base64\_alphabet}{\_base64\_alphabet}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a281194ff866fd17ab26f855e9712f012} 
+str itsdangerous.\+encoding.\+\_\+base64\+\_\+alphabet = f"{}\{string.\+ascii\+\_\+letters\}\{string.\+digits\}-\/\+\_\+="{}.encode("{}ascii"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceitsdangerous_1_1encoding_a90915e7e99c18e6664e5439c02ca50e7}\index{itsdangerous.encoding@{itsdangerous.encoding}!\_bytes\_to\_int@{\_bytes\_to\_int}}
+\index{\_bytes\_to\_int@{\_bytes\_to\_int}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{\_bytes\_to\_int}{\_bytes\_to\_int}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a90915e7e99c18e6664e5439c02ca50e7} 
+itsdangerous.\+encoding.\+\_\+bytes\+\_\+to\+\_\+int = t.\+cast("{}t.\+Callable\+[\+[bytes]\+, tuple\+[int]\+]\+"{}, \+\_\+int64\+\_\+struct.\+unpack)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceitsdangerous_1_1encoding_a1ce5710f705112d8c5d3641b48964207}\index{itsdangerous.encoding@{itsdangerous.encoding}!\_int64\_struct@{\_int64\_struct}}
+\index{\_int64\_struct@{\_int64\_struct}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{\_int64\_struct}{\_int64\_struct}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a1ce5710f705112d8c5d3641b48964207} 
+itsdangerous.\+encoding.\+\_\+int64\+\_\+struct = struct.\+Struct("{}$>$Q"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceitsdangerous_1_1encoding_a4110f019bb854fa434d7134d8b7d8328}\index{itsdangerous.encoding@{itsdangerous.encoding}!\_int\_to\_bytes@{\_int\_to\_bytes}}
+\index{\_int\_to\_bytes@{\_int\_to\_bytes}!itsdangerous.encoding@{itsdangerous.encoding}}
+\doxysubsubsection{\texorpdfstring{\_int\_to\_bytes}{\_int\_to\_bytes}}
+{\footnotesize\ttfamily \label{namespaceitsdangerous_1_1encoding_a4110f019bb854fa434d7134d8b7d8328} 
+itsdangerous.\+encoding.\+\_\+int\+\_\+to\+\_\+bytes = \+\_\+int64\+\_\+struct.\+pack\hspace{0.3cm}{\ttfamily [protected]}}
+

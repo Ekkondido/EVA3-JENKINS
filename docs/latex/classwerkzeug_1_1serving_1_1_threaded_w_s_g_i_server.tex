@@ -1,0 +1,86 @@
+\doxysection{werkzeug.\+serving.\+Threaded\+WSGIServer Class Reference}
+\hypertarget{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server}{}\label{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server}\index{werkzeug.serving.ThreadedWSGIServer@{werkzeug.serving.ThreadedWSGIServer}}
+Inheritance diagram for werkzeug.\+serving.\+Threaded\+WSGIServer:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server_ab0cc280a130b8071446374cdcfb9a3f7}{daemon\+\_\+threads}} = True
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{werkzeug.\+serving.\+Base\+WSGIServer}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a3917c4411de731b76fb048978ae0ff1d}{multithread}} = False
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a7d53f2b5ee2d8d7aec27dafd2b4b8af6}{multiprocess}} = False
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_aab5a78598e48474a1b2ca3d930544fbc}{request\+\_\+queue\+\_\+size}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}{LISTEN\+\_\+\+QUEUE}}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad2d6f9ca7e8815ea8362c1c7da6d7072}{allow\+\_\+reuse\+\_\+address}} = True
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{werkzeug.\+serving.\+Base\+WSGIServer}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a6df1d2198baf078423e5aa51c8d43caf}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str host, int port, WSGIApplication app, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None handler=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None, int\texorpdfstring{$\vert$}{|}None fd=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a191d9f65f0c3f3d5e3c1e53c5e62cf3e}{log}} (self, str type, str message, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad5f84c5955823b19ca54b84747fd481a}{serve\+\_\+forever}} (self, float poll\+\_\+interval=0.\+5)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a34203e3dc51a939755010ec48062c133}{handle\+\_\+error}} (self, t.\+Any request, tuple\+[str, int]\+\texorpdfstring{$\vert$}{|}str client\+\_\+address)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_ad7a8ca791fbd0fc61abb1f99012cfe68}{log\+\_\+startup}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{werkzeug.\+serving.\+Base\+WSGIServer}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}{host}} = host
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}{port}} = port
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaee9d8f099234e8fd0c7d2a3e2aea7}{app}} = app
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afe145a0b58b63765330cb926d8b77bfd}{passthrough\+\_\+errors}} = passthrough\+\_\+errors
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}{address\+\_\+family}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}{select\+\_\+address\+\_\+family}}(\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a421e83e894877a264d33be319a9f4de1}{host}}, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a0aaaf70995346324282937ff5b922f3c}{port}})
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a11e932a4bf02213dcff1b3c572887aa8}{socket}} = socket.\+fromfd(fd, \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a5ecc76b4596cc8db7f133f3b29ce82fd}{address\+\_\+family}}, socket.\+SOCK\+\_\+\+STREAM)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_afb397578c2783ae604836535b9436e60}{server\+\_\+address}} = self.\+socket.\+getsockname()
+\item 
+ssl.\+SSLContext\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_a2f24435fb0a229bae565a4ccf0b9eb85}{ssl\+\_\+context}} = ssl\+\_\+context
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{werkzeug.\+serving.\+Base\+WSGIServer}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server_abc3867b0c2ccc4df8f58e9290004d795}{\+\_\+server\+\_\+version}} = f"{}\+Werkzeug/\+\{importlib.\+metadata.\+version(\textquotesingle{}\doxymbox{\hyperlink{namespacewerkzeug}{werkzeug}}\textquotesingle{})\}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI server that handles concurrent requests in separate
+threads.
+
+Use :func:`make_server` to create a server instance.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server_ab0cc280a130b8071446374cdcfb9a3f7}\index{werkzeug.serving.ThreadedWSGIServer@{werkzeug.serving.ThreadedWSGIServer}!daemon\_threads@{daemon\_threads}}
+\index{daemon\_threads@{daemon\_threads}!werkzeug.serving.ThreadedWSGIServer@{werkzeug.serving.ThreadedWSGIServer}}
+\doxysubsubsection{\texorpdfstring{daemon\_threads}{daemon\_threads}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server_ab0cc280a130b8071446374cdcfb9a3f7} 
+bool werkzeug.\+serving.\+Threaded\+WSGIServer.\+daemon\+\_\+threads = True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{serving_8py}{serving.\+py}}\end{DoxyCompactItemize}

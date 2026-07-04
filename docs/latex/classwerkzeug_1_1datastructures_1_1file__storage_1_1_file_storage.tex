@@ -1,0 +1,210 @@
+\doxysection{werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}{}\label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a6ed10c54f36997c1005a975b08d5c4ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+IO\+[bytes]\+\texorpdfstring{$\vert$}{|}None stream=None, str\texorpdfstring{$\vert$}{|}None filename=None, str\texorpdfstring{$\vert$}{|}None name=None, str\texorpdfstring{$\vert$}{|}None content\+\_\+type=None, int\texorpdfstring{$\vert$}{|}None content\+\_\+length=None, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}\texorpdfstring{$\vert$}{|}None headers=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af234bb030fb3ab1d5986ccdcdce302c8}{content\+\_\+type}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab5aff321c298246a4bca0a49416df4a2}{content\+\_\+length}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a00ceac0cad640ba50ad40eaba3aaf1fd}{mimetype}} (self)
+\item 
+dict\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa76d368bbc5793f9ca9d00e3c22e9fd8}{mimetype\+\_\+params}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa988d223e295dce2ba3d004ae939d64c}{save}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}t.\+IO\+[bytes]\+ dst, int buffer\+\_\+size=16384)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_afaae7dcf8ee5466882bbfd4ae2caec2f}{close}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aea47e1fa249e9e61407d1e5aecc4856c}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af44fd313a20460e19ec870b5cc22b7b0}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+cabc.\+Iterator\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a912a7ed2d44dec6d74ccdf4fb34c5dc0}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a1e30722e2e092305fb6076cb080809eb}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa078a9067c458502440b615cec38dd4d}{name}} = name
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a29f9e501ec44363fa0477e66a53d9bb3}{stream}} = stream or Bytes\+IO()
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae15f1a875c9a67e8f4ac4a227a6916b3}{filename}} = filename
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab0b0e83a86ec16e28af22b5dfd94c107}{headers}} = headers
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab09be9bd6d03923856c36af69ac71436}{\+\_\+parse\+\_\+content\+\_\+type}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae40135265ff51fd8607192d87aeb9f0c}{\+\_\+parsed\+\_\+content\+\_\+type}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a2e0445b43b6cb473c323ed780db3f0ef}{http.\+parse\+\_\+options\+\_\+header}}(self.\+content\+\_\+type)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The :class:`FileStorage` class is a thin wrapper over incoming files.
+It is used by the request object to represent uploaded files.  All the
+attributes of the wrapper stream are proxied by the file storage so
+it's possible to do ``storage.read()`` instead of the long form
+``storage.stream.read()``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a6ed10c54f36997c1005a975b08d5c4ad}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a6ed10c54f36997c1005a975b08d5c4ad} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+ \texorpdfstring{$\vert$}{|} None }]{stream}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{content\+\_\+type}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{content\+\_\+length}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}} \texorpdfstring{$\vert$}{|} None }]{headers}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aea47e1fa249e9e61407d1e5aecc4856c}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aea47e1fa249e9e61407d1e5aecc4856c} 
+ bool werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af44fd313a20460e19ec870b5cc22b7b0}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af44fd313a20460e19ec870b5cc22b7b0} 
+ t.\+Any werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a912a7ed2d44dec6d74ccdf4fb34c5dc0}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a912a7ed2d44dec6d74ccdf4fb34c5dc0} 
+ cabc.\+Iterator\+[bytes]\+ werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a1e30722e2e092305fb6076cb080809eb}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a1e30722e2e092305fb6076cb080809eb} 
+ str werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab09be9bd6d03923856c36af69ac71436}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_parse\_content\_type@{\_parse\_content\_type}}
+\index{\_parse\_content\_type@{\_parse\_content\_type}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_parse\_content\_type()}{\_parse\_content\_type()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab09be9bd6d03923856c36af69ac71436} 
+ None werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+parse\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_afaae7dcf8ee5466882bbfd4ae2caec2f}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!close@{close}}
+\index{close@{close}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_afaae7dcf8ee5466882bbfd4ae2caec2f} 
+ None werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Close the underlying file if possible.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab5aff321c298246a4bca0a49416df4a2}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!content\_length@{content\_length}}
+\index{content\_length@{content\_length}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{content\_length()}{content\_length()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab5aff321c298246a4bca0a49416df4a2} 
+ int werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+content\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The content-length sent in the header.  Usually not available\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af234bb030fb3ab1d5986ccdcdce302c8}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!content\_type@{content\_type}}
+\index{content\_type@{content\_type}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{content\_type()}{content\_type()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_af234bb030fb3ab1d5986ccdcdce302c8} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The content-type sent in the header.  Usually not available\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a00ceac0cad640ba50ad40eaba3aaf1fd}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{mimetype()}{mimetype()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a00ceac0cad640ba50ad40eaba3aaf1fd} 
+ str werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+mimetype (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :attr:`content_type`, but without parameters (eg, without
+charset, type etc.) and always lowercase.  For example if the content
+type is ``text/HTML; charset=utf-8`` the mimetype would be
+``'text/html'``.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa76d368bbc5793f9ca9d00e3c22e9fd8}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!mimetype\_params@{mimetype\_params}}
+\index{mimetype\_params@{mimetype\_params}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{mimetype\_params()}{mimetype\_params()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa76d368bbc5793f9ca9d00e3c22e9fd8} 
+ dict\+[str, str]\+ werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+mimetype\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The mimetype parameters as dict.  For example if the content
+type is ``text/html; charset=utf-8`` the params would be
+``{'charset': 'utf-8'}``.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa988d223e295dce2ba3d004ae939d64c}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!save@{save}}
+\index{save@{save}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa988d223e295dce2ba3d004ae939d64c} 
+ None werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} t.\+IO\+[bytes]\+}]{dst}{, }\item[{int }]{buffer\+\_\+size}{ = {\ttfamily 16384}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Save the file to a destination path or file object.  If the
+destination is a file object you have to close it yourself after the
+call.  The buffer size is the number of bytes held in memory during
+the copy process.  It defaults to 16KB.
+
+For secure file saving also have a look at :func:`secure_filename`.
+
+:param dst: a filename, :class:`os.PathLike`, or open file
+    object to write to.
+:param buffer_size: Passed as the ``length`` parameter of
+    :func:`shutil.copyfileobj`.
+
+.. versionchanged:: 1.0
+    Supports :mod:`pathlib`.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae40135265ff51fd8607192d87aeb9f0c}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!\_parsed\_content\_type@{\_parsed\_content\_type}}
+\index{\_parsed\_content\_type@{\_parsed\_content\_type}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{\_parsed\_content\_type}{\_parsed\_content\_type}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae40135265ff51fd8607192d87aeb9f0c} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+\_\+parsed\+\_\+content\+\_\+type = \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a2e0445b43b6cb473c323ed780db3f0ef}{http.\+parse\+\_\+options\+\_\+header}}(self.\+content\+\_\+type)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae15f1a875c9a67e8f4ac4a227a6916b3}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!filename@{filename}}
+\index{filename@{filename}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ae15f1a875c9a67e8f4ac4a227a6916b3} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+filename = filename}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab0b0e83a86ec16e28af22b5dfd94c107}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!headers@{headers}}
+\index{headers@{headers}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{headers}{headers}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_ab0b0e83a86ec16e28af22b5dfd94c107} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+headers = headers}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa078a9067c458502440b615cec38dd4d}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!name@{name}}
+\index{name@{name}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_aa078a9067c458502440b615cec38dd4d} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+name = name}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a29f9e501ec44363fa0477e66a53d9bb3}\index{werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}!stream@{stream}}
+\index{stream@{stream}!werkzeug.datastructures.file\_storage.FileStorage@{werkzeug.datastructures.file\_storage.FileStorage}}
+\doxysubsubsection{\texorpdfstring{stream}{stream}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage_a29f9e501ec44363fa0477e66a53d9bb3} 
+werkzeug.\+datastructures.\+file\+\_\+storage.\+File\+Storage.\+stream = stream or Bytes\+IO()}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{file__storage_8py}{file\+\_\+storage.\+py}}\end{DoxyCompactItemize}

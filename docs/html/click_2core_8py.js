@@ -1,0 +1,25 @@
+var click_2core_8py =
+[
+    [ "click.core.ParameterSource", "classclick_1_1core_1_1_parameter_source.html", null ],
+    [ "click.core.Context", "classclick_1_1core_1_1_context.html", "classclick_1_1core_1_1_context" ],
+    [ "click.core.Command", "classclick_1_1core_1_1_command.html", "classclick_1_1core_1_1_command" ],
+    [ "click.core._FakeSubclassCheck", "classclick_1_1core_1_1___fake_subclass_check.html", "classclick_1_1core_1_1___fake_subclass_check" ],
+    [ "click.core._BaseCommand", "classclick_1_1core_1_1___base_command.html", null ],
+    [ "click.core.Group", "classclick_1_1core_1_1_group.html", "classclick_1_1core_1_1_group" ],
+    [ "click.core._MultiCommand", "classclick_1_1core_1_1___multi_command.html", null ],
+    [ "click.core.CommandCollection", "classclick_1_1core_1_1_command_collection.html", "classclick_1_1core_1_1_command_collection" ],
+    [ "click.core.Parameter", "classclick_1_1core_1_1_parameter.html", "classclick_1_1core_1_1_parameter" ],
+    [ "click.core.Option", "classclick_1_1core_1_1_option.html", "classclick_1_1core_1_1_option" ],
+    [ "click.core.Argument", "classclick_1_1core_1_1_argument.html", "classclick_1_1core_1_1_argument" ],
+    [ "click.core.__getattr__", "namespaceclick_1_1core.html#a1402431fcc7748f00855aa0068c24b8b", null ],
+    [ "click.core._check_iter", "namespaceclick_1_1core.html#a800e0197d82986a5fb700fb12d62055a", null ],
+    [ "click.core._check_nested_chain", "namespaceclick_1_1core.html#ac06ca0fc392d593cc1d2fa5c73ef609e", null ],
+    [ "click.core._complete_visible_commands", "namespaceclick_1_1core.html#acf265285a6d811fa277563a0ca46df8b", null ],
+    [ "click.core._format_deprecated_label", "namespaceclick_1_1core.html#ace96db6ba355578164fbfab006e3c98f", null ],
+    [ "click.core._format_deprecated_suffix", "namespaceclick_1_1core.html#aaf85f8f88938682990558b2d248b58e8", null ],
+    [ "click.core.augment_usage_errors", "namespaceclick_1_1core.html#adab51c468edd35023337d1296d336cf3", null ],
+    [ "click.core.batch", "namespaceclick_1_1core.html#a3d2cb186d9fe16d3e5d52381dc0c8f93", null ],
+    [ "click.core.iter_params_for_processing", "namespaceclick_1_1core.html#a52513f9502c7fa7c8e5911257b0da181", null ],
+    [ "click.core.F", "namespaceclick_1_1core.html#a70bd2ba0e7ce66ecf81bec9afc844213", null ],
+    [ "click.core.V", "namespaceclick_1_1core.html#aa8ac3a61427e3eaf029f1775b9c1adca", null ]
+];

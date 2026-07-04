@@ -1,0 +1,267 @@
+\doxysection{click.\+shell\+\_\+completion Namespace Reference}
+\hypertarget{namespaceclick_1_1shell__completion}{}\label{namespaceclick_1_1shell__completion}\index{click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1___source_vars_dict}{\+\_\+\+Source\+Vars\+Dict}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{Shell\+Complete}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete}{Bash\+Complete}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_zsh_complete}{Zsh\+Complete}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_fish_complete}{Fish\+Complete}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Literal\+[0, 1]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a075749bb35926dd0a224fc11c2a4d467}{shell\+\_\+complete}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} cli, cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+ ctx\+\_\+args, str prog\+\_\+name, str complete\+\_\+var, str instruction)
+\item 
+type\+[\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}{\+\_\+\+Shell\+CompleteT}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a310484ff03773c130f00ccf217bd1ae2}{add\+\_\+completion\+\_\+class}} (type\+[\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}{\+\_\+\+Shell\+CompleteT}}]\+ cls, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete}{Bash\+Complete}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a5245b1edf8f48488bed562e677e32091}{get\+\_\+completion\+\_\+class}} (t.\+Literal\+["{}bash"{}]\+ shell)
+\item 
+type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_fish_complete}{Fish\+Complete}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_aed2c21eecbfcc12e73b854fa82f63f23}{get\+\_\+completion\+\_\+class}} (t.\+Literal\+["{}fish"{}]\+ shell)
+\item 
+type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_zsh_complete}{Zsh\+Complete}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_aa038ff76bb32a312d6b14bdf1aee46da}{get\+\_\+completion\+\_\+class}} (t.\+Literal\+["{}zsh"{}]\+ shell)
+\item 
+type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{Shell\+Complete}}]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a446d1cde211d887a96636bd91862407c}{get\+\_\+completion\+\_\+class}} (str shell)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_ae610dc6d9b119b12d3f247ba1d4dec30}{split\+\_\+arg\+\_\+string}} (str string)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a95c335cdf9a02230bd66a8f743fcb163}{\+\_\+is\+\_\+incomplete\+\_\+argument}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} param)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_ac311d4905619f2d43fa8c636fb56e475}{\+\_\+start\+\_\+of\+\_\+option}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, str value)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a6fa4119b317cfe5f7ff33bf3b370b91c}{\+\_\+is\+\_\+incomplete\+\_\+option}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, list\+[str]\+ args, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} param)
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a65bf3027aece456a1f8eef1f34296869}{\+\_\+resolve\+\_\+context}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} cli, cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+ ctx\+\_\+args, str prog\+\_\+name, list\+[str]\+ args)
+\item 
+tuple\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}, str]\+ \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a9adba1b4b690e1c02139989ee1059b50}{\+\_\+resolve\+\_\+incomplete}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, list\+[str]\+ args, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}{\+\_\+\+Value\+T\+\_\+co}} = Type\+Var("{}\+\_\+\+Value\+T\+\_\+co"{}, covariant=True, default=t.\+Any)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_ac087cbd0f16e00df90d0aa1edc696a51}{\+\_\+\+SOURCE\+\_\+\+BASH}}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a7c65c480f91551f63b995c282768c530}{\+\_\+\+SOURCE\+\_\+\+ZSH}}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_af0454934aead57f6e51a31cbb4d0f971}{\+\_\+\+SOURCE\+\_\+\+FISH}}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}{\+\_\+\+Shell\+CompleteT}} = t.\+Type\+Var("{}\+\_\+\+Shell\+Complete\+T"{}, bound="{}Shell\+Complete"{})
+\end{DoxyCompactItemize}
+
+
+\label{namespaceclick_1_1shell__completion_doc-func-members}
+\Hypertarget{namespaceclick_1_1shell__completion_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceclick_1_1shell__completion_a95c335cdf9a02230bd66a8f743fcb163}\index{click.shell\_completion@{click.shell\_completion}!\_is\_incomplete\_argument@{\_is\_incomplete\_argument}}
+\index{\_is\_incomplete\_argument@{\_is\_incomplete\_argument}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_is\_incomplete\_argument()}{\_is\_incomplete\_argument()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a95c335cdf9a02230bd66a8f743fcb163} 
+ bool \+\_\+is\+\_\+incomplete\+\_\+argument (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}}]{param}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine if the given parameter is an argument that can still
+accept values.
+
+:param ctx: Invocation context for the command represented by the
+    parsed complete args.
+:param param: Argument object being checked.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a6fa4119b317cfe5f7ff33bf3b370b91c}\index{click.shell\_completion@{click.shell\_completion}!\_is\_incomplete\_option@{\_is\_incomplete\_option}}
+\index{\_is\_incomplete\_option@{\_is\_incomplete\_option}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_is\_incomplete\_option()}{\_is\_incomplete\_option()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a6fa4119b317cfe5f7ff33bf3b370b91c} 
+ bool \+\_\+is\+\_\+incomplete\+\_\+option (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{list\+[str]\+}]{args}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}}]{param}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine if the given parameter is an option that needs a value.
+
+:param args: List of complete args before the incomplete value.
+:param param: Option object being checked.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a65bf3027aece456a1f8eef1f34296869}\index{click.shell\_completion@{click.shell\_completion}!\_resolve\_context@{\_resolve\_context}}
+\index{\_resolve\_context@{\_resolve\_context}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_context()}{\_resolve\_context()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a65bf3027aece456a1f8eef1f34296869} 
+ \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \+\_\+resolve\+\_\+context (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}}]{cli}{, }\item[{cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+}]{ctx\+\_\+args}{, }\item[{str}]{prog\+\_\+name}{, }\item[{list\+[str]\+}]{args}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Produce the context hierarchy starting with the command and
+traversing the complete arguments. This only follows the commands,
+it doesn't trigger input prompts or callbacks.
+
+:param cli: Command being called.
+:param prog_name: Name of the executable in the shell.
+:param args: List of complete args before the incomplete value.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a9adba1b4b690e1c02139989ee1059b50}\index{click.shell\_completion@{click.shell\_completion}!\_resolve\_incomplete@{\_resolve\_incomplete}}
+\index{\_resolve\_incomplete@{\_resolve\_incomplete}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_resolve\_incomplete()}{\_resolve\_incomplete()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a9adba1b4b690e1c02139989ee1059b50} 
+ tuple\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}, str]\+ \+\_\+resolve\+\_\+incomplete (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{list\+[str]\+}]{args}{, }\item[{str }]{incomplete}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the Click object that will handle the completion of the
+incomplete value. Return the object and the incomplete value.
+
+:param ctx: Invocation context for the command represented by
+    the parsed complete args.
+:param args: List of complete args before the incomplete value.
+:param incomplete: Value being completed. May be empty.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_ac311d4905619f2d43fa8c636fb56e475}\index{click.shell\_completion@{click.shell\_completion}!\_start\_of\_option@{\_start\_of\_option}}
+\index{\_start\_of\_option@{\_start\_of\_option}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_start\_of\_option()}{\_start\_of\_option()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_ac311d4905619f2d43fa8c636fb56e475} 
+ bool \+\_\+start\+\_\+of\+\_\+option (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{str}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the value looks like the start of an option.\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a310484ff03773c130f00ccf217bd1ae2}\index{click.shell\_completion@{click.shell\_completion}!add\_completion\_class@{add\_completion\_class}}
+\index{add\_completion\_class@{add\_completion\_class}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{add\_completion\_class()}{add\_completion\_class()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a310484ff03773c130f00ccf217bd1ae2} 
+ type\+[\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}{\+\_\+\+Shell\+CompleteT}}]\+ add\+\_\+completion\+\_\+class (\begin{DoxyParamCaption}\item[{type\+[\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}{\+\_\+\+Shell\+CompleteT}}]\+}]{cls}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a :class:`ShellComplete` subclass under the given name.
+The name will be provided by the completion instruction environment
+variable during completion.
+
+:param cls: The completion class that will handle completion for the
+    shell.
+:param name: Name to register the class under. Defaults to the
+    class's ``name`` attribute.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a446d1cde211d887a96636bd91862407c}\index{click.shell\_completion@{click.shell\_completion}!get\_completion\_class@{get\_completion\_class}}
+\index{get\_completion\_class@{get\_completion\_class}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_class()}{get\_completion\_class()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a446d1cde211d887a96636bd91862407c} 
+ type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_shell_complete}{Shell\+Complete}}]\+ \texorpdfstring{$\vert$}{|} None get\+\_\+completion\+\_\+class (\begin{DoxyParamCaption}\item[{str}]{shell}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Look up a registered :class:`ShellComplete` subclass by the name
+provided by the completion instruction environment variable. If the
+name isn't registered, returns ``None``.
+
+:param shell: Name the class is registered under.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_a5245b1edf8f48488bed562e677e32091}\index{click.shell\_completion@{click.shell\_completion}!get\_completion\_class@{get\_completion\_class}}
+\index{get\_completion\_class@{get\_completion\_class}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_class()}{get\_completion\_class()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a5245b1edf8f48488bed562e677e32091} 
+ type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_bash_complete}{Bash\+Complete}}]\+ get\+\_\+completion\+\_\+class (\begin{DoxyParamCaption}\item[{t.\+Literal\+["{}bash"{}]\+}]{shell}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1shell__completion_aed2c21eecbfcc12e73b854fa82f63f23}\index{click.shell\_completion@{click.shell\_completion}!get\_completion\_class@{get\_completion\_class}}
+\index{get\_completion\_class@{get\_completion\_class}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_class()}{get\_completion\_class()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_aed2c21eecbfcc12e73b854fa82f63f23} 
+ type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_fish_complete}{Fish\+Complete}}]\+ get\+\_\+completion\+\_\+class (\begin{DoxyParamCaption}\item[{t.\+Literal\+["{}fish"{}]\+}]{shell}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1shell__completion_aa038ff76bb32a312d6b14bdf1aee46da}\index{click.shell\_completion@{click.shell\_completion}!get\_completion\_class@{get\_completion\_class}}
+\index{get\_completion\_class@{get\_completion\_class}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{get\_completion\_class()}{get\_completion\_class()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_aa038ff76bb32a312d6b14bdf1aee46da} 
+ type\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_zsh_complete}{Zsh\+Complete}}]\+ get\+\_\+completion\+\_\+class (\begin{DoxyParamCaption}\item[{t.\+Literal\+["{}zsh"{}]\+}]{shell}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1shell__completion_a075749bb35926dd0a224fc11c2a4d467}\index{click.shell\_completion@{click.shell\_completion}!shell\_complete@{shell\_complete}}
+\index{shell\_complete@{shell\_complete}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{shell\_complete()}{shell\_complete()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a075749bb35926dd0a224fc11c2a4d467} 
+ t.\+Literal\+[0, 1]\+ shell\+\_\+complete (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}}}]{cli}{, }\item[{cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+}]{ctx\+\_\+args}{, }\item[{str}]{prog\+\_\+name}{, }\item[{str}]{complete\+\_\+var}{, }\item[{str}]{instruction}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform shell completion for the given CLI program.
+
+:param cli: Command being called.
+:param ctx_args: Extra arguments to pass to
+    ``cli.make_context``.
+:param prog_name: Name of the executable in the shell.
+:param complete_var: Name of the environment variable that holds
+    the completion instruction.
+:param instruction: Value of ``complete_var`` with the completion
+    instruction and shell, in the form ``instruction_shell``.
+:return: Status code to exit with.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1shell__completion_ae610dc6d9b119b12d3f247ba1d4dec30}\index{click.shell\_completion@{click.shell\_completion}!split\_arg\_string@{split\_arg\_string}}
+\index{split\_arg\_string@{split\_arg\_string}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{split\_arg\_string()}{split\_arg\_string()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_ae610dc6d9b119b12d3f247ba1d4dec30} 
+ list\+[str]\+ split\+\_\+arg\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{string}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split an argument string as with :func:`shlex.split`, but don't
+fail if the string is incomplete. Ignores a missing closing quote or
+incomplete escape sequence and uses the partial token as-is.
+
+.. code-block:: python
+
+    split_arg_string("example 'my file")
+    ["example", "my file"]
+
+    split_arg_string("example my\\")
+    ["example", "my"]
+
+:param string: String to split.
+
+.. versionchanged:: 8.2
+    Moved to ``shell_completion`` from ``parser``.
+\end{DoxyVerb}
+ 
+
+\label{namespaceclick_1_1shell__completion_doc-var-members}
+\Hypertarget{namespaceclick_1_1shell__completion_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360}\index{click.shell\_completion@{click.shell\_completion}!\_ShellCompleteT@{\_ShellCompleteT}}
+\index{\_ShellCompleteT@{\_ShellCompleteT}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_ShellCompleteT}{\_ShellCompleteT}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a1634bc95364080e259d1a33d75acd360} 
+click.\+shell\+\_\+completion.\+\_\+\+Shell\+CompleteT = t.\+Type\+Var("{}\+\_\+\+Shell\+Complete\+T"{}, bound="{}Shell\+Complete"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1shell__completion_ac087cbd0f16e00df90d0aa1edc696a51}\index{click.shell\_completion@{click.shell\_completion}!\_SOURCE\_BASH@{\_SOURCE\_BASH}}
+\index{\_SOURCE\_BASH@{\_SOURCE\_BASH}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_SOURCE\_BASH}{\_SOURCE\_BASH}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_ac087cbd0f16e00df90d0aa1edc696a51} 
+str click.\+shell\+\_\+completion.\+\_\+\+SOURCE\+\_\+\+BASH\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1shell__completion_af0454934aead57f6e51a31cbb4d0f971}\index{click.shell\_completion@{click.shell\_completion}!\_SOURCE\_FISH@{\_SOURCE\_FISH}}
+\index{\_SOURCE\_FISH@{\_SOURCE\_FISH}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_SOURCE\_FISH}{\_SOURCE\_FISH}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_af0454934aead57f6e51a31cbb4d0f971} 
+str click.\+shell\+\_\+completion.\+\_\+\+SOURCE\+\_\+\+FISH\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}\(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{function\ \%(complete\_func)s;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ set\ -\/l\ response\ (env\ \%(complete\_var)s=fish\_complete\ COMP\_WORDS=(commandline\ -\/cp)\ \(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{COMP\_CWORD=(commandline\ -\/t)\ \%(prog\_name)s);}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ for\ completion\ in\ \$response;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ set\ -\/l\ metadata\ (string\ split\ "{},"{}\ \$completion);}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ if\ test\ \$metadata[1]\ =\ "{}dir"{};}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_fish\_complete\_directories\ \$metadata[2];}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ else\ if\ test\ \$metadata[1]\ =\ "{}file"{};}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ \_\_fish\_complete\_path\ \$metadata[2];}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ else\ if\ test\ \$metadata[1]\ =\ "{}plain"{};}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ echo\ \$metadata[2];}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ end;}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ end;}}
+\DoxyCodeLine{\textcolor{stringliteral}{end;}}
+\DoxyCodeLine{\textcolor{stringliteral}{}}
+\DoxyCodeLine{\textcolor{stringliteral}{complete\ -\/-\/no-\/files\ -\/-\/command\ \%(prog\_name)s\ -\/-\/arguments\ \(\backslash\)}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}(\%(complete\_func)s)"{};}}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclick_1_1shell__completion_a7c65c480f91551f63b995c282768c530}\index{click.shell\_completion@{click.shell\_completion}!\_SOURCE\_ZSH@{\_SOURCE\_ZSH}}
+\index{\_SOURCE\_ZSH@{\_SOURCE\_ZSH}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_SOURCE\_ZSH}{\_SOURCE\_ZSH}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a7c65c480f91551f63b995c282768c530} 
+str click.\+shell\+\_\+completion.\+\_\+\+SOURCE\+\_\+\+ZSH\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}\index{click.shell\_completion@{click.shell\_completion}!\_ValueT\_co@{\_ValueT\_co}}
+\index{\_ValueT\_co@{\_ValueT\_co}!click.shell\_completion@{click.shell\_completion}}
+\doxysubsubsection{\texorpdfstring{\_ValueT\_co}{\_ValueT\_co}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f} 
+click.\+shell\+\_\+completion.\+\_\+\+Value\+T\+\_\+co = Type\+Var("{}\+\_\+\+Value\+T\+\_\+co"{}, covariant=True, default=t.\+Any)\hspace{0.3cm}{\ttfamily [protected]}}
+

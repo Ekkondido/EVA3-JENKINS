@@ -1,0 +1,150 @@
+\doxysection{werkzeug.\+sansio.\+utils Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1sansio_1_1utils}{}\label{namespacewerkzeug_1_1sansio_1_1utils}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1utils_aa2ec6b9d362c1d120a20df740e6f99e4}{host\+\_\+is\+\_\+trusted}} (str\texorpdfstring{$\vert$}{|}None hostname, t.\+Collection\+[str]\+\texorpdfstring{$\vert$}{|}None trusted\+\_\+list=None)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1utils_aaff15a7912995760d2322f0848667af2}{get\+\_\+host}} (str scheme, str\texorpdfstring{$\vert$}{|}None host\+\_\+header, tuple\+[str, int\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None server=None, t.\+Collection\+[str]\+\texorpdfstring{$\vert$}{|}None trusted\+\_\+hosts=None)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1utils_aac08d7f162ebfeccf9732792edfc237e}{get\+\_\+current\+\_\+url}} (str scheme, str host, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None, str\texorpdfstring{$\vert$}{|}None path=None, bytes\texorpdfstring{$\vert$}{|}None query\+\_\+string=None)
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1utils_a4700fa80da14208acaa5443a1c281740}{get\+\_\+content\+\_\+length}} (str\texorpdfstring{$\vert$}{|}None http\+\_\+content\+\_\+length=None, str\texorpdfstring{$\vert$}{|}None http\+\_\+transfer\+\_\+encoding=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1utils_aeb4d409840852611e80b48d28d7da03b}{\+\_\+host\+\_\+re}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1sansio_1_1utils_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_a4700fa80da14208acaa5443a1c281740}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}!get\_content\_length@{get\_content\_length}}
+\index{get\_content\_length@{get\_content\_length}!werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection{\texorpdfstring{get\_content\_length()}{get\_content\_length()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1utils_a4700fa80da14208acaa5443a1c281740} 
+ int \texorpdfstring{$\vert$}{|} None get\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+content\+\_\+length}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{http\+\_\+transfer\+\_\+encoding}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the ``Content-Length`` header value as an int. If the header is not given
+or the ``Transfer-Encoding`` header is ``chunked``, ``None`` is returned to indicate
+a streaming request. If the value is not an integer, or negative, 0 is returned.
+
+:param http_content_length: The Content-Length HTTP header.
+:param http_transfer_encoding: The Transfer-Encoding HTTP header.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_aac08d7f162ebfeccf9732792edfc237e}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}!get\_current\_url@{get\_current\_url}}
+\index{get\_current\_url@{get\_current\_url}!werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection{\texorpdfstring{get\_current\_url()}{get\_current\_url()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1utils_aac08d7f162ebfeccf9732792edfc237e} 
+ str get\+\_\+current\+\_\+url (\begin{DoxyParamCaption}\item[{str}]{scheme}{, }\item[{str}]{host}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{root\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily None}, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{query\+\_\+string}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recreate the URL for a request. If an optional part isn't
+provided, it and subsequent parts are not included in the URL.
+
+The URL is an IRI, not a URI, so it may contain Unicode characters.
+Use :func:`~werkzeug.urls.iri_to_uri` to convert it to ASCII.
+
+:param scheme: The protocol the request used, like ``"https"``.
+:param host: The host the request was made to. See :func:`get_host`.
+:param root_path: Prefix that the application is mounted under. This
+    is prepended to ``path``.
+:param path: The path part of the URL after ``root_path``.
+:param query_string: The portion of the URL after the "?".
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_aaff15a7912995760d2322f0848667af2}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1utils_aaff15a7912995760d2322f0848667af2} 
+ str get\+\_\+host (\begin{DoxyParamCaption}\item[{str}]{scheme}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{host\+\_\+header}{, }\item[{tuple\+[str, int \texorpdfstring{$\vert$}{|} None]\+ \texorpdfstring{$\vert$}{|} None }]{server}{ = {\ttfamily None}, }\item[{t.\+Collection\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{trusted\+\_\+hosts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get and validate a request's ``host:port`` based on the given values.
+
+The ``Host`` header sent by the client is preferred. Otherwise, the server's
+configured address is used. The port is omitted if it matches the standard
+HTTP or HTTPS ports.
+
+The value is passed through :func:`host_is_trusted`. The host must be made
+up of valid characters, but this does not check validity beyond that. If a
+list of trusted domains is given, the domain must match one.
+
+If the host header is not available, such as for HTTP/0.9 and 1.0, or it has
+invalid characters, the empty string is returned. Subdomain and host
+routing, and external URL building, will not work in these cases.
+
+:param scheme: The protocol of the request. Used to omit the standard ports
+    80 and 443.
+:param host_header: The ``Host`` header value.
+:param server: The server's configured address ``(host, port)``. The server
+    may be using a Unix socket and give ``(path, None)``; this is ignored as
+    it would not produce a useful host value.
+:param trusted_hosts: A list of trusted domains to match. These should
+    already be IDNA encoded, but will be encoded if needed. The port is
+    ignored for this check. If a name starts with a dot it will match as a
+    suffix, accepting all subdomains. If empty or ``None``, all domains are
+    allowed.
+
+:return: Host, with port if necessary.
+:raise .SecurityError: If the host is not trusted.
+
+.. versionchanged:: 3.1.8
+    The empty string is again returned if no host header value is available,
+    or if the characters are invalid.
+
+.. versionchanged:: 3.1.7
+    The characters of the host value are validated. The empty string is no
+    longer allowed if no header value is available.
+
+.. versionchanged:: 3.2
+    When using the server address, Unix sockets are ignored.
+
+.. versionchanged:: 3.1.3
+    If ``SERVER_NAME`` is IPv6, it is wrapped in ``[]``.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_aa2ec6b9d362c1d120a20df740e6f99e4}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}!host\_is\_trusted@{host\_is\_trusted}}
+\index{host\_is\_trusted@{host\_is\_trusted}!werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection{\texorpdfstring{host\_is\_trusted()}{host\_is\_trusted()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1utils_aa2ec6b9d362c1d120a20df740e6f99e4} 
+ bool host\+\_\+is\+\_\+trusted (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None}]{hostname}{, }\item[{t.\+Collection\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{trusted\+\_\+list}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Perform some checks on a ``Host`` header ``host:port``. The host must be
+made up of valid characters, but this does not check validity beyond that.
+If a list of trusted domains is given, the domain must match one.
+
+:param hostname: The ``Host`` header ``host:port`` to check.
+:param trusted_list: A list of trusted domains to match. These should
+    already be IDNA encoded, but will be encoded if needed. The port is
+    ignored for this check. If a name starts with a dot it will match as a
+    suffix, accepting all subdomains. If empty or ``None``, all domains are
+    allowed.
+
+.. versionchanged:: 3.2
+    The value's characters are validated.
+
+.. versionchanged:: 3.2
+    ``trusted_list`` defaults to ``None``.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1sansio_1_1utils_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1utils_aeb4d409840852611e80b48d28d7da03b}\index{werkzeug.sansio.utils@{werkzeug.sansio.utils}!\_host\_re@{\_host\_re}}
+\index{\_host\_re@{\_host\_re}!werkzeug.sansio.utils@{werkzeug.sansio.utils}}
+\doxysubsubsection{\texorpdfstring{\_host\_re}{\_host\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1utils_aeb4d409840852611e80b48d28d7da03b} 
+werkzeug.\+sansio.\+utils.\+\_\+host\+\_\+re\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ flags=re.ASCII\ |\ re.IGNORECASE\ |\ re.VERBOSE,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

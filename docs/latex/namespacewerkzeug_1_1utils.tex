@@ -1,0 +1,332 @@
+\doxysection{werkzeug.\+utils Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1utils}{}\label{namespacewerkzeug_1_1utils}\index{werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property}{cached\+\_\+property}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1environ__property}{environ\+\_\+property}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1header__property}{header\+\_\+property}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1_import_string_error}{Import\+String\+Error}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a5a211a18016a81155345c8938ec84155}{get\+\_\+content\+\_\+type}} (str mimetype, str charset)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a37a8bd8228acaf3c055b81a06a8002d1}{secure\+\_\+filename}} (str filename)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a0c3e1c95663067f03d53bb5a37223d05}{redirect}} (str location, int code=302, type\+[Response]\+\texorpdfstring{$\vert$}{|}None Response=None)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a6b53bf674fa70f56e53de858ab38905b}{append\+\_\+slash\+\_\+redirect}} (WSGIEnvironment environ, int code=308)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_aac7bb41af297e99a560f2ed1991324ed}{send\+\_\+file}} (os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}t.\+IO\+[bytes]\+ path\+\_\+or\+\_\+file, WSGIEnvironment environ, str\texorpdfstring{$\vert$}{|}None mimetype=None, bool as\+\_\+attachment=False, str\texorpdfstring{$\vert$}{|}None download\+\_\+name=None, bool conditional=True, bool\texorpdfstring{$\vert$}{|}str etag=True, datetime\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}None last\+\_\+modified=None, None\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[str\texorpdfstring{$\vert$}{|}None]\+, int\texorpdfstring{$\vert$}{|}None]\+) max\+\_\+age=None, bool use\+\_\+x\+\_\+sendfile=False, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}}]\+\texorpdfstring{$\vert$}{|}None response\+\_\+class=None, os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None \+\_\+root\+\_\+path=None)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_ad0d061c0e2be09e4840736ebec0f2e63}{send\+\_\+from\+\_\+directory}} (os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str directory, os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str path, WSGIEnvironment environ, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a3d1a2ab999a5466f404a8aaa3ca05218}{import\+\_\+string}} (str import\+\_\+name, bool silent=False)
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a3b556d337f0d1288a42eee3e73ecc610}{find\+\_\+modules}} (str import\+\_\+path, bool include\+\_\+packages=False, bool recursive=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}} = t.\+Type\+Var("{}\+\_\+\+T"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1utils_ac86fdb8ed91e9679cf57ea00c1af8e1e}{\+\_\+entity\+\_\+re}} = re.\+compile(r"{}\&(\+[\texorpdfstring{$^\wedge$}{\string^};]\++);"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afa86fd8c63b3193191356a38386e24da}{\+\_\+filename\+\_\+ascii\+\_\+strip\+\_\+re}} = re.\+compile(r"{}\+[\texorpdfstring{$^\wedge$}{\string^}A-\/Za-\/z0-\/9\+\_\+.-\/]\+"{})
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_a0289dae973fb91972018f291b009dd6a}{\+\_\+charset\+\_\+mimetypes}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1utils_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1utils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1utils_a6b53bf674fa70f56e53de858ab38905b}\index{werkzeug.utils@{werkzeug.utils}!append\_slash\_redirect@{append\_slash\_redirect}}
+\index{append\_slash\_redirect@{append\_slash\_redirect}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{append\_slash\_redirect()}{append\_slash\_redirect()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a6b53bf674fa70f56e53de858ab38905b} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} append\+\_\+slash\+\_\+redirect (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{, }\item[{int }]{code}{ = {\ttfamily 308}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Redirect to the current URL with a slash appended.
+
+If the current URL is ``/user/42``, the redirect URL will be
+``42/``. When joined to the current URL during response
+processing or by the browser, this will produce ``/user/42/``.
+
+The behavior is undefined if the path ends with a slash already. If
+called unconditionally on a URL, it may produce a redirect loop.
+
+:param environ: Use the path and query from this WSGI environment
+    to produce the redirect URL.
+:param code: the status code for the redirect.
+
+.. versionchanged:: 2.1
+    Produce a relative URL that only modifies the last segment.
+    Relevant when the current path has multiple segments.
+
+.. versionchanged:: 2.1
+    The default status code is 308 instead of 301. This preserves
+    the request method and body.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_a3b556d337f0d1288a42eee3e73ecc610}\index{werkzeug.utils@{werkzeug.utils}!find\_modules@{find\_modules}}
+\index{find\_modules@{find\_modules}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{find\_modules()}{find\_modules()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a3b556d337f0d1288a42eee3e73ecc610} 
+ t.\+Iterator\+[str]\+ find\+\_\+modules (\begin{DoxyParamCaption}\item[{str}]{import\+\_\+path}{, }\item[{bool }]{include\+\_\+packages}{ = {\ttfamily False}, }\item[{bool }]{recursive}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Finds all the modules below a package.  This can be useful to
+automatically import all views / controllers so that their metaclasses /
+function decorators have a chance to register themselves on the
+application.
+
+Packages are not returned unless `include_packages` is `True`.  This can
+also recursively list modules but in that case it will import all the
+packages to get the correct load path of that module.
+
+:param import_path: the dotted name for the package to find child modules.
+:param include_packages: set to `True` if packages should be returned, too.
+:param recursive: set to `True` if recursion should happen.
+:return: generator
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_a5a211a18016a81155345c8938ec84155}\index{werkzeug.utils@{werkzeug.utils}!get\_content\_type@{get\_content\_type}}
+\index{get\_content\_type@{get\_content\_type}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{get\_content\_type()}{get\_content\_type()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a5a211a18016a81155345c8938ec84155} 
+ str get\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{str}]{mimetype}{, }\item[{str}]{charset}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the full content type string with charset for a mimetype.
+
+If the mimetype represents text, the charset parameter will be
+appended, otherwise the mimetype is returned unchanged.
+
+:param mimetype: The mimetype to be used as content type.
+:param charset: The charset to be appended for text mimetypes.
+:return: The content type.
+
+.. versionchanged:: 0.15
+    Any type that ends with ``+xml`` gets a charset, not just those
+    that start with ``application/``. Known text types such as
+    ``application/javascript`` are also given charsets.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_a3d1a2ab999a5466f404a8aaa3ca05218}\index{werkzeug.utils@{werkzeug.utils}!import\_string@{import\_string}}
+\index{import\_string@{import\_string}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{import\_string()}{import\_string()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a3d1a2ab999a5466f404a8aaa3ca05218} 
+ t.\+Any import\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{import\+\_\+name}{, }\item[{bool }]{silent}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Imports an object based on a string.  This is useful if you want to
+use import paths as endpoints or something similar.  An import path can
+be specified either in dotted notation (``xml.sax.saxutils.escape``)
+or with a colon as object delimiter (``xml.sax.saxutils:escape``).
+
+If `silent` is True the return value will be `None` if the import fails.
+
+:param import_name: the dotted name for the object to import.
+:param silent: if set to `True` import errors are ignored and
+               `None` is returned instead.
+:return: imported object
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_a0c3e1c95663067f03d53bb5a37223d05}\index{werkzeug.utils@{werkzeug.utils}!redirect@{redirect}}
+\index{redirect@{redirect}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{redirect()}{redirect()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a0c3e1c95663067f03d53bb5a37223d05} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} redirect (\begin{DoxyParamCaption}\item[{str}]{location}{, }\item[{int }]{code}{ = {\ttfamily 302}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}}]\+ \texorpdfstring{$\vert$}{|} None }]{Response}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a response object (a WSGI application) that, if called,
+redirects the client to the target location. Supported codes are
+301, 302, 303, 305, 307, and 308. 300 is not supported because
+it's not a real redirect and 304 because it's the answer for a
+request with a request with defined If-Modified-Since headers.
+
+.. versionadded:: 0.6
+   The location can now be a unicode string that is encoded using
+   the :func:`iri_to_uri` function.
+
+.. versionadded:: 0.10
+    The class used for the Response object can now be passed in.
+
+:param location: the location the response should redirect to.
+:param code: the redirect status code. defaults to 302.
+:param class Response: a Response class to use when instantiating a
+    response. The default is :class:`werkzeug.wrappers.Response` if
+    unspecified.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_a37a8bd8228acaf3c055b81a06a8002d1}\index{werkzeug.utils@{werkzeug.utils}!secure\_filename@{secure\_filename}}
+\index{secure\_filename@{secure\_filename}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{secure\_filename()}{secure\_filename()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a37a8bd8228acaf3c055b81a06a8002d1} 
+ str secure\+\_\+filename (\begin{DoxyParamCaption}\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pass it a filename and it will return a secure version of it.  This
+filename can then safely be stored on a regular file system and passed
+to :func:`os.path.join`.  The filename returned is an ASCII only string
+for maximum portability.
+
+On windows systems the function also makes sure that the file is not
+named after one of the special device files.
+
+>>> secure_filename("My cool movie.mov")
+'My_cool_movie.mov'
+>>> secure_filename("../../../etc/passwd")
+'etc_passwd'
+>>> secure_filename('i contain cool \xfcml\xe4uts.txt')
+'i_contain_cool_umlauts.txt'
+
+The function might return an empty filename.  It's your responsibility
+to ensure that the filename is unique and that you abort or
+generate a random filename if the function returned an empty one.
+
+.. versionadded:: 0.5
+
+:param filename: the filename to secure
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_aac7bb41af297e99a560f2ed1991324ed}\index{werkzeug.utils@{werkzeug.utils}!send\_file@{send\_file}}
+\index{send\_file@{send\_file}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{send\_file()}{send\_file()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_aac7bb41af297e99a560f2ed1991324ed} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} send\+\_\+file (\begin{DoxyParamCaption}\item[{os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} t.\+IO\+[bytes]\+}]{path\+\_\+or\+\_\+file}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{mimetype}{ = {\ttfamily None}, }\item[{bool }]{as\+\_\+attachment}{ = {\ttfamily False}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{download\+\_\+name}{ = {\ttfamily None}, }\item[{bool }]{conditional}{ = {\ttfamily True}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{etag}{ = {\ttfamily True}, }\item[{datetime \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} float \texorpdfstring{$\vert$}{|} None }]{last\+\_\+modified}{ = {\ttfamily None}, }\item[{None \texorpdfstring{$\vert$}{|} (int \texorpdfstring{$\vert$}{|} t.\+Callable\+[\+[str \texorpdfstring{$\vert$}{|} None]\+, int \texorpdfstring{$\vert$}{|} None]\+) }]{max\+\_\+age}{ = {\ttfamily None}, }\item[{bool }]{use\+\_\+x\+\_\+sendfile}{ = {\ttfamily False}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}}]\+ \texorpdfstring{$\vert$}{|} None }]{response\+\_\+class}{ = {\ttfamily None}, }\item[{os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{\+\_\+root\+\_\+path}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send the contents of a file to the client.
+
+The first argument can be a file path or a file-like object. Paths
+are preferred in most cases because Werkzeug can manage the file and
+get extra information from the path. Passing a file-like object
+requires that the file is opened in binary mode, and is mostly
+useful when building a file in memory with :class:`io.BytesIO`.
+
+Never pass file paths provided by a user. The path is assumed to be
+trusted, so a user could craft a path to access a file you didn't
+intend. Use :func:`send_from_directory` to safely serve user-provided paths.
+
+If the WSGI server sets a ``file_wrapper`` in ``environ``, it is
+used, otherwise Werkzeug's built-in wrapper is used. Alternatively,
+if the HTTP server supports ``X-Sendfile``, ``use_x_sendfile=True``
+will tell the server to send the given path, which is much more
+efficient than reading it in Python.
+
+:param path_or_file: The path to the file to send, relative to the
+    current working directory if a relative path is given.
+    Alternatively, a file-like object opened in binary mode. Make
+    sure the file pointer is seeked to the start of the data.
+:param environ: The WSGI environ for the current request.
+:param mimetype: The MIME type to send for the file. If not
+    provided, it will try to detect it from the file name.
+:param as_attachment: Indicate to a browser that it should offer to
+    save the file instead of displaying it.
+:param download_name: The default name browsers will use when saving
+    the file. Defaults to the passed file name.
+:param conditional: Enable conditional and range responses based on
+    request headers. Requires passing a file path and ``environ``.
+:param etag: Calculate an ETag for the file, which requires passing
+    a file path. Can also be a string to use instead.
+:param last_modified: The last modified time to send for the file,
+    in seconds. If not provided, it will try to detect it from the
+    file path.
+:param max_age: How long the client should cache the file, in
+    seconds. If set, ``Cache-Control`` will be ``public``, otherwise
+    it will be ``no-cache`` to prefer conditional caching.
+:param use_x_sendfile: Set the ``X-Sendfile`` header to let the
+    server to efficiently send the file. Requires support from the
+    HTTP server. Requires passing a file path.
+:param response_class: Build the response using this class. Defaults
+    to :class:`~werkzeug.wrappers.Response`.
+:param _root_path: Do not use. For internal use only. Use
+    :func:`send_from_directory` to safely send files under a path.
+
+.. versionchanged:: 2.0.2
+    ``send_file`` only sets a detected ``Content-Encoding`` if
+    ``as_attachment`` is disabled.
+
+.. versionadded:: 2.0
+    Adapted from Flask's implementation.
+
+.. versionchanged:: 2.0
+    ``download_name`` replaces Flask's ``attachment_filename``
+     parameter. If ``as_attachment=False``, it is passed with
+     ``Content-Disposition: inline`` instead.
+
+.. versionchanged:: 2.0
+    ``max_age`` replaces Flask's ``cache_timeout`` parameter.
+    ``conditional`` is enabled and ``max_age`` is not set by
+    default.
+
+.. versionchanged:: 2.0
+    ``etag`` replaces Flask's ``add_etags`` parameter. It can be a
+    string to use instead of generating one.
+
+.. versionchanged:: 2.0
+    If an encoding is returned when guessing ``mimetype`` from
+    ``download_name``, set the ``Content-Encoding`` header.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1utils_ad0d061c0e2be09e4840736ebec0f2e63}\index{werkzeug.utils@{werkzeug.utils}!send\_from\_directory@{send\_from\_directory}}
+\index{send\_from\_directory@{send\_from\_directory}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{send\_from\_directory()}{send\_from\_directory()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_ad0d061c0e2be09e4840736ebec0f2e63} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response}{Response}} send\+\_\+from\+\_\+directory (\begin{DoxyParamCaption}\item[{os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} str}]{directory}{, }\item[{os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} str}]{path}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Send a file from within a directory using :func:`send_file`.
+
+This is a secure way to serve files from a folder, such as static
+files or uploads. Uses :func:`~werkzeug.security.safe_join` to
+ensure the path coming from the client is not maliciously crafted to
+point outside the specified directory.
+
+If the final path does not point to an existing regular file,
+returns a 404 :exc:`~werkzeug.exceptions.NotFound` error.
+
+:param directory: The directory that ``path`` must be located under. This *must not*
+    be a value provided by the client, otherwise it becomes insecure.
+:param path: The path to the file to send, relative to ``directory``. This is the
+    part of the path provided by the client, which is checked for security.
+:param environ: The WSGI environ for the current request.
+:param kwargs: Arguments to pass to :func:`send_file`.
+
+.. versionadded:: 2.0
+    Adapted from Flask's implementation.
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1utils_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1utils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1utils_a0289dae973fb91972018f291b009dd6a}\index{werkzeug.utils@{werkzeug.utils}!\_charset\_mimetypes@{\_charset\_mimetypes}}
+\index{\_charset\_mimetypes@{\_charset\_mimetypes}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{\_charset\_mimetypes}{\_charset\_mimetypes}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_a0289dae973fb91972018f291b009dd6a} 
+dict werkzeug.\+utils.\+\_\+charset\+\_\+mimetypes\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/ecmascript"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/javascript"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/sql"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/xml"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/xml-\/dtd"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}application/xml-\/external-\/parsed-\/entity"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1utils_ac86fdb8ed91e9679cf57ea00c1af8e1e}\index{werkzeug.utils@{werkzeug.utils}!\_entity\_re@{\_entity\_re}}
+\index{\_entity\_re@{\_entity\_re}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{\_entity\_re}{\_entity\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_ac86fdb8ed91e9679cf57ea00c1af8e1e} 
+werkzeug.\+utils.\+\_\+entity\+\_\+re = re.\+compile(r"{}\&(\+[\texorpdfstring{$^\wedge$}{\string^};]\++);"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1utils_afa86fd8c63b3193191356a38386e24da}\index{werkzeug.utils@{werkzeug.utils}!\_filename\_ascii\_strip\_re@{\_filename\_ascii\_strip\_re}}
+\index{\_filename\_ascii\_strip\_re@{\_filename\_ascii\_strip\_re}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{\_filename\_ascii\_strip\_re}{\_filename\_ascii\_strip\_re}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_afa86fd8c63b3193191356a38386e24da} 
+werkzeug.\+utils.\+\_\+filename\+\_\+ascii\+\_\+strip\+\_\+re = re.\+compile(r"{}\+[\texorpdfstring{$^\wedge$}{\string^}A-\/Za-\/z0-\/9\+\_\+.-\/]\+"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}\index{werkzeug.utils@{werkzeug.utils}!\_T@{\_T}}
+\index{\_T@{\_T}!werkzeug.utils@{werkzeug.utils}}
+\doxysubsubsection{\texorpdfstring{\_T}{\_T}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42} 
+werkzeug.\+utils.\+\_\+T = t.\+Type\+Var("{}\+\_\+\+T"{})\hspace{0.3cm}{\ttfamily [protected]}}
+

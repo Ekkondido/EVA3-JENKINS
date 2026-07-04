@@ -1,0 +1,51 @@
+\doxysection{werkzeug.\+middleware.\+lint Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1middleware_1_1lint}{}\label{namespacewerkzeug_1_1middleware_1_1lint}\index{werkzeug.middleware.lint@{werkzeug.middleware.lint}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_w_s_g_i_warning}{WSGIWarning}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_h_t_t_p_warning}{HTTPWarning}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_input_stream}{Input\+Stream}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_error_stream}{Error\+Stream}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_write}{Guarded\+Write}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator}{Guarded\+Iterator}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_lint_middleware}{Lint\+Middleware}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1middleware_1_1lint_a04bd1105c945cb48fc62936e37b02289}{check\+\_\+type}} (str context, object obj, type need=str)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}WSGI Protocol Linter
+====================
+
+This module provides a middleware that performs sanity checks on the
+behavior of the WSGI server and application. It checks that the
+:pep:`3333` WSGI spec is properly implemented. It also warns on some
+common HTTP errors such as non-empty responses for 304 status codes.
+
+.. autoclass:: LintMiddleware
+
+:copyright: 2007 Pallets
+:license: BSD-3-Clause
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1middleware_1_1lint_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1middleware_1_1lint_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1middleware_1_1lint_a04bd1105c945cb48fc62936e37b02289}\index{werkzeug.middleware.lint@{werkzeug.middleware.lint}!check\_type@{check\_type}}
+\index{check\_type@{check\_type}!werkzeug.middleware.lint@{werkzeug.middleware.lint}}
+\doxysubsubsection{\texorpdfstring{check\_type()}{check\_type()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1middleware_1_1lint_a04bd1105c945cb48fc62936e37b02289} 
+ None check\+\_\+type (\begin{DoxyParamCaption}\item[{str}]{context}{, }\item[{object}]{obj}{, }\item[{type }]{need}{ = {\ttfamily str}}\end{DoxyParamCaption})}
+

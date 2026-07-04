@@ -1,0 +1,111 @@
+\doxysection{click.\+\_\+compat.\+\_\+\+Fixup\+Stream Class Reference}
+\hypertarget{classclick_1_1__compat_1_1___fixup_stream}{}\label{classclick_1_1__compat_1_1___fixup_stream}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a06ff45b38426b38bb0766b0ebe8e34d7}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Binary\+IO stream, bool force\+\_\+readable=False, bool force\+\_\+writable=False)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_ac0a0f554f1e668b350fa96689ae1b6af}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+bytes \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a867f7f1ea5cde1d3592712b1715bc8e4}{read1}} (self, int size)
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a168272d9d6eba8a1efe9fe2a7c4ed040}{readable}} (self)
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a4bbebbfb7f75b0cce7dd4556e86a0d6c}{writable}} (self)
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a75b0556d1ce6ecf6f0fc0f42a45d645d}{seekable}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a72718d8b56f7d5ef6c6e96e9baacd4e7}{\+\_\+stream}} = stream
+\item 
+\doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a80702021af7aeb31d8ec5e4ac77098d1}{\+\_\+force\+\_\+readable}} = force\+\_\+readable
+\item 
+\doxymbox{\hyperlink{classclick_1_1__compat_1_1___fixup_stream_a5c82fea45428d61ab9924ae6d1d57665}{\+\_\+force\+\_\+writable}} = force\+\_\+writable
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The new io interface needs more from streams than streams
+traditionally implement.  As such, this fix-up code is necessary in
+some circumstances.
+
+The forcing of readable and writable flags are there because some tools
+put badly patched objects on sys (one such offender are certain version
+of jupyter notebook).
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1__compat_1_1___fixup_stream_doc-constructors}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a06ff45b38426b38bb0766b0ebe8e34d7}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a06ff45b38426b38bb0766b0ebe8e34d7} 
+click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Binary\+IO}]{stream}{, }\item[{bool }]{force\+\_\+readable}{ = {\ttfamily False}, }\item[{bool }]{force\+\_\+writable}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1__compat_1_1___fixup_stream_doc-func-members}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_ac0a0f554f1e668b350fa96689ae1b6af}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_ac0a0f554f1e668b350fa96689ae1b6af} 
+ t.\+Any click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a867f7f1ea5cde1d3592712b1715bc8e4}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!read1@{read1}}
+\index{read1@{read1}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{read1()}{read1()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a867f7f1ea5cde1d3592712b1715bc8e4} 
+ bytes click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+read1 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a168272d9d6eba8a1efe9fe2a7c4ed040}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!readable@{readable}}
+\index{readable@{readable}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{readable()}{readable()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a168272d9d6eba8a1efe9fe2a7c4ed040} 
+ bool click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+readable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a75b0556d1ce6ecf6f0fc0f42a45d645d}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!seekable@{seekable}}
+\index{seekable@{seekable}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{seekable()}{seekable()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a75b0556d1ce6ecf6f0fc0f42a45d645d} 
+ bool click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+seekable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a4bbebbfb7f75b0cce7dd4556e86a0d6c}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!writable@{writable}}
+\index{writable@{writable}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a4bbebbfb7f75b0cce7dd4556e86a0d6c} 
+ bool click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+writable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1__compat_1_1___fixup_stream_doc-variable-members}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a80702021af7aeb31d8ec5e4ac77098d1}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!\_force\_readable@{\_force\_readable}}
+\index{\_force\_readable@{\_force\_readable}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{\_force\_readable}{\_force\_readable}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a80702021af7aeb31d8ec5e4ac77098d1} 
+click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+\_\+force\+\_\+readable = force\+\_\+readable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a5c82fea45428d61ab9924ae6d1d57665}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!\_force\_writable@{\_force\_writable}}
+\index{\_force\_writable@{\_force\_writable}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{\_force\_writable}{\_force\_writable}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a5c82fea45428d61ab9924ae6d1d57665} 
+click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+\_\+force\+\_\+writable = force\+\_\+writable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1__compat_1_1___fixup_stream_a72718d8b56f7d5ef6c6e96e9baacd4e7}\index{click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!click.\_compat.\_FixupStream@{click.\_compat.\_FixupStream}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily \label{classclick_1_1__compat_1_1___fixup_stream_a72718d8b56f7d5ef6c6e96e9baacd4e7} 
+click.\+\_\+compat.\+\_\+\+Fixup\+Stream.\+\_\+stream = stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2__compat_8py}{\+\_\+compat.\+py}}\end{DoxyCompactItemize}

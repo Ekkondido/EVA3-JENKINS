@@ -1,0 +1,51 @@
+\doxysection{flask.\+debughelpers Namespace Reference}
+\hypertarget{namespaceflask_1_1debughelpers}{}\label{namespaceflask_1_1debughelpers}\index{flask.debughelpers@{flask.debughelpers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1debughelpers_1_1_unexpected_unicode_error}{Unexpected\+Unicode\+Error}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1debughelpers_1_1_debug_files_key_error}{Debug\+Files\+Key\+Error}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1debughelpers_1_1_form_data_routing_redirect}{Form\+Data\+Routing\+Redirect}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1debughelpers_ae8ac6bc263773b73426ce36cd646ef76}{attach\+\_\+enctype\+\_\+error\+\_\+multidict}} (\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} request)
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespaceflask_1_1debughelpers_a28f0e484928bfcdd33386b4f07309c66}{\+\_\+dump\+\_\+loader\+\_\+info}} (\doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}} loader)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1debughelpers_a627a3c2175a599c861f474ad03d92ab2}{explain\+\_\+template\+\_\+loading\+\_\+attempts}} (App app, str template, list\+[tuple\+[\doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}, Scaffold, tuple\+[str, str\texorpdfstring{$\vert$}{|}None, t.\+Callable\+[\+[$\,$]\+, bool]\+\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None,]\+]\+ attempts)
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1debughelpers_doc-func-members}
+\Hypertarget{namespaceflask_1_1debughelpers_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1debughelpers_a28f0e484928bfcdd33386b4f07309c66}\index{flask.debughelpers@{flask.debughelpers}!\_dump\_loader\_info@{\_dump\_loader\_info}}
+\index{\_dump\_loader\_info@{\_dump\_loader\_info}!flask.debughelpers@{flask.debughelpers}}
+\doxysubsubsection{\texorpdfstring{\_dump\_loader\_info()}{\_dump\_loader\_info()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1debughelpers_a28f0e484928bfcdd33386b4f07309c66} 
+ t.\+Iterator\+[str]\+ \+\_\+dump\+\_\+loader\+\_\+info (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}}]{loader}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1debughelpers_ae8ac6bc263773b73426ce36cd646ef76}\index{flask.debughelpers@{flask.debughelpers}!attach\_enctype\_error\_multidict@{attach\_enctype\_error\_multidict}}
+\index{attach\_enctype\_error\_multidict@{attach\_enctype\_error\_multidict}!flask.debughelpers@{flask.debughelpers}}
+\doxysubsubsection{\texorpdfstring{attach\_enctype\_error\_multidict()}{attach\_enctype\_error\_multidict()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1debughelpers_ae8ac6bc263773b73426ce36cd646ef76} 
+ None attach\+\_\+enctype\+\_\+error\+\_\+multidict (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Patch ``request.files.__getitem__`` to raise a descriptive error
+about ``enctype=multipart/form-data``.
+
+:param request: The request to patch.
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1debughelpers_a627a3c2175a599c861f474ad03d92ab2}\index{flask.debughelpers@{flask.debughelpers}!explain\_template\_loading\_attempts@{explain\_template\_loading\_attempts}}
+\index{explain\_template\_loading\_attempts@{explain\_template\_loading\_attempts}!flask.debughelpers@{flask.debughelpers}}
+\doxysubsubsection{\texorpdfstring{explain\_template\_loading\_attempts()}{explain\_template\_loading\_attempts()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1debughelpers_a627a3c2175a599c861f474ad03d92ab2} 
+ None explain\+\_\+template\+\_\+loading\+\_\+attempts (\begin{DoxyParamCaption}\item[{App}]{app}{, }\item[{str}]{template}{, }\item[{list\+[         tuple\+[             \doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}},             Scaffold,             tuple\+[str, str \texorpdfstring{$\vert$}{|} None, t.\+Callable\+[\+[$\,$]\+, bool]\+ \texorpdfstring{$\vert$}{|} None]\+ \texorpdfstring{$\vert$}{|} None,         ]\+     ]\+}]{attempts}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This should help developers understand what failed\end{DoxyVerb}
+ 

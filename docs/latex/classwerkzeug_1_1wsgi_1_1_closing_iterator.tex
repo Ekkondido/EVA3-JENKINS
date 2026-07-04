@@ -1,0 +1,99 @@
+\doxysection{werkzeug.\+wsgi.\+Closing\+Iterator Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator}{}\label{classwerkzeug_1_1wsgi_1_1_closing_iterator}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa8a636dce4c1aecef641290dbb429107}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\+[bytes]\+ iterable, None\texorpdfstring{$\vert$}{|}(t.\+Callable\+[\+[$\,$]\+, None]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[t.\+Callable\+[\+[$\,$]\+, None]\+]\+) callbacks=None)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator}{Closing\+Iterator}} \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa4d068cb80be0143124fc357b177d651}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_a17665e3fd776c81640ae4021e2d846fe}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_a230d5002471d906ec61b4d8fbfc4bd07}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_a3b6f2f25ba9c627b477d8169f83e291e}{\+\_\+next}} = t.\+cast(t.\+Callable\+[\+[$\,$]\+, bytes]\+, partial(next, iterator))
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator_ab1c743db600814c6f95cbb5029487254}{\+\_\+callbacks}} = callbacks
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The WSGI specification requires that all middlewares and gateways
+respect the `close` callback of the iterable returned by the application.
+Because it is useful to add another close action to a returned iterable
+and adding a custom iterable is a boring task this class can be used for
+that::
+
+    return ClosingIterator(app(environ, start_response), [cleanup_session,
+                                                          cleanup_locals])
+
+If there is just one close function it can be passed instead of the list.
+
+A closing iterator is not needed if the application uses response objects
+and finishes the processing if the response is started::
+
+    try:
+        return response(environ, start_response)
+    finally:
+        cleanup_session()
+        cleanup_locals()
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa8a636dce4c1aecef641290dbb429107}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa8a636dce4c1aecef641290dbb429107} 
+ None werkzeug.\+wsgi.\+Closing\+Iterator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+}]{iterable}{, }\item[{None         \texorpdfstring{$\vert$}{|} (t.\+Callable\+[\+[$\,$]\+, None]\+ \texorpdfstring{$\vert$}{|} t.\+Iterable\+[t.\+Callable\+[\+[$\,$]\+, None]\+]\+) }]{callbacks}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa4d068cb80be0143124fc357b177d651}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_aa4d068cb80be0143124fc357b177d651} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator}{Closing\+Iterator}} werkzeug.\+wsgi.\+Closing\+Iterator.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a17665e3fd776c81640ae4021e2d846fe}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a17665e3fd776c81640ae4021e2d846fe} 
+ bytes werkzeug.\+wsgi.\+Closing\+Iterator.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a230d5002471d906ec61b4d8fbfc4bd07}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!close@{close}}
+\index{close@{close}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a230d5002471d906ec61b4d8fbfc4bd07} 
+ None werkzeug.\+wsgi.\+Closing\+Iterator.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_ab1c743db600814c6f95cbb5029487254}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!\_callbacks@{\_callbacks}}
+\index{\_callbacks@{\_callbacks}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{\_callbacks}{\_callbacks}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_ab1c743db600814c6f95cbb5029487254} 
+werkzeug.\+wsgi.\+Closing\+Iterator.\+\_\+callbacks = callbacks\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_closing_iterator_a3b6f2f25ba9c627b477d8169f83e291e}\index{werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}!\_next@{\_next}}
+\index{\_next@{\_next}!werkzeug.wsgi.ClosingIterator@{werkzeug.wsgi.ClosingIterator}}
+\doxysubsubsection{\texorpdfstring{\_next}{\_next}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_closing_iterator_a3b6f2f25ba9c627b477d8169f83e291e} 
+werkzeug.\+wsgi.\+Closing\+Iterator.\+\_\+next = t.\+cast(t.\+Callable\+[\+[$\,$]\+, bytes]\+, partial(next, iterator))\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{wsgi_8py}{wsgi.\+py}}\end{DoxyCompactItemize}

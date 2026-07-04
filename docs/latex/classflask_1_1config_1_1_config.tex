@@ -1,0 +1,299 @@
+\doxysection{flask.\+config.\+Config Class Reference}
+\hypertarget{classflask_1_1config_1_1_config}{}\label{classflask_1_1config_1_1_config}\index{flask.config.Config@{flask.config.Config}}
+Inheritance diagram for flask.\+config.\+Config:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1config_1_1_config}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1config_1_1_config_a2a481997ed4fe077a561648762f83653}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ root\+\_\+path, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None defaults=None)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1config_1_1_config_ac865826dcdf0d6972ce456c1d88f42f3}{from\+\_\+envvar}} (self, str variable\+\_\+name, bool silent=False)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1config_1_1_config_aba8ef84055682ebe741ce99dc46c9285}{from\+\_\+prefixed\+\_\+env}} (self, str prefix="{}FLASK"{}, \texorpdfstring{$\ast$}{*}, t.\+Callable\+[\+[str]\+, t.\+Any]\+ loads=\doxymbox{\hyperlink{namespaceflask_1_1json_a4748ce4a7cd353ccb153369c5b2c816f}{json.\+loads}})
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1config_1_1_config_a8d9b69c1ce27b12b065c8f48f6037f02}{from\+\_\+pyfile}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ filename, bool silent=False)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1config_1_1_config_acbb0e841bd11ddb22bcb786867d47c1f}{from\+\_\+object}} (self, object\texorpdfstring{$\vert$}{|}str obj)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1config_1_1_config_afcd871ee295686227861f0925fd908a6}{from\+\_\+file}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ filename, t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+]\+, t.\+Mapping\+[str, t.\+Any]\+]\+ load, bool silent=False, bool text=True)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1config_1_1_config_aa0479f6027d37b23eba00482a62a0144}{from\+\_\+mapping}} (self, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None mapping=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{classflask_1_1config_1_1_config_a1fe596ca2dc435f103cad8f57b1d2c21}{get\+\_\+namespace}} (self, str namespace, bool lowercase=True, bool trim\+\_\+namespace=True)
+\item 
+str \doxymbox{\hyperlink{classflask_1_1config_1_1_config_abdb300b70d927826e433a3ba05f64e78}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1config_1_1_config_a8a906af0f67be9930f3128ec8a5ae44c}{root\+\_\+path}} = root\+\_\+path
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Works exactly like a dict but provides ways to fill it from files
+or special dictionaries.  There are two common patterns to populate the
+config.
+
+Either you can fill the config from a config file::
+
+    app.config.from_pyfile('yourconfig.cfg')
+
+Or alternatively you can define the configuration options in the
+module that calls :meth:`from_object` or provide an import path to
+a module that should be loaded.  It is also possible to tell it to
+use the same module and with that provide the configuration values
+just before the call::
+
+    DEBUG = True
+    SECRET_KEY = 'development key'
+    app.config.from_object(__name__)
+
+In both cases (loading from any Python file or loading from modules),
+only uppercase keys are added to the config.  This makes it possible to use
+lowercase values in the config file for temporary values that are not added
+to the config or to define the config keys in the same file that implements
+the application.
+
+Probably the most interesting way to load configurations is from an
+environment variable pointing to a file::
+
+    app.config.from_envvar('YOURAPPLICATION_SETTINGS')
+
+In this case before launching the application you have to set this
+environment variable to the file you want to use.  On Linux and OS X
+use the export statement::
+
+    export YOURAPPLICATION_SETTINGS='/path/to/config/file'
+
+On windows use `set` instead.
+
+:param root_path: path to which files are read relative from.  When the
+                  config object is created by the application, this is
+                  the application's :attr:`~flask.Flask.root_path`.
+:param defaults: an optional dictionary of default values
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1config_1_1_config_doc-constructors}
+\Hypertarget{classflask_1_1config_1_1_config_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1config_1_1_config_a2a481997ed4fe077a561648762f83653}\index{flask.config.Config@{flask.config.Config}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_a2a481997ed4fe077a561648762f83653} 
+ None flask.\+config.\+Config.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{root\+\_\+path}{, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{defaults}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1config_1_1_config_doc-func-members}
+\Hypertarget{classflask_1_1config_1_1_config_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1config_1_1_config_abdb300b70d927826e433a3ba05f64e78}\index{flask.config.Config@{flask.config.Config}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_abdb300b70d927826e433a3ba05f64e78} 
+ str flask.\+config.\+Config.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1config_1_1_config_ac865826dcdf0d6972ce456c1d88f42f3}\index{flask.config.Config@{flask.config.Config}!from\_envvar@{from\_envvar}}
+\index{from\_envvar@{from\_envvar}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_envvar()}{from\_envvar()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_ac865826dcdf0d6972ce456c1d88f42f3} 
+ bool flask.\+config.\+Config.\+from\+\_\+envvar (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{variable\+\_\+name}{, }\item[{bool }]{silent}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a configuration from an environment variable pointing to
+a configuration file.  This is basically just a shortcut with nicer
+error messages for this line of code::
+
+    app.config.from_pyfile(os.environ['YOURAPPLICATION_SETTINGS'])
+
+:param variable_name: name of the environment variable
+:param silent: set to ``True`` if you want silent failure for missing
+               files.
+:return: ``True`` if the file was loaded successfully.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_afcd871ee295686227861f0925fd908a6}\index{flask.config.Config@{flask.config.Config}!from\_file@{from\_file}}
+\index{from\_file@{from\_file}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_file()}{from\_file()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_afcd871ee295686227861f0925fd908a6} 
+ bool flask.\+config.\+Config.\+from\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{filename}{, }\item[{t.\+Callable\+[\+[t.\+IO\+[t.\+Any]\+]\+, t.\+Mapping\+[str, t.\+Any]\+]\+}]{load}{, }\item[{bool }]{silent}{ = {\ttfamily False}, }\item[{bool }]{text}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update the values in the config from a file that is loaded
+using the ``load`` parameter. The loaded data is passed to the
+:meth:`from_mapping` method.
+
+.. code-block:: python
+
+    import json
+    app.config.from_file("config.json", load=json.load)
+
+    import tomllib
+    app.config.from_file("config.toml", load=tomllib.load, text=False)
+
+:param filename: The path to the data file. This can be an
+    absolute path or relative to the config root path.
+:param load: A callable that takes a file handle and returns a
+    mapping of loaded data from the file.
+:type load: ``Callable[[Reader], Mapping]`` where ``Reader``
+    implements a ``read`` method.
+:param silent: Ignore the file if it doesn't exist.
+:param text: Open the file in text or binary mode.
+:return: ``True`` if the file was loaded successfully.
+
+.. versionchanged:: 2.3
+    The ``text`` parameter was added.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_aa0479f6027d37b23eba00482a62a0144}\index{flask.config.Config@{flask.config.Config}!from\_mapping@{from\_mapping}}
+\index{from\_mapping@{from\_mapping}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_mapping()}{from\_mapping()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_aa0479f6027d37b23eba00482a62a0144} 
+ bool flask.\+config.\+Config.\+from\+\_\+mapping (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{mapping}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the config like :meth:`update` ignoring items with
+non-upper keys.
+
+:return: Always returns ``True``.
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_acbb0e841bd11ddb22bcb786867d47c1f}\index{flask.config.Config@{flask.config.Config}!from\_object@{from\_object}}
+\index{from\_object@{from\_object}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_object()}{from\_object()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_acbb0e841bd11ddb22bcb786867d47c1f} 
+ None flask.\+config.\+Config.\+from\+\_\+object (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object \texorpdfstring{$\vert$}{|} str}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the values from the given object.  An object can be of one
+of the following two types:
+
+-   a string: in this case the object with that name will be imported
+-   an actual object reference: that object is used directly
+
+Objects are usually either modules or classes. :meth:`from_object`
+loads only the uppercase attributes of the module/class. A ``dict``
+object will not work with :meth:`from_object` because the keys of a
+``dict`` are not attributes of the ``dict`` class.
+
+Example of module-based configuration::
+
+    app.config.from_object('yourapplication.default_config')
+    from yourapplication import default_config
+    app.config.from_object(default_config)
+
+Nothing is done to the object before loading. If the object is a
+class and has ``@property`` attributes, it needs to be
+instantiated before being passed to this method.
+
+You should not use this function to load the actual configuration but
+rather configuration defaults.  The actual config should be loaded
+with :meth:`from_pyfile` and ideally from a location not within the
+package because the package might be installed system wide.
+
+See :ref:`config-dev-prod` for an example of class-based configuration
+using :meth:`from_object`.
+
+:param obj: an import name or object
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_aba8ef84055682ebe741ce99dc46c9285}\index{flask.config.Config@{flask.config.Config}!from\_prefixed\_env@{from\_prefixed\_env}}
+\index{from\_prefixed\_env@{from\_prefixed\_env}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_prefixed\_env()}{from\_prefixed\_env()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_aba8ef84055682ebe741ce99dc46c9285} 
+ bool flask.\+config.\+Config.\+from\+\_\+prefixed\+\_\+env (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{prefix}{ = {\ttfamily "{}FLASK"{}}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{t.\+Callable\+[\+[str]\+, t.\+Any]\+ }]{loads}{ = {\ttfamily \doxymbox{\hyperlink{namespaceflask_1_1json_a4748ce4a7cd353ccb153369c5b2c816f}{json.\+loads}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load any environment variables that start with ``FLASK_``,
+dropping the prefix from the env key for the config key. Values
+are passed through a loading function to attempt to convert them
+to more specific types than strings.
+
+Keys are loaded in :func:`sorted` order.
+
+The default loading function attempts to parse values as any
+valid JSON type, including dicts and lists.
+
+Specific items in nested dicts can be set by separating the
+keys with double underscores (``__``). If an intermediate key
+doesn't exist, it will be initialized to an empty dict.
+
+:param prefix: Load env vars that start with this prefix,
+    separated with an underscore (``_``).
+:param loads: Pass each string value to this function and use
+    the returned value as the config value. If any error is
+    raised it is ignored and the value remains a string. The
+    default is :func:`json.loads`.
+
+.. versionadded:: 2.1
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_a8d9b69c1ce27b12b065c8f48f6037f02}\index{flask.config.Config@{flask.config.Config}!from\_pyfile@{from\_pyfile}}
+\index{from\_pyfile@{from\_pyfile}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{from\_pyfile()}{from\_pyfile()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_a8d9b69c1ce27b12b065c8f48f6037f02} 
+ bool flask.\+config.\+Config.\+from\+\_\+pyfile (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{filename}{, }\item[{bool }]{silent}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Updates the values in the config from a Python file.  This function
+behaves as if the file was imported as module with the
+:meth:`from_object` function.
+
+:param filename: the filename of the config.  This can either be an
+                 absolute filename or a filename relative to the
+                 root path.
+:param silent: set to ``True`` if you want silent failure for missing
+               files.
+:return: ``True`` if the file was loaded successfully.
+
+.. versionadded:: 0.7
+   `silent` parameter.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1config_1_1_config_a1fe596ca2dc435f103cad8f57b1d2c21}\index{flask.config.Config@{flask.config.Config}!get\_namespace@{get\_namespace}}
+\index{get\_namespace@{get\_namespace}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{get\_namespace()}{get\_namespace()}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_a1fe596ca2dc435f103cad8f57b1d2c21} 
+ dict\+[str, t.\+Any]\+ flask.\+config.\+Config.\+get\+\_\+namespace (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{namespace}{, }\item[{bool }]{lowercase}{ = {\ttfamily True}, }\item[{bool }]{trim\+\_\+namespace}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dictionary containing a subset of configuration options
+that match the specified namespace/prefix. Example usage::
+
+    app.config['IMAGE_STORE_TYPE'] = 'fs'
+    app.config['IMAGE_STORE_PATH'] = '/var/app/images'
+    app.config['IMAGE_STORE_BASE_URL'] = 'http://img.website.com'
+    image_store_config = app.config.get_namespace('IMAGE_STORE_')
+
+The resulting dictionary `image_store_config` would look like::
+
+    {
+        'type': 'fs',
+        'path': '/var/app/images',
+        'base_url': 'http://img.website.com'
+    }
+
+This is often useful when configuration options map directly to
+keyword arguments in functions or class constructors.
+
+:param namespace: a configuration namespace
+:param lowercase: a flag indicating if the keys of the resulting
+                  dictionary should be lowercase
+:param trim_namespace: a flag indicating if the keys of the resulting
+                  dictionary should not include the namespace
+
+.. versionadded:: 0.11
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1config_1_1_config_doc-variable-members}
+\Hypertarget{classflask_1_1config_1_1_config_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1config_1_1_config_a8a906af0f67be9930f3128ec8a5ae44c}\index{flask.config.Config@{flask.config.Config}!root\_path@{root\_path}}
+\index{root\_path@{root\_path}!flask.config.Config@{flask.config.Config}}
+\doxysubsubsection{\texorpdfstring{root\_path}{root\_path}}
+{\footnotesize\ttfamily \label{classflask_1_1config_1_1_config_a8a906af0f67be9930f3128ec8a5ae44c} 
+flask.\+config.\+Config.\+root\+\_\+path = root\+\_\+path}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{config_8py}{config.\+py}}\end{DoxyCompactItemize}

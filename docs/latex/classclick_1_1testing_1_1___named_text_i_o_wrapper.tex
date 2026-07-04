@@ -1,0 +1,122 @@
+\doxysection{click.\+testing.\+\_\+\+Named\+Text\+IOWrapper Class Reference}
+\hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper}{}\label{classclick_1_1testing_1_1___named_text_i_o_wrapper}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+Inheritance diagram for click.\+testing.\+\_\+\+Named\+Text\+IOWrapper:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1testing_1_1___named_text_i_o_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a297506c803ba869d900bacdd8d663034}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Binary\+IO buffer, str name, str mode, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a1958c6bbbb94b3c62abe7c86015436c3}{close}} (self)
+\item 
+int \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a8ae38323ed9230869fb342d04bdffee0}{fileno}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a5be41f1d39aa4eeb8f7edf93c4caa390}{name}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a82b5b48fa7401309ebd1d7e5adfee129}{mode}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_ad4dce67e806080619f0ed6166914b823}{\+\_\+name}} = \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a5be41f1d39aa4eeb8f7edf93c4caa390}{name}}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a7d0c6f43ec795fae7e5cfb515b35996e}{\+\_\+mode}} = \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a82b5b48fa7401309ebd1d7e5adfee129}{mode}}
+\item 
+int \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a993157aaacb39fafdc0db32497c3ed80}{\+\_\+original\+\_\+fd}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :class:`~io.TextIOWrapper` with custom ``name`` and ``mode``
+that does not close its underlying buffer.
+
+When ``CliRunner`` runs in ``fd`` mode, ``_original_fd`` is patched to
+point at the saved (pre-redirection) ``fd``, so C-level consumers that call
+:meth:`fileno` (like ``faulthandler`` or ``subprocess``) keep working. In
+the default ``sys`` mode ``_original_fd`` stays at ``-1`` and
+:meth:`fileno` raises :exc:`io.UnsupportedOperation`, matching the
+pre-``8.3.3`` behavior.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-constructors}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a297506c803ba869d900bacdd8d663034}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a297506c803ba869d900bacdd8d663034} 
+ None click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Binary\+IO}]{buffer}{, }\item[{str}]{name}{, }\item[{str}]{mode}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-func-members}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a1958c6bbbb94b3c62abe7c86015436c3}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!close@{close}}
+\index{close@{close}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a1958c6bbbb94b3c62abe7c86015436c3} 
+ None click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The buffer this object contains belongs to some other object,
+so prevent the default ``__del__`` implementation from closing
+that buffer.
+
+.. versionadded:: 8.3.2
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a8ae38323ed9230869fb342d04bdffee0}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!fileno@{fileno}}
+\index{fileno@{fileno}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{fileno()}{fileno()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a8ae38323ed9230869fb342d04bdffee0} 
+ int click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+fileno (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the file descriptor of the saved original stream when
+``CliRunner`` runs in ``fd`` mode. Otherwise delegate to
+:class:`~io.TextIOWrapper`, which raises
+:exc:`io.UnsupportedOperation` for a ``BytesIO``-backed buffer.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a82b5b48fa7401309ebd1d7e5adfee129}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!mode@{mode}}
+\index{mode@{mode}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a82b5b48fa7401309ebd1d7e5adfee129} 
+ str click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+mode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a5be41f1d39aa4eeb8f7edf93c4caa390}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!name@{name}}
+\index{name@{name}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a5be41f1d39aa4eeb8f7edf93c4caa390} 
+ str click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-variable-members}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a7d0c6f43ec795fae7e5cfb515b35996e}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!\_mode@{\_mode}}
+\index{\_mode@{\_mode}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{\_mode}{\_mode}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a7d0c6f43ec795fae7e5cfb515b35996e} 
+str click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+\_\+mode = \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a82b5b48fa7401309ebd1d7e5adfee129}{mode}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_ad4dce67e806080619f0ed6166914b823}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!\_name@{\_name}}
+\index{\_name@{\_name}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{\_name}{\_name}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_ad4dce67e806080619f0ed6166914b823} 
+str click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+\_\+name = \doxymbox{\hyperlink{classclick_1_1testing_1_1___named_text_i_o_wrapper_a5be41f1d39aa4eeb8f7edf93c4caa390}{name}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1testing_1_1___named_text_i_o_wrapper_a993157aaacb39fafdc0db32497c3ed80}\index{click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}!\_original\_fd@{\_original\_fd}}
+\index{\_original\_fd@{\_original\_fd}!click.testing.\_NamedTextIOWrapper@{click.testing.\_NamedTextIOWrapper}}
+\doxysubsubsection{\texorpdfstring{\_original\_fd}{\_original\_fd}}
+{\footnotesize\ttfamily \label{classclick_1_1testing_1_1___named_text_i_o_wrapper_a993157aaacb39fafdc0db32497c3ed80} 
+int click.\+testing.\+\_\+\+Named\+Text\+IOWrapper.\+\_\+original\+\_\+fd = -\/1\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2testing_8py}{testing.\+py}}\end{DoxyCompactItemize}

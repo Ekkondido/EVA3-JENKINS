@@ -1,0 +1,75 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+click/\+termui.py File Reference}
+\hypertarget{termui_8py}{}\label{termui_8py}\index{venv/Lib/site-\/packages/click/termui.py@{venv/Lib/site-\/packages/click/termui.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick}{click}}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick_1_1termui}{click.\+termui}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_ae7db1792599c4d2ea1edfd38b19b0e20}{click.\+termui.\+\_\+mask\+\_\+hidden\+\_\+input}} (str message, str value)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_af884e1ac2b221e0acf873a2bd2a29332}{click.\+termui.\+hidden\+\_\+prompt\+\_\+func}} (str prompt)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_af41c165f35a21db168ad6d28df489e69}{click.\+termui.\+\_\+readline\+\_\+prompt}} (t.\+Callable\+[\+[str]\+, str]\+ func, str text, bool err)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a243dedf690e7a4d9ff02dd6b2d3f80d5}{click.\+termui.\+\_\+build\+\_\+prompt}} (str text, str suffix, bool\texorpdfstring{$\vert$}{|}str show\+\_\+default=False, t.\+Any\texorpdfstring{$\vert$}{|}None default=None, bool show\+\_\+choices=True, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None type=None)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceclick_1_1termui_afc51f9271aa134d8dd8c821fc0b74b26}{click.\+termui.\+\_\+format\+\_\+default}} (t.\+Any default)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceclick_1_1termui_a6544aafe2606f37c26b2cb1cd35d7c57}{click.\+termui.\+prompt}} (str text, t.\+Any\texorpdfstring{$\vert$}{|}None default=None, bool hide\+\_\+input=False, bool\texorpdfstring{$\vert$}{|}str confirmation\+\_\+prompt=False, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Any\texorpdfstring{$\vert$}{|}None type=None, t.\+Callable\+[\+[str]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None value\+\_\+proc=None, str prompt\+\_\+suffix="{}:\+ "{}, bool\texorpdfstring{$\vert$}{|}str show\+\_\+default=True, bool err=False, bool show\+\_\+choices=True)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1termui_a3d99ef23161356ea9211836539c818ed}{click.\+termui.\+confirm}} (str text, bool\texorpdfstring{$\vert$}{|}None default=False, bool abort=False, str prompt\+\_\+suffix="{}:\+ "{}, bool show\+\_\+default=True, bool err=False)
+\item 
+t.\+Context\+Manager\+[t.\+Text\+IO]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_a62f1e3b34c738e59a56969f478068fb3}{click.\+termui.\+get\+\_\+pager\+\_\+file}} (bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_aa08b1532ad13cb41260a4797b7546f85}{click.\+termui.\+echo\+\_\+via\+\_\+pager}} (cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[$\,$]\+, cabc.\+Iterable\+[str]\+]\+\texorpdfstring{$\vert$}{|}str text\+\_\+or\+\_\+generator, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+\doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[int]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_addd9cb830ca9e551e9e7f04a3f669c59}{click.\+termui.\+progressbar}} (\texorpdfstring{$\ast$}{*}, int length, str\texorpdfstring{$\vert$}{|}None label=None, bool hidden=False, bool show\+\_\+eta=True, bool\texorpdfstring{$\vert$}{|}None show\+\_\+percent=None, bool show\+\_\+pos=False, str fill\+\_\+char="{}\+\#"{}, str empty\+\_\+char="{}-\/"{}, str bar\+\_\+template="{}\%(label)s  \+[\%(bar)s]\+  \%(info)s"{}, str info\+\_\+sep="{}  "{}, int width=36, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None file=None, bool\texorpdfstring{$\vert$}{|}None color=None, int update\+\_\+min\+\_\+steps=1)
+\item 
+\doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_a2850aa30e3946e01ce153e133ade9b6f}{click.\+termui.\+progressbar}} (cabc.\+Iterable\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}]\+\texorpdfstring{$\vert$}{|}None iterable=None, int\texorpdfstring{$\vert$}{|}None length=None, str\texorpdfstring{$\vert$}{|}None label=None, bool hidden=False, bool show\+\_\+eta=True, bool\texorpdfstring{$\vert$}{|}None show\+\_\+percent=None, bool show\+\_\+pos=False, t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}\texorpdfstring{$\vert$}{|}None]\+, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None item\+\_\+show\+\_\+func=None, str fill\+\_\+char="{}\+\#"{}, str empty\+\_\+char="{}-\/"{}, str bar\+\_\+template="{}\%(label)s  \+[\%(bar)s]\+  \%(info)s"{}, str info\+\_\+sep="{}  "{}, int width=36, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None file=None, bool\texorpdfstring{$\vert$}{|}None color=None, int update\+\_\+min\+\_\+steps=1)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a4e28212e922f28a088256bff8886a3c9}{click.\+termui.\+clear}} ()
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a376f6ecba2f7011ce9c659078cb63107}{click.\+termui.\+\_\+interpret\+\_\+color}} (int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str color, int offset=0)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a55622fce9a9d01580ba300472e25d25c}{click.\+termui.\+style}} (t.\+Any text, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None fg=None, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None bg=None, bool\texorpdfstring{$\vert$}{|}None bold=None, bool\texorpdfstring{$\vert$}{|}None dim=None, bool\texorpdfstring{$\vert$}{|}None underline=None, bool\texorpdfstring{$\vert$}{|}None overline=None, bool\texorpdfstring{$\vert$}{|}None italic=None, bool\texorpdfstring{$\vert$}{|}None blink=None, bool\texorpdfstring{$\vert$}{|}None reverse=None, bool\texorpdfstring{$\vert$}{|}None strikethrough=None, bool reset=True)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a3c66654f6c6da31db44285c4ded864f6}{click.\+termui.\+unstyle}} (str text)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a07d2ec49b636de5f81a96158e079913a}{click.\+termui.\+secho}} (t.\+Any\texorpdfstring{$\vert$}{|}None message=None, t.\+IO\+[t.\+Any\+Str]\+\texorpdfstring{$\vert$}{|}None file=None, bool nl=True, bool err=False, bool\texorpdfstring{$\vert$}{|}None color=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any styles)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_a7f2d61742525445d8d1f65d9246fe4c9}{click.\+termui.\+edit}} (bytes\texorpdfstring{$\vert$}{|}bytearray text, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=False, str extension="{}.txt"{})
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_ae98e8ec25101dfd0bdfaf2b32512b500}{click.\+termui.\+edit}} (str text, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{})
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a3fb6f8a56b817ed74c3a559acd7dc029}{click.\+termui.\+edit}} (None text=None, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{}, str\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None filename=None)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_a13cf004ceb72f9ffec9ef34340b79c05}{click.\+termui.\+edit}} (str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None text=None, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{}, str\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None filename=None)
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1termui_a78c05893870070d4fa19f8146ecddd0e}{click.\+termui.\+launch}} (str url, bool wait=False, bool locate=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a3edfbaeba6fa45f0a5769e66017fdbcb}{click.\+termui.\+getchar}} (bool echo=False)
+\item 
+Abstract\+Context\+Manager\+[int]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_aff143f4a3fecc09787e16cb765edbef4}{click.\+termui.\+raw\+\_\+terminal}} ()
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a310e68be9e3804d0138155e239abd655}{click.\+termui.\+pause}} (str\texorpdfstring{$\vert$}{|}None info=None, bool err=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{click.\+termui.\+V}} = t.\+Type\+Var("{}V"{})
+\item 
+t \doxymbox{\hyperlink{namespaceclick_1_1termui_ac878c4c2ecccf65cb0d1ab76b3cdb7ad}{click.\+termui.\+visible\+\_\+prompt\+\_\+func}} = input
+\item 
+dict \doxymbox{\hyperlink{namespaceclick_1_1termui_a1386c5bf919315c1e4a2e28cc50bf8f7}{click.\+termui.\+\_\+ansi\+\_\+colors}}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a8c98a9c2d2095e63e60111ff56160166}{click.\+termui.\+\_\+ansi\+\_\+reset\+\_\+all}} = "{}\textbackslash{}033\+[0m"{}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_aa7cc6634c052e4bcbe3b073e57e7457e}{click.\+termui.\+\_\+\+HIDDEN\+\_\+\+INPUT\+\_\+\+MASK}} = "{}\textquotesingle{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\textquotesingle{}"{}
+\item 
+t \doxymbox{\hyperlink{namespaceclick_1_1termui_a6535765fc77473313b0b2ea10b5981d8}{click.\+termui.\+\_\+getchar}} = None
+\end{DoxyCompactItemize}

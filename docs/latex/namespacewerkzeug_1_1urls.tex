@@ -1,0 +1,160 @@
+\doxysection{werkzeug.\+urls Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1urls}{}\label{namespacewerkzeug_1_1urls}\index{werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[str, int]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a881de020a99c2a8d9cd17f934a1f67da}{\+\_\+codec\+\_\+error\+\_\+url\+\_\+quote}} (Unicode\+Error e)
+\item 
+t.\+Callable\+[\+[str]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}} (str name, str chars)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_aed6b393a9b2d9ed7548aa672987516bf}{uri\+\_\+to\+\_\+iri}} (str uri)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a03494fc5e77bbc131c4b60918ae955ce}{iri\+\_\+to\+\_\+uri}} (str iri)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_ab0acdae2c63a61560da12b972a35605e}{\+\_\+decode\+\_\+idna}} (str domain)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a876f9eb5aff4b9fd84a8e61d89954693}{\+\_\+urlencode}} (t.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[tuple\+[str, str]\+]\+ query)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} = bytes((\texorpdfstring{$\ast$}{*}range(0x21), 0x25, 0x7F)).decode()
+\item 
+t.\+Callable\+[\+[str]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a721cad6a68ea9f18dc67c381aa04dfc8}{\+\_\+unquote\+\_\+fragment}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}fragment"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}})
+\item 
+t.\+Callable\+[\+[str]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_aa575826cc81b16540ea8faa59921f05c}{\+\_\+unquote\+\_\+query}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}query"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}\&=+\+\#"{})
+\item 
+t.\+Callable\+[\+[str]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af3ec1d2ee710154df92d2b58b5834eff}{\+\_\+unquote\+\_\+path}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}path"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}/\+?\+\#"{})
+\item 
+t.\+Callable\+[\+[str]\+, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a15726618aec6c0c3677b933c29b7927e}{\+\_\+unquote\+\_\+user}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}user"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}:\+@/\+?\+\#"{})
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1urls_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1urls_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1urls_a881de020a99c2a8d9cd17f934a1f67da}\index{werkzeug.urls@{werkzeug.urls}!\_codec\_error\_url\_quote@{\_codec\_error\_url\_quote}}
+\index{\_codec\_error\_url\_quote@{\_codec\_error\_url\_quote}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_codec\_error\_url\_quote()}{\_codec\_error\_url\_quote()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a881de020a99c2a8d9cd17f934a1f67da} 
+ tuple\+[str, int]\+ \+\_\+codec\+\_\+error\+\_\+url\+\_\+quote (\begin{DoxyParamCaption}\item[{Unicode\+Error}]{e}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Used in :func:`uri_to_iri` after unquoting to re-quote any
+invalid bytes.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_ab0acdae2c63a61560da12b972a35605e}\index{werkzeug.urls@{werkzeug.urls}!\_decode\_idna@{\_decode\_idna}}
+\index{\_decode\_idna@{\_decode\_idna}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_decode\_idna()}{\_decode\_idna()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_ab0acdae2c63a61560da12b972a35605e} 
+ str \+\_\+decode\+\_\+idna (\begin{DoxyParamCaption}\item[{str}]{domain}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}\index{werkzeug.urls@{werkzeug.urls}!\_make\_unquote\_part@{\_make\_unquote\_part}}
+\index{\_make\_unquote\_part@{\_make\_unquote\_part}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_make\_unquote\_part()}{\_make\_unquote\_part()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7} 
+ t.\+Callable\+[\+[str]\+, str]\+ \+\_\+make\+\_\+unquote\+\_\+part (\begin{DoxyParamCaption}\item[{str}]{name}{, }\item[{str}]{chars}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Create a function that unquotes all percent encoded characters except those
+given. This allows working with unquoted characters if possible while not changing
+the meaning of a given part of a URL.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_a876f9eb5aff4b9fd84a8e61d89954693}\index{werkzeug.urls@{werkzeug.urls}!\_urlencode@{\_urlencode}}
+\index{\_urlencode@{\_urlencode}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_urlencode()}{\_urlencode()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a876f9eb5aff4b9fd84a8e61d89954693} 
+ str \+\_\+urlencode (\begin{DoxyParamCaption}\item[{t.\+Mapping\+[str, str]\+ \texorpdfstring{$\vert$}{|} t.\+Iterable\+[tuple\+[str, str]\+]\+}]{query}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_a03494fc5e77bbc131c4b60918ae955ce}\index{werkzeug.urls@{werkzeug.urls}!iri\_to\_uri@{iri\_to\_uri}}
+\index{iri\_to\_uri@{iri\_to\_uri}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{iri\_to\_uri()}{iri\_to\_uri()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a03494fc5e77bbc131c4b60918ae955ce} 
+ str iri\+\_\+to\+\_\+uri (\begin{DoxyParamCaption}\item[{str}]{iri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an IRI to a URI. All non-ASCII and unsafe characters are
+quoted. If the URL has a domain, it is encoded to Punycode.
+
+>>> iri_to_uri('http://\\u2603.net/p\\xe5th?q=\\xe8ry%DF')
+'http://xn--n3h.net/p%C3%A5th?q=%C3%A8ry%DF'
+
+:param iri: The IRI to convert.
+
+.. versionchanged:: 3.0
+    Passing a tuple or bytes, the ``charset`` and ``errors`` parameters,
+    and the ``safe_conversion`` parameter, are removed.
+
+.. versionchanged:: 2.3
+    Which characters remain unquoted is specific to each part of the URL.
+
+.. versionchanged:: 0.15
+    All reserved characters remain unquoted. Previously, only some reserved
+    characters were left unquoted.
+
+.. versionchanged:: 0.9.6
+   The ``safe_conversion`` parameter was added.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1urls_aed6b393a9b2d9ed7548aa672987516bf}\index{werkzeug.urls@{werkzeug.urls}!uri\_to\_iri@{uri\_to\_iri}}
+\index{uri\_to\_iri@{uri\_to\_iri}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{uri\_to\_iri()}{uri\_to\_iri()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_aed6b393a9b2d9ed7548aa672987516bf} 
+ str uri\+\_\+to\+\_\+iri (\begin{DoxyParamCaption}\item[{str}]{uri}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a URI to an IRI. All valid UTF-8 characters are unquoted,
+leaving all reserved and invalid characters quoted. If the URL has
+a domain, it is decoded from Punycode.
+
+>>> uri_to_iri("http://xn--n3h.net/p%C3%A5th?q=%C3%A8ry%DF")
+'http://\\u2603.net/p\\xe5th?q=\\xe8ry%DF'
+
+:param uri: The URI to convert.
+
+.. versionchanged:: 3.0
+    Passing a tuple or bytes, and the ``charset`` and ``errors`` parameters,
+    are removed.
+
+.. versionchanged:: 2.3
+    Which characters remain quoted is specific to each part of the URL.
+
+.. versionchanged:: 0.15
+    All reserved and invalid characters remain quoted. Previously,
+    only some reserved characters were preserved, and invalid bytes
+    were replaced instead of left quoted.
+
+.. versionadded:: 0.6
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1urls_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1urls_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}\index{werkzeug.urls@{werkzeug.urls}!\_always\_unsafe@{\_always\_unsafe}}
+\index{\_always\_unsafe@{\_always\_unsafe}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_always\_unsafe}{\_always\_unsafe}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac} 
+werkzeug.\+urls.\+\_\+always\+\_\+unsafe = bytes((\texorpdfstring{$\ast$}{*}range(0x21), 0x25, 0x7F)).decode()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_a721cad6a68ea9f18dc67c381aa04dfc8}\index{werkzeug.urls@{werkzeug.urls}!\_unquote\_fragment@{\_unquote\_fragment}}
+\index{\_unquote\_fragment@{\_unquote\_fragment}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_unquote\_fragment}{\_unquote\_fragment}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a721cad6a68ea9f18dc67c381aa04dfc8} 
+t.\+Callable\+[\+[str]\+, str]\+ werkzeug.\+urls.\+\_\+unquote\+\_\+fragment = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}fragment"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_af3ec1d2ee710154df92d2b58b5834eff}\index{werkzeug.urls@{werkzeug.urls}!\_unquote\_path@{\_unquote\_path}}
+\index{\_unquote\_path@{\_unquote\_path}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_unquote\_path}{\_unquote\_path}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_af3ec1d2ee710154df92d2b58b5834eff} 
+t.\+Callable\+[\+[str]\+, str]\+ werkzeug.\+urls.\+\_\+unquote\+\_\+path = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}path"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}/\+?\+\#"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_aa575826cc81b16540ea8faa59921f05c}\index{werkzeug.urls@{werkzeug.urls}!\_unquote\_query@{\_unquote\_query}}
+\index{\_unquote\_query@{\_unquote\_query}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_unquote\_query}{\_unquote\_query}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_aa575826cc81b16540ea8faa59921f05c} 
+t.\+Callable\+[\+[str]\+, str]\+ werkzeug.\+urls.\+\_\+unquote\+\_\+query = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}query"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}\&=+\+\#"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1urls_a15726618aec6c0c3677b933c29b7927e}\index{werkzeug.urls@{werkzeug.urls}!\_unquote\_user@{\_unquote\_user}}
+\index{\_unquote\_user@{\_unquote\_user}!werkzeug.urls@{werkzeug.urls}}
+\doxysubsubsection{\texorpdfstring{\_unquote\_user}{\_unquote\_user}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1urls_a15726618aec6c0c3677b933c29b7927e} 
+t.\+Callable\+[\+[str]\+, str]\+ werkzeug.\+urls.\+\_\+unquote\+\_\+user = \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_a9acd8a5ed0ffc9fa8cec8623b8cf9fd7}{\+\_\+make\+\_\+unquote\+\_\+part}}("{}user"{}, \doxymbox{\hyperlink{namespacewerkzeug_1_1urls_af96b2aeca69296f19de82c25cefacfac}{\+\_\+always\+\_\+unsafe}} + "{}:\+@/\+?\+\#"{})\hspace{0.3cm}{\ttfamily [protected]}}
+

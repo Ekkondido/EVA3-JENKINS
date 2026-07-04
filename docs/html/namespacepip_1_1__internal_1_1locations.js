@@ -1,0 +1,57 @@
+var namespacepip_1_1__internal_1_1locations =
+[
+    [ "_distutils", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html", [
+      [ "distutils_scheme", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#a1d1f473b134b63256906feddcb3c7569", null ],
+      [ "get_bin_prefix", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#a3a258f4512c269052345d9545c7b3bda", null ],
+      [ "get_platlib", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#a142f17e67c6be6c1d6dc7a4fd9dc6842", null ],
+      [ "get_purelib", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#a4a460826cbf7ddfefd080d305785a8e3", null ],
+      [ "get_scheme", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#a7a306759a8f509cc5ba60d68e9a6312c", null ],
+      [ "logger", "namespacepip_1_1__internal_1_1locations_1_1__distutils.html#ae32ba9cca99a76e803b4a0370d5dfa26", null ]
+    ] ],
+    [ "_sysconfig", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html", [
+      [ "_infer_home", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a8e9b7f6f285d7f5812f273813f66b866", null ],
+      [ "_infer_prefix", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a67da6d0997337365a42a1e82864d0153", null ],
+      [ "_infer_user", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a5f276460702a4b38a24b86242165f692", null ],
+      [ "_should_use_osx_framework_prefix", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a2ac002b12e04f8efac2297804383ed09", null ],
+      [ "get_bin_prefix", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a3a258f4512c269052345d9545c7b3bda", null ],
+      [ "get_platlib", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a142f17e67c6be6c1d6dc7a4fd9dc6842", null ],
+      [ "get_purelib", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a4a460826cbf7ddfefd080d305785a8e3", null ],
+      [ "get_scheme", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a554e2b6a28bc7cac8258a43f154610df", null ],
+      [ "_AVAILABLE_SCHEMES", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a6f5d0e31b6fb8e28b13bb7e7cd95492d", null ],
+      [ "_HOME_KEYS", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a26672c01c116f1fae23670151456a7e7", null ],
+      [ "_PREFERRED_SCHEME_API", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#a8b607f306feedd60b0fd25a2e5ec76cb", null ],
+      [ "logger", "namespacepip_1_1__internal_1_1locations_1_1__sysconfig.html#ad330345993c7877cc5399a6d3edb733f", null ]
+    ] ],
+    [ "base", "namespacepip_1_1__internal_1_1locations_1_1base.html", [
+      [ "change_root", "namespacepip_1_1__internal_1_1locations_1_1base.html#a7f8e7286704aef4552e9269a922d4669", null ],
+      [ "get_major_minor_version", "namespacepip_1_1__internal_1_1locations_1_1base.html#a31adb11ef1f22a6195ff49c6c949c932", null ],
+      [ "get_src_prefix", "namespacepip_1_1__internal_1_1locations_1_1base.html#a239c0f4610fd7960b3c40ec5ebec0178", null ],
+      [ "is_osx_framework", "namespacepip_1_1__internal_1_1locations_1_1base.html#ae5b2402946724bf5767c20b9689b204a", null ],
+      [ "site_packages", "namespacepip_1_1__internal_1_1locations_1_1base.html#a37b07d04b21fa2ef10f8cdc32fbbaee5", null ],
+      [ "USER_CACHE_DIR", "namespacepip_1_1__internal_1_1locations_1_1base.html#a9560ef3b9092e974dbb8246a86cd6ed3", null ],
+      [ "user_site", "namespacepip_1_1__internal_1_1locations_1_1base.html#a40dffd9a1453f8ce97cbd16e4a7ab1d8", null ]
+    ] ],
+    [ "_fix_abiflags", "namespacepip_1_1__internal_1_1locations.html#af8f1e88ce154fb3341ea69b3992f9983", null ],
+    [ "_log_context", "namespacepip_1_1__internal_1_1locations.html#ae875415d1211cfdf1a13e216243dc583", null ],
+    [ "_looks_like_bpo_44860", "namespacepip_1_1__internal_1_1locations.html#a80ed7e8089db14d0150f055c486c0217", null ],
+    [ "_looks_like_deb_system_dist_packages", "namespacepip_1_1__internal_1_1locations.html#acc3f472096c6f752c80df75445f89265", null ],
+    [ "_looks_like_debian_scheme", "namespacepip_1_1__internal_1_1locations.html#a833b3fcc4a231ffdf6f77aa2db3b9fc3", null ],
+    [ "_looks_like_msys2_mingw_scheme", "namespacepip_1_1__internal_1_1locations.html#acfd61e089dfa31bae028094623092425", null ],
+    [ "_looks_like_red_hat_lib", "namespacepip_1_1__internal_1_1locations.html#a6f560ef80d6bc0809607972f3c04a005", null ],
+    [ "_looks_like_red_hat_patched_platlib_purelib", "namespacepip_1_1__internal_1_1locations.html#a26bfa9598bc1132cfeed5f48f6b74c6b", null ],
+    [ "_looks_like_red_hat_scheme", "namespacepip_1_1__internal_1_1locations.html#a4d47d222a4a870cb2e24999eb41e876b", null ],
+    [ "_looks_like_slackware_scheme", "namespacepip_1_1__internal_1_1locations.html#a03135eba015e88050deb3588f27d2a9e", null ],
+    [ "_should_use_sysconfig", "namespacepip_1_1__internal_1_1locations.html#ac60609a23d2a07aa63c00cad45b1b19e", null ],
+    [ "_warn_if_mismatch", "namespacepip_1_1__internal_1_1locations.html#a6a5b48fa5a525a2fbe6ce759f16a8adf", null ],
+    [ "_warn_mismatched", "namespacepip_1_1__internal_1_1locations.html#a92cbe1d396b5ffa9791f5854f30da8a5", null ],
+    [ "get_bin_prefix", "namespacepip_1_1__internal_1_1locations.html#a3a258f4512c269052345d9545c7b3bda", null ],
+    [ "get_bin_user", "namespacepip_1_1__internal_1_1locations.html#a230a53de5f2442ac5113f5a1999e1795", null ],
+    [ "get_platlib", "namespacepip_1_1__internal_1_1locations.html#a142f17e67c6be6c1d6dc7a4fd9dc6842", null ],
+    [ "get_purelib", "namespacepip_1_1__internal_1_1locations.html#a4a460826cbf7ddfefd080d305785a8e3", null ],
+    [ "get_scheme", "namespacepip_1_1__internal_1_1locations.html#a7a306759a8f509cc5ba60d68e9a6312c", null ],
+    [ "_MISMATCH_LEVEL", "namespacepip_1_1__internal_1_1locations.html#a1c4b8a3d516669d831c56c50c8f6cf3d", null ],
+    [ "_PLATLIBDIR", "namespacepip_1_1__internal_1_1locations.html#abf5d638af8776b7ac2dc50ec220647da", null ],
+    [ "_USE_SYSCONFIG", "namespacepip_1_1__internal_1_1locations.html#a21413a8a481f1722e0eba1688fb75d27", null ],
+    [ "_USE_SYSCONFIG_DEFAULT", "namespacepip_1_1__internal_1_1locations.html#a0f0bd99cc15f21e1dbcc6e701b02075e", null ],
+    [ "logger", "namespacepip_1_1__internal_1_1locations.html#a4eaf836f2839a717fc720247323b1251", null ]
+];

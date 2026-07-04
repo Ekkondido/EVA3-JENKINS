@@ -1,0 +1,145 @@
+\doxysection{pip.\+\_\+internal.\+metadata Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1metadata}{}\label{namespacepip_1_1__internal_1_1metadata}\index{pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1__json}{\+\_\+json}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base}{base}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1importlib}{importlib}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1pkg__resources}{pkg\+\_\+resources}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1_backend}{Backend}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_a66137300191f8eb9a00cb9d73a0386c1}{\+\_\+should\+\_\+use\+\_\+importlib\+\_\+metadata}} ()
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1_backend}{Backend}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_af7628d46f1ad1f099d5c9ef81a56e095}{select\+\_\+backend}} ()
+\item 
+Base\+Environment \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_ae9233cbe9dac61075f0d44ccdbc81dc6}{get\+\_\+default\+\_\+environment}} ()
+\item 
+Base\+Environment \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_ad21769fef6a5945e91bfac8556c1c9dd}{get\+\_\+environment}} (Optional\+[List\+[str]\+]\+ paths)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_a708c1ab53bbbdf9ced0f351bc628a0bf}{get\+\_\+directory\+\_\+distribution}} (str directory)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_a355ac49acd44b6e77fcdbaa897d5d7f4}{get\+\_\+wheel\+\_\+distribution}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_wheel}{Wheel}} wheel, str canonical\+\_\+name)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_a690af5eab2d57329c30530f6d5e7d0a3}{get\+\_\+metadata\+\_\+distribution}} (bytes metadata\+\_\+contents, str filename, str canonical\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_a7880655e12ddf65373a695865b03445e}{Protocol}} = object
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__internal_1_1metadata_doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_a66137300191f8eb9a00cb9d73a0386c1}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!\_should\_use\_importlib\_metadata@{\_should\_use\_importlib\_metadata}}
+\index{\_should\_use\_importlib\_metadata@{\_should\_use\_importlib\_metadata}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{\_should\_use\_importlib\_metadata()}{\_should\_use\_importlib\_metadata()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_a66137300191f8eb9a00cb9d73a0386c1} 
+ bool \+\_\+should\+\_\+use\+\_\+importlib\+\_\+metadata (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Whether to use the ``importlib.metadata`` or ``pkg_resources`` backend.
+
+By default, pip uses ``importlib.metadata`` on Python 3.11+, and
+``pkg_resourcess`` otherwise. This can be overridden by a couple of ways:
+
+* If environment variable ``_PIP_USE_IMPORTLIB_METADATA`` is set, it
+  dictates whether ``importlib.metadata`` is used, regardless of Python
+  version.
+* On Python 3.11+, Python distributors can patch ``importlib.metadata``
+  to add a global constant ``_PIP_USE_IMPORTLIB_METADATA = False``. This
+  makes pip use ``pkg_resources`` (unless the user set the aforementioned
+  environment variable to *True*).
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_ae9233cbe9dac61075f0d44ccdbc81dc6}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!get\_default\_environment@{get\_default\_environment}}
+\index{get\_default\_environment@{get\_default\_environment}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{get\_default\_environment()}{get\_default\_environment()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_ae9233cbe9dac61075f0d44ccdbc81dc6} 
+ Base\+Environment get\+\_\+default\+\_\+environment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the default representation for the current environment.
+
+This returns an Environment instance from the chosen backend. The default
+Environment instance should be built from ``sys.path`` and may use caching
+to share instance state accorss calls.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_a708c1ab53bbbdf9ced0f351bc628a0bf}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!get\_directory\_distribution@{get\_directory\_distribution}}
+\index{get\_directory\_distribution@{get\_directory\_distribution}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{get\_directory\_distribution()}{get\_directory\_distribution()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_a708c1ab53bbbdf9ced0f351bc628a0bf} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} get\+\_\+directory\+\_\+distribution (\begin{DoxyParamCaption}\item[{str}]{directory}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the distribution metadata representation in the specified directory.
+
+This returns a Distribution instance from the chosen backend based on
+the given on-disk ``.dist-info`` directory.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_ad21769fef6a5945e91bfac8556c1c9dd}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!get\_environment@{get\_environment}}
+\index{get\_environment@{get\_environment}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{get\_environment()}{get\_environment()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_ad21769fef6a5945e91bfac8556c1c9dd} 
+ Base\+Environment get\+\_\+environment (\begin{DoxyParamCaption}\item[{Optional\+[List\+[str]\+]\+}]{paths}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a representation of the environment specified by ``paths``.
+
+This returns an Environment instance from the chosen backend based on the
+given import paths. The backend must build a fresh instance representing
+the state of installed distributions when this function is called.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_a690af5eab2d57329c30530f6d5e7d0a3}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!get\_metadata\_distribution@{get\_metadata\_distribution}}
+\index{get\_metadata\_distribution@{get\_metadata\_distribution}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{get\_metadata\_distribution()}{get\_metadata\_distribution()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_a690af5eab2d57329c30530f6d5e7d0a3} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} get\+\_\+metadata\+\_\+distribution (\begin{DoxyParamCaption}\item[{bytes}]{metadata\+\_\+contents}{, }\item[{str}]{filename}{, }\item[{str}]{canonical\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the dist representation of the specified METADATA file contents.
+
+This returns a Distribution instance from the chosen backend sourced from the data
+in `metadata_contents`.
+
+:param metadata_contents: Contents of a METADATA file within a dist, or one served
+                          via PEP 658.
+:param filename: Filename for the dist this metadata represents.
+:param canonical_name: Normalized project name of the given dist.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_a355ac49acd44b6e77fcdbaa897d5d7f4}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!get\_wheel\_distribution@{get\_wheel\_distribution}}
+\index{get\_wheel\_distribution@{get\_wheel\_distribution}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{get\_wheel\_distribution()}{get\_wheel\_distribution()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_a355ac49acd44b6e77fcdbaa897d5d7f4} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}} get\+\_\+wheel\+\_\+distribution (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_wheel}{Wheel}}}]{wheel}{, }\item[{str}]{canonical\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the representation of the specified wheel's distribution metadata.
+
+This returns a Distribution instance from the chosen backend based on
+the given wheel's ``.dist-info`` directory.
+
+:param canonical_name: Normalized project name of the given wheel.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1metadata_af7628d46f1ad1f099d5c9ef81a56e095}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!select\_backend@{select\_backend}}
+\index{select\_backend@{select\_backend}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{select\_backend()}{select\_backend()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_af7628d46f1ad1f099d5c9ef81a56e095} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1_backend}{Backend}} select\+\_\+backend (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacepip_1_1__internal_1_1metadata_doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_a7880655e12ddf65373a695865b03445e}\index{pip.\_internal.metadata@{pip.\_internal.metadata}!Protocol@{Protocol}}
+\index{Protocol@{Protocol}!pip.\_internal.metadata@{pip.\_internal.metadata}}
+\doxysubsubsection{\texorpdfstring{Protocol}{Protocol}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_a7880655e12ddf65373a695865b03445e} 
+pip.\+\_\+internal.\+metadata.\+Protocol = object}
+

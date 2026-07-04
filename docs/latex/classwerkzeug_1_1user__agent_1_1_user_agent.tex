@@ -1,0 +1,129 @@
+\doxysection{werkzeug.\+user\+\_\+agent.\+User\+Agent Class Reference}
+\hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent}{}\label{classwerkzeug_1_1user__agent_1_1_user_agent}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a89aa6460c3d7f6cca4e6f284c42ecce0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str string)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a920373cbb7a7508efb31251f57df14b2}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_aa37fbc329194acf4990616800194af02}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a738f47a76832d17316ec05401ff51353}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad}{to\+\_\+header}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_ad1797f560f25b17151b5d330eddede50}{string}} = string
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a7fc3210570d423929caa140e3f27a94f}{platform}} = None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a3004aef9624c2c767313f0be05cc3adc}{browser}} = None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_a1f34f3c281f8b3231ee9728d442544af}{version}} = None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1user__agent_1_1_user_agent_af48022f300020f089595ff09241644eb}{language}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a parsed user agent header value.
+
+The default implementation does no parsing, only the :attr:`string`
+attribute is set. A subclass may parse the string to set the
+common attributes or expose other information. Set
+:attr:`werkzeug.wrappers.Request.user_agent_class` to use a
+subclass.
+
+:param string: The header value to parse.
+
+.. versionadded:: 2.0
+    This replaces the previous ``useragents`` module, but does not
+    provide a built-in parser.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1user__agent_1_1_user_agent_doc-constructors}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a89aa6460c3d7f6cca4e6f284c42ecce0}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a89aa6460c3d7f6cca4e6f284c42ecce0} 
+ None werkzeug.\+user\+\_\+agent.\+User\+Agent.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{string}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1user__agent_1_1_user_agent_doc-func-members}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a738f47a76832d17316ec05401ff51353}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a738f47a76832d17316ec05401ff51353} 
+ bool werkzeug.\+user\+\_\+agent.\+User\+Agent.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a920373cbb7a7508efb31251f57df14b2}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a920373cbb7a7508efb31251f57df14b2} 
+ str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_aa37fbc329194acf4990616800194af02}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_aa37fbc329194acf4990616800194af02} 
+ str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a13839241011ef4b61af39ea5fe8707ad} 
+ str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert to a header value.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1user__agent_1_1_user_agent_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a3004aef9624c2c767313f0be05cc3adc}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!browser@{browser}}
+\index{browser@{browser}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{browser}{browser}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a3004aef9624c2c767313f0be05cc3adc} 
+werkzeug.\+user\+\_\+agent.\+User\+Agent.\+browser = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_af48022f300020f089595ff09241644eb}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!language@{language}}
+\index{language@{language}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{language}{language}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_af48022f300020f089595ff09241644eb} 
+str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+language = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a7fc3210570d423929caa140e3f27a94f}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!platform@{platform}}
+\index{platform@{platform}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{platform}{platform}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a7fc3210570d423929caa140e3f27a94f} 
+str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+platform = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_ad1797f560f25b17151b5d330eddede50}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!string@{string}}
+\index{string@{string}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{string}{string}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_ad1797f560f25b17151b5d330eddede50} 
+str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+string = string}
+
+\Hypertarget{classwerkzeug_1_1user__agent_1_1_user_agent_a1f34f3c281f8b3231ee9728d442544af}\index{werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}!version@{version}}
+\index{version@{version}!werkzeug.user\_agent.UserAgent@{werkzeug.user\_agent.UserAgent}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1user__agent_1_1_user_agent_a1f34f3c281f8b3231ee9728d442544af} 
+str werkzeug.\+user\+\_\+agent.\+User\+Agent.\+version = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{user__agent_8py}{user\+\_\+agent.\+py}}\end{DoxyCompactItemize}

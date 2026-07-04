@@ -1,0 +1,134 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+http.py File Reference}
+\hypertarget{http_8py}{}\label{http_8py}\index{venv/Lib/site-\/packages/werkzeug/http.py@{venv/Lib/site-\/packages/werkzeug/http.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1http_1_1_c_o_e_p}{werkzeug.\+http.\+COEP}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1http_1_1_c_o_o_p}{werkzeug.\+http.\+COOP}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug}{werkzeug}}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug_1_1http}{werkzeug.\+http}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a5057771cdd25502e887caa5af0f3c2d4}{werkzeug.\+http.\+quote\+\_\+header\+\_\+value}} (t.\+Any value, bool allow\+\_\+token=True)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aa7975222ba97dc897b081ae7788d2116}{werkzeug.\+http.\+unquote\+\_\+header\+\_\+value}} (str value)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a4b5c651091144528ffc89fbc2eaca8ef}{werkzeug.\+http.\+dump\+\_\+options\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None header, t.\+Mapping\+[str, t.\+Any]\+ options)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ace31d02d2a834a9e6fe9f84b92175458}{werkzeug.\+http.\+dump\+\_\+header}} (dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Iterable\+[t.\+Any]\+ iterable)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a68d19535b9733d29d83cb49ae90e9e11}{werkzeug.\+http.\+dump\+\_\+csp\+\_\+header}} (ds.\+Content\+Security\+Policy header)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aa5bd7d96aa9f10371e48d6f7a7aa81f6}{werkzeug.\+http.\+parse\+\_\+list\+\_\+header}} (str value)
+\item 
+dict\+[str, str\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a5d835985f0b1a4de55ff8e588c24cd97}{werkzeug.\+http.\+parse\+\_\+dict\+\_\+header}} (str value)
+\item 
+tuple\+[str, dict\+[str, str]\+]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a2e0445b43b6cb473c323ed780db3f0ef}{werkzeug.\+http.\+parse\+\_\+options\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value)
+\item 
+ds.\+Accept \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aec9c4427ce1f3da0bdfcb52acaebaaed}{werkzeug.\+http.\+parse\+\_\+accept\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_aeff1208f6bb5c2d193b7c1c1c059098e}{\+\_\+\+TAny\+Accept}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a85fce670abf24705abe683d5d586292c}{werkzeug.\+http.\+parse\+\_\+accept\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_aeff1208f6bb5c2d193b7c1c1c059098e}{\+\_\+\+TAny\+Accept}}]\+ cls)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_aeff1208f6bb5c2d193b7c1c1c059098e}{\+\_\+\+TAny\+Accept}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aa687cb2024457e2924abe57501a3f195}{werkzeug.\+http.\+parse\+\_\+accept\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_aeff1208f6bb5c2d193b7c1c1c059098e}{\+\_\+\+TAny\+Accept}}]\+\texorpdfstring{$\vert$}{|}None cls=None)
+\item 
+ds.\+Request\+Cache\+Control \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a2eb8597eb35fdf41ce94ec1291258358}{werkzeug.\+http.\+parse\+\_\+cache\+\_\+control\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+cache\+\_\+control.\+\_\+\+Cache\+Control]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_acceb3533cfeef9184e6dd5fd8d9a00fa}{\+\_\+\+TAny\+CC}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a0eab0fb81c6a9ae6f6bf19d45772b584}{werkzeug.\+http.\+parse\+\_\+cache\+\_\+control\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+cache\+\_\+control.\+\_\+\+Cache\+Control]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_acceb3533cfeef9184e6dd5fd8d9a00fa}{\+\_\+\+TAny\+CC}}]\+ cls=...)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_acceb3533cfeef9184e6dd5fd8d9a00fa}{\+\_\+\+TAny\+CC}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_acaa9378f55e76f449172881d570ac8e5}{werkzeug.\+http.\+parse\+\_\+cache\+\_\+control\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+cache\+\_\+control.\+\_\+\+Cache\+Control]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_acceb3533cfeef9184e6dd5fd8d9a00fa}{\+\_\+\+TAny\+CC}}]\+\texorpdfstring{$\vert$}{|}None cls=None)
+\item 
+ds.\+Content\+Security\+Policy \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aa3bc4195263e21a08bd0bd205ff04f18}{werkzeug.\+http.\+parse\+\_\+csp\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+Content\+Security\+Policy]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac59be7a8fca3d5562a7f6479dda5e669}{\+\_\+\+TAny\+CSP}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aedf775953d221726d8263c4735e04118}{werkzeug.\+http.\+parse\+\_\+csp\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+Content\+Security\+Policy]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac59be7a8fca3d5562a7f6479dda5e669}{\+\_\+\+TAny\+CSP}}]\+ cls=...)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac59be7a8fca3d5562a7f6479dda5e669}{\+\_\+\+TAny\+CSP}} \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ab000faf9d3f011f7be11fba7b2464827}{werkzeug.\+http.\+parse\+\_\+csp\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+Content\+Security\+Policy]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None, type\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac59be7a8fca3d5562a7f6479dda5e669}{\+\_\+\+TAny\+CSP}}]\+\texorpdfstring{$\vert$}{|}None cls=None)
+\item 
+ds.\+Header\+Set \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ab8c0b03ee7cffe1e9700d195602fa961}{werkzeug.\+http.\+parse\+\_\+set\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+Header\+Set]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+ds.\+If\+Range \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a0e88e8f5f6f65aa083966f96b509e827}{werkzeug.\+http.\+parse\+\_\+if\+\_\+range\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value)
+\item 
+ds.\+Range\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_af3cf5658b94722fdfbaeea359164a083}{werkzeug.\+http.\+parse\+\_\+range\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, bool make\+\_\+inclusive=True)
+\item 
+ds.\+Content\+Range\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_afcf54594c6e731aebcf1bf57002a82a0}{werkzeug.\+http.\+parse\+\_\+content\+\_\+range\+\_\+header}} (str\texorpdfstring{$\vert$}{|}None value, t.\+Callable\+[\+[ds.\+Content\+Range]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a1e83f31d4fe47d814df73610b8f98b97}{werkzeug.\+http.\+quote\+\_\+etag}} (str etag, bool weak=False)
+\item 
+tuple\+[str, bool]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a9d62fe97b712b2983e2e6e7e3ec597f9}{werkzeug.\+http.\+unquote\+\_\+etag}} (str etag)
+\item 
+tuple\+[None, None]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a90803e48bdf1e6557f97a5f557705675}{werkzeug.\+http.\+unquote\+\_\+etag}} (None etag)
+\item 
+tuple\+[str, bool]\+\texorpdfstring{$\vert$}{|}tuple\+[None, None]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a4989f73fd27ad01c222d33b0cccc92fd}{werkzeug.\+http.\+unquote\+\_\+etag}} (str\texorpdfstring{$\vert$}{|}None etag)
+\item 
+ds.\+ETags \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a0e0dd31c7aebc8a7e12e896d6b418d1c}{werkzeug.\+http.\+parse\+\_\+etags}} (str\texorpdfstring{$\vert$}{|}None value)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a6413ae2c9eda94b8d1b7116916a83754}{werkzeug.\+http.\+generate\+\_\+etag}} (bytes data)
+\item 
+datetime\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ad6a58ecdaf94159954a8316f6a10a059}{werkzeug.\+http.\+parse\+\_\+date}} (str\texorpdfstring{$\vert$}{|}None value)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a809fe8e3bbcbeb13ebd4a211f5edbc18}{werkzeug.\+http.\+http\+\_\+date}} (datetime\texorpdfstring{$\vert$}{|}date\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}struct\+\_\+time\texorpdfstring{$\vert$}{|}None timestamp=None)
+\item 
+timedelta\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aab05cf2da2ed35eff710e8881d2ebeeb}{werkzeug.\+http.\+parse\+\_\+age}} (str\texorpdfstring{$\vert$}{|}None value=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_afa2b42eed83a0dfcd4a5d0ca3e31d91a}{werkzeug.\+http.\+dump\+\_\+age}} (timedelta\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None age=None)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a193bfc8233bd316a51aeedc89fcabf42}{werkzeug.\+http.\+is\+\_\+resource\+\_\+modified}} (WSGIEnvironment environ, str\texorpdfstring{$\vert$}{|}None etag=None, bytes\texorpdfstring{$\vert$}{|}None data=None, datetime\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None last\+\_\+modified=None, bool ignore\+\_\+if\+\_\+range=True)
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a1cec4ecf3b1f52fe17033b3c9de22207}{werkzeug.\+http.\+remove\+\_\+entity\+\_\+headers}} (ds.\+Headers\texorpdfstring{$\vert$}{|}list\+[tuple\+[str, str]\+]\+ headers, t.\+Iterable\+[str]\+ allowed=("{}expires"{}, "{}content-\/location"{}))
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ab18d5762f4da4c3734a4ce3aeb936513}{werkzeug.\+http.\+remove\+\_\+hop\+\_\+by\+\_\+hop\+\_\+headers}} (ds.\+Headers\texorpdfstring{$\vert$}{|}list\+[tuple\+[str, str]\+]\+ headers)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a832f871ca21e3d510f27484a5fe57aef}{werkzeug.\+http.\+is\+\_\+entity\+\_\+header}} (str header)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1http_ae8ce4fac5ae1fcc178ca9598ab23f517}{werkzeug.\+http.\+is\+\_\+hop\+\_\+by\+\_\+hop\+\_\+header}} (str header)
+\item 
+ds.\+Multi\+Dict\+[str, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a2abe8a5cf84eb9fcd5be40b7d6a11423}{werkzeug.\+http.\+parse\+\_\+cookie}} (WSGIEnvironment\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None header, type\+[ds.\+Multi\+Dict\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None cls=None)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a68e1df0b7de517388a6b28c6f28c46df}{werkzeug.\+http.\+dump\+\_\+cookie}} (str key, str value="{}"{}, timedelta\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None max\+\_\+age=None, str\texorpdfstring{$\vert$}{|}datetime\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}None expires=None, str\texorpdfstring{$\vert$}{|}None path="{}/\+"{}, str\texorpdfstring{$\vert$}{|}None domain=None, bool secure=False, bool httponly=False, bool sync\+\_\+expires=True, int max\+\_\+size=4093, str\texorpdfstring{$\vert$}{|}None samesite=None, bool partitioned=False)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1http_aa231e378bebb604c8f6b95afa283e768}{werkzeug.\+http.\+is\+\_\+byte\+\_\+range\+\_\+valid}} (int\texorpdfstring{$\vert$}{|}None start, int\texorpdfstring{$\vert$}{|}None stop, int\texorpdfstring{$\vert$}{|}None length)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a8b6b5ad650255727090e6dacafcdc2d5}{werkzeug.\+http.\+\_\+token\+\_\+chars}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a3a56af07abd367261d394241bfa75177}{werkzeug.\+http.\+\_\+etag\+\_\+re}} = re.\+compile(r\textquotesingle{}(\+[Ww]\+/\+)?(?:\+"{}(.\texorpdfstring{$\ast$}{*}?)"{}\texorpdfstring{$\vert$}{|}(.\texorpdfstring{$\ast$}{*}?))(?:\+\textbackslash{}s\texorpdfstring{$\ast$}{*},\textbackslash{}s\texorpdfstring{$\ast$}{*}\texorpdfstring{$\vert$}{|}\$)\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a1e04c211a1f82c9e59cf353fd18a578f}{werkzeug.\+http.\+\_\+entity\+\_\+headers}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a7739dfc0a3d9cba8d4c4a64946444ac9}{werkzeug.\+http.\+\_\+hop\+\_\+by\+\_\+hop\+\_\+headers}}
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1http_a7e382fdcddbb8a267f3e2324b27d1231}{werkzeug.\+http.\+HTTP\+\_\+\+STATUS\+\_\+\+CODES}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a0ad070d490f7ccc0b7da008ddf0e67b9}{werkzeug.\+http.\+\_\+unslash\+\_\+re}} = re.\+compile(r"{}\textbackslash{}\textbackslash{}(.)"{}, re.\+A)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac93d571a86224e26df0d7ad4f5e6c2ec}{werkzeug.\+http.\+\_\+parameter\+\_\+key\+\_\+re}} = re.\+compile(r"{}(\+[\textbackslash{}w!\+\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+\textbackslash{}-\/.\texorpdfstring{$^\wedge$}{\string^}\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}]\++)="{}, flags=re.\+ASCII)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a3c15696a0d535c1d1ceb76144c88bf48}{werkzeug.\+http.\+\_\+parameter\+\_\+token\+\_\+value\+\_\+re}} = re.\+compile(r"{}\+[\textbackslash{}w!\+\#\$\%\&\textquotesingle{}\texorpdfstring{$\ast$}{*}+\textbackslash{}-\/.\texorpdfstring{$^\wedge$}{\string^}\`{}\texorpdfstring{$\vert$}{|}\texorpdfstring{$\sim$}{\string~}]\++"{}, flags=re.\+ASCII)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a6b0e0709d5ee2e06c77da7dba645e80b}{werkzeug.\+http.\+\_\+charset\+\_\+value\+\_\+re}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a6cad8df8fc8a390773b002144cef2be9}{werkzeug.\+http.\+\_\+continuation\+\_\+re}} = re.\+compile(r"{}\textbackslash{}\texorpdfstring{$\ast$}{*}(\textbackslash{}d+)\$"{}, re.\+ASCII)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a4e19a059a36636b97328a788080163a1}{werkzeug.\+http.\+\_\+q\+\_\+value\+\_\+re}} = re.\+compile(r"{}-\/?\textbackslash{}d+(\textbackslash{}.\textbackslash{}d+)?"{}, re.\+ASCII)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_aeff1208f6bb5c2d193b7c1c1c059098e}{werkzeug.\+http.\+\_\+\+TAny\+Accept}} = t.\+Type\+Var("{}\+\_\+\+TAny\+Accept"{}, bound="{}ds.\+Accept"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_acceb3533cfeef9184e6dd5fd8d9a00fa}{werkzeug.\+http.\+\_\+\+TAny\+CC}} = t.\+Type\+Var("{}\+\_\+\+TAny\+CC"{}, bound="{}ds.\+cache\+\_\+control.\+\_\+\+Cache\+Control"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_ac59be7a8fca3d5562a7f6479dda5e669}{werkzeug.\+http.\+\_\+\+TAny\+CSP}} = t.\+Type\+Var("{}\+\_\+\+TAny\+CSP"{}, bound="{}ds.\+Content\+Security\+Policy"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a7440240d0a84a68c8198b3fd6d4f1f7a}{werkzeug.\+http.\+\_\+cookie\+\_\+no\+\_\+quote\+\_\+re}} = re.\+compile(r"{}\+[\textbackslash{}w!\+\#\$\%\&\textquotesingle{}()\texorpdfstring{$\ast$}{*}+\textbackslash{}-\/./\+:\+$<$=$>$?@\textbackslash{}\+[\textbackslash{}]\+\texorpdfstring{$^\wedge$}{\string^}\`{}\{\texorpdfstring{$\vert$}{|}\}\texorpdfstring{$\sim$}{\string~}]\+\texorpdfstring{$\ast$}{*}"{}, re.\+A)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1http_a165018a2ab8af69ab1affba6413b8add}{werkzeug.\+http.\+\_\+cookie\+\_\+slash\+\_\+re}} = re.\+compile(rb"{}\+[\textbackslash{}x00-\/\textbackslash{}x19\textbackslash{}"{},;\textbackslash{}\textbackslash{}\textbackslash{}x7f-\/\textbackslash{}xff]\+"{}, re.\+A)
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1http_af8d32d14424fc0f9fc2bcae13af729f4}{werkzeug.\+http.\+\_\+cookie\+\_\+slash\+\_\+map}} = \{b\textquotesingle{}"{}\textquotesingle{}:\+ b\textquotesingle{}\textbackslash{}\textbackslash{}"{}\textquotesingle{}, b"{}\textbackslash{}\textbackslash{}"{}:\+ b"{}\textbackslash{}\textbackslash{}\textbackslash{}\textbackslash{}"{}\}
+\end{DoxyCompactItemize}

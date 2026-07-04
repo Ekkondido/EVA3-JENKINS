@@ -1,0 +1,60 @@
+\doxysection{jinja2.\+debug Namespace Reference}
+\hypertarget{namespacejinja2_1_1debug}{}\label{namespacejinja2_1_1debug}\index{jinja2.debug@{jinja2.debug}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Base\+Exception \doxymbox{\hyperlink{namespacejinja2_1_1debug_a28bd152d87d5aee7c7496dbf5d578a6e}{rewrite\+\_\+traceback\+\_\+stack}} (t.\+Optional\+[str]\+ source=None)
+\item 
+Traceback\+Type \doxymbox{\hyperlink{namespacejinja2_1_1debug_a7fe89807e1c62f70e1e22dbb93786203}{fake\+\_\+traceback}} (Base\+Exception exc\+\_\+value, t.\+Optional\+[Traceback\+Type]\+ tb, str filename, int lineno)
+\item 
+t.\+Dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{namespacejinja2_1_1debug_a3d99701dbc1858437133d0439d22d7b8}{get\+\_\+template\+\_\+locals}} (t.\+Mapping\+[str, t.\+Any]\+ real\+\_\+locals)
+\end{DoxyCompactItemize}
+
+
+\label{namespacejinja2_1_1debug_doc-func-members}
+\Hypertarget{namespacejinja2_1_1debug_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacejinja2_1_1debug_a7fe89807e1c62f70e1e22dbb93786203}\index{jinja2.debug@{jinja2.debug}!fake\_traceback@{fake\_traceback}}
+\index{fake\_traceback@{fake\_traceback}!jinja2.debug@{jinja2.debug}}
+\doxysubsubsection{\texorpdfstring{fake\_traceback()}{fake\_traceback()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1debug_a7fe89807e1c62f70e1e22dbb93786203} 
+ Traceback\+Type fake\+\_\+traceback (\begin{DoxyParamCaption}\item[{Base\+Exception}]{exc\+\_\+value}{, }\item[{t.\+Optional\+[Traceback\+Type]\+}]{tb}{, }\item[{str}]{filename}{, }\item[{int }]{lineno}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Produce a new traceback object that looks like it came from the
+template source instead of the compiled code. The filename, line
+number, and location name will point to the template, and the local
+variables will be the current template context.
+
+:param exc_value: The original exception to be re-raised to create
+    the new traceback.
+:param tb: The original traceback to get the local variables and
+    code info from.
+:param filename: The template filename.
+:param lineno: The line number in the template source.
+\end{DoxyVerb}
+ \Hypertarget{namespacejinja2_1_1debug_a3d99701dbc1858437133d0439d22d7b8}\index{jinja2.debug@{jinja2.debug}!get\_template\_locals@{get\_template\_locals}}
+\index{get\_template\_locals@{get\_template\_locals}!jinja2.debug@{jinja2.debug}}
+\doxysubsubsection{\texorpdfstring{get\_template\_locals()}{get\_template\_locals()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1debug_a3d99701dbc1858437133d0439d22d7b8} 
+ t.\+Dict\+[str, t.\+Any]\+ get\+\_\+template\+\_\+locals (\begin{DoxyParamCaption}\item[{t.\+Mapping\+[str, t.\+Any]\+}]{real\+\_\+locals}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Based on the runtime locals, get the context that would be
+available at that point in the template.
+\end{DoxyVerb}
+ \Hypertarget{namespacejinja2_1_1debug_a28bd152d87d5aee7c7496dbf5d578a6e}\index{jinja2.debug@{jinja2.debug}!rewrite\_traceback\_stack@{rewrite\_traceback\_stack}}
+\index{rewrite\_traceback\_stack@{rewrite\_traceback\_stack}!jinja2.debug@{jinja2.debug}}
+\doxysubsubsection{\texorpdfstring{rewrite\_traceback\_stack()}{rewrite\_traceback\_stack()}}
+{\footnotesize\ttfamily \label{namespacejinja2_1_1debug_a28bd152d87d5aee7c7496dbf5d578a6e} 
+ Base\+Exception rewrite\+\_\+traceback\+\_\+stack (\begin{DoxyParamCaption}\item[{t.\+Optional\+[str]\+ }]{source}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rewrite the current exception to replace any tracebacks from
+within compiled template code with tracebacks that look like they
+came from the template source.
+
+This must be called within an ``except`` block.
+
+:param source: For ``TemplateSyntaxError``, the original source if
+    known.
+:return: The original exception with the rewritten traceback.
+\end{DoxyVerb}
+ 

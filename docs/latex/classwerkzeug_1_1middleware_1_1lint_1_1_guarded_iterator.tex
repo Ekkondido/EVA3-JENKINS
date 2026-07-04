@@ -1,0 +1,111 @@
+\doxysection{werkzeug.\+middleware.\+lint.\+Guarded\+Iterator Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator}{}\label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a315cb7ff594960b11b5890fd0f2b0fb6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\+[bytes]\+ iterator, tuple\+[int, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+ headers\+\_\+set, list\+[int]\+ chunks)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator}{Guarded\+Iterator}} \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a64224bfac4ee0ea4fd2a95e304a6ac78}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a0b9f949d184220542e821723127e8b5e}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a370d0f493dac4821f9ede0fea0cec274}{close}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_adf2c0948829f1b9140c4bf1ba1fb311f}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a72ace5c88d038cbdbeb58350950ea0a9}{closed}} = False
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a001d4df7613f91c79c7919a771526285}{headers\+\_\+set}} = headers\+\_\+set
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a4dafeaf76d46a53edec616c83c784ae5}{chunks}} = chunks
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a897c2920f5525f6dadac13eb6ae03b79}{\+\_\+iterator}} = iterator
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_ae4fec62ac3347707fc3ab1c34062d84a}{\+\_\+next}} = iter(iterator).\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a0b9f949d184220542e821723127e8b5e}{\+\_\+\+\_\+next\+\_\+\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a315cb7ff594960b11b5890fd0f2b0fb6}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a315cb7ff594960b11b5890fd0f2b0fb6} 
+ None werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+}]{iterator}{, }\item[{tuple\+[int, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}]\+}]{headers\+\_\+set}{, }\item[{list\+[int]\+}]{chunks}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_adf2c0948829f1b9140c4bf1ba1fb311f}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_adf2c0948829f1b9140c4bf1ba1fb311f} 
+ None werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a64224bfac4ee0ea4fd2a95e304a6ac78}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a64224bfac4ee0ea4fd2a95e304a6ac78} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator}{Guarded\+Iterator}} werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a0b9f949d184220542e821723127e8b5e}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a0b9f949d184220542e821723127e8b5e} 
+ bytes werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a370d0f493dac4821f9ede0fea0cec274}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!close@{close}}
+\index{close@{close}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a370d0f493dac4821f9ede0fea0cec274} 
+ None werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a897c2920f5525f6dadac13eb6ae03b79}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_iterator@{\_iterator}}
+\index{\_iterator@{\_iterator}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_iterator}{\_iterator}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a897c2920f5525f6dadac13eb6ae03b79} 
+werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+iterator = iterator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_ae4fec62ac3347707fc3ab1c34062d84a}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!\_next@{\_next}}
+\index{\_next@{\_next}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{\_next}{\_next}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_ae4fec62ac3347707fc3ab1c34062d84a} 
+bytes werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+\_\+next = iter(iterator).\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a0b9f949d184220542e821723127e8b5e}{\+\_\+\+\_\+next\+\_\+\+\_\+}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a4dafeaf76d46a53edec616c83c784ae5}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!chunks@{chunks}}
+\index{chunks@{chunks}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{chunks}{chunks}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a4dafeaf76d46a53edec616c83c784ae5} 
+werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+chunks = chunks}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a72ace5c88d038cbdbeb58350950ea0a9}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!closed@{closed}}
+\index{closed@{closed}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a72ace5c88d038cbdbeb58350950ea0a9} 
+bool werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+closed = False}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a001d4df7613f91c79c7919a771526285}\index{werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}!headers\_set@{headers\_set}}
+\index{headers\_set@{headers\_set}!werkzeug.middleware.lint.GuardedIterator@{werkzeug.middleware.lint.GuardedIterator}}
+\doxysubsubsection{\texorpdfstring{headers\_set}{headers\_set}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1lint_1_1_guarded_iterator_a001d4df7613f91c79c7919a771526285} 
+werkzeug.\+middleware.\+lint.\+Guarded\+Iterator.\+headers\+\_\+set = headers\+\_\+set}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{lint_8py}{lint.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+\doxysection{markupsafe Namespace Reference}
+\hypertarget{namespacemarkupsafe}{}\label{namespacemarkupsafe}\index{markupsafe@{markupsafe}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacemarkupsafe_1_1__native}{\+\_\+native}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classmarkupsafe_1_1___has_h_t_m_l}{\+\_\+\+Has\+HTML}}
+\item 
+class \doxymbox{\hyperlink{classmarkupsafe_1_1___t_p_escape}{\+\_\+\+TPEscape}}
+\item 
+class \doxymbox{\hyperlink{classmarkupsafe_1_1_markup}{Markup}}
+\item 
+class \doxymbox{\hyperlink{classmarkupsafe_1_1_escape_formatter}{Escape\+Formatter}}
+\item 
+class \doxymbox{\hyperlink{classmarkupsafe_1_1___markup_escape_helper}{\+\_\+\+Markup\+Escape\+Helper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classmarkupsafe_1_1_markup}{Markup}} \doxymbox{\hyperlink{namespacemarkupsafe_a5f3125ed7d1a067a4d77b54e9a692623}{escape}} (t.\+Any s)
+\item 
+\doxymbox{\hyperlink{classmarkupsafe_1_1_markup}{Markup}} \doxymbox{\hyperlink{namespacemarkupsafe_a001f21b8679257e9447d2944f8350f21}{escape\+\_\+silent}} (t.\+Any\texorpdfstring{$\vert$}{|}None s)
+\item 
+str \doxymbox{\hyperlink{namespacemarkupsafe_ac541fffd2852c19e45bc0267de8b8755}{soft\+\_\+str}} (t.\+Any s)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespacemarkupsafe_a5429321a3f5adc5da1c345e1f66e4863}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (str name)
+\end{DoxyCompactItemize}
+
+
+\label{namespacemarkupsafe_doc-func-members}
+\Hypertarget{namespacemarkupsafe_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacemarkupsafe_a5429321a3f5adc5da1c345e1f66e4863}\index{markupsafe@{markupsafe}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!markupsafe@{markupsafe}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{namespacemarkupsafe_a5429321a3f5adc5da1c345e1f66e4863} 
+ t.\+Any \+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacemarkupsafe_a5f3125ed7d1a067a4d77b54e9a692623}\index{markupsafe@{markupsafe}!escape@{escape}}
+\index{escape@{escape}!markupsafe@{markupsafe}}
+\doxysubsubsection{\texorpdfstring{escape()}{escape()}}
+{\footnotesize\ttfamily \label{namespacemarkupsafe_a5f3125ed7d1a067a4d77b54e9a692623} 
+ \doxymbox{\hyperlink{classmarkupsafe_1_1_markup}{Markup}} escape (\begin{DoxyParamCaption}\item[{t.\+Any}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace the characters ``&``, ``<``, ``>``, ``'``, and ``"`` in
+the string with HTML-safe sequences. Use this if you need to display
+text that might contain such characters in HTML.
+
+If the object has an ``__html__`` method, it is called and the
+return value is assumed to already be safe for HTML.
+
+:param s: An object to be converted to a string and escaped.
+:return: A :class:`Markup` string with the escaped text.
+\end{DoxyVerb}
+ \Hypertarget{namespacemarkupsafe_a001f21b8679257e9447d2944f8350f21}\index{markupsafe@{markupsafe}!escape\_silent@{escape\_silent}}
+\index{escape\_silent@{escape\_silent}!markupsafe@{markupsafe}}
+\doxysubsubsection{\texorpdfstring{escape\_silent()}{escape\_silent()}}
+{\footnotesize\ttfamily \label{namespacemarkupsafe_a001f21b8679257e9447d2944f8350f21} 
+ \doxymbox{\hyperlink{classmarkupsafe_1_1_markup}{Markup}} escape\+\_\+silent (\begin{DoxyParamCaption}\item[{t.\+Any \texorpdfstring{$\vert$}{|} None}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :func:`escape` but treats ``None`` as the empty string.
+Useful with optional values, as otherwise you get the string
+``'None'`` when the value is ``None``.
+
+>>> escape(None)
+Markup('None')
+>>> escape_silent(None)
+Markup('')
+\end{DoxyVerb}
+ \Hypertarget{namespacemarkupsafe_ac541fffd2852c19e45bc0267de8b8755}\index{markupsafe@{markupsafe}!soft\_str@{soft\_str}}
+\index{soft\_str@{soft\_str}!markupsafe@{markupsafe}}
+\doxysubsubsection{\texorpdfstring{soft\_str()}{soft\_str()}}
+{\footnotesize\ttfamily \label{namespacemarkupsafe_ac541fffd2852c19e45bc0267de8b8755} 
+ str soft\+\_\+str (\begin{DoxyParamCaption}\item[{t.\+Any}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert an object to a string if it isn't already. This preserves
+a :class:`Markup` string rather than converting it back to a basic
+string, so it will still be marked as safe and won't be escaped
+again.
+
+>>> value = escape("<User 1>")
+>>> value
+Markup('&lt;User 1&gt;')
+>>> escape(str(value))
+Markup('&amp;lt;User 1&amp;gt;')
+>>> escape(soft_str(value))
+Markup('&lt;User 1&gt;')
+\end{DoxyVerb}
+ 

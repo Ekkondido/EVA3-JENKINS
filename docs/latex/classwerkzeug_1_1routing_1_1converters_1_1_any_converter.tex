@@ -1,0 +1,101 @@
+\doxysection{werkzeug.\+routing.\+converters.\+Any\+Converter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter}{}\label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter}\index{werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}}
+Inheritance diagram for werkzeug.\+routing.\+converters.\+Any\+Converter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1converters_1_1_any_converter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_acb5dda0f72585f951114aa32e75c79ab}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, \texorpdfstring{$\ast$}{*}str items)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a133898a0ee55541ef84f2da043b193d8}{to\+\_\+url}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ae811c0804f922bfa94faca0ce08c8ba9}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a60de83dd55661e1fb19a8fe7715b7b38}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_af426e3846cce79c58b47883f68e340e5}{to\+\_\+python}} (self, str value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a76e0f84bcc64b930d62de3f9d642a0b7}{items}} = set(items)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_ac3165f6aed5de185cfb0a376141f58ae}{map}} = map
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter}{werkzeug.\+routing.\+converters.\+Base\+Converter}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a58c08951318a393de7287d301a711f7a}{regex}} = "{}\+[\texorpdfstring{$^\wedge$}{\string^}/\+]\++"{}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a3964efeaab67b9d38bb6df51ade9f0cb}{weight}} = 100
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_aa07d39368f07ef0d47bcf8576e05122d}{part\+\_\+isolating}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Matches one of the items provided.  Items can either be Python
+identifiers or strings::
+
+    Rule('/<any(about, help, imprint, class, "foo,bar"):page_name>')
+
+:param map: the :class:`Map`.
+:param items: this function accepts the possible items as positional
+              arguments.
+
+.. versionchanged:: 2.2
+    Value is validated when building a URL.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_acb5dda0f72585f951114aa32e75c79ab}\index{werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_acb5dda0f72585f951114aa32e75c79ab} 
+ None werkzeug.\+routing.\+converters.\+Any\+Converter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{items}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a133898a0ee55541ef84f2da043b193d8}\index{werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}!to\_url@{to\_url}}
+\index{to\_url@{to\_url}!werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}}
+\doxysubsubsection{\texorpdfstring{to\_url()}{to\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a133898a0ee55541ef84f2da043b193d8} 
+ str werkzeug.\+routing.\+converters.\+Any\+Converter.\+to\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1converters_1_1_base_converter_a9546ee9bcb6581892af49dc593f34189}{werkzeug.\+routing.\+converters.\+Base\+Converter}}.
+
+
+
+\label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a76e0f84bcc64b930d62de3f9d642a0b7}\index{werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}!items@{items}}
+\index{items@{items}!werkzeug.routing.converters.AnyConverter@{werkzeug.routing.converters.AnyConverter}}
+\doxysubsubsection{\texorpdfstring{items}{items}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1converters_1_1_any_converter_a76e0f84bcc64b930d62de3f9d642a0b7} 
+werkzeug.\+routing.\+converters.\+Any\+Converter.\+items = set(items)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{converters_8py}{converters.\+py}}\end{DoxyCompactItemize}

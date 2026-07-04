@@ -1,0 +1,235 @@
+\doxysection{werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}{}\label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+Inheritance diagram for werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.684211cm]{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a257425e18514b8a5b43f624318f7425b}{no\+\_\+cache}}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ab84ff21002ddc3b499ebbcb97a8b4930}{public}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}public"{}, None, bool)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ad1a5da9de9341587fcffd8c3938d45f0}{private}}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a77ac32fe87e761b78c7e1ed5cf2a5c32}{must\+\_\+revalidate}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}must-\/revalidate"{}, None, bool)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a6b6943c8d63153c804ad2a312fc30e8a}{proxy\+\_\+revalidate}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}proxy-\/revalidate"{}, None, bool)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a8c22d18ba82a4327a60d37d2ba50dfc1}{s\+\_\+maxage}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}s-\/maxage"{}, None, int)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aee0cbb91750c7dd10dac807a28248635}{immutable}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}immutable"{}, None, bool)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aceba98b6420d06101ea3c77d1d2a0db7}{must\+\_\+understand}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}must-\/understand"{}, None, bool)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a01f3e89912b6633032b9cf19aa21145d}{stale\+\_\+while\+\_\+revalidate}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{werkzeug.\+datastructures.\+cache\+\_\+control.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_add91ac345eafbfa8c4ab892ca3ae0d2a}{no\+\_\+store}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}no-\/store"{}, None, bool)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a2584bd460fbdeec76818743e79c9bf99}{max\+\_\+age}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}max-\/age"{}, None, int)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a12de435f81339585b0367770082d29f2}{no\+\_\+transform}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}no-\/transform"{}, None, bool)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_ad2e1acea01f983c271107995f7f0bb83}{stale\+\_\+if\+\_\+error}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}stale-\/if-\/error"{}, None, int)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_ab23e65228dea2a9cdc8c54d456d60a2d}{cache\+\_\+property}} = staticmethod(\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+mixins.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+cabc \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a7c36802bd3c16a29ab8cdad0ae41751a}{on\+\_\+update}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{werkzeug.\+datastructures.\+cache\+\_\+control.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a3077a4128476ea9ed79feac958dd77f0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, cabc.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None values=(), cabc.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{\+\_\+\+Cache\+Control}}]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a1cc0ec47bd1347d5d5802eacd235b538}{to\+\_\+header}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a7e716933743eb9960f7146ae03854c38}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_ac4542d2d1db612b367729406e92d91b6}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_callback_dict}{werkzeug.\+datastructures.\+structures.\+Callback\+Dict}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_callback_dict_ae5dc829e749bb26304deb8b1746914de}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, cabc.\+Mapping\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a5bc855fc4fb19d53da0c395f393eda1b}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1structures_a29537ee7ecb535b96f61000e7c64740d}{V}}]\+]\+\texorpdfstring{$\vert$}{|}None initial=None, cabc.\+Callable\+[\+[te.\+Self]\+, None]\+\texorpdfstring{$\vert$}{|}None on\+\_\+update=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_callback_dict_aae937e5ce2cdc8933b364526bae6887d}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin}{werkzeug.\+datastructures.\+mixins.\+Update\+Dict\+Mixin}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a9390e4cf3129377a993c7d505d937968}{setdefault}} (te.\+Self self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}\texorpdfstring{$\vert$}{|}None default=None)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_aa88372cb72cde3aca46f71ba6af8f4db}{pop}} (te.\+Self self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a0e5afdfd026dc09f72a024c3ade771df}{pop}} (te.\+Self self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} default)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a5fb339674ccbdd1adcf0c76a3e699858}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a6620b5d068b0c227271b9a43e4708655}{pop}} (te.\+Self self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a5fb339674ccbdd1adcf0c76a3e699858}{T}} default)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a5fb339674ccbdd1adcf0c76a3e699858}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_ae5759671b0ec5e5546eb99b4ea6d1e3f}{pop}} (te.\+Self self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a5fb339674ccbdd1adcf0c76a3e699858}{T}} default=\+\_\+missing)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_ab9f2fd9c6c20e24bf7b9e7a2c2cffcdf}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_ab2e22924198a3255864540b7a8ac01a7}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}} key)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_aec5c74eb8d95114a4416c581bf9254d0}{clear}} (self)
+\item 
+tuple\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_ace77310901ede37cd3d405498a5f9357}{popitem}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a2a3333e7310f39b589d7bf515e79cab0}{update}} (self, cabc.\+Mapping\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}]\+]\+\texorpdfstring{$\vert$}{|}None arg=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}} kwargs)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1mixins_1_1_update_dict_mixin_a25d25777e2a46f81816b3399bebe30c0}{\+\_\+\+\_\+ior\+\_\+\+\_\+}} (self, cabc.\+Mapping\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a22b662c1f3618003b2ee5907208144ac}{K}}, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1mixins_a3728e24f342ae480b4533d223c51d177}{V}}]\+]\+ other)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{werkzeug.\+datastructures.\+cache\+\_\+control.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_adfefcb1392c10ded92cc81c6a526d26f}{provided}} = values is not None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control}{werkzeug.\+datastructures.\+cache\+\_\+control.\+\_\+\+Cache\+Control}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_ad42c1a239cca1c04ebea84f36b15bf44}{\+\_\+get\+\_\+cache\+\_\+value}} (self, str key, t.\+Any empty, type\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None type)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a886c0185f7750f04c604d5f8fa773715}{\+\_\+set\+\_\+cache\+\_\+value}} (self, str key, t.\+Any value, type\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None type)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1cache__control_1_1___cache_control_a5b738428ede1a0ede0f73c08eb027e77}{\+\_\+del\+\_\+cache\+\_\+value}} (self, str key)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A cache control for responses.  Unlike :class:`RequestCacheControl`
+this is mutable and gives access to response-relevant cache control
+headers.
+
+To get a header of the :class:`ResponseCacheControl` object again you can
+convert the object into a string or call the :meth:`to_header` method.  If
+you plan to subclass it and add your own items have a look at the sourcecode
+for that class.
+
+.. versionchanged:: 3.1
+    Dict values are always ``str | None``. Setting properties will
+    convert the value to a string. Setting a non-bool property to
+    ``False`` is equivalent to setting it to ``None``. Getting typed
+    properties will return ``None`` if conversion raises
+    ``ValueError``, rather than the string.
+
+.. versionchanged:: 3.1
+    ``no_cache`` is ``True`` if present without a value, rather than
+    ``"*"``.
+
+.. versionchanged:: 3.1
+    ``private`` is ``True`` if present without a value, rather than
+    ``"*"``.
+
+.. versionchanged:: 3.1
+   ``no_transform`` is a boolean. Previously it was mistakenly
+   always ``None``.
+
+.. versionchanged:: 3.1
+    Added the ``must_understand``, ``stale_while_revalidate``, and
+    ``stale_if_error`` properties.
+
+.. versionchanged:: 2.1.1
+    ``s_maxage`` converts the value to an int.
+
+.. versionchanged:: 2.1
+    Setting int properties such as ``max_age`` will convert the
+    value to an int.
+
+.. versionadded:: 0.5
+   Request-only properties are not present on this response class.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aee0cbb91750c7dd10dac807a28248635}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!immutable@{immutable}}
+\index{immutable@{immutable}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{immutable}{immutable}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aee0cbb91750c7dd10dac807a28248635} 
+bool werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+immutable = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}immutable"{}, None, bool)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a77ac32fe87e761b78c7e1ed5cf2a5c32}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!must\_revalidate@{must\_revalidate}}
+\index{must\_revalidate@{must\_revalidate}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{must\_revalidate}{must\_revalidate}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a77ac32fe87e761b78c7e1ed5cf2a5c32} 
+bool werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+must\+\_\+revalidate = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}must-\/revalidate"{}, None, bool)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aceba98b6420d06101ea3c77d1d2a0db7}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!must\_understand@{must\_understand}}
+\index{must\_understand@{must\_understand}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{must\_understand}{must\_understand}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_aceba98b6420d06101ea3c77d1d2a0db7} 
+bool werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+must\+\_\+understand = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}must-\/understand"{}, None, bool)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a257425e18514b8a5b43f624318f7425b}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!no\_cache@{no\_cache}}
+\index{no\_cache@{no\_cache}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{no\_cache}{no\_cache}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a257425e18514b8a5b43f624318f7425b} 
+str werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+no\+\_\+cache\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ cache\_control\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}no-\/cache"{}},\ \textcolor{keyword}{True},\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ad1a5da9de9341587fcffd8c3938d45f0}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!private@{private}}
+\index{private@{private}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{private}{private}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ad1a5da9de9341587fcffd8c3938d45f0} 
+str werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+private\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ cache\_control\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}private"{}},\ \textcolor{keyword}{True},\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a6b6943c8d63153c804ad2a312fc30e8a}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!proxy\_revalidate@{proxy\_revalidate}}
+\index{proxy\_revalidate@{proxy\_revalidate}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{proxy\_revalidate}{proxy\_revalidate}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a6b6943c8d63153c804ad2a312fc30e8a} 
+bool werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+proxy\+\_\+revalidate = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}proxy-\/revalidate"{}, None, bool)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ab84ff21002ddc3b499ebbcb97a8b4930}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!public@{public}}
+\index{public@{public}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{public}{public}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_ab84ff21002ddc3b499ebbcb97a8b4930} 
+bool werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+public = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}public"{}, None, bool)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a8c22d18ba82a4327a60d37d2ba50dfc1}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!s\_maxage@{s\_maxage}}
+\index{s\_maxage@{s\_maxage}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{s\_maxage}{s\_maxage}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a8c22d18ba82a4327a60d37d2ba50dfc1} 
+int werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+s\+\_\+maxage = \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1cache__control_acd35aa2946a268d8f2461f6fcdfeccb7}{cache\+\_\+control\+\_\+property}}("{}s-\/maxage"{}, None, int)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a01f3e89912b6633032b9cf19aa21145d}\index{werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}!stale\_while\_revalidate@{stale\_while\_revalidate}}
+\index{stale\_while\_revalidate@{stale\_while\_revalidate}!werkzeug.datastructures.cache\_control.ResponseCacheControl@{werkzeug.datastructures.cache\_control.ResponseCacheControl}}
+\doxysubsubsection{\texorpdfstring{stale\_while\_revalidate}{stale\_while\_revalidate}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1cache__control_1_1_response_cache_control_a01f3e89912b6633032b9cf19aa21145d} 
+int werkzeug.\+datastructures.\+cache\+\_\+control.\+Response\+Cache\+Control.\+stale\+\_\+while\+\_\+revalidate\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ cache\_control\_property(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}stale-\/while-\/revalidate"{}},\ \textcolor{keywordtype}{None},\ int}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{cache__control_8py}{cache\+\_\+control.\+py}}\end{DoxyCompactItemize}

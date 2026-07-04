@@ -1,0 +1,51 @@
+\doxysection{flask.\+sessions Namespace Reference}
+\hypertarget{namespaceflask_1_1sessions}{}\label{namespaceflask_1_1sessions}\index{flask.sessions@{flask.sessions}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{Secure\+Cookie\+Session}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1sessions_1_1_null_session}{Null\+Session}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface}{Session\+Interface}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface}{Secure\+Cookie\+Session\+Interface}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceflask_1_1sessions_a9020cdb227cf71ad272afad3114fb624}{\+\_\+lazy\+\_\+sha1}} (bytes string=b"{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1sessions_a706984c946d82193cdb8fae96fff1ddd}{session\+\_\+json\+\_\+serializer}} = \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}{Tagged\+JSONSerializer}}()
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1sessions_doc-func-members}
+\Hypertarget{namespaceflask_1_1sessions_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1sessions_a9020cdb227cf71ad272afad3114fb624}\index{flask.sessions@{flask.sessions}!\_lazy\_sha1@{\_lazy\_sha1}}
+\index{\_lazy\_sha1@{\_lazy\_sha1}!flask.sessions@{flask.sessions}}
+\doxysubsubsection{\texorpdfstring{\_lazy\_sha1()}{\_lazy\_sha1()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1sessions_a9020cdb227cf71ad272afad3114fb624} 
+ t.\+Any \+\_\+lazy\+\_\+sha1 (\begin{DoxyParamCaption}\item[{bytes }]{string}{ = {\ttfamily b"{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Don't access ``hashlib.sha1`` until runtime. FIPS builds may not include
+SHA-1, in which case the import and use as a default would fail before the
+developer can configure something else.
+\end{DoxyVerb}
+ 
+
+\label{namespaceflask_1_1sessions_doc-var-members}
+\Hypertarget{namespaceflask_1_1sessions_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceflask_1_1sessions_a706984c946d82193cdb8fae96fff1ddd}\index{flask.sessions@{flask.sessions}!session\_json\_serializer@{session\_json\_serializer}}
+\index{session\_json\_serializer@{session\_json\_serializer}!flask.sessions@{flask.sessions}}
+\doxysubsubsection{\texorpdfstring{session\_json\_serializer}{session\_json\_serializer}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1sessions_a706984c946d82193cdb8fae96fff1ddd} 
+flask.\+sessions.\+session\+\_\+json\+\_\+serializer = \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}{Tagged\+JSONSerializer}}()}
+

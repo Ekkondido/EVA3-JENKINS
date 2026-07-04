@@ -1,0 +1,700 @@
+\doxysection{werkzeug.\+wrappers.\+request.\+Request Class Reference}
+\hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request}{}\label{classwerkzeug_1_1wrappers_1_1request_1_1_request}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+Inheritance diagram for werkzeug.\+wrappers.\+request.\+Request:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1wrappers_1_1request_1_1_request}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa90dd872bc2a093a3ca9c46a381f5709}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIEnvironment environ, bool populate\+\_\+request=True, bool shallow=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac1a0aed439a4a308269bfa444b8b033a}{from\+\_\+values}} (cls, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+WSGIApplication \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_abeb8d38ca5c38e85f087cf945f284b07}{application}} (cls, t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}}]\+, WSGIApplication]\+ f)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a25074f85c156471597ef6eae4d4cd019}{want\+\_\+form\+\_\+data\+\_\+parsed}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser}{Form\+Data\+Parser}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2467c47b05a9ba3b1d42557e3916c34c}{make\+\_\+form\+\_\+data\+\_\+parser}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb19cf18abf9905d72b6515ada1ffa57}{close}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}} \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a984de6a1bd8d6f2c83dcc1339c9a8579}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae33998f1ae7b36feb35c7983c90b8cd3}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, exc\+\_\+type, exc\+\_\+value, tb)
+\item 
+t.\+IO\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae31956d6a8b4012be8a1e5f5f011925c}{stream}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab3e1ecd17dc79ed646f29da81d2f5eaf}{data}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_aec83ce72d1b0d1145845db61d9b8ce97}{get\+\_\+data}} (self, bool cache=True, t.\+Literal\+[False]\+ as\+\_\+text=False, bool parse\+\_\+form\+\_\+data=False)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_acc58e714d3f4895020cc4564f4a85d29}{get\+\_\+data}} (self, bool cache=True, t.\+Literal\+[True]\+ as\+\_\+text=..., bool parse\+\_\+form\+\_\+data=False)
+\item 
+bytes\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_aceb50f9f30c306e5fde3eee8f5c7faf9}{get\+\_\+data}} (self, bool cache=True, bool as\+\_\+text=False, bool parse\+\_\+form\+\_\+data=False)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a458cb0b42579d176b7954beb36adfed9}{form}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_combined_multi_dict}{Combined\+Multi\+Dict}}\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae8adc712a6bddb2de0aa8d95b93474e1}{values}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}\+[str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}{File\+Storage}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2915efc672c2146e486f3c681bb4e9e5}{files}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a62288fe7bdcf614ec736031685c9db98}{script\+\_\+root}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4b8b3d0ccdf568352a1754ebacb7e7bc}{url\+\_\+root}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac9a427f11ed67e79c7eba9fe27b4d527}{json}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a753d7584609ac83ebec11f254fefb97d}{get\+\_\+json}} (self, bool force=..., t.\+Literal\+[False]\+ silent=..., bool cache=...)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_abd4551c3baea068d4909934cd726e521}{get\+\_\+json}} (self, bool force=..., bool silent=..., bool cache=...)
+\item 
+t.\+Any\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a886409f775e565e5528b73dbd3488c44}{get\+\_\+json}} (self, bool force=False, bool silent=False, bool cache=True)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a9e9c5060905ee2f1b815a5b33086ec8e}{on\+\_\+json\+\_\+loading\+\_\+failed}} (self, Value\+Error\texorpdfstring{$\vert$}{|}None e)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a72ce259cf7c517cf4428db10829f6cff}{environ}} = environ
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a84ae2292f47dfc6d921c1c1ad8fe09b2}{shallow}} = shallow
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab119de294efe5a011e61cf8a896d12f2}{want\+\_\+form\+\_\+data\+\_\+parsed}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb1eed6cc86343da21d9e53301777d73}{form}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a011e904b5b95280e3b97cb1b7fc97a41}{is\+\_\+json}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_acdff74483c6a1435fcbdaf40c077c5bb}{max\+\_\+content\+\_\+length}} = None
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa359d7b76424775c82ef4b29cc7ba065}{max\+\_\+form\+\_\+memory\+\_\+size}} = 500\+\_\+000
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab8f628131347b0b534640ee0ba617ae6}{max\+\_\+form\+\_\+parts}} = 1000
+\item 
+type \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a398ed3cee9d4d3277a23ffd3848f6054}{form\+\_\+data\+\_\+parser\+\_\+class}} = \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser}{Form\+Data\+Parser}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a5cd9395fc74a0618209e232fe03f70ad}{input\+\_\+stream}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_aef0334a6a6729d8d269f68a621d95c66}{remote\+\_\+user}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a0cf1fe40716a37ad4516290471f172cc}{is\+\_\+multithread}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a40ef4e34d88eef9319c5b9701e416510}{is\+\_\+multiprocess}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae459a2b0c14f94232f048b0b705a0938}{is\+\_\+run\+\_\+once}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4239820720e73f4099e2f6d1c7c82e90}{json\+\_\+module}} = \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac9a427f11ed67e79c7eba9fe27b4d527}{json}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+IO\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae77ab586f28953c796d193267e658b64}{\+\_\+get\+\_\+file\+\_\+stream}} (self, int\texorpdfstring{$\vert$}{|}None total\+\_\+content\+\_\+length, str\texorpdfstring{$\vert$}{|}None content\+\_\+type, str\texorpdfstring{$\vert$}{|}None filename=None, int\texorpdfstring{$\vert$}{|}None content\+\_\+length=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae718f5e4bebbc274d6e21655090872b9}{\+\_\+load\+\_\+form\+\_\+data}} (self)
+\item 
+t.\+IO\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_a1b72a83cdd41f184c1d3145be11106a3}{\+\_\+get\+\_\+stream\+\_\+for\+\_\+parsing}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_abb6acb6979a3690b6977f71f07207b79}{\+\_\+cached\+\_\+data}} = rv
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_af4f33cb627b5b59201aaeda09b7f0a1c}{\+\_\+cached\+\_\+json}} = (Ellipsis, Ellipsis)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents an incoming WSGI HTTP request, with headers and body
+taken from the WSGI environment. Has properties and methods for
+using the functionality defined by various HTTP specs. The data in
+requests object is read-only.
+
+Text data is assumed to use UTF-8 encoding, which should be true for
+the vast majority of modern clients. Using an encoding set by the
+client is unsafe in Python due to extra encodings it provides, such
+as ``zip``. To change the assumed encoding, subclass and replace
+:attr:`charset`.
+
+:param environ: The WSGI environ is generated by the WSGI server and
+    contains information about the server configuration and client
+    request.
+:param populate_request: Add this request object to the WSGI environ
+    as ``environ['werkzeug.request']``. Can be useful when
+    debugging.
+:param shallow: Makes reading from :attr:`stream` (and any method
+    that would read from it) raise a :exc:`RuntimeError`. Useful to
+    prevent consuming the form data in middleware, which would make
+    it unavailable to the final application.
+
+.. versionchanged:: 3.0
+    The ``charset``, ``url_charset``, and ``encoding_errors`` parameters
+    were removed.
+
+.. versionchanged:: 2.1
+    Old ``BaseRequest`` and mixin classes were removed.
+
+.. versionchanged:: 2.1
+    Remove the ``disable_data_descriptor`` attribute.
+
+.. versionchanged:: 2.0
+    Combine ``BaseRequest`` and mixins into a single ``Request``
+    class.
+
+.. versionchanged:: 0.5
+    Read-only mode is enforced with immutable classes for all data.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa90dd872bc2a093a3ca9c46a381f5709}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa90dd872bc2a093a3ca9c46a381f5709} 
+ None werkzeug.\+wrappers.\+request.\+Request.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{bool }]{populate\+\_\+request}{ = {\ttfamily True}, }\item[{bool }]{shallow}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a984de6a1bd8d6f2c83dcc1339c9a8579}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a984de6a1bd8d6f2c83dcc1339c9a8579} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}} werkzeug.\+wrappers.\+request.\+Request.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae33998f1ae7b36feb35c7983c90b8cd3}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae33998f1ae7b36feb35c7983c90b8cd3} 
+ None werkzeug.\+wrappers.\+request.\+Request.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{exc\+\_\+type}{, }\item[{}]{exc\+\_\+value}{, }\item[{}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae77ab586f28953c796d193267e658b64}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_get\_file\_stream@{\_get\_file\_stream}}
+\index{\_get\_file\_stream@{\_get\_file\_stream}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_get\_file\_stream()}{\_get\_file\_stream()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae77ab586f28953c796d193267e658b64} 
+ t.\+IO\+[bytes]\+ werkzeug.\+wrappers.\+request.\+Request.\+\_\+get\+\_\+file\+\_\+stream (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{total\+\_\+content\+\_\+length}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{content\+\_\+type}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{content\+\_\+length}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Called to get a stream for the file upload.
+
+This must provide a file-like class with `read()`, `readline()`
+and `seek()` methods that is both writeable and readable.
+
+The default implementation returns a temporary file if the total
+content length is higher than 500KB.  Because many browsers do not
+provide a content length for the files only the total content
+length matters.
+
+:param total_content_length: the total content length of all the
+                             data in the request combined.  This value
+                             is guaranteed to be there.
+:param content_type: the mimetype of the uploaded file.
+:param filename: the filename of the uploaded file.  May be `None`.
+:param content_length: the length of this file.  This value is usually
+                       not provided because webbrowsers do not provide
+                       this value.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a1b72a83cdd41f184c1d3145be11106a3}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_get\_stream\_for\_parsing@{\_get\_stream\_for\_parsing}}
+\index{\_get\_stream\_for\_parsing@{\_get\_stream\_for\_parsing}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_get\_stream\_for\_parsing()}{\_get\_stream\_for\_parsing()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a1b72a83cdd41f184c1d3145be11106a3} 
+ t.\+IO\+[bytes]\+ werkzeug.\+wrappers.\+request.\+Request.\+\_\+get\+\_\+stream\+\_\+for\+\_\+parsing (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This is the same as accessing :attr:`stream` with the difference
+that if it finds cached data from calling :meth:`get_data` first it
+will create a new stream out of the cached data.
+
+.. versionadded:: 0.9.3
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae718f5e4bebbc274d6e21655090872b9}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_load\_form\_data@{\_load\_form\_data}}
+\index{\_load\_form\_data@{\_load\_form\_data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_load\_form\_data()}{\_load\_form\_data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae718f5e4bebbc274d6e21655090872b9} 
+ None werkzeug.\+wrappers.\+request.\+Request.\+\_\+load\+\_\+form\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Method used internally to retrieve submitted data.  After calling
+this sets `form` and `files` on the request object to multi dicts
+filled with the incoming form data.  As a matter of fact the input
+stream will be empty afterwards.  You can also call this method to
+force the parsing of the form data.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_abeb8d38ca5c38e85f087cf945f284b07}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!application@{application}}
+\index{application@{application}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{application()}{application()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_abeb8d38ca5c38e85f087cf945f284b07} 
+ WSGIApplication werkzeug.\+wrappers.\+request.\+Request.\+application (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}}]\+, WSGIApplication]\+}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Decorate a function as responder that accepts the request as
+the last argument.  This works like the :func:`responder`
+decorator but the function is passed the request object as the
+last argument and the request object will be closed
+automatically::
+
+    @Request.application
+    def my_wsgi_app(request):
+        return Response('Hello World!')
+
+As of Werkzeug 0.14 HTTP exceptions are automatically caught and
+converted to responses instead of failing.
+
+:param f: the WSGI callable to decorate
+:return: a new WSGI callable
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb19cf18abf9905d72b6515ada1ffa57}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!close@{close}}
+\index{close@{close}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb19cf18abf9905d72b6515ada1ffa57} 
+ None werkzeug.\+wrappers.\+request.\+Request.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes associated resources of this request object.  This
+closes all file handles explicitly.  You can also use the request
+object in a with statement which will automatically close it.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab3e1ecd17dc79ed646f29da81d2f5eaf}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!data@{data}}
+\index{data@{data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab3e1ecd17dc79ed646f29da81d2f5eaf} 
+ bytes werkzeug.\+wrappers.\+request.\+Request.\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The raw data read from :attr:`stream`. Will be empty if the request
+represents form data.
+
+To get the raw data even if it represents form data, use :meth:`get_data`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2915efc672c2146e486f3c681bb4e9e5}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!files@{files}}
+\index{files@{files}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{files()}{files()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2915efc672c2146e486f3c681bb4e9e5} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}\+[str, \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1file__storage_1_1_file_storage}{File\+Storage}}]\+ werkzeug.\+wrappers.\+request.\+Request.\+files (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:class:`~werkzeug.datastructures.MultiDict` object containing
+all uploaded files.  Each key in :attr:`files` is the name from the
+``<input type="file" name="">``.  Each value in :attr:`files` is a
+Werkzeug :class:`~werkzeug.datastructures.FileStorage` object.
+
+It basically behaves like a standard file object you know from Python,
+with the difference that it also has a
+:meth:`~werkzeug.datastructures.FileStorage.save` function that can
+store the file on the filesystem.
+
+Note that :attr:`files` will only contain data if the request method was
+POST, PUT or PATCH and the ``<form>`` that posted to the request had
+``enctype="multipart/form-data"``.  It will be empty otherwise.
+
+See the :class:`~werkzeug.datastructures.MultiDict` /
+:class:`~werkzeug.datastructures.FileStorage` documentation for
+more details about the used data structure.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a458cb0b42579d176b7954beb36adfed9}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!form@{form}}
+\index{form@{form}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{form()}{form()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a458cb0b42579d176b7954beb36adfed9} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_immutable_multi_dict}{Immutable\+Multi\+Dict}}\+[str, str]\+ werkzeug.\+wrappers.\+request.\+Request.\+form (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The form parameters.  By default an
+:class:`~werkzeug.datastructures.ImmutableMultiDict`
+is returned from this function.  This can be changed by setting
+:attr:`parameter_storage_class` to a different type.  This might
+be necessary if the order of the form data is important.
+
+Please keep in mind that file uploads will not end up here, but instead
+in the :attr:`files` attribute.
+
+.. versionchanged:: 0.9
+
+    Previous to Werkzeug 0.9 this would only contain form data for POST
+    and PUT requests.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac1a0aed439a4a308269bfa444b8b033a}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!from\_values@{from\_values}}
+\index{from\_values@{from\_values}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{from\_values()}{from\_values()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac1a0aed439a4a308269bfa444b8b033a} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1request_1_1_request}{Request}} werkzeug.\+wrappers.\+request.\+Request.\+from\+\_\+values (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a new request object based on the values provided.  If
+environ is given missing values are filled from there.  This method is
+useful for small scripts when you need to simulate a request from an URL.
+Do not use this method for unittesting, there is a full featured client
+object (:class:`Client`) that allows to create multipart requests,
+support for cookies etc.
+
+This accepts the same options as the
+:class:`~werkzeug.test.EnvironBuilder`.
+
+.. versionchanged:: 0.5
+   This method now accepts the same arguments as
+   :class:`~werkzeug.test.EnvironBuilder`.  Because of this the
+   `environ` parameter is now called `environ_overrides`.
+
+:return: request object
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_aceb50f9f30c306e5fde3eee8f5c7faf9}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_aceb50f9f30c306e5fde3eee8f5c7faf9} 
+ bytes \texorpdfstring{$\vert$}{|} str werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{cache}{ = {\ttfamily True}, }\item[{bool }]{as\+\_\+text}{ = {\ttfamily False}, }\item[{bool }]{parse\+\_\+form\+\_\+data}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This reads the buffered incoming data from the client into one
+bytes object.  By default this is cached but that behavior can be
+changed by setting `cache` to `False`.
+
+Usually it's a bad idea to call this method without checking the
+content length first as a client could send dozens of megabytes or more
+to cause memory problems on the server.
+
+Note that if the form data was already parsed this method will not
+return anything as form data parsing does not cache the data like
+this method does.  To implicitly invoke form data parsing function
+set `parse_form_data` to `True`.  When this is done the return value
+of this method will be an empty string if the form parser handles
+the data.  This generally is not necessary as if the whole data is
+cached (which is the default) the form parser will used the cached
+data to parse the form data.  Please be generally aware of checking
+the content length first in any case before calling this method
+to avoid exhausting server memory.
+
+If `as_text` is set to `True` the return value will be a decoded
+string.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_aec83ce72d1b0d1145845db61d9b8ce97}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_aec83ce72d1b0d1145845db61d9b8ce97} 
+ bytes werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{cache}{ = {\ttfamily True}, }\item[{t.\+Literal\+[False]\+ }]{as\+\_\+text}{ = {\ttfamily False}, }\item[{bool }]{parse\+\_\+form\+\_\+data}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_acc58e714d3f4895020cc4564f4a85d29}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_data@{get\_data}}
+\index{get\_data@{get\_data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_data()}{get\_data()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_acc58e714d3f4895020cc4564f4a85d29} 
+ str werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{cache}{ = {\ttfamily True}, }\item[{t.\+Literal\+[True]\+ }]{as\+\_\+text}{ = {\ttfamily ...}, }\item[{bool }]{parse\+\_\+form\+\_\+data}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_abd4551c3baea068d4909934cd726e521}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_abd4551c3baea068d4909934cd726e521} 
+ t.\+Any \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily ...}, }\item[{bool }]{silent}{ = {\ttfamily ...}, }\item[{bool }]{cache}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a753d7584609ac83ebec11f254fefb97d}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a753d7584609ac83ebec11f254fefb97d} 
+ t.\+Any werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily ...}, }\item[{t.\+Literal\+[False]\+ }]{silent}{ = {\ttfamily ...}, }\item[{bool }]{cache}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a886409f775e565e5528b73dbd3488c44}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!get\_json@{get\_json}}
+\index{get\_json@{get\_json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{get\_json()}{get\_json()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a886409f775e565e5528b73dbd3488c44} 
+ t.\+Any \texorpdfstring{$\vert$}{|} None werkzeug.\+wrappers.\+request.\+Request.\+get\+\_\+json (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{force}{ = {\ttfamily False}, }\item[{bool }]{silent}{ = {\ttfamily False}, }\item[{bool }]{cache}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse :attr:`data` as JSON.
+
+If the mimetype does not indicate JSON
+(:mimetype:`application/json`, see :attr:`is_json`), or parsing
+fails, :meth:`on_json_loading_failed` is called and
+its return value is used as the return value. By default this
+raises a 415 Unsupported Media Type resp.
+
+:param force: Ignore the mimetype and always try to parse JSON.
+:param silent: Silence mimetype and parsing errors, and
+    return ``None`` instead.
+:param cache: Store the parsed JSON to return for subsequent
+    calls.
+
+.. versionchanged:: 2.3
+    Raise a 415 error instead of 400.
+
+.. versionchanged:: 2.1
+    Raise a 400 error if the content type is incorrect.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac9a427f11ed67e79c7eba9fe27b4d527}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!json@{json}}
+\index{json@{json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{json()}{json()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac9a427f11ed67e79c7eba9fe27b4d527} 
+ t.\+Any werkzeug.\+wrappers.\+request.\+Request.\+json (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The parsed JSON data if :attr:`mimetype` indicates JSON
+(:mimetype:`application/json`, see :attr:`is_json`).
+
+Calls :meth:`get_json` with default arguments.
+
+If the request content type is not ``application/json``, this
+will raise a 415 Unsupported Media Type error.
+
+.. versionchanged:: 2.3
+    Raise a 415 error instead of 400.
+
+.. versionchanged:: 2.1
+    Raise a 400 error if the content type is incorrect.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2467c47b05a9ba3b1d42557e3916c34c}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!make\_form\_data\_parser@{make\_form\_data\_parser}}
+\index{make\_form\_data\_parser@{make\_form\_data\_parser}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{make\_form\_data\_parser()}{make\_form\_data\_parser()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a2467c47b05a9ba3b1d42557e3916c34c} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser}{Form\+Data\+Parser}} werkzeug.\+wrappers.\+request.\+Request.\+make\+\_\+form\+\_\+data\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the form data parser. Instantiates the
+:attr:`form_data_parser_class` with some parameters.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a9e9c5060905ee2f1b815a5b33086ec8e}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!on\_json\_loading\_failed@{on\_json\_loading\_failed}}
+\index{on\_json\_loading\_failed@{on\_json\_loading\_failed}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{on\_json\_loading\_failed()}{on\_json\_loading\_failed()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a9e9c5060905ee2f1b815a5b33086ec8e} 
+ t.\+Any werkzeug.\+wrappers.\+request.\+Request.\+on\+\_\+json\+\_\+loading\+\_\+failed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Value\+Error \texorpdfstring{$\vert$}{|} None}]{e}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called if :meth:`get_json` fails and isn't silenced.
+
+If this method returns a value, it is used as the return value
+for :meth:`get_json`. The default implementation raises
+:exc:`~werkzeug.exceptions.BadRequest`.
+
+:param e: If parsing failed, this is the exception. It will be
+    ``None`` if the content type wasn't ``application/json``.
+
+.. versionchanged:: 2.3
+    Raise a 415 error instead of 400.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a62288fe7bdcf614ec736031685c9db98}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!script\_root@{script\_root}}
+\index{script\_root@{script\_root}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{script\_root()}{script\_root()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a62288fe7bdcf614ec736031685c9db98} 
+ str werkzeug.\+wrappers.\+request.\+Request.\+script\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alias for :attr:`self.root_path`. ``environ["SCRIPT_NAME"]``
+without a trailing slash.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae31956d6a8b4012be8a1e5f5f011925c}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!stream@{stream}}
+\index{stream@{stream}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{stream()}{stream()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae31956d6a8b4012be8a1e5f5f011925c} 
+ t.\+IO\+[bytes]\+ werkzeug.\+wrappers.\+request.\+Request.\+stream (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The WSGI input stream, with safety checks. This stream can only be consumed
+once.
+
+Use :meth:`get_data` to get the full data as bytes or text. The :attr:`data`
+attribute will contain the full bytes only if they do not represent form data.
+The :attr:`form` attribute will contain the parsed form data in that case.
+
+Unlike :attr:`input_stream`, this stream guards against infinite streams or
+reading past :attr:`content_length` or :attr:`max_content_length`.
+
+If ``max_content_length`` is set, it can be enforced on streams if
+``wsgi.input_terminated`` is set. Otherwise, an empty stream is returned.
+
+If the limit is reached before the underlying stream is exhausted (such as a
+file that is too large, or an infinite stream), the remaining contents of the
+stream cannot be read safely. Depending on how the server handles this, clients
+may show a "connection reset" failure instead of seeing the 413 response.
+
+.. versionchanged:: 2.3
+    Check ``max_content_length`` preemptively and while reading.
+
+.. versionchanged:: 0.9
+    The stream is always set (but may be consumed) even if form parsing was
+    accessed first.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4b8b3d0ccdf568352a1754ebacb7e7bc}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!url\_root@{url\_root}}
+\index{url\_root@{url\_root}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{url\_root()}{url\_root()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4b8b3d0ccdf568352a1754ebacb7e7bc} 
+ str werkzeug.\+wrappers.\+request.\+Request.\+url\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alias for :attr:`root_url`. The URL with scheme, host, and
+root path. For example, ``https://example.com/app/``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae8adc712a6bddb2de0aa8d95b93474e1}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!values@{values}}
+\index{values@{values}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae8adc712a6bddb2de0aa8d95b93474e1} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_combined_multi_dict}{Combined\+Multi\+Dict}}\+[str, str]\+ werkzeug.\+wrappers.\+request.\+Request.\+values (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A :class:`werkzeug.datastructures.CombinedMultiDict` that
+combines :attr:`args` and :attr:`form`.
+
+For GET requests, only ``args`` are present, not ``form``.
+
+.. versionchanged:: 2.0
+    For GET requests, only ``args`` are present, not ``form``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a25074f85c156471597ef6eae4d4cd019}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!want\_form\_data\_parsed@{want\_form\_data\_parsed}}
+\index{want\_form\_data\_parsed@{want\_form\_data\_parsed}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{want\_form\_data\_parsed()}{want\_form\_data\_parsed()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a25074f85c156471597ef6eae4d4cd019} 
+ bool werkzeug.\+wrappers.\+request.\+Request.\+want\+\_\+form\+\_\+data\+\_\+parsed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}``True`` if the request method carries content. By default
+this is true if a ``Content-Type`` is sent.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_abb6acb6979a3690b6977f71f07207b79}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_cached\_data@{\_cached\_data}}
+\index{\_cached\_data@{\_cached\_data}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_cached\_data}{\_cached\_data}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_abb6acb6979a3690b6977f71f07207b79} 
+werkzeug.\+wrappers.\+request.\+Request.\+\_\+cached\+\_\+data = rv\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_af4f33cb627b5b59201aaeda09b7f0a1c}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!\_cached\_json@{\_cached\_json}}
+\index{\_cached\_json@{\_cached\_json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{\_cached\_json}{\_cached\_json}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_af4f33cb627b5b59201aaeda09b7f0a1c} 
+tuple werkzeug.\+wrappers.\+request.\+Request.\+\_\+cached\+\_\+json = (Ellipsis, Ellipsis)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a72ce259cf7c517cf4428db10829f6cff}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!environ@{environ}}
+\index{environ@{environ}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{environ}{environ}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a72ce259cf7c517cf4428db10829f6cff} 
+werkzeug.\+wrappers.\+request.\+Request.\+environ = environ}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb1eed6cc86343da21d9e53301777d73}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!form@{form}}
+\index{form@{form}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{form}{form}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_acb1eed6cc86343da21d9e53301777d73} 
+werkzeug.\+wrappers.\+request.\+Request.\+form}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a398ed3cee9d4d3277a23ffd3848f6054}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!form\_data\_parser\_class@{form\_data\_parser\_class}}
+\index{form\_data\_parser\_class@{form\_data\_parser\_class}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{form\_data\_parser\_class}{form\_data\_parser\_class}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a398ed3cee9d4d3277a23ffd3848f6054} 
+type werkzeug.\+wrappers.\+request.\+Request.\+form\+\_\+data\+\_\+parser\+\_\+class = \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser}{Form\+Data\+Parser}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a5cd9395fc74a0618209e232fe03f70ad}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!input\_stream@{input\_stream}}
+\index{input\_stream@{input\_stream}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{input\_stream}{input\_stream}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a5cd9395fc74a0618209e232fe03f70ad} 
+werkzeug.\+wrappers.\+request.\+Request.\+input\+\_\+stream\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ environ\_property[t.IO[bytes]](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}wsgi.input"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a011e904b5b95280e3b97cb1b7fc97a41}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!is\_json@{is\_json}}
+\index{is\_json@{is\_json}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_json}{is\_json}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a011e904b5b95280e3b97cb1b7fc97a41} 
+werkzeug.\+wrappers.\+request.\+Request.\+is\+\_\+json}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a40ef4e34d88eef9319c5b9701e416510}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!is\_multiprocess@{is\_multiprocess}}
+\index{is\_multiprocess@{is\_multiprocess}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_multiprocess}{is\_multiprocess}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a40ef4e34d88eef9319c5b9701e416510} 
+werkzeug.\+wrappers.\+request.\+Request.\+is\+\_\+multiprocess\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ environ\_property[bool](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}wsgi.multiprocess"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a0cf1fe40716a37ad4516290471f172cc}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!is\_multithread@{is\_multithread}}
+\index{is\_multithread@{is\_multithread}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_multithread}{is\_multithread}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a0cf1fe40716a37ad4516290471f172cc} 
+werkzeug.\+wrappers.\+request.\+Request.\+is\+\_\+multithread\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ environ\_property[bool](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}wsgi.multithread"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae459a2b0c14f94232f048b0b705a0938}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!is\_run\_once@{is\_run\_once}}
+\index{is\_run\_once@{is\_run\_once}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{is\_run\_once}{is\_run\_once}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ae459a2b0c14f94232f048b0b705a0938} 
+werkzeug.\+wrappers.\+request.\+Request.\+is\+\_\+run\+\_\+once\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ environ\_property[bool](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}wsgi.run\_once"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4239820720e73f4099e2f6d1c7c82e90}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!json\_module@{json\_module}}
+\index{json\_module@{json\_module}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{json\_module}{json\_module}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a4239820720e73f4099e2f6d1c7c82e90} 
+werkzeug.\+wrappers.\+request.\+Request.\+json\+\_\+module = \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1request_1_1_request_ac9a427f11ed67e79c7eba9fe27b4d527}{json}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_acdff74483c6a1435fcbdaf40c077c5bb}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!max\_content\_length@{max\_content\_length}}
+\index{max\_content\_length@{max\_content\_length}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{max\_content\_length}{max\_content\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_acdff74483c6a1435fcbdaf40c077c5bb} 
+int werkzeug.\+wrappers.\+request.\+Request.\+max\+\_\+content\+\_\+length = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa359d7b76424775c82ef4b29cc7ba065}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!max\_form\_memory\_size@{max\_form\_memory\_size}}
+\index{max\_form\_memory\_size@{max\_form\_memory\_size}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{max\_form\_memory\_size}{max\_form\_memory\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_aa359d7b76424775c82ef4b29cc7ba065} 
+int werkzeug.\+wrappers.\+request.\+Request.\+max\+\_\+form\+\_\+memory\+\_\+size = 500\+\_\+000\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab8f628131347b0b534640ee0ba617ae6}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!max\_form\_parts@{max\_form\_parts}}
+\index{max\_form\_parts@{max\_form\_parts}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{max\_form\_parts}{max\_form\_parts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab8f628131347b0b534640ee0ba617ae6} 
+int werkzeug.\+wrappers.\+request.\+Request.\+max\+\_\+form\+\_\+parts = 1000\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_aef0334a6a6729d8d269f68a621d95c66}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!remote\_user@{remote\_user}}
+\index{remote\_user@{remote\_user}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{remote\_user}{remote\_user}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_aef0334a6a6729d8d269f68a621d95c66} 
+werkzeug.\+wrappers.\+request.\+Request.\+remote\+\_\+user\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ environ\_property[str](}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}REMOTE\_USER"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ doc=,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_a84ae2292f47dfc6d921c1c1ad8fe09b2}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!shallow@{shallow}}
+\index{shallow@{shallow}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{shallow}{shallow}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_a84ae2292f47dfc6d921c1c1ad8fe09b2} 
+werkzeug.\+wrappers.\+request.\+Request.\+shallow = shallow}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab119de294efe5a011e61cf8a896d12f2}\index{werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}!want\_form\_data\_parsed@{want\_form\_data\_parsed}}
+\index{want\_form\_data\_parsed@{want\_form\_data\_parsed}!werkzeug.wrappers.request.Request@{werkzeug.wrappers.request.Request}}
+\doxysubsubsection{\texorpdfstring{want\_form\_data\_parsed}{want\_form\_data\_parsed}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1request_1_1_request_ab119de294efe5a011e61cf8a896d12f2} 
+werkzeug.\+wrappers.\+request.\+Request.\+want\+\_\+form\+\_\+data\+\_\+parsed}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+wrappers/\+\doxymbox{\hyperlink{werkzeug_2wrappers_2request_8py}{request.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,226 @@
+\doxysection{click.\+types.\+File Class Reference}
+\hypertarget{classclick_1_1types_1_1_file}{}\label{classclick_1_1types_1_1_file}\index{click.types.File@{click.types.File}}
+Inheritance diagram for click.\+types.\+File:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classclick_1_1types_1_1_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a5c15a19ffa70bf43308f5033f3b38760}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str mode="{}r"{}, str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors="{}strict"{}, bool\texorpdfstring{$\vert$}{|}None lazy=None, bool atomic=False)
+\item 
+\doxymbox{\hyperlink{classclick_1_1types_1_1_file_info_dict}{File\+Info\+Dict}} \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a1a4d1820859cfcd2b1c5914d821b4fb2}{to\+\_\+info\+\_\+dict}} (self)
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1types_1_1_file_aea2175516013abc9a063596a3e5507d8}{resolve\+\_\+lazy\+\_\+flag}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ value)
+\item 
+t.\+IO\+[t.\+Any]\+ \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a1cd80f9e718b416e0c2410f575be19ed}{convert}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}t.\+IO\+[t.\+Any]\+ value, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}\texorpdfstring{$\vert$}{|}None param, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx)
+\item 
+list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a0832984c2075ba25da00210dffa4d4ac}{shell\+\_\+complete}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} param, str incomplete)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1types_a10915fd0cdd63cfb58c6755814af4c6a}{\+\_\+\+Value\+T\+\_\+co}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_a7ec10a2739e33d0336fbfd4a219165cb}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, t.\+Any value, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}\texorpdfstring{$\vert$}{|}None param=None, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_acabcc865e7e1273b07152acb4a47f5e5}{get\+\_\+metavar}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} param, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_af55c50ecee5eecfe52532f7ad571c770}{get\+\_\+missing\+\_\+message}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} param, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx)
+\item 
+cabc.\+Sequence\+[str]\+ \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_a10fe2d2b116b42fcaa109da1df760ee9}{split\+\_\+envvar\+\_\+value}} (self, str rv)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_afcc2ce5b635b9f193b47cb62d7fec024}{fail}} (self, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}\texorpdfstring{$\vert$}{|}None param=None, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1types_1_1_file_a6b6f9a6700bb8f3ba6983c087bffadbd}{mode}} = mode
+\item 
+\doxymbox{\hyperlink{classclick_1_1types_1_1_file_adfe34f342063bd5bd772095e87cb5637}{atomic}} = atomic
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1types_1_1_file_aaed24c5563e925890fd2d21a9538a16a}{name}} = "{}filename"{}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a1244e630e95cc42708ce78c1f47c3fb0}{encoding}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a373bbe000b971be944d682b5d18cfe4a}{errors}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1types_1_1_file_a3ae2eb98770545c2022a9e1fff0e9782}{lazy}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{click.\+types.\+Param\+Type}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_aa3cca3ee75b343aaa15d1f5941055f1f}{is\+\_\+composite}} = False
+\item 
+int \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_a7108fd595f86fe9129a875e75b31f1ea}{arity}} = 1
+\item 
+t \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_a06246ae019eb11dcfe765bc968de78fe}{envvar\+\_\+list\+\_\+splitter}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Declares a parameter to be a file for reading or writing.  The file
+is automatically closed once the context tears down (after the command
+finished working).
+
+Files can be opened for reading or writing.  The special value ``-``
+indicates stdin or stdout depending on the mode.
+
+By default, the file is opened for reading text data, but it can also be
+opened in binary mode or for writing.  The encoding parameter can be used
+to force a specific encoding.
+
+The `lazy` flag controls if the file should be opened immediately or upon
+first IO. The default is to be non-lazy for standard input and output
+streams as well as files opened for reading, `lazy` otherwise. When opening a
+file lazily for reading, it is still opened temporarily for validation, but
+will not be held open until first IO. lazy is mainly useful when opening
+for writing to avoid creating the file until it is needed.
+
+Files can also be opened atomically in which case all writes go into a
+separate file in the same folder and upon completion the file will
+be moved over to the original location.  This is useful if a file
+regularly read by other users is modified.
+
+See :ref:`file-args` for more information.
+
+.. versionchanged:: 2.0
+    Added the ``atomic`` parameter.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1types_1_1_file_doc-constructors}
+\Hypertarget{classclick_1_1types_1_1_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1types_1_1_file_a5c15a19ffa70bf43308f5033f3b38760}\index{click.types.File@{click.types.File}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a5c15a19ffa70bf43308f5033f3b38760} 
+ None click.\+types.\+File.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{mode}{ = {\ttfamily "{}r"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{lazy}{ = {\ttfamily None}, }\item[{bool }]{atomic}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1types_1_1_file_doc-func-members}
+\Hypertarget{classclick_1_1types_1_1_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1types_1_1_file_a1cd80f9e718b416e0c2410f575be19ed}\index{click.types.File@{click.types.File}!convert@{convert}}
+\index{convert@{convert}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a1cd80f9e718b416e0c2410f575be19ed} 
+ t.\+IO\+[t.\+Any]\+ click.\+types.\+File.\+convert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} t.\+IO\+[t.\+Any]\+}]{value}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}} \texorpdfstring{$\vert$}{|} None}]{param}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the value to the correct type. This is not called if
+the value is ``None`` (the missing value).
+
+This must accept string values from the command line, as well as
+values that are already the correct type. It may also convert
+other compatible types.
+
+The ``param`` and ``ctx`` arguments may be ``None`` in certain
+situations, such as when converting prompt input.
+
+If the value cannot be converted, call :meth:`fail` with a
+descriptive message.
+
+:param value: The value to convert.
+:param param: The parameter that is using this type to convert
+    its value. May be ``None``.
+:param ctx: The current context that arrived at this value. May
+    be ``None``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_ad7be37d430ca54d85623297aeb7e9638}{click.\+types.\+Param\+Type}}.
+
+\Hypertarget{classclick_1_1types_1_1_file_aea2175516013abc9a063596a3e5507d8}\index{click.types.File@{click.types.File}!resolve\_lazy\_flag@{resolve\_lazy\_flag}}
+\index{resolve\_lazy\_flag@{resolve\_lazy\_flag}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{resolve\_lazy\_flag()}{resolve\_lazy\_flag()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_aea2175516013abc9a063596a3e5507d8} 
+ bool click.\+types.\+File.\+resolve\+\_\+lazy\+\_\+flag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1types_1_1_file_a0832984c2075ba25da00210dffa4d4ac}\index{click.types.File@{click.types.File}!shell\_complete@{shell\_complete}}
+\index{shell\_complete@{shell\_complete}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{shell\_complete()}{shell\_complete()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a0832984c2075ba25da00210dffa4d4ac} 
+ list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ click.\+types.\+File.\+shell\+\_\+complete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}}]{param}{, }\item[{str     }]{incomplete}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a special completion marker that tells the completion
+system to use the shell to provide file path completions.
+
+:param ctx: Invocation context for this command.
+:param param: The parameter that is requesting completion.
+:param incomplete: Value being completed. May be empty.
+
+.. versionadded:: 8.0
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_af9b01d9709d700384a232a6172be8ed5}{click.\+types.\+Param\+Type}}.
+
+\Hypertarget{classclick_1_1types_1_1_file_a1a4d1820859cfcd2b1c5914d821b4fb2}\index{click.types.File@{click.types.File}!to\_info\_dict@{to\_info\_dict}}
+\index{to\_info\_dict@{to\_info\_dict}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{to\_info\_dict()}{to\_info\_dict()}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a1a4d1820859cfcd2b1c5914d821b4fb2} 
+ \doxymbox{\hyperlink{classclick_1_1types_1_1_file_info_dict}{File\+Info\+Dict}} click.\+types.\+File.\+to\+\_\+info\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gather information that could be useful for a tool generating
+user-facing documentation.
+
+Use :meth:`click.Context.to_info_dict` to traverse the entire
+CLI structure.
+
+.. versionadded:: 8.0
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type_a46146fb234be5f31a16dc211485bc18b}{click.\+types.\+Param\+Type}}.
+
+
+
+\label{classclick_1_1types_1_1_file_doc-variable-members}
+\Hypertarget{classclick_1_1types_1_1_file_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1types_1_1_file_adfe34f342063bd5bd772095e87cb5637}\index{click.types.File@{click.types.File}!atomic@{atomic}}
+\index{atomic@{atomic}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{atomic}{atomic}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_adfe34f342063bd5bd772095e87cb5637} 
+click.\+types.\+File.\+atomic = atomic}
+
+\Hypertarget{classclick_1_1types_1_1_file_a1244e630e95cc42708ce78c1f47c3fb0}\index{click.types.File@{click.types.File}!encoding@{encoding}}
+\index{encoding@{encoding}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a1244e630e95cc42708ce78c1f47c3fb0} 
+click.\+types.\+File.\+encoding \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1types_1_1_file_a373bbe000b971be944d682b5d18cfe4a}\index{click.types.File@{click.types.File}!errors@{errors}}
+\index{errors@{errors}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a373bbe000b971be944d682b5d18cfe4a} 
+str click.\+types.\+File.\+errors \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1types_1_1_file_a3ae2eb98770545c2022a9e1fff0e9782}\index{click.types.File@{click.types.File}!lazy@{lazy}}
+\index{lazy@{lazy}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{lazy}{lazy}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a3ae2eb98770545c2022a9e1fff0e9782} 
+bool click.\+types.\+File.\+lazy \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1types_1_1_file_a6b6f9a6700bb8f3ba6983c087bffadbd}\index{click.types.File@{click.types.File}!mode@{mode}}
+\index{mode@{mode}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_a6b6f9a6700bb8f3ba6983c087bffadbd} 
+click.\+types.\+File.\+mode = mode}
+
+\Hypertarget{classclick_1_1types_1_1_file_aaed24c5563e925890fd2d21a9538a16a}\index{click.types.File@{click.types.File}!name@{name}}
+\index{name@{name}!click.types.File@{click.types.File}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classclick_1_1types_1_1_file_aaed24c5563e925890fd2d21a9538a16a} 
+str click.\+types.\+File.\+name = "{}filename"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{types_8py}{types.\+py}}\end{DoxyCompactItemize}

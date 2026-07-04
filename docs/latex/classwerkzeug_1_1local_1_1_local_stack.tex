@@ -1,0 +1,125 @@
+\doxysection{werkzeug.\+local.\+Local\+Stack Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local_stack}{}\label{classwerkzeug_1_1local_1_1_local_stack}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+Inheritance diagram for werkzeug.\+local.\+Local\+Stack:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1local_1_1_local_stack}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a1b48869590c936d2573a6a1019428cb1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Context\+Var\+[list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+]\+\texorpdfstring{$\vert$}{|}None context\+\_\+var=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a98a0b4403b710c7bf2037623a6ae1bbe}{\+\_\+\+\_\+release\+\_\+local\+\_\+\+\_\+}} (self)
+\item 
+list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_ab71c3d878759b415954478d34033f7d6}{push}} (self, \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}} obj)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_ae2fe37ccad6a56de7168e14a2898558b}{pop}} (self)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_a0781ed975182ee5c49c8487e88fb247f}{top}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_af90e58baf7ada13f133020a04d3791d4}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None name=None, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None unbound\+\_\+message=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_stack_aa366e40f42219b225c96f7426eecfaa4}{\+\_\+storage}} = context\+\_\+var
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a stack of context-local data. This wraps a
+:class:`ContextVar` containing a :class:`list` value.
+
+This may incur a performance penalty compared to using individual
+context vars, as it has to copy data to avoid mutating the list
+between nested contexts.
+
+:param context_var: The :class:`~contextvars.ContextVar` to use as
+    storage for this local. If not given, one will be created.
+    Context vars not created at the global scope may interfere with
+    garbage collection.
+
+.. versionchanged:: 2.0
+    Uses ``ContextVar`` instead of a custom storage implementation.
+
+.. versionadded:: 0.6.1
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_stack_doc-constructors}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a1b48869590c936d2573a6a1019428cb1}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a1b48869590c936d2573a6a1019428cb1} 
+ None werkzeug.\+local.\+Local\+Stack.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Context\+Var\+[list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+]\+ \texorpdfstring{$\vert$}{|} None }]{context\+\_\+var}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1_local_stack_doc-func-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_af90e58baf7ada13f133020a04d3791d4}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_af90e58baf7ada13f133020a04d3791d4} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ werkzeug.\+local.\+Local\+Stack.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{unbound\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`LocalProxy` that accesses the top of this
+local stack.
+
+:param name: If given, the proxy access this attribute of the
+    top item, rather than the item itself.
+:param unbound_message: The error message that the proxy will
+    show if the stack is empty.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a98a0b4403b710c7bf2037623a6ae1bbe}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!\_\_release\_local\_\_@{\_\_release\_local\_\_}}
+\index{\_\_release\_local\_\_@{\_\_release\_local\_\_}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{\_\_release\_local\_\_()}{\_\_release\_local\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a98a0b4403b710c7bf2037623a6ae1bbe} 
+ None werkzeug.\+local.\+Local\+Stack.\+\_\+\+\_\+release\+\_\+local\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_ae2fe37ccad6a56de7168e14a2898558b}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!pop@{pop}}
+\index{pop@{pop}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_ae2fe37ccad6a56de7168e14a2898558b} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}} \texorpdfstring{$\vert$}{|} None werkzeug.\+local.\+Local\+Stack.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove the top item from the stack and return it. If the
+stack is empty, return ``None``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_ab71c3d878759b415954478d34033f7d6}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!push@{push}}
+\index{push@{push}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_ab71c3d878759b415954478d34033f7d6} 
+ list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}]\+ werkzeug.\+local.\+Local\+Stack.\+push (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}}}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new item to the top of the stack.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_stack_a0781ed975182ee5c49c8487e88fb247f}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!top@{top}}
+\index{top@{top}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_a0781ed975182ee5c49c8487e88fb247f} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1local_a179c7467cb77f4976e17a1c8c851572d}{T}} \texorpdfstring{$\vert$}{|} None werkzeug.\+local.\+Local\+Stack.\+top (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The topmost item on the stack.  If the stack is empty,
+`None` is returned.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_stack_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_stack_aa366e40f42219b225c96f7426eecfaa4}\index{werkzeug.local.LocalStack@{werkzeug.local.LocalStack}!\_storage@{\_storage}}
+\index{\_storage@{\_storage}!werkzeug.local.LocalStack@{werkzeug.local.LocalStack}}
+\doxysubsubsection{\texorpdfstring{\_storage}{\_storage}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_stack_aa366e40f42219b225c96f7426eecfaa4} 
+werkzeug.\+local.\+Local\+Stack.\+\_\+storage = context\+\_\+var\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{local_8py}{local.\+py}}\end{DoxyCompactItemize}

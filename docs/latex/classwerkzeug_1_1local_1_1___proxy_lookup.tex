@@ -1,0 +1,136 @@
+\doxysection{werkzeug.\+local.\+\_\+\+Proxy\+Lookup Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup}{}\label{classwerkzeug_1_1local_1_1___proxy_lookup}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+Inheritance diagram for werkzeug.\+local.\+\_\+\+Proxy\+Lookup:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1local_1_1___proxy_lookup}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a4ee9a73a93376b086acaf4e59f5da8cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Callable\+[..., t.\+Any]\+\texorpdfstring{$\vert$}{|}None f=None, t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None fallback=None, t.\+Any\texorpdfstring{$\vert$}{|}None class\+\_\+value=None, bool is\+\_\+attr=False)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_ab835f7ffea28d06ae1173feb251d276a}{\+\_\+\+\_\+set\+\_\+name\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ owner, str name)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a04425ba463169f22006abd17a36c2f32}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ instance, type\texorpdfstring{$\vert$}{|}None owner=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a19f13bfeabaeace12ae1214dc7e3d627}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_ac8f3c1b0a859d2cbc3ed1b3d694a09b6}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ instance, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a9aa7e85bc5af19320d4511c5fb0985b0}{bind\+\_\+f}} = bind\+\_\+f
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_ada7d069361480ff73a286fa6054de069}{fallback}} = fallback
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a4470618d976b8fd39bf1ae2c59e32ef3}{class\+\_\+value}} = class\+\_\+value
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a474b8341388cf35afd390dcc42743f29}{is\+\_\+attr}} = is\+\_\+attr
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1___proxy_lookup_a2d709ccc41a3dfe588dfb6ebd199dc38}{name}} = name
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Descriptor that handles proxied attribute lookup for
+:class:`LocalProxy`.
+
+:param f: The built-in function this attribute is accessed through.
+    Instead of looking up the special method, the function call
+    is redone on the object.
+:param fallback: Return this function if the proxy is unbound
+    instead of raising a :exc:`RuntimeError`.
+:param is_attr: This proxied name is an attribute, not a function.
+    Call the fallback immediately to get the value.
+:param class_value: Value to return when accessed from the
+    ``LocalProxy`` class directly. Used for ``__doc__`` so building
+    docs still works.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1___proxy_lookup_doc-constructors}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a4ee9a73a93376b086acaf4e59f5da8cb}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a4ee9a73a93376b086acaf4e59f5da8cb} 
+ None werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\+[..., t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{f}{ = {\ttfamily None}, }\item[{t.\+Callable\+[\+[\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+]\+, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{fallback}{ = {\ttfamily None}, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{class\+\_\+value}{ = {\ttfamily None}, }\item[{bool }]{is\+\_\+attr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1___proxy_lookup_doc-func-members}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_ac8f3c1b0a859d2cbc3ed1b3d694a09b6}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_ac8f3c1b0a859d2cbc3ed1b3d694a09b6} 
+ t.\+Any werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+}]{instance}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Support calling unbound methods from the class. For example,
+this happens with ``copy.copy``, which does
+``type(x).__copy__(x)``. ``type(x)`` can't be proxied, so it
+returns the proxy type and descriptor.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a04425ba463169f22006abd17a36c2f32}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a04425ba463169f22006abd17a36c2f32} 
+ t.\+Any werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+}]{instance}{, }\item[{type \texorpdfstring{$\vert$}{|} None }]{owner}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a19f13bfeabaeace12ae1214dc7e3d627}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a19f13bfeabaeace12ae1214dc7e3d627} 
+ str werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_ab835f7ffea28d06ae1173feb251d276a}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!\_\_set\_name\_\_@{\_\_set\_name\_\_}}
+\index{\_\_set\_name\_\_@{\_\_set\_name\_\_}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_name\_\_()}{\_\_set\_name\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_ab835f7ffea28d06ae1173feb251d276a} 
+ None werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+\_\+\+\_\+set\+\_\+name\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+}]{owner}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1___proxy_lookup_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a9aa7e85bc5af19320d4511c5fb0985b0}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!bind\_f@{bind\_f}}
+\index{bind\_f@{bind\_f}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{bind\_f}{bind\_f}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a9aa7e85bc5af19320d4511c5fb0985b0} 
+werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+bind\+\_\+f = bind\+\_\+f}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a4470618d976b8fd39bf1ae2c59e32ef3}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!class\_value@{class\_value}}
+\index{class\_value@{class\_value}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{class\_value}{class\_value}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a4470618d976b8fd39bf1ae2c59e32ef3} 
+werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+class\+\_\+value = class\+\_\+value}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_ada7d069361480ff73a286fa6054de069}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!fallback@{fallback}}
+\index{fallback@{fallback}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{fallback}{fallback}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_ada7d069361480ff73a286fa6054de069} 
+werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+fallback = fallback}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a474b8341388cf35afd390dcc42743f29}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!is\_attr@{is\_attr}}
+\index{is\_attr@{is\_attr}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{is\_attr}{is\_attr}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a474b8341388cf35afd390dcc42743f29} 
+werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+is\+\_\+attr = is\+\_\+attr}
+
+\Hypertarget{classwerkzeug_1_1local_1_1___proxy_lookup_a2d709ccc41a3dfe588dfb6ebd199dc38}\index{werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}!name@{name}}
+\index{name@{name}!werkzeug.local.\_ProxyLookup@{werkzeug.local.\_ProxyLookup}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1___proxy_lookup_a2d709ccc41a3dfe588dfb6ebd199dc38} 
+werkzeug.\+local.\+\_\+\+Proxy\+Lookup.\+name = name}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{local_8py}{local.\+py}}\end{DoxyCompactItemize}

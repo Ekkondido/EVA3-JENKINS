@@ -1,0 +1,131 @@
+\doxysection{blinker.\+base.\+Named\+Signal Class Reference}
+\hypertarget{classblinker_1_1base_1_1_named_signal}{}\label{classblinker_1_1base_1_1_named_signal}\index{blinker.base.NamedSignal@{blinker.base.NamedSignal}}
+Inheritance diagram for blinker.\+base.\+Named\+Signal:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblinker_1_1base_1_1_named_signal}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_named_signal_aeab86961e98326f0fc03693d97465818}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str name, str\texorpdfstring{$\vert$}{|}None doc=None)
+\item 
+str \doxymbox{\hyperlink{classblinker_1_1base_1_1_named_signal_a1ccf0a2e2700da0086f542337ccee006}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{blinker.\+base.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a762b77947ec4806f583092d2ff2c9b94}{receiver\+\_\+connected}} (self)
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{Signal}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_ae89ce881d90bd7dfcfc64a1cfe37339d}{receiver\+\_\+disconnected}} (self)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a42347cdab832d09d6cb06d96acd65084}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None doc=None)
+\item 
+\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}} \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a33954175c283633c5313cf20bc3d6454}{connect}} (self, \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}} receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}}, bool weak=True)
+\item 
+c.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+, \doxymbox{\hyperlink{namespaceblinker_1_1base_a88610bdb7ecfaf3988aa67e62877c6af}{F}}]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a3f4e728748595a6b8af2b8f78f8d0870}{connect\+\_\+via}} (self, t.\+Any sender, bool weak=False)
+\item 
+c.\+Generator\+[None, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a036b6b6e91bd7b89024bc7ef7d2a989b}{connected\+\_\+to}} (self, c.\+Callable\+[..., t.\+Any]\+ receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}})
+\item 
+c.\+Generator\+[None, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a7ad55cc7b5aa25e20ea870cb050174d4}{muted}} (self)
+\item 
+list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_abfdc67934666948838fc682e5ecea81c}{send}} (self, t.\+Any\texorpdfstring{$\vert$}{|}None sender=None, \texorpdfstring{$\ast$}{*}, c.\+Callable\+[\+[c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+]\+, c.\+Callable\+[..., t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None \+\_\+async\+\_\+wrapper=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+list\+[tuple\+[c.\+Callable\+[..., t.\+Any]\+, t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a5227ccb7839e3f37479ea59fc81e9bab}{send\+\_\+async}} (self, t.\+Any\texorpdfstring{$\vert$}{|}None sender=None, \texorpdfstring{$\ast$}{*}, c.\+Callable\+[\+[c.\+Callable\+[..., t.\+Any]\+]\+, c.\+Callable\+[..., c.\+Coroutine\+[t.\+Any, t.\+Any, t.\+Any]\+]\+]\+\texorpdfstring{$\vert$}{|}None \+\_\+sync\+\_\+wrapper=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+bool \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a76b970587a5832c6e3fa150caf0ee31e}{has\+\_\+receivers\+\_\+for}} (self, t.\+Any sender)
+\item 
+c.\+Generator\+[c.\+Callable\+[..., t.\+Any]\+, None, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a54b01684851b3f760f50117f2dfc8f81}{receivers\+\_\+for}} (self, t.\+Any sender)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a1c47667de95766867c12f329ce52ec62}{disconnect}} (self, c.\+Callable\+[..., t.\+Any]\+ receiver, t.\+Any sender=\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classblinker_1_1base_1_1_named_signal_a57e97792cd194b2ee6534c8da4f60be3}{name}} = name
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{blinker.\+base.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a56609d148d1510694e8456baf0d153d4}{receivers}}
+\item 
+bool \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a2543dc3a666455dd9598c15f2f8153cf}{is\+\_\+muted}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{blinker.\+base.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a0b20cae440c4f4d553bf76f2d99ced9f}{ANY}} = ANY
+\item 
+type \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a101b80969c019e35617f0f8ba7b771d0}{set\+\_\+class}} = set
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{blinker.\+base.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a32eaab05e6e030acc3221640e361d50c}{\+\_\+disconnect}} (self, c.\+Hashable receiver\+\_\+id, c.\+Hashable sender\+\_\+id)
+\item 
+c.\+Callable\+[\+[weakref.\+ref\+[c.\+Callable\+[..., t.\+Any]\+]\+]\+, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a8afeeaf2722d4b737f92c92fbd402a6a}{\+\_\+make\+\_\+cleanup\+\_\+receiver}} (self, c.\+Hashable receiver\+\_\+id)
+\item 
+c.\+Callable\+[\+[weakref.\+ref\+[t.\+Any]\+]\+, None]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a2c021ae23f2d7142ed409b605cb9718a}{\+\_\+make\+\_\+cleanup\+\_\+sender}} (self, c.\+Hashable sender\+\_\+id)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a957217628ce35afe8f96c4969c229a15}{\+\_\+cleanup\+\_\+bookkeeping}} (self)
+\item 
+None \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a80d8bd170474ea5901108d742cb78ce0}{\+\_\+clear\+\_\+state}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal}{blinker.\+base.\+Signal}}}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[t.\+Any, set\+[t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_aad89acfe8ce612b0e7b2cd83d82dae23}{\+\_\+by\+\_\+receiver}} = defaultdict(self.\+set\+\_\+class)
+\item 
+dict\+[t.\+Any, set\+[t.\+Any]\+]\+ \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_a06adfcc2913ef57be40828fd58099a77}{\+\_\+by\+\_\+sender}} = defaultdict(self.\+set\+\_\+class)
+\item 
+dict \doxymbox{\hyperlink{classblinker_1_1base_1_1_signal_ac9f460c5f6fab122136c6dfbd2313293}{\+\_\+weak\+\_\+senders}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A named generic notification emitter. The name is not used by the signal
+itself, but matches the key in the :class:`Namespace` that it belongs to.
+
+:param name: The name of the signal within the namespace.
+:param doc: The docstring for the signal.
+\end{DoxyVerb}
+ 
+
+\label{classblinker_1_1base_1_1_named_signal_doc-constructors}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_aeab86961e98326f0fc03693d97465818}\index{blinker.base.NamedSignal@{blinker.base.NamedSignal}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!blinker.base.NamedSignal@{blinker.base.NamedSignal}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_named_signal_aeab86961e98326f0fc03693d97465818} 
+ None blinker.\+base.\+Named\+Signal.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{doc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classblinker_1_1base_1_1_named_signal_doc-func-members}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_a1ccf0a2e2700da0086f542337ccee006}\index{blinker.base.NamedSignal@{blinker.base.NamedSignal}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!blinker.base.NamedSignal@{blinker.base.NamedSignal}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_named_signal_a1ccf0a2e2700da0086f542337ccee006} 
+ str blinker.\+base.\+Named\+Signal.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classblinker_1_1base_1_1_named_signal_doc-variable-members}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classblinker_1_1base_1_1_named_signal_a57e97792cd194b2ee6534c8da4f60be3}\index{blinker.base.NamedSignal@{blinker.base.NamedSignal}!name@{name}}
+\index{name@{name}!blinker.base.NamedSignal@{blinker.base.NamedSignal}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classblinker_1_1base_1_1_named_signal_a57e97792cd194b2ee6534c8da4f60be3} 
+str blinker.\+base.\+Named\+Signal.\+name = name}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+blinker/\+\doxymbox{\hyperlink{blinker_2base_8py}{base.\+py}}\end{DoxyCompactItemize}

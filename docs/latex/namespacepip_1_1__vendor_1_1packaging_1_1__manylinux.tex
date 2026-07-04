@@ -1,0 +1,153 @@
+\doxysection{pip.\+\_\+vendor.\+packaging.\+\_\+manylinux Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux}{}\label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___e_l_f_file_header}{\+\_\+\+ELFFile\+Header}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___g_lib_c_version}{\+\_\+\+GLib\+CVersion}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Optional\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___e_l_f_file_header}{\+\_\+\+ELFFile\+Header}}]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aa53fda2115f1c96d8f49924357eb296e}{\+\_\+get\+\_\+elf\+\_\+header}} ()
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab4a7e3c09ede193c1b240f8aa97e3e1e}{\+\_\+is\+\_\+linux\+\_\+armhf}} ()
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a467f093fc191cb9a7a8db6f04cb4acfa}{\+\_\+is\+\_\+linux\+\_\+i686}} ()
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a9c2df91508588e6a6382aefe4f3819eb}{\+\_\+have\+\_\+compatible\+\_\+abi}} (str arch)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_af71c45c336bf059035591fd1affda13c}{\+\_\+glibc\+\_\+version\+\_\+string\+\_\+confstr}} ()
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a1eb71a6dd8a38d04a1b22f846beaa503}{\+\_\+glibc\+\_\+version\+\_\+string\+\_\+ctypes}} ()
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a444c3783199444c999f6ed406c83b030}{\+\_\+glibc\+\_\+version\+\_\+string}} ()
+\item 
+Tuple\+[int, int]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a96f53fc8de1b56a4026dfdc8d1be617e}{\+\_\+parse\+\_\+glibc\+\_\+version}} (str version\+\_\+str)
+\item 
+Tuple\+[int, int]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab5a925aeb7526c1da928fed3333499e5}{\+\_\+get\+\_\+glibc\+\_\+version}} ()
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a55a2ef3efc7e068b45f79e7d410a11e0}{\+\_\+is\+\_\+compatible}} (str name, str arch, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___g_lib_c_version}{\+\_\+\+GLib\+CVersion}} version)
+\item 
+Iterator\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ae771857211d02a108a6e538f777fad38}{platform\+\_\+tags}} (str linux, str arch)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Dict \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aeb7d3b7b9d1fea6060d2234216bd1d04}{\+\_\+\+LAST\+\_\+\+GLIBC\+\_\+\+MINOR}} = collections.\+defaultdict(lambda:\+ 50)
+\item 
+dict \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aed3e3d2085a5af930cebc8d3da7e5911}{\+\_\+\+LEGACY\+\_\+\+MANYLINUX\+\_\+\+MAP}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aa53fda2115f1c96d8f49924357eb296e}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_get\_elf\_header@{\_get\_elf\_header}}
+\index{\_get\_elf\_header@{\_get\_elf\_header}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_get\_elf\_header()}{\_get\_elf\_header()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aa53fda2115f1c96d8f49924357eb296e} 
+ Optional\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___e_l_f_file_header}{\+\_\+\+ELFFile\+Header}}]\+ \+\_\+get\+\_\+elf\+\_\+header (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab5a925aeb7526c1da928fed3333499e5}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_get\_glibc\_version@{\_get\_glibc\_version}}
+\index{\_get\_glibc\_version@{\_get\_glibc\_version}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_get\_glibc\_version()}{\_get\_glibc\_version()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab5a925aeb7526c1da928fed3333499e5} 
+ Tuple\+[int, int]\+ \+\_\+get\+\_\+glibc\+\_\+version (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a444c3783199444c999f6ed406c83b030}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_glibc\_version\_string@{\_glibc\_version\_string}}
+\index{\_glibc\_version\_string@{\_glibc\_version\_string}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_glibc\_version\_string()}{\_glibc\_version\_string()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a444c3783199444c999f6ed406c83b030} 
+ Optional\+[str]\+ \+\_\+glibc\+\_\+version\+\_\+string (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns glibc version string, or None if not using glibc.\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_af71c45c336bf059035591fd1affda13c}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_glibc\_version\_string\_confstr@{\_glibc\_version\_string\_confstr}}
+\index{\_glibc\_version\_string\_confstr@{\_glibc\_version\_string\_confstr}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_glibc\_version\_string\_confstr()}{\_glibc\_version\_string\_confstr()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_af71c45c336bf059035591fd1affda13c} 
+ Optional\+[str]\+ \+\_\+glibc\+\_\+version\+\_\+string\+\_\+confstr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Primary implementation of glibc_version_string using os.confstr.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a1eb71a6dd8a38d04a1b22f846beaa503}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_glibc\_version\_string\_ctypes@{\_glibc\_version\_string\_ctypes}}
+\index{\_glibc\_version\_string\_ctypes@{\_glibc\_version\_string\_ctypes}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_glibc\_version\_string\_ctypes()}{\_glibc\_version\_string\_ctypes()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a1eb71a6dd8a38d04a1b22f846beaa503} 
+ Optional\+[str]\+ \+\_\+glibc\+\_\+version\+\_\+string\+\_\+ctypes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Fallback implementation of glibc_version_string using ctypes.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a9c2df91508588e6a6382aefe4f3819eb}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_have\_compatible\_abi@{\_have\_compatible\_abi}}
+\index{\_have\_compatible\_abi@{\_have\_compatible\_abi}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_have\_compatible\_abi()}{\_have\_compatible\_abi()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a9c2df91508588e6a6382aefe4f3819eb} 
+ bool \+\_\+have\+\_\+compatible\+\_\+abi (\begin{DoxyParamCaption}\item[{str}]{arch}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a55a2ef3efc7e068b45f79e7d410a11e0}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_is\_compatible@{\_is\_compatible}}
+\index{\_is\_compatible@{\_is\_compatible}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_is\_compatible()}{\_is\_compatible()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a55a2ef3efc7e068b45f79e7d410a11e0} 
+ bool \+\_\+is\+\_\+compatible (\begin{DoxyParamCaption}\item[{str}]{name}{, }\item[{str}]{arch}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1__manylinux_1_1___g_lib_c_version}{\+\_\+\+GLib\+CVersion}}}]{version}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab4a7e3c09ede193c1b240f8aa97e3e1e}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_is\_linux\_armhf@{\_is\_linux\_armhf}}
+\index{\_is\_linux\_armhf@{\_is\_linux\_armhf}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_is\_linux\_armhf()}{\_is\_linux\_armhf()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ab4a7e3c09ede193c1b240f8aa97e3e1e} 
+ bool \+\_\+is\+\_\+linux\+\_\+armhf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a467f093fc191cb9a7a8db6f04cb4acfa}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_is\_linux\_i686@{\_is\_linux\_i686}}
+\index{\_is\_linux\_i686@{\_is\_linux\_i686}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_is\_linux\_i686()}{\_is\_linux\_i686()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a467f093fc191cb9a7a8db6f04cb4acfa} 
+ bool \+\_\+is\+\_\+linux\+\_\+i686 (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a96f53fc8de1b56a4026dfdc8d1be617e}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_parse\_glibc\_version@{\_parse\_glibc\_version}}
+\index{\_parse\_glibc\_version@{\_parse\_glibc\_version}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_parse\_glibc\_version()}{\_parse\_glibc\_version()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_a96f53fc8de1b56a4026dfdc8d1be617e} 
+ Tuple\+[int, int]\+ \+\_\+parse\+\_\+glibc\+\_\+version (\begin{DoxyParamCaption}\item[{str}]{version\+\_\+str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse glibc version.
+
+We use a regexp instead of str.split because we want to discard any
+random junk that might come after the minor version -- this might happen
+in patched/forked versions of glibc (e.g. Linaro's version of glibc
+uses version strings like "2.20-2014.11"). See gh-3588.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ae771857211d02a108a6e538f777fad38}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!platform\_tags@{platform\_tags}}
+\index{platform\_tags@{platform\_tags}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{platform\_tags()}{platform\_tags()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_ae771857211d02a108a6e538f777fad38} 
+ Iterator\+[str]\+ platform\+\_\+tags (\begin{DoxyParamCaption}\item[{str}]{linux}{, }\item[{str}]{arch}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aeb7d3b7b9d1fea6060d2234216bd1d04}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_LAST\_GLIBC\_MINOR@{\_LAST\_GLIBC\_MINOR}}
+\index{\_LAST\_GLIBC\_MINOR@{\_LAST\_GLIBC\_MINOR}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_LAST\_GLIBC\_MINOR}{\_LAST\_GLIBC\_MINOR}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aeb7d3b7b9d1fea6060d2234216bd1d04} 
+Dict pip.\+\_\+vendor.\+packaging.\+\_\+manylinux.\+\_\+\+LAST\+\_\+\+GLIBC\+\_\+\+MINOR = collections.\+defaultdict(lambda:\+ 50)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aed3e3d2085a5af930cebc8d3da7e5911}\index{pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}!\_LEGACY\_MANYLINUX\_MAP@{\_LEGACY\_MANYLINUX\_MAP}}
+\index{\_LEGACY\_MANYLINUX\_MAP@{\_LEGACY\_MANYLINUX\_MAP}!pip.\_vendor.packaging.\_manylinux@{pip.\_vendor.packaging.\_manylinux}}
+\doxysubsubsection{\texorpdfstring{\_LEGACY\_MANYLINUX\_MAP}{\_LEGACY\_MANYLINUX\_MAP}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1__manylinux_aed3e3d2085a5af930cebc8d3da7e5911} 
+dict pip.\+\_\+vendor.\+packaging.\+\_\+manylinux.\+\_\+\+LEGACY\+\_\+\+MANYLINUX\+\_\+\+MAP\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ CentOS\ 7\ w/\ glibc\ 2.17\ (PEP\ 599)}}
+\DoxyCodeLine{\ \ \ \ (2,\ 17):\ \textcolor{stringliteral}{"{}manylinux2014"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ CentOS\ 6\ w/\ glibc\ 2.12\ (PEP\ 571)}}
+\DoxyCodeLine{\ \ \ \ (2,\ 12):\ \textcolor{stringliteral}{"{}manylinux2010"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ CentOS\ 5\ w/\ glibc\ 2.5\ (PEP\ 513)}}
+\DoxyCodeLine{\ \ \ \ (2,\ 5):\ \textcolor{stringliteral}{"{}manylinux1"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

@@ -1,0 +1,159 @@
+\doxysection{werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper}{}\label{classwerkzeug_1_1wsgi_1_1___range_wrapper}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a7e763993bf630fea981e732acc7b237b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\+[bytes]\+\texorpdfstring{$\vert$}{|}t.\+IO\+[bytes]\+ iterable, int start\+\_\+byte=0, int\texorpdfstring{$\vert$}{|}None byte\+\_\+range=None)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper}{\+\_\+\+Range\+Wrapper}} \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a69a89f063735555b3083a3fb6693c4fc}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_ac33294606c23b16bfa663d9d3820902c}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_aa1d0a3f6ef9cfd7f68fd651d1e0b830f}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862}{iterable}} = iter(iterable)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a9c13525cf96cfda80bd740b9ebdeec72}{byte\+\_\+range}} = byte\+\_\+range
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a28a57d0222ef589fb731bbf07fa33555}{start\+\_\+byte}} = start\+\_\+byte
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a11a51d2b759ed4d4430a536a88192528}{end\+\_\+byte}} = None
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a073d036871572f695504f1fad170d791}{read\+\_\+length}} = 0
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2b182e55866e21744fa06711ef70e6d2}{seekable}} = hasattr(\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862}{iterable}}, "{}seekable"{}) and iterable.\+seekable()
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_ab9a8022e633d5e282988ae1facfea676}{end\+\_\+reached}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a0acb58ebf36c431b4dc7cdd3c3118037}{\+\_\+next\+\_\+chunk}} (self)
+\item 
+tuple\+[bytes\texorpdfstring{$\vert$}{|}None, int]\+ \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a29a85da122ab42478d59bc2a90146e02}{\+\_\+first\+\_\+iteration}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_a4fac50c07eceef542cbd5d1d318144df}{\+\_\+next}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class can be used to convert an iterable object into
+an iterable that will only yield a piece of the underlying content.
+It yields blocks until the underlying stream range is fully read.
+The yielded blocks will have a size that can't exceed the original
+iterator defined block size, but that can be smaller.
+
+If you're using this object together with a :class:`Response` you have
+to use the `direct_passthrough` mode.
+
+:param iterable: an iterable object with a :meth:`__next__` method.
+:param start_byte: byte from which read will start.
+:param byte_range: how many bytes to read.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a7e763993bf630fea981e732acc7b237b}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a7e763993bf630fea981e732acc7b237b} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+ \texorpdfstring{$\vert$}{|} t.\+IO\+[bytes]\+}]{iterable}{, }\item[{int }]{start\+\_\+byte}{ = {\ttfamily 0}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{byte\+\_\+range}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a69a89f063735555b3083a3fb6693c4fc}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a69a89f063735555b3083a3fb6693c4fc} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper}{\+\_\+\+Range\+Wrapper}} werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_ac33294606c23b16bfa663d9d3820902c}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_ac33294606c23b16bfa663d9d3820902c} 
+ bytes werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a29a85da122ab42478d59bc2a90146e02}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_first\_iteration@{\_first\_iteration}}
+\index{\_first\_iteration@{\_first\_iteration}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_first\_iteration()}{\_first\_iteration()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a29a85da122ab42478d59bc2a90146e02} 
+ tuple\+[bytes \texorpdfstring{$\vert$}{|} None, int]\+ werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+first\+\_\+iteration (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a4fac50c07eceef542cbd5d1d318144df}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_next@{\_next}}
+\index{\_next@{\_next}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_next()}{\_next()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a4fac50c07eceef542cbd5d1d318144df} 
+ bytes werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+next (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a0acb58ebf36c431b4dc7cdd3c3118037}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!\_next\_chunk@{\_next\_chunk}}
+\index{\_next\_chunk@{\_next\_chunk}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{\_next\_chunk()}{\_next\_chunk()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a0acb58ebf36c431b4dc7cdd3c3118037} 
+ bytes werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+\_\+next\+\_\+chunk (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_aa1d0a3f6ef9cfd7f68fd651d1e0b830f}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!close@{close}}
+\index{close@{close}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_aa1d0a3f6ef9cfd7f68fd651d1e0b830f} 
+ None werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a9c13525cf96cfda80bd740b9ebdeec72}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!byte\_range@{byte\_range}}
+\index{byte\_range@{byte\_range}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{byte\_range}{byte\_range}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a9c13525cf96cfda80bd740b9ebdeec72} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+byte\+\_\+range = byte\+\_\+range}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a11a51d2b759ed4d4430a536a88192528}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!end\_byte@{end\_byte}}
+\index{end\_byte@{end\_byte}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{end\_byte}{end\_byte}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a11a51d2b759ed4d4430a536a88192528} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+end\+\_\+byte = None}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_ab9a8022e633d5e282988ae1facfea676}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!end\_reached@{end\_reached}}
+\index{end\_reached@{end\_reached}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{end\_reached}{end\_reached}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_ab9a8022e633d5e282988ae1facfea676} 
+bool werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+end\+\_\+reached = False}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!iterable@{iterable}}
+\index{iterable@{iterable}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{iterable}{iterable}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+iterable = iter(iterable)}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a073d036871572f695504f1fad170d791}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!read\_length@{read\_length}}
+\index{read\_length@{read\_length}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{read\_length}{read\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a073d036871572f695504f1fad170d791} 
+int werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+read\+\_\+length = 0}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2b182e55866e21744fa06711ef70e6d2}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!seekable@{seekable}}
+\index{seekable@{seekable}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{seekable}{seekable}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a2b182e55866e21744fa06711ef70e6d2} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+seekable = hasattr(\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper_aacf611df6b6aee05aa581a3b8bb67862}{iterable}}, "{}seekable"{}) and iterable.\+seekable()}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1___range_wrapper_a28a57d0222ef589fb731bbf07fa33555}\index{werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}!start\_byte@{start\_byte}}
+\index{start\_byte@{start\_byte}!werkzeug.wsgi.\_RangeWrapper@{werkzeug.wsgi.\_RangeWrapper}}
+\doxysubsubsection{\texorpdfstring{start\_byte}{start\_byte}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1___range_wrapper_a28a57d0222ef589fb731bbf07fa33555} 
+werkzeug.\+wsgi.\+\_\+\+Range\+Wrapper.\+start\+\_\+byte = start\+\_\+byte}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{wsgi_8py}{wsgi.\+py}}\end{DoxyCompactItemize}

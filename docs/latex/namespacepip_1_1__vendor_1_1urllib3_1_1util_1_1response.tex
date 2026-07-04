@@ -1,0 +1,57 @@
+\doxysection{pip.\+\_\+vendor.\+urllib3.\+util.\+response Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response}{}\label{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response}\index{pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_a33762a57a4106a0668ced93e0464b45b}{is\+\_\+fp\+\_\+closed}} (obj)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ab98def5b105c07bdb5845c1a0ad3f55b}{assert\+\_\+header\+\_\+parsing}} (headers)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ac6b625dccb11e74aceba4fb07c407293}{is\+\_\+response\+\_\+to\+\_\+head}} (response)
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ab98def5b105c07bdb5845c1a0ad3f55b}\index{pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}!assert\_header\_parsing@{assert\_header\_parsing}}
+\index{assert\_header\_parsing@{assert\_header\_parsing}!pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{assert\_header\_parsing()}{assert\_header\_parsing()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ab98def5b105c07bdb5845c1a0ad3f55b} 
+assert\+\_\+header\+\_\+parsing (\begin{DoxyParamCaption}\item[{}]{headers}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Asserts whether all headers have been successfully parsed.
+Extracts encountered errors from the result of parsing headers.
+
+Only works on Python 3.
+
+:param http.client.HTTPMessage headers: Headers to verify.
+
+:raises urllib3.exceptions.HeaderParsingError:
+    If parsing errors are found.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_a33762a57a4106a0668ced93e0464b45b}\index{pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}!is\_fp\_closed@{is\_fp\_closed}}
+\index{is\_fp\_closed@{is\_fp\_closed}!pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{is\_fp\_closed()}{is\_fp\_closed()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_a33762a57a4106a0668ced93e0464b45b} 
+is\+\_\+fp\+\_\+closed (\begin{DoxyParamCaption}\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks whether a given file-like object is closed.
+
+:param obj:
+    The file-like object to check.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ac6b625dccb11e74aceba4fb07c407293}\index{pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}!is\_response\_to\_head@{is\_response\_to\_head}}
+\index{is\_response\_to\_head@{is\_response\_to\_head}!pip.\_vendor.urllib3.util.response@{pip.\_vendor.urllib3.util.response}}
+\doxysubsubsection{\texorpdfstring{is\_response\_to\_head()}{is\_response\_to\_head()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1util_1_1response_ac6b625dccb11e74aceba4fb07c407293} 
+is\+\_\+response\+\_\+to\+\_\+head (\begin{DoxyParamCaption}\item[{}]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks whether the request of a response has been a HEAD-request.
+Handles the quirks of AppEngine.
+
+:param http.client.HTTPResponse response:
+    Response to check if the originating request
+    used 'HEAD' as a method.
+\end{DoxyVerb}
+ 

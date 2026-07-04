@@ -1,0 +1,148 @@
+\doxysection{flask.\+views.\+View Class Reference}
+\hypertarget{classflask_1_1views_1_1_view}{}\label{classflask_1_1views_1_1_view}\index{flask.views.View@{flask.views.View}}
+Inheritance diagram for flask.\+views.\+View:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1views_1_1_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+ft.\+Response\+Return\+Value \doxymbox{\hyperlink{classflask_1_1views_1_1_view_a1b66767c77882273999e9bedfeb444aa}{dispatch\+\_\+request}} (self)
+\item 
+ft.\+Route\+Callable \doxymbox{\hyperlink{classflask_1_1views_1_1_view_a9d6a012b3994be83e019711e2ef0d3ca}{as\+\_\+view}} (cls, str name, \texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1views_1_1_view_ac39f1bca192978404f2f47d0b8c38c73}{dispatch\+\_\+request}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_ad60f42849c8b0faf7c705d7b5e9ca852}{methods}} = None
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_a37709e8d353298b7ac04138fe59dd828}{provide\+\_\+automatic\+\_\+options}} = None
+\item 
+list \doxymbox{\hyperlink{classflask_1_1views_1_1_view_ad29bec70fad64d8e774e15e7e0da360e}{decorators}} = \+[$\,$]\+
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_afeac1f3682f5ce5665b97c4511ff5b3f}{init\+\_\+every\+\_\+request}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Subclass this class and override :meth:`dispatch_request` to
+create a generic class-based view. Call :meth:`as_view` to create a
+view function that creates an instance of the class with the given
+arguments and calls its ``dispatch_request`` method with any URL
+variables.
+
+See :doc:`views` for a detailed guide.
+
+.. code-block:: python
+
+    class Hello(View):
+        init_every_request = False
+
+        def dispatch_request(self, name):
+            return f"Hello, {name}!"
+
+    app.add_url_rule(
+        "/hello/<name>", view_func=Hello.as_view("hello")
+    )
+
+Set :attr:`methods` on the class to change what methods the view
+accepts.
+
+Set :attr:`decorators` on the class to apply a list of decorators to
+the generated view function. Decorators applied to the class itself
+will not be applied to the generated view function!
+
+Set :attr:`init_every_request` to ``False`` for efficiency, unless
+you need to store request-global data on ``self``.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1views_1_1_view_doc-func-members}
+\Hypertarget{classflask_1_1views_1_1_view_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1views_1_1_view_a9d6a012b3994be83e019711e2ef0d3ca}\index{flask.views.View@{flask.views.View}!as\_view@{as\_view}}
+\index{as\_view@{as\_view}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{as\_view()}{as\_view()}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_a9d6a012b3994be83e019711e2ef0d3ca} 
+ ft.\+Route\+Callable flask.\+views.\+View.\+as\+\_\+view (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{class\+\_\+args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{class\+\_\+kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the class into a view function that can be registered
+for a route.
+
+By default, the generated view will create a new instance of the
+view class for every request and call its
+:meth:`dispatch_request` method. If the view class sets
+:attr:`init_every_request` to ``False``, the same instance will
+be used for every request.
+
+Except for ``name``, all other arguments passed to this method
+are forwarded to the view class ``__init__`` method.
+
+.. versionchanged:: 2.2
+    Added the ``init_every_request`` class attribute.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1views_1_1_view_a1b66767c77882273999e9bedfeb444aa}\index{flask.views.View@{flask.views.View}!dispatch\_request@{dispatch\_request}}
+\index{dispatch\_request@{dispatch\_request}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{dispatch\_request()}{dispatch\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_a1b66767c77882273999e9bedfeb444aa} 
+ ft.\+Response\+Return\+Value flask.\+views.\+View.\+dispatch\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The actual view function behavior. Subclasses must override
+this and return a valid response. Any variables from the URL
+rule are passed as keyword arguments.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}{flask.\+views.\+Method\+View}}.
+
+
+
+\label{classflask_1_1views_1_1_view_doc-variable-members}
+\Hypertarget{classflask_1_1views_1_1_view_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1views_1_1_view_ad29bec70fad64d8e774e15e7e0da360e}\index{flask.views.View@{flask.views.View}!decorators@{decorators}}
+\index{decorators@{decorators}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{decorators}{decorators}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_ad29bec70fad64d8e774e15e7e0da360e} 
+list flask.\+views.\+View.\+decorators = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1views_1_1_view_ac39f1bca192978404f2f47d0b8c38c73}\index{flask.views.View@{flask.views.View}!dispatch\_request@{dispatch\_request}}
+\index{dispatch\_request@{dispatch\_request}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{dispatch\_request}{dispatch\_request}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_ac39f1bca192978404f2f47d0b8c38c73} 
+flask.\+views.\+View.\+dispatch\+\_\+request}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}{flask.\+views.\+Method\+View}}.
+
+\Hypertarget{classflask_1_1views_1_1_view_afeac1f3682f5ce5665b97c4511ff5b3f}\index{flask.views.View@{flask.views.View}!init\_every\_request@{init\_every\_request}}
+\index{init\_every\_request@{init\_every\_request}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{init\_every\_request}{init\_every\_request}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_afeac1f3682f5ce5665b97c4511ff5b3f} 
+t flask.\+views.\+View.\+init\+\_\+every\+\_\+request = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1views_1_1_view_ad60f42849c8b0faf7c705d7b5e9ca852}\index{flask.views.View@{flask.views.View}!methods@{methods}}
+\index{methods@{methods}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{methods}{methods}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_ad60f42849c8b0faf7c705d7b5e9ca852} 
+t flask.\+views.\+View.\+methods = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1views_1_1_view_a37709e8d353298b7ac04138fe59dd828}\index{flask.views.View@{flask.views.View}!provide\_automatic\_options@{provide\_automatic\_options}}
+\index{provide\_automatic\_options@{provide\_automatic\_options}!flask.views.View@{flask.views.View}}
+\doxysubsubsection{\texorpdfstring{provide\_automatic\_options}{provide\_automatic\_options}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_view_a37709e8d353298b7ac04138fe59dd828} 
+t flask.\+views.\+View.\+provide\+\_\+automatic\+\_\+options = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{views_8py}{views.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,26 @@
+var namespaceclick_1_1shell__completion =
+[
+    [ "CompletionItem", "classclick_1_1shell__completion_1_1_completion_item.html", "classclick_1_1shell__completion_1_1_completion_item" ],
+    [ "_SourceVarsDict", "classclick_1_1shell__completion_1_1___source_vars_dict.html", null ],
+    [ "ShellComplete", "classclick_1_1shell__completion_1_1_shell_complete.html", "classclick_1_1shell__completion_1_1_shell_complete" ],
+    [ "BashComplete", "classclick_1_1shell__completion_1_1_bash_complete.html", "classclick_1_1shell__completion_1_1_bash_complete" ],
+    [ "ZshComplete", "classclick_1_1shell__completion_1_1_zsh_complete.html", "classclick_1_1shell__completion_1_1_zsh_complete" ],
+    [ "FishComplete", "classclick_1_1shell__completion_1_1_fish_complete.html", "classclick_1_1shell__completion_1_1_fish_complete" ],
+    [ "_is_incomplete_argument", "namespaceclick_1_1shell__completion.html#a95c335cdf9a02230bd66a8f743fcb163", null ],
+    [ "_is_incomplete_option", "namespaceclick_1_1shell__completion.html#a6fa4119b317cfe5f7ff33bf3b370b91c", null ],
+    [ "_resolve_context", "namespaceclick_1_1shell__completion.html#a65bf3027aece456a1f8eef1f34296869", null ],
+    [ "_resolve_incomplete", "namespaceclick_1_1shell__completion.html#a9adba1b4b690e1c02139989ee1059b50", null ],
+    [ "_start_of_option", "namespaceclick_1_1shell__completion.html#ac311d4905619f2d43fa8c636fb56e475", null ],
+    [ "add_completion_class", "namespaceclick_1_1shell__completion.html#a310484ff03773c130f00ccf217bd1ae2", null ],
+    [ "get_completion_class", "namespaceclick_1_1shell__completion.html#a446d1cde211d887a96636bd91862407c", null ],
+    [ "get_completion_class", "namespaceclick_1_1shell__completion.html#a5245b1edf8f48488bed562e677e32091", null ],
+    [ "get_completion_class", "namespaceclick_1_1shell__completion.html#aed2c21eecbfcc12e73b854fa82f63f23", null ],
+    [ "get_completion_class", "namespaceclick_1_1shell__completion.html#aa038ff76bb32a312d6b14bdf1aee46da", null ],
+    [ "shell_complete", "namespaceclick_1_1shell__completion.html#a075749bb35926dd0a224fc11c2a4d467", null ],
+    [ "split_arg_string", "namespaceclick_1_1shell__completion.html#ae610dc6d9b119b12d3f247ba1d4dec30", null ],
+    [ "_ShellCompleteT", "namespaceclick_1_1shell__completion.html#a1634bc95364080e259d1a33d75acd360", null ],
+    [ "_SOURCE_BASH", "namespaceclick_1_1shell__completion.html#ac087cbd0f16e00df90d0aa1edc696a51", null ],
+    [ "_SOURCE_FISH", "namespaceclick_1_1shell__completion.html#af0454934aead57f6e51a31cbb4d0f971", null ],
+    [ "_SOURCE_ZSH", "namespaceclick_1_1shell__completion.html#a7c65c480f91551f63b995c282768c530", null ],
+    [ "_ValueT_co", "namespaceclick_1_1shell__completion.html#a868fdfe04683686efb563aa273817a0f", null ]
+];

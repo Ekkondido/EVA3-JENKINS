@@ -1,0 +1,52 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+click/\+utils.py File Reference}
+\hypertarget{click_2utils_8py}{}\label{click_2utils_8py}\index{venv/Lib/site-\/packages/click/utils.py@{venv/Lib/site-\/packages/click/utils.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file}{click.\+utils.\+Lazy\+File}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file}{click.\+utils.\+Keep\+Open\+File}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1utils_1_1_pacify_flush_wrapper}{click.\+utils.\+Pacify\+Flush\+Wrapper}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick}{click}}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick_1_1utils}{click.\+utils}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_aca3e329dc380a20cf999693906e321df}{click.\+utils.\+\_\+posixify}} (str name)
+\item 
+t.\+Callable\+[\doxymbox{\hyperlink{namespaceclick_1_1utils_a9acc89fb3987b5b811398a6a1ddd6444}{P}}, \doxymbox{\hyperlink{namespaceclick_1_1utils_a4e70f37a1935c62d343416498c5d74e6}{R}}\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{namespaceclick_1_1utils_a7aa39e1c3a5ae8e4c53b0a75c053ccb5}{click.\+utils.\+safecall}} (t.\+Callable\+[\doxymbox{\hyperlink{namespaceclick_1_1utils_a9acc89fb3987b5b811398a6a1ddd6444}{P}}, \doxymbox{\hyperlink{namespaceclick_1_1utils_a4e70f37a1935c62d343416498c5d74e6}{R}}]\+ func)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_a9a65d9b50b97a772ddcdb37a6a33b793}{click.\+utils.\+make\+\_\+str}} (t.\+Any value)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_a753c5ea8aa58652db60fc53f934fc09f}{click.\+utils.\+make\+\_\+default\+\_\+short\+\_\+help}} (str help, int max\+\_\+length=45)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1utils_a106f3eb1823ec67a9950d46d6a4234ff}{click.\+utils.\+echo}} (object message=None, t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None file=None, bool nl=True, bool err=False, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Binary\+IO \doxymbox{\hyperlink{namespaceclick_1_1utils_a37e191282ec1883c828cbd77b2d4546d}{click.\+utils.\+get\+\_\+binary\+\_\+stream}} (t.\+Literal\+["{}stdin"{}, "{}stdout"{}, "{}stderr"{}]\+ name)
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceclick_1_1utils_a2ed9532bc22b234d08705992659e77a0}{click.\+utils.\+get\+\_\+text\+\_\+stream}} (t.\+Literal\+["{}stdin"{}, "{}stdout"{}, "{}stderr"{}]\+ name, str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors="{}strict"{})
+\item 
+t.\+IO\+[t.\+Any]\+ \doxymbox{\hyperlink{namespaceclick_1_1utils_a5d46409609f91db6fba095f85cbf31da}{click.\+utils.\+open\+\_\+file}} (str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ filename, str mode="{}r"{}, str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors="{}strict"{}, bool lazy=False, bool atomic=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_ad0af54c5b60932ba8207c214cac8efae}{click.\+utils.\+format\+\_\+filename}} (str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[bytes]\+ filename, bool shorten=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_adadb8bef76fd1a96bf5901d43a5ff154}{click.\+utils.\+get\+\_\+app\+\_\+dir}} (str app\+\_\+name, bool roaming=True, bool force\+\_\+posix=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1utils_a5d9fce69ec9bb2e6faa749e667f32696}{click.\+utils.\+\_\+detect\+\_\+program\+\_\+name}} (str\texorpdfstring{$\vert$}{|}None path=None, Module\+Type\texorpdfstring{$\vert$}{|}None \+\_\+main=None)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{namespaceclick_1_1utils_aabba869b8ca7053c4bed5233ce657ebe}{click.\+utils.\+\_\+expand\+\_\+args}} (cabc.\+Iterable\+[str]\+ args, \texorpdfstring{$\ast$}{*}, bool user=True, bool env=True, bool glob\+\_\+recursive=True)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1utils_a9acc89fb3987b5b811398a6a1ddd6444}{click.\+utils.\+P}} = te.\+Param\+Spec("{}P"{})
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1utils_a4e70f37a1935c62d343416498c5d74e6}{click.\+utils.\+R}} = t.\+Type\+Var("{}R"{})
+\end{DoxyCompactItemize}

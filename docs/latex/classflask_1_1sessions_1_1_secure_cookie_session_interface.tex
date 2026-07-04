@@ -1,0 +1,154 @@
+\doxysection{flask.\+sessions.\+Secure\+Cookie\+Session\+Interface Class Reference}
+\hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface}{}\label{classflask_1_1sessions_1_1_secure_cookie_session_interface}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+Inheritance diagram for flask.\+sessions.\+Secure\+Cookie\+Session\+Interface:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1sessions_1_1_secure_cookie_session_interface}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_timed_serializer}{URLSafe\+Timed\+Serializer}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a5a60352df2adcfc187b4dfded8a33b00}{get\+\_\+signing\+\_\+serializer}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{Secure\+Cookie\+Session}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_ab09795349d7d7ee8abf5de17d86118fc}{open\+\_\+session}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} request)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a19e98e8edd739c35ac1fffdbe3dbc6ce}{save\+\_\+session}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} session, \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} response)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface}{flask.\+sessions.\+Session\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_null_session}{Null\+Session}} \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_aa07ccc8de6108a048b0b8695672226dc}{make\+\_\+null\+\_\+session}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a5cd8b16ff34fb29575140e8e0fe9fb82}{is\+\_\+null\+\_\+session}} (self, object obj)
+\item 
+str \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_af83db0a1a3071a0a9cc8e70cc4cc3850}{get\+\_\+cookie\+\_\+name}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a9207d2b3c9915cde983409c3834e2754}{get\+\_\+cookie\+\_\+domain}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+str \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a0550d35a971ec045f0a6d5e79279e4e2}{get\+\_\+cookie\+\_\+path}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a81f8b34705ffd2b1013222a754ee6183}{get\+\_\+cookie\+\_\+httponly}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a76361c3c58bd72b15d2fe2f7e04320e8}{get\+\_\+cookie\+\_\+secure}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a601372d1d6503d9af1ee2819aafc458d}{get\+\_\+cookie\+\_\+samesite}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_ac67cbbf2615efa652caa640f7acf0293}{get\+\_\+cookie\+\_\+partitioned}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app)
+\item 
+datetime\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_add881ba292c553dbabb3907b4b9e1380}{get\+\_\+expiration\+\_\+time}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} session)
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a62d80037058379ecd04d75dde71220b8}{should\+\_\+set\+\_\+cookie}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} session)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a7359f554504db0f987215067102adf5d}{salt}} = "{}cookie-\/session"{}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a88c25129cb76169a3069a48d7069f359}{digest\+\_\+method}} = staticmethod(\doxymbox{\hyperlink{namespaceflask_1_1sessions_a9020cdb227cf71ad272afad3114fb624}{\+\_\+lazy\+\_\+sha1}})
+\item 
+str \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a2a912c0c1259e16f617ba74cf6b84db1}{key\+\_\+derivation}} = "{}hmac"{}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_acc1c13afda649d8644bd3a4f47cf2e11}{serializer}} = \doxymbox{\hyperlink{namespaceflask_1_1sessions_a706984c946d82193cdb8fae96fff1ddd}{session\+\_\+json\+\_\+serializer}}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session_interface_a61eeb2001f4ed8de2892f56367a8241a}{session\+\_\+class}} = \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{Secure\+Cookie\+Session}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface}{flask.\+sessions.\+Session\+Interface}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a9bce187004bb38c8ad5ec63fc5eaad79}{null\+\_\+session\+\_\+class}} = \doxymbox{\hyperlink{classflask_1_1sessions_1_1_null_session}{Null\+Session}}
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a6b9a195f202efc7b51bf5f45f61539ee}{pickle\+\_\+based}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The default session interface that stores sessions in signed cookies
+through the :mod:`itsdangerous` module.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1sessions_1_1_secure_cookie_session_interface_doc-func-members}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a5a60352df2adcfc187b4dfded8a33b00}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!get\_signing\_serializer@{get\_signing\_serializer}}
+\index{get\_signing\_serializer@{get\_signing\_serializer}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{get\_signing\_serializer()}{get\_signing\_serializer()}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a5a60352df2adcfc187b4dfded8a33b00} 
+ \doxymbox{\hyperlink{classitsdangerous_1_1url__safe_1_1_u_r_l_safe_timed_serializer}{URLSafe\+Timed\+Serializer}} \texorpdfstring{$\vert$}{|} None flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+get\+\_\+signing\+\_\+serializer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_ab09795349d7d7ee8abf5de17d86118fc}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!open\_session@{open\_session}}
+\index{open\_session@{open\_session}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{open\_session()}{open\_session()}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_ab09795349d7d7ee8abf5de17d86118fc} 
+ \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{Secure\+Cookie\+Session}} \texorpdfstring{$\vert$}{|} None flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+open\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}}]{request}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is called at the beginning of each request, after
+pushing the request context, before matching the URL.
+
+This must return an object which implements a dictionary-like
+interface as well as the :class:`SessionMixin` interface.
+
+This will return ``None`` to indicate that loading failed in
+some way that is not immediately an error. The request
+context will fall back to using :meth:`make_null_session`
+in this case.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a2e14f75f97ea4a62e19127b8b299972d}{flask.\+sessions.\+Session\+Interface}}.
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a19e98e8edd739c35ac1fffdbe3dbc6ce}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!save\_session@{save\_session}}
+\index{save\_session@{save\_session}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{save\_session()}{save\_session()}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a19e98e8edd739c35ac1fffdbe3dbc6ce} 
+ None flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+save\+\_\+session (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}}]{session}{, }\item[{\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}}     }]{response}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is called at the end of each request, after generating
+a response, before removing the request context. It is skipped
+if :meth:`is_null_session` returns ``True``.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_interface_a3b011822824da7b62f46145703ff64cf}{flask.\+sessions.\+Session\+Interface}}.
+
+
+
+\label{classflask_1_1sessions_1_1_secure_cookie_session_interface_doc-variable-members}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a88c25129cb76169a3069a48d7069f359}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!digest\_method@{digest\_method}}
+\index{digest\_method@{digest\_method}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{digest\_method}{digest\_method}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a88c25129cb76169a3069a48d7069f359} 
+flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+digest\+\_\+method = staticmethod(\doxymbox{\hyperlink{namespaceflask_1_1sessions_a9020cdb227cf71ad272afad3114fb624}{\+\_\+lazy\+\_\+sha1}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a2a912c0c1259e16f617ba74cf6b84db1}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!key\_derivation@{key\_derivation}}
+\index{key\_derivation@{key\_derivation}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{key\_derivation}{key\_derivation}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a2a912c0c1259e16f617ba74cf6b84db1} 
+str flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+key\+\_\+derivation = "{}hmac"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a7359f554504db0f987215067102adf5d}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!salt@{salt}}
+\index{salt@{salt}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{salt}{salt}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a7359f554504db0f987215067102adf5d} 
+str flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+salt = "{}cookie-\/session"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_acc1c13afda649d8644bd3a4f47cf2e11}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!serializer@{serializer}}
+\index{serializer@{serializer}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{serializer}{serializer}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_acc1c13afda649d8644bd3a4f47cf2e11} 
+flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+serializer = \doxymbox{\hyperlink{namespaceflask_1_1sessions_a706984c946d82193cdb8fae96fff1ddd}{session\+\_\+json\+\_\+serializer}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1sessions_1_1_secure_cookie_session_interface_a61eeb2001f4ed8de2892f56367a8241a}\index{flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}!session\_class@{session\_class}}
+\index{session\_class@{session\_class}!flask.sessions.SecureCookieSessionInterface@{flask.sessions.SecureCookieSessionInterface}}
+\doxysubsubsection{\texorpdfstring{session\_class}{session\_class}}
+{\footnotesize\ttfamily \label{classflask_1_1sessions_1_1_secure_cookie_session_interface_a61eeb2001f4ed8de2892f56367a8241a} 
+flask.\+sessions.\+Secure\+Cookie\+Session\+Interface.\+session\+\_\+class = \doxymbox{\hyperlink{classflask_1_1sessions_1_1_secure_cookie_session}{Secure\+Cookie\+Session}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{flask_2sessions_8py}{sessions.\+py}}\end{DoxyCompactItemize}

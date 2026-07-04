@@ -1,0 +1,673 @@
+\doxysection{werkzeug.\+datastructures.\+headers.\+Headers Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{}\label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+Inheritance diagram for werkzeug.\+datastructures.\+headers.\+Headers:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab32298d5477c9c4ed3b010a203898b84}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self,(\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}cabc.\+Mapping\+[str, t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}{set}}\+[t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None) defaults=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adb5824502f360bac45dedddc227d4bbd}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, str key)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa0fe1f5b58cb362311f0f348bce8d279}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int key)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a85648a211837703a34c5d73b45c83e6d}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, slice key)
+\item 
+str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+\texorpdfstring{$\vert$}{|}te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a54d14b55bf717ff9fd8fbe6f139e6e28}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}slice key)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad6966853e0beef0baab0818f693164ef}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_affd2104b2817423b42b6a7ebb7a1a64c}{get}} (self, str key)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a121d3b314b1e98b4125dd86cb9d0f432}{get}} (self, str key, str default)
+\item 
+str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60594f187ade0b4e6f253b10802d1fcd}{get}} (self, str key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} default)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6950c6b0d7e7967a70c863d6a9c334d4}{get}} (self, str key, cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ type)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adf15cbe646faf99f429fa86dc6773e9a}{get}} (self, str key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} default, cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ type)
+\item 
+str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a98d826198dfad247ba0a15e43d29c3f4}{get}} (self, str key, str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}\texorpdfstring{$\vert$}{|}None default=None, cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+\texorpdfstring{$\vert$}{|}None type=None)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aeeac65f54efbaa75c0cfeedec54a9fab}{getlist}} (self, str key)
+\item 
+list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acbf342bf0cc77a9eb373ecbaf2be9c67}{getlist}} (self, str key, cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ type)
+\item 
+list\+[str]\+\texorpdfstring{$\vert$}{|}list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab761b7ba8f3a30b432de7afc08b49088}{getlist}} (self, str key, cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+\texorpdfstring{$\vert$}{|}None type=None)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad7c6f4efc29da13c251daa0fb7d56164}{get\+\_\+all}} (self, str name)
+\item 
+t.\+Iterable\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ae8715ea9b68f597ad421c2181113356b}{items}} (self, bool lower=False)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a4c9ea813cafc455d3e4addc38a2a4954}{keys}} (self, bool lower=False)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a10919491148c2fbfb95870735edf1c42}{values}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a2dbf118b092e177053dfc7c57fba5e64}{extend}} (self,(\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}cabc.\+Mapping\+[str, t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}{set}}\+[t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None) arg=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a5ad2570cdf957316865e07c9f51722a2}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}slice key)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_afe444720c1a9240db4e709a6e8cfd837}{remove}} (self, str key)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a0bc183da16920d6ded5563e56062c634}{pop}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a07abd823d40f7aa0b081f96757dff1ae}{pop}} (self, str key)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad1539a6e6ce00f2c501f387d862aeba8}{pop}} (self, int\texorpdfstring{$\vert$}{|}None key=...)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8482f6fa089f97f2d1bcbdd2af449b3f}{pop}} (self, str key, str default)
+\item 
+str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa89dcc02656bfdff13ec884927092c39}{pop}} (self, str key, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} default)
+\item 
+str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a458c9f0f7fa2391378e953d2a60417d4}{pop}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}None key=None, str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} default=\+\_\+missing)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a71cc260d437462f811de8985f4ba7b08}{popitem}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a36024e9a370eb8b02136dc34b8b526f4}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, str key)
+\item 
+t.\+Iterator\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af1fa6d3b35c8652dcd74fb7d1886693f}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a578222abb1d826ebd2a2ec219bdc2a09}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a82faba05c9faec2c2a3b431452a9d451}{add}} (self, str key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac5ed74f8de2c7c447925ec6e94e5ad0e}{add\+\_\+header}} (self, str key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a200d19c9d4775aa96f202e50521a2464}{clear}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}{set}} (self, str key, t.\+Any value, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac0bd669da2e02a4ba40aaf1a9e61260d}{setlist}} (self, str key, cabc.\+Iterable\+[t.\+Any]\+ values)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ade2d6c823d3e92e56766772c704ed263}{setdefault}} (self, str key, t.\+Any default)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6d197ec61111a9a40c1fea9372616bda}{setlistdefault}} (self, str key, cabc.\+Iterable\+[t.\+Any]\+ default)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a64ee39a9ae09058a4eb64f18e941ab5d}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, str key, t.\+Any value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a479616d77524d2099b5f90c5a053a2d4}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, int key, tuple\+[str, t.\+Any]\+ value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af9804433721baa923494ed25442b86a6}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, slice key, cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+ value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60e4bc775a55583e3ac2be6d2f246893}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}slice key, t.\+Any\texorpdfstring{$\vert$}{|}tuple\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+ value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a7c0995b652d69b3b61d6724ffcb88d7d}{update}} (self,(\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}cabc.\+Mapping\+[str, t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}cabc.\+Set\+[t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None) arg=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}cabc.\+Set\+[t.\+Any]\+ kwargs)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a81ea2b8feac1797b4122f655b32fa131}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, cabc.\+Mapping\+[str, t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}cabc.\+Set\+[t.\+Any]\+]\+ other)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8e5860f4e59cd25769193229c2a703d0}{\+\_\+\+\_\+ior\+\_\+\+\_\+}} (self,(cabc.\+Mapping\+[str, t.\+Any\texorpdfstring{$\vert$}{|}list\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}tuple\+[t.\+Any,...]\+\texorpdfstring{$\vert$}{|}cabc.\+Set\+[t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+) other)
+\item 
+list\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acac3eb56c871235de3b55fae41d4c4ab}{to\+\_\+wsgi\+\_\+list}} (self)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a1aed7e0b9ee8d919841acd7a9b6022b9}{copy}} (self)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a14f9975005f7ec773870d7629d4ec5a8}{\+\_\+\+\_\+copy\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a73fff530de58b810bd08169f8e40968b}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a84890d55f428c248fedbf7cd677fdbcc}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aff4bb4465e0ae0988ad0f90d4beee1b4}{\+\_\+get\+\_\+key}} (self, str key)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac95232cb2adfb14d0eb5ada25713da73}{\+\_\+del\+\_\+key}} (self, str key)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab69dcca017166e3a8cd41c6d606d08a0}{\+\_\+list}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An object that stores some headers. It has a dict-like interface,
+but is ordered, can store the same key multiple times, and iterating
+yields ``(key, value)`` pairs instead of only keys.
+
+This data structure is useful if you want a nicer way to handle WSGI
+headers which are stored as tuples in a list.
+
+From Werkzeug 0.3 onwards, the :exc:`KeyError` raised by this class is
+also a subclass of the :class:`~exceptions.BadRequest` HTTP exception
+and will render a page for a ``400 BAD REQUEST`` if caught in a
+catch-all for HTTP exceptions.
+
+Headers is mostly compatible with the Python :class:`wsgiref.headers.Headers`
+class, with the exception of `__getitem__`.  :mod:`wsgiref` will return
+`None` for ``headers['missing']``, whereas :class:`Headers` will raise
+a :class:`KeyError`.
+
+To create a new ``Headers`` object, pass it a list, dict, or
+other ``Headers`` object with default values. These values are
+validated the same way values added later are.
+
+:param defaults: The list of default values for the :class:`Headers`.
+
+.. versionchanged:: 3.1
+    Implement ``|`` and ``|=`` operators.
+
+.. versionchanged:: 2.1.0
+    Default values are validated the same as values added later.
+
+.. versionchanged:: 0.9
+   This data structure now stores unicode values similar to how the
+   multi dicts do it.  The main difference is that bytes can be set as
+   well which will automatically be latin1 decoded.
+
+.. versionchanged:: 0.9
+   The :meth:`linked` function was removed without replacement as it
+   was an API that does not support the changes to the encoding model.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab32298d5477c9c4ed3b010a203898b84}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab32298d5477c9c4ed3b010a203898b84} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}             \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+             \texorpdfstring{$\vert$}{|} cabc.\+Mapping\+[str, t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}{set}}\+[t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} None         ) }]{defaults}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a36024e9a370eb8b02136dc34b8b526f4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a36024e9a370eb8b02136dc34b8b526f4} 
+ bool werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if a key is present.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a14f9975005f7ec773870d7629d4ec5a8}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_copy\_\_@{\_\_copy\_\_}}
+\index{\_\_copy\_\_@{\_\_copy\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_copy\_\_()}{\_\_copy\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a14f9975005f7ec773870d7629d4ec5a8} 
+ te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+copy\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a5ad2570cdf957316865e07c9f51722a2}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a5ad2570cdf957316865e07c9f51722a2} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} slice}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad6966853e0beef0baab0818f693164ef}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad6966853e0beef0baab0818f693164ef} 
+ bool werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa0fe1f5b58cb362311f0f348bce8d279}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa0fe1f5b58cb362311f0f348bce8d279} 
+ tuple\+[str, str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a85648a211837703a34c5d73b45c83e6d}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a85648a211837703a34c5d73b45c83e6d} 
+ te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{slice}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adb5824502f360bac45dedddc227d4bbd}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adb5824502f360bac45dedddc227d4bbd} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a54d14b55bf717ff9fd8fbe6f139e6e28}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a54d14b55bf717ff9fd8fbe6f139e6e28} 
+ str \texorpdfstring{$\vert$}{|} tuple\+[str, str]\+ \texorpdfstring{$\vert$}{|} te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} slice}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8e5860f4e59cd25769193229c2a703d0}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_ior\_\_@{\_\_ior\_\_}}
+\index{\_\_ior\_\_@{\_\_ior\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_ior\_\_()}{\_\_ior\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8e5860f4e59cd25769193229c2a703d0} 
+ te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+ior\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             cabc.\+Mapping\+[str, t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} cabc.\+Set\+[t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+         )}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af1fa6d3b35c8652dcd74fb7d1886693f}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af1fa6d3b35c8652dcd74fb7d1886693f} 
+ t.\+Iterator\+[tuple\+[str, str]\+]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Yield ``(key, value)`` tuples.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a578222abb1d826ebd2a2ec219bdc2a09}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a578222abb1d826ebd2a2ec219bdc2a09} 
+ int werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a81ea2b8feac1797b4122f655b32fa131}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_or\_\_@{\_\_or\_\_}}
+\index{\_\_or\_\_@{\_\_or\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_or\_\_()}{\_\_or\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a81ea2b8feac1797b4122f655b32fa131} 
+ te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+or\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Mapping\+[             str, t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} cabc.\+Set\+[t.\+Any]\+         ]\+}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a84890d55f428c248fedbf7cd677fdbcc}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a84890d55f428c248fedbf7cd677fdbcc} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a479616d77524d2099b5f90c5a053a2d4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a479616d77524d2099b5f90c5a053a2d4} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{, }\item[{tuple\+[str, t.\+Any]\+}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af9804433721baa923494ed25442b86a6}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_af9804433721baa923494ed25442b86a6} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{slice}]{key}{, }\item[{cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+     }]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a64ee39a9ae09058a4eb64f18e941ab5d}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a64ee39a9ae09058a4eb64f18e941ab5d} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60e4bc775a55583e3ac2be6d2f246893}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60e4bc775a55583e3ac2be6d2f246893} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} slice}]{key}{, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} tuple\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`set` but also supports index/slice based setting.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a73fff530de58b810bd08169f8e40968b}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a73fff530de58b810bd08169f8e40968b} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns formatted headers suitable for HTTP transmission.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac95232cb2adfb14d0eb5ada25713da73}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_del\_key@{\_del\_key}}
+\index{\_del\_key@{\_del\_key}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_del\_key()}{\_del\_key()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac95232cb2adfb14d0eb5ada25713da73} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+del\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aff4bb4465e0ae0988ad0f90d4beee1b4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_get\_key@{\_get\_key}}
+\index{\_get\_key@{\_get\_key}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_get\_key()}{\_get\_key()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aff4bb4465e0ae0988ad0f90d4beee1b4} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+get\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_environ_headers_a1545ac05bf614e2664fcdeff5ed581ea}{werkzeug.\+datastructures.\+headers.\+Environ\+Headers}}.
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a82faba05c9faec2c2a3b431452a9d451}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!add@{add}}
+\index{add@{add}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a82faba05c9faec2c2a3b431452a9d451} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new header tuple to the list.
+
+Keyword arguments can specify additional parameters for the header
+value, with underscores converted to dashes::
+
+>>> d = Headers()
+>>> d.add('Content-Type', 'text/plain')
+>>> d.add('Content-Disposition', 'attachment', filename='foo.png')
+
+The keyword argument dumping uses :func:`dump_options_header`
+behind the scenes.
+
+.. versionchanged:: 0.4.1
+    keyword arguments were added for :mod:`wsgiref` compatibility.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac5ed74f8de2c7c447925ec6e94e5ad0e}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!add\_header@{add\_header}}
+\index{add\_header@{add\_header}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{add\_header()}{add\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac5ed74f8de2c7c447925ec6e94e5ad0e} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+add\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Add a new header tuple to the list.
+
+An alias for :meth:`add` for compatibility with the :mod:`wsgiref`
+:meth:`~wsgiref.headers.Headers.add_header` method.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a200d19c9d4775aa96f202e50521a2464}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!clear@{clear}}
+\index{clear@{clear}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a200d19c9d4775aa96f202e50521a2464} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clears all headers.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a1aed7e0b9ee8d919841acd7a9b6022b9}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!copy@{copy}}
+\index{copy@{copy}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a1aed7e0b9ee8d919841acd7a9b6022b9} 
+ te.\+Self werkzeug.\+datastructures.\+headers.\+Headers.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_environ_headers_a8b2f6bfe4e8c6a5caceb5751c33f30c4}{werkzeug.\+datastructures.\+headers.\+Environ\+Headers}}.
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a2dbf118b092e177053dfc7c57fba5e64}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!extend@{extend}}
+\index{extend@{extend}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{extend()}{extend()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a2dbf118b092e177053dfc7c57fba5e64} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+extend (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}             \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+             \texorpdfstring{$\vert$}{|} cabc.\+Mapping\+[str, t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}{set}}\+[t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} None         ) }]{arg}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}str}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Extend headers in this object with items from another object
+containing header items as well as keyword arguments.
+
+To replace existing keys instead of extending, use
+:meth:`update` instead.
+
+If provided, the first argument can be another :class:`Headers`
+object, a :class:`MultiDict`, :class:`dict`, or iterable of
+pairs.
+
+.. versionchanged:: 1.0
+    Support :class:`MultiDict`. Allow passing ``kwargs``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_affd2104b2817423b42b6a7ebb7a1a64c}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_affd2104b2817423b42b6a7ebb7a1a64c} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6950c6b0d7e7967a70c863d6a9c334d4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6950c6b0d7e7967a70c863d6a9c334d4} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+}]{type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a121d3b314b1e98b4125dd86cb9d0f432}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a121d3b314b1e98b4125dd86cb9d0f432} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a98d826198dfad247ba0a15e43d29c3f4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a98d826198dfad247ba0a15e43d29c3f4} 
+ str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} \texorpdfstring{$\vert$}{|} None }]{default}{ = {\ttfamily None}, }\item[{cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ \texorpdfstring{$\vert$}{|} None }]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the default value if the requested data doesn't exist.
+If `type` is provided and is a callable it should convert the value,
+return it or raise a :exc:`ValueError` if that is not possible.  In
+this case the function will return the default as if the value was not
+found:
+
+>>> d = Headers([('Content-Length', '42')])
+>>> d.get('Content-Length', type=int)
+42
+
+:param key: The key to be looked up.
+:param default: The default value to be returned if the key can't
+                be looked up.  If not further specified `None` is
+                returned.
+:param type: A callable that is used to cast the value in the
+             :class:`Headers`.  If a :exc:`ValueError` is raised
+             by this callable the default value is returned.
+
+.. versionchanged:: 3.0
+    The ``as_bytes`` parameter was removed.
+
+.. versionchanged:: 0.9
+    The ``as_bytes`` parameter was added.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60594f187ade0b4e6f253b10802d1fcd}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a60594f187ade0b4e6f253b10802d1fcd} 
+ str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adf15cbe646faf99f429fa86dc6773e9a}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get@{get}}
+\index{get@{get}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_adf15cbe646faf99f429fa86dc6773e9a} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} werkzeug.\+datastructures.\+headers.\+Headers.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}}]{default}{, }\item[{cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+}]{type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad7c6f4efc29da13c251daa0fb7d56164}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!get\_all@{get\_all}}
+\index{get\_all@{get\_all}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{get\_all()}{get\_all()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad7c6f4efc29da13c251daa0fb7d56164} 
+ list\+[str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+get\+\_\+all (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of all the values for the named field.
+
+This method is compatible with the :mod:`wsgiref`
+:meth:`~wsgiref.headers.Headers.get_all` method.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aeeac65f54efbaa75c0cfeedec54a9fab}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!getlist@{getlist}}
+\index{getlist@{getlist}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{getlist()}{getlist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aeeac65f54efbaa75c0cfeedec54a9fab} 
+ list\+[str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+getlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acbf342bf0cc77a9eb373ecbaf2be9c67}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!getlist@{getlist}}
+\index{getlist@{getlist}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{getlist()}{getlist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acbf342bf0cc77a9eb373ecbaf2be9c67} 
+ list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+getlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+}]{type}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab761b7ba8f3a30b432de7afc08b49088}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!getlist@{getlist}}
+\index{getlist@{getlist}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{getlist()}{getlist()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab761b7ba8f3a30b432de7afc08b49088} 
+ list\+[str]\+ \texorpdfstring{$\vert$}{|} list\+[\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+getlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{cabc.\+Callable\+[\+[str]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}]\+ \texorpdfstring{$\vert$}{|} None }]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the list of items for a given key. If that key is not in the
+:class:`Headers`, the return value will be an empty list.  Just like
+:meth:`get`, :meth:`getlist` accepts a `type` parameter.  All items will
+be converted with the callable defined there.
+
+:param key: The key to be looked up.
+:param type: A callable that is used to cast the value in the
+             :class:`Headers`.  If a :exc:`ValueError` is raised
+             by this callable the value will be removed from the list.
+:return: a :class:`list` of all the values for the key.
+
+.. versionchanged:: 3.0
+    The ``as_bytes`` parameter was removed.
+
+.. versionchanged:: 0.9
+    The ``as_bytes`` parameter was added.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ae8715ea9b68f597ad421c2181113356b}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!items@{items}}
+\index{items@{items}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{items()}{items()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ae8715ea9b68f597ad421c2181113356b} 
+ t.\+Iterable\+[tuple\+[str, str]\+]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+items (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{lower}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a4c9ea813cafc455d3e4addc38a2a4954}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!keys@{keys}}
+\index{keys@{keys}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{keys()}{keys()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a4c9ea813cafc455d3e4addc38a2a4954} 
+ t.\+Iterable\+[str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+keys (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{lower}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a0bc183da16920d6ded5563e56062c634}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [1/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a0bc183da16920d6ded5563e56062c634} 
+ tuple\+[str, str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad1539a6e6ce00f2c501f387d862aeba8}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [2/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ad1539a6e6ce00f2c501f387d862aeba8} 
+ tuple\+[str, str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{key}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a07abd823d40f7aa0b081f96757dff1ae}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [3/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a07abd823d40f7aa0b081f96757dff1ae} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8482f6fa089f97f2d1bcbdd2af449b3f}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [4/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a8482f6fa089f97f2d1bcbdd2af449b3f} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{str}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa89dcc02656bfdff13ec884927092c39}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [5/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_aa89dcc02656bfdff13ec884927092c39} 
+ str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}}}]{default}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a458c9f0f7fa2391378e953d2a60417d4}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!pop@{pop}}
+\index{pop@{pop}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}\hspace{0.1cm}{\footnotesize\ttfamily [6/6]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a458c9f0f7fa2391378e953d2a60417d4} 
+ str \texorpdfstring{$\vert$}{|} tuple\+[str, str]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} werkzeug.\+datastructures.\+headers.\+Headers.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} None }]{key}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacewerkzeug_1_1datastructures_1_1headers_a063a193390ed7f9dae7f3e8704eaba6e}{T}} }]{default}{ = {\ttfamily \+\_\+missing}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes and returns a key or index.
+
+:param key: The key to be popped.  If this is an integer the item at
+            that position is removed, if it's a string the value for
+            that key is.  If the key is omitted or `None` the last
+            item is removed.
+:return: an item.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a71cc260d437462f811de8985f4ba7b08}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!popitem@{popitem}}
+\index{popitem@{popitem}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{popitem()}{popitem()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a71cc260d437462f811de8985f4ba7b08} 
+ tuple\+[str, str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+popitem (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes a key or index and returns a (key, value) item.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_afe444720c1a9240db4e709a6e8cfd837}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!remove@{remove}}
+\index{remove@{remove}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_afe444720c1a9240db4e709a6e8cfd837} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove a key.
+
+:param key: The key to be removed.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!set@{set}}
+\index{set@{set}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a3f20637c3396938984b089def2c43914} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove all header tuples for `key` and add a new one.  The newly
+added key either appears at the end of the list if there was no
+entry or replaces the first one.
+
+Keyword arguments can specify additional parameters for the header
+value, with underscores converted to dashes.  See :meth:`add` for
+more information.
+
+.. versionchanged:: 0.6.1
+   :meth:`set` now accepts the same arguments as :meth:`add`.
+
+:param key: The key to be inserted.
+:param value: The value to be inserted.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ade2d6c823d3e92e56766772c704ed263}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!setdefault@{setdefault}}
+\index{setdefault@{setdefault}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{setdefault()}{setdefault()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ade2d6c823d3e92e56766772c704ed263} 
+ str werkzeug.\+datastructures.\+headers.\+Headers.\+setdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{t.\+Any}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the first value for the key if it is in the headers,
+otherwise set the header to the value given by ``default`` and
+return that.
+
+:param key: The header key to get.
+:param default: The value to set for the key if it is not in the
+    headers.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac0bd669da2e02a4ba40aaf1a9e61260d}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!setlist@{setlist}}
+\index{setlist@{setlist}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{setlist()}{setlist()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ac0bd669da2e02a4ba40aaf1a9e61260d} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+setlist (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{cabc.\+Iterable\+[t.\+Any]\+}]{values}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Remove any existing values for a header and add new ones.
+
+:param key: The header key to set.
+:param values: An iterable of values to set for the key.
+
+.. versionadded:: 1.0
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6d197ec61111a9a40c1fea9372616bda}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!setlistdefault@{setlistdefault}}
+\index{setlistdefault@{setlistdefault}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{setlistdefault()}{setlistdefault()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a6d197ec61111a9a40c1fea9372616bda} 
+ list\+[str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+setlistdefault (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{key}{, }\item[{cabc.\+Iterable\+[t.\+Any]\+}]{default}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the list of values for the key if it is in the
+headers, otherwise set the header to the list of values given
+by ``default`` and return that.
+
+Unlike :meth:`MultiDict.setlistdefault`, modifying the returned
+list will not affect the headers.
+
+:param key: The header key to get.
+:param default: An iterable of values to set for the key if it
+    is not in the headers.
+
+.. versionadded:: 1.0
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acac3eb56c871235de3b55fae41d4c4ab}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!to\_wsgi\_list@{to\_wsgi\_list}}
+\index{to\_wsgi\_list@{to\_wsgi\_list}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{to\_wsgi\_list()}{to\_wsgi\_list()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_acac3eb56c871235de3b55fae41d4c4ab} 
+ list\+[tuple\+[str, str]\+]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+to\+\_\+wsgi\+\_\+list (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the headers into a list suitable for WSGI.
+
+:return: list
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a7c0995b652d69b3b61d6724ffcb88d7d}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!update@{update}}
+\index{update@{update}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a7c0995b652d69b3b61d6724ffcb88d7d} 
+ None werkzeug.\+datastructures.\+headers.\+Headers.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1headers_1_1_headers}{Headers}}             \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+             \texorpdfstring{$\vert$}{|} cabc.\+Mapping\+[                 str, t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} cabc.\+Set\+[t.\+Any]\+             ]\+             \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[tuple\+[str, t.\+Any]\+]\+             \texorpdfstring{$\vert$}{|} None         ) }]{arg}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any \texorpdfstring{$\vert$}{|} list\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} tuple\+[t.\+Any, ...]\+ \texorpdfstring{$\vert$}{|} cabc.\+Set\+[t.\+Any]\+}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Replace headers in this object with items from another
+headers object and keyword arguments.
+
+To extend existing keys instead of replacing, use :meth:`extend`
+instead.
+
+If provided, the first argument can be another :class:`Headers`
+object, a :class:`MultiDict`, :class:`dict`, or iterable of
+pairs.
+
+.. versionadded:: 1.0
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a10919491148c2fbfb95870735edf1c42}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!values@{values}}
+\index{values@{values}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{values()}{values()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_a10919491148c2fbfb95870735edf1c42} 
+ t.\+Iterable\+[str]\+ werkzeug.\+datastructures.\+headers.\+Headers.\+values (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab69dcca017166e3a8cd41c6d606d08a0}\index{werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}!\_list@{\_list}}
+\index{\_list@{\_list}!werkzeug.datastructures.headers.Headers@{werkzeug.datastructures.headers.Headers}}
+\doxysubsubsection{\texorpdfstring{\_list}{\_list}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1headers_1_1_headers_ab69dcca017166e3a8cd41c6d606d08a0} 
+werkzeug.\+datastructures.\+headers.\+Headers.\+\_\+list = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{headers_8py}{headers.\+py}}\end{DoxyCompactItemize}

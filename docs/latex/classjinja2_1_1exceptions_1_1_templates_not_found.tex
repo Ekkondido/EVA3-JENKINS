@@ -1,0 +1,64 @@
+\doxysection{jinja2.\+exceptions.\+Templates\+Not\+Found Class Reference}
+\hypertarget{classjinja2_1_1exceptions_1_1_templates_not_found}{}\label{classjinja2_1_1exceptions_1_1_templates_not_found}\index{jinja2.exceptions.TemplatesNotFound@{jinja2.exceptions.TemplatesNotFound}}
+Inheritance diagram for jinja2.\+exceptions.\+Templates\+Not\+Found:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.260553cm]{classjinja2_1_1exceptions_1_1_templates_not_found}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_templates_not_found_a2febeefce8cad8871c2bcdfbebec83c0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Sequence\+[t.\+Union\+[str, "{}Undefined"{}]\+]\+ names=(), t.\+Optional\+[str]\+ message=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found}{jinja2.\+exceptions.\+Template\+Not\+Found}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found_aa226a0e205f7ecd0f63f169f4aec939b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\+[t.\+Union\+[str, "{}Undefined"{}]\+]\+ name, t.\+Optional\+[str]\+ message=None)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found_a6996bb7b8035b47f5f21fba3cc81faa3}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_error}{jinja2.\+exceptions.\+Template\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_error_a252c198da451fc39cf6576c9eecf123d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Optional\+[str]\+ message=None)
+\item 
+t.\+Optional\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_error_a2fed2e7d4d1c147bad36a5c4961916f9}{message}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found}{jinja2.\+exceptions.\+Template\+Not\+Found}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found_a8d68077aea9beec806cd9ab4756491be}{name}} = name
+\item 
+list \doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found_a630ccb1c89d7b73d5b1cce15202bbc60}{templates}} = \+[\doxymbox{\hyperlink{classjinja2_1_1exceptions_1_1_template_not_found_a8d68077aea9beec806cd9ab4756491be}{name}}]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Like :class:`TemplateNotFound` but raised if multiple templates
+are selected.  This is a subclass of :class:`TemplateNotFound`
+exception, so just catching the base exception will catch both.
+
+.. versionchanged:: 2.11
+    If a name in the list of names is :class:`Undefined`, a message
+    about it being undefined is shown rather than the empty string.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ 
+
+\label{classjinja2_1_1exceptions_1_1_templates_not_found_doc-constructors}
+\Hypertarget{classjinja2_1_1exceptions_1_1_templates_not_found_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classjinja2_1_1exceptions_1_1_templates_not_found_a2febeefce8cad8871c2bcdfbebec83c0}\index{jinja2.exceptions.TemplatesNotFound@{jinja2.exceptions.TemplatesNotFound}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!jinja2.exceptions.TemplatesNotFound@{jinja2.exceptions.TemplatesNotFound}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1exceptions_1_1_templates_not_found_a2febeefce8cad8871c2bcdfbebec83c0} 
+ None jinja2.\+exceptions.\+Templates\+Not\+Found.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Sequence\+[t.\+Union\+[str, "{}Undefined"{}]\+]\+ }]{names}{ = {\ttfamily ()}, }\item[{t.\+Optional\+[str]\+ }]{message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+jinja2/\+\doxymbox{\hyperlink{jinja2_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

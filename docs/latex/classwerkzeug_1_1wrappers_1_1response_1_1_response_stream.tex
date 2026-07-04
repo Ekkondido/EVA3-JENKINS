@@ -1,0 +1,126 @@
+\doxysection{werkzeug.\+wrappers.\+response.\+Response\+Stream Class Reference}
+\hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}{}\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a83a16f3d6ba0a086e326d3f5fba07afb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} response)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a576d08bcf984dea5b71259bfefb89963}{write}} (self, bytes value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a2dd897db1556cc795f3906363ace294b}{writelines}} (self, t.\+Iterable\+[bytes]\+ seq)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_af95dea3bf29ce6482316d95a0820909b}{close}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a50a5af3d9432ce052e94c1ca84c09dcb}{flush}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a3df202959d951cb74600622af47a3e65}{isatty}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_afe3359c12b3ba435d9205212f418ea9e}{tell}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a5ee458a14f9c5e7856002b18692439cd}{encoding}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_ad21979d62f0ca1ea452a355ed60a0132}{response}} = response
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a8bd943e136d27701198514707314afd2}{closed}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a6098ca43c4f2e5172362210c4aace501}{mode}} = "{}wb+"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A file descriptor like object used by :meth:`Response.stream` to
+represent the body of the stream. It directly pushes into the
+response iterable of the response object.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a83a16f3d6ba0a086e326d3f5fba07afb}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a83a16f3d6ba0a086e326d3f5fba07afb} 
+werkzeug.\+wrappers.\+response.\+Response\+Stream.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}}}]{response}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_af95dea3bf29ce6482316d95a0820909b}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!close@{close}}
+\index{close@{close}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_af95dea3bf29ce6482316d95a0820909b} 
+ None werkzeug.\+wrappers.\+response.\+Response\+Stream.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a5ee458a14f9c5e7856002b18692439cd}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!encoding@{encoding}}
+\index{encoding@{encoding}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{encoding()}{encoding()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a5ee458a14f9c5e7856002b18692439cd} 
+ str werkzeug.\+wrappers.\+response.\+Response\+Stream.\+encoding (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a50a5af3d9432ce052e94c1ca84c09dcb}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!flush@{flush}}
+\index{flush@{flush}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a50a5af3d9432ce052e94c1ca84c09dcb} 
+ None werkzeug.\+wrappers.\+response.\+Response\+Stream.\+flush (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a3df202959d951cb74600622af47a3e65}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!isatty@{isatty}}
+\index{isatty@{isatty}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{isatty()}{isatty()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a3df202959d951cb74600622af47a3e65} 
+ bool werkzeug.\+wrappers.\+response.\+Response\+Stream.\+isatty (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_afe3359c12b3ba435d9205212f418ea9e}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!tell@{tell}}
+\index{tell@{tell}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_afe3359c12b3ba435d9205212f418ea9e} 
+ int werkzeug.\+wrappers.\+response.\+Response\+Stream.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a576d08bcf984dea5b71259bfefb89963}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!write@{write}}
+\index{write@{write}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a576d08bcf984dea5b71259bfefb89963} 
+ int werkzeug.\+wrappers.\+response.\+Response\+Stream.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a2dd897db1556cc795f3906363ace294b}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!writelines@{writelines}}
+\index{writelines@{writelines}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{writelines()}{writelines()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a2dd897db1556cc795f3906363ace294b} 
+ None werkzeug.\+wrappers.\+response.\+Response\+Stream.\+writelines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[bytes]\+}]{seq}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a8bd943e136d27701198514707314afd2}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!closed@{closed}}
+\index{closed@{closed}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{closed}{closed}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a8bd943e136d27701198514707314afd2} 
+bool werkzeug.\+wrappers.\+response.\+Response\+Stream.\+closed = False}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a6098ca43c4f2e5172362210c4aace501}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!mode@{mode}}
+\index{mode@{mode}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_a6098ca43c4f2e5172362210c4aace501} 
+str werkzeug.\+wrappers.\+response.\+Response\+Stream.\+mode = "{}wb+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_ad21979d62f0ca1ea452a355ed60a0132}\index{werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}!response@{response}}
+\index{response@{response}!werkzeug.wrappers.response.ResponseStream@{werkzeug.wrappers.response.ResponseStream}}
+\doxysubsubsection{\texorpdfstring{response}{response}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wrappers_1_1response_1_1_response_stream_ad21979d62f0ca1ea452a355ed60a0132} 
+werkzeug.\+wrappers.\+response.\+Response\+Stream.\+response = response}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+wrappers/\+\doxymbox{\hyperlink{werkzeug_2wrappers_2response_8py}{response.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Submount Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_submount}\index{werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Submount:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1routing_1_1rules_1_1_submount}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount_aa2809a470847c9ccd88ca7b0a1b5b428}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str path, t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}]\+ rules)
+\item 
+t.\+Iterator\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount_a46e9d6aa624757c948fbfb4940ff2129}{get\+\_\+rules}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount_a55bde305fbd19df4a99974ec9536df16}{path}} = path.\+rstrip("{}/\+"{})
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount_a4acc5cf0796e6edc22905b545e62776f}{rules}} = rules
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Like `Subdomain` but prefixes the URL rule with a given string::
+
+    url_map = Map([
+        Rule('/', endpoint='index'),
+        Submount('/blog', [
+            Rule('/', endpoint='blog/index'),
+            Rule('/entry/<entry_slug>', endpoint='blog/show')
+        ])
+    ])
+
+Now the rule ``'blog/show'`` matches ``/blog/entry/<entry_slug>``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_aa2809a470847c9ccd88ca7b0a1b5b428}\index{werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_submount_aa2809a470847c9ccd88ca7b0a1b5b428} 
+ None werkzeug.\+routing.\+rules.\+Submount.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{Rule\+Factory}}]\+}]{rules}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_a46e9d6aa624757c948fbfb4940ff2129}\index{werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_submount_a46e9d6aa624757c948fbfb4940ff2129} 
+ t.\+Iterator\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ werkzeug.\+routing.\+rules.\+Submount.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_adf35b876e1c3edd9e2367b385a19b66f}{werkzeug.\+routing.\+rules.\+Rule\+Factory}}.
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_a55bde305fbd19df4a99974ec9536df16}\index{werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}!path@{path}}
+\index{path@{path}!werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_submount_a55bde305fbd19df4a99974ec9536df16} 
+werkzeug.\+routing.\+rules.\+Submount.\+path = path.\+rstrip("{}/\+"{})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_submount_a4acc5cf0796e6edc22905b545e62776f}\index{werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}!rules@{rules}}
+\index{rules@{rules}!werkzeug.routing.rules.Submount@{werkzeug.routing.rules.Submount}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_submount_a4acc5cf0796e6edc22905b545e62776f} 
+werkzeug.\+routing.\+rules.\+Submount.\+rules = rules}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{rules_8py}{rules.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\doxysection{werkzeug.\+formparser.\+Form\+Data\+Parser Class Reference}
+\hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser}{}\label{classwerkzeug_1_1formparser_1_1_form_data_parser}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a454644ebc8e57f220c483ab0d4f780e6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_t_stream_factory}{TStream\+Factory}}\texorpdfstring{$\vert$}{|}None stream\+\_\+factory=None, int\texorpdfstring{$\vert$}{|}None max\+\_\+form\+\_\+memory\+\_\+size=None, int\texorpdfstring{$\vert$}{|}None max\+\_\+content\+\_\+length=None, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None cls=None, bool silent=True, \texorpdfstring{$\ast$}{*}, int\texorpdfstring{$\vert$}{|}None max\+\_\+form\+\_\+parts=None)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a7813804624c915809f39a29f79512edf}{parse\+\_\+from\+\_\+environ}} (self, WSGIEnvironment environ)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a52b8901f424257bba14b42542979c21e}{parse}} (self, t.\+IO\+[bytes]\+ stream, str mimetype, int\texorpdfstring{$\vert$}{|}None content\+\_\+length, dict\+[str, str]\+\texorpdfstring{$\vert$}{|}None options=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a5ae5881cf3bf5a2ccdf293f2e9e4b87a}{stream\+\_\+factory}} = stream\+\_\+factory
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_ae57eaed6d109ae9cc2e519609a12f96b}{max\+\_\+form\+\_\+memory\+\_\+size}} = max\+\_\+form\+\_\+memory\+\_\+size
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_aeeb299761ad79812d00a5cd462cd9713}{max\+\_\+content\+\_\+length}} = max\+\_\+content\+\_\+length
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a26cf08b874858eda23283490c3305535}{max\+\_\+form\+\_\+parts}} = max\+\_\+form\+\_\+parts
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a22e73577aa5268523dc01e8ee3ca3f78}{cls}} = cls
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_abb5a721879e8747a7b5e3676df7ac77b}{silent}} = silent
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a0864b8e11918a70bd2baae099efe59f5}{\+\_\+parse\+\_\+multipart}} (self, t.\+IO\+[bytes]\+ stream, str mimetype, int\texorpdfstring{$\vert$}{|}None content\+\_\+length, dict\+[str, str]\+ options)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} \doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_form_data_parser_a31616f4c1eb6dc40adb0e1a14a38e2a5}{\+\_\+parse\+\_\+urlencoded}} (self, t.\+IO\+[bytes]\+ stream, str mimetype, int\texorpdfstring{$\vert$}{|}None content\+\_\+length, dict\+[str, str]\+ options)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class implements parsing of form data for Werkzeug.  By itself
+it can parse multipart and url encoded form data.  It can be subclassed
+and extended but for most mimetypes it is a better idea to use the
+untouched stream and expose it as separate attributes on a request
+object.
+
+:param stream_factory: An optional callable that returns a new read and
+                       writeable file descriptor.  This callable works
+                       the same as :meth:`Response._get_file_stream`.
+:param max_form_memory_size: the maximum number of bytes to be accepted for
+                       in-memory stored form data.  If the data
+                       exceeds the value specified an
+                       :exc:`~exceptions.RequestEntityTooLarge`
+                       exception is raised.
+:param max_content_length: If this is provided and the transmitted data
+                           is longer than this value an
+                           :exc:`~exceptions.RequestEntityTooLarge`
+                           exception is raised.
+:param cls: an optional dict class to use.  If this is not specified
+                   or `None` the default :class:`MultiDict` is used.
+:param silent: If set to False parsing errors will not be caught.
+:param max_form_parts: The maximum number of multipart parts to be parsed. If this
+    is exceeded, a :exc:`~exceptions.RequestEntityTooLarge` exception is raised.
+
+.. versionchanged:: 3.0
+    The ``charset`` and ``errors`` parameters were removed.
+
+.. versionchanged:: 3.0
+    The ``parse_functions`` attribute and ``get_parse_func`` methods were removed.
+
+.. versionchanged:: 2.2.3
+    Added the ``max_form_parts`` parameter.
+
+.. versionadded:: 0.8
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-constructors}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a454644ebc8e57f220c483ab0d4f780e6}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a454644ebc8e57f220c483ab0d4f780e6} 
+ None werkzeug.\+formparser.\+Form\+Data\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1formparser_1_1_t_stream_factory}{TStream\+Factory}} \texorpdfstring{$\vert$}{|} None }]{stream\+\_\+factory}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+form\+\_\+memory\+\_\+size}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+content\+\_\+length}{ = {\ttfamily None}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1structures_1_1_multi_dict}{Multi\+Dict}}\+[str, t.\+Any]\+]\+ \texorpdfstring{$\vert$}{|} None }]{cls}{ = {\ttfamily None}, }\item[{bool }]{silent}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+form\+\_\+parts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-func-members}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a0864b8e11918a70bd2baae099efe59f5}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!\_parse\_multipart@{\_parse\_multipart}}
+\index{\_parse\_multipart@{\_parse\_multipart}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{\_parse\_multipart()}{\_parse\_multipart()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a0864b8e11918a70bd2baae099efe59f5} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} werkzeug.\+formparser.\+Form\+Data\+Parser.\+\_\+parse\+\_\+multipart (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+}]{stream}{, }\item[{str}]{mimetype}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{content\+\_\+length}{, }\item[{dict\+[str, str]\+}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a31616f4c1eb6dc40adb0e1a14a38e2a5}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!\_parse\_urlencoded@{\_parse\_urlencoded}}
+\index{\_parse\_urlencoded@{\_parse\_urlencoded}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{\_parse\_urlencoded()}{\_parse\_urlencoded()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a31616f4c1eb6dc40adb0e1a14a38e2a5} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} werkzeug.\+formparser.\+Form\+Data\+Parser.\+\_\+parse\+\_\+urlencoded (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+}]{stream}{, }\item[{str}]{mimetype}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{content\+\_\+length}{, }\item[{dict\+[str, str]\+}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a52b8901f424257bba14b42542979c21e}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!parse@{parse}}
+\index{parse@{parse}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a52b8901f424257bba14b42542979c21e} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} werkzeug.\+formparser.\+Form\+Data\+Parser.\+parse (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+}]{stream}{, }\item[{str}]{mimetype}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{content\+\_\+length}{, }\item[{dict\+[str, str]\+ \texorpdfstring{$\vert$}{|} None }]{options}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses the information from the given stream, mimetype,
+content length and mimetype parameters.
+
+:param stream: an input stream
+:param mimetype: the mimetype of the data
+:param content_length: the content length of the incoming data
+:param options: optional mimetype parameters (used for
+                the multipart boundary for instance)
+:return: A tuple in the form ``(stream, form, files)``.
+
+.. versionchanged:: 3.0
+    The invalid ``application/x-url-encoded`` content type is not
+    treated as ``application/x-www-form-urlencoded``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a7813804624c915809f39a29f79512edf}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!parse\_from\_environ@{parse\_from\_environ}}
+\index{parse\_from\_environ@{parse\_from\_environ}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{parse\_from\_environ()}{parse\_from\_environ()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a7813804624c915809f39a29f79512edf} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1formparser_a38df48588cdae50e2d761218898881e6}{t\+\_\+parse\+\_\+result}} werkzeug.\+formparser.\+Form\+Data\+Parser.\+parse\+\_\+from\+\_\+environ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parses the information from the environment as form data.
+
+:param environ: the WSGI environment to be used for parsing.
+:return: A tuple in the form ``(stream, form, files)``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a22e73577aa5268523dc01e8ee3ca3f78}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!cls@{cls}}
+\index{cls@{cls}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{cls}{cls}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a22e73577aa5268523dc01e8ee3ca3f78} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+cls = cls}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_aeeb299761ad79812d00a5cd462cd9713}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!max\_content\_length@{max\_content\_length}}
+\index{max\_content\_length@{max\_content\_length}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{max\_content\_length}{max\_content\_length}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_aeeb299761ad79812d00a5cd462cd9713} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+max\+\_\+content\+\_\+length = max\+\_\+content\+\_\+length}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_ae57eaed6d109ae9cc2e519609a12f96b}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!max\_form\_memory\_size@{max\_form\_memory\_size}}
+\index{max\_form\_memory\_size@{max\_form\_memory\_size}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{max\_form\_memory\_size}{max\_form\_memory\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_ae57eaed6d109ae9cc2e519609a12f96b} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+max\+\_\+form\+\_\+memory\+\_\+size = max\+\_\+form\+\_\+memory\+\_\+size}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a26cf08b874858eda23283490c3305535}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!max\_form\_parts@{max\_form\_parts}}
+\index{max\_form\_parts@{max\_form\_parts}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{max\_form\_parts}{max\_form\_parts}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a26cf08b874858eda23283490c3305535} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+max\+\_\+form\+\_\+parts = max\+\_\+form\+\_\+parts}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_abb5a721879e8747a7b5e3676df7ac77b}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!silent@{silent}}
+\index{silent@{silent}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{silent}{silent}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_abb5a721879e8747a7b5e3676df7ac77b} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+silent = silent}
+
+\Hypertarget{classwerkzeug_1_1formparser_1_1_form_data_parser_a5ae5881cf3bf5a2ccdf293f2e9e4b87a}\index{werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}!stream\_factory@{stream\_factory}}
+\index{stream\_factory@{stream\_factory}!werkzeug.formparser.FormDataParser@{werkzeug.formparser.FormDataParser}}
+\doxysubsubsection{\texorpdfstring{stream\_factory}{stream\_factory}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1formparser_1_1_form_data_parser_a5ae5881cf3bf5a2ccdf293f2e9e4b87a} 
+werkzeug.\+formparser.\+Form\+Data\+Parser.\+stream\+\_\+factory = stream\+\_\+factory}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{formparser_8py}{formparser.\+py}}\end{DoxyCompactItemize}

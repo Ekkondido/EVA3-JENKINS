@@ -1,0 +1,88 @@
+\doxysection{click.\+exceptions.\+Bad\+Option\+Usage Class Reference}
+\hypertarget{classclick_1_1exceptions_1_1_bad_option_usage}{}\label{classclick_1_1exceptions_1_1_bad_option_usage}\index{click.exceptions.BadOptionUsage@{click.exceptions.BadOptionUsage}}
+Inheritance diagram for click.\+exceptions.\+Bad\+Option\+Usage:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classclick_1_1exceptions_1_1_bad_option_usage}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_option_usage_a795564678b920c0f72386f239d32b491}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str option\+\_\+name, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8489ab131524a44ac4963612f098136e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None ctx=None)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a27c981468758539972f69cad7059ff12}{show}} (self, t.\+IO\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None file=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9532e6c3023bd3594d6434968e01c6ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str message)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a5e93db6aba438eac1b85dc7613b6bcdd}{format\+\_\+message}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a67438805915c78e3476dc301f090321a}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_bad_option_usage_ac3defe6d8fb80cb564775e50ef2556f6}{option\+\_\+name}} .Final\+[str]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error}{click.\+exceptions.\+Usage\+Error}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_a8943db49f348999b204674239df428da}{ctx}} \texorpdfstring{$\vert$}{|} None
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_usage_error_aedfb8dbb0a07bad5ce95a27ba20e1b99}{cmd}} .Final\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_command}{Command}} \texorpdfstring{$\vert$}{|} None]\+
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception}{click.\+exceptions.\+Click\+Exception}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9ce68058dcdd0ae47e514a3228169fa5}{exit\+\_\+code}} = 1
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a9502a75db86e10ad064d0c3729747c5c}{show\+\_\+color}} .Final\+[bool \texorpdfstring{$\vert$}{|} None]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1exceptions_1_1_click_exception_a1087cf7aca1bda4a78f4393fb54401f7}{message}} .Final\+[str]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Raised if an option is generally supplied but the use of the option
+was incorrect.  This is for instance raised if the number of arguments
+for an option is not correct.
+
+.. versionadded:: 4.0
+
+:param option_name: the name of the option being used incorrectly.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1exceptions_1_1_bad_option_usage_doc-constructors}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_option_usage_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_option_usage_a795564678b920c0f72386f239d32b491}\index{click.exceptions.BadOptionUsage@{click.exceptions.BadOptionUsage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.exceptions.BadOptionUsage@{click.exceptions.BadOptionUsage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_option_usage_a795564678b920c0f72386f239d32b491} 
+ None click.\+exceptions.\+Bad\+Option\+Usage.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{option\+\_\+name}{, }\item[{str}]{message}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None }]{ctx}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1exceptions_1_1_bad_option_usage_doc-variable-members}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_option_usage_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1exceptions_1_1_bad_option_usage_ac3defe6d8fb80cb564775e50ef2556f6}\index{click.exceptions.BadOptionUsage@{click.exceptions.BadOptionUsage}!option\_name@{option\_name}}
+\index{option\_name@{option\_name}!click.exceptions.BadOptionUsage@{click.exceptions.BadOptionUsage}}
+\doxysubsubsection{\texorpdfstring{option\_name}{option\_name}}
+{\footnotesize\ttfamily \label{classclick_1_1exceptions_1_1_bad_option_usage_ac3defe6d8fb80cb564775e50ef2556f6} 
+t click.\+exceptions.\+Bad\+Option\+Usage.\+option\+\_\+name .Final\+[str]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,52 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+click/\+\+\_\+termui\+\_\+impl.py File Reference}
+\hypertarget{__termui__impl_8py}{}\label{__termui__impl_8py}\index{venv/Lib/site-\/packages/click/\_termui\_impl.py@{venv/Lib/site-\/packages/click/\_termui\_impl.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1___buffered_text_pager_stream}{click.\+\_\+termui\+\_\+impl.\+\_\+\+Buffered\+Text\+Pager\+Stream}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{click.\+\_\+termui\+\_\+impl.\+Progress\+Bar}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_maybe_strip_ansi}{click.\+\_\+termui\+\_\+impl.\+Maybe\+Strip\+Ansi}}
+\item 
+class \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_editor}{click.\+\_\+termui\+\_\+impl.\+Editor}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick}{click}}
+\item 
+namespace \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl}{click.\+\_\+termui\+\_\+impl}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Type\+Guard\+[\doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1___buffered_text_pager_stream}{\+\_\+\+Buffered\+Text\+Pager\+Stream}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a561df146f5cfc0aaca2496ea4c248b52}{click.\+\_\+termui\+\_\+impl.\+\_\+has\+\_\+binary\+\_\+buffer}} (t.\+Binary\+IO\texorpdfstring{$\vert$}{|}t.\+Text\+IO stream)
+\item 
+t.\+Context\+Manager\+[tuple\+[t.\+Binary\+IO\texorpdfstring{$\vert$}{|}t.\+Text\+IO, str, bool]\+]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a3ecd04a487a326baf5a9245f9a9ccbfb}{click.\+\_\+termui\+\_\+impl.\+\_\+pager\+\_\+contextmanager}} (bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Generator\+[t.\+Text\+IO, None, None]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_ae81261695237f760ed621f2ab9b5551b}{click.\+\_\+termui\+\_\+impl.\+get\+\_\+pager\+\_\+file}} (bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Iterator\+[tuple\+[t.\+Binary\+IO\texorpdfstring{$\vert$}{|}t.\+Text\+IO, str, bool]\+]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a38db7a68aef41270395fec6f4b3623c4}{click.\+\_\+termui\+\_\+impl.\+\_\+pipepager}} (list\+[str]\+ cmd\+\_\+parts, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Iterator\+[tuple\+[t.\+Binary\+IO\texorpdfstring{$\vert$}{|}t.\+Text\+IO, str, bool]\+]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a57b31b529ebdac13dceff8d9bb6bab55}{click.\+\_\+termui\+\_\+impl.\+\_\+tempfilepager}} (list\+[str]\+ cmd\+\_\+parts, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+t.\+Iterator\+[tuple\+[t.\+Text\+IO, str, bool]\+]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a75a03078286a60eb9407302a48ea5418}{click.\+\_\+termui\+\_\+impl.\+\_\+nullpager}} (t.\+Text\+IO stream, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a1bd690b3532b591a98fc4437cc7455be}{click.\+\_\+termui\+\_\+impl.\+open\+\_\+url}} (str url, bool wait=False, bool locate=False)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a9cdeb14cba72c42295f9c788d1ad17c5}{click.\+\_\+termui\+\_\+impl.\+\_\+translate\+\_\+ch\+\_\+to\+\_\+exc}} (str ch)
+\item 
+cabc.\+Iterator\+[int]\+ \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_ac6719468c13ebc76967bb038a969b0d2}{click.\+\_\+termui\+\_\+impl.\+raw\+\_\+terminal}} ()
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a2d1658405c03324c9b33ec7a0657af8e}{click.\+\_\+termui\+\_\+impl.\+getchar}} (bool echo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_ac0511899445fdcae7986b17aeef8d965}{click.\+\_\+termui\+\_\+impl.\+V}} = t.\+Type\+Var("{}V"{})
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_ac05318848df7d1b0d45c52d402f2ab20}{click.\+\_\+termui\+\_\+impl.\+BEFORE\+\_\+\+BAR}} = "{}\textbackslash{}r"{}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1__termui__impl_a40463bfcb3e191e59577bb7baf6e544c}{click.\+\_\+termui\+\_\+impl.\+AFTER\+\_\+\+BAR}} = "{}\textbackslash{}n"{}
+\end{DoxyCompactItemize}

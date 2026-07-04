@@ -1,0 +1,373 @@
+\doxysection{werkzeug.\+serving Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1serving}{}\label{namespacewerkzeug_1_1serving}\index{werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1___ssl_dummy}{\+\_\+\+Ssl\+Dummy}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_forking_mix_in}{Forking\+Mix\+In}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_dechunked_input}{Dechunked\+Input}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{Base\+WSGIServer}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server}{Threaded\+WSGIServer}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_forking_w_s_g_i_server}{Forking\+WSGIServer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a87bb2466fc8cf06c5af7fc4241bfbc35}{\+\_\+ansi\+\_\+style}} (str value, \texorpdfstring{$\ast$}{*}str styles)
+\item 
+tuple\+[Certificate, RSAPrivate\+Key\+With\+Serialization]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_af483051c3df6aba23036400a41a75cc5}{generate\+\_\+adhoc\+\_\+ssl\+\_\+pair}} (str\texorpdfstring{$\vert$}{|}None cn=None)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aefea22a17ff939cb9e2708cc56744570}{make\+\_\+ssl\+\_\+devcert}} (str base\+\_\+path, str\texorpdfstring{$\vert$}{|}None host=None, str\texorpdfstring{$\vert$}{|}None cn=None)
+\item 
+ssl.\+SSLContext \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a6def70d2ceb735d7d378ca3ae1711021}{generate\+\_\+adhoc\+\_\+ssl\+\_\+context}} ()
+\item 
+ssl.\+SSLContext \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a8090abac8765cbbf4af6f0e203e54b27}{load\+\_\+ssl\+\_\+context}} (str cert\+\_\+file, str\texorpdfstring{$\vert$}{|}None pkey\+\_\+file=None, int\texorpdfstring{$\vert$}{|}None protocol=None)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a5b0a4aaf3fb5ebbd1c5d122238abb268}{is\+\_\+ssl\+\_\+error}} (Exception\texorpdfstring{$\vert$}{|}None error=None)
+\item 
+socket.\+Address\+Family \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}{select\+\_\+address\+\_\+family}} (str host, int port)
+\item 
+tuple\+[str, int]\+\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c77cbc7d09c654920da9f0fad791012}{get\+\_\+sockaddr}} (str host, int port, socket.\+Address\+Family family)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a5e6aced9171fd05aefc8c1011378aeca}{get\+\_\+interface\+\_\+ip}} (socket.\+Address\+Family family)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{Base\+WSGIServer}} \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a7439eeafe89b706097f3a48a5e533b46}{make\+\_\+server}} (str host, int port, WSGIApplication app, bool threaded=False, int processes=1, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None request\+\_\+handler=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None, int\texorpdfstring{$\vert$}{|}None fd=None)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a97333e24807e6edafce06dba6542c890}{is\+\_\+running\+\_\+from\+\_\+reloader}} ()
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a59b80e6bfee6aae38325716db8cdbad3}{run\+\_\+simple}} (str hostname, int port, WSGIApplication application, bool use\+\_\+reloader=False, bool use\+\_\+debugger=False, bool use\+\_\+evalex=True, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None extra\+\_\+files=None, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None exclude\+\_\+patterns=None, int reloader\+\_\+interval=1, str reloader\+\_\+type="{}auto"{}, bool threaded=False, int processes=1, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None request\+\_\+handler=None, dict\+[str, str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None static\+\_\+files=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a7bd64af41ae25513d2777a92a15b631f}{connection\+\_\+dropped\+\_\+errors}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a6e15b70bed1d1226b505a6c3694918d8}{ssl}}
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a90f1ab7d709027cbc59dd657014f16eb}{\+\_\+log\+\_\+add\+\_\+style}} = True
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_abe3058e173adc71f935e3ed8083944ef}{can\+\_\+fork}} = hasattr(os, "{}fork"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_adbdcca0bef6f7462801c3b8488aaa4a5}{Forking\+Mix\+In}} = socketserver.\+Forking\+Mix\+In
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_ac6ae6846a543841aca266f10c19a4276}{af\+\_\+unix}} = None
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}{LISTEN\+\_\+\+QUEUE}} = 128
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A WSGI and HTTP server for use **during development only**. This
+server is convenient to use, but is not designed to be particularly
+stable, secure, or efficient. Use a dedicate WSGI server and HTTP
+server when deploying to production.
+
+It provides features like interactive debugging and code reloading. Use
+``run_simple`` to start the server. Put this in a ``run.py`` script:
+
+.. code-block:: python
+
+    from myapp import create_app
+    from werkzeug import run_simple
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1serving_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1serving_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1serving_a87bb2466fc8cf06c5af7fc4241bfbc35}\index{werkzeug.serving@{werkzeug.serving}!\_ansi\_style@{\_ansi\_style}}
+\index{\_ansi\_style@{\_ansi\_style}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{\_ansi\_style()}{\_ansi\_style()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a87bb2466fc8cf06c5af7fc4241bfbc35} 
+ str \+\_\+ansi\+\_\+style (\begin{DoxyParamCaption}\item[{str}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{styles}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a6def70d2ceb735d7d378ca3ae1711021}\index{werkzeug.serving@{werkzeug.serving}!generate\_adhoc\_ssl\_context@{generate\_adhoc\_ssl\_context}}
+\index{generate\_adhoc\_ssl\_context@{generate\_adhoc\_ssl\_context}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{generate\_adhoc\_ssl\_context()}{generate\_adhoc\_ssl\_context()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a6def70d2ceb735d7d378ca3ae1711021} 
+ ssl.\+SSLContext generate\+\_\+adhoc\+\_\+ssl\+\_\+context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates an adhoc SSL context for the development server.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_af483051c3df6aba23036400a41a75cc5}\index{werkzeug.serving@{werkzeug.serving}!generate\_adhoc\_ssl\_pair@{generate\_adhoc\_ssl\_pair}}
+\index{generate\_adhoc\_ssl\_pair@{generate\_adhoc\_ssl\_pair}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{generate\_adhoc\_ssl\_pair()}{generate\_adhoc\_ssl\_pair()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_af483051c3df6aba23036400a41a75cc5} 
+ tuple\+[Certificate, RSAPrivate\+Key\+With\+Serialization]\+ generate\+\_\+adhoc\+\_\+ssl\+\_\+pair (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{cn}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a5e6aced9171fd05aefc8c1011378aeca}\index{werkzeug.serving@{werkzeug.serving}!get\_interface\_ip@{get\_interface\_ip}}
+\index{get\_interface\_ip@{get\_interface\_ip}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{get\_interface\_ip()}{get\_interface\_ip()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a5e6aced9171fd05aefc8c1011378aeca} 
+ str get\+\_\+interface\+\_\+ip (\begin{DoxyParamCaption}\item[{socket.\+Address\+Family}]{family}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the IP address of an external interface. Used when binding to
+0.0.0.0 or ::1 to show a more useful URL.
+
+:meta private:
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a1c77cbc7d09c654920da9f0fad791012}\index{werkzeug.serving@{werkzeug.serving}!get\_sockaddr@{get\_sockaddr}}
+\index{get\_sockaddr@{get\_sockaddr}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{get\_sockaddr()}{get\_sockaddr()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a1c77cbc7d09c654920da9f0fad791012} 
+ tuple\+[str, int]\+ \texorpdfstring{$\vert$}{|} str get\+\_\+sockaddr (\begin{DoxyParamCaption}\item[{str}]{host}{, }\item[{int}]{port}{, }\item[{socket.\+Address\+Family }]{family}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a fully qualified socket address that can be passed to
+:func:`socket.bind`.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a97333e24807e6edafce06dba6542c890}\index{werkzeug.serving@{werkzeug.serving}!is\_running\_from\_reloader@{is\_running\_from\_reloader}}
+\index{is\_running\_from\_reloader@{is\_running\_from\_reloader}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{is\_running\_from\_reloader()}{is\_running\_from\_reloader()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a97333e24807e6edafce06dba6542c890} 
+ bool is\+\_\+running\+\_\+from\+\_\+reloader (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the server is running as a subprocess within the
+Werkzeug reloader.
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a5b0a4aaf3fb5ebbd1c5d122238abb268}\index{werkzeug.serving@{werkzeug.serving}!is\_ssl\_error@{is\_ssl\_error}}
+\index{is\_ssl\_error@{is\_ssl\_error}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{is\_ssl\_error()}{is\_ssl\_error()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a5b0a4aaf3fb5ebbd1c5d122238abb268} 
+ bool is\+\_\+ssl\+\_\+error (\begin{DoxyParamCaption}\item[{Exception \texorpdfstring{$\vert$}{|} None }]{error}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks if the given error (or the current one) is an SSL error.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a8090abac8765cbbf4af6f0e203e54b27}\index{werkzeug.serving@{werkzeug.serving}!load\_ssl\_context@{load\_ssl\_context}}
+\index{load\_ssl\_context@{load\_ssl\_context}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{load\_ssl\_context()}{load\_ssl\_context()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a8090abac8765cbbf4af6f0e203e54b27} 
+ ssl.\+SSLContext load\+\_\+ssl\+\_\+context (\begin{DoxyParamCaption}\item[{str}]{cert\+\_\+file}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{pkey\+\_\+file}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{protocol}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads SSL context from cert/private key files and optional protocol.
+Many parameters are directly taken from the API of
+:py:class:`ssl.SSLContext`.
+
+:param cert_file: Path of the certificate to use.
+:param pkey_file: Path of the private key to use. If not given, the key
+                  will be obtained from the certificate file.
+:param protocol: A ``PROTOCOL`` constant from the :mod:`ssl` module.
+    Defaults to :data:`ssl.PROTOCOL_TLS_SERVER`.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a7439eeafe89b706097f3a48a5e533b46}\index{werkzeug.serving@{werkzeug.serving}!make\_server@{make\_server}}
+\index{make\_server@{make\_server}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{make\_server()}{make\_server()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a7439eeafe89b706097f3a48a5e533b46} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{Base\+WSGIServer}} make\+\_\+server (\begin{DoxyParamCaption}\item[{str}]{host}{, }\item[{int}]{port}{, }\item[{WSGIApplication}]{app}{, }\item[{bool }]{threaded}{ = {\ttfamily False}, }\item[{int }]{processes}{ = {\ttfamily 1}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+ \texorpdfstring{$\vert$}{|} None }]{request\+\_\+handler}{ = {\ttfamily None}, }\item[{bool }]{passthrough\+\_\+errors}{ = {\ttfamily False}, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}} \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+context}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{fd}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create an appropriate WSGI server instance based on the value of
+``threaded`` and ``processes``.
+
+This is called from :func:`run_simple`, but can be used separately
+to have access to the server object, such as to run it in a separate
+thread.
+
+See :func:`run_simple` for parameter docs.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_aefea22a17ff939cb9e2708cc56744570}\index{werkzeug.serving@{werkzeug.serving}!make\_ssl\_devcert@{make\_ssl\_devcert}}
+\index{make\_ssl\_devcert@{make\_ssl\_devcert}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{make\_ssl\_devcert()}{make\_ssl\_devcert()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_aefea22a17ff939cb9e2708cc56744570} 
+ tuple\+[str, str]\+ make\+\_\+ssl\+\_\+devcert (\begin{DoxyParamCaption}\item[{str}]{base\+\_\+path}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{host}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{cn}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates an SSL key for development.  This should be used instead of
+the ``'adhoc'`` key which generates a new cert on each server start.
+It accepts a path for where it should store the key and cert and
+either a host or CN.  If a host is given it will use the CN
+``*.host/CN=host``.
+
+For more information see :func:`run_simple`.
+
+.. versionadded:: 0.9
+
+:param base_path: the path to the certificate and key.  The extension
+                  ``.crt`` is added for the certificate, ``.key`` is
+                  added for the key.
+:param host: the name of the host.  This can be used as an alternative
+             for the `cn`.
+:param cn: the `CN` to use.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_a59b80e6bfee6aae38325716db8cdbad3}\index{werkzeug.serving@{werkzeug.serving}!run\_simple@{run\_simple}}
+\index{run\_simple@{run\_simple}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{run\_simple()}{run\_simple()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a59b80e6bfee6aae38325716db8cdbad3} 
+ None run\+\_\+simple (\begin{DoxyParamCaption}\item[{str}]{hostname}{, }\item[{int}]{port}{, }\item[{WSGIApplication}]{application}{, }\item[{bool }]{use\+\_\+reloader}{ = {\ttfamily False}, }\item[{bool }]{use\+\_\+debugger}{ = {\ttfamily False}, }\item[{bool }]{use\+\_\+evalex}{ = {\ttfamily True}, }\item[{t.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{extra\+\_\+files}{ = {\ttfamily None}, }\item[{t.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{exclude\+\_\+patterns}{ = {\ttfamily None}, }\item[{int }]{reloader\+\_\+interval}{ = {\ttfamily 1}, }\item[{str }]{reloader\+\_\+type}{ = {\ttfamily "{}auto"{}}, }\item[{bool }]{threaded}{ = {\ttfamily False}, }\item[{int }]{processes}{ = {\ttfamily 1}, }\item[{type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+ \texorpdfstring{$\vert$}{|} None }]{request\+\_\+handler}{ = {\ttfamily None}, }\item[{dict\+[str, str \texorpdfstring{$\vert$}{|} tuple\+[str, str]\+]\+ \texorpdfstring{$\vert$}{|} None }]{static\+\_\+files}{ = {\ttfamily None}, }\item[{bool }]{passthrough\+\_\+errors}{ = {\ttfamily False}, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}} \texorpdfstring{$\vert$}{|} None }]{ssl\+\_\+context}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Start a development server for a WSGI application. Various
+optional features can be enabled.
+
+.. warning::
+
+    Do not use the development server when deploying to production.
+    It is intended for use only during local development. It is not
+    designed to be particularly efficient, stable, or secure.
+
+:param hostname: The host to bind to, for example ``'localhost'``.
+    Can be a domain, IPv4 or IPv6 address, or file path starting
+    with ``unix://`` for a Unix socket.
+:param port: The port to bind to, for example ``8080``. Using ``0``
+    tells the OS to pick a random free port.
+:param application: The WSGI application to run.
+:param use_reloader: Use a reloader process to restart the server
+    process when files are changed.
+:param use_debugger: Use Werkzeug's debugger, which will show
+    formatted tracebacks on unhandled exceptions.
+:param use_evalex: Make the debugger interactive. A Python terminal
+    can be opened for any frame in the traceback. Some protection is
+    provided by requiring a PIN, but this should never be enabled
+    on a publicly visible server.
+:param extra_files: The reloader will watch these files for changes
+    in addition to Python modules. For example, watch a
+    configuration file.
+:param exclude_patterns: The reloader will ignore changes to any
+    files matching these :mod:`fnmatch` patterns. For example,
+    ignore cache files.
+:param reloader_interval: How often the reloader tries to check for
+    changes.
+:param reloader_type: The reloader to use. The ``'stat'`` reloader
+    is built in, but may require significant CPU to watch files. The
+    ``'watchdog'`` reloader is much more efficient but requires
+    installing the ``watchdog`` package first.
+:param threaded: Handle concurrent requests using threads. Cannot be
+    used with ``processes``.
+:param processes: Handle concurrent requests using up to this number
+    of processes. Cannot be used with ``threaded``.
+:param request_handler: Use a different
+    :class:`~BaseHTTPServer.BaseHTTPRequestHandler` subclass to
+    handle requests.
+:param static_files: A dict mapping URL prefixes to directories to
+    serve static files from using
+    :class:`~werkzeug.middleware.SharedDataMiddleware`.
+:param passthrough_errors: Don't catch unhandled exceptions at the
+    server level, let the server crash instead. If ``use_debugger``
+    is enabled, the debugger will still catch such errors.
+:param ssl_context: Configure TLS to serve over HTTPS. Can be an
+    :class:`ssl.SSLContext` object, a ``(cert_file, key_file)``
+    tuple to create a typical context, or the string ``'adhoc'`` to
+    generate a temporary self-signed certificate.
+
+.. versionchanged:: 2.1
+    Instructions are shown for dealing with an "address already in
+    use" error.
+
+.. versionchanged:: 2.1
+    Running on ``0.0.0.0`` or ``::`` shows the loopback IP in
+    addition to a real IP.
+
+.. versionchanged:: 2.1
+    The command-line interface was removed.
+
+.. versionchanged:: 2.0
+    Running on ``0.0.0.0`` or ``::`` shows a real IP address that
+    was bound as well as a warning not to run the development server
+    in production.
+
+.. versionchanged:: 2.0
+    The ``exclude_patterns`` parameter was added.
+
+.. versionchanged:: 0.15
+    Bind to a Unix socket by passing a ``hostname`` that starts with
+    ``unix://``.
+
+.. versionchanged:: 0.10
+    Improved the reloader and added support for changing the backend
+    through the ``reloader_type`` parameter.
+
+.. versionchanged:: 0.9
+    A command-line interface was added.
+
+.. versionchanged:: 0.8
+    ``ssl_context`` can be a tuple of paths to the certificate and
+    private key files.
+
+.. versionchanged:: 0.6
+    The ``ssl_context`` parameter was added.
+
+.. versionchanged:: 0.5
+   The ``static_files`` and ``passthrough_errors`` parameters were
+   added.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}\index{werkzeug.serving@{werkzeug.serving}!select\_address\_family@{select\_address\_family}}
+\index{select\_address\_family@{select\_address\_family}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{select\_address\_family()}{select\_address\_family()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5} 
+ socket.\+Address\+Family select\+\_\+address\+\_\+family (\begin{DoxyParamCaption}\item[{str}]{host}{, }\item[{int}]{port}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``AF_INET4``, ``AF_INET6``, or ``AF_UNIX`` depending on
+the host and port.\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1serving_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1serving_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1serving_a90f1ab7d709027cbc59dd657014f16eb}\index{werkzeug.serving@{werkzeug.serving}!\_log\_add\_style@{\_log\_add\_style}}
+\index{\_log\_add\_style@{\_log\_add\_style}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{\_log\_add\_style}{\_log\_add\_style}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a90f1ab7d709027cbc59dd657014f16eb} 
+bool \+\_\+log\+\_\+add\+\_\+style = True\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}\index{werkzeug.serving@{werkzeug.serving}!\_TSSLContextArg@{\_TSSLContextArg}}
+\index{\_TSSLContextArg@{\_TSSLContextArg}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{\_TSSLContextArg}{\_TSSLContextArg}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25} 
+werkzeug.\+serving.\+\_\+\+TSSLContext\+Arg\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Optional[}
+\DoxyCodeLine{\ \ \ \ t.Union[\textcolor{stringliteral}{"{}ssl.SSLContext"{}},\ tuple[str,\ t.Optional[str]],\ t.Literal[\textcolor{stringliteral}{"{}adhoc"{}}]]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1serving_ac6ae6846a543841aca266f10c19a4276}\index{werkzeug.serving@{werkzeug.serving}!af\_unix@{af\_unix}}
+\index{af\_unix@{af\_unix}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{af\_unix}{af\_unix}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_ac6ae6846a543841aca266f10c19a4276} 
+werkzeug.\+serving.\+af\+\_\+unix = None}
+
+\Hypertarget{namespacewerkzeug_1_1serving_abe3058e173adc71f935e3ed8083944ef}\index{werkzeug.serving@{werkzeug.serving}!can\_fork@{can\_fork}}
+\index{can\_fork@{can\_fork}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{can\_fork}{can\_fork}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_abe3058e173adc71f935e3ed8083944ef} 
+werkzeug.\+serving.\+can\+\_\+fork = hasattr(os, "{}fork"{})}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a7bd64af41ae25513d2777a92a15b631f}\index{werkzeug.serving@{werkzeug.serving}!connection\_dropped\_errors@{connection\_dropped\_errors}}
+\index{connection\_dropped\_errors@{connection\_dropped\_errors}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{connection\_dropped\_errors}{connection\_dropped\_errors}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a7bd64af41ae25513d2777a92a15b631f} 
+tuple connection\+\_\+dropped\+\_\+errors}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ConnectionError,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ socket.timeout,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ssl.SSLEOFError,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1serving_adbdcca0bef6f7462801c3b8488aaa4a5}\index{werkzeug.serving@{werkzeug.serving}!ForkingMixIn@{ForkingMixIn}}
+\index{ForkingMixIn@{ForkingMixIn}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{ForkingMixIn}{ForkingMixIn}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_adbdcca0bef6f7462801c3b8488aaa4a5} 
+werkzeug.\+serving.\+Forking\+Mix\+In = socketserver.\+Forking\+Mix\+In}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}\index{werkzeug.serving@{werkzeug.serving}!LISTEN\_QUEUE@{LISTEN\_QUEUE}}
+\index{LISTEN\_QUEUE@{LISTEN\_QUEUE}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{LISTEN\_QUEUE}{LISTEN\_QUEUE}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a} 
+int werkzeug.\+serving.\+LISTEN\+\_\+\+QUEUE = 128}
+
+\Hypertarget{namespacewerkzeug_1_1serving_a6e15b70bed1d1226b505a6c3694918d8}\index{werkzeug.serving@{werkzeug.serving}!ssl@{ssl}}
+\index{ssl@{ssl}!werkzeug.serving@{werkzeug.serving}}
+\doxysubsubsection{\texorpdfstring{ssl}{ssl}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1serving_a6e15b70bed1d1226b505a6c3694918d8} 
+werkzeug.\+serving.\+ssl}
+

@@ -1,0 +1,70 @@
+\doxysection{flask.\+json.\+tag Namespace Reference}
+\hypertarget{namespaceflask_1_1json_1_1tag}{}\label{namespaceflask_1_1json_1_1tag}\index{flask.json.tag@{flask.json.tag}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{JSONTag}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_dict}{Tag\+Dict}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_dict}{Pass\+Dict}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_tuple}{Tag\+Tuple}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_pass_list}{Pass\+List}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_bytes}{Tag\+Bytes}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_markup}{Tag\+Markup}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_u_u_i_d}{Tag\+UUID}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tag_date_time}{Tag\+Date\+Time}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}{Tagged\+JSONSerializer}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Tagged JSON
+~~~~~~~~~~~
+
+A compact representation for lossless serialization of non-standard JSON
+types. :class:`~flask.sessions.SecureCookieSessionInterface` uses this
+to serialize the session data, but it may be useful in other places. It
+can be extended to support other types.
+
+.. autoclass:: TaggedJSONSerializer
+    :members:
+
+.. autoclass:: JSONTag
+    :members:
+
+Let's see an example that adds support for
+:class:`~collections.OrderedDict`. Dicts don't have an order in JSON, so
+to handle this we will dump the items as a list of ``[key, value]``
+pairs. Subclass :class:`JSONTag` and give it the new key ``' od'`` to
+identify the type. The session serializer processes dicts first, so
+insert the new tag at the front of the order since ``OrderedDict`` must
+be processed before ``dict``.
+
+.. code-block:: python
+
+    from flask.json.tag import JSONTag
+
+    class TagOrderedDict(JSONTag):
+        __slots__ = ('serializer',)
+        key = ' od'
+
+        def check(self, value):
+            return isinstance(value, OrderedDict)
+
+        def to_json(self, value):
+            return [[k, self.serializer.tag(v)] for k, v in iteritems(value)]
+
+        def to_python(self, value):
+            return OrderedDict(value)
+
+    app.session_interface.serializer.register(TagOrderedDict, index=0)
+\end{DoxyVerb}
+ 

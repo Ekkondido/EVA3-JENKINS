@@ -1,0 +1,199 @@
+\doxysection{werkzeug.\+datastructures.\+etag.\+ETags Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags}{}\label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+Inheritance diagram for werkzeug.\+datastructures.\+etag.\+ETags:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a60b60a63580ac18469dca287b8d26b2a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None strong\+\_\+etags=None, cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None weak\+\_\+etags=None, bool star\+\_\+tag=False)
+\item 
+set\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a7ca499b0c41be4f6fbd771b424869533}{as\+\_\+set}} (self, bool include\+\_\+weak=False)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ac784d212df9c52bf9e81665c73fb6a3f}{is\+\_\+weak}} (self, str etag)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a5d4b7961b06a561d02b2bbafbb2916ca}{is\+\_\+strong}} (self, str etag)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad5307454ae245d00983a09d10240d43a}{contains\+\_\+weak}} (self, str etag)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a560891d5338cb2cd64ccd83601161d1d}{contains}} (self, str etag)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ace040403b72e8323ea2a23300ce24ca5}{contains\+\_\+raw}} (self, str etag)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad002d56560af2ad98ae39ffb23721da1}{to\+\_\+header}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a52ad4ff6c3f2208964c0758f46cad9f7}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None etag=None, bytes\texorpdfstring{$\vert$}{|}None data=None, bool include\+\_\+weak=False)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_af6702088330d24f6795e80d546a2c729}{\+\_\+\+\_\+bool\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ae03d50011130e27fe7f1b1302db91851}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9bd7d26e071916a4c08efa9710458a00}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+cabc.\+Iterator\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a0cf9daa597e426ccf12e0864448b75e2}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad911c57f61bcdfbef2139c80a5a6b0b1}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, str etag)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a967a304e573f63a2d862eb8a97add92c}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9714b2fc398fe60007362aa9fd35bd73}{star\+\_\+tag}} = star\+\_\+tag
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a33da73ca99fd0e8cb78f7b90d6c5da60}{\+\_\+strong}} = frozenset(strong\+\_\+etags)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a74120c16ff70e5bd19c8aff7faae3252}{\+\_\+weak}} = frozenset(weak\+\_\+etags or ())
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A set that can be used to check if one etag is present in a collection
+of etags.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a60b60a63580ac18469dca287b8d26b2a}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a60b60a63580ac18469dca287b8d26b2a} 
+werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{strong\+\_\+etags}{ = {\ttfamily None}, }\item[{cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{weak\+\_\+etags}{ = {\ttfamily None}, }\item[{bool }]{star\+\_\+tag}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_af6702088330d24f6795e80d546a2c729}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_bool\_\_@{\_\_bool\_\_}}
+\index{\_\_bool\_\_@{\_\_bool\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_bool\_\_()}{\_\_bool\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_af6702088330d24f6795e80d546a2c729} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+bool\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a52ad4ff6c3f2208964c0758f46cad9f7}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a52ad4ff6c3f2208964c0758f46cad9f7} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{etag}{ = {\ttfamily None}, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{data}{ = {\ttfamily None}, }\item[{bool }]{include\+\_\+weak}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad911c57f61bcdfbef2139c80a5a6b0b1}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad911c57f61bcdfbef2139c80a5a6b0b1} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a0cf9daa597e426ccf12e0864448b75e2}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a0cf9daa597e426ccf12e0864448b75e2} 
+ cabc.\+Iterator\+[str]\+ werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9bd7d26e071916a4c08efa9710458a00}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9bd7d26e071916a4c08efa9710458a00} 
+ int werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a967a304e573f63a2d862eb8a97add92c}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a967a304e573f63a2d862eb8a97add92c} 
+ str werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ae03d50011130e27fe7f1b1302db91851}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ae03d50011130e27fe7f1b1302db91851} 
+ str werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a7ca499b0c41be4f6fbd771b424869533}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!as\_set@{as\_set}}
+\index{as\_set@{as\_set}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{as\_set()}{as\_set()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a7ca499b0c41be4f6fbd771b424869533} 
+ set\+[str]\+ werkzeug.\+datastructures.\+etag.\+ETags.\+as\+\_\+set (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{include\+\_\+weak}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the `ETags` object into a python set.  Per default all the
+weak etags are not part of this set.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a560891d5338cb2cd64ccd83601161d1d}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!contains@{contains}}
+\index{contains@{contains}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{contains()}{contains()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a560891d5338cb2cd64ccd83601161d1d} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+contains (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if an etag is part of the set ignoring weak tags.
+It is also possible to use the ``in`` operator.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ace040403b72e8323ea2a23300ce24ca5}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!contains\_raw@{contains\_raw}}
+\index{contains\_raw@{contains\_raw}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{contains\_raw()}{contains\_raw()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ace040403b72e8323ea2a23300ce24ca5} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+contains\+\_\+raw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}When passed a quoted tag it will check if this tag is part of the
+set.  If the tag is weak it is checked against weak and strong tags,
+otherwise strong only.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad5307454ae245d00983a09d10240d43a}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!contains\_weak@{contains\_weak}}
+\index{contains\_weak@{contains\_weak}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{contains\_weak()}{contains\_weak()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad5307454ae245d00983a09d10240d43a} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+contains\+\_\+weak (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if an etag is part of the set including weak and strong tags.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a5d4b7961b06a561d02b2bbafbb2916ca}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!is\_strong@{is\_strong}}
+\index{is\_strong@{is\_strong}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{is\_strong()}{is\_strong()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a5d4b7961b06a561d02b2bbafbb2916ca} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+is\+\_\+strong (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if an etag is strong.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ac784d212df9c52bf9e81665c73fb6a3f}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!is\_weak@{is\_weak}}
+\index{is\_weak@{is\_weak}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{is\_weak()}{is\_weak()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ac784d212df9c52bf9e81665c73fb6a3f} 
+ bool werkzeug.\+datastructures.\+etag.\+ETags.\+is\+\_\+weak (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{etag}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if an etag is weak.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad002d56560af2ad98ae39ffb23721da1}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_ad002d56560af2ad98ae39ffb23721da1} 
+ str werkzeug.\+datastructures.\+etag.\+ETags.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the etags set into a HTTP header string.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a33da73ca99fd0e8cb78f7b90d6c5da60}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_strong@{\_strong}}
+\index{\_strong@{\_strong}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_strong}{\_strong}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a33da73ca99fd0e8cb78f7b90d6c5da60} 
+werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+strong = frozenset(strong\+\_\+etags)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a74120c16ff70e5bd19c8aff7faae3252}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!\_weak@{\_weak}}
+\index{\_weak@{\_weak}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{\_weak}{\_weak}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a74120c16ff70e5bd19c8aff7faae3252} 
+werkzeug.\+datastructures.\+etag.\+ETags.\+\_\+weak = frozenset(weak\+\_\+etags or ())\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9714b2fc398fe60007362aa9fd35bd73}\index{werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}!star\_tag@{star\_tag}}
+\index{star\_tag@{star\_tag}!werkzeug.datastructures.etag.ETags@{werkzeug.datastructures.etag.ETags}}
+\doxysubsubsection{\texorpdfstring{star\_tag}{star\_tag}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1etag_1_1_e_tags_a9714b2fc398fe60007362aa9fd35bd73} 
+werkzeug.\+datastructures.\+etag.\+ETags.\+star\+\_\+tag = star\+\_\+tag}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{etag_8py}{etag.\+py}}\end{DoxyCompactItemize}

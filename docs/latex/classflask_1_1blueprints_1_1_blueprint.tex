@@ -1,0 +1,129 @@
+\doxysection{flask.\+blueprints.\+Blueprint Class Reference}
+\hypertarget{classflask_1_1blueprints_1_1_blueprint}{}\label{classflask_1_1blueprints_1_1_blueprint}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+Inheritance diagram for flask.\+blueprints.\+Blueprint:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1blueprints_1_1_blueprint}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_a1ac0d21556bc1dbece0135bfead5c972}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str name, str import\+\_\+name, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None static\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None static\+\_\+url\+\_\+path=None, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None template\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None url\+\_\+prefix=None, str\texorpdfstring{$\vert$}{|}None subdomain=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None url\+\_\+defaults=None, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None, str\texorpdfstring{$\vert$}{|}None cli\+\_\+group=\+\_\+sentinel)
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_adf31b8ecda9e1a1b35ce07004690c99e}{get\+\_\+send\+\_\+file\+\_\+max\+\_\+age}} (self, str\texorpdfstring{$\vert$}{|}None filename)
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_ac2d42393163bfbc9c20dc3e9c0c0c2a9}{send\+\_\+static\+\_\+file}} (self, str filename)
+\item 
+t.\+IO\+[t.\+Any\+Str]\+ \doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_a82efa321d7c2a4b8b7b55ac714c3ec8f}{open\+\_\+resource}} (self, str resource, str mode="{}rb"{}, str\texorpdfstring{$\vert$}{|}None encoding="{}utf-\/8"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_afd37dd156019ca794caa010a95a7a22a}{cli}} = \doxymbox{\hyperlink{classflask_1_1cli_1_1_app_group}{App\+Group}}()
+\item 
+\doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_a37daed86aef1788de5c09c71edacee47}{has\+\_\+static\+\_\+folder}}
+\item 
+\doxymbox{\hyperlink{classflask_1_1blueprints_1_1_blueprint_a03db2b10c9e61caae6db21912fd9c3ec}{static\+\_\+folder}}
+\end{DoxyCompactItemize}
+
+
+\label{classflask_1_1blueprints_1_1_blueprint_doc-constructors}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_a1ac0d21556bc1dbece0135bfead5c972}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_a1ac0d21556bc1dbece0135bfead5c972} 
+ None flask.\+blueprints.\+Blueprint.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{str}]{import\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{static\+\_\+folder}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{static\+\_\+url\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{template\+\_\+folder}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{url\+\_\+prefix}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{subdomain}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{url\+\_\+defaults}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{root\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{cli\+\_\+group}{ = {\ttfamily \+\_\+sentinel}}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1blueprints_1_1_blueprint_doc-func-members}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_adf31b8ecda9e1a1b35ce07004690c99e}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!get\_send\_file\_max\_age@{get\_send\_file\_max\_age}}
+\index{get\_send\_file\_max\_age@{get\_send\_file\_max\_age}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{get\_send\_file\_max\_age()}{get\_send\_file\_max\_age()}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_adf31b8ecda9e1a1b35ce07004690c99e} 
+ int \texorpdfstring{$\vert$}{|} None flask.\+blueprints.\+Blueprint.\+get\+\_\+send\+\_\+file\+\_\+max\+\_\+age (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used by :func:`send_file` to determine the ``max_age`` cache
+value for a given file path if it wasn't passed.
+
+By default, this returns :data:`SEND_FILE_MAX_AGE_DEFAULT` from
+the configuration of :data:`~flask.current_app`. This defaults
+to ``None``, which tells the browser to use conditional requests
+instead of a timed cache, which is usually preferable.
+
+Note this is a duplicate of the same method in the Flask
+class.
+
+.. versionchanged:: 2.0
+    The default configuration is ``None`` instead of 12 hours.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1blueprints_1_1_blueprint_a82efa321d7c2a4b8b7b55ac714c3ec8f}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!open\_resource@{open\_resource}}
+\index{open\_resource@{open\_resource}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{open\_resource()}{open\_resource()}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_a82efa321d7c2a4b8b7b55ac714c3ec8f} 
+ t.\+IO\+[t.\+Any\+Str]\+ flask.\+blueprints.\+Blueprint.\+open\+\_\+resource (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{resource}{, }\item[{str }]{mode}{ = {\ttfamily "{}rb"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily "{}utf-\/8"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Open a resource file relative to :attr:`root_path` for reading. The
+blueprint-relative equivalent of the app's :meth:`~.Flask.open_resource`
+method.
+
+:param resource: Path to the resource relative to :attr:`root_path`.
+:param mode: Open the file in this mode. Only reading is supported,
+    valid values are ``"r"`` (or ``"rt"``) and ``"rb"``.
+:param encoding: Open the file with this encoding when opening in text
+    mode. This is ignored when opening in binary mode.
+
+.. versionchanged:: 3.1
+    Added the ``encoding`` parameter.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1blueprints_1_1_blueprint_ac2d42393163bfbc9c20dc3e9c0c0c2a9}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!send\_static\_file@{send\_static\_file}}
+\index{send\_static\_file@{send\_static\_file}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{send\_static\_file()}{send\_static\_file()}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_ac2d42393163bfbc9c20dc3e9c0c0c2a9} 
+ \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} flask.\+blueprints.\+Blueprint.\+send\+\_\+static\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The view function used to serve files from
+:attr:`static_folder`. A route is automatically registered for
+this view at :attr:`static_url_path` if :attr:`static_folder` is
+set.
+
+Note this is a duplicate of the same method in the Flask
+class.
+
+.. versionadded:: 0.5
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1blueprints_1_1_blueprint_doc-variable-members}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_afd37dd156019ca794caa010a95a7a22a}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!cli@{cli}}
+\index{cli@{cli}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_afd37dd156019ca794caa010a95a7a22a} 
+flask.\+blueprints.\+Blueprint.\+cli = \doxymbox{\hyperlink{classflask_1_1cli_1_1_app_group}{App\+Group}}()}
+
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_a37daed86aef1788de5c09c71edacee47}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!has\_static\_folder@{has\_static\_folder}}
+\index{has\_static\_folder@{has\_static\_folder}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{has\_static\_folder}{has\_static\_folder}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_a37daed86aef1788de5c09c71edacee47} 
+flask.\+blueprints.\+Blueprint.\+has\+\_\+static\+\_\+folder}
+
+\Hypertarget{classflask_1_1blueprints_1_1_blueprint_a03db2b10c9e61caae6db21912fd9c3ec}\index{flask.blueprints.Blueprint@{flask.blueprints.Blueprint}!static\_folder@{static\_folder}}
+\index{static\_folder@{static\_folder}!flask.blueprints.Blueprint@{flask.blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{static\_folder}{static\_folder}}
+{\footnotesize\ttfamily \label{classflask_1_1blueprints_1_1_blueprint_a03db2b10c9e61caae6db21912fd9c3ec} 
+flask.\+blueprints.\+Blueprint.\+static\+\_\+folder}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{blueprints_8py}{blueprints.\+py}}\end{DoxyCompactItemize}

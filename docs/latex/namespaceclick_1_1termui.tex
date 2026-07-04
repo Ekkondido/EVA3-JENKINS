@@ -1,0 +1,708 @@
+\doxysection{click.\+termui Namespace Reference}
+\hypertarget{namespaceclick_1_1termui}{}\label{namespaceclick_1_1termui}\index{click.termui@{click.termui}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_ae7db1792599c4d2ea1edfd38b19b0e20}{\+\_\+mask\+\_\+hidden\+\_\+input}} (str message, str value)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_af884e1ac2b221e0acf873a2bd2a29332}{hidden\+\_\+prompt\+\_\+func}} (str prompt)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_af41c165f35a21db168ad6d28df489e69}{\+\_\+readline\+\_\+prompt}} (t.\+Callable\+[\+[str]\+, str]\+ func, str text, bool err)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a243dedf690e7a4d9ff02dd6b2d3f80d5}{\+\_\+build\+\_\+prompt}} (str text, str suffix, bool\texorpdfstring{$\vert$}{|}str show\+\_\+default=False, t.\+Any\texorpdfstring{$\vert$}{|}None default=None, bool show\+\_\+choices=True, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}None type=None)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceclick_1_1termui_afc51f9271aa134d8dd8c821fc0b74b26}{\+\_\+format\+\_\+default}} (t.\+Any default)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceclick_1_1termui_a6544aafe2606f37c26b2cb1cd35d7c57}{prompt}} (str text, t.\+Any\texorpdfstring{$\vert$}{|}None default=None, bool hide\+\_\+input=False, bool\texorpdfstring{$\vert$}{|}str confirmation\+\_\+prompt=False, \doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+\texorpdfstring{$\vert$}{|}t.\+Any\texorpdfstring{$\vert$}{|}None type=None, t.\+Callable\+[\+[str]\+, t.\+Any]\+\texorpdfstring{$\vert$}{|}None value\+\_\+proc=None, str prompt\+\_\+suffix="{}:\+ "{}, bool\texorpdfstring{$\vert$}{|}str show\+\_\+default=True, bool err=False, bool show\+\_\+choices=True)
+\item 
+bool \doxymbox{\hyperlink{namespaceclick_1_1termui_a3d99ef23161356ea9211836539c818ed}{confirm}} (str text, bool\texorpdfstring{$\vert$}{|}None default=False, bool abort=False, str prompt\+\_\+suffix="{}:\+ "{}, bool show\+\_\+default=True, bool err=False)
+\item 
+t.\+Context\+Manager\+[t.\+Text\+IO]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_a62f1e3b34c738e59a56969f478068fb3}{get\+\_\+pager\+\_\+file}} (bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_aa08b1532ad13cb41260a4797b7546f85}{echo\+\_\+via\+\_\+pager}} (cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[$\,$]\+, cabc.\+Iterable\+[str]\+]\+\texorpdfstring{$\vert$}{|}str text\+\_\+or\+\_\+generator, bool\texorpdfstring{$\vert$}{|}None color=None)
+\item 
+\doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[int]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_addd9cb830ca9e551e9e7f04a3f669c59}{progressbar}} (\texorpdfstring{$\ast$}{*}, int length, str\texorpdfstring{$\vert$}{|}None label=None, bool hidden=False, bool show\+\_\+eta=True, bool\texorpdfstring{$\vert$}{|}None show\+\_\+percent=None, bool show\+\_\+pos=False, str fill\+\_\+char="{}\+\#"{}, str empty\+\_\+char="{}-\/"{}, str bar\+\_\+template="{}\%(label)s  \+[\%(bar)s]\+  \%(info)s"{}, str info\+\_\+sep="{}  "{}, int width=36, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None file=None, bool\texorpdfstring{$\vert$}{|}None color=None, int update\+\_\+min\+\_\+steps=1)
+\item 
+\doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_a2850aa30e3946e01ce153e133ade9b6f}{progressbar}} (cabc.\+Iterable\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}]\+\texorpdfstring{$\vert$}{|}None iterable=None, int\texorpdfstring{$\vert$}{|}None length=None, str\texorpdfstring{$\vert$}{|}None label=None, bool hidden=False, bool show\+\_\+eta=True, bool\texorpdfstring{$\vert$}{|}None show\+\_\+percent=None, bool show\+\_\+pos=False, t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}\texorpdfstring{$\vert$}{|}None]\+, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None item\+\_\+show\+\_\+func=None, str fill\+\_\+char="{}\+\#"{}, str empty\+\_\+char="{}-\/"{}, str bar\+\_\+template="{}\%(label)s  \+[\%(bar)s]\+  \%(info)s"{}, str info\+\_\+sep="{}  "{}, int width=36, t.\+Text\+IO\texorpdfstring{$\vert$}{|}None file=None, bool\texorpdfstring{$\vert$}{|}None color=None, int update\+\_\+min\+\_\+steps=1)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a4e28212e922f28a088256bff8886a3c9}{clear}} ()
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a376f6ecba2f7011ce9c659078cb63107}{\+\_\+interpret\+\_\+color}} (int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str color, int offset=0)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a55622fce9a9d01580ba300472e25d25c}{style}} (t.\+Any text, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None fg=None, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None bg=None, bool\texorpdfstring{$\vert$}{|}None bold=None, bool\texorpdfstring{$\vert$}{|}None dim=None, bool\texorpdfstring{$\vert$}{|}None underline=None, bool\texorpdfstring{$\vert$}{|}None overline=None, bool\texorpdfstring{$\vert$}{|}None italic=None, bool\texorpdfstring{$\vert$}{|}None blink=None, bool\texorpdfstring{$\vert$}{|}None reverse=None, bool\texorpdfstring{$\vert$}{|}None strikethrough=None, bool reset=True)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a3c66654f6c6da31db44285c4ded864f6}{unstyle}} (str text)
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a07d2ec49b636de5f81a96158e079913a}{secho}} (t.\+Any\texorpdfstring{$\vert$}{|}None message=None, t.\+IO\+[t.\+Any\+Str]\+\texorpdfstring{$\vert$}{|}None file=None, bool nl=True, bool err=False, bool\texorpdfstring{$\vert$}{|}None color=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any styles)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_a7f2d61742525445d8d1f65d9246fe4c9}{edit}} (bytes\texorpdfstring{$\vert$}{|}bytearray text, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=False, str extension="{}.txt"{})
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_ae98e8ec25101dfd0bdfaf2b32512b500}{edit}} (str text, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{})
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a3fb6f8a56b817ed74c3a559acd7dc029}{edit}} (None text=None, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{}, str\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None filename=None)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceclick_1_1termui_a13cf004ceb72f9ffec9ef34340b79c05}{edit}} (str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None text=None, str\texorpdfstring{$\vert$}{|}None editor=None, cabc.\+Mapping\+[str, str]\+\texorpdfstring{$\vert$}{|}None env=None, bool require\+\_\+save=True, str extension="{}.txt"{}, str\texorpdfstring{$\vert$}{|}cabc.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None filename=None)
+\item 
+int \doxymbox{\hyperlink{namespaceclick_1_1termui_a78c05893870070d4fa19f8146ecddd0e}{launch}} (str url, bool wait=False, bool locate=False)
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a3edfbaeba6fa45f0a5769e66017fdbcb}{getchar}} (bool echo=False)
+\item 
+Abstract\+Context\+Manager\+[int]\+ \doxymbox{\hyperlink{namespaceclick_1_1termui_aff143f4a3fecc09787e16cb765edbef4}{raw\+\_\+terminal}} ()
+\item 
+None \doxymbox{\hyperlink{namespaceclick_1_1termui_a310e68be9e3804d0138155e239abd655}{pause}} (str\texorpdfstring{$\vert$}{|}None info=None, bool err=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}} = t.\+Type\+Var("{}V"{})
+\item 
+t \doxymbox{\hyperlink{namespaceclick_1_1termui_ac878c4c2ecccf65cb0d1ab76b3cdb7ad}{visible\+\_\+prompt\+\_\+func}} = input
+\item 
+dict \doxymbox{\hyperlink{namespaceclick_1_1termui_a1386c5bf919315c1e4a2e28cc50bf8f7}{\+\_\+ansi\+\_\+colors}}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_a8c98a9c2d2095e63e60111ff56160166}{\+\_\+ansi\+\_\+reset\+\_\+all}} = "{}\textbackslash{}033\+[0m"{}
+\item 
+str \doxymbox{\hyperlink{namespaceclick_1_1termui_aa7cc6634c052e4bcbe3b073e57e7457e}{\+\_\+\+HIDDEN\+\_\+\+INPUT\+\_\+\+MASK}} = "{}\textquotesingle{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\textquotesingle{}"{}
+\item 
+t \doxymbox{\hyperlink{namespaceclick_1_1termui_a6535765fc77473313b0b2ea10b5981d8}{\+\_\+getchar}} = None
+\end{DoxyCompactItemize}
+
+
+\label{namespaceclick_1_1termui_doc-func-members}
+\Hypertarget{namespaceclick_1_1termui_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceclick_1_1termui_a243dedf690e7a4d9ff02dd6b2d3f80d5}\index{click.termui@{click.termui}!\_build\_prompt@{\_build\_prompt}}
+\index{\_build\_prompt@{\_build\_prompt}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_build\_prompt()}{\_build\_prompt()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a243dedf690e7a4d9ff02dd6b2d3f80d5} 
+ str \+\_\+build\+\_\+prompt (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{str}]{suffix}{, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{show\+\_\+default}{ = {\ttfamily False}, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{default}{ = {\ttfamily None}, }\item[{bool }]{show\+\_\+choices}{ = {\ttfamily True}, }\item[{\doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_afc51f9271aa134d8dd8c821fc0b74b26}\index{click.termui@{click.termui}!\_format\_default@{\_format\_default}}
+\index{\_format\_default@{\_format\_default}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_format\_default()}{\_format\_default()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_afc51f9271aa134d8dd8c821fc0b74b26} 
+ t.\+Any \+\_\+format\+\_\+default (\begin{DoxyParamCaption}\item[{t.\+Any}]{default}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_a376f6ecba2f7011ce9c659078cb63107}\index{click.termui@{click.termui}!\_interpret\_color@{\_interpret\_color}}
+\index{\_interpret\_color@{\_interpret\_color}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_interpret\_color()}{\_interpret\_color()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a376f6ecba2f7011ce9c659078cb63107} 
+ str \+\_\+interpret\+\_\+color (\begin{DoxyParamCaption}\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int, int]\+ \texorpdfstring{$\vert$}{|} str}]{color}{, }\item[{int }]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_ae7db1792599c4d2ea1edfd38b19b0e20}\index{click.termui@{click.termui}!\_mask\_hidden\_input@{\_mask\_hidden\_input}}
+\index{\_mask\_hidden\_input@{\_mask\_hidden\_input}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_mask\_hidden\_input()}{\_mask\_hidden\_input()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_ae7db1792599c4d2ea1edfd38b19b0e20} 
+ str \+\_\+mask\+\_\+hidden\+\_\+input (\begin{DoxyParamCaption}\item[{str}]{message}{, }\item[{str}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Replace occurrences of ``value`` in ``message`` with a fixed mask.
+
+Both ``repr(value)`` (the form built-in :class:`ParamType` errors use
+via ``{value!r}``) and the raw value are masked. The raw-value pass
+uses word-boundary lookarounds so a substring like ``"1"`` does not
+match inside ``"10"``, and ``"ent"`` does not match inside
+``"Authentication"``. The empty string is skipped to avoid matching
+at every boundary.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_af41c165f35a21db168ad6d28df489e69}\index{click.termui@{click.termui}!\_readline\_prompt@{\_readline\_prompt}}
+\index{\_readline\_prompt@{\_readline\_prompt}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_readline\_prompt()}{\_readline\_prompt()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_af41c165f35a21db168ad6d28df489e69} 
+ str \+\_\+readline\+\_\+prompt (\begin{DoxyParamCaption}\item[{t.\+Callable\+[\+[str]\+, str]\+}]{func}{, }\item[{str}]{text}{, }\item[{bool}]{err}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Call a prompt function, passing the full prompt on non-Windows so
+readline can handle line editing and cursor positioning correctly.
+
+On Windows the prompt is written separately via :func:`echo` for
+colorama support, with only the last character passed to *func*.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a4e28212e922f28a088256bff8886a3c9}\index{click.termui@{click.termui}!clear@{clear}}
+\index{clear@{clear}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a4e28212e922f28a088256bff8886a3c9} 
+ None clear (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Clears the terminal screen.  This will have the effect of clearing
+the whole visible space of the terminal and moving the cursor to the
+top left.  This does not do anything if not connected to a terminal.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a3d99ef23161356ea9211836539c818ed}\index{click.termui@{click.termui}!confirm@{confirm}}
+\index{confirm@{confirm}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{confirm()}{confirm()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a3d99ef23161356ea9211836539c818ed} 
+ bool confirm (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{default}{ = {\ttfamily False}, }\item[{bool }]{abort}{ = {\ttfamily False}, }\item[{str }]{prompt\+\_\+suffix}{ = {\ttfamily "{}:\+~"{}}, }\item[{bool }]{show\+\_\+default}{ = {\ttfamily True}, }\item[{bool }]{err}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prompts for confirmation (yes/no question).
+
+If the user aborts the input by sending a interrupt signal this
+function will catch it and raise a :exc:`Abort` exception.
+
+:param text: the question to ask.
+:param default: The default value to use when no input is given. If
+    ``None``, repeat until input is given.
+:param abort: if this is set to `True` a negative answer aborts the
+              exception by raising :exc:`Abort`.
+:param prompt_suffix: a suffix that should be added to the prompt.
+:param show_default: shows or hides the default value in the prompt.
+:param err: if set to true the file defaults to ``stderr`` instead of
+            ``stdout``, the same as with echo.
+
+.. versionchanged:: 8.3.1
+    A space is no longer appended to the prompt.
+
+.. versionchanged:: 8.0
+    Repeat until input is given if ``default`` is ``None``.
+
+.. versionadded:: 4.0
+    Added the ``err`` parameter.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_aa08b1532ad13cb41260a4797b7546f85}\index{click.termui@{click.termui}!echo\_via\_pager@{echo\_via\_pager}}
+\index{echo\_via\_pager@{echo\_via\_pager}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{echo\_via\_pager()}{echo\_via\_pager()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_aa08b1532ad13cb41260a4797b7546f85} 
+ None echo\+\_\+via\+\_\+pager (\begin{DoxyParamCaption}\item[{cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} t.\+Callable\+[\+[$\,$]\+, cabc.\+Iterable\+[str]\+]\+ \texorpdfstring{$\vert$}{|} str}]{text\+\_\+or\+\_\+generator}{, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function takes a text and shows it via an environment specific
+pager on stdout.
+
+.. versionchanged:: 3.0
+   Added the `color` flag.
+
+:param text_or_generator: the text to page, or alternatively, a
+                          generator emitting the text to page.
+:param color: controls if the pager supports ANSI colors or not.  The
+              default is autodetection.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a7f2d61742525445d8d1f65d9246fe4c9}\index{click.termui@{click.termui}!edit@{edit}}
+\index{edit@{edit}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a7f2d61742525445d8d1f65d9246fe4c9} 
+ bytes \texorpdfstring{$\vert$}{|} None edit (\begin{DoxyParamCaption}\item[{bytes \texorpdfstring{$\vert$}{|} bytearray}]{text}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{editor}{ = {\ttfamily None}, }\item[{cabc.\+Mapping\+[str, str]\+ \texorpdfstring{$\vert$}{|} None }]{env}{ = {\ttfamily None}, }\item[{bool }]{require\+\_\+save}{ = {\ttfamily False}, }\item[{str }]{extension}{ = {\ttfamily "{}.txt"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_a3fb6f8a56b817ed74c3a559acd7dc029}\index{click.termui@{click.termui}!edit@{edit}}
+\index{edit@{edit}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a3fb6f8a56b817ed74c3a559acd7dc029} 
+ None edit (\begin{DoxyParamCaption}\item[{None }]{text}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{editor}{ = {\ttfamily None}, }\item[{cabc.\+Mapping\+[str, str]\+ \texorpdfstring{$\vert$}{|} None }]{env}{ = {\ttfamily None}, }\item[{bool }]{require\+\_\+save}{ = {\ttfamily True}, }\item[{str }]{extension}{ = {\ttfamily "{}.txt"{}}, }\item[{str \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_ae98e8ec25101dfd0bdfaf2b32512b500}\index{click.termui@{click.termui}!edit@{edit}}
+\index{edit@{edit}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_ae98e8ec25101dfd0bdfaf2b32512b500} 
+ str \texorpdfstring{$\vert$}{|} None edit (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{editor}{ = {\ttfamily None}, }\item[{cabc.\+Mapping\+[str, str]\+ \texorpdfstring{$\vert$}{|} None }]{env}{ = {\ttfamily None}, }\item[{bool }]{require\+\_\+save}{ = {\ttfamily True}, }\item[{str }]{extension}{ = {\ttfamily "{}.txt"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_a13cf004ceb72f9ffec9ef34340b79c05}\index{click.termui@{click.termui}!edit@{edit}}
+\index{edit@{edit}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{edit()}{edit()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a13cf004ceb72f9ffec9ef34340b79c05} 
+ str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} None edit (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} None }]{text}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{editor}{ = {\ttfamily None}, }\item[{cabc.\+Mapping\+[str, str]\+ \texorpdfstring{$\vert$}{|} None }]{env}{ = {\ttfamily None}, }\item[{bool }]{require\+\_\+save}{ = {\ttfamily True}, }\item[{str }]{extension}{ = {\ttfamily "{}.txt"{}}, }\item[{str \texorpdfstring{$\vert$}{|} cabc.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Edits the given text in the defined editor.  If an editor is given
+(should be the full path to the executable but the regular operating
+system search path is used for finding the executable) it overrides
+the detected editor.  Optionally, some environment variables can be
+used.  If the editor is closed without changes, `None` is returned.  In
+case a file is edited directly the return value is always `None` and
+`require_save` and `extension` are ignored.
+
+If the editor cannot be opened a :exc:`UsageError` is raised.
+
+Note for Windows: to simplify cross-platform usage, the newlines are
+automatically converted from POSIX to Windows and vice versa.  As such,
+the message here will have ``\n`` as newline markers.
+
+:param text: the text to edit.
+:param editor: optionally the editor to use.  Defaults to automatic
+               detection.
+:param env: environment variables to forward to the editor.
+:param require_save: if this is true, then not saving in the editor
+                     will make the return value become `None`.
+:param extension: the extension to tell the editor about.  This defaults
+                  to `.txt` but changing this might change syntax
+                  highlighting.
+:param filename: if provided it will edit this file instead of the
+                 provided text contents.  It will not use a temporary
+                 file as an indirection in that case. If the editor supports
+                 editing multiple files at once, a sequence of files may be
+                 passed as well. Invoke `click.file` once per file instead
+                 if multiple files cannot be managed at once or editing the
+                 files serially is desired.
+
+.. versionchanged:: 8.2.0
+    ``filename`` now accepts any ``Iterable[str]`` in addition to a ``str``
+    if the ``editor`` supports editing multiple files at once.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a62f1e3b34c738e59a56969f478068fb3}\index{click.termui@{click.termui}!get\_pager\_file@{get\_pager\_file}}
+\index{get\_pager\_file@{get\_pager\_file}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{get\_pager\_file()}{get\_pager\_file()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a62f1e3b34c738e59a56969f478068fb3} 
+ t.\+Context\+Manager\+[t.\+Text\+IO]\+ get\+\_\+pager\+\_\+file (\begin{DoxyParamCaption}\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Context manager.
+
+Yields a writable file-like object which can be used as an output pager.
+
+.. versionadded:: 8.4.0
+
+:param color: controls if the pager supports ANSI colors or not.  The
+              default is autodetection.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a3edfbaeba6fa45f0a5769e66017fdbcb}\index{click.termui@{click.termui}!getchar@{getchar}}
+\index{getchar@{getchar}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{getchar()}{getchar()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a3edfbaeba6fa45f0a5769e66017fdbcb} 
+ str getchar (\begin{DoxyParamCaption}\item[{bool }]{echo}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fetches a single character from the terminal and returns it.  This
+will always return a unicode character and under certain rare
+circumstances this might return more than one character.  The
+situations which more than one character is returned is when for
+whatever reason multiple characters end up in the terminal buffer or
+standard input was not actually a terminal.
+
+Note that this will always read from the terminal, even if something
+is piped into the standard input.
+
+Note for Windows: in rare cases when typing non-ASCII characters, this
+function might wait for a second character and then return both at once.
+This is because certain Unicode characters look like special-key markers.
+
+.. versionadded:: 2.0
+
+:param echo: if set to `True`, the character read will also show up on
+             the terminal.  The default is to not show it.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_af884e1ac2b221e0acf873a2bd2a29332}\index{click.termui@{click.termui}!hidden\_prompt\_func@{hidden\_prompt\_func}}
+\index{hidden\_prompt\_func@{hidden\_prompt\_func}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{hidden\_prompt\_func()}{hidden\_prompt\_func()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_af884e1ac2b221e0acf873a2bd2a29332} 
+ str hidden\+\_\+prompt\+\_\+func (\begin{DoxyParamCaption}\item[{str}]{prompt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_a78c05893870070d4fa19f8146ecddd0e}\index{click.termui@{click.termui}!launch@{launch}}
+\index{launch@{launch}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{launch()}{launch()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a78c05893870070d4fa19f8146ecddd0e} 
+ int launch (\begin{DoxyParamCaption}\item[{str}]{url}{, }\item[{bool }]{wait}{ = {\ttfamily False}, }\item[{bool }]{locate}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function launches the given URL (or filename) in the default
+viewer application for this file type.  If this is an executable, it
+might launch the executable in a new session.  The return value is
+the exit code of the launched application.  Usually, ``0`` indicates
+success.
+
+Examples::
+
+    click.launch('https://click.palletsprojects.com/')
+    click.launch('/my/downloaded/file', locate=True)
+
+.. versionadded:: 2.0
+
+:param url: URL or filename of the thing to launch.
+:param wait: Wait for the program to exit before returning. This
+    only works if the launched program blocks. In particular,
+    ``xdg-open`` on Linux does not block.
+:param locate: if this is set to `True` then instead of launching the
+               application associated with the URL it will attempt to
+               launch a file manager with the file located.  This
+               might have weird effects if the URL does not point to
+               the filesystem.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a310e68be9e3804d0138155e239abd655}\index{click.termui@{click.termui}!pause@{pause}}
+\index{pause@{pause}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a310e68be9e3804d0138155e239abd655} 
+ None pause (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} None }]{info}{ = {\ttfamily None}, }\item[{bool }]{err}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This command stops execution and waits for the user to press any
+key to continue.  This is similar to the Windows batch "pause"
+command.  If the program is not run through a terminal, this command
+will instead do nothing.
+
+.. versionadded:: 2.0
+
+.. versionadded:: 4.0
+   Added the `err` parameter.
+
+:param info: The message to print before pausing. Defaults to
+    ``"Press any key to continue..."``.
+:param err: if set to message goes to ``stderr`` instead of
+            ``stdout``, the same as with echo.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_addd9cb830ca9e551e9e7f04a3f669c59}\index{click.termui@{click.termui}!progressbar@{progressbar}}
+\index{progressbar@{progressbar}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{progressbar()}{progressbar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_addd9cb830ca9e551e9e7f04a3f669c59} 
+ \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[int]\+ progressbar (\begin{DoxyParamCaption}\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int}]{length}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{label}{ = {\ttfamily None}, }\item[{bool }]{hidden}{ = {\ttfamily False}, }\item[{bool }]{show\+\_\+eta}{ = {\ttfamily True}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{show\+\_\+percent}{ = {\ttfamily None}, }\item[{bool }]{show\+\_\+pos}{ = {\ttfamily False}, }\item[{str }]{fill\+\_\+char}{ = {\ttfamily "{}\+\#"{}}, }\item[{str }]{empty\+\_\+char}{ = {\ttfamily "{}-\/"{}}, }\item[{str }]{bar\+\_\+template}{ = {\ttfamily "{}\%(label)s~~\+[\%(bar)s]\+~~\%(info)s"{}}, }\item[{str }]{info\+\_\+sep}{ = {\ttfamily "{}~~"{}}, }\item[{int }]{width}{ = {\ttfamily 36}, }\item[{t.\+Text\+IO \texorpdfstring{$\vert$}{|} None }]{file}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}, }\item[{int }]{update\+\_\+min\+\_\+steps}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_a2850aa30e3946e01ce153e133ade9b6f}\index{click.termui@{click.termui}!progressbar@{progressbar}}
+\index{progressbar@{progressbar}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{progressbar()}{progressbar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a2850aa30e3946e01ce153e133ade9b6f} 
+ \doxymbox{\hyperlink{classclick_1_1__termui__impl_1_1_progress_bar}{Progress\+Bar}}\+[\doxymbox{\hyperlink{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}{V}}]\+ progressbar (\begin{DoxyParamCaption}\item[{cabc.\+Iterable\texorpdfstring{$\vert$}{|}None}]{iterable}{\+[\+V]\+ = {\ttfamily None}, }\item[{int\texorpdfstring{$\vert$}{|}None}]{length}{ = {\ttfamily None}, }\item[{str\texorpdfstring{$\vert$}{|}None}]{label}{ = {\ttfamily None}, }\item[{bool}]{hidden}{ = {\ttfamily False}, }\item[{bool}]{show\+\_\+eta}{ = {\ttfamily True}, }\item[{bool\texorpdfstring{$\vert$}{|}None}]{show\+\_\+percent}{ = {\ttfamily None}, }\item[{bool}]{show\+\_\+pos}{ = {\ttfamily False}, }\item[{t.}]{Callable}{\+[\+[\+V\texorpdfstring{$\vert$}{|}\+None]\+, }\item[{str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None}]{item\+\_\+show\+\_\+func}{ = {\ttfamily None}, }\item[{str}]{fill\+\_\+char}{ = {\ttfamily "{}\+\#"{}}, }\item[{str}]{empty\+\_\+char}{ = {\ttfamily "{}-\/"{}}, }\item[{str}]{bar\+\_\+template}{ = {\ttfamily "{}\%(label)s~~\+[\%(bar)s]\+~~\%(info)s"{}}, }\item[{str}]{info\+\_\+sep}{ = {\ttfamily "{}~~"{}}, }\item[{int}]{width}{ = {\ttfamily 36}, }\item[{t.\+Text\+IO\texorpdfstring{$\vert$}{|}None}]{file}{ = {\ttfamily None}, }\item[{bool\texorpdfstring{$\vert$}{|}None}]{color}{ = {\ttfamily None}, }\item[{int}]{update\+\_\+min\+\_\+steps}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function creates an iterable context manager that can be used
+to iterate over something while showing a progress bar.  It will
+either iterate over the `iterable` or `length` items (that are counted
+up).  While iteration happens, this function will print a rendered
+progress bar to the given `file` (defaults to stdout) and will attempt
+to calculate remaining time and more.  By default, this progress bar
+will not be rendered if the file is not a terminal.
+
+The context manager creates the progress bar.  When the context
+manager is entered the progress bar is already created.  With every
+iteration over the progress bar, the iterable passed to the bar is
+advanced and the bar is updated.  When the context manager exits,
+a newline is printed and the progress bar is finalized on screen.
+
+Note: The progress bar is currently designed for use cases where the
+total progress can be expected to take at least several seconds.
+Because of this, the ProgressBar class object won't display
+progress that is considered too fast, and progress where the time
+between steps is less than a second.
+
+No printing must happen or the progress bar will be unintentionally
+destroyed.
+
+Example usage::
+
+    with progressbar(items) as bar:
+        for item in bar:
+            do_something_with(item)
+
+Alternatively, if no iterable is specified, one can manually update the
+progress bar through the `update()` method instead of directly
+iterating over the progress bar.  The update method accepts the number
+of steps to increment the bar with::
+
+    with progressbar(length=chunks.total_bytes) as bar:
+        for chunk in chunks:
+            process_chunk(chunk)
+            bar.update(chunks.bytes)
+
+The ``update()`` method also takes an optional value specifying the
+``current_item`` at the new position. This is useful when used
+together with ``item_show_func`` to customize the output for each
+manual step::
+
+    with click.progressbar(
+        length=total_size,
+        label='Unzipping archive',
+        item_show_func=lambda a: a.filename
+    ) as bar:
+        for archive in zip_file:
+            archive.extract()
+            bar.update(archive.size, archive)
+
+:param iterable: an iterable to iterate over.  If not provided the length
+                 is required.
+:param length: the number of items to iterate over.  By default the
+               progressbar will attempt to ask the iterator about its
+               length, which might or might not work.  If an iterable is
+               also provided this parameter can be used to override the
+               length.  If an iterable is not provided the progress bar
+               will iterate over a range of that length.
+:param label: the label to show next to the progress bar.
+:param hidden: hide the progressbar. Defaults to ``False``. When no tty is
+    detected, it will only print the progressbar label. Setting this to
+    ``False`` also disables that.
+:param show_eta: enables or disables the estimated time display.  This is
+                 automatically disabled if the length cannot be
+                 determined.
+:param show_percent: enables or disables the percentage display.  The
+                     default is `True` if the iterable has a length or
+                     `False` if not.
+:param show_pos: enables or disables the absolute position display.  The
+                 default is `False`.
+:param item_show_func: A function called with the current item which
+    can return a string to show next to the progress bar. If the
+    function returns ``None`` nothing is shown. The current item can
+    be ``None``, such as when entering and exiting the bar.
+:param fill_char: the character to use to show the filled part of the
+                  progress bar.
+:param empty_char: the character to use to show the non-filled part of
+                   the progress bar.
+:param bar_template: the format string to use as template for the bar.
+                     The parameters in it are ``label`` for the label,
+                     ``bar`` for the progress bar and ``info`` for the
+                     info section.
+:param info_sep: the separator between multiple info items (eta etc.)
+:param width: the width of the progress bar in characters, 0 means full
+              terminal width
+:param file: The file to write to. If this is not a terminal then
+    only the label is printed.
+:param color: controls if the terminal supports ANSI colors or not.  The
+              default is autodetection.  This is only needed if ANSI
+              codes are included anywhere in the progress bar output
+              which is not the case by default.
+:param update_min_steps: Render only when this many updates have
+    completed. This allows tuning for very fast iterators.
+
+.. versionadded:: 8.2
+    The ``hidden`` argument.
+
+.. versionchanged:: 8.0
+    Output is shown even if execution time is less than 0.5 seconds.
+
+.. versionchanged:: 8.0
+    ``item_show_func`` shows the current item, not the previous one.
+
+.. versionchanged:: 8.0
+    Labels are echoed if the output is not a TTY. Reverts a change
+    in 7.0 that removed all output.
+
+.. versionadded:: 8.0
+   The ``update_min_steps`` parameter.
+
+.. versionadded:: 4.0
+    The ``color`` parameter and ``update`` method.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a6544aafe2606f37c26b2cb1cd35d7c57}\index{click.termui@{click.termui}!prompt@{prompt}}
+\index{prompt@{prompt}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{prompt()}{prompt()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a6544aafe2606f37c26b2cb1cd35d7c57} 
+ t.\+Any prompt (\begin{DoxyParamCaption}\item[{str}]{text}{, }\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{default}{ = {\ttfamily None}, }\item[{bool }]{hide\+\_\+input}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{confirmation\+\_\+prompt}{ = {\ttfamily False}, }\item[{\doxymbox{\hyperlink{classclick_1_1types_1_1_param_type}{Param\+Type}}\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} t.\+Any \texorpdfstring{$\vert$}{|} None }]{type}{ = {\ttfamily None}, }\item[{t.\+Callable\+[\+[str]\+, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{value\+\_\+proc}{ = {\ttfamily None}, }\item[{str }]{prompt\+\_\+suffix}{ = {\ttfamily "{}:\+~"{}}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{show\+\_\+default}{ = {\ttfamily True}, }\item[{bool }]{err}{ = {\ttfamily False}, }\item[{bool }]{show\+\_\+choices}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Prompts a user for input.  This is a convenience function that can
+be used to prompt a user for input later.
+
+If the user aborts the input by sending an interrupt signal, this
+function will catch it and raise a :exc:`Abort` exception.
+
+:param text: the text to show for the prompt.
+:param default: the default value to use if no input happens.  If this
+                is not given it will prompt until it's aborted.
+:param hide_input: if this is set to true then the input value will
+                   be hidden.
+:param confirmation_prompt: Prompt a second time to confirm the
+    value. Can be set to a string instead of ``True`` to customize
+    the message.
+:param type: the type to use to check the value against.
+:param value_proc: if this parameter is provided it's a function that
+                   is invoked instead of the type conversion to
+                   convert a value.
+:param prompt_suffix: a suffix that should be added to the prompt.
+:param show_default: shows or hides the default value in the prompt.
+                     If this value is a string, it shows that string
+                     in parentheses instead of the actual value.
+:param err: if set to true the file defaults to ``stderr`` instead of
+            ``stdout``, the same as with echo.
+:param show_choices: Show or hide choices if the passed type is a Choice.
+                     For example if type is a Choice of either day or week,
+                     show_choices is true and text is "Group by" then the
+                     prompt will be "Group by (day, week): ".
+
+.. versionchanged:: 8.3.3
+    ``show_default`` can be a string to show a custom value instead
+    of the actual default, matching the help text behavior.
+
+.. versionchanged:: 8.3.1
+    A space is no longer appended to the prompt.
+
+.. versionadded:: 8.0
+    ``confirmation_prompt`` can be a custom string.
+
+.. versionadded:: 7.0
+    Added the ``show_choices`` parameter.
+
+.. versionadded:: 6.0
+    Added unicode support for cmd.exe on Windows.
+
+.. versionadded:: 4.0
+    Added the `err` parameter.
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_aff143f4a3fecc09787e16cb765edbef4}\index{click.termui@{click.termui}!raw\_terminal@{raw\_terminal}}
+\index{raw\_terminal@{raw\_terminal}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{raw\_terminal()}{raw\_terminal()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_aff143f4a3fecc09787e16cb765edbef4} 
+ Abstract\+Context\+Manager\+[int]\+ raw\+\_\+terminal (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceclick_1_1termui_a07d2ec49b636de5f81a96158e079913a}\index{click.termui@{click.termui}!secho@{secho}}
+\index{secho@{secho}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{secho()}{secho()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a07d2ec49b636de5f81a96158e079913a} 
+ None secho (\begin{DoxyParamCaption}\item[{t.\+Any \texorpdfstring{$\vert$}{|} None }]{message}{ = {\ttfamily None}, }\item[{t.\+IO\+[t.\+Any\+Str]\+ \texorpdfstring{$\vert$}{|} None }]{file}{ = {\ttfamily None}, }\item[{bool }]{nl}{ = {\ttfamily True}, }\item[{bool }]{err}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{color}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{styles}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function combines :func:`echo` and :func:`style` into one
+call.  As such the following two calls are the same::
+
+    click.secho('Hello World!', fg='green')
+    click.echo(click.style('Hello World!', fg='green'))
+
+All keyword arguments are forwarded to the underlying functions
+depending on which one they go with.
+
+Non-string types will be converted to :class:`str`. However,
+:class:`bytes` are passed directly to :meth:`echo` without applying
+style. If you want to style bytes that represent text, call
+:meth:`bytes.decode` first.
+
+.. versionchanged:: 8.0
+    A non-string ``message`` is converted to a string. Bytes are
+    passed through without style applied.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a55622fce9a9d01580ba300472e25d25c}\index{click.termui@{click.termui}!style@{style}}
+\index{style@{style}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{style()}{style()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a55622fce9a9d01580ba300472e25d25c} 
+ str style (\begin{DoxyParamCaption}\item[{t.\+Any}]{text}{, }\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int, int]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{fg}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int, int]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{bg}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{bold}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{dim}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{underline}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{overline}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{italic}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{blink}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{reverse}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{strikethrough}{ = {\ttfamily None}, }\item[{bool }]{reset}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Styles a text with ANSI styles and returns the new string.  By
+default the styling is self contained which means that at the end
+of the string a reset code is issued.  This can be prevented by
+passing ``reset=False``.
+
+Examples::
+
+    click.echo(click.style('Hello World!', fg='green'))
+    click.echo(click.style('ATTENTION!', blink=True))
+    click.echo(click.style('Some things', reverse=True, fg='cyan'))
+    click.echo(click.style('More colors', fg=(255, 12, 128), bg=117))
+
+Supported color names:
+
+* ``black`` (might be a gray)
+* ``red``
+* ``green``
+* ``yellow`` (might be an orange)
+* ``blue``
+* ``magenta``
+* ``cyan``
+* ``white`` (might be light gray)
+* ``bright_black``
+* ``bright_red``
+* ``bright_green``
+* ``bright_yellow``
+* ``bright_blue``
+* ``bright_magenta``
+* ``bright_cyan``
+* ``bright_white``
+* ``reset`` (reset the color code only)
+
+If the terminal supports it, color may also be specified as:
+
+-   An integer in the interval [0, 255]. The terminal must support
+    8-bit/256-color mode.
+-   An RGB tuple of three integers in [0, 255]. The terminal must
+    support 24-bit/true-color mode.
+
+See https://en.wikipedia.org/wiki/ANSI_color and
+https://gist.github.com/XVilka/8346728 for more information.
+
+:param text: the string to style with ansi codes.
+:param fg: if provided this will become the foreground color.
+:param bg: if provided this will become the background color.
+:param bold: if provided this will enable or disable bold mode.
+:param dim: if provided this will enable or disable dim mode.  This is
+            badly supported.
+:param underline: if provided this will enable or disable underline.
+:param overline: if provided this will enable or disable overline.
+:param italic: if provided this will enable or disable italic.
+:param blink: if provided this will enable or disable blinking.
+:param reverse: if provided this will enable or disable inverse
+                rendering (foreground becomes background and the
+                other way round).
+:param strikethrough: if provided this will enable or disable
+    striking through text.
+:param reset: by default a reset-all code is added at the end of the
+              string which means that styles do not carry over.  This
+              can be disabled to compose styles.
+
+.. versionchanged:: 8.0
+    A non-string ``message`` is converted to a string.
+
+.. versionchanged:: 8.0
+   Added support for 256 and RGB color codes.
+
+.. versionchanged:: 8.0
+    Added the ``strikethrough``, ``italic``, and ``overline``
+    parameters.
+
+.. versionchanged:: 7.0
+    Added support for bright colors.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceclick_1_1termui_a3c66654f6c6da31db44285c4ded864f6}\index{click.termui@{click.termui}!unstyle@{unstyle}}
+\index{unstyle@{unstyle}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{unstyle()}{unstyle()}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a3c66654f6c6da31db44285c4ded864f6} 
+ str unstyle (\begin{DoxyParamCaption}\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Removes ANSI styling information from a string.  Usually it's not
+necessary to use this function as Click's echo function will
+automatically remove styling if necessary.
+
+.. versionadded:: 2.0
+
+:param text: the text to remove style information from.
+\end{DoxyVerb}
+ 
+
+\label{namespaceclick_1_1termui_doc-var-members}
+\Hypertarget{namespaceclick_1_1termui_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceclick_1_1termui_a1386c5bf919315c1e4a2e28cc50bf8f7}\index{click.termui@{click.termui}!\_ansi\_colors@{\_ansi\_colors}}
+\index{\_ansi\_colors@{\_ansi\_colors}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_ansi\_colors}{\_ansi\_colors}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a1386c5bf919315c1e4a2e28cc50bf8f7} 
+dict click.\+termui.\+\_\+ansi\+\_\+colors\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}black"{}}:\ 30,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}red"{}}:\ 31,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}green"{}}:\ 32,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}yellow"{}}:\ 33,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}blue"{}}:\ 34,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}magenta"{}}:\ 35,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}cyan"{}}:\ 36,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}white"{}}:\ 37,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}reset"{}}:\ 39,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_black"{}}:\ 90,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_red"{}}:\ 91,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_green"{}}:\ 92,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_yellow"{}}:\ 93,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_blue"{}}:\ 94,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_magenta"{}}:\ 95,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_cyan"{}}:\ 96,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}bright\_white"{}}:\ 97,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespaceclick_1_1termui_a8c98a9c2d2095e63e60111ff56160166}\index{click.termui@{click.termui}!\_ansi\_reset\_all@{\_ansi\_reset\_all}}
+\index{\_ansi\_reset\_all@{\_ansi\_reset\_all}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_ansi\_reset\_all}{\_ansi\_reset\_all}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a8c98a9c2d2095e63e60111ff56160166} 
+str click.\+termui.\+\_\+ansi\+\_\+reset\+\_\+all = "{}\textbackslash{}033\+[0m"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_a6535765fc77473313b0b2ea10b5981d8}\index{click.termui@{click.termui}!\_getchar@{\_getchar}}
+\index{\_getchar@{\_getchar}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_getchar}{\_getchar}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a6535765fc77473313b0b2ea10b5981d8} 
+t click.\+termui.\+\_\+getchar = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_aa7cc6634c052e4bcbe3b073e57e7457e}\index{click.termui@{click.termui}!\_HIDDEN\_INPUT\_MASK@{\_HIDDEN\_INPUT\_MASK}}
+\index{\_HIDDEN\_INPUT\_MASK@{\_HIDDEN\_INPUT\_MASK}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{\_HIDDEN\_INPUT\_MASK}{\_HIDDEN\_INPUT\_MASK}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_aa7cc6634c052e4bcbe3b073e57e7457e} 
+str click.\+termui.\+\_\+\+HIDDEN\+\_\+\+INPUT\+\_\+\+MASK = "{}\textquotesingle{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\textquotesingle{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196}\index{click.termui@{click.termui}!V@{V}}
+\index{V@{V}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{V}{V}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_a771d041b94f8ceca3365ffe89098b196} 
+click.\+termui.\+V = t.\+Type\+Var("{}V"{})}
+
+\Hypertarget{namespaceclick_1_1termui_ac878c4c2ecccf65cb0d1ab76b3cdb7ad}\index{click.termui@{click.termui}!visible\_prompt\_func@{visible\_prompt\_func}}
+\index{visible\_prompt\_func@{visible\_prompt\_func}!click.termui@{click.termui}}
+\doxysubsubsection{\texorpdfstring{visible\_prompt\_func}{visible\_prompt\_func}}
+{\footnotesize\ttfamily \label{namespaceclick_1_1termui_ac878c4c2ecccf65cb0d1ab76b3cdb7ad} 
+t click.\+termui.\+visible\+\_\+prompt\+\_\+func = input}
+

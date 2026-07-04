@@ -1,0 +1,396 @@
+\doxysection{flask.\+cli Namespace Reference}
+\hypertarget{namespaceflask_1_1cli}{}\label{namespaceflask_1_1cli}\index{flask.cli@{flask.cli}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_no_app_exception}{No\+App\+Exception}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info}{Script\+Info}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_app_group}{App\+Group}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_flask_group}{Flask\+Group}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_cert_param_type}{Cert\+Param\+Type}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1cli_1_1_separated_path_type}{Separated\+Path\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \doxymbox{\hyperlink{namespaceflask_1_1cli_ae447b71c26ba96b30ea5cfa44398734f}{find\+\_\+best\+\_\+app}} (Module\+Type module)
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1cli_a29d130b4801a99f29fd343abd675c8e0}{\+\_\+called\+\_\+with\+\_\+wrong\+\_\+args}} (t.\+Callable\+[..., \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}]\+ f)
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \doxymbox{\hyperlink{namespaceflask_1_1cli_aa3b13bf90f0f80123da963360430542e}{find\+\_\+app\+\_\+by\+\_\+string}} (Module\+Type module, str app\+\_\+name)
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1cli_a7cd774603a9c1d89f3e7f744a0861589}{prepare\+\_\+import}} (str path)
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \doxymbox{\hyperlink{namespaceflask_1_1cli_a58c201a5918f94f4121e5e6543028f9f}{locate\+\_\+app}} (str module\+\_\+name, str\texorpdfstring{$\vert$}{|}None app\+\_\+name, t.\+Literal\+[True]\+ raise\+\_\+if\+\_\+not\+\_\+found=True)
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceflask_1_1cli_a73c9b1d7d6dd13305e1014fa79c83684}{locate\+\_\+app}} (str module\+\_\+name, str\texorpdfstring{$\vert$}{|}None app\+\_\+name, t.\+Literal\+[False]\+ raise\+\_\+if\+\_\+not\+\_\+found=...)
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceflask_1_1cli_a3f9fbbd6d3632f8b245e4b811ee99314}{locate\+\_\+app}} (str module\+\_\+name, str\texorpdfstring{$\vert$}{|}None app\+\_\+name, bool raise\+\_\+if\+\_\+not\+\_\+found=True)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a48e9a6e081e52747bfe0abe1a3670928}{get\+\_\+version}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+Parameter}} param, t.\+Any value)
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}{F}} \doxymbox{\hyperlink{namespaceflask_1_1cli_abe4eb14a64d282ac60f153b2dfb4fa2f}{with\+\_\+appcontext}} (\doxymbox{\hyperlink{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}{F}} f)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceflask_1_1cli_a9e25e858af135f0a463696c036a5a990}{\+\_\+set\+\_\+app}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}} param, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceflask_1_1cli_a7a2137f11533b85823897793c4f0b040}{\+\_\+set\+\_\+debug}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}} param, bool value)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespaceflask_1_1cli_ae4987afbe113eae23bfe306a574d61c9}{\+\_\+env\+\_\+file\+\_\+callback}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}} param, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1cli_adc670c94b76fa809827a1dad42b62ac4}{\+\_\+path\+\_\+is\+\_\+ancestor}} (str path, str other)
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1cli_a88742633a747ac05f1f511be694a3fc8}{load\+\_\+dotenv}} (str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None path=None, bool load\+\_\+defaults=True)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a46c275a14e04341c2471c4cf0d26bf12}{show\+\_\+server\+\_\+banner}} (bool debug, str\texorpdfstring{$\vert$}{|}None app\+\_\+import\+\_\+path)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceflask_1_1cli_a5740eeba2b6a4a62efe6f753af9bd954}{\+\_\+validate\+\_\+key}} (\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}} ctx, \doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+Parameter}} param, t.\+Any value)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a4852b7761855d876247465be1e6879de}{run\+\_\+command}} (\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info}{Script\+Info}} info, str host, int port, bool reload, bool debugger, bool with\+\_\+threads, ssl.\+SSLContext\texorpdfstring{$\vert$}{|}tuple\+[str, str\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}t.\+Literal\+["{}adhoc"{}]\+\texorpdfstring{$\vert$}{|}None cert, list\+[str]\+\texorpdfstring{$\vert$}{|}None extra\+\_\+files, list\+[str]\+\texorpdfstring{$\vert$}{|}None exclude\+\_\+patterns)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a2ecd1ee1c12f02fa7460636a21f68e5d}{shell\+\_\+command}} ()
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a3b8507ada22032d307ceafc5ef4206a0}{routes\+\_\+command}} (str sort, bool all\+\_\+methods)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1cli_a7ef7e0ba4dbb24a9678021d2cf41cfc6}{main}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_aa7493676800628da06b75d81e069a9b0}{version\+\_\+option}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a66f7453fde92afb9ac0938c4d08a4add}{pass\+\_\+script\+\_\+info}} = click.\+make\+\_\+pass\+\_\+decorator(\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info}{Script\+Info}}, ensure=True)
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}{F}} = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a003c327b88bc3ea9c4b7e7505a925be4}{\+\_\+app\+\_\+option}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a69312fccfd24e1d5806b05d08242e628}{\+\_\+debug\+\_\+option}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a2ede0262d1160809aad088a9f8ce2b78}{\+\_\+env\+\_\+file\+\_\+option}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1cli_a9ee36713dae79c5890fbbb4f42a38d8f}{cli}}
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1cli_doc-func-members}
+\Hypertarget{namespaceflask_1_1cli_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1cli_a29d130b4801a99f29fd343abd675c8e0}\index{flask.cli@{flask.cli}!\_called\_with\_wrong\_args@{\_called\_with\_wrong\_args}}
+\index{\_called\_with\_wrong\_args@{\_called\_with\_wrong\_args}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_called\_with\_wrong\_args()}{\_called\_with\_wrong\_args()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a29d130b4801a99f29fd343abd675c8e0} 
+ bool \+\_\+called\+\_\+with\+\_\+wrong\+\_\+args (\begin{DoxyParamCaption}\item[{t.\+Callable\+[..., \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}]\+}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check whether calling a function raised a ``TypeError`` because
+the call failed or because something in the factory raised the
+error.
+
+:param f: The function that was called.
+:return: ``True`` if the call failed.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_ae4987afbe113eae23bfe306a574d61c9}\index{flask.cli@{flask.cli}!\_env\_file\_callback@{\_env\_file\_callback}}
+\index{\_env\_file\_callback@{\_env\_file\_callback}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_env\_file\_callback()}{\_env\_file\_callback()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_ae4987afbe113eae23bfe306a574d61c9} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+env\+\_\+file\+\_\+callback (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}}}]{param}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1cli_adc670c94b76fa809827a1dad42b62ac4}\index{flask.cli@{flask.cli}!\_path\_is\_ancestor@{\_path\_is\_ancestor}}
+\index{\_path\_is\_ancestor@{\_path\_is\_ancestor}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_path\_is\_ancestor()}{\_path\_is\_ancestor()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_adc670c94b76fa809827a1dad42b62ac4} 
+ bool \+\_\+path\+\_\+is\+\_\+ancestor (\begin{DoxyParamCaption}\item[{str}]{path}{, }\item[{str}]{other}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Take ``other`` and remove the length of ``path`` from it. Then join it
+to ``path``. If it is the original value, ``path`` is an ancestor of
+``other``.\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a9e25e858af135f0a463696c036a5a990}\index{flask.cli@{flask.cli}!\_set\_app@{\_set\_app}}
+\index{\_set\_app@{\_set\_app}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_set\_app()}{\_set\_app()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a9e25e858af135f0a463696c036a5a990} 
+ str \texorpdfstring{$\vert$}{|} None \+\_\+set\+\_\+app (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}}}]{param}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1cli_a7a2137f11533b85823897793c4f0b040}\index{flask.cli@{flask.cli}!\_set\_debug@{\_set\_debug}}
+\index{\_set\_debug@{\_set\_debug}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_set\_debug()}{\_set\_debug()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a7a2137f11533b85823897793c4f0b040} 
+ bool \texorpdfstring{$\vert$}{|} None \+\_\+set\+\_\+debug (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.\+Option}}}]{param}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1cli_a5740eeba2b6a4a62efe6f753af9bd954}\index{flask.cli@{flask.cli}!\_validate\_key@{\_validate\_key}}
+\index{\_validate\_key@{\_validate\_key}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_validate\_key()}{\_validate\_key()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a5740eeba2b6a4a62efe6f753af9bd954} 
+ t.\+Any \+\_\+validate\+\_\+key (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+Parameter}}}]{param}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}The ``--key`` option must be specified when ``--cert`` is a file.
+Modifies the ``cert`` param to be a ``(cert, key)`` pair if needed.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_aa3b13bf90f0f80123da963360430542e}\index{flask.cli@{flask.cli}!find\_app\_by\_string@{find\_app\_by\_string}}
+\index{find\_app\_by\_string@{find\_app\_by\_string}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{find\_app\_by\_string()}{find\_app\_by\_string()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_aa3b13bf90f0f80123da963360430542e} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} find\+\_\+app\+\_\+by\+\_\+string (\begin{DoxyParamCaption}\item[{Module\+Type}]{module}{, }\item[{str}]{app\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if the given string is a variable name or a function. Call
+a function to get the app instance, or return the variable directly.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_ae447b71c26ba96b30ea5cfa44398734f}\index{flask.cli@{flask.cli}!find\_best\_app@{find\_best\_app}}
+\index{find\_best\_app@{find\_best\_app}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{find\_best\_app()}{find\_best\_app()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_ae447b71c26ba96b30ea5cfa44398734f} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} find\+\_\+best\+\_\+app (\begin{DoxyParamCaption}\item[{Module\+Type}]{module}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a module instance this tries to find the best possible
+application in the module or raises an exception.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a48e9a6e081e52747bfe0abe1a3670928}\index{flask.cli@{flask.cli}!get\_version@{get\_version}}
+\index{get\_version@{get\_version}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{get\_version()}{get\_version()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a48e9a6e081e52747bfe0abe1a3670928} 
+ None get\+\_\+version (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{click.\+Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{click.\+Parameter}}}]{param}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceflask_1_1cli_a88742633a747ac05f1f511be694a3fc8}\index{flask.cli@{flask.cli}!load\_dotenv@{load\_dotenv}}
+\index{load\_dotenv@{load\_dotenv}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{load\_dotenv()}{load\_dotenv()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a88742633a747ac05f1f511be694a3fc8} 
+ bool load\+\_\+dotenv (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{path}{ = {\ttfamily None}, }\item[{bool }]{load\+\_\+defaults}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load "dotenv" files to set environment variables. A given path takes
+precedence over ``.env``, which takes precedence over ``.flaskenv``. After
+loading and combining these files, values are only set if the key is not
+already set in ``os.environ``.
+
+This is a no-op if `python-dotenv`_ is not installed.
+
+.. _python-dotenv: https://github.com/theskumar/python-dotenv#readme
+
+:param path: Load the file at this location.
+:param load_defaults: Search for and load the default ``.flaskenv`` and
+    ``.env`` files.
+:return: ``True`` if at least one env var was loaded.
+
+.. versionchanged:: 3.1
+    Added the ``load_defaults`` parameter. A given path takes precedence
+    over default files.
+
+.. versionchanged:: 2.0
+    The current directory is not changed to the location of the
+    loaded file.
+
+.. versionchanged:: 2.0
+    When loading the env files, set the default encoding to UTF-8.
+
+.. versionchanged:: 1.1.0
+    Returns ``False`` when python-dotenv is not installed, or when
+    the given path isn't a file.
+
+.. versionadded:: 1.0
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a3f9fbbd6d3632f8b245e4b811ee99314}\index{flask.cli@{flask.cli}!locate\_app@{locate\_app}}
+\index{locate\_app@{locate\_app}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{locate\_app()}{locate\_app()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a3f9fbbd6d3632f8b245e4b811ee99314} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \texorpdfstring{$\vert$}{|} None locate\+\_\+app (\begin{DoxyParamCaption}\item[{str}]{module\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{app\+\_\+name}{, }\item[{bool }]{raise\+\_\+if\+\_\+not\+\_\+found}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceflask_1_1cli_a73c9b1d7d6dd13305e1014fa79c83684}\index{flask.cli@{flask.cli}!locate\_app@{locate\_app}}
+\index{locate\_app@{locate\_app}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{locate\_app()}{locate\_app()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a73c9b1d7d6dd13305e1014fa79c83684} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \texorpdfstring{$\vert$}{|} None locate\+\_\+app (\begin{DoxyParamCaption}\item[{str}]{module\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{app\+\_\+name}{, }\item[{t.\+Literal\+[False]\+ }]{raise\+\_\+if\+\_\+not\+\_\+found}{ = {\ttfamily ...}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceflask_1_1cli_a58c201a5918f94f4121e5e6543028f9f}\index{flask.cli@{flask.cli}!locate\_app@{locate\_app}}
+\index{locate\_app@{locate\_app}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{locate\_app()}{locate\_app()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a58c201a5918f94f4121e5e6543028f9f} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} locate\+\_\+app (\begin{DoxyParamCaption}\item[{str}]{module\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{app\+\_\+name}{, }\item[{t.\+Literal\+[True]\+ }]{raise\+\_\+if\+\_\+not\+\_\+found}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceflask_1_1cli_a7ef7e0ba4dbb24a9678021d2cf41cfc6}\index{flask.cli@{flask.cli}!main@{main}}
+\index{main@{main}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a7ef7e0ba4dbb24a9678021d2cf41cfc6} 
+ None main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespaceflask_1_1cli_a7cd774603a9c1d89f3e7f744a0861589}\index{flask.cli@{flask.cli}!prepare\_import@{prepare\_import}}
+\index{prepare\_import@{prepare\_import}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{prepare\_import()}{prepare\_import()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a7cd774603a9c1d89f3e7f744a0861589} 
+ str prepare\+\_\+import (\begin{DoxyParamCaption}\item[{str}]{path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a filename this will try to calculate the python path, add it
+to the search path and return the actual module name that is expected.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a3b8507ada22032d307ceafc5ef4206a0}\index{flask.cli@{flask.cli}!routes\_command@{routes\_command}}
+\index{routes\_command@{routes\_command}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{routes\_command()}{routes\_command()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a3b8507ada22032d307ceafc5ef4206a0} 
+ None routes\+\_\+command (\begin{DoxyParamCaption}\item[{str}]{sort}{, }\item[{bool}]{all\+\_\+methods}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show all registered routes with endpoints and methods.\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a4852b7761855d876247465be1e6879de}\index{flask.cli@{flask.cli}!run\_command@{run\_command}}
+\index{run\_command@{run\_command}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{run\_command()}{run\_command()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a4852b7761855d876247465be1e6879de} 
+ None run\+\_\+command (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info}{Script\+Info}}}]{info}{, }\item[{str}]{host}{, }\item[{int}]{port}{, }\item[{bool}]{reload}{, }\item[{bool}]{debugger}{, }\item[{bool}]{with\+\_\+threads}{, }\item[{ssl.\+SSLContext \texorpdfstring{$\vert$}{|} tuple\+[str, str \texorpdfstring{$\vert$}{|} None]\+ \texorpdfstring{$\vert$}{|} t.\+Literal\+["{}adhoc"{}]\+ \texorpdfstring{$\vert$}{|} None}]{cert}{, }\item[{list\+[str]\+ \texorpdfstring{$\vert$}{|} None}]{extra\+\_\+files}{, }\item[{list\+[str]\+ \texorpdfstring{$\vert$}{|} None}]{exclude\+\_\+patterns}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run a local development server.
+
+This server is for development purposes only. It does not provide
+the stability, security, or performance of production WSGI servers.
+
+The reloader and debugger are enabled by default with the '--debug'
+option.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a2ecd1ee1c12f02fa7460636a21f68e5d}\index{flask.cli@{flask.cli}!shell\_command@{shell\_command}}
+\index{shell\_command@{shell\_command}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{shell\_command()}{shell\_command()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a2ecd1ee1c12f02fa7460636a21f68e5d} 
+ None shell\+\_\+command (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run an interactive Python shell in the context of a given
+Flask application.  The application will populate the default
+namespace of this shell according to its configuration.
+
+This is useful for executing small snippets of management code
+without having to manually configure the application.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_a46c275a14e04341c2471c4cf0d26bf12}\index{flask.cli@{flask.cli}!show\_server\_banner@{show\_server\_banner}}
+\index{show\_server\_banner@{show\_server\_banner}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{show\_server\_banner()}{show\_server\_banner()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a46c275a14e04341c2471c4cf0d26bf12} 
+ None show\+\_\+server\+\_\+banner (\begin{DoxyParamCaption}\item[{bool}]{debug}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{app\+\_\+import\+\_\+path}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Show extra startup messages the first time the server is run,
+ignoring the reloader.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1cli_abe4eb14a64d282ac60f153b2dfb4fa2f}\index{flask.cli@{flask.cli}!with\_appcontext@{with\_appcontext}}
+\index{with\_appcontext@{with\_appcontext}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{with\_appcontext()}{with\_appcontext()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_abe4eb14a64d282ac60f153b2dfb4fa2f} 
+ \doxymbox{\hyperlink{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}{F}} with\+\_\+appcontext (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}{F}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wraps a callback so that it's guaranteed to be executed with the
+script's application context.
+
+Custom commands (and their options) registered under ``app.cli`` or
+``blueprint.cli`` will always have an app context available, this
+decorator is not required in that case.
+
+.. versionchanged:: 2.2
+    The app context is active for subcommands as well as the
+    decorated callback. The app context is always available to
+    ``app.cli`` command and parameter callbacks.
+\end{DoxyVerb}
+ 
+
+\label{namespaceflask_1_1cli_doc-var-members}
+\Hypertarget{namespaceflask_1_1cli_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceflask_1_1cli_a003c327b88bc3ea9c4b7e7505a925be4}\index{flask.cli@{flask.cli}!\_app\_option@{\_app\_option}}
+\index{\_app\_option@{\_app\_option}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_app\_option}{\_app\_option}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a003c327b88bc3ea9c4b7e7505a925be4} 
+flask.\+cli.\+\_\+app\+\_\+option\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.Option}}(}
+\DoxyCodeLine{\ \ \ \ [\textcolor{stringliteral}{"{}-\/A"{}},\ \textcolor{stringliteral}{"{}-\/-\/app"{}}],}
+\DoxyCodeLine{\ \ \ \ metavar=\textcolor{stringliteral}{"{}IMPORT"{}},}
+\DoxyCodeLine{\ \ \ \ help=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}The\ Flask\ application\ or\ factory\ function\ to\ load,\ in\ the\ form\ 'module:name'."{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ Module\ can\ be\ a\ dotted\ import\ or\ file\ path.\ Name\ is\ not\ required\ if\ it\ is"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ 'app',\ 'application',\ 'create\_app',\ or\ 'make\_app',\ and\ can\ be\ 'name(args)'\ to"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ pass\ arguments."{}}}
+\DoxyCodeLine{\ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ is\_eager=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ expose\_value=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ callback=\_set\_app,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1cli_a69312fccfd24e1d5806b05d08242e628}\index{flask.cli@{flask.cli}!\_debug\_option@{\_debug\_option}}
+\index{\_debug\_option@{\_debug\_option}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_debug\_option}{\_debug\_option}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a69312fccfd24e1d5806b05d08242e628} 
+flask.\+cli.\+\_\+debug\+\_\+option\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.Option}}(}
+\DoxyCodeLine{\ \ \ \ [\textcolor{stringliteral}{"{}-\/-\/debug/-\/-\/no-\/debug"{}}],}
+\DoxyCodeLine{\ \ \ \ help=\textcolor{stringliteral}{"{}Set\ debug\ mode."{}},}
+\DoxyCodeLine{\ \ \ \ expose\_value=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ callback=\_set\_debug,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1cli_a2ede0262d1160809aad088a9f8ce2b78}\index{flask.cli@{flask.cli}!\_env\_file\_option@{\_env\_file\_option}}
+\index{\_env\_file\_option@{\_env\_file\_option}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{\_env\_file\_option}{\_env\_file\_option}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a2ede0262d1160809aad088a9f8ce2b78} 
+flask.\+cli.\+\_\+env\+\_\+file\+\_\+option\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.Option}}(}
+\DoxyCodeLine{\ \ \ \ [\textcolor{stringliteral}{"{}-\/e"{}},\ \textcolor{stringliteral}{"{}-\/-\/env-\/file"{}}],}
+\DoxyCodeLine{\ \ \ \ type=\doxymbox{\hyperlink{classclick_1_1types_1_1_path}{click.Path}}(exists=\textcolor{keyword}{True},\ dir\_okay=\textcolor{keyword}{False}),}
+\DoxyCodeLine{\ \ \ \ help=(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}Load\ environment\ variables\ from\ this\ file,\ taking\ precedence\ over"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ those\ set\ by\ '.env'\ and\ '.flaskenv'.\ Variables\ set\ directly\ in\ the"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}\ environment\ take\ highest\ precedence.\ python-\/dotenv\ must\ be\ installed."{}}}
+\DoxyCodeLine{\ \ \ \ ),}
+\DoxyCodeLine{\ \ \ \ is\_eager=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ expose\_value=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ callback=\_env\_file\_callback,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1cli_a9ee36713dae79c5890fbbb4f42a38d8f}\index{flask.cli@{flask.cli}!cli@{cli}}
+\index{cli@{cli}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a9ee36713dae79c5890fbbb4f42a38d8f} 
+flask.\+cli.\+cli}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ FlaskGroup(}
+\DoxyCodeLine{\ \ \ \ name=\textcolor{stringliteral}{"{}flask"{}},}
+\DoxyCodeLine{\ \ \ \ help=,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac}\index{flask.cli@{flask.cli}!F@{F}}
+\index{F@{F}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a0ad5cc38d25cdd7348891e8eca1d1fac} 
+flask.\+cli.\+F = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)}
+
+\Hypertarget{namespaceflask_1_1cli_a66f7453fde92afb9ac0938c4d08a4add}\index{flask.cli@{flask.cli}!pass\_script\_info@{pass\_script\_info}}
+\index{pass\_script\_info@{pass\_script\_info}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{pass\_script\_info}{pass\_script\_info}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_a66f7453fde92afb9ac0938c4d08a4add} 
+flask.\+cli.\+pass\+\_\+script\+\_\+info = click.\+make\+\_\+pass\+\_\+decorator(\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info}{Script\+Info}}, ensure=True)}
+
+\Hypertarget{namespaceflask_1_1cli_aa7493676800628da06b75d81e069a9b0}\index{flask.cli@{flask.cli}!version\_option@{version\_option}}
+\index{version\_option@{version\_option}!flask.cli@{flask.cli}}
+\doxysubsubsection{\texorpdfstring{version\_option}{version\_option}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1cli_aa7493676800628da06b75d81e069a9b0} 
+flask.\+cli.\+version\+\_\+option}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \doxymbox{\hyperlink{classclick_1_1core_1_1_option}{click.Option}}(}
+\DoxyCodeLine{\ \ \ \ [\textcolor{stringliteral}{"{}-\/-\/version"{}}],}
+\DoxyCodeLine{\ \ \ \ help=\textcolor{stringliteral}{"{}Show\ the\ Flask\ version."{}},}
+\DoxyCodeLine{\ \ \ \ expose\_value=\textcolor{keyword}{False},}
+\DoxyCodeLine{\ \ \ \ callback=get\_version,}
+\DoxyCodeLine{\ \ \ \ is\_flag=\textcolor{keyword}{True},}
+\DoxyCodeLine{\ \ \ \ is\_eager=\textcolor{keyword}{True},}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

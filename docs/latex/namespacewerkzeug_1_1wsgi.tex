@@ -1,0 +1,206 @@
+\doxysection{werkzeug.\+wsgi Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1wsgi}{}\label{namespacewerkzeug_1_1wsgi}\index{werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_closing_iterator}{Closing\+Iterator}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper}{File\+Wrapper}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1___range_wrapper}{\+\_\+\+Range\+Wrapper}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_limited_stream}{Limited\+Stream}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+WSGIApplication \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_aa064a1f33ffdeeba6eba095f70bed41a}{responder}} (t.\+Callable\+[..., WSGIApplication]\+ f)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_aba5260fa370b4cd3e100e61afe71cc4b}{get\+\_\+current\+\_\+url}} (WSGIEnvironment environ, bool root\+\_\+only=False, bool strip\+\_\+querystring=False, bool host\+\_\+only=False, t.\+Collection\+[str]\+\texorpdfstring{$\vert$}{|}None trusted\+\_\+hosts=None)
+\item 
+tuple\+[str, int\texorpdfstring{$\vert$}{|}None]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_adbb59ea9a6c668ba58b38aef60af18fc}{\+\_\+get\+\_\+server}} (WSGIEnvironment environ)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_a6c822bbd9674d418ae3d6c18d6b936ec}{get\+\_\+host}} (WSGIEnvironment environ, t.\+Collection\+[str]\+\texorpdfstring{$\vert$}{|}None trusted\+\_\+hosts=None)
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_a6ca0d8adb603bd99945dea6abc9292d1}{get\+\_\+content\+\_\+length}} (WSGIEnvironment environ)
+\item 
+t.\+IO\+[bytes]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_a725fd208518d46812077d3f219c30ee5}{get\+\_\+input\+\_\+stream}} (WSGIEnvironment environ, bool safe\+\_\+fallback=True, int\texorpdfstring{$\vert$}{|}None max\+\_\+content\+\_\+length=None)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_a8543f6e4f7a4a1f76e26cb3d8412acd4}{get\+\_\+path\+\_\+info}} (WSGIEnvironment environ)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1wsgi_a9fc41712ec19b7c72c7dc474116927ab}{wrap\+\_\+file}} (WSGIEnvironment environ, t.\+IO\+[bytes]\+ file, int buffer\+\_\+size=8192)
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1wsgi_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1wsgi_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1wsgi_adbb59ea9a6c668ba58b38aef60af18fc}\index{werkzeug.wsgi@{werkzeug.wsgi}!\_get\_server@{\_get\_server}}
+\index{\_get\_server@{\_get\_server}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{\_get\_server()}{\_get\_server()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_adbb59ea9a6c668ba58b38aef60af18fc} 
+ tuple\+[str, int \texorpdfstring{$\vert$}{|} None]\+ \texorpdfstring{$\vert$}{|} None \+\_\+get\+\_\+server (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1wsgi_a6ca0d8adb603bd99945dea6abc9292d1}\index{werkzeug.wsgi@{werkzeug.wsgi}!get\_content\_length@{get\_content\_length}}
+\index{get\_content\_length@{get\_content\_length}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{get\_content\_length()}{get\_content\_length()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_a6ca0d8adb603bd99945dea6abc9292d1} 
+ int \texorpdfstring{$\vert$}{|} None get\+\_\+content\+\_\+length (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the ``Content-Length`` header value as an int. If the header is not given
+or the ``Transfer-Encoding`` header is ``chunked``, ``None`` is returned to indicate
+a streaming request. If the value is not an integer, or negative, 0 is returned.
+
+:param environ: The WSGI environ to get the content length from.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_aba5260fa370b4cd3e100e61afe71cc4b}\index{werkzeug.wsgi@{werkzeug.wsgi}!get\_current\_url@{get\_current\_url}}
+\index{get\_current\_url@{get\_current\_url}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{get\_current\_url()}{get\_current\_url()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_aba5260fa370b4cd3e100e61afe71cc4b} 
+ str get\+\_\+current\+\_\+url (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{, }\item[{bool }]{root\+\_\+only}{ = {\ttfamily False}, }\item[{bool }]{strip\+\_\+querystring}{ = {\ttfamily False}, }\item[{bool }]{host\+\_\+only}{ = {\ttfamily False}, }\item[{t.\+Collection\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{trusted\+\_\+hosts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Recreate the URL for a request from the parts in a WSGI
+environment.
+
+The URL is an IRI, not a URI, so it may contain Unicode characters.
+Use :func:`~werkzeug.urls.iri_to_uri` to convert it to ASCII.
+
+:param environ: The WSGI environment to get the URL parts from.
+:param root_only: Only build the root path, don't include the
+    remaining path or query string.
+:param strip_querystring: Don't include the query string.
+:param host_only: Only build the scheme and host.
+:param trusted_hosts: A list of trusted host names to validate the
+    host against.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_a6c822bbd9674d418ae3d6c18d6b936ec}\index{werkzeug.wsgi@{werkzeug.wsgi}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_a6c822bbd9674d418ae3d6c18d6b936ec} 
+ str get\+\_\+host (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{, }\item[{t.\+Collection\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{trusted\+\_\+hosts}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get and validate a request's ``host:port`` based on the values in the
+given WSGI environ.
+
+The ``Host`` header sent by the client is preferred. Otherwise, the server's
+configured address is used. If the server address is a Unix socket, it is
+ignored. The port is omitted if it matches the standard HTTP or HTTPS ports.
+
+The value is passed through :func:`host_is_trusted`. The host must be made
+up of valid characters, but this does not check validity beyond that. If a
+list of trusted domains is given, the domain must match one.
+
+:param environ: The WSGI environ.
+:param trusted_hosts: A list of trusted domains to match. These should
+    already be IDNA encoded, but will be encoded if needed. The port is
+    ignored for this check. If a name starts with a dot it will match as a
+    suffix, accepting all subdomains. If empty or ``None``, all domains are
+    allowed.
+
+:return: Host, with port if necessary.
+:raise .SecurityError: If the host is not trusted.
+
+.. versionchanged:: 3.2
+    The characters of the host value are validated. The empty string is no
+    longer allowed if no header value is available.
+
+.. versionchanged:: 3.2
+    When using the server address, Unix sockets are ignored.
+
+.. versionchanged:: 3.1.3
+    If ``SERVER_NAME`` is IPv6, it is wrapped in ``[]``.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_a725fd208518d46812077d3f219c30ee5}\index{werkzeug.wsgi@{werkzeug.wsgi}!get\_input\_stream@{get\_input\_stream}}
+\index{get\_input\_stream@{get\_input\_stream}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{get\_input\_stream()}{get\_input\_stream()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_a725fd208518d46812077d3f219c30ee5} 
+ t.\+IO\+[bytes]\+ get\+\_\+input\+\_\+stream (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{, }\item[{bool }]{safe\+\_\+fallback}{ = {\ttfamily True}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{max\+\_\+content\+\_\+length}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the WSGI input stream, wrapped so that it may be read safely without going
+past the ``Content-Length`` header value or ``max_content_length``.
+
+If ``Content-Length`` exceeds ``max_content_length``, a
+:exc:`RequestEntityTooLarge`` ``413 Content Too Large`` error is raised.
+
+If the WSGI server sets ``environ["wsgi.input_terminated"]``, it indicates that the
+server handles terminating the stream, so it is safe to read directly. For example,
+a server that knows how to handle chunked requests safely would set this.
+
+If ``max_content_length`` is set, it can be enforced on streams if
+``wsgi.input_terminated`` is set. Otherwise, an empty stream is returned unless the
+user explicitly disables this safe fallback.
+
+If the limit is reached before the underlying stream is exhausted (such as a file
+that is too large, or an infinite stream), the remaining contents of the stream
+cannot be read safely. Depending on how the server handles this, clients may show a
+"connection reset" failure instead of seeing the 413 response.
+
+:param environ: The WSGI environ containing the stream.
+:param safe_fallback: Return an empty stream when ``Content-Length`` is not set.
+    Disabling this allows infinite streams, which can be a denial-of-service risk.
+:param max_content_length: The maximum length that content-length or streaming
+    requests may not exceed.
+
+.. versionchanged:: 2.3.2
+    ``max_content_length`` is only applied to streaming requests if the server sets
+    ``wsgi.input_terminated``.
+
+.. versionchanged:: 2.3
+    Check ``max_content_length`` and raise an error if it is exceeded.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_a8543f6e4f7a4a1f76e26cb3d8412acd4}\index{werkzeug.wsgi@{werkzeug.wsgi}!get\_path\_info@{get\_path\_info}}
+\index{get\_path\_info@{get\_path\_info}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{get\_path\_info()}{get\_path\_info()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_a8543f6e4f7a4a1f76e26cb3d8412acd4} 
+ str get\+\_\+path\+\_\+info (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return ``PATH_INFO`` from  the WSGI environment.
+
+:param environ: WSGI environment to get the path from.
+
+.. versionchanged:: 3.0
+    The ``charset`` and ``errors`` parameters were removed.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_aa064a1f33ffdeeba6eba095f70bed41a}\index{werkzeug.wsgi@{werkzeug.wsgi}!responder@{responder}}
+\index{responder@{responder}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{responder()}{responder()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_aa064a1f33ffdeeba6eba095f70bed41a} 
+ WSGIApplication responder (\begin{DoxyParamCaption}\item[{t.\+Callable\+[..., WSGIApplication]\+}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Marks a function as responder.  Decorate a function with it and it
+will automatically call the return value as WSGI application.
+
+Example::
+
+    @responder
+    def application(environ, start_response):
+        return Response('Hello World!')
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1wsgi_a9fc41712ec19b7c72c7dc474116927ab}\index{werkzeug.wsgi@{werkzeug.wsgi}!wrap\_file@{wrap\_file}}
+\index{wrap\_file@{wrap\_file}!werkzeug.wsgi@{werkzeug.wsgi}}
+\doxysubsubsection{\texorpdfstring{wrap\_file()}{wrap\_file()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1wsgi_a9fc41712ec19b7c72c7dc474116927ab} 
+ t.\+Iterable\+[bytes]\+ wrap\+\_\+file (\begin{DoxyParamCaption}\item[{WSGIEnvironment}]{environ}{, }\item[{t.\+IO\+[bytes]\+}]{file}{, }\item[{int }]{buffer\+\_\+size}{ = {\ttfamily 8192}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Wraps a file.  This uses the WSGI server's file wrapper if available
+or otherwise the generic :class:`FileWrapper`.
+
+.. versionadded:: 0.5
+
+If the file wrapper from the WSGI server is used it's important to not
+iterate over it from inside the application but to pass it through
+unchanged.  If you want to pass out a file wrapper inside a response
+object you have to set :attr:`Response.direct_passthrough` to `True`.
+
+More information about file wrappers are available in :pep:`333`.
+
+:param file: a :class:`file`-like object with a :meth:`~file.read` method.
+:param buffer_size: number of bytes for one iteration.
+\end{DoxyVerb}
+ 

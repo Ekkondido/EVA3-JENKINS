@@ -1,0 +1,112 @@
+\doxysection{flask.\+cli.\+Script\+Info Class Reference}
+\hypertarget{classflask_1_1cli_1_1_script_info}{}\label{classflask_1_1cli_1_1_script_info}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_a470f61755c298520d08f3637fbf0bf72}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None app\+\_\+import\+\_\+path=None, t.\+Callable\+[..., \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}]\+\texorpdfstring{$\vert$}{|}None create\+\_\+app=None, bool set\+\_\+debug\+\_\+flag=True, bool load\+\_\+dotenv\+\_\+defaults=True)
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471}{load\+\_\+app}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_add9da67c867a4fa3ca56716ca415334c}{app\+\_\+import\+\_\+path}} = app\+\_\+import\+\_\+path
+\item 
+\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_a34bcd02e13b2cef887ad25dd77880a5a}{create\+\_\+app}} = create\+\_\+app
+\item 
+dict \doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_a38bfea2e354a4ad8fe94913e8694a805}{data}} = \{\}
+\item 
+\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_aff30b2389f977cc065245afc13521942}{set\+\_\+debug\+\_\+flag}} = set\+\_\+debug\+\_\+flag
+\item 
+\doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_a83133282263e043f7c316dd2b4ddff34}{load\+\_\+dotenv\+\_\+defaults}} = get\+\_\+load\+\_\+dotenv(load\+\_\+dotenv\+\_\+defaults)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1cli_1_1_script_info_ad498275c6d86104dd08fd9dac8b66574}{\+\_\+loaded\+\_\+app}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helper object to deal with Flask applications.  This is usually not
+necessary to interface with as it's used internally in the dispatching
+to click.  In future versions of Flask this object will most likely play
+a bigger role.  Typically it's created automatically by the
+:class:`FlaskGroup` but you can also manually create it and pass it
+onwards as click object.
+
+.. versionchanged:: 3.1
+    Added the ``load_dotenv_defaults`` parameter and attribute.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1cli_1_1_script_info_doc-constructors}
+\Hypertarget{classflask_1_1cli_1_1_script_info_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1cli_1_1_script_info_a470f61755c298520d08f3637fbf0bf72}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a470f61755c298520d08f3637fbf0bf72} 
+ None flask.\+cli.\+Script\+Info.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{app\+\_\+import\+\_\+path}{ = {\ttfamily None}, }\item[{t.\+Callable\+[..., \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}]\+ \texorpdfstring{$\vert$}{|} None }]{create\+\_\+app}{ = {\ttfamily None}, }\item[{bool }]{set\+\_\+debug\+\_\+flag}{ = {\ttfamily True}, }\item[{bool }]{load\+\_\+dotenv\+\_\+defaults}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1cli_1_1_script_info_doc-func-members}
+\Hypertarget{classflask_1_1cli_1_1_script_info_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!load\_app@{load\_app}}
+\index{load\_app@{load\_app}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{load\_app()}{load\_app()}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a4271d85c57277a8856628c593fd25471} 
+ \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} flask.\+cli.\+Script\+Info.\+load\+\_\+app (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads the Flask app (if not yet loaded) and returns it.  Calling
+this multiple times will just result in the already loaded app to
+be returned.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1cli_1_1_script_info_doc-variable-members}
+\Hypertarget{classflask_1_1cli_1_1_script_info_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1cli_1_1_script_info_ad498275c6d86104dd08fd9dac8b66574}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!\_loaded\_app@{\_loaded\_app}}
+\index{\_loaded\_app@{\_loaded\_app}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{\_loaded\_app}{\_loaded\_app}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_ad498275c6d86104dd08fd9dac8b66574} 
+\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} \texorpdfstring{$\vert$}{|} None flask.\+cli.\+Script\+Info.\+\_\+loaded\+\_\+app = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1cli_1_1_script_info_add9da67c867a4fa3ca56716ca415334c}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!app\_import\_path@{app\_import\_path}}
+\index{app\_import\_path@{app\_import\_path}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{app\_import\_path}{app\_import\_path}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_add9da67c867a4fa3ca56716ca415334c} 
+flask.\+cli.\+Script\+Info.\+app\+\_\+import\+\_\+path = app\+\_\+import\+\_\+path}
+
+\Hypertarget{classflask_1_1cli_1_1_script_info_a34bcd02e13b2cef887ad25dd77880a5a}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!create\_app@{create\_app}}
+\index{create\_app@{create\_app}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{create\_app}{create\_app}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a34bcd02e13b2cef887ad25dd77880a5a} 
+flask.\+cli.\+Script\+Info.\+create\+\_\+app = create\+\_\+app}
+
+\Hypertarget{classflask_1_1cli_1_1_script_info_a38bfea2e354a4ad8fe94913e8694a805}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!data@{data}}
+\index{data@{data}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a38bfea2e354a4ad8fe94913e8694a805} 
+dict flask.\+cli.\+Script\+Info.\+data = \{\}}
+
+\Hypertarget{classflask_1_1cli_1_1_script_info_a83133282263e043f7c316dd2b4ddff34}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!load\_dotenv\_defaults@{load\_dotenv\_defaults}}
+\index{load\_dotenv\_defaults@{load\_dotenv\_defaults}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{load\_dotenv\_defaults}{load\_dotenv\_defaults}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_a83133282263e043f7c316dd2b4ddff34} 
+flask.\+cli.\+Script\+Info.\+load\+\_\+dotenv\+\_\+defaults = get\+\_\+load\+\_\+dotenv(load\+\_\+dotenv\+\_\+defaults)}
+
+\Hypertarget{classflask_1_1cli_1_1_script_info_aff30b2389f977cc065245afc13521942}\index{flask.cli.ScriptInfo@{flask.cli.ScriptInfo}!set\_debug\_flag@{set\_debug\_flag}}
+\index{set\_debug\_flag@{set\_debug\_flag}!flask.cli.ScriptInfo@{flask.cli.ScriptInfo}}
+\doxysubsubsection{\texorpdfstring{set\_debug\_flag}{set\_debug\_flag}}
+{\footnotesize\ttfamily \label{classflask_1_1cli_1_1_script_info_aff30b2389f977cc065245afc13521942} 
+flask.\+cli.\+Script\+Info.\+set\+\_\+debug\+\_\+flag = set\+\_\+debug\+\_\+flag}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{cli_8py}{cli.\+py}}\end{DoxyCompactItemize}

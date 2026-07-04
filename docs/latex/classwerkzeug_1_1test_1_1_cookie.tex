@@ -1,0 +1,132 @@
+\doxysection{werkzeug.\+test.\+Cookie Class Reference}
+\hypertarget{classwerkzeug_1_1test_1_1_cookie}{}\label{classwerkzeug_1_1test_1_1_cookie}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a464ddf6051b2c4113f85692d27875544}{domain}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_acd3f2982fedfa2577d9fbbae882b4f2e}{path}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+datetime \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a0fca0e003013ef0a4b5cdd69bd923b56}{expires}} \texorpdfstring{$\vert$}{|} None
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_aaeb467541236a85b9e78c0dc255962c2}{max\+\_\+age}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a42e4a55caf7321d64a1d4d564db897b7}{secure}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a979d22d0a660c9a1aeecd59290d85b52}{http\+\_\+only}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a03519cb7ce1410c8430313eb76f0fa94}{same\+\_\+site}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_aeacc9fe36add84de29beba7e732fa356}{\+\_\+matches\+\_\+request}} (self, str server\+\_\+name, str path)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a3b5d5e6995f9c07e9271c054f71318f5}{\+\_\+to\+\_\+request\+\_\+header}} (self)
+\item 
+te.\+Self \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_a629843dc3e82564a85432cbca5d80688}{\+\_\+from\+\_\+response\+\_\+header}} (cls, str server\+\_\+name, str path, str header)
+\item 
+tuple\+[str, str, str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_aa0458c070bbeb9a0741f4037b1ad0aba}{\+\_\+storage\+\_\+key}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1test_1_1_cookie_aa8b31b22628905630b438390e872d32e}{\+\_\+should\+\_\+delete}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A cookie key, value, and parameters.
+
+The class itself is not a public API. Its attributes are documented for inspection
+with :meth:`.Client.get_cookie` only.
+
+.. versionadded:: 2.3
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1test_1_1_cookie_doc-func-members}
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a629843dc3e82564a85432cbca5d80688}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!\_from\_response\_header@{\_from\_response\_header}}
+\index{\_from\_response\_header@{\_from\_response\_header}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{\_from\_response\_header()}{\_from\_response\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a629843dc3e82564a85432cbca5d80688} 
+ te.\+Self werkzeug.\+test.\+Cookie.\+\_\+from\+\_\+response\+\_\+header (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{str}]{server\+\_\+name}{, }\item[{str}]{path}{, }\item[{str}]{header}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_aeacc9fe36add84de29beba7e732fa356}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!\_matches\_request@{\_matches\_request}}
+\index{\_matches\_request@{\_matches\_request}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{\_matches\_request()}{\_matches\_request()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_aeacc9fe36add84de29beba7e732fa356} 
+ bool werkzeug.\+test.\+Cookie.\+\_\+matches\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{server\+\_\+name}{, }\item[{str}]{path}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_aa8b31b22628905630b438390e872d32e}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!\_should\_delete@{\_should\_delete}}
+\index{\_should\_delete@{\_should\_delete}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{\_should\_delete()}{\_should\_delete()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_aa8b31b22628905630b438390e872d32e} 
+ bool werkzeug.\+test.\+Cookie.\+\_\+should\+\_\+delete (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_aa0458c070bbeb9a0741f4037b1ad0aba}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!\_storage\_key@{\_storage\_key}}
+\index{\_storage\_key@{\_storage\_key}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{\_storage\_key()}{\_storage\_key()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_aa0458c070bbeb9a0741f4037b1ad0aba} 
+ tuple\+[str, str, str]\+ werkzeug.\+test.\+Cookie.\+\_\+storage\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a3b5d5e6995f9c07e9271c054f71318f5}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!\_to\_request\_header@{\_to\_request\_header}}
+\index{\_to\_request\_header@{\_to\_request\_header}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{\_to\_request\_header()}{\_to\_request\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a3b5d5e6995f9c07e9271c054f71318f5} 
+ str werkzeug.\+test.\+Cookie.\+\_\+to\+\_\+request\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{classwerkzeug_1_1test_1_1_cookie_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a464ddf6051b2c4113f85692d27875544}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!domain@{domain}}
+\index{domain@{domain}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{domain}{domain}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a464ddf6051b2c4113f85692d27875544} 
+werkzeug.\+test.\+Cookie.\+domain}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a0fca0e003013ef0a4b5cdd69bd923b56}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!expires@{expires}}
+\index{expires@{expires}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{expires}{expires}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a0fca0e003013ef0a4b5cdd69bd923b56} 
+datetime werkzeug.\+test.\+Cookie.\+expires \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a979d22d0a660c9a1aeecd59290d85b52}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!http\_only@{http\_only}}
+\index{http\_only@{http\_only}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{http\_only}{http\_only}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a979d22d0a660c9a1aeecd59290d85b52} 
+bool werkzeug.\+test.\+Cookie.\+http\+\_\+only \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_aaeb467541236a85b9e78c0dc255962c2}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!max\_age@{max\_age}}
+\index{max\_age@{max\_age}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{max\_age}{max\_age}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_aaeb467541236a85b9e78c0dc255962c2} 
+int werkzeug.\+test.\+Cookie.\+max\+\_\+age \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_acd3f2982fedfa2577d9fbbae882b4f2e}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!path@{path}}
+\index{path@{path}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{path}{path}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_acd3f2982fedfa2577d9fbbae882b4f2e} 
+werkzeug.\+test.\+Cookie.\+path}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a03519cb7ce1410c8430313eb76f0fa94}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!same\_site@{same\_site}}
+\index{same\_site@{same\_site}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{same\_site}{same\_site}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a03519cb7ce1410c8430313eb76f0fa94} 
+str werkzeug.\+test.\+Cookie.\+same\+\_\+site \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classwerkzeug_1_1test_1_1_cookie_a42e4a55caf7321d64a1d4d564db897b7}\index{werkzeug.test.Cookie@{werkzeug.test.Cookie}!secure@{secure}}
+\index{secure@{secure}!werkzeug.test.Cookie@{werkzeug.test.Cookie}}
+\doxysubsubsection{\texorpdfstring{secure}{secure}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1test_1_1_cookie_a42e4a55caf7321d64a1d4d564db897b7} 
+bool werkzeug.\+test.\+Cookie.\+secure \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{test_8py}{test.\+py}}\end{DoxyCompactItemize}

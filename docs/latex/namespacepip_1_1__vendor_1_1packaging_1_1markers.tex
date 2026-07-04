@@ -1,0 +1,280 @@
+\doxysection{pip.\+\_\+vendor.\+packaging.\+markers Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers}{}\label{namespacepip_1_1__vendor_1_1packaging_1_1markers}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_invalid_marker}{Invalid\+Marker}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_undefined_comparison}{Undefined\+Comparison}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_undefined_environment_name}{Undefined\+Environment\+Name}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_node}{Node}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_variable}{Variable}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_value}{Value}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_op}{Op}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_undefined}{Undefined}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_marker}{Marker}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\+[Any]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a58a72e4bb5fa8f5d3a1ed4d5a7dc8a4a}{\+\_\+coerce\+\_\+parse\+\_\+result}} (Union\+[Parse\+Results, List\+[Any]\+]\+ results)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a0d4779cdaf0dc723d813c8ce5b1942f1}{\+\_\+format\+\_\+marker}} (Union\+[List\+[str]\+, Tuple\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_node}{Node}},...]\+, str]\+ marker, Optional\+[bool]\+ first=True)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4c3632069e13eaceb120f056d5098065}{\+\_\+eval\+\_\+op}} (str lhs, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_op}{Op}} op, str rhs)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ab03551b76331e74efc89718d4a49928b}{\+\_\+get\+\_\+env}} (Dict\+[str, str]\+ environment, str name)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4d2f05013cf7ab49e7d82738a819f7ec}{\+\_\+evaluate\+\_\+markers}} (List\+[Any]\+ markers, Dict\+[str, str]\+ environment)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_acc35a3089d1460faecb4af4e3dd1c520}{format\+\_\+full\+\_\+version}} ("{}sys.\+\_\+version\+\_\+info"{} info)
+\item 
+Dict\+[str, str]\+ \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_af7831ddc2f31daebff2c09b793a90334}{default\+\_\+environment}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_aa13de8fbc20edb0fc6634417ed8de135}{Operator}} = Callable\+[\+[str, str]\+, bool]\+
+\item 
+tuple \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad2d2c96b4ec176f63643632ad42fdb02}{VARIABLE}}
+\item 
+dict \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a2c8ec6a0c7124ec91fb828d47befcbaf}{ALIASES}}
+\item 
+tuple \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_aead9cd835be0268a64e0dc095ed4abda}{VERSION\+\_\+\+CMP}}
+\item 
+tuple \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ac2ff863c1dbe3c50c9d6ba5dcea61245}{MARKER\+\_\+\+OP}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_aead9cd835be0268a64e0dc095ed4abda}{VERSION\+\_\+\+CMP}} \texorpdfstring{$\vert$}{|} L("{}not in"{}) \texorpdfstring{$\vert$}{|} L("{}in"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a1993dbca868267b3bd44382ebcb3b99a}{MARKER\+\_\+\+VALUE}} = Quoted\+String("{}\textquotesingle{}"{}) \texorpdfstring{$\vert$}{|} Quoted\+String(\textquotesingle{}"{}\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad5b582dc5a80c50f90e25491f8c35868}{BOOLOP}} = L("{}and"{}) \texorpdfstring{$\vert$}{|} L("{}or"{})
+\item 
+tuple \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}{MARKER\+\_\+\+VAR}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad2d2c96b4ec176f63643632ad42fdb02}{VARIABLE}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a1993dbca868267b3bd44382ebcb3b99a}{MARKER\+\_\+\+VALUE}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a69e5c21afc7ac166189ab5059b701ab9}{MARKER\+\_\+\+ITEM}} = Group(\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}{MARKER\+\_\+\+VAR}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ac2ff863c1dbe3c50c9d6ba5dcea61245}{MARKER\+\_\+\+OP}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}{MARKER\+\_\+\+VAR}})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a6aa7509c2422ffdf076be284a625563c}{LPAREN}} = L("{}("{}).suppress()
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a46fd2179382a5e9977d11b3d08313deb}{RPAREN}} = L("{})"{}).suppress()
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}{MARKER\+\_\+\+EXPR}} = Forward()
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a48bae1404b7e9840fc45639ea6614cf1}{MARKER\+\_\+\+ATOM}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a69e5c21afc7ac166189ab5059b701ab9}{MARKER\+\_\+\+ITEM}} \texorpdfstring{$\vert$}{|} Group(\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a6aa7509c2422ffdf076be284a625563c}{LPAREN}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}{MARKER\+\_\+\+EXPR}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a46fd2179382a5e9977d11b3d08313deb}{RPAREN}})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a85b64d939d8e1e50262bc1ece07ceede}{MARKER}} = string\+Start + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}{MARKER\+\_\+\+EXPR}} + string\+End
+\item 
+dict \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a01ac9418c8e6d1aa6214c8f730415562}{\+\_\+operators}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a50fa7155bbdc719135596ae2321c0fb4}{\+\_\+undefined}} = \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_undefined}{Undefined}}()
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1packaging_1_1markers_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a58a72e4bb5fa8f5d3a1ed4d5a7dc8a4a}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_coerce\_parse\_result@{\_coerce\_parse\_result}}
+\index{\_coerce\_parse\_result@{\_coerce\_parse\_result}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_coerce\_parse\_result()}{\_coerce\_parse\_result()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a58a72e4bb5fa8f5d3a1ed4d5a7dc8a4a} 
+ List\+[Any]\+ \+\_\+coerce\+\_\+parse\+\_\+result (\begin{DoxyParamCaption}\item[{Union\+[Parse\+Results, List\+[Any]\+]\+}]{results}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4c3632069e13eaceb120f056d5098065}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_eval\_op@{\_eval\_op}}
+\index{\_eval\_op@{\_eval\_op}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_eval\_op()}{\_eval\_op()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4c3632069e13eaceb120f056d5098065} 
+ bool \+\_\+eval\+\_\+op (\begin{DoxyParamCaption}\item[{str}]{lhs}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_op}{Op}}}]{op}{, }\item[{str}]{rhs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4d2f05013cf7ab49e7d82738a819f7ec}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_evaluate\_markers@{\_evaluate\_markers}}
+\index{\_evaluate\_markers@{\_evaluate\_markers}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_evaluate\_markers()}{\_evaluate\_markers()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a4d2f05013cf7ab49e7d82738a819f7ec} 
+ bool \+\_\+evaluate\+\_\+markers (\begin{DoxyParamCaption}\item[{List\+[Any]\+}]{markers}{, }\item[{Dict\+[str, str]\+}]{environment}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a0d4779cdaf0dc723d813c8ce5b1942f1}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_format\_marker@{\_format\_marker}}
+\index{\_format\_marker@{\_format\_marker}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_format\_marker()}{\_format\_marker()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a0d4779cdaf0dc723d813c8ce5b1942f1} 
+ str \+\_\+format\+\_\+marker (\begin{DoxyParamCaption}\item[{Union\+[List\+[str]\+, Tuple\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_node}{Node}}, ...]\+, str]\+}]{marker}{, }\item[{Optional\+[bool]\+ }]{first}{ = {\ttfamily True}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_ab03551b76331e74efc89718d4a49928b}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_get\_env@{\_get\_env}}
+\index{\_get\_env@{\_get\_env}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_get\_env()}{\_get\_env()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_ab03551b76331e74efc89718d4a49928b} 
+ str \+\_\+get\+\_\+env (\begin{DoxyParamCaption}\item[{Dict\+[str, str]\+}]{environment}{, }\item[{str}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_af7831ddc2f31daebff2c09b793a90334}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!default\_environment@{default\_environment}}
+\index{default\_environment@{default\_environment}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{default\_environment()}{default\_environment()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_af7831ddc2f31daebff2c09b793a90334} 
+ Dict\+[str, str]\+ default\+\_\+environment (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_acc35a3089d1460faecb4af4e3dd1c520}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!format\_full\_version@{format\_full\_version}}
+\index{format\_full\_version@{format\_full\_version}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{format\_full\_version()}{format\_full\_version()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_acc35a3089d1460faecb4af4e3dd1c520} 
+ str format\+\_\+full\+\_\+version (\begin{DoxyParamCaption}\item[{"{}sys.\+\_\+version\+\_\+info"{}}]{info}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacepip_1_1__vendor_1_1packaging_1_1markers_doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a01ac9418c8e6d1aa6214c8f730415562}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_operators@{\_operators}}
+\index{\_operators@{\_operators}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_operators}{\_operators}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a01ac9418c8e6d1aa6214c8f730415562} 
+dict pip.\+\_\+vendor.\+packaging.\+markers.\+\_\+operators\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}in"{}}:\ \textcolor{keyword}{lambda}\ lhs,\ rhs:\ lhs\ \textcolor{keywordflow}{in}\ rhs,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}not\ in"{}}:\ \textcolor{keyword}{lambda}\ lhs,\ rhs:\ lhs\ \textcolor{keywordflow}{not}\ \textcolor{keywordflow}{in}\ rhs,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}<"{}}:\ operator.lt,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}<="{}}:\ operator.le,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}=="{}}:\ operator.eq,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}!="{}}:\ operator.ne,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}>="{}}:\ operator.ge,}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}>"{}}:\ operator.gt,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a50fa7155bbdc719135596ae2321c0fb4}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!\_undefined@{\_undefined}}
+\index{\_undefined@{\_undefined}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{\_undefined}{\_undefined}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a50fa7155bbdc719135596ae2321c0fb4} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+\_\+undefined = \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1markers_1_1_undefined}{Undefined}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a2c8ec6a0c7124ec91fb828d47befcbaf}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!ALIASES@{ALIASES}}
+\index{ALIASES@{ALIASES}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{ALIASES}{ALIASES}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a2c8ec6a0c7124ec91fb828d47befcbaf} 
+dict pip.\+\_\+vendor.\+packaging.\+markers.\+ALIASES}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}os.name"{}}:\ \textcolor{stringliteral}{"{}os\_name"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}sys.platform"{}}:\ \textcolor{stringliteral}{"{}sys\_platform"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}platform.version"{}}:\ \textcolor{stringliteral}{"{}platform\_version"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}platform.machine"{}}:\ \textcolor{stringliteral}{"{}platform\_machine"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}platform.python\_implementation"{}}:\ \textcolor{stringliteral}{"{}platform\_python\_implementation"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}python\_implementation"{}}:\ \textcolor{stringliteral}{"{}platform\_python\_implementation"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad5b582dc5a80c50f90e25491f8c35868}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!BOOLOP@{BOOLOP}}
+\index{BOOLOP@{BOOLOP}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{BOOLOP}{BOOLOP}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad5b582dc5a80c50f90e25491f8c35868} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+BOOLOP = L("{}and"{}) \texorpdfstring{$\vert$}{|} L("{}or"{})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a6aa7509c2422ffdf076be284a625563c}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!LPAREN@{LPAREN}}
+\index{LPAREN@{LPAREN}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{LPAREN}{LPAREN}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a6aa7509c2422ffdf076be284a625563c} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+LPAREN = L("{}("{}).suppress()}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a85b64d939d8e1e50262bc1ece07ceede}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER@{MARKER}}
+\index{MARKER@{MARKER}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER}{MARKER}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a85b64d939d8e1e50262bc1ece07ceede} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER = string\+Start + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}{MARKER\+\_\+\+EXPR}} + string\+End}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a48bae1404b7e9840fc45639ea6614cf1}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_ATOM@{MARKER\_ATOM}}
+\index{MARKER\_ATOM@{MARKER\_ATOM}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_ATOM}{MARKER\_ATOM}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a48bae1404b7e9840fc45639ea6614cf1} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+ATOM = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a69e5c21afc7ac166189ab5059b701ab9}{MARKER\+\_\+\+ITEM}} \texorpdfstring{$\vert$}{|} Group(\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a6aa7509c2422ffdf076be284a625563c}{LPAREN}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}{MARKER\+\_\+\+EXPR}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a46fd2179382a5e9977d11b3d08313deb}{RPAREN}})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_EXPR@{MARKER\_EXPR}}
+\index{MARKER\_EXPR@{MARKER\_EXPR}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_EXPR}{MARKER\_EXPR}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a5823dc8c73fb0420dd7bf8dc7c86947a} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+EXPR = Forward()}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a69e5c21afc7ac166189ab5059b701ab9}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_ITEM@{MARKER\_ITEM}}
+\index{MARKER\_ITEM@{MARKER\_ITEM}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_ITEM}{MARKER\_ITEM}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a69e5c21afc7ac166189ab5059b701ab9} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+ITEM = Group(\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}{MARKER\+\_\+\+VAR}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ac2ff863c1dbe3c50c9d6ba5dcea61245}{MARKER\+\_\+\+OP}} + \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}{MARKER\+\_\+\+VAR}})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_ac2ff863c1dbe3c50c9d6ba5dcea61245}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_OP@{MARKER\_OP}}
+\index{MARKER\_OP@{MARKER\_OP}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_OP}{MARKER\_OP}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_ac2ff863c1dbe3c50c9d6ba5dcea61245} 
+tuple pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+OP = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_aead9cd835be0268a64e0dc095ed4abda}{VERSION\+\_\+\+CMP}} \texorpdfstring{$\vert$}{|} L("{}not in"{}) \texorpdfstring{$\vert$}{|} L("{}in"{})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a1993dbca868267b3bd44382ebcb3b99a}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_VALUE@{MARKER\_VALUE}}
+\index{MARKER\_VALUE@{MARKER\_VALUE}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_VALUE}{MARKER\_VALUE}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a1993dbca868267b3bd44382ebcb3b99a} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+VALUE = Quoted\+String("{}\textquotesingle{}"{}) \texorpdfstring{$\vert$}{|} Quoted\+String(\textquotesingle{}"{}\textquotesingle{})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!MARKER\_VAR@{MARKER\_VAR}}
+\index{MARKER\_VAR@{MARKER\_VAR}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{MARKER\_VAR}{MARKER\_VAR}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_ae8c00a33ec3e02690487c0fc3526b164} 
+tuple pip.\+\_\+vendor.\+packaging.\+markers.\+MARKER\+\_\+\+VAR = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad2d2c96b4ec176f63643632ad42fdb02}{VARIABLE}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1packaging_1_1markers_a1993dbca868267b3bd44382ebcb3b99a}{MARKER\+\_\+\+VALUE}}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_aa13de8fbc20edb0fc6634417ed8de135}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!Operator@{Operator}}
+\index{Operator@{Operator}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{Operator}{Operator}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_aa13de8fbc20edb0fc6634417ed8de135} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+Operator = Callable\+[\+[str, str]\+, bool]\+}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_a46fd2179382a5e9977d11b3d08313deb}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!RPAREN@{RPAREN}}
+\index{RPAREN@{RPAREN}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{RPAREN}{RPAREN}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_a46fd2179382a5e9977d11b3d08313deb} 
+pip.\+\_\+vendor.\+packaging.\+markers.\+RPAREN = L("{})"{}).suppress()}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad2d2c96b4ec176f63643632ad42fdb02}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!VARIABLE@{VARIABLE}}
+\index{VARIABLE@{VARIABLE}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{VARIABLE}{VARIABLE}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_ad2d2c96b4ec176f63643632ad42fdb02} 
+tuple pip.\+\_\+vendor.\+packaging.\+markers.\+VARIABLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ L(\textcolor{stringliteral}{"{}implementation\_version"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform\_python\_implementation"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}implementation\_name"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}python\_full\_version"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform\_release"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform\_version"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform\_machine"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform\_system"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}python\_version"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}sys\_platform"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}os\_name"{}})}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}os.name"{}})\ \ \textcolor{comment}{\#\ PEP-\/345}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}sys.platform"{}})\ \ \textcolor{comment}{\#\ PEP-\/345}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform.version"{}})\ \ \textcolor{comment}{\#\ PEP-\/345}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform.machine"{}})\ \ \textcolor{comment}{\#\ PEP-\/345}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}platform.python\_implementation"{}})\ \ \textcolor{comment}{\#\ PEP-\/345}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}python\_implementation"{}})\ \ \textcolor{comment}{\#\ undocumented\ setuptools\ legacy}}
+\DoxyCodeLine{\ \ \ \ |\ L(\textcolor{stringliteral}{"{}extra"{}})\ \ \textcolor{comment}{\#\ PEP-\/508}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1packaging_1_1markers_aead9cd835be0268a64e0dc095ed4abda}\index{pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}!VERSION\_CMP@{VERSION\_CMP}}
+\index{VERSION\_CMP@{VERSION\_CMP}!pip.\_vendor.packaging.markers@{pip.\_vendor.packaging.markers}}
+\doxysubsubsection{\texorpdfstring{VERSION\_CMP}{VERSION\_CMP}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1packaging_1_1markers_aead9cd835be0268a64e0dc095ed4abda} 
+tuple pip.\+\_\+vendor.\+packaging.\+markers.\+VERSION\+\_\+\+CMP}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ L(\textcolor{stringliteral}{"{}==="{}})\ |\ L(\textcolor{stringliteral}{"{}=="{}})\ |\ L(\textcolor{stringliteral}{"{}>="{}})\ |\ L(\textcolor{stringliteral}{"{}<="{}})\ |\ L(\textcolor{stringliteral}{"{}!="{}})\ |\ L(\textcolor{stringliteral}{"{}\string~="{}})\ |\ L(\textcolor{stringliteral}{"{}>"{}})\ |\ L(\textcolor{stringliteral}{"{}<"{}})}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}

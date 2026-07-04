@@ -1,0 +1,105 @@
+\doxysection{click.\+shell\+\_\+completion.\+Completion\+Item Class Reference}
+\hypertarget{classclick_1_1shell__completion_1_1_completion_item}{}\label{classclick_1_1shell__completion_1_1_completion_item}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+Inheritance diagram for click.\+shell\+\_\+completion.\+Completion\+Item:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classclick_1_1shell__completion_1_1_completion_item}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_ab1a405235f00b8a150af017b397834e4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}{\+\_\+\+Value\+T\+\_\+co}} value, str type="{}plain"{}, str\texorpdfstring{$\vert$}{|}None help=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_a1be306d18de56eb4949869f68a834f7f}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}{\+\_\+\+Value\+T\+\_\+co}} \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_a02afe70e54cf647b55c9d4fcb5359d43}{value}} = value
+\item 
+str \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_a2b0f96896ef0bcf4753c4cc139c4dd10}{type}} = type
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_a34a3533d6b053ca0f5b45463b2fa3d66}{help}} = help
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item_a5fc0f403d13938fc3bd523e10e575118}{\+\_\+info}} = kwargs
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a completion value and metadata about the value. The
+default metadata is ``type`` to indicate special shell handling,
+and ``help`` if a shell supports showing a help string next to the
+value.
+
+Arbitrary parameters can be passed when creating the object, and
+accessed using ``item.attr``. If an attribute wasn't passed,
+accessing it returns ``None``.
+
+:param value: The completion suggestion.
+:param type: Tells the shell script to provide special completion
+    support for the type. Click uses ``"dir"`` and ``"file"``.
+:param help: String shown next to the value if supported.
+:param kwargs: Arbitrary metadata. The built-in implementations
+    don't use this, but custom type completions paired with custom
+    shell support could use it.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1shell__completion_1_1_completion_item_doc-constructors}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_ab1a405235f00b8a150af017b397834e4}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_ab1a405235f00b8a150af017b397834e4} 
+ None click.\+shell\+\_\+completion.\+Completion\+Item.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}{\+\_\+\+Value\+T\+\_\+co}}}]{value}{, }\item[{str }]{type}{ = {\ttfamily "{}plain"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{help}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1shell__completion_1_1_completion_item_doc-func-members}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a1be306d18de56eb4949869f68a834f7f}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_a1be306d18de56eb4949869f68a834f7f} 
+ t.\+Any click.\+shell\+\_\+completion.\+Completion\+Item.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1shell__completion_1_1_completion_item_doc-variable-members}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a5fc0f403d13938fc3bd523e10e575118}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!\_info@{\_info}}
+\index{\_info@{\_info}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{\_info}{\_info}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_a5fc0f403d13938fc3bd523e10e575118} 
+click.\+shell\+\_\+completion.\+Completion\+Item.\+\_\+info = kwargs\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a34a3533d6b053ca0f5b45463b2fa3d66}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!help@{help}}
+\index{help@{help}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_a34a3533d6b053ca0f5b45463b2fa3d66} 
+str \texorpdfstring{$\vert$}{|} None click.\+shell\+\_\+completion.\+Completion\+Item.\+help = help}
+
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a2b0f96896ef0bcf4753c4cc139c4dd10}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!type@{type}}
+\index{type@{type}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_a2b0f96896ef0bcf4753c4cc139c4dd10} 
+str click.\+shell\+\_\+completion.\+Completion\+Item.\+type = type}
+
+\Hypertarget{classclick_1_1shell__completion_1_1_completion_item_a02afe70e54cf647b55c9d4fcb5359d43}\index{click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}!value@{value}}
+\index{value@{value}!click.shell\_completion.CompletionItem@{click.shell\_completion.CompletionItem}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily \label{classclick_1_1shell__completion_1_1_completion_item_a02afe70e54cf647b55c9d4fcb5359d43} 
+\doxymbox{\hyperlink{namespaceclick_1_1shell__completion_a868fdfe04683686efb563aa273817a0f}{\+\_\+\+Value\+T\+\_\+co}} click.\+shell\+\_\+completion.\+Completion\+Item.\+value = value}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{shell__completion_8py}{shell\+\_\+completion.\+py}}\end{DoxyCompactItemize}

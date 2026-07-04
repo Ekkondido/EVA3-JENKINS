@@ -1,0 +1,72 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+serving.py File Reference}
+\hypertarget{serving_8py}{}\label{serving_8py}\index{venv/Lib/site-\/packages/werkzeug/serving.py@{venv/Lib/site-\/packages/werkzeug/serving.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1___ssl_dummy}{werkzeug.\+serving.\+\_\+\+Ssl\+Dummy}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_forking_mix_in}{werkzeug.\+serving.\+Forking\+Mix\+In}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_dechunked_input}{werkzeug.\+serving.\+Dechunked\+Input}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{werkzeug.\+serving.\+WSGIRequest\+Handler}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{werkzeug.\+serving.\+Base\+WSGIServer}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_threaded_w_s_g_i_server}{werkzeug.\+serving.\+Threaded\+WSGIServer}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_forking_w_s_g_i_server}{werkzeug.\+serving.\+Forking\+WSGIServer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug}{werkzeug}}
+\item 
+namespace \doxymbox{\hyperlink{namespacewerkzeug_1_1serving}{werkzeug.\+serving}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a87bb2466fc8cf06c5af7fc4241bfbc35}{werkzeug.\+serving.\+\_\+ansi\+\_\+style}} (str value, \texorpdfstring{$\ast$}{*}str styles)
+\item 
+tuple\+[Certificate, RSAPrivate\+Key\+With\+Serialization]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_af483051c3df6aba23036400a41a75cc5}{werkzeug.\+serving.\+generate\+\_\+adhoc\+\_\+ssl\+\_\+pair}} (str\texorpdfstring{$\vert$}{|}None cn=None)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aefea22a17ff939cb9e2708cc56744570}{werkzeug.\+serving.\+make\+\_\+ssl\+\_\+devcert}} (str base\+\_\+path, str\texorpdfstring{$\vert$}{|}None host=None, str\texorpdfstring{$\vert$}{|}None cn=None)
+\item 
+ssl.\+SSLContext \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a6def70d2ceb735d7d378ca3ae1711021}{werkzeug.\+serving.\+generate\+\_\+adhoc\+\_\+ssl\+\_\+context}} ()
+\item 
+ssl.\+SSLContext \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a8090abac8765cbbf4af6f0e203e54b27}{werkzeug.\+serving.\+load\+\_\+ssl\+\_\+context}} (str cert\+\_\+file, str\texorpdfstring{$\vert$}{|}None pkey\+\_\+file=None, int\texorpdfstring{$\vert$}{|}None protocol=None)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a5b0a4aaf3fb5ebbd1c5d122238abb268}{werkzeug.\+serving.\+is\+\_\+ssl\+\_\+error}} (Exception\texorpdfstring{$\vert$}{|}None error=None)
+\item 
+socket.\+Address\+Family \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_aeed22fc988699822a8b301308d67c9b5}{werkzeug.\+serving.\+select\+\_\+address\+\_\+family}} (str host, int port)
+\item 
+tuple\+[str, int]\+\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c77cbc7d09c654920da9f0fad791012}{werkzeug.\+serving.\+get\+\_\+sockaddr}} (str host, int port, socket.\+Address\+Family family)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a5e6aced9171fd05aefc8c1011378aeca}{werkzeug.\+serving.\+get\+\_\+interface\+\_\+ip}} (socket.\+Address\+Family family)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_base_w_s_g_i_server}{Base\+WSGIServer}} \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a7439eeafe89b706097f3a48a5e533b46}{werkzeug.\+serving.\+make\+\_\+server}} (str host, int port, WSGIApplication app, bool threaded=False, int processes=1, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None request\+\_\+handler=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None, int\texorpdfstring{$\vert$}{|}None fd=None)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a97333e24807e6edafce06dba6542c890}{werkzeug.\+serving.\+is\+\_\+running\+\_\+from\+\_\+reloader}} ()
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a59b80e6bfee6aae38325716db8cdbad3}{werkzeug.\+serving.\+run\+\_\+simple}} (str hostname, int port, WSGIApplication application, bool use\+\_\+reloader=False, bool use\+\_\+debugger=False, bool use\+\_\+evalex=True, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None extra\+\_\+files=None, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None exclude\+\_\+patterns=None, int reloader\+\_\+interval=1, str reloader\+\_\+type="{}auto"{}, bool threaded=False, int processes=1, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1serving_1_1_w_s_g_i_request_handler}{WSGIRequest\+Handler}}]\+\texorpdfstring{$\vert$}{|}None request\+\_\+handler=None, dict\+[str, str\texorpdfstring{$\vert$}{|}tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None static\+\_\+files=None, bool passthrough\+\_\+errors=False, \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{\+\_\+\+TSSLContext\+Arg}}\texorpdfstring{$\vert$}{|}None ssl\+\_\+context=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a7bd64af41ae25513d2777a92a15b631f}{werkzeug.\+serving.\+connection\+\_\+dropped\+\_\+errors}}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a6e15b70bed1d1226b505a6c3694918d8}{werkzeug.\+serving.\+ssl}}
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a90f1ab7d709027cbc59dd657014f16eb}{werkzeug.\+serving.\+\_\+log\+\_\+add\+\_\+style}} = True
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_abe3058e173adc71f935e3ed8083944ef}{werkzeug.\+serving.\+can\+\_\+fork}} = hasattr(os, "{}fork"{})
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_adbdcca0bef6f7462801c3b8488aaa4a5}{werkzeug.\+serving.\+Forking\+Mix\+In}} = socketserver.\+Forking\+Mix\+In
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_ac6ae6846a543841aca266f10c19a4276}{werkzeug.\+serving.\+af\+\_\+unix}} = None
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a32910d885399663fb058623ae164275a}{werkzeug.\+serving.\+LISTEN\+\_\+\+QUEUE}} = 128
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1serving_a1c54256ebdd78284ce2d5d4cd5d4db25}{werkzeug.\+serving.\+\_\+\+TSSLContext\+Arg}}
+\end{DoxyCompactItemize}

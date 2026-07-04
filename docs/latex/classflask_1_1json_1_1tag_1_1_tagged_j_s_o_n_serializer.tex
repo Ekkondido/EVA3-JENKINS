@@ -1,0 +1,161 @@
+\doxysection{flask.\+json.\+tag.\+Tagged\+JSONSerializer Class Reference}
+\hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}{}\label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad4fea820ff59b4c1a80529f2623cc37e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a61469a35372d6899b4ff83d62869cf9d}{register}} (self, type\+[\doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{JSONTag}}]\+ tag\+\_\+class, bool force=False, int\texorpdfstring{$\vert$}{|}None index=None)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ae759e21af070fc9e637f577a259fefb8}{tag}} (self, t.\+Any value)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a7c5430d574bfb1ff3d1b98667747b019}{untag}} (self, dict\+[str, t.\+Any]\+ value)
+\item 
+str \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0ed5de2dc03fd67e7098519d091a27a7}{dumps}} (self, t.\+Any value)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a06678139ab842a37135d5b7bda3c0c1b}{loads}} (self, str value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0518c3af9f26474577fd2b7d4f5dd1f1}{tags}} = \{\}
+\item 
+list \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a2663e4d82fcf9237050940f0b4856ca3}{order}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad5f3e751a9a1863192e9a8f8b6f4ae9e}{default\+\_\+tags}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a5bc0a1c27b3f04bfe4a8c59f387f63d9}{\+\_\+untag\+\_\+scan}} (self, t.\+Any value)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Serializer that uses a tag system to compactly represent objects that
+are not JSON types. Passed as the intermediate serializer to
+:class:`itsdangerous.Serializer`.
+
+The following extra types are supported:
+
+* :class:`dict`
+* :class:`tuple`
+* :class:`bytes`
+* :class:`~markupsafe.Markup`
+* :class:`~uuid.UUID`
+* :class:`~datetime.datetime`
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-constructors}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad4fea820ff59b4c1a80529f2623cc37e}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad4fea820ff59b4c1a80529f2623cc37e} 
+ None flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-func-members}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a5bc0a1c27b3f04bfe4a8c59f387f63d9}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!\_untag\_scan@{\_untag\_scan}}
+\index{\_untag\_scan@{\_untag\_scan}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{\_untag\_scan()}{\_untag\_scan()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a5bc0a1c27b3f04bfe4a8c59f387f63d9} 
+ t.\+Any flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+\_\+untag\+\_\+scan (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0ed5de2dc03fd67e7098519d091a27a7}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!dumps@{dumps}}
+\index{dumps@{dumps}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0ed5de2dc03fd67e7098519d091a27a7} 
+ str flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+dumps (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Tag the value and dump it to a compact JSON string.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a06678139ab842a37135d5b7bda3c0c1b}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!loads@{loads}}
+\index{loads@{loads}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{loads()}{loads()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a06678139ab842a37135d5b7bda3c0c1b} 
+ t.\+Any flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+loads (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load data from a JSON string and deserialized any tagged objects.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a61469a35372d6899b4ff83d62869cf9d}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!register@{register}}
+\index{register@{register}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a61469a35372d6899b4ff83d62869cf9d} 
+ None flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+register (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\+[\doxymbox{\hyperlink{classflask_1_1json_1_1tag_1_1_j_s_o_n_tag}{JSONTag}}]\+}]{tag\+\_\+class}{, }\item[{bool }]{force}{ = {\ttfamily False}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{index}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a new tag with this serializer.
+
+:param tag_class: tag class to register. Will be instantiated with this
+    serializer instance.
+:param force: overwrite an existing tag. If false (default), a
+    :exc:`KeyError` is raised.
+:param index: index to insert the new tag in the tag order. Useful when
+    the new tag is a special case of an existing tag. If ``None``
+    (default), the tag is appended to the end of the order.
+
+:raise KeyError: if the tag key is already registered and ``force`` is
+    not true.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ae759e21af070fc9e637f577a259fefb8}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!tag@{tag}}
+\index{tag@{tag}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{tag()}{tag()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ae759e21af070fc9e637f577a259fefb8} 
+ t.\+Any flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+tag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a value to a tagged representation if necessary.\end{DoxyVerb}
+ \Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a7c5430d574bfb1ff3d1b98667747b019}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!untag@{untag}}
+\index{untag@{untag}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{untag()}{untag()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a7c5430d574bfb1ff3d1b98667747b019} 
+ t.\+Any flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+untag (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict\+[str, t.\+Any]\+}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert a tagged representation back to the original type.\end{DoxyVerb}
+ 
+
+\label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-variable-members}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad5f3e751a9a1863192e9a8f8b6f4ae9e}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!default\_tags@{default\_tags}}
+\index{default\_tags@{default\_tags}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{default\_tags}{default\_tags}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_ad5f3e751a9a1863192e9a8f8b6f4ae9e} 
+list flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+default\+\_\+tags\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ [}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagDict,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PassDict,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagTuple,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ PassList,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagBytes,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagMarkup,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagUUID,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ TagDateTime,}
+\DoxyCodeLine{\ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a2663e4d82fcf9237050940f0b4856ca3}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!order@{order}}
+\index{order@{order}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{order}{order}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a2663e4d82fcf9237050940f0b4856ca3} 
+list flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+order = \+[$\,$]\+}
+
+\Hypertarget{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0518c3af9f26474577fd2b7d4f5dd1f1}\index{flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}!tags@{tags}}
+\index{tags@{tags}!flask.json.tag.TaggedJSONSerializer@{flask.json.tag.TaggedJSONSerializer}}
+\doxysubsubsection{\texorpdfstring{tags}{tags}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1tag_1_1_tagged_j_s_o_n_serializer_a0518c3af9f26474577fd2b7d4f5dd1f1} 
+dict flask.\+json.\+tag.\+Tagged\+JSONSerializer.\+tags = \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+json/\+\doxymbox{\hyperlink{tag_8py}{tag.\+py}}\end{DoxyCompactItemize}

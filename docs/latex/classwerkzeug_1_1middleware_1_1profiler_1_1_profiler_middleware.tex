@@ -1,0 +1,148 @@
+\doxysection{werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware Class Reference}
+\hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware}{}\label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_adedfa114b8729eb4a17914db27bdf91c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, WSGIApplication app, t.\+IO\+[str]\+\texorpdfstring{$\vert$}{|}None stream=sys.\+stdout, t.\+Iterable\+[str]\+ sort\+\_\+by=("{}time"{}, "{}calls"{}), t.\+Iterable\+[str\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float]\+ restrictions=(), str\texorpdfstring{$\vert$}{|}None profile\+\_\+dir=None, str filename\+\_\+format="{}\{method\}.\{path\}.\{elapsed:\+.\+0f\}ms.\{time:\+.\+0f\}.prof"{})
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_aed731fca7bb0a69fffcda8b502768fb3}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a51de2829826120d30f44748d1214b6d7}{\+\_\+app}} = \doxymbox{\hyperlink{namespaceapp}{app}}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1665c136fef35ed4fc38d3c39f2870e4}{\+\_\+stream}} = stream
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a8403e7950a1c823cba5a891497b8a9e7}{\+\_\+sort\+\_\+by}} = sort\+\_\+by
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a4ce3a68b4ce99c039d00ac57b9bd5c79}{\+\_\+restrictions}} = restrictions
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_af9b65b9aee2ea17f364df38a19b3803d}{\+\_\+profile\+\_\+dir}} = profile\+\_\+dir
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1fc1176c48fcc786535ac286597931ce}{\+\_\+filename\+\_\+format}} = filename\+\_\+format
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wrap a WSGI application and profile the execution of each
+request. Responses are buffered so that timings are more exact.
+
+If ``stream`` is given, :class:`pstats.Stats` are written to it
+after each request. If ``profile_dir`` is given, :mod:`cProfile`
+data files are saved to that directory, one file per request.
+
+The filename can be customized by passing ``filename_format``. If
+it is a string, it will be formatted using :meth:`str.format` with
+the following fields available:
+
+-   ``{method}`` - The request method; GET, POST, etc.
+-   ``{path}`` - The request path or 'root' should one not exist.
+-   ``{elapsed}`` - The elapsed time of the request in milliseconds.
+-   ``{time}`` - The time of the request.
+
+If it is a callable, it will be called with the WSGI ``environ`` and
+be expected to return a filename string. The ``environ`` dictionary
+will also have the ``"werkzeug.profiler"`` key populated with a
+dictionary containing the following fields (more may be added in the
+future):
+-   ``{elapsed}`` - The elapsed time of the request in milliseconds.
+-   ``{time}`` - The time of the request.
+
+:param app: The WSGI application to wrap.
+:param stream: Write stats to this stream. Disable with ``None``.
+:param sort_by: A tuple of columns to sort stats by. See
+    :meth:`pstats.Stats.sort_stats`.
+:param restrictions: A tuple of restrictions to filter stats by. See
+    :meth:`pstats.Stats.print_stats`.
+:param profile_dir: Save profile data files to this directory.
+:param filename_format: Format string for profile data file names,
+    or a callable returning a name. See explanation above.
+
+.. code-block:: python
+
+    from werkzeug.middleware.profiler import ProfilerMiddleware
+    app = ProfilerMiddleware(app)
+
+.. versionchanged:: 3.0
+    Added the ``"werkzeug.profiler"`` key to the ``filename_format(environ)``
+    parameter with the  ``elapsed`` and ``time`` fields.
+
+.. versionchanged:: 0.15
+    Stats are written even if ``profile_dir`` is given, and can be
+    disable by passing ``stream=None``.
+
+.. versionadded:: 0.15
+    Added ``filename_format``.
+
+.. versionadded:: 0.9
+    Added ``restrictions`` and ``profile_dir``.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-constructors}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_adedfa114b8729eb4a17914db27bdf91c}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_adedfa114b8729eb4a17914db27bdf91c} 
+ None werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIApplication}]{app}{, }\item[{t.\+IO\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{stream}{ = {\ttfamily sys.stdout}, }\item[{t.\+Iterable\+[str]\+ }]{sort\+\_\+by}{ = {\ttfamily ("{}time"{},~"{}calls"{})}, }\item[{t.\+Iterable\+[str \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} float]\+ }]{restrictions}{ = {\ttfamily ()}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{profile\+\_\+dir}{ = {\ttfamily None}, }\item[{str }]{filename\+\_\+format}{ = {\ttfamily "{}\{method\}.\{path\}.\{elapsed:\+.0f\}ms.\{time:\+.0f\}.prof"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-func-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_aed731fca7bb0a69fffcda8b502768fb3}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_aed731fca7bb0a69fffcda8b502768fb3} 
+ t.\+Iterable\+[bytes]\+ werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{Start\+Response     }]{start\+\_\+response}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a51de2829826120d30f44748d1214b6d7}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_app@{\_app}}
+\index{\_app@{\_app}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_app}{\_app}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a51de2829826120d30f44748d1214b6d7} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+app = \doxymbox{\hyperlink{namespaceapp}{app}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1fc1176c48fcc786535ac286597931ce}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_filename\_format@{\_filename\_format}}
+\index{\_filename\_format@{\_filename\_format}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_filename\_format}{\_filename\_format}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1fc1176c48fcc786535ac286597931ce} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+filename\+\_\+format = filename\+\_\+format\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_af9b65b9aee2ea17f364df38a19b3803d}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_profile\_dir@{\_profile\_dir}}
+\index{\_profile\_dir@{\_profile\_dir}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_profile\_dir}{\_profile\_dir}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_af9b65b9aee2ea17f364df38a19b3803d} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+profile\+\_\+dir = profile\+\_\+dir\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a4ce3a68b4ce99c039d00ac57b9bd5c79}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_restrictions@{\_restrictions}}
+\index{\_restrictions@{\_restrictions}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_restrictions}{\_restrictions}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a4ce3a68b4ce99c039d00ac57b9bd5c79} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+restrictions = restrictions\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a8403e7950a1c823cba5a891497b8a9e7}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_sort\_by@{\_sort\_by}}
+\index{\_sort\_by@{\_sort\_by}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_sort\_by}{\_sort\_by}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a8403e7950a1c823cba5a891497b8a9e7} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+sort\+\_\+by = sort\+\_\+by\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1665c136fef35ed4fc38d3c39f2870e4}\index{werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!werkzeug.middleware.profiler.ProfilerMiddleware@{werkzeug.middleware.profiler.ProfilerMiddleware}}
+\doxysubsubsection{\texorpdfstring{\_stream}{\_stream}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1middleware_1_1profiler_1_1_profiler_middleware_a1665c136fef35ed4fc38d3c39f2870e4} 
+werkzeug.\+middleware.\+profiler.\+Profiler\+Middleware.\+\_\+stream = stream\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+middleware/\+\doxymbox{\hyperlink{profiler_8py}{profiler.\+py}}\end{DoxyCompactItemize}

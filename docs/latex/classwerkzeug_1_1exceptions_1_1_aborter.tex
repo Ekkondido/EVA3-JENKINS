@@ -1,0 +1,62 @@
+\doxysection{werkzeug.\+exceptions.\+Aborter Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_aborter}{}\label{classwerkzeug_1_1exceptions_1_1_aborter}\index{werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter_a9e9bbb4abdf37ea4bdec5b3e928d5b68}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, dict\+[int, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}]\+]\+\texorpdfstring{$\vert$}{|}None mapping=None, dict\+[int, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}]\+]\+\texorpdfstring{$\vert$}{|}None extra=None)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter_a133d716c50d6d5cc2c7d0009be08eef4}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}Sans\+IOResponse code, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_aborter_a54caeb59e11fd43eb786189b91a4a612}{mapping}} = dict(mapping)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}When passed a dict of code -> exception items it can be used as
+callable that raises exceptions.  If the first argument to the
+callable is an integer it will be looked up in the mapping, if it's
+a WSGI application it will be raised in a proxy exception.
+
+The rest of the arguments are forwarded to the exception constructor.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1exceptions_1_1_aborter_doc-constructors}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_a9e9bbb4abdf37ea4bdec5b3e928d5b68}\index{werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_aborter_a9e9bbb4abdf37ea4bdec5b3e928d5b68} 
+ None werkzeug.\+exceptions.\+Aborter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict\+[int, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}]\+]\+ \texorpdfstring{$\vert$}{|} None }]{mapping}{ = {\ttfamily None}, }\item[{dict\+[int, type\+[\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{HTTPException}}]\+]\+ \texorpdfstring{$\vert$}{|} None }]{extra}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1exceptions_1_1_aborter_doc-func-members}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_a133d716c50d6d5cc2c7d0009be08eef4}\index{werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_aborter_a133d716c50d6d5cc2c7d0009be08eef4} 
+ t.\+No\+Return werkzeug.\+exceptions.\+Aborter.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} Sans\+IOResponse}]{code}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1exceptions_1_1_aborter_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1exceptions_1_1_aborter_a54caeb59e11fd43eb786189b91a4a612}\index{werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}!mapping@{mapping}}
+\index{mapping@{mapping}!werkzeug.exceptions.Aborter@{werkzeug.exceptions.Aborter}}
+\doxysubsubsection{\texorpdfstring{mapping}{mapping}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1exceptions_1_1_aborter_a54caeb59e11fd43eb786189b91a4a612} 
+werkzeug.\+exceptions.\+Aborter.\+mapping = dict(mapping)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{werkzeug_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

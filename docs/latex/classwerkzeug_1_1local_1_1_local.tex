@@ -1,0 +1,101 @@
+\doxysection{werkzeug.\+local.\+Local Class Reference}
+\hypertarget{classwerkzeug_1_1local_1_1_local}{}\label{classwerkzeug_1_1local_1_1_local}\index{werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a7fe0b802f68589b570873e5c24248cfb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Context\+Var\+[dict\+[str, t.\+Any]\+]\+\texorpdfstring{$\vert$}{|}None context\+\_\+var=None)
+\item 
+t.\+Iterator\+[tuple\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a550a8d3bac8ca276685132e39e900e96}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a5b4d397e59e6e232eca97704194d709c}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, str name, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None unbound\+\_\+message=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a95cda675140dc083aa7b06a7794b9705}{\+\_\+\+\_\+release\+\_\+local\+\_\+\+\_\+}} (self)
+\item 
+t.\+Any \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_ad9aa342ae03098f205db85a16d3fc994}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a4ed46d32517735b9e0dc3479fa1132e0}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, str name, t.\+Any value)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_a3d21853912f6b00bf9b568ac1553046d}{\+\_\+\+\_\+delattr\+\_\+\+\_\+}} (self, str name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a namespace of context-local data. This wraps a
+:class:`ContextVar` containing a :class:`dict` value.
+
+This may incur a performance penalty compared to using individual
+context vars, as it has to copy data to avoid mutating the dict
+between nested contexts.
+
+:param context_var: The :class:`~contextvars.ContextVar` to use as
+    storage for this local. If not given, one will be created.
+    Context vars not created at the global scope may interfere with
+    garbage collection.
+
+.. versionchanged:: 2.0
+    Uses ``ContextVar`` instead of a custom storage implementation.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1local_1_1_local_doc-constructors}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_a7fe0b802f68589b570873e5c24248cfb}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a7fe0b802f68589b570873e5c24248cfb} 
+ None werkzeug.\+local.\+Local.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Context\+Var\+[dict\+[str, t.\+Any]\+]\+ \texorpdfstring{$\vert$}{|} None }]{context\+\_\+var}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1local_1_1_local_doc-func-members}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1local_1_1_local_a5b4d397e59e6e232eca97704194d709c}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a5b4d397e59e6e232eca97704194d709c} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1local_1_1_local_proxy}{Local\+Proxy}}\+[t.\+Any]\+ werkzeug.\+local.\+Local.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{unbound\+\_\+message}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a :class:`LocalProxy` that access an attribute on this
+local namespace.
+
+:param name: Proxy this attribute.
+:param unbound_message: The error message that the proxy will
+    show if the attribute isn't set.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1local_1_1_local_a3d21853912f6b00bf9b568ac1553046d}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_delattr\_\_@{\_\_delattr\_\_}}
+\index{\_\_delattr\_\_@{\_\_delattr\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_delattr\_\_()}{\_\_delattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a3d21853912f6b00bf9b568ac1553046d} 
+ None werkzeug.\+local.\+Local.\+\_\+\+\_\+delattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_ad9aa342ae03098f205db85a16d3fc994}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_ad9aa342ae03098f205db85a16d3fc994} 
+ t.\+Any werkzeug.\+local.\+Local.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_a550a8d3bac8ca276685132e39e900e96}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a550a8d3bac8ca276685132e39e900e96} 
+ t.\+Iterator\+[tuple\+[str, t.\+Any]\+]\+ werkzeug.\+local.\+Local.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_a95cda675140dc083aa7b06a7794b9705}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_release\_local\_\_@{\_\_release\_local\_\_}}
+\index{\_\_release\_local\_\_@{\_\_release\_local\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_release\_local\_\_()}{\_\_release\_local\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a95cda675140dc083aa7b06a7794b9705} 
+ None werkzeug.\+local.\+Local.\+\_\+\+\_\+release\+\_\+local\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1local_1_1_local_a4ed46d32517735b9e0dc3479fa1132e0}\index{werkzeug.local.Local@{werkzeug.local.Local}!\_\_setattr\_\_@{\_\_setattr\_\_}}
+\index{\_\_setattr\_\_@{\_\_setattr\_\_}!werkzeug.local.Local@{werkzeug.local.Local}}
+\doxysubsubsection{\texorpdfstring{\_\_setattr\_\_()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1local_1_1_local_a4ed46d32517735b9e0dc3479fa1132e0} 
+ None werkzeug.\+local.\+Local.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{t.\+Any}]{value}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{local_8py}{local.\+py}}\end{DoxyCompactItemize}

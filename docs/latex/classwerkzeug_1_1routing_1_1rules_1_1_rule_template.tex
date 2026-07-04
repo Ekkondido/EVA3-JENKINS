@@ -1,0 +1,72 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Rule\+Template Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template}\index{werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_aee5b1dc97600a6308dd3557863014ed1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ rules)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_factory}{Rule\+Template\+Factory}} \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a330d95ebaf3ca1cb30dfeb3363922be8}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a28d486f722acfa25410bfc889128989b}{rules}} = list(rules)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Returns copies of the rules wrapped and expands string templates in
+the endpoint, rule, defaults or subdomain sections.
+
+Here a small example for such a rule template::
+
+    from werkzeug.routing import Map, Rule, RuleTemplate
+
+    resource = RuleTemplate([
+        Rule('/$name/', endpoint='$name.list'),
+        Rule('/$name/<int:id>', endpoint='$name.show')
+    ])
+
+    url_map = Map([resource(name='user'), resource(name='page')])
+
+When a rule template is called the keyword arguments are used to
+replace the placeholders in all the string parameters.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_aee5b1dc97600a6308dd3557863014ed1}\index{werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_aee5b1dc97600a6308dd3557863014ed1} 
+ None werkzeug.\+routing.\+rules.\+Rule\+Template.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+}]{rules}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a330d95ebaf3ca1cb30dfeb3363922be8}\index{werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a330d95ebaf3ca1cb30dfeb3363922be8} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_factory}{Rule\+Template\+Factory}} werkzeug.\+routing.\+rules.\+Rule\+Template.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a28d486f722acfa25410bfc889128989b}\index{werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}!rules@{rules}}
+\index{rules@{rules}!werkzeug.routing.rules.RuleTemplate@{werkzeug.routing.rules.RuleTemplate}}
+\doxysubsubsection{\texorpdfstring{rules}{rules}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_a28d486f722acfa25410bfc889128989b} 
+werkzeug.\+routing.\+rules.\+Rule\+Template.\+rules = list(rules)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{rules_8py}{rules.\+py}}\end{DoxyCompactItemize}

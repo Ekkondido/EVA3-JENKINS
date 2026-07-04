@@ -1,0 +1,98 @@
+\doxysection{click.\+utils.\+Keep\+Open\+File Class Reference}
+\hypertarget{classclick_1_1utils_1_1_keep_open_file}{}\label{classclick_1_1utils_1_1_keep_open_file}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_aa92cda4f9bdc42f43caf70880763757c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+IO\+[t.\+Any]\+ file)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_a47a1bef901b41de7d34801debc640b9a}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+\doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file}{Keep\+Open\+File}} \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_a5d77de7d7f0b902606c72215e46ebb84}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_a4faebd698d6b622361e852cd19cc3d3d}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\+[Base\+Exception]\+\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None tb)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_af9abd1bc4da3096ca3dd4abd912797c4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+cabc.\+Iterator\+[t.\+Any\+Str]\+ \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_a52d04d5b36e75de43e3d009783ed3734}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file_af8f2121cd1060165447fc1c58dee3822}{\+\_\+file}} .IO\+[t.\+Any]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Proxy a file object but keep it open across a ``with`` block.
+
+Wraps a borrowed file (such as ``sys.stdin`` or ``sys.stdout``) so that
+leaving a ``with`` block does not close it, as used by :func:`open_file`
+for the ``-`` filename. The caller stays responsible for the file: an
+explicit :meth:`close` still passes through to the wrapped object.
+
+Dunder methods are proxied explicitly: implicit special-method lookups
+bypass :meth:`__getattr__`, because Python resolves them on the type rather
+than the instance.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1utils_1_1_keep_open_file_doc-constructors}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_aa92cda4f9bdc42f43caf70880763757c}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_aa92cda4f9bdc42f43caf70880763757c} 
+ None click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[t.\+Any]\+}]{file}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1utils_1_1_keep_open_file_doc-func-members}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_a5d77de7d7f0b902606c72215e46ebb84}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_a5d77de7d7f0b902606c72215e46ebb84} 
+ \doxymbox{\hyperlink{classclick_1_1utils_1_1_keep_open_file}{Keep\+Open\+File}} click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_a4faebd698d6b622361e852cd19cc3d3d}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_a4faebd698d6b622361e852cd19cc3d3d} 
+ None click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\+[Base\+Exception]\+ \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+value}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_a47a1bef901b41de7d34801debc640b9a}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_a47a1bef901b41de7d34801debc640b9a} 
+ t.\+Any click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_a52d04d5b36e75de43e3d009783ed3734}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_a52d04d5b36e75de43e3d009783ed3734} 
+ cabc.\+Iterator\+[t.\+Any\+Str]\+ click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_af9abd1bc4da3096ca3dd4abd912797c4}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_af9abd1bc4da3096ca3dd4abd912797c4} 
+ str click.\+utils.\+Keep\+Open\+File.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1utils_1_1_keep_open_file_doc-variable-members}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1utils_1_1_keep_open_file_af8f2121cd1060165447fc1c58dee3822}\index{click.utils.KeepOpenFile@{click.utils.KeepOpenFile}!\_file@{\_file}}
+\index{\_file@{\_file}!click.utils.KeepOpenFile@{click.utils.KeepOpenFile}}
+\doxysubsubsection{\texorpdfstring{\_file}{\_file}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_keep_open_file_af8f2121cd1060165447fc1c58dee3822} 
+click.\+utils.\+Keep\+Open\+File.\+\_\+file .IO\+[t.\+Any]\+\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

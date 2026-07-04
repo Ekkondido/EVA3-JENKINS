@@ -1,0 +1,158 @@
+\doxysection{jinja2.\+runtime.\+Macro Class Reference}
+\hypertarget{classjinja2_1_1runtime_1_1_macro}{}\label{classjinja2_1_1runtime_1_1_macro}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_af72a93cfab42ea865227893927d1e5d8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}Environment"{} environment, t.\+Callable\+[..., str]\+ func, str name, t.\+List\+[str]\+ arguments, bool catch\+\_\+kwargs, bool catch\+\_\+varargs, bool caller, t.\+Optional\+[bool]\+ default\+\_\+autoescape=None)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a6e4929fb0d84898a2aede99d8c3aa7bc}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a472daf8868e84722d53ca511065a08b6}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_ad74f3cfad9c181b4e88228b0b9f52387}{name}} = name
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}{arguments}} = arguments
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_ab0db036597dc65ec69cc8a74247916b8}{catch\+\_\+kwargs}} = catch\+\_\+kwargs
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a8495ea5b4d71c7bdc81037284c3221bd}{catch\+\_\+varargs}} = catch\+\_\+varargs
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a23ac2c3b7d1539d23293515018c03075}{caller}} = caller
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a3c9cdce55fdd79d5fc859dcc55d1d203}{explicit\+\_\+caller}} = "{}caller"{} in \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}{arguments}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a411e31aaffa13ae51b3c3ed79b94853b}{\+\_\+async\+\_\+invoke}} (self, t.\+List\+[t.\+Any]\+ arguments, bool autoescape)
+\item 
+str \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_aa9d6172618a280b8a3b4f07f01b5b897}{\+\_\+invoke}} (self, t.\+List\+[t.\+Any]\+ arguments, bool autoescape)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a0fe091b57ca60a14cc4ca61e82354268}{\+\_\+environment}} = \doxymbox{\hyperlink{namespacejinja2_1_1environment}{environment}}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a487a9dc5b53592e747d8daee248ba07f}{\+\_\+func}} = func
+\item 
+]\+) \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_a2e74e5fdd4a967a7c70163959f2cb991}{\+\_\+argument\+\_\+count}} = len(\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}{arguments}})
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_aa063596db3a093b36335efc7fba47684}{\+\_\+default\+\_\+autoescape}} = default\+\_\+autoescape
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a macro function.\end{DoxyVerb}
+ 
+
+\label{classjinja2_1_1runtime_1_1_macro_doc-constructors}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_af72a93cfab42ea865227893927d1e5d8}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_af72a93cfab42ea865227893927d1e5d8} 
+jinja2.\+runtime.\+Macro.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Environment"{}}]{environment}{, }\item[{t.\+Callable\+[..., str]\+}]{func}{, }\item[{str}]{name}{, }\item[{t.\+List\+[str]\+}]{arguments}{, }\item[{bool}]{catch\+\_\+kwargs}{, }\item[{bool}]{catch\+\_\+varargs}{, }\item[{bool}]{caller}{, }\item[{t.\+Optional\+[bool]\+ }]{default\+\_\+autoescape}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1runtime_1_1_macro_doc-func-members}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a6e4929fb0d84898a2aede99d8c3aa7bc}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a6e4929fb0d84898a2aede99d8c3aa7bc} 
+ str jinja2.\+runtime.\+Macro.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a472daf8868e84722d53ca511065a08b6}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a472daf8868e84722d53ca511065a08b6} 
+ str jinja2.\+runtime.\+Macro.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a411e31aaffa13ae51b3c3ed79b94853b}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_async\_invoke@{\_async\_invoke}}
+\index{\_async\_invoke@{\_async\_invoke}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_async\_invoke()}{\_async\_invoke()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a411e31aaffa13ae51b3c3ed79b94853b} 
+ str jinja2.\+runtime.\+Macro.\+\_\+async\+\_\+invoke (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+List\+[t.\+Any]\+}]{arguments}{, }\item[{bool}]{autoescape}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_aa9d6172618a280b8a3b4f07f01b5b897}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_invoke@{\_invoke}}
+\index{\_invoke@{\_invoke}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_invoke()}{\_invoke()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_aa9d6172618a280b8a3b4f07f01b5b897} 
+ str jinja2.\+runtime.\+Macro.\+\_\+invoke (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+List\+[t.\+Any]\+}]{arguments}{, }\item[{bool}]{autoescape}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{classjinja2_1_1runtime_1_1_macro_doc-variable-members}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a2e74e5fdd4a967a7c70163959f2cb991}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_argument\_count@{\_argument\_count}}
+\index{\_argument\_count@{\_argument\_count}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_argument\_count}{\_argument\_count}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a2e74e5fdd4a967a7c70163959f2cb991} 
+]\+) jinja2.\+runtime.\+Macro.\+\_\+argument\+\_\+count = len(\doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}{arguments}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_aa063596db3a093b36335efc7fba47684}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_default\_autoescape@{\_default\_autoescape}}
+\index{\_default\_autoescape@{\_default\_autoescape}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_default\_autoescape}{\_default\_autoescape}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_aa063596db3a093b36335efc7fba47684} 
+jinja2.\+runtime.\+Macro.\+\_\+default\+\_\+autoescape = default\+\_\+autoescape\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a0fe091b57ca60a14cc4ca61e82354268}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_environment@{\_environment}}
+\index{\_environment@{\_environment}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_environment}{\_environment}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a0fe091b57ca60a14cc4ca61e82354268} 
+jinja2.\+runtime.\+Macro.\+\_\+environment = \doxymbox{\hyperlink{namespacejinja2_1_1environment}{environment}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a487a9dc5b53592e747d8daee248ba07f}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!\_func@{\_func}}
+\index{\_func@{\_func}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{\_func}{\_func}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a487a9dc5b53592e747d8daee248ba07f} 
+jinja2.\+runtime.\+Macro.\+\_\+func = func\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!arguments@{arguments}}
+\index{arguments@{arguments}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{arguments}{arguments}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f} 
+jinja2.\+runtime.\+Macro.\+arguments = arguments}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a23ac2c3b7d1539d23293515018c03075}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!caller@{caller}}
+\index{caller@{caller}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{caller}{caller}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a23ac2c3b7d1539d23293515018c03075} 
+jinja2.\+runtime.\+Macro.\+caller = caller}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_ab0db036597dc65ec69cc8a74247916b8}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!catch\_kwargs@{catch\_kwargs}}
+\index{catch\_kwargs@{catch\_kwargs}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{catch\_kwargs}{catch\_kwargs}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_ab0db036597dc65ec69cc8a74247916b8} 
+jinja2.\+runtime.\+Macro.\+catch\+\_\+kwargs = catch\+\_\+kwargs}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a8495ea5b4d71c7bdc81037284c3221bd}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!catch\_varargs@{catch\_varargs}}
+\index{catch\_varargs@{catch\_varargs}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{catch\_varargs}{catch\_varargs}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a8495ea5b4d71c7bdc81037284c3221bd} 
+jinja2.\+runtime.\+Macro.\+catch\+\_\+varargs = catch\+\_\+varargs}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_a3c9cdce55fdd79d5fc859dcc55d1d203}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!explicit\_caller@{explicit\_caller}}
+\index{explicit\_caller@{explicit\_caller}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{explicit\_caller}{explicit\_caller}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_a3c9cdce55fdd79d5fc859dcc55d1d203} 
+str jinja2.\+runtime.\+Macro.\+explicit\+\_\+caller = "{}caller"{} in \doxymbox{\hyperlink{classjinja2_1_1runtime_1_1_macro_abf7963f74e8ce397fe5149804331781f}{arguments}}}
+
+\Hypertarget{classjinja2_1_1runtime_1_1_macro_ad74f3cfad9c181b4e88228b0b9f52387}\index{jinja2.runtime.Macro@{jinja2.runtime.Macro}!name@{name}}
+\index{name@{name}!jinja2.runtime.Macro@{jinja2.runtime.Macro}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classjinja2_1_1runtime_1_1_macro_ad74f3cfad9c181b4e88228b0b9f52387} 
+jinja2.\+runtime.\+Macro.\+name = name}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+jinja2/\+\doxymbox{\hyperlink{runtime_8py}{runtime.\+py}}\end{DoxyCompactItemize}

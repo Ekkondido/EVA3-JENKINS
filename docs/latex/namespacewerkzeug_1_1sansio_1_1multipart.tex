@@ -1,0 +1,81 @@
+\doxysection{werkzeug.\+sansio.\+multipart Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1sansio_1_1multipart}{}\label{namespacewerkzeug_1_1sansio_1_1multipart}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_event}{Event}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_preamble}{Preamble}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_field}{Field}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_file}{File}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_data}{Data}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_epilogue}{Epilogue}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_need_data}{Need\+Data}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_state}{State}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_decoder}{Multipart\+Decoder}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_multipart_encoder}{Multipart\+Encoder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a816c4f8d8a9406cd67aea1a50344b680}{NEED\+\_\+\+DATA}} = \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_need_data}{Need\+Data}}()
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a2e4d3606170d40796da70f83879aaa54}{LINE\+\_\+\+BREAK}} = b"{}(?:\+\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r)"{}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a9b342c95f56033e66b54d4ab4d290d28}{BLANK\+\_\+\+LINE\+\_\+\+RE}} = re.\+compile(b"{}(?:\+\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\textbackslash{}r\texorpdfstring{$\vert$}{|}\textbackslash{}n\textbackslash{}n)"{}, re.\+MULTILINE)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a6ef4ddf51b123de3dd726da654c87f5b}{LINE\+\_\+\+BREAK\+\_\+\+RE}} = re.\+compile(\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a2e4d3606170d40796da70f83879aaa54}{LINE\+\_\+\+BREAK}}, re.\+MULTILINE)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a2caf49dcd332c7dc05e518970d52466d}{HEADER\+\_\+\+CONTINUATION\+\_\+\+RE}} = re.\+compile(b"{}\%s\+[ \textbackslash{}t]\+"{} \% LINE\+\_\+\+BREAK, re.\+MULTILINE)
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a581e9478c656c97fd2e0ae5b1e979220}{SEARCH\+\_\+\+EXTRA\+\_\+\+LENGTH}} = 8
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1sansio_1_1multipart_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a9b342c95f56033e66b54d4ab4d290d28}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!BLANK\_LINE\_RE@{BLANK\_LINE\_RE}}
+\index{BLANK\_LINE\_RE@{BLANK\_LINE\_RE}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{BLANK\_LINE\_RE}{BLANK\_LINE\_RE}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a9b342c95f56033e66b54d4ab4d290d28} 
+werkzeug.\+sansio.\+multipart.\+BLANK\+\_\+\+LINE\+\_\+\+RE = re.\+compile(b"{}(?:\+\textbackslash{}r\textbackslash{}n\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\textbackslash{}r\texorpdfstring{$\vert$}{|}\textbackslash{}n\textbackslash{}n)"{}, re.\+MULTILINE)}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a2caf49dcd332c7dc05e518970d52466d}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!HEADER\_CONTINUATION\_RE@{HEADER\_CONTINUATION\_RE}}
+\index{HEADER\_CONTINUATION\_RE@{HEADER\_CONTINUATION\_RE}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{HEADER\_CONTINUATION\_RE}{HEADER\_CONTINUATION\_RE}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a2caf49dcd332c7dc05e518970d52466d} 
+werkzeug.\+sansio.\+multipart.\+HEADER\+\_\+\+CONTINUATION\+\_\+\+RE = re.\+compile(b"{}\%s\+[ \textbackslash{}t]\+"{} \% LINE\+\_\+\+BREAK, re.\+MULTILINE)}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a2e4d3606170d40796da70f83879aaa54}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!LINE\_BREAK@{LINE\_BREAK}}
+\index{LINE\_BREAK@{LINE\_BREAK}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{LINE\_BREAK}{LINE\_BREAK}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a2e4d3606170d40796da70f83879aaa54} 
+str werkzeug.\+sansio.\+multipart.\+LINE\+\_\+\+BREAK = b"{}(?:\+\textbackslash{}r\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r)"{}}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a6ef4ddf51b123de3dd726da654c87f5b}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!LINE\_BREAK\_RE@{LINE\_BREAK\_RE}}
+\index{LINE\_BREAK\_RE@{LINE\_BREAK\_RE}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{LINE\_BREAK\_RE}{LINE\_BREAK\_RE}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a6ef4ddf51b123de3dd726da654c87f5b} 
+werkzeug.\+sansio.\+multipart.\+LINE\+\_\+\+BREAK\+\_\+\+RE = re.\+compile(\doxymbox{\hyperlink{namespacewerkzeug_1_1sansio_1_1multipart_a2e4d3606170d40796da70f83879aaa54}{LINE\+\_\+\+BREAK}}, re.\+MULTILINE)}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a816c4f8d8a9406cd67aea1a50344b680}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!NEED\_DATA@{NEED\_DATA}}
+\index{NEED\_DATA@{NEED\_DATA}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{NEED\_DATA}{NEED\_DATA}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a816c4f8d8a9406cd67aea1a50344b680} 
+werkzeug.\+sansio.\+multipart.\+NEED\+\_\+\+DATA = \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1multipart_1_1_need_data}{Need\+Data}}()}
+
+\Hypertarget{namespacewerkzeug_1_1sansio_1_1multipart_a581e9478c656c97fd2e0ae5b1e979220}\index{werkzeug.sansio.multipart@{werkzeug.sansio.multipart}!SEARCH\_EXTRA\_LENGTH@{SEARCH\_EXTRA\_LENGTH}}
+\index{SEARCH\_EXTRA\_LENGTH@{SEARCH\_EXTRA\_LENGTH}!werkzeug.sansio.multipart@{werkzeug.sansio.multipart}}
+\doxysubsubsection{\texorpdfstring{SEARCH\_EXTRA\_LENGTH}{SEARCH\_EXTRA\_LENGTH}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1sansio_1_1multipart_a581e9478c656c97fd2e0ae5b1e979220} 
+int werkzeug.\+sansio.\+multipart.\+SEARCH\+\_\+\+EXTRA\+\_\+\+LENGTH = 8}
+

@@ -1,0 +1,125 @@
+\doxysection{werkzeug.\+datastructures.\+range.\+Range Class Reference}
+\hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range}{}\label{classwerkzeug_1_1datastructures_1_1range_1_1_range}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_ab90df08ec91579c0384f1ed7f4c8f37b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str units, cabc.\+Sequence\+[tuple\+[int, int\texorpdfstring{$\vert$}{|}None]\+]\+ ranges)
+\item 
+tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_a18fa70d177f2c862858df6595696e4e1}{range\+\_\+for\+\_\+length}} (self, int\texorpdfstring{$\vert$}{|}None length)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_a02238a9cfc2f3d3cf963aee5f8cdc842}{make\+\_\+content\+\_\+range}} (self, int\texorpdfstring{$\vert$}{|}None length)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_ac55cbb445950153537d98696afd32818}{to\+\_\+header}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_acf230b2ef5265b3d051716ba9bd45150}{to\+\_\+content\+\_\+range\+\_\+header}} (self, int\texorpdfstring{$\vert$}{|}None length)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_a2f19a151cf077b9a049b4171b00eb435}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_a1790e99a58493cb309612226fbd67637}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_aba50a1032002708f9f701a89bce02b2a}{units}} = units
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_range_aebad8c99a35fe208a7f3ac89f7739dfa}{ranges}} = ranges
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a ``Range`` header. All methods only support only
+bytes as the unit. Stores a list of ranges if given, but the methods
+only work if only one range is provided.
+
+:raise ValueError: If the ranges provided are invalid.
+
+.. versionchanged:: 0.15
+    The ranges passed in are validated.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-constructors}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_ab90df08ec91579c0384f1ed7f4c8f37b}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_ab90df08ec91579c0384f1ed7f4c8f37b} 
+ None werkzeug.\+datastructures.\+range.\+Range.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{units}{, }\item[{cabc.\+Sequence\+[tuple\+[int, int \texorpdfstring{$\vert$}{|} None]\+]\+     }]{ranges}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-func-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_a1790e99a58493cb309612226fbd67637}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_a1790e99a58493cb309612226fbd67637} 
+ str werkzeug.\+datastructures.\+range.\+Range.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_a2f19a151cf077b9a049b4171b00eb435}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_a2f19a151cf077b9a049b4171b00eb435} 
+ str werkzeug.\+datastructures.\+range.\+Range.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_a02238a9cfc2f3d3cf963aee5f8cdc842}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!make\_content\_range@{make\_content\_range}}
+\index{make\_content\_range@{make\_content\_range}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{make\_content\_range()}{make\_content\_range()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_a02238a9cfc2f3d3cf963aee5f8cdc842} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1datastructures_1_1range_1_1_content_range}{Content\+Range}} \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+range.\+Range.\+make\+\_\+content\+\_\+range (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a :class:`~werkzeug.datastructures.ContentRange` object
+from the current range and given content length.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_a18fa70d177f2c862858df6595696e4e1}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!range\_for\_length@{range\_for\_length}}
+\index{range\_for\_length@{range\_for\_length}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{range\_for\_length()}{range\_for\_length()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_a18fa70d177f2c862858df6595696e4e1} 
+ tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+range.\+Range.\+range\+\_\+for\+\_\+length (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the range is for bytes, the length is not None and there is
+exactly one range and it is satisfiable it returns a ``(start, stop)``
+tuple, otherwise `None`.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_acf230b2ef5265b3d051716ba9bd45150}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!to\_content\_range\_header@{to\_content\_range\_header}}
+\index{to\_content\_range\_header@{to\_content\_range\_header}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{to\_content\_range\_header()}{to\_content\_range\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_acf230b2ef5265b3d051716ba9bd45150} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+datastructures.\+range.\+Range.\+to\+\_\+content\+\_\+range\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts the object into `Content-Range` HTTP header,
+based on given length
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_ac55cbb445950153537d98696afd32818}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!to\_header@{to\_header}}
+\index{to\_header@{to\_header}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{to\_header()}{to\_header()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_ac55cbb445950153537d98696afd32818} 
+ str werkzeug.\+datastructures.\+range.\+Range.\+to\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts the object back into an HTTP header.\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_aebad8c99a35fe208a7f3ac89f7739dfa}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!ranges@{ranges}}
+\index{ranges@{ranges}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{ranges}{ranges}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_aebad8c99a35fe208a7f3ac89f7739dfa} 
+werkzeug.\+datastructures.\+range.\+Range.\+ranges = ranges}
+
+\Hypertarget{classwerkzeug_1_1datastructures_1_1range_1_1_range_aba50a1032002708f9f701a89bce02b2a}\index{werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}!units@{units}}
+\index{units@{units}!werkzeug.datastructures.range.Range@{werkzeug.datastructures.range.Range}}
+\doxysubsubsection{\texorpdfstring{units}{units}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1datastructures_1_1range_1_1_range_aba50a1032002708f9f701a89bce02b2a} 
+werkzeug.\+datastructures.\+range.\+Range.\+units = units}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+datastructures/\+\doxymbox{\hyperlink{range_8py}{range.\+py}}\end{DoxyCompactItemize}

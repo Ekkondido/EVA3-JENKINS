@@ -1,0 +1,118 @@
+\doxysection{pip.\+\_\+vendor.\+urllib3.\+fields Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields}{}\label{namespacepip_1_1__vendor_1_1urllib3_1_1fields}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1urllib3_1_1fields_1_1_request_field}{Request\+Field}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ab3c964899e7639b9f2bdd465ad06fcf1}{guess\+\_\+content\+\_\+type}} (filename, default="{}application/\+octet-\/stream"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a049867edab6b89a5712e511c88b40552}{format\+\_\+header\+\_\+param\+\_\+rfc2231}} (name, value)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a0ea8bf03f8152289bfaef68df0a5fe3d}{\+\_\+replace\+\_\+multiple}} (value, needles\+\_\+and\+\_\+replacements)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ad6a68081ba25fb0d3b215681dcb9ba5f}{format\+\_\+header\+\_\+param\+\_\+html5}} (name, value)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a6b3c3650b6ec92b9906a48eba87c3281}{\+\_\+\+HTML5\+\_\+\+REPLACEMENTS}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a70f74bb977787712470e278b7183fe8e}{format\+\_\+header\+\_\+param}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ad6a68081ba25fb0d3b215681dcb9ba5f}{format\+\_\+header\+\_\+param\+\_\+html5}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a0ea8bf03f8152289bfaef68df0a5fe3d}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!\_replace\_multiple@{\_replace\_multiple}}
+\index{\_replace\_multiple@{\_replace\_multiple}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{\_replace\_multiple()}{\_replace\_multiple()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a0ea8bf03f8152289bfaef68df0a5fe3d} 
+\+\_\+replace\+\_\+multiple (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{needles\+\_\+and\+\_\+replacements}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ad6a68081ba25fb0d3b215681dcb9ba5f}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!format\_header\_param\_html5@{format\_header\_param\_html5}}
+\index{format\_header\_param\_html5@{format\_header\_param\_html5}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{format\_header\_param\_html5()}{format\_header\_param\_html5()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ad6a68081ba25fb0d3b215681dcb9ba5f} 
+format\+\_\+header\+\_\+param\+\_\+html5 (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper function to format and quote a single header parameter using the
+HTML5 strategy.
+
+Particularly useful for header parameters which might contain
+non-ASCII values, like file names. This follows the `HTML5 Working Draft
+Section 4.10.22.7`_ and matches the behavior of curl and modern browsers.
+
+.. _HTML5 Working Draft Section 4.10.22.7:
+    https://w3c.github.io/html/sec-forms.html#multipart-form-data
+
+:param name:
+    The name of the parameter, a string expected to be ASCII only.
+:param value:
+    The value of the parameter, provided as ``bytes`` or `str``.
+:ret:
+    A unicode string, stripped of troublesome characters.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a049867edab6b89a5712e511c88b40552}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!format\_header\_param\_rfc2231@{format\_header\_param\_rfc2231}}
+\index{format\_header\_param\_rfc2231@{format\_header\_param\_rfc2231}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{format\_header\_param\_rfc2231()}{format\_header\_param\_rfc2231()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a049867edab6b89a5712e511c88b40552} 
+format\+\_\+header\+\_\+param\+\_\+rfc2231 (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper function to format and quote a single header parameter using the
+strategy defined in RFC 2231.
+
+Particularly useful for header parameters which might contain
+non-ASCII values, like file names. This follows
+`RFC 2388 Section 4.4 <https://tools.ietf.org/html/rfc2388#section-4.4>`_.
+
+:param name:
+    The name of the parameter, a string expected to be ASCII only.
+:param value:
+    The value of the parameter, provided as ``bytes`` or `str``.
+:ret:
+    An RFC-2231-formatted unicode string.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ab3c964899e7639b9f2bdd465ad06fcf1}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!guess\_content\_type@{guess\_content\_type}}
+\index{guess\_content\_type@{guess\_content\_type}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{guess\_content\_type()}{guess\_content\_type()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ab3c964899e7639b9f2bdd465ad06fcf1} 
+guess\+\_\+content\+\_\+type (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{default}{ = {\ttfamily "{}application/\+octet-\/stream"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Guess the "Content-Type" of a file.
+
+:param filename:
+    The filename to guess the "Content-Type" of using :mod:`mimetypes`.
+:param default:
+    If no "Content-Type" can be guessed, default to `default`.
+\end{DoxyVerb}
+ 
+
+\label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a6b3c3650b6ec92b9906a48eba87c3281}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!\_HTML5\_REPLACEMENTS@{\_HTML5\_REPLACEMENTS}}
+\index{\_HTML5\_REPLACEMENTS@{\_HTML5\_REPLACEMENTS}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{\_HTML5\_REPLACEMENTS}{\_HTML5\_REPLACEMENTS}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a6b3c3650b6ec92b9906a48eba87c3281} 
+dict pip.\+\_\+vendor.\+urllib3.\+fields.\+\_\+\+HTML5\+\_\+\+REPLACEMENTS\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{u"{}\(\backslash\)u0022"{}}:\ \textcolor{stringliteral}{u"{}\%22"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Replace\ "{}\(\backslash\)"{}\ with\ "{}\(\backslash\)\(\backslash\)"{}.}}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{u"{}\(\backslash\)u005C"{}}:\ \textcolor{stringliteral}{u"{}\(\backslash\)u005C\(\backslash\)u005C"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a70f74bb977787712470e278b7183fe8e}\index{pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}!format\_header\_param@{format\_header\_param}}
+\index{format\_header\_param@{format\_header\_param}!pip.\_vendor.urllib3.fields@{pip.\_vendor.urllib3.fields}}
+\doxysubsubsection{\texorpdfstring{format\_header\_param}{format\_header\_param}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1urllib3_1_1fields_a70f74bb977787712470e278b7183fe8e} 
+pip.\+\_\+vendor.\+urllib3.\+fields.\+format\+\_\+header\+\_\+param = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1urllib3_1_1fields_ad6a68081ba25fb0d3b215681dcb9ba5f}{format\+\_\+header\+\_\+param\+\_\+html5}}}
+

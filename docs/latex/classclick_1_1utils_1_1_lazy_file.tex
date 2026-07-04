@@ -1,0 +1,178 @@
+\doxysection{click.\+utils.\+Lazy\+File Class Reference}
+\hypertarget{classclick_1_1utils_1_1_lazy_file}{}\label{classclick_1_1utils_1_1_lazy_file}\index{click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a580b2c44b77f523acc321533503cb7a3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+ filename, str mode="{}r"{}, str\texorpdfstring{$\vert$}{|}None encoding=None, str\texorpdfstring{$\vert$}{|}None errors="{}strict"{}, bool atomic=False)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_af8b15db904adc51afb98032622bce8df}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a10122aaf2534f32dee378e1f68ad43b6}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+t.\+IO\+[t.\+Any]\+ \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a9e94b6c957c7a29f5dad33290e6269ad}{open}} (self)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a17e2f00de315cc9710212712684b4a51}{close}} (self)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_ab905b6a953c352a38b2d5b98c178c2c9}{close\+\_\+intelligently}} (self)
+\item 
+\doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file}{Lazy\+File}} \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a269ca2648c470a59749993db3b5abe7e}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a776cb9dffc4c62b49013e0d6198ead9b}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\+[Base\+Exception]\+\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None tb)
+\item 
+cabc.\+Iterator\+[t.\+Any\+Str]\+ \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a139d2c59b74a4ebf8d1b46bbedbd8321}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_ae923f3744a6824ebdb1bdaa9e3eee90f}{name}} = os.\+fspath(filename)
+\item 
+\doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a032c8c8a397a9767064ba6ab34a7f809}{mode}} = mode
+\item 
+\doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a62b639b03f9bec4ce3e26ee74ebc7469}{atomic}} = atomic
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a299696881ceaea15204f9a57c3f24c80}{should\+\_\+close}} = open\+\_\+stream(filename, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a032c8c8a397a9767064ba6ab34a7f809}{mode}}, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a0a647c64f02b93884569e14bcd164fd6}{encoding}}, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a92ab916b9456d0685062849296e6520c}{errors}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a0a647c64f02b93884569e14bcd164fd6}{encoding}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a92ab916b9456d0685062849296e6520c}{errors}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_af8ff3be3e99004e5f04b551fb1973a41}{\+\_\+f}} .IO\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A lazy file works like a regular file but it does not fully open
+the file but it does perform some basic checks early to see if the
+filename parameter does make sense.  This is useful for safely opening
+files for writing.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1utils_1_1_lazy_file_doc-constructors}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a580b2c44b77f523acc321533503cb7a3}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a580b2c44b77f523acc321533503cb7a3} 
+ None click.\+utils.\+Lazy\+File.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+}]{filename}{, }\item[{str }]{mode}{ = {\ttfamily "{}r"{}}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{encoding}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{errors}{ = {\ttfamily "{}strict"{}}, }\item[{bool }]{atomic}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1utils_1_1_lazy_file_doc-func-members}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a269ca2648c470a59749993db3b5abe7e}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a269ca2648c470a59749993db3b5abe7e} 
+ \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file}{Lazy\+File}} click.\+utils.\+Lazy\+File.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a776cb9dffc4c62b49013e0d6198ead9b}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a776cb9dffc4c62b49013e0d6198ead9b} 
+ None click.\+utils.\+Lazy\+File.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\+[Base\+Exception]\+ \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+value}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_af8b15db904adc51afb98032622bce8df}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_af8b15db904adc51afb98032622bce8df} 
+ t.\+Any click.\+utils.\+Lazy\+File.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a139d2c59b74a4ebf8d1b46bbedbd8321}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a139d2c59b74a4ebf8d1b46bbedbd8321} 
+ cabc.\+Iterator\+[t.\+Any\+Str]\+ click.\+utils.\+Lazy\+File.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a10122aaf2534f32dee378e1f68ad43b6}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a10122aaf2534f32dee378e1f68ad43b6} 
+ str click.\+utils.\+Lazy\+File.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a17e2f00de315cc9710212712684b4a51}\index{click.utils.LazyFile@{click.utils.LazyFile}!close@{close}}
+\index{close@{close}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a17e2f00de315cc9710212712684b4a51} 
+ None click.\+utils.\+Lazy\+File.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Closes the underlying file, no matter what.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1utils_1_1_lazy_file_ab905b6a953c352a38b2d5b98c178c2c9}\index{click.utils.LazyFile@{click.utils.LazyFile}!close\_intelligently@{close\_intelligently}}
+\index{close\_intelligently@{close\_intelligently}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{close\_intelligently()}{close\_intelligently()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_ab905b6a953c352a38b2d5b98c178c2c9} 
+ None click.\+utils.\+Lazy\+File.\+close\+\_\+intelligently (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function only closes the file if it was opened by the lazy
+file wrapper.  For instance this will never close stdin.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1utils_1_1_lazy_file_a9e94b6c957c7a29f5dad33290e6269ad}\index{click.utils.LazyFile@{click.utils.LazyFile}!open@{open}}
+\index{open@{open}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{open()}{open()}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a9e94b6c957c7a29f5dad33290e6269ad} 
+ t.\+IO\+[t.\+Any]\+ click.\+utils.\+Lazy\+File.\+open (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Opens the file if it's not yet open.  This call might fail with
+a :exc:`FileError`.  Not handling this error will produce an error
+that Click shows.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1utils_1_1_lazy_file_doc-variable-members}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_af8ff3be3e99004e5f04b551fb1973a41}\index{click.utils.LazyFile@{click.utils.LazyFile}!\_f@{\_f}}
+\index{\_f@{\_f}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{\_f}{\_f}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_af8ff3be3e99004e5f04b551fb1973a41} 
+click.\+utils.\+Lazy\+File.\+\_\+f .IO\+[t.\+Any]\+ \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a62b639b03f9bec4ce3e26ee74ebc7469}\index{click.utils.LazyFile@{click.utils.LazyFile}!atomic@{atomic}}
+\index{atomic@{atomic}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{atomic}{atomic}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a62b639b03f9bec4ce3e26ee74ebc7469} 
+click.\+utils.\+Lazy\+File.\+atomic = atomic}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a0a647c64f02b93884569e14bcd164fd6}\index{click.utils.LazyFile@{click.utils.LazyFile}!encoding@{encoding}}
+\index{encoding@{encoding}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a0a647c64f02b93884569e14bcd164fd6} 
+str click.\+utils.\+Lazy\+File.\+encoding \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a92ab916b9456d0685062849296e6520c}\index{click.utils.LazyFile@{click.utils.LazyFile}!errors@{errors}}
+\index{errors@{errors}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{errors}{errors}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a92ab916b9456d0685062849296e6520c} 
+str click.\+utils.\+Lazy\+File.\+errors \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a032c8c8a397a9767064ba6ab34a7f809}\index{click.utils.LazyFile@{click.utils.LazyFile}!mode@{mode}}
+\index{mode@{mode}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a032c8c8a397a9767064ba6ab34a7f809} 
+click.\+utils.\+Lazy\+File.\+mode = mode}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_ae923f3744a6824ebdb1bdaa9e3eee90f}\index{click.utils.LazyFile@{click.utils.LazyFile}!name@{name}}
+\index{name@{name}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_ae923f3744a6824ebdb1bdaa9e3eee90f} 
+click.\+utils.\+Lazy\+File.\+name = os.\+fspath(filename)}
+
+\Hypertarget{classclick_1_1utils_1_1_lazy_file_a299696881ceaea15204f9a57c3f24c80}\index{click.utils.LazyFile@{click.utils.LazyFile}!should\_close@{should\_close}}
+\index{should\_close@{should\_close}!click.utils.LazyFile@{click.utils.LazyFile}}
+\doxysubsubsection{\texorpdfstring{should\_close}{should\_close}}
+{\footnotesize\ttfamily \label{classclick_1_1utils_1_1_lazy_file_a299696881ceaea15204f9a57c3f24c80} 
+bool click.\+utils.\+Lazy\+File.\+should\+\_\+close = open\+\_\+stream(filename, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a032c8c8a397a9767064ba6ab34a7f809}{mode}}, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a0a647c64f02b93884569e14bcd164fd6}{encoding}}, \doxymbox{\hyperlink{classclick_1_1utils_1_1_lazy_file_a92ab916b9456d0685062849296e6520c}{errors}})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

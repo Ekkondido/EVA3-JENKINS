@@ -1,0 +1,155 @@
+\doxysection{werkzeug.\+\_\+reloader Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1__reloader}{}\label{namespacewerkzeug_1_1__reloader}\index{werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_reloader_loop}{Reloader\+Loop}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_stat_reloader_loop}{Stat\+Reloader\+Loop}}
+\item 
+class \doxymbox{\hyperlink{classwerkzeug_1_1__reloader_1_1_watchdog_reloader_loop}{Watchdog\+Reloader\+Loop}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a84d34662bf7c5ce657c5c436bec88448}{\+\_\+iter\+\_\+module\+\_\+paths}} ()
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a4c09fd3fa2a071ab16a051268bae6728}{\+\_\+remove\+\_\+by\+\_\+pattern}} (set\+[str]\+ paths, set\+[str]\+ exclude\+\_\+patterns)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a577c50a2fcd2cdaac78f1d86baaa4a76}{\+\_\+find\+\_\+stat\+\_\+paths}} (set\+[str]\+ extra\+\_\+files, set\+[str]\+ exclude\+\_\+patterns)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_ae082e72dfc8f0f895317c5cb876866c9}{\+\_\+find\+\_\+watchdog\+\_\+paths}} (set\+[str]\+ extra\+\_\+files, set\+[str]\+ exclude\+\_\+patterns)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a9b00ce553bbd3c0d9e27094559e311b9}{\+\_\+find\+\_\+common\+\_\+roots}} (t.\+Iterable\+[str]\+ paths)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_ab9f34ddb95a68c326cca39ecc08591ef}{\+\_\+get\+\_\+args\+\_\+for\+\_\+reloading}} ()
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a7695f73b1dec11441aac38c10a11fc47}{ensure\+\_\+echo\+\_\+on}} ()
+\item 
+None \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_af97580eded161e6439af643a9da9b994}{run\+\_\+with\+\_\+reloader}} (t.\+Callable\+[\+[$\,$]\+, None]\+ main\+\_\+func, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None extra\+\_\+files=None, t.\+Iterable\+[str]\+\texorpdfstring{$\vert$}{|}None exclude\+\_\+patterns=None, int\texorpdfstring{$\vert$}{|}float interval=1, str reloader\+\_\+type="{}auto"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a4fa36832dfe5861d7ec3042b957a1fb7}{\+\_\+ignore\+\_\+always}} = tuple(\{sys.\+base\+\_\+prefix, sys.\+base\+\_\+exec\+\_\+prefix\})
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a602f7937e02169f06780040790662149}{prefix}} = \{\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a4fa36832dfe5861d7ec3042b957a1fb7}{\+\_\+ignore\+\_\+always}}, sys.\+prefix, sys.\+exec\+\_\+prefix\}
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a841f987badb8f6615f6b706f108475fc}{\+\_\+stat\+\_\+ignore\+\_\+scan}} = tuple(\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a602f7937e02169f06780040790662149}{prefix}})
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a9ecffe841a5a9835abef5e6f3a62d99b}{\+\_\+ignore\+\_\+common\+\_\+dirs}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1__reloader_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1__reloader_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1__reloader_a9b00ce553bbd3c0d9e27094559e311b9}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_find\_common\_roots@{\_find\_common\_roots}}
+\index{\_find\_common\_roots@{\_find\_common\_roots}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_find\_common\_roots()}{\_find\_common\_roots()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a9b00ce553bbd3c0d9e27094559e311b9} 
+ t.\+Iterable\+[str]\+ \+\_\+find\+\_\+common\+\_\+roots (\begin{DoxyParamCaption}\item[{t.\+Iterable\+[str]\+}]{paths}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1__reloader_a577c50a2fcd2cdaac78f1d86baaa4a76}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_find\_stat\_paths@{\_find\_stat\_paths}}
+\index{\_find\_stat\_paths@{\_find\_stat\_paths}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_find\_stat\_paths()}{\_find\_stat\_paths()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a577c50a2fcd2cdaac78f1d86baaa4a76} 
+ t.\+Iterable\+[str]\+ \+\_\+find\+\_\+stat\+\_\+paths (\begin{DoxyParamCaption}\item[{set\+[str]\+}]{extra\+\_\+files}{, }\item[{set\+[str]\+ }]{exclude\+\_\+patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find paths for the stat reloader to watch. Returns imported
+module files, Python files under non-system paths. Extra files and
+Python files under extra directories can also be scanned.
+
+System paths have to be excluded for efficiency. Non-system paths,
+such as a project root or ``sys.path.insert``, should be the paths
+of interest to the user anyway.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1__reloader_ae082e72dfc8f0f895317c5cb876866c9}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_find\_watchdog\_paths@{\_find\_watchdog\_paths}}
+\index{\_find\_watchdog\_paths@{\_find\_watchdog\_paths}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_find\_watchdog\_paths()}{\_find\_watchdog\_paths()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_ae082e72dfc8f0f895317c5cb876866c9} 
+ t.\+Iterable\+[str]\+ \+\_\+find\+\_\+watchdog\+\_\+paths (\begin{DoxyParamCaption}\item[{set\+[str]\+}]{extra\+\_\+files}{, }\item[{set\+[str]\+ }]{exclude\+\_\+patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find paths for the stat reloader to watch. Looks at the same
+sources as the stat reloader, but watches everything under
+directories instead of individual files.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1__reloader_ab9f34ddb95a68c326cca39ecc08591ef}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_get\_args\_for\_reloading@{\_get\_args\_for\_reloading}}
+\index{\_get\_args\_for\_reloading@{\_get\_args\_for\_reloading}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_get\_args\_for\_reloading()}{\_get\_args\_for\_reloading()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_ab9f34ddb95a68c326cca39ecc08591ef} 
+ list\+[str]\+ \+\_\+get\+\_\+args\+\_\+for\+\_\+reloading (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Determine how the script was executed, and return the args needed
+to execute it again in a new process.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1__reloader_a84d34662bf7c5ce657c5c436bec88448}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_iter\_module\_paths@{\_iter\_module\_paths}}
+\index{\_iter\_module\_paths@{\_iter\_module\_paths}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_iter\_module\_paths()}{\_iter\_module\_paths()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a84d34662bf7c5ce657c5c436bec88448} 
+ t.\+Iterator\+[str]\+ \+\_\+iter\+\_\+module\+\_\+paths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Find the filesystem paths associated with imported modules.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1__reloader_a4c09fd3fa2a071ab16a051268bae6728}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_remove\_by\_pattern@{\_remove\_by\_pattern}}
+\index{\_remove\_by\_pattern@{\_remove\_by\_pattern}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_remove\_by\_pattern()}{\_remove\_by\_pattern()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a4c09fd3fa2a071ab16a051268bae6728} 
+ None \+\_\+remove\+\_\+by\+\_\+pattern (\begin{DoxyParamCaption}\item[{set\+[str]\+}]{paths}{, }\item[{set\+[str]\+}]{exclude\+\_\+patterns}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1__reloader_a7695f73b1dec11441aac38c10a11fc47}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!ensure\_echo\_on@{ensure\_echo\_on}}
+\index{ensure\_echo\_on@{ensure\_echo\_on}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{ensure\_echo\_on()}{ensure\_echo\_on()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a7695f73b1dec11441aac38c10a11fc47} 
+ None ensure\+\_\+echo\+\_\+on (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ensure that echo mode is enabled. Some tools such as PDB disable
+it which causes usability issues after a reload.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1__reloader_af97580eded161e6439af643a9da9b994}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!run\_with\_reloader@{run\_with\_reloader}}
+\index{run\_with\_reloader@{run\_with\_reloader}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{run\_with\_reloader()}{run\_with\_reloader()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_af97580eded161e6439af643a9da9b994} 
+ None run\+\_\+with\+\_\+reloader (\begin{DoxyParamCaption}\item[{t.\+Callable\+[\+[$\,$]\+, None]\+}]{main\+\_\+func}{, }\item[{t.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{extra\+\_\+files}{ = {\ttfamily None}, }\item[{t.\+Iterable\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{exclude\+\_\+patterns}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} float }]{interval}{ = {\ttfamily 1}, }\item[{str }]{reloader\+\_\+type}{ = {\ttfamily "{}auto"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Run the given function in an independent Python interpreter.\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1__reloader_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1__reloader_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1__reloader_a4fa36832dfe5861d7ec3042b957a1fb7}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_ignore\_always@{\_ignore\_always}}
+\index{\_ignore\_always@{\_ignore\_always}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_ignore\_always}{\_ignore\_always}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a4fa36832dfe5861d7ec3042b957a1fb7} 
+werkzeug.\+\_\+reloader.\+\_\+ignore\+\_\+always = tuple(\{sys.\+base\+\_\+prefix, sys.\+base\+\_\+exec\+\_\+prefix\})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1__reloader_a9ecffe841a5a9835abef5e6f3a62d99b}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_ignore\_common\_dirs@{\_ignore\_common\_dirs}}
+\index{\_ignore\_common\_dirs@{\_ignore\_common\_dirs}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_ignore\_common\_dirs}{\_ignore\_common\_dirs}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a9ecffe841a5a9835abef5e6f3a62d99b} 
+dict werkzeug.\+\_\+reloader.\+\_\+ignore\+\_\+common\+\_\+dirs\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}\_\_pycache\_\_"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.git"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.hg"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.tox"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.nox"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.pytest\_cache"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}.mypy\_cache"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1__reloader_a841f987badb8f6615f6b706f108475fc}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!\_stat\_ignore\_scan@{\_stat\_ignore\_scan}}
+\index{\_stat\_ignore\_scan@{\_stat\_ignore\_scan}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{\_stat\_ignore\_scan}{\_stat\_ignore\_scan}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a841f987badb8f6615f6b706f108475fc} 
+werkzeug.\+\_\+reloader.\+\_\+stat\+\_\+ignore\+\_\+scan = tuple(\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a602f7937e02169f06780040790662149}{prefix}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1__reloader_a602f7937e02169f06780040790662149}\index{werkzeug.\_reloader@{werkzeug.\_reloader}!prefix@{prefix}}
+\index{prefix@{prefix}!werkzeug.\_reloader@{werkzeug.\_reloader}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1__reloader_a602f7937e02169f06780040790662149} 
+dict werkzeug.\+\_\+reloader.\+prefix = \{\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{namespacewerkzeug_1_1__reloader_a4fa36832dfe5861d7ec3042b957a1fb7}{\+\_\+ignore\+\_\+always}}, sys.\+prefix, sys.\+exec\+\_\+prefix\}}
+

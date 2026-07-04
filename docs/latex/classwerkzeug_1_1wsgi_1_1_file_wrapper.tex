@@ -1,0 +1,119 @@
+\doxysection{werkzeug.\+wsgi.\+File\+Wrapper Class Reference}
+\hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper}{}\label{classwerkzeug_1_1wsgi_1_1_file_wrapper}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_affed402a9e43e108396f6f4ddd96e113}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+IO\+[bytes]\+ file, int buffer\+\_\+size=8192)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_a1c50a8fe925b5e42585751372127b949}{close}} (self)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab3797b34450355d727346bf300beefe9}{seekable}} (self)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_aad81ad5b38743625166a7b68fdb57267}{seek}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_a03202109c18e56fecf629da450c3979a}{tell}} (self)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper}{File\+Wrapper}} \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3fb894bd210b917c68060356370996e9}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_ac1fbb9bd51ef2ae4a874f56d64717cfe}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_a472cefc89141a6a4fb5dc398f9171904}{file}} = file
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3d4a89d4ff5ba3be76fa218f5bb845fb}{buffer\+\_\+size}} = buffer\+\_\+size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class can be used to convert a :class:`file`-like object into
+an iterable.  It yields `buffer_size` blocks until the file is fully
+read.
+
+You should not use this class directly but rather use the
+:func:`wrap_file` function that uses the WSGI server's file wrapper
+support if it's available.
+
+.. versionadded:: 0.5
+
+If you're using this object together with a :class:`Response` you have
+to use the `direct_passthrough` mode.
+
+:param file: a :class:`file`-like object with a :meth:`~file.read` method.
+:param buffer_size: number of bytes for one iteration.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-constructors}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_affed402a9e43e108396f6f4ddd96e113}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_affed402a9e43e108396f6f4ddd96e113} 
+ None werkzeug.\+wsgi.\+File\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+IO\+[bytes]\+}]{file}{, }\item[{int }]{buffer\+\_\+size}{ = {\ttfamily 8192}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-func-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3fb894bd210b917c68060356370996e9}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3fb894bd210b917c68060356370996e9} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1wsgi_1_1_file_wrapper}{File\+Wrapper}} werkzeug.\+wsgi.\+File\+Wrapper.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_ac1fbb9bd51ef2ae4a874f56d64717cfe}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_ac1fbb9bd51ef2ae4a874f56d64717cfe} 
+ bytes werkzeug.\+wsgi.\+File\+Wrapper.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a1c50a8fe925b5e42585751372127b949}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!close@{close}}
+\index{close@{close}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a1c50a8fe925b5e42585751372127b949} 
+ None werkzeug.\+wsgi.\+File\+Wrapper.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_aad81ad5b38743625166a7b68fdb57267}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!seek@{seek}}
+\index{seek@{seek}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_aad81ad5b38743625166a7b68fdb57267} 
+ None werkzeug.\+wsgi.\+File\+Wrapper.\+seek (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab3797b34450355d727346bf300beefe9}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!seekable@{seekable}}
+\index{seekable@{seekable}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{seekable()}{seekable()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_ab3797b34450355d727346bf300beefe9} 
+ bool werkzeug.\+wsgi.\+File\+Wrapper.\+seekable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a03202109c18e56fecf629da450c3979a}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!tell@{tell}}
+\index{tell@{tell}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a03202109c18e56fecf629da450c3979a} 
+ int \texorpdfstring{$\vert$}{|} None werkzeug.\+wsgi.\+File\+Wrapper.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3d4a89d4ff5ba3be76fa218f5bb845fb}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!buffer\_size@{buffer\_size}}
+\index{buffer\_size@{buffer\_size}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{buffer\_size}{buffer\_size}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a3d4a89d4ff5ba3be76fa218f5bb845fb} 
+werkzeug.\+wsgi.\+File\+Wrapper.\+buffer\+\_\+size = buffer\+\_\+size}
+
+\Hypertarget{classwerkzeug_1_1wsgi_1_1_file_wrapper_a472cefc89141a6a4fb5dc398f9171904}\index{werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}!file@{file}}
+\index{file@{file}!werkzeug.wsgi.FileWrapper@{werkzeug.wsgi.FileWrapper}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1wsgi_1_1_file_wrapper_a472cefc89141a6a4fb5dc398f9171904} 
+werkzeug.\+wsgi.\+File\+Wrapper.\+file = file}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{wsgi_8py}{wsgi.\+py}}\end{DoxyCompactItemize}

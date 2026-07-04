@@ -1,0 +1,106 @@
+\doxysection{werkzeug.\+utils.\+cached\+\_\+property Class Reference}
+\hypertarget{classwerkzeug_1_1utils_1_1cached__property}{}\label{classwerkzeug_1_1utils_1_1cached__property}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+Inheritance diagram for werkzeug.\+utils.\+cached\+\_\+property:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classwerkzeug_1_1utils_1_1cached__property}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property_a7d3b975337611987925ddfc78613dbb8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Callable\+[\+[t.\+Any]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}}]\+ fget, str\texorpdfstring{$\vert$}{|}None name=None, str\texorpdfstring{$\vert$}{|}None doc=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property_aadde0e81fd78aea2a3253f4ee5b1dd93}{\+\_\+\+\_\+set\+\_\+\+\_\+}} (self, object obj, \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}} value)
+\item 
+\doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}} \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property_a2c99c70132e2049cf64f31f0e94514c8}{\+\_\+\+\_\+get\+\_\+\+\_\+}} (self, object obj, type type=None)
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property_ae8eb441a1a5b8fc7d1954e2c7725da23}{\+\_\+\+\_\+delete\+\_\+\+\_\+}} (self, object obj)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1utils_1_1cached__property_afc13a5b09132378a4332cb11c8bc8241}{slot\+\_\+name}} = f"{}\+\_\+cache\+\_\+\{self.\+\_\+\+\_\+name\+\_\+\+\_\+\}"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A :func:`property` that is only evaluated once. Subsequent access
+returns the cached value. Setting the property sets the cached
+value. Deleting the property clears the cached value, accessing it
+again will evaluate it again.
+
+.. code-block:: python
+
+    class Example:
+        @cached_property
+        def value(self):
+            # calculate something important here
+            return 42
+
+    e = Example()
+    e.value  # evaluates
+    e.value  # uses cache
+    e.value = 16  # sets cache
+    del e.value  # clears cache
+
+If the class defines ``__slots__``, it must add ``_cache_{name}`` as
+a slot. Alternatively, it can add ``__dict__``, but that's usually
+not desirable.
+
+.. versionchanged:: 2.1
+    Works with ``__slots__``.
+
+.. versionchanged:: 2.0
+    ``del obj.name`` clears the cached value.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1utils_1_1cached__property_doc-constructors}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_a7d3b975337611987925ddfc78613dbb8}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1utils_1_1cached__property_a7d3b975337611987925ddfc78613dbb8} 
+ None werkzeug.\+utils.\+cached\+\_\+property.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\+[\+[t.\+Any]\+, \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}}]\+}]{fget}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{doc}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1utils_1_1cached__property_doc-func-members}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_ae8eb441a1a5b8fc7d1954e2c7725da23}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}!\_\_delete\_\_@{\_\_delete\_\_}}
+\index{\_\_delete\_\_@{\_\_delete\_\_}!werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_delete\_\_()}{\_\_delete\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1utils_1_1cached__property_ae8eb441a1a5b8fc7d1954e2c7725da23} 
+ None werkzeug.\+utils.\+cached\+\_\+property.\+\_\+\+\_\+delete\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_a2c99c70132e2049cf64f31f0e94514c8}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}!\_\_get\_\_@{\_\_get\_\_}}
+\index{\_\_get\_\_@{\_\_get\_\_}!werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_get\_\_()}{\_\_get\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1utils_1_1cached__property_a2c99c70132e2049cf64f31f0e94514c8} 
+ \doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}} werkzeug.\+utils.\+cached\+\_\+property.\+\_\+\+\_\+get\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{, }\item[{type }]{type}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_aadde0e81fd78aea2a3253f4ee5b1dd93}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}!\_\_set\_\_@{\_\_set\_\_}}
+\index{\_\_set\_\_@{\_\_set\_\_}!werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+\doxysubsubsection{\texorpdfstring{\_\_set\_\_()}{\_\_set\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1utils_1_1cached__property_aadde0e81fd78aea2a3253f4ee5b1dd93} 
+ None werkzeug.\+utils.\+cached\+\_\+property.\+\_\+\+\_\+set\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{obj}{, }\item[{\doxymbox{\hyperlink{namespacewerkzeug_1_1utils_afe2621828c4c533ca0d98ab598361b42}{\+\_\+T}}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1utils_1_1cached__property_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1utils_1_1cached__property_afc13a5b09132378a4332cb11c8bc8241}\index{werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}!slot\_name@{slot\_name}}
+\index{slot\_name@{slot\_name}!werkzeug.utils.cached\_property@{werkzeug.utils.cached\_property}}
+\doxysubsubsection{\texorpdfstring{slot\_name}{slot\_name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1utils_1_1cached__property_afc13a5b09132378a4332cb11c8bc8241} 
+werkzeug.\+utils.\+cached\+\_\+property.\+slot\+\_\+name = f"{}\+\_\+cache\+\_\+\{self.\+\_\+\+\_\+name\+\_\+\+\_\+\}"{}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{werkzeug_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

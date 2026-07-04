@@ -1,0 +1,161 @@
+\doxysection{jinja2.\+compiler.\+Frame Class Reference}
+\hypertarget{classjinja2_1_1compiler_1_1_frame}{}\label{classjinja2_1_1compiler_1_1_frame}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a225cb6d7df3b1a89ee64ae28f2c13086}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classjinja2_1_1nodes_1_1_eval_context}{Eval\+Context}} eval\+\_\+ctx, t.\+Optional\+["{}Frame"{}]\+ parent=None, t.\+Optional\+[int]\+ level=None)
+\item 
+"{}te.\+Self"{} \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_ab3fb12252e86834a8af979e22298999f}{copy}} (self)
+\item 
+"{}Frame"{} \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_afbb17ee6a7fcd313287a2b18523b82fd}{inner}} (self, bool isolated=False)
+\item 
+"{}te.\+Self"{} \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_ade49f6253cee022d28f3163d49165171}{soft}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a8de82c3059e7c25b119d744fe33c218d}{eval\+\_\+ctx}} = eval\+\_\+ctx
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_adea11c351058afa73b76d19510e0bc48}{parent}} = parent
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_ae36d38ec1effdb32c27e8d051f3059b5}{symbols}} = \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols}{Symbols}}(level=level)
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a6e8c35464679a1fe8519353e2defa472}{require\+\_\+output\+\_\+check}} = False
+\item 
+t.\+Optional\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a14d0bac8ed8cca0b20d6a48c5d29c3a7}{buffer}} = None
+\item 
+t.\+Optional\+[str]\+ \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_acef122b2114a95433a0ac4c3d0e551d7}{block}} = None
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a80e66d8de302b01531375fb574d4926a}{toplevel}} = False
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a5d97c90061a238cc31546c3c5bbe7b7b}{rootlevel}} = False
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a1805dab81ac8890bcbab097c4463c0f0}{loop\+\_\+frame}} = False
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_aa711d7918d77ee3182c22a283c17306b}{block\+\_\+frame}} = False
+\item 
+bool \doxymbox{\hyperlink{classjinja2_1_1compiler_1_1_frame_a405ca106f31d301924854f91f8c48723}{soft\+\_\+frame}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Holds compile time information for us.\end{DoxyVerb}
+ 
+
+\label{classjinja2_1_1compiler_1_1_frame_doc-constructors}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a225cb6d7df3b1a89ee64ae28f2c13086}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a225cb6d7df3b1a89ee64ae28f2c13086} 
+ None jinja2.\+compiler.\+Frame.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classjinja2_1_1nodes_1_1_eval_context}{Eval\+Context}}}]{eval\+\_\+ctx}{, }\item[{t.\+Optional\+["{}Frame"{}]\+ }]{parent}{ = {\ttfamily None}, }\item[{t.\+Optional\+[int]\+ }]{level}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classjinja2_1_1compiler_1_1_frame_doc-func-members}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_ab3fb12252e86834a8af979e22298999f}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!copy@{copy}}
+\index{copy@{copy}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_ab3fb12252e86834a8af979e22298999f} 
+ "{}te.\+Self"{} jinja2.\+compiler.\+Frame.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a copy of the current one.\end{DoxyVerb}
+ \Hypertarget{classjinja2_1_1compiler_1_1_frame_afbb17ee6a7fcd313287a2b18523b82fd}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!inner@{inner}}
+\index{inner@{inner}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{inner()}{inner()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_afbb17ee6a7fcd313287a2b18523b82fd} 
+ "{}Frame"{} jinja2.\+compiler.\+Frame.\+inner (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{isolated}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return an inner frame.\end{DoxyVerb}
+ \Hypertarget{classjinja2_1_1compiler_1_1_frame_ade49f6253cee022d28f3163d49165171}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!soft@{soft}}
+\index{soft@{soft}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{soft()}{soft()}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_ade49f6253cee022d28f3163d49165171} 
+ "{}te.\+Self"{} jinja2.\+compiler.\+Frame.\+soft (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a soft frame.  A soft frame may not be modified as
+standalone thing as it shares the resources with the frame it
+was created of, but it's not a rootlevel frame any longer.
+
+This is only used to implement if-statements and conditional
+expressions.
+\end{DoxyVerb}
+ 
+
+\label{classjinja2_1_1compiler_1_1_frame_doc-variable-members}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_acef122b2114a95433a0ac4c3d0e551d7}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!block@{block}}
+\index{block@{block}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{block}{block}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_acef122b2114a95433a0ac4c3d0e551d7} 
+t.\+Optional\+[str]\+ jinja2.\+compiler.\+Frame.\+block = None}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_aa711d7918d77ee3182c22a283c17306b}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!block\_frame@{block\_frame}}
+\index{block\_frame@{block\_frame}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{block\_frame}{block\_frame}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_aa711d7918d77ee3182c22a283c17306b} 
+bool jinja2.\+compiler.\+Frame.\+block\+\_\+frame = False}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a14d0bac8ed8cca0b20d6a48c5d29c3a7}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!buffer@{buffer}}
+\index{buffer@{buffer}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{buffer}{buffer}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a14d0bac8ed8cca0b20d6a48c5d29c3a7} 
+t.\+Optional\+[str]\+ jinja2.\+compiler.\+Frame.\+buffer = None}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a8de82c3059e7c25b119d744fe33c218d}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!eval\_ctx@{eval\_ctx}}
+\index{eval\_ctx@{eval\_ctx}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{eval\_ctx}{eval\_ctx}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a8de82c3059e7c25b119d744fe33c218d} 
+jinja2.\+compiler.\+Frame.\+eval\+\_\+ctx = eval\+\_\+ctx}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a1805dab81ac8890bcbab097c4463c0f0}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!loop\_frame@{loop\_frame}}
+\index{loop\_frame@{loop\_frame}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{loop\_frame}{loop\_frame}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a1805dab81ac8890bcbab097c4463c0f0} 
+bool jinja2.\+compiler.\+Frame.\+loop\+\_\+frame = False}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_adea11c351058afa73b76d19510e0bc48}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!parent@{parent}}
+\index{parent@{parent}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_adea11c351058afa73b76d19510e0bc48} 
+jinja2.\+compiler.\+Frame.\+parent = parent}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a6e8c35464679a1fe8519353e2defa472}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!require\_output\_check@{require\_output\_check}}
+\index{require\_output\_check@{require\_output\_check}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{require\_output\_check}{require\_output\_check}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a6e8c35464679a1fe8519353e2defa472} 
+bool jinja2.\+compiler.\+Frame.\+require\+\_\+output\+\_\+check = False}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a5d97c90061a238cc31546c3c5bbe7b7b}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!rootlevel@{rootlevel}}
+\index{rootlevel@{rootlevel}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{rootlevel}{rootlevel}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a5d97c90061a238cc31546c3c5bbe7b7b} 
+bool jinja2.\+compiler.\+Frame.\+rootlevel = False}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a405ca106f31d301924854f91f8c48723}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!soft\_frame@{soft\_frame}}
+\index{soft\_frame@{soft\_frame}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{soft\_frame}{soft\_frame}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a405ca106f31d301924854f91f8c48723} 
+bool jinja2.\+compiler.\+Frame.\+soft\+\_\+frame = False}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_ae36d38ec1effdb32c27e8d051f3059b5}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!symbols@{symbols}}
+\index{symbols@{symbols}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{symbols}{symbols}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_ae36d38ec1effdb32c27e8d051f3059b5} 
+jinja2.\+compiler.\+Frame.\+symbols = \doxymbox{\hyperlink{classjinja2_1_1idtracking_1_1_symbols}{Symbols}}(level=level)}
+
+\Hypertarget{classjinja2_1_1compiler_1_1_frame_a80e66d8de302b01531375fb574d4926a}\index{jinja2.compiler.Frame@{jinja2.compiler.Frame}!toplevel@{toplevel}}
+\index{toplevel@{toplevel}!jinja2.compiler.Frame@{jinja2.compiler.Frame}}
+\doxysubsubsection{\texorpdfstring{toplevel}{toplevel}}
+{\footnotesize\ttfamily \label{classjinja2_1_1compiler_1_1_frame_a80e66d8de302b01531375fb574d4926a} 
+bool jinja2.\+compiler.\+Frame.\+toplevel = False}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+jinja2/\+\doxymbox{\hyperlink{compiler_8py}{compiler.\+py}}\end{DoxyCompactItemize}

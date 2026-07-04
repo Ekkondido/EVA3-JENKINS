@@ -1,0 +1,17 @@
+var click_2exceptions_8py =
+[
+    [ "click.exceptions.ClickException", "classclick_1_1exceptions_1_1_click_exception.html", "classclick_1_1exceptions_1_1_click_exception" ],
+    [ "click.exceptions.UsageError", "classclick_1_1exceptions_1_1_usage_error.html", "classclick_1_1exceptions_1_1_usage_error" ],
+    [ "click.exceptions.BadParameter", "classclick_1_1exceptions_1_1_bad_parameter.html", "classclick_1_1exceptions_1_1_bad_parameter" ],
+    [ "click.exceptions.MissingParameter", "classclick_1_1exceptions_1_1_missing_parameter.html", "classclick_1_1exceptions_1_1_missing_parameter" ],
+    [ "click.exceptions.NoSuchOption", "classclick_1_1exceptions_1_1_no_such_option.html", "classclick_1_1exceptions_1_1_no_such_option" ],
+    [ "click.exceptions.NoSuchCommand", "classclick_1_1exceptions_1_1_no_such_command.html", "classclick_1_1exceptions_1_1_no_such_command" ],
+    [ "click.exceptions.BadOptionUsage", "classclick_1_1exceptions_1_1_bad_option_usage.html", "classclick_1_1exceptions_1_1_bad_option_usage" ],
+    [ "click.exceptions.BadArgumentUsage", "classclick_1_1exceptions_1_1_bad_argument_usage.html", null ],
+    [ "click.exceptions.NoArgsIsHelpError", "classclick_1_1exceptions_1_1_no_args_is_help_error.html", "classclick_1_1exceptions_1_1_no_args_is_help_error" ],
+    [ "click.exceptions.FileError", "classclick_1_1exceptions_1_1_file_error.html", "classclick_1_1exceptions_1_1_file_error" ],
+    [ "click.exceptions.Abort", "classclick_1_1exceptions_1_1_abort.html", null ],
+    [ "click.exceptions.Exit", "classclick_1_1exceptions_1_1_exit.html", "classclick_1_1exceptions_1_1_exit" ],
+    [ "click.exceptions._format_possibilities", "namespaceclick_1_1exceptions.html#a1889b6026b6e5e89c8e4b4d4a3474fa4", null ],
+    [ "click.exceptions._join_param_hints", "namespaceclick_1_1exceptions.html#a5f0f8da71301fb5db374a50c3713ce78", null ]
+];

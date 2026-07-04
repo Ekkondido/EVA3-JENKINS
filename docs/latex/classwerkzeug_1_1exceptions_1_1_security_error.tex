@@ -1,0 +1,59 @@
+\doxysection{werkzeug.\+exceptions.\+Security\+Error Class Reference}
+\hypertarget{classwerkzeug_1_1exceptions_1_1_security_error}{}\label{classwerkzeug_1_1exceptions_1_1_security_error}\index{werkzeug.exceptions.SecurityError@{werkzeug.exceptions.SecurityError}}
+Inheritance diagram for werkzeug.\+exceptions.\+Security\+Error:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{classwerkzeug_1_1exceptions_1_1_security_error}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a0d8a19174840b51ceef98fc364f5d382}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None description=None, Sans\+IOResponse\texorpdfstring{$\vert$}{|}None response=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af5b40b73e54b1ab7a71420724162b798}{name}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6b038d20ffee4cfc6ce685fb77a916d8}{get\+\_\+description}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a9fcb5d237149aa5aef16bd3ea80ca806}{get\+\_\+body}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+list\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a3b9c21a13fbae8da2a7e68219d57bae0}{get\+\_\+headers}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+WSGIResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a32ba7c541a3703887bd3ff72cdc7abc0}{get\+\_\+response}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}WSGIRequest\texorpdfstring{$\vert$}{|}None environ=..., None scope=None)
+\item 
+Sans\+IOResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a2aa7c6642fa3651784ee99f03a338d83}{get\+\_\+response}} (self, None environ=None, dict\+[str, t.\+Any]\+ scope=...)
+\item 
+WSGIResponse\texorpdfstring{$\vert$}{|}Sans\+IOResponse \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a7e88f9694dc5957f5066f40d2660ec00}{get\+\_\+response}} (self, WSGIEnvironment\texorpdfstring{$\vert$}{|}WSGIRequest\texorpdfstring{$\vert$}{|}None environ=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None scope=None)
+\item 
+t.\+Iterable\+[bytes]\+ \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a95daa580a0da57c740406a763f071d04}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, WSGIEnvironment environ, Start\+Response start\+\_\+response)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_afddecf68a26a6346d1a52c8cd4fa04e9}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ab89d493a5635f2b83f7076295d133a71}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_a6d6a55731e46c7596e3b45923e3ad60b}{response}} = response
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception}{werkzeug.\+exceptions.\+HTTPException}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_af3f54aa9d2498b71340e8a3c6da0cc0d}{code}} = None
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1exceptions_1_1_h_t_t_p_exception_ad983d9b48b30c3e86709b9f3289562f2}{description}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Raised if something triggers a security error.  This is otherwise
+exactly like a bad request error.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+\doxymbox{\hyperlink{werkzeug_2exceptions_8py}{exceptions.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,208 @@
+\doxysection{flask.\+ctx.\+Request\+Context Class Reference}
+\hypertarget{classflask_1_1ctx_1_1_request_context}{}\label{classflask_1_1ctx_1_1_request_context}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_aaa0086d2a9fd4205e2cae51f721526ad}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, WSGIEnvironment environ, \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}}\texorpdfstring{$\vert$}{|}None request=None, \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}\texorpdfstring{$\vert$}{|}None session=None)
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_ab543016ec0572fb39f7849f0b971c1bb}{copy}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85}{match\+\_\+request}} (self)
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a4ca53f707826c18fa03621ca0c8d63bd}{session}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a5d8f087ae791f4099b1e0559f8220fdd}{push}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a250ce8bb25c8cb5a43cb72f07581385b}{pop}} (self, Base\+Exception\texorpdfstring{$\vert$}{|}None exc=\doxymbox{\hyperlink{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}{\+\_\+sentinel}})
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a8bf8b2dec018026f12040ace238d2dac}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a18d6538bed8924722e0574bc5df81552}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, type\texorpdfstring{$\vert$}{|}None exc\+\_\+type, Base\+Exception\texorpdfstring{$\vert$}{|}None exc\+\_\+value, Traceback\+Type\texorpdfstring{$\vert$}{|}None tb)
+\item 
+str \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a8dda599c445d8684c0783c37293efb6a}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_ac459a00600309c425da12b22a32fe6ff}{app}} = app
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a9df8fdbec442982a68d8cd3e5abbabd0}{request}} = request
+\item 
+\doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_ad5197d29fe312300b3d872cf1503708a}{url\+\_\+adapter}} = None
+\item 
+list\+[tuple\+[str, str]\+]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_abc510c8c85092cfa46aab8a79d266da0}{flashes}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a0e3cb65d61681a80a9eb2cc6e979115f}{\+\_\+session}} = \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a4ca53f707826c18fa03621ca0c8d63bd}{session}}
+\item 
+list \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a24a1ae469a86c4e48e85b4961a150574}{\+\_\+after\+\_\+request\+\_\+functions}} = \+[$\,$]\+
+\item 
+list\+[ \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a863fde1f88247993ceed4c5a53d90e1c}{\+\_\+cv\+\_\+tokens}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The request context contains per-request information. The Flask
+app creates and pushes it at the beginning of the request, then pops
+it at the end of the request. It will create the URL adapter and
+request object for the WSGI environment provided.
+
+Do not attempt to use this class directly, instead use
+:meth:`~flask.Flask.test_request_context` and
+:meth:`~flask.Flask.request_context` to create this object.
+
+When the request context is popped, it will evaluate all the
+functions registered on the application for teardown execution
+(:meth:`~flask.Flask.teardown_request`).
+
+The request context is automatically popped at the end of the
+request. When using the interactive debugger, the context will be
+restored so ``request`` is still accessible. Similarly, the test
+client can preserve the context after the request ends. However,
+teardown functions may already have closed some resources such as
+database connections.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1ctx_1_1_request_context_doc-constructors}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_aaa0086d2a9fd4205e2cae51f721526ad}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_aaa0086d2a9fd4205e2cae51f721526ad} 
+ None flask.\+ctx.\+Request\+Context.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{WSGIEnvironment}]{environ}{, }\item[{\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} \texorpdfstring{$\vert$}{|} None }]{request}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} \texorpdfstring{$\vert$}{|} None }]{session}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classflask_1_1ctx_1_1_request_context_doc-func-members}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a8bf8b2dec018026f12040ace238d2dac}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a8bf8b2dec018026f12040ace238d2dac} 
+ \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} flask.\+ctx.\+Request\+Context.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a18d6538bed8924722e0574bc5df81552}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a18d6538bed8924722e0574bc5df81552} 
+ None flask.\+ctx.\+Request\+Context.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+type}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None}]{exc\+\_\+value}{, }\item[{Traceback\+Type \texorpdfstring{$\vert$}{|} None}]{tb}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a8dda599c445d8684c0783c37293efb6a}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a8dda599c445d8684c0783c37293efb6a} 
+ str flask.\+ctx.\+Request\+Context.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ab543016ec0572fb39f7849f0b971c1bb}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!copy@{copy}}
+\index{copy@{copy}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_ab543016ec0572fb39f7849f0b971c1bb} 
+ \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}} flask.\+ctx.\+Request\+Context.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a copy of this request context with the same request object.
+This can be used to move a request context to a different greenlet.
+Because the actual request object is the same this cannot be used to
+move a request context to a different thread unless access to the
+request object is locked.
+
+.. versionadded:: 0.10
+
+.. versionchanged:: 1.1
+   The current session object is used instead of reloading the original
+   data. This prevents `flask.session` pointing to an out-of-date object.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!match\_request@{match\_request}}
+\index{match\_request@{match\_request}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{match\_request()}{match\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a7480486b72a0ed25750e62cbce31dc85} 
+ None flask.\+ctx.\+Request\+Context.\+match\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Can be overridden by a subclass to hook into the matching
+of the request.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_request_context_a250ce8bb25c8cb5a43cb72f07581385b}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!pop@{pop}}
+\index{pop@{pop}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a250ce8bb25c8cb5a43cb72f07581385b} 
+ None flask.\+ctx.\+Request\+Context.\+pop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception \texorpdfstring{$\vert$}{|} None }]{exc}{ = {\ttfamily \doxymbox{\hyperlink{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}{\+\_\+sentinel}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pops the request context and unbinds it by doing that.  This will
+also trigger the execution of functions registered by the
+:meth:`~flask.Flask.teardown_request` decorator.
+
+.. versionchanged:: 0.9
+   Added the `exc` argument.
+\end{DoxyVerb}
+ \Hypertarget{classflask_1_1ctx_1_1_request_context_a5d8f087ae791f4099b1e0559f8220fdd}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!push@{push}}
+\index{push@{push}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a5d8f087ae791f4099b1e0559f8220fdd} 
+ None flask.\+ctx.\+Request\+Context.\+push (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a4ca53f707826c18fa03621ca0c8d63bd}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!session@{session}}
+\index{session@{session}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{session()}{session()}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a4ca53f707826c18fa03621ca0c8d63bd} 
+ \doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} flask.\+ctx.\+Request\+Context.\+session (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The session data associated with this request. Not available until
+this context has been pushed. Accessing this property, also accessed by
+the :data:`~flask.session` proxy, sets :attr:`.SessionMixin.accessed`.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1ctx_1_1_request_context_doc-variable-members}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a24a1ae469a86c4e48e85b4961a150574}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_after\_request\_functions@{\_after\_request\_functions}}
+\index{\_after\_request\_functions@{\_after\_request\_functions}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_after\_request\_functions}{\_after\_request\_functions}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a24a1ae469a86c4e48e85b4961a150574} 
+list flask.\+ctx.\+Request\+Context.\+\_\+after\+\_\+request\+\_\+functions = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a863fde1f88247993ceed4c5a53d90e1c}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_cv\_tokens@{\_cv\_tokens}}
+\index{\_cv\_tokens@{\_cv\_tokens}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_cv\_tokens}{\_cv\_tokens}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a863fde1f88247993ceed4c5a53d90e1c} 
+list\+[ flask.\+ctx.\+Request\+Context.\+\_\+cv\+\_\+tokens\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a0e3cb65d61681a80a9eb2cc6e979115f}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!\_session@{\_session}}
+\index{\_session@{\_session}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{\_session}{\_session}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a0e3cb65d61681a80a9eb2cc6e979115f} 
+\doxymbox{\hyperlink{classflask_1_1sessions_1_1_session_mixin}{Session\+Mixin}} \texorpdfstring{$\vert$}{|} None flask.\+ctx.\+Request\+Context.\+\_\+session = \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context_a4ca53f707826c18fa03621ca0c8d63bd}{session}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ac459a00600309c425da12b22a32fe6ff}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!app@{app}}
+\index{app@{app}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_ac459a00600309c425da12b22a32fe6ff} 
+flask.\+ctx.\+Request\+Context.\+app = app}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_abc510c8c85092cfa46aab8a79d266da0}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!flashes@{flashes}}
+\index{flashes@{flashes}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{flashes}{flashes}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_abc510c8c85092cfa46aab8a79d266da0} 
+list\+[tuple\+[str, str]\+]\+ \texorpdfstring{$\vert$}{|} None flask.\+ctx.\+Request\+Context.\+flashes = None}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_a9df8fdbec442982a68d8cd3e5abbabd0}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!request@{request}}
+\index{request@{request}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{request}{request}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_a9df8fdbec442982a68d8cd3e5abbabd0} 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_request}{Request}} flask.\+ctx.\+Request\+Context.\+request = request}
+
+\Hypertarget{classflask_1_1ctx_1_1_request_context_ad5197d29fe312300b3d872cf1503708a}\index{flask.ctx.RequestContext@{flask.ctx.RequestContext}!url\_adapter@{url\_adapter}}
+\index{url\_adapter@{url\_adapter}!flask.ctx.RequestContext@{flask.ctx.RequestContext}}
+\doxysubsubsection{\texorpdfstring{url\_adapter}{url\_adapter}}
+{\footnotesize\ttfamily \label{classflask_1_1ctx_1_1_request_context_ad5197d29fe312300b3d872cf1503708a} 
+flask.\+ctx.\+Request\+Context.\+url\+\_\+adapter = None}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{ctx_8py}{ctx.\+py}}\end{DoxyCompactItemize}

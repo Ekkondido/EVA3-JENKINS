@@ -1,0 +1,128 @@
+\doxysection{blueprints.\+Blueprint\+Setup\+State Class Reference}
+\hypertarget{classblueprints_1_1_blueprint_setup_state}{}\label{classblueprints_1_1_blueprint_setup_state}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_af55308eec8d8f9a7ffb57f0d6cfc4f95}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}} blueprint, App app, t.\+Any options, bool first\+\_\+registration)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_ae080088369b26675238605f7cd34b407}{add\+\_\+url\+\_\+rule}} (self, str rule, str\texorpdfstring{$\vert$}{|}None endpoint=None, ft.\+Route\+Callable\texorpdfstring{$\vert$}{|}None view\+\_\+func=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a125fb907851b2998a209f5b98035d4f9}{app}} = app
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a809760b02b74f0add8986689ae5834ee}{blueprint}} = blueprint
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a05d06dc0a4ecddc63853e392bf8529a8}{options}} = options
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a6c2a3226630d958bcf9e3d8119e42d18}{first\+\_\+registration}} = first\+\_\+registration
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a9e7e5054aea8fb49c6d4077bb0139eca}{subdomain}} = subdomain
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a54083d55034efc9babaeddc887b5e130}{url\+\_\+prefix}} = url\+\_\+prefix
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_a77608dfdd3056fe0e7548f9b6c23429a}{name}} = self.\+options.\+get("{}name"{}, blueprint.\+name)
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_ab486be1f4581f48c2984fdd1b591e561}{name\+\_\+prefix}} = self.\+options.\+get("{}name\+\_\+prefix"{}, "{}"{})
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state_ad22564488f8c211083b9812f8f6f232c}{url\+\_\+defaults}} = dict(self.\+blueprint.\+url\+\_\+values\+\_\+defaults)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Temporary holder object for registering a blueprint with the
+application.  An instance of this class is created by the
+:meth:`~flask.Blueprint.make_setup_state` method and later passed
+to all register callback functions.
+\end{DoxyVerb}
+ 
+
+\label{classblueprints_1_1_blueprint_setup_state_doc-constructors}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_af55308eec8d8f9a7ffb57f0d6cfc4f95}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_af55308eec8d8f9a7ffb57f0d6cfc4f95} 
+ None blueprints.\+Blueprint\+Setup\+State.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}}}]{blueprint}{, }\item[{App}]{app}{, }\item[{t.\+Any}]{options}{, }\item[{bool}]{first\+\_\+registration}{}\end{DoxyParamCaption})}
+
+
+
+\label{classblueprints_1_1_blueprint_setup_state_doc-func-members}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_ae080088369b26675238605f7cd34b407}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_ae080088369b26675238605f7cd34b407} 
+ None blueprints.\+Blueprint\+Setup\+State.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{endpoint}{ = {\ttfamily None}, }\item[{ft.\+Route\+Callable \texorpdfstring{$\vert$}{|} None }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A helper method to register a rule (and optionally a view function)
+to the application.  The endpoint is automatically prefixed with the
+blueprint's name.
+\end{DoxyVerb}
+ 
+
+\label{classblueprints_1_1_blueprint_setup_state_doc-variable-members}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a125fb907851b2998a209f5b98035d4f9}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!app@{app}}
+\index{app@{app}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{app}{app}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a125fb907851b2998a209f5b98035d4f9} 
+blueprints.\+Blueprint\+Setup\+State.\+app = app}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a809760b02b74f0add8986689ae5834ee}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!blueprint@{blueprint}}
+\index{blueprint@{blueprint}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{blueprint}{blueprint}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a809760b02b74f0add8986689ae5834ee} 
+blueprints.\+Blueprint\+Setup\+State.\+blueprint = blueprint}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a6c2a3226630d958bcf9e3d8119e42d18}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!first\_registration@{first\_registration}}
+\index{first\_registration@{first\_registration}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{first\_registration}{first\_registration}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a6c2a3226630d958bcf9e3d8119e42d18} 
+blueprints.\+Blueprint\+Setup\+State.\+first\+\_\+registration = first\+\_\+registration}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a77608dfdd3056fe0e7548f9b6c23429a}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!name@{name}}
+\index{name@{name}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a77608dfdd3056fe0e7548f9b6c23429a} 
+blueprints.\+Blueprint\+Setup\+State.\+name = self.\+options.\+get("{}name"{}, blueprint.\+name)}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_ab486be1f4581f48c2984fdd1b591e561}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!name\_prefix@{name\_prefix}}
+\index{name\_prefix@{name\_prefix}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{name\_prefix}{name\_prefix}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_ab486be1f4581f48c2984fdd1b591e561} 
+blueprints.\+Blueprint\+Setup\+State.\+name\+\_\+prefix = self.\+options.\+get("{}name\+\_\+prefix"{}, "{}"{})}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a05d06dc0a4ecddc63853e392bf8529a8}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!options@{options}}
+\index{options@{options}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{options}{options}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a05d06dc0a4ecddc63853e392bf8529a8} 
+blueprints.\+Blueprint\+Setup\+State.\+options = options}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a9e7e5054aea8fb49c6d4077bb0139eca}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!subdomain@{subdomain}}
+\index{subdomain@{subdomain}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{subdomain}{subdomain}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a9e7e5054aea8fb49c6d4077bb0139eca} 
+blueprints.\+Blueprint\+Setup\+State.\+subdomain = subdomain}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_ad22564488f8c211083b9812f8f6f232c}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!url\_defaults@{url\_defaults}}
+\index{url\_defaults@{url\_defaults}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{url\_defaults}{url\_defaults}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_ad22564488f8c211083b9812f8f6f232c} 
+blueprints.\+Blueprint\+Setup\+State.\+url\+\_\+defaults = dict(self.\+blueprint.\+url\+\_\+values\+\_\+defaults)}
+
+\Hypertarget{classblueprints_1_1_blueprint_setup_state_a54083d55034efc9babaeddc887b5e130}\index{blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}!url\_prefix@{url\_prefix}}
+\index{url\_prefix@{url\_prefix}!blueprints.BlueprintSetupState@{blueprints.BlueprintSetupState}}
+\doxysubsubsection{\texorpdfstring{url\_prefix}{url\_prefix}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_setup_state_a54083d55034efc9babaeddc887b5e130} 
+blueprints.\+Blueprint\+Setup\+State.\+url\+\_\+prefix = url\+\_\+prefix}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+sansio/\+\doxymbox{\hyperlink{sansio_2blueprints_8py}{blueprints.\+py}}\end{DoxyCompactItemize}

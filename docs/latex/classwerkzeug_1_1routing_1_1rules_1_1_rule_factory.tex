@@ -1,0 +1,42 @@
+\doxysection{werkzeug.\+routing.\+rules.\+Rule\+Factory Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}{}\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}\index{werkzeug.routing.rules.RuleFactory@{werkzeug.routing.rules.RuleFactory}}
+Inheritance diagram for werkzeug.\+routing.\+rules.\+Rule\+Factory:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.823529cm]{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_adf35b876e1c3edd9e2367b385a19b66f}{get\+\_\+rules}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}As soon as you have more complex URL setups it's a good idea to use rule
+factories to avoid repetitive tasks.  Some of them are builtin, others can
+be added by subclassing `RuleFactory` and overriding `get_rules`.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_adf35b876e1c3edd9e2367b385a19b66f}\index{werkzeug.routing.rules.RuleFactory@{werkzeug.routing.rules.RuleFactory}!get\_rules@{get\_rules}}
+\index{get\_rules@{get\_rules}!werkzeug.routing.rules.RuleFactory@{werkzeug.routing.rules.RuleFactory}}
+\doxysubsubsection{\texorpdfstring{get\_rules()}{get\_rules()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1rules_1_1_rule_factory_adf35b876e1c3edd9e2367b385a19b66f} 
+ t.\+Iterable\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}]\+ werkzeug.\+routing.\+rules.\+Rule\+Factory.\+get\+\_\+rules (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Subclasses of `RuleFactory` have to override this method and return
+an iterable of rules.\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_endpoint_prefix_aaec09a37276d826a13dd7f71cff67b29}{werkzeug.\+routing.\+rules.\+Endpoint\+Prefix}}, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_a3bebb26c90aa92c4acb08b4b4b571c57}{werkzeug.\+routing.\+rules.\+Rule}}, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule_template_factory_a066c796e68f302eb19cf1d114f4e15a6}{werkzeug.\+routing.\+rules.\+Rule\+Template\+Factory}}, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_subdomain_a5efc2f11ccb50d79ae599d579ab5a706}{werkzeug.\+routing.\+rules.\+Subdomain}}, and \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_submount_a46e9d6aa624757c948fbfb4940ff2129}{werkzeug.\+routing.\+rules.\+Submount}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{rules_8py}{rules.\+py}}\end{DoxyCompactItemize}

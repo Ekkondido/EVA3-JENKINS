@@ -1,0 +1,198 @@
+\doxysection{pip.\+\_\+vendor.\+idna.\+core Namespace Reference}
+\hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core}{}\label{namespacepip_1_1__vendor_1_1idna_1_1core}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1idna_1_1core_1_1_i_d_n_a_error}{IDNAError}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1idna_1_1core_1_1_i_d_n_a_bidi_error}{IDNABidi\+Error}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1idna_1_1core_1_1_invalid_codepoint}{Invalid\+Codepoint}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__vendor_1_1idna_1_1core_1_1_invalid_codepoint_context}{Invalid\+Codepoint\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_af2c62e4cba987622c4985702cbb901f2}{\+\_\+combining\+\_\+class}} (int cp)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_ac50867907d1002e94725ab2fb4713478}{\+\_\+is\+\_\+script}} (str cp, str script)
+\item 
+bytes \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a1756e2dc74e8f28a611e97614fadc111}{\+\_\+punycode}} (str s)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_aa67da070d27c359ffafc6a595e6f88d9}{\+\_\+unot}} (int s)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a68fca8d591564f88d0b3c0cdfd5eddd3}{valid\+\_\+label\+\_\+length}} (Union\+[bytes, str]\+ label)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_ad28c0a27a1316f1fd8f3d57d8a55feb0}{valid\+\_\+string\+\_\+length}} (Union\+[bytes, str]\+ label, bool trailing\+\_\+dot)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a760ca706d66bcbad1e600927d1fa5e8c}{check\+\_\+bidi}} (str label, bool check\+\_\+ltr=False)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a7a645999061dced1775a0d3d61a63db4}{check\+\_\+initial\+\_\+combiner}} (str label)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a233100a07347ce57253f86f588b9e882}{check\+\_\+hyphen\+\_\+ok}} (str label)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a5abac39ae0a322b9503ea3c3a5ad972d}{check\+\_\+nfc}} (str label)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_ae9c747ad564e41fab06c01dbe96eb2be}{valid\+\_\+contextj}} (str label, int pos)
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_ab57a4edabc1c53aaa61298f8d6b5c779}{valid\+\_\+contexto}} (str label, int pos, bool exception=False)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_af8abb65bd042a9f19308207789430dd0}{check\+\_\+label}} (Union\+[str, bytes, bytearray]\+ label)
+\item 
+bytes \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a07eb3ccf4036550bdf0f0569b1e920b7}{alabel}} (str label)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_ac9300c9fbdefb7b78f118fce86079e5a}{ulabel}} (Union\+[str, bytes, bytearray]\+ label)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a7f814e537c2894fe5a8720c105b94bf6}{uts46\+\_\+remap}} (str domain, bool std3\+\_\+rules=True, bool transitional=False)
+\item 
+bytes \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a148469d67212419ae0324db89f029a20}{encode}} (Union\+[str, bytes, bytearray]\+ s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False, bool transitional=False)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a99b2b65376b5bd6321f2ca7f6e65a988}{decode}} (Union\+[str, bytes, bytearray]\+ s, bool strict=False, bool uts46=False, bool std3\+\_\+rules=False)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a147cf629c61ab3ad8cb2598904f49dab}{\+\_\+virama\+\_\+combining\+\_\+class}} = 9
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_acb73074bca9469e567c2886a2d42f223}{\+\_\+alabel\+\_\+prefix}} = b\textquotesingle{}xn-\/-\/\textquotesingle{}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1idna_1_1core_a692bff3d8ecef64250ebcfd193bafe34}{\+\_\+unicode\+\_\+dots\+\_\+re}} = re.\+compile(\textquotesingle{}\+[\textbackslash{}u002e\textbackslash{}u3002\textbackslash{}uff0e\textbackslash{}uff61]\+\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__vendor_1_1idna_1_1core_doc-func-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_af2c62e4cba987622c4985702cbb901f2}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_combining\_class@{\_combining\_class}}
+\index{\_combining\_class@{\_combining\_class}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_combining\_class()}{\_combining\_class()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_af2c62e4cba987622c4985702cbb901f2} 
+ int \+\_\+combining\+\_\+class (\begin{DoxyParamCaption}\item[{int}]{cp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_ac50867907d1002e94725ab2fb4713478}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_is\_script@{\_is\_script}}
+\index{\_is\_script@{\_is\_script}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_is\_script()}{\_is\_script()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_ac50867907d1002e94725ab2fb4713478} 
+ bool \+\_\+is\+\_\+script (\begin{DoxyParamCaption}\item[{str}]{cp}{, }\item[{str}]{script}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a1756e2dc74e8f28a611e97614fadc111}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_punycode@{\_punycode}}
+\index{\_punycode@{\_punycode}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_punycode()}{\_punycode()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a1756e2dc74e8f28a611e97614fadc111} 
+ bytes \+\_\+punycode (\begin{DoxyParamCaption}\item[{str}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_aa67da070d27c359ffafc6a595e6f88d9}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_unot@{\_unot}}
+\index{\_unot@{\_unot}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_unot()}{\_unot()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_aa67da070d27c359ffafc6a595e6f88d9} 
+ str \+\_\+unot (\begin{DoxyParamCaption}\item[{int}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a07eb3ccf4036550bdf0f0569b1e920b7}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!alabel@{alabel}}
+\index{alabel@{alabel}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{alabel()}{alabel()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a07eb3ccf4036550bdf0f0569b1e920b7} 
+ bytes alabel (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a760ca706d66bcbad1e600927d1fa5e8c}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!check\_bidi@{check\_bidi}}
+\index{check\_bidi@{check\_bidi}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_bidi()}{check\_bidi()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a760ca706d66bcbad1e600927d1fa5e8c} 
+ bool check\+\_\+bidi (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{bool }]{check\+\_\+ltr}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a233100a07347ce57253f86f588b9e882}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!check\_hyphen\_ok@{check\_hyphen\_ok}}
+\index{check\_hyphen\_ok@{check\_hyphen\_ok}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_hyphen\_ok()}{check\_hyphen\_ok()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a233100a07347ce57253f86f588b9e882} 
+ bool check\+\_\+hyphen\+\_\+ok (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a7a645999061dced1775a0d3d61a63db4}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!check\_initial\_combiner@{check\_initial\_combiner}}
+\index{check\_initial\_combiner@{check\_initial\_combiner}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_initial\_combiner()}{check\_initial\_combiner()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a7a645999061dced1775a0d3d61a63db4} 
+ bool check\+\_\+initial\+\_\+combiner (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_af8abb65bd042a9f19308207789430dd0}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!check\_label@{check\_label}}
+\index{check\_label@{check\_label}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_label()}{check\_label()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_af8abb65bd042a9f19308207789430dd0} 
+ None check\+\_\+label (\begin{DoxyParamCaption}\item[{Union\+[str, bytes, bytearray]\+}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a5abac39ae0a322b9503ea3c3a5ad972d}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!check\_nfc@{check\_nfc}}
+\index{check\_nfc@{check\_nfc}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{check\_nfc()}{check\_nfc()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a5abac39ae0a322b9503ea3c3a5ad972d} 
+ None check\+\_\+nfc (\begin{DoxyParamCaption}\item[{str}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a99b2b65376b5bd6321f2ca7f6e65a988}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!decode@{decode}}
+\index{decode@{decode}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a99b2b65376b5bd6321f2ca7f6e65a988} 
+ str decode (\begin{DoxyParamCaption}\item[{Union\+[str, bytes, bytearray]\+}]{s}{, }\item[{bool }]{strict}{ = {\ttfamily False}, }\item[{bool }]{uts46}{ = {\ttfamily False}, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a148469d67212419ae0324db89f029a20}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!encode@{encode}}
+\index{encode@{encode}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a148469d67212419ae0324db89f029a20} 
+ bytes encode (\begin{DoxyParamCaption}\item[{Union\+[str, bytes, bytearray]\+}]{s}{, }\item[{bool }]{strict}{ = {\ttfamily False}, }\item[{bool }]{uts46}{ = {\ttfamily False}, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily False}, }\item[{bool }]{transitional}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_ac9300c9fbdefb7b78f118fce86079e5a}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!ulabel@{ulabel}}
+\index{ulabel@{ulabel}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{ulabel()}{ulabel()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_ac9300c9fbdefb7b78f118fce86079e5a} 
+ str ulabel (\begin{DoxyParamCaption}\item[{Union\+[str, bytes, bytearray]\+}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a7f814e537c2894fe5a8720c105b94bf6}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!uts46\_remap@{uts46\_remap}}
+\index{uts46\_remap@{uts46\_remap}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{uts46\_remap()}{uts46\_remap()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a7f814e537c2894fe5a8720c105b94bf6} 
+ str uts46\+\_\+remap (\begin{DoxyParamCaption}\item[{str}]{domain}{, }\item[{bool }]{std3\+\_\+rules}{ = {\ttfamily True}, }\item[{bool }]{transitional}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Re-map the characters in the string according to UTS46 processing.\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_ae9c747ad564e41fab06c01dbe96eb2be}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!valid\_contextj@{valid\_contextj}}
+\index{valid\_contextj@{valid\_contextj}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_contextj()}{valid\_contextj()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_ae9c747ad564e41fab06c01dbe96eb2be} 
+ bool valid\+\_\+contextj (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{int}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_ab57a4edabc1c53aaa61298f8d6b5c779}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!valid\_contexto@{valid\_contexto}}
+\index{valid\_contexto@{valid\_contexto}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_contexto()}{valid\_contexto()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_ab57a4edabc1c53aaa61298f8d6b5c779} 
+ bool valid\+\_\+contexto (\begin{DoxyParamCaption}\item[{str}]{label}{, }\item[{int}]{pos}{, }\item[{bool }]{exception}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a68fca8d591564f88d0b3c0cdfd5eddd3}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!valid\_label\_length@{valid\_label\_length}}
+\index{valid\_label\_length@{valid\_label\_length}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_label\_length()}{valid\_label\_length()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a68fca8d591564f88d0b3c0cdfd5eddd3} 
+ bool valid\+\_\+label\+\_\+length (\begin{DoxyParamCaption}\item[{Union\+[bytes, str]\+}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_ad28c0a27a1316f1fd8f3d57d8a55feb0}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!valid\_string\_length@{valid\_string\_length}}
+\index{valid\_string\_length@{valid\_string\_length}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{valid\_string\_length()}{valid\_string\_length()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_ad28c0a27a1316f1fd8f3d57d8a55feb0} 
+ bool valid\+\_\+string\+\_\+length (\begin{DoxyParamCaption}\item[{Union\+[bytes, str]\+}]{label}{, }\item[{bool}]{trailing\+\_\+dot}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacepip_1_1__vendor_1_1idna_1_1core_doc-var-members}
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_acb73074bca9469e567c2886a2d42f223}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_alabel\_prefix@{\_alabel\_prefix}}
+\index{\_alabel\_prefix@{\_alabel\_prefix}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_alabel\_prefix}{\_alabel\_prefix}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_acb73074bca9469e567c2886a2d42f223} 
+str pip.\+\_\+vendor.\+idna.\+core.\+\_\+alabel\+\_\+prefix = b\textquotesingle{}xn-\/-\/\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a692bff3d8ecef64250ebcfd193bafe34}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_unicode\_dots\_re@{\_unicode\_dots\_re}}
+\index{\_unicode\_dots\_re@{\_unicode\_dots\_re}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_unicode\_dots\_re}{\_unicode\_dots\_re}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a692bff3d8ecef64250ebcfd193bafe34} 
+pip.\+\_\+vendor.\+idna.\+core.\+\_\+unicode\+\_\+dots\+\_\+re = re.\+compile(\textquotesingle{}\+[\textbackslash{}u002e\textbackslash{}u3002\textbackslash{}uff0e\textbackslash{}uff61]\+\textquotesingle{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__vendor_1_1idna_1_1core_a147cf629c61ab3ad8cb2598904f49dab}\index{pip.\_vendor.idna.core@{pip.\_vendor.idna.core}!\_virama\_combining\_class@{\_virama\_combining\_class}}
+\index{\_virama\_combining\_class@{\_virama\_combining\_class}!pip.\_vendor.idna.core@{pip.\_vendor.idna.core}}
+\doxysubsubsection{\texorpdfstring{\_virama\_combining\_class}{\_virama\_combining\_class}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__vendor_1_1idna_1_1core_a147cf629c61ab3ad8cb2598904f49dab} 
+int pip.\+\_\+vendor.\+idna.\+core.\+\_\+virama\+\_\+combining\+\_\+class = 9\hspace{0.3cm}{\ttfamily [protected]}}
+

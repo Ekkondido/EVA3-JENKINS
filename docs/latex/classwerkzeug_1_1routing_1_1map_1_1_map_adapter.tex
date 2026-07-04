@@ -1,0 +1,429 @@
+\doxysection{werkzeug.\+routing.\+map.\+Map\+Adapter Class Reference}
+\hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter}{}\label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a94be524b76726956eced3ac1d57d4f0b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}} map, str server\+\_\+name, str script\+\_\+name, str\texorpdfstring{$\vert$}{|}None subdomain, str url\+\_\+scheme, str path\+\_\+info, str default\+\_\+method, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None query\+\_\+args=None)
+\item 
+WSGIApplication \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a3e89faae1ef458011222c7e91c69d215}{dispatch}} (self, t.\+Callable\+[\+[str, t.\+Mapping\+[str, t.\+Any]\+]\+, WSGIApplication]\+ view\+\_\+func, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None, str\texorpdfstring{$\vert$}{|}None method=None, bool catch\+\_\+http\+\_\+exceptions=False)
+\item 
+tuple\+[t.\+Any, t.\+Mapping\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_aa4d6df2f63eee8df2e524ded0359270a}{match}} (self, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None, str\texorpdfstring{$\vert$}{|}None method=None, t.\+Literal\+[False]\+ return\+\_\+rule=False, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None query\+\_\+args=None, bool\texorpdfstring{$\vert$}{|}None websocket=None)
+\item 
+tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mapping\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0d54b96431f3c3ffa1dfd4f658d71308}{match}} (self, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None, str\texorpdfstring{$\vert$}{|}None method=None, t.\+Literal\+[True]\+ return\+\_\+rule=True, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None query\+\_\+args=None, bool\texorpdfstring{$\vert$}{|}None websocket=None)
+\item 
+tuple\+[t.\+Any\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mapping\+[str, t.\+Any]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a76dbbca99a508614e7b741035e3b98ea}{match}} (self, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None, str\texorpdfstring{$\vert$}{|}None method=None, bool return\+\_\+rule=False, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None query\+\_\+args=None, bool\texorpdfstring{$\vert$}{|}None websocket=None)
+\item 
+bool \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_afd8c1b99d5dc558ebdb4aeebb4d64c2c}{test}} (self, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None, str\texorpdfstring{$\vert$}{|}None method=None)
+\item 
+t.\+Iterable\+[str]\+ \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34964632bcd9810ff85eff9ad3233515}{allowed\+\_\+methods}} (self, str\texorpdfstring{$\vert$}{|}None path\+\_\+info=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a4cd347d12c0b4d60c7033687d1f45d36}{get\+\_\+host}} (self, str\texorpdfstring{$\vert$}{|}None domain\+\_\+part)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a31525534af83f5f2f7e08566c6876da6}{get\+\_\+default\+\_\+redirect}} (self, \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}} rule, str method, t.\+Mutable\+Mapping\+[str, t.\+Any]\+ values, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str query\+\_\+args)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6b8d9c9f5e27bdff012964aec8ec1c19}{encode\+\_\+query\+\_\+args}} (self, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str query\+\_\+args)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a20ceff1ab25a3d97b3efe49ef0c799a4}{make\+\_\+redirect\+\_\+url}} (self, str path\+\_\+info, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None query\+\_\+args=None, str\texorpdfstring{$\vert$}{|}None domain\+\_\+part=None)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0f76f41fbf24349d3e06fba49b9b67e2}{make\+\_\+alias\+\_\+redirect\+\_\+url}} (self, str path, t.\+Any endpoint, t.\+Mapping\+[str, t.\+Any]\+ values, str method, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}str query\+\_\+args)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0bd85853810626cfbb3731007a1067ee}{build}} (self, t.\+Any endpoint, t.\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None values=None, str\texorpdfstring{$\vert$}{|}None method=None, bool force\+\_\+external=False, bool append\+\_\+unknown=True, str\texorpdfstring{$\vert$}{|}None url\+\_\+scheme=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_ac6b0f8bcf1e137880f32442d713cc551}{map}} = map
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af259695c90eb1918a38f5e31a2aa3c0f}{server\+\_\+name}} = server\+\_\+name
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a21e83e147c68c26a8449753b9bf0f13c}{script\+\_\+name}} = script\+\_\+name
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34125fbf86030789b87f507761bea609}{subdomain}} = subdomain
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af57b363e18551716206ee2181a9630e5}{url\+\_\+scheme}} = url\+\_\+scheme
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6c4b879c7103d9a45e80f9dc8d997615}{path\+\_\+info}} = path\+\_\+info
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a466554b401f2b16d96f58444f7b6f242}{default\+\_\+method}} = default\+\_\+method
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a285d04c6a5457ca725314c9c80d4c6dc}{query\+\_\+args}} = query\+\_\+args
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_adc53e7bc53953a30e559d3b6302d4ca5}{websocket}} = self.\+url\+\_\+scheme in \{"{}ws"{}, "{}wss"{}\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[str, str, bool]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a2cfc2b765c3f724104c7e7a6783acf78}{\+\_\+partial\+\_\+build}} (self, t.\+Any endpoint, t.\+Mapping\+[str, t.\+Any]\+ values, str\texorpdfstring{$\vert$}{|}None method, bool append\+\_\+unknown)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Returned by :meth:`Map.bind` or :meth:`Map.bind_to_environ` and does
+the URL matching and building based on runtime information.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-constructors}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a94be524b76726956eced3ac1d57d4f0b}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a94be524b76726956eced3ac1d57d4f0b} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1map_1_1_map}{Map}}}]{map}{, }\item[{str}]{server\+\_\+name}{, }\item[{str}]{script\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{subdomain}{, }\item[{str}]{url\+\_\+scheme}{, }\item[{str}]{path\+\_\+info}{, }\item[{str}]{default\+\_\+method}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{query\+\_\+args}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-func-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a2cfc2b765c3f724104c7e7a6783acf78}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!\_partial\_build@{\_partial\_build}}
+\index{\_partial\_build@{\_partial\_build}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{\_partial\_build()}{\_partial\_build()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a2cfc2b765c3f724104c7e7a6783acf78} 
+ tuple\+[str, str, bool]\+ \texorpdfstring{$\vert$}{|} None werkzeug.\+routing.\+map.\+Map\+Adapter.\+\_\+partial\+\_\+build (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{endpoint}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+}]{values}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{method}{, }\item[{bool}]{append\+\_\+unknown}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper for :meth:`build`.  Returns subdomain and path for the
+rule that accepts this endpoint, values and method.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34964632bcd9810ff85eff9ad3233515}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!allowed\_methods@{allowed\_methods}}
+\index{allowed\_methods@{allowed\_methods}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{allowed\_methods()}{allowed\_methods()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34964632bcd9810ff85eff9ad3233515} 
+ t.\+Iterable\+[str]\+ werkzeug.\+routing.\+map.\+Map\+Adapter.\+allowed\+\_\+methods (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the valid methods that match for a given path.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0bd85853810626cfbb3731007a1067ee}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!build@{build}}
+\index{build@{build}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{build()}{build()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0bd85853810626cfbb3731007a1067ee} 
+ str werkzeug.\+routing.\+map.\+Map\+Adapter.\+build (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{endpoint}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{values}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{bool }]{force\+\_\+external}{ = {\ttfamily False}, }\item[{bool }]{append\+\_\+unknown}{ = {\ttfamily True}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{url\+\_\+scheme}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build a URL by filling in any variable slots in the endpoint's rule
+with the provided values.
+
+This produces relative URLs (path only, no host) by default, which is
+appropriate for most use cases. When using subdomain or host matching,
+the URL will be absolute if the endpoint is not on the same host as the
+current request. If you need an absolute URL no matter what, such as
+when adding a link to an email, pass ``force_external=True``.
+
+Characters that are not allowed directly in URLs will be percent-encoded
+using UTF-8.
+
+Additional values that don't match any rule parts are added to the query
+(``?key=value``) part of the URL.
+
+If a rule is not found, an :exc:`.BuildError` is raised. Converters may
+also raise exceptions when preparing a value.
+
+Unlike matching, building does not perform comprehensive validation of
+the values, it's assumed that they are trusted and correct. It's also
+possible to build a URL for one endpoint that will be matched by
+another, or will not match. This is very unlikely to happen or to matter
+in most applications, especially with testing. If you need a
+stronger guarantee, you can use a helper to verify that
+``match(build(endpoint)) == endpoint``.
+
+:param endpoint: The endpoint for the rule to build.
+:param values: Values for the variable parts of the rule, which will be
+    converted using the part's converter's
+    :meth:`~.BaseConverter.to_url` method. Keys that don't match
+    variable parts will be converted to a query string unless
+    ``append_unknown`` is disabled.
+:param method: Further match the rule to build by this HTTP method, for
+    when there are multiple rules for the same endpoint that vary based
+    on method.
+:param force_external: Always produce an absolute URL, for external use.
+    If ``scheme`` is not set, this produces a protocol-relative URL.
+:param append_unknown: Convert values that don't match any rule parts
+    to a query string. Disable to ignore such values.
+:param url_scheme: Scheme to use for absolute URLs. Defaults to
+    :attr:`url_scheme`.
+
+.. versionchanged:: 2.0
+    Added the ``url_scheme`` parameter.
+
+.. versionadded:: 0.6
+   Added the ``append_unknown`` parameter.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a3e89faae1ef458011222c7e91c69d215}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!dispatch@{dispatch}}
+\index{dispatch@{dispatch}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{dispatch()}{dispatch()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a3e89faae1ef458011222c7e91c69d215} 
+ WSGIApplication werkzeug.\+routing.\+map.\+Map\+Adapter.\+dispatch (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Callable\+[\+[str, t.\+Mapping\+[str, t.\+Any]\+]\+, WSGIApplication]\+}]{view\+\_\+func}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{bool }]{catch\+\_\+http\+\_\+exceptions}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Does the complete dispatching process.  `view_func` is called with
+the endpoint and a dict with the values for the view.  It should
+look up the view function, call it, and return a response object
+or WSGI application.  http exceptions are not caught by default
+so that applications can display nicer error messages by just
+catching them by hand.  If you want to stick with the default
+error messages you can pass it ``catch_http_exceptions=True`` and
+it will catch the http exceptions.
+
+Here a small example for the dispatch usage::
+
+    from werkzeug.wrappers import Request, Response
+    from werkzeug.wsgi import responder
+    from werkzeug.routing import Map, Rule
+
+    def on_index(request):
+        return Response('Hello from the index')
+
+    url_map = Map([Rule('/', endpoint='index')])
+    views = {'index': on_index}
+
+    @responder
+    def application(environ, start_response):
+        request = Request(environ)
+        urls = url_map.bind_to_environ(environ)
+        return urls.dispatch(lambda e, v: views[e](request, **v),
+                             catch_http_exceptions=True)
+
+Keep in mind that this method might return exception objects, too, so
+use :class:`Response.force_type` to get a response object.
+
+:param view_func: a function that is called with the endpoint as
+                  first argument and the value dict as second.  Has
+                  to dispatch to the actual view function with this
+                  information.  (see above)
+:param path_info: the path info to use for matching.  Overrides the
+                  path info specified on binding.
+:param method: the HTTP method used for matching.  Overrides the
+               method specified on binding.
+:param catch_http_exceptions: set to `True` to catch any of the
+                              werkzeug :class:`HTTPException`\\s.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6b8d9c9f5e27bdff012964aec8ec1c19}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!encode\_query\_args@{encode\_query\_args}}
+\index{encode\_query\_args@{encode\_query\_args}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{encode\_query\_args()}{encode\_query\_args()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6b8d9c9f5e27bdff012964aec8ec1c19} 
+ str werkzeug.\+routing.\+map.\+Map\+Adapter.\+encode\+\_\+query\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str}]{query\+\_\+args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a31525534af83f5f2f7e08566c6876da6}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!get\_default\_redirect@{get\_default\_redirect}}
+\index{get\_default\_redirect@{get\_default\_redirect}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_default\_redirect()}{get\_default\_redirect()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a31525534af83f5f2f7e08566c6876da6} 
+ str \texorpdfstring{$\vert$}{|} None werkzeug.\+routing.\+map.\+Map\+Adapter.\+get\+\_\+default\+\_\+redirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}}]{rule}{, }\item[{str}]{method}{, }\item[{t.\+Mutable\+Mapping\+[str, t.\+Any]\+}]{values}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str}]{query\+\_\+args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A helper that returns the URL to redirect to if it finds one.
+This is used for default redirecting only.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a4cd347d12c0b4d60c7033687d1f45d36}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!get\_host@{get\_host}}
+\index{get\_host@{get\_host}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{get\_host()}{get\_host()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a4cd347d12c0b4d60c7033687d1f45d36} 
+ str werkzeug.\+routing.\+map.\+Map\+Adapter.\+get\+\_\+host (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{domain\+\_\+part}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Figures out the full host name for the given domain part.  The
+domain part is a subdomain in case host matching is disabled or
+a full host name.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0f76f41fbf24349d3e06fba49b9b67e2}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!make\_alias\_redirect\_url@{make\_alias\_redirect\_url}}
+\index{make\_alias\_redirect\_url@{make\_alias\_redirect\_url}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{make\_alias\_redirect\_url()}{make\_alias\_redirect\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0f76f41fbf24349d3e06fba49b9b67e2} 
+ str werkzeug.\+routing.\+map.\+Map\+Adapter.\+make\+\_\+alias\+\_\+redirect\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path}{, }\item[{t.\+Any}]{endpoint}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+}]{values}{, }\item[{str}]{method}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str}]{query\+\_\+args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Internally called to make an alias redirect URL.\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a20ceff1ab25a3d97b3efe49ef0c799a4}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!make\_redirect\_url@{make\_redirect\_url}}
+\index{make\_redirect\_url@{make\_redirect\_url}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{make\_redirect\_url()}{make\_redirect\_url()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a20ceff1ab25a3d97b3efe49ef0c799a4} 
+ str werkzeug.\+routing.\+map.\+Map\+Adapter.\+make\+\_\+redirect\+\_\+url (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{path\+\_\+info}{, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{query\+\_\+args}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{domain\+\_\+part}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates a redirect URL.
+
+:internal:
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a76dbbca99a508614e7b741035e3b98ea}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!match@{match}}
+\index{match@{match}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a76dbbca99a508614e7b741035e3b98ea} 
+ tuple\+[t.\+Any \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mapping\+[str, t.\+Any]\+]\+ werkzeug.\+routing.\+map.\+Map\+Adapter.\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{bool }]{return\+\_\+rule}{ = {\ttfamily False}, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{query\+\_\+args}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{websocket}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The usage is simple: you just pass the match method the current
+path info as well as the method (which defaults to `GET`).  The
+following things can then happen:
+
+- you receive a `NotFound` exception that indicates that no URL is
+  matching.  A `NotFound` exception is also a WSGI application you
+  can call to get a default page not found page (happens to be the
+  same object as `werkzeug.exceptions.NotFound`)
+
+- you receive a `MethodNotAllowed` exception that indicates that there
+  is a match for this URL but not for the current request method.
+  This is useful for RESTful applications.
+
+- you receive a `RequestRedirect` exception with a `new_url`
+  attribute.  This exception is used to notify you about a request
+  Werkzeug requests from your WSGI application.  This is for example the
+  case if you request ``/foo`` although the correct URL is ``/foo/``
+  You can use the `RequestRedirect` instance as response-like object
+  similar to all other subclasses of `HTTPException`.
+
+- you receive a ``WebsocketMismatch`` exception if the only
+  match is a WebSocket rule but the bind is an HTTP request, or
+  if the match is an HTTP rule but the bind is a WebSocket
+  request.
+
+- you get a tuple in the form ``(endpoint, arguments)`` if there is
+  a match (unless `return_rule` is True, in which case you get a tuple
+  in the form ``(rule, arguments)``)
+
+If the path info is not passed to the match method the default path
+info of the map is used (defaults to the root URL if not defined
+explicitly).
+
+All of the exceptions raised are subclasses of `HTTPException` so they
+can be used as WSGI responses. They will all render generic error or
+redirect pages.
+
+Here is a small example for matching:
+
+>>> m = Map([
+...     Rule('/', endpoint='index'),
+...     Rule('/downloads/', endpoint='downloads/index'),
+...     Rule('/downloads/<int:id>', endpoint='downloads/show')
+... ])
+>>> urls = m.bind("example.com", "/")
+>>> urls.match("/", "GET")
+('index', {})
+>>> urls.match("/downloads/42")
+('downloads/show', {'id': 42})
+
+And here is what happens on redirect and missing URLs:
+
+>>> urls.match("/downloads")
+Traceback (most recent call last):
+  ...
+RequestRedirect: http://example.com/downloads/
+>>> urls.match("/missing")
+Traceback (most recent call last):
+  ...
+NotFound: 404 Not Found
+
+:param path_info: the path info to use for matching.  Overrides the
+                  path info specified on binding.
+:param method: the HTTP method used for matching.  Overrides the
+               method specified on binding.
+:param return_rule: return the rule that matched instead of just the
+                    endpoint (defaults to `False`).
+:param query_args: optional query arguments that are used for
+                   automatic redirects as string or dictionary.  It's
+                   currently not possible to use the query arguments
+                   for URL matching.
+:param websocket: Match WebSocket instead of HTTP requests. A
+    websocket request has a ``ws`` or ``wss``
+    :attr:`url_scheme`. This overrides that detection.
+
+.. versionadded:: 1.0
+    Added ``websocket``.
+
+.. versionchanged:: 0.8
+    ``query_args`` can be a string.
+
+.. versionadded:: 0.7
+    Added ``query_args``.
+
+.. versionadded:: 0.6
+    Added ``return_rule``.
+\end{DoxyVerb}
+ \Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_aa4d6df2f63eee8df2e524ded0359270a}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!match@{match}}
+\index{match@{match}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_aa4d6df2f63eee8df2e524ded0359270a} 
+ tuple\+[t.\+Any, t.\+Mapping\+[str, t.\+Any]\+]\+ werkzeug.\+routing.\+map.\+Map\+Adapter.\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{t.\+Literal\+[False]\+ }]{return\+\_\+rule}{ = {\ttfamily False}, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{query\+\_\+args}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{websocket}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0d54b96431f3c3ffa1dfd4f658d71308}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!match@{match}}
+\index{match@{match}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{match()}{match()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a0d54b96431f3c3ffa1dfd4f658d71308} 
+ tuple\+[\doxymbox{\hyperlink{classwerkzeug_1_1routing_1_1rules_1_1_rule}{Rule}}, t.\+Mapping\+[str, t.\+Any]\+]\+ werkzeug.\+routing.\+map.\+Map\+Adapter.\+match (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{t.\+Literal\+[True]\+ }]{return\+\_\+rule}{ = {\ttfamily True}, }\item[{t.\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{query\+\_\+args}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{websocket}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_afd8c1b99d5dc558ebdb4aeebb4d64c2c}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!test@{test}}
+\index{test@{test}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_afd8c1b99d5dc558ebdb4aeebb4d64c2c} 
+ bool werkzeug.\+routing.\+map.\+Map\+Adapter.\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{path\+\_\+info}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Test if a rule would match.  Works like `match` but returns `True`
+if the URL matches, or `False` if it does not exist.
+
+:param path_info: the path info to use for matching.  Overrides the
+                  path info specified on binding.
+:param method: the HTTP method used for matching.  Overrides the
+               method specified on binding.
+\end{DoxyVerb}
+ 
+
+\label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a466554b401f2b16d96f58444f7b6f242}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!default\_method@{default\_method}}
+\index{default\_method@{default\_method}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{default\_method}{default\_method}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a466554b401f2b16d96f58444f7b6f242} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+default\+\_\+method = default\+\_\+method}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_ac6b0f8bcf1e137880f32442d713cc551}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!map@{map}}
+\index{map@{map}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_ac6b0f8bcf1e137880f32442d713cc551} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+map = map}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6c4b879c7103d9a45e80f9dc8d997615}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!path\_info@{path\_info}}
+\index{path\_info@{path\_info}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{path\_info}{path\_info}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a6c4b879c7103d9a45e80f9dc8d997615} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+path\+\_\+info = path\+\_\+info}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a285d04c6a5457ca725314c9c80d4c6dc}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!query\_args@{query\_args}}
+\index{query\_args@{query\_args}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{query\_args}{query\_args}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a285d04c6a5457ca725314c9c80d4c6dc} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+query\+\_\+args = query\+\_\+args}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a21e83e147c68c26a8449753b9bf0f13c}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!script\_name@{script\_name}}
+\index{script\_name@{script\_name}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{script\_name}{script\_name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a21e83e147c68c26a8449753b9bf0f13c} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+script\+\_\+name = script\+\_\+name}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af259695c90eb1918a38f5e31a2aa3c0f}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!server\_name@{server\_name}}
+\index{server\_name@{server\_name}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{server\_name}{server\_name}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af259695c90eb1918a38f5e31a2aa3c0f} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+server\+\_\+name = server\+\_\+name}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34125fbf86030789b87f507761bea609}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!subdomain@{subdomain}}
+\index{subdomain@{subdomain}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{subdomain}{subdomain}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_a34125fbf86030789b87f507761bea609} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+subdomain = subdomain}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af57b363e18551716206ee2181a9630e5}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!url\_scheme@{url\_scheme}}
+\index{url\_scheme@{url\_scheme}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{url\_scheme}{url\_scheme}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_af57b363e18551716206ee2181a9630e5} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+url\+\_\+scheme = url\+\_\+scheme}
+
+\Hypertarget{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_adc53e7bc53953a30e559d3b6302d4ca5}\index{werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}!websocket@{websocket}}
+\index{websocket@{websocket}!werkzeug.routing.map.MapAdapter@{werkzeug.routing.map.MapAdapter}}
+\doxysubsubsection{\texorpdfstring{websocket}{websocket}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1routing_1_1map_1_1_map_adapter_adc53e7bc53953a30e559d3b6302d4ca5} 
+werkzeug.\+routing.\+map.\+Map\+Adapter.\+websocket = self.\+url\+\_\+scheme in \{"{}ws"{}, "{}wss"{}\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+routing/\+\doxymbox{\hyperlink{map_8py}{map.\+py}}\end{DoxyCompactItemize}

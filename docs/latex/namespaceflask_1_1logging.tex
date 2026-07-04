@@ -1,0 +1,73 @@
+\doxysection{flask.\+logging Namespace Reference}
+\hypertarget{namespaceflask_1_1logging}{}\label{namespaceflask_1_1logging}\index{flask.logging@{flask.logging}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Text\+IO \doxymbox{\hyperlink{namespaceflask_1_1logging_ae9e4b02e55ff794ef197296f7a837e8a}{wsgi\+\_\+errors\+\_\+stream}} ()
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1logging_a39416a7ecbc3cd5f528c96edd388f3ac}{has\+\_\+level\+\_\+handler}} (logging.\+Logger logger)
+\item 
+logging.\+Logger \doxymbox{\hyperlink{namespaceflask_1_1logging_a4a6f5871752bb60f1b12579265f13ffb}{create\+\_\+logger}} (App app)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1logging_ad2467dc44b188aab5ca1b707bf7791ac}{default\+\_\+handler}} = logging.\+Stream\+Handler(\doxymbox{\hyperlink{namespaceflask_1_1logging_ae9e4b02e55ff794ef197296f7a837e8a}{wsgi\+\_\+errors\+\_\+stream}})
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1logging_doc-func-members}
+\Hypertarget{namespaceflask_1_1logging_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1logging_a4a6f5871752bb60f1b12579265f13ffb}\index{flask.logging@{flask.logging}!create\_logger@{create\_logger}}
+\index{create\_logger@{create\_logger}!flask.logging@{flask.logging}}
+\doxysubsubsection{\texorpdfstring{create\_logger()}{create\_logger()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1logging_a4a6f5871752bb60f1b12579265f13ffb} 
+ logging.\+Logger create\+\_\+logger (\begin{DoxyParamCaption}\item[{App}]{app}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Flask app's logger and configure it if needed.
+
+The logger name will be the same as
+:attr:`app.import_name <flask.Flask.name>`.
+
+When :attr:`~flask.Flask.debug` is enabled, set the logger level to
+:data:`logging.DEBUG` if it is not set.
+
+If there is no handler for the logger's effective level, add a
+:class:`~logging.StreamHandler` for
+:func:`~flask.logging.wsgi_errors_stream` with a basic format.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1logging_a39416a7ecbc3cd5f528c96edd388f3ac}\index{flask.logging@{flask.logging}!has\_level\_handler@{has\_level\_handler}}
+\index{has\_level\_handler@{has\_level\_handler}!flask.logging@{flask.logging}}
+\doxysubsubsection{\texorpdfstring{has\_level\_handler()}{has\_level\_handler()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1logging_a39416a7ecbc3cd5f528c96edd388f3ac} 
+ bool has\+\_\+level\+\_\+handler (\begin{DoxyParamCaption}\item[{logging.\+Logger}]{logger}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if there is a handler in the logging chain that will handle the
+given logger's :meth:`effective level <~logging.Logger.getEffectiveLevel>`.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1logging_ae9e4b02e55ff794ef197296f7a837e8a}\index{flask.logging@{flask.logging}!wsgi\_errors\_stream@{wsgi\_errors\_stream}}
+\index{wsgi\_errors\_stream@{wsgi\_errors\_stream}!flask.logging@{flask.logging}}
+\doxysubsubsection{\texorpdfstring{wsgi\_errors\_stream()}{wsgi\_errors\_stream()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1logging_ae9e4b02e55ff794ef197296f7a837e8a} 
+ t.\+Text\+IO wsgi\+\_\+errors\+\_\+stream (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Find the most appropriate error stream for the application. If a request
+is active, log to ``wsgi.errors``, otherwise use ``sys.stderr``.
+
+If you configure your own :class:`logging.StreamHandler`, you may want to
+use this for the stream. If you are using file or dict configuration and
+can't import this directly, you can refer to it as
+``ext://flask.logging.wsgi_errors_stream``.
+\end{DoxyVerb}
+ 
+
+\label{namespaceflask_1_1logging_doc-var-members}
+\Hypertarget{namespaceflask_1_1logging_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceflask_1_1logging_ad2467dc44b188aab5ca1b707bf7791ac}\index{flask.logging@{flask.logging}!default\_handler@{default\_handler}}
+\index{default\_handler@{default\_handler}!flask.logging@{flask.logging}}
+\doxysubsubsection{\texorpdfstring{default\_handler}{default\_handler}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1logging_ad2467dc44b188aab5ca1b707bf7791ac} 
+flask.\+logging.\+default\+\_\+handler = logging.\+Stream\+Handler(\doxymbox{\hyperlink{namespaceflask_1_1logging_ae9e4b02e55ff794ef197296f7a837e8a}{wsgi\+\_\+errors\+\_\+stream}})}
+

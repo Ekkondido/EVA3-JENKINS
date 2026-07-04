@@ -1,0 +1,260 @@
+\doxysection{flask.\+typing Namespace Reference}
+\hypertarget{namespaceflask_1_1typing}{}\label{namespaceflask_1_1typing}\index{flask.typing@{flask.typing}}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a416683841d0544183538d5236a7f2221}{Response\+Value}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_afb8dba9563caf61021fca5d99cb3b3fc}{Header\+Value}} = t.\+Union\+[str, list\+[str]\+, tuple\+[str, ...]\+]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_ae2cd4c4dd3a859e276ce1c3c92202b3a}{Headers\+Value}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_af4ba6fb23c60faf586455ea686d0ace2}{Response\+Return\+Value}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a2ac9ec36c65c2fd371af91a88367212b}{Response\+Class}} = t.\+Type\+Var("{}Response\+Class"{}, bound="{}Response"{})
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_ae7a53007afe172fd20d138092dd18725}{App\+Or\+Blueprint\+Key}} = t.\+Optional\+[str]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_aa4fdba4011927f5d0b4f9919b750e6ef}{After\+Request\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_ae57dd8bde9d1c4014e30ffd6a97339d6}{Before\+First\+Request\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a9ee960aaa5eb517330ec969818bcebef}{Before\+Request\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a1a51a45ec32928d1ef9c6903eb8430bc}{Shell\+Context\+Processor\+Callable}} = t.\+Callable\+[\+[$\,$]\+, dict\+[str, t.\+Any]\+]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_aec73140dc594803e721a2630ebb0d1ca}{Teardown\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a1c7589715f86b0c0cf47e0ceb85e31e8}{Template\+Context\+Processor\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a0ff6c65198189f56a3c603664eddeae4}{Template\+Filter\+Callable}} = t.\+Callable\+[..., t.\+Any]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a2062299a8e605590a99961fea3545078}{Template\+Global\+Callable}} = t.\+Callable\+[..., t.\+Any]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_acde86870d1503e130ca2521eefb0f9a5}{Template\+Test\+Callable}} = t.\+Callable\+[..., bool]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a797133995e03b9d0d684ac5fd0db84bc}{URLDefault\+Callable}} = t.\+Callable\+[\+[str, dict\+[str, t.\+Any]\+]\+, None]\+
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a28b93b2a42eea3a1444b0ace5e1d9262}{URLValue\+Preprocessor\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_a0204fc08a316843ecfbecb2d19b681d8}{Error\+Handler\+Callable}}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1typing_aec9b2ce626783afb6200d312ef3fc0b1}{Route\+Callable}}
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1typing_doc-var-members}
+\Hypertarget{namespaceflask_1_1typing_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceflask_1_1typing_aa4fdba4011927f5d0b4f9919b750e6ef}\index{flask.typing@{flask.typing}!AfterRequestCallable@{AfterRequestCallable}}
+\index{AfterRequestCallable@{AfterRequestCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{AfterRequestCallable}{AfterRequestCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_aa4fdba4011927f5d0b4f9919b750e6ef} 
+flask.\+typing.\+After\+Request\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[ResponseClass],\ ResponseClass],}
+\DoxyCodeLine{\ \ \ \ t.Callable[[ResponseClass],\ t.Awaitable[ResponseClass]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_ae7a53007afe172fd20d138092dd18725}\index{flask.typing@{flask.typing}!AppOrBlueprintKey@{AppOrBlueprintKey}}
+\index{AppOrBlueprintKey@{AppOrBlueprintKey}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{AppOrBlueprintKey}{AppOrBlueprintKey}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_ae7a53007afe172fd20d138092dd18725} 
+flask.\+typing.\+App\+Or\+Blueprint\+Key = t.\+Optional\+[str]\+}
+
+\Hypertarget{namespaceflask_1_1typing_ae57dd8bde9d1c4014e30ffd6a97339d6}\index{flask.typing@{flask.typing}!BeforeFirstRequestCallable@{BeforeFirstRequestCallable}}
+\index{BeforeFirstRequestCallable@{BeforeFirstRequestCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{BeforeFirstRequestCallable}{BeforeFirstRequestCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_ae57dd8bde9d1c4014e30ffd6a97339d6} 
+flask.\+typing.\+Before\+First\+Request\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[],\ \textcolor{keywordtype}{None}],\ t.Callable[[],\ t.Awaitable[\textcolor{keywordtype}{None}]]}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a9ee960aaa5eb517330ec969818bcebef}\index{flask.typing@{flask.typing}!BeforeRequestCallable@{BeforeRequestCallable}}
+\index{BeforeRequestCallable@{BeforeRequestCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{BeforeRequestCallable}{BeforeRequestCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a9ee960aaa5eb517330ec969818bcebef} 
+flask.\+typing.\+Before\+Request\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[],\ t.Optional[ResponseReturnValue]],}
+\DoxyCodeLine{\ \ \ \ t.Callable[[],\ t.Awaitable[t.Optional[ResponseReturnValue]]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a0204fc08a316843ecfbecb2d19b681d8}\index{flask.typing@{flask.typing}!ErrorHandlerCallable@{ErrorHandlerCallable}}
+\index{ErrorHandlerCallable@{ErrorHandlerCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{ErrorHandlerCallable}{ErrorHandlerCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a0204fc08a316843ecfbecb2d19b681d8} 
+flask.\+typing.\+Error\+Handler\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[t.Any],\ ResponseReturnValue],}
+\DoxyCodeLine{\ \ \ \ t.Callable[[t.Any],\ t.Awaitable[ResponseReturnValue]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_ae2cd4c4dd3a859e276ce1c3c92202b3a}\index{flask.typing@{flask.typing}!HeadersValue@{HeadersValue}}
+\index{HeadersValue@{HeadersValue}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{HeadersValue}{HeadersValue}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_ae2cd4c4dd3a859e276ce1c3c92202b3a} 
+flask.\+typing.\+Headers\+Value}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Headers"{}},}
+\DoxyCodeLine{\ \ \ \ t.Mapping[str,\ HeaderValue],}
+\DoxyCodeLine{\ \ \ \ t.Sequence[tuple[str,\ HeaderValue]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_afb8dba9563caf61021fca5d99cb3b3fc}\index{flask.typing@{flask.typing}!HeaderValue@{HeaderValue}}
+\index{HeaderValue@{HeaderValue}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{HeaderValue}{HeaderValue}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_afb8dba9563caf61021fca5d99cb3b3fc} 
+flask.\+typing.\+Header\+Value = t.\+Union\+[str, list\+[str]\+, tuple\+[str, ...]\+]\+}
+
+\Hypertarget{namespaceflask_1_1typing_a2ac9ec36c65c2fd371af91a88367212b}\index{flask.typing@{flask.typing}!ResponseClass@{ResponseClass}}
+\index{ResponseClass@{ResponseClass}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{ResponseClass}{ResponseClass}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a2ac9ec36c65c2fd371af91a88367212b} 
+flask.\+typing.\+Response\+Class = t.\+Type\+Var("{}Response\+Class"{}, bound="{}Response"{})}
+
+\Hypertarget{namespaceflask_1_1typing_af4ba6fb23c60faf586455ea686d0ace2}\index{flask.typing@{flask.typing}!ResponseReturnValue@{ResponseReturnValue}}
+\index{ResponseReturnValue@{ResponseReturnValue}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{ResponseReturnValue}{ResponseReturnValue}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_af4ba6fb23c60faf586455ea686d0ace2} 
+flask.\+typing.\+Response\+Return\+Value}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ ResponseValue,}
+\DoxyCodeLine{\ \ \ \ tuple[ResponseValue,\ HeadersValue],}
+\DoxyCodeLine{\ \ \ \ tuple[ResponseValue,\ int],}
+\DoxyCodeLine{\ \ \ \ tuple[ResponseValue,\ int,\ HeadersValue],}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}WSGIApplication"{}},}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a416683841d0544183538d5236a7f2221}\index{flask.typing@{flask.typing}!ResponseValue@{ResponseValue}}
+\index{ResponseValue@{ResponseValue}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{ResponseValue}{ResponseValue}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a416683841d0544183538d5236a7f2221} 
+flask.\+typing.\+Response\+Value}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}Response"{}},}
+\DoxyCodeLine{\ \ \ \ str,}
+\DoxyCodeLine{\ \ \ \ bytes,}
+\DoxyCodeLine{\ \ \ \ list[t.Any],}
+\DoxyCodeLine{\ \ \ \ \textcolor{comment}{\#\ Only\ dict\ is\ actually\ accepted,\ but\ Mapping\ allows\ for\ TypedDict.}}
+\DoxyCodeLine{\ \ \ \ t.Mapping[str,\ t.Any],}
+\DoxyCodeLine{\ \ \ \ t.Iterator[str],}
+\DoxyCodeLine{\ \ \ \ t.Iterator[bytes],}
+\DoxyCodeLine{\ \ \ \ cabc.AsyncIterable[str],\ \ \textcolor{comment}{\#\ for\ Quart,\ until\ App\ is\ generic.}}
+\DoxyCodeLine{\ \ \ \ cabc.AsyncIterable[bytes],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_aec9b2ce626783afb6200d312ef3fc0b1}\index{flask.typing@{flask.typing}!RouteCallable@{RouteCallable}}
+\index{RouteCallable@{RouteCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{RouteCallable}{RouteCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_aec9b2ce626783afb6200d312ef3fc0b1} 
+flask.\+typing.\+Route\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[...,\ ResponseReturnValue],}
+\DoxyCodeLine{\ \ \ \ t.Callable[...,\ t.Awaitable[ResponseReturnValue]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a1a51a45ec32928d1ef9c6903eb8430bc}\index{flask.typing@{flask.typing}!ShellContextProcessorCallable@{ShellContextProcessorCallable}}
+\index{ShellContextProcessorCallable@{ShellContextProcessorCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{ShellContextProcessorCallable}{ShellContextProcessorCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a1a51a45ec32928d1ef9c6903eb8430bc} 
+flask.\+typing.\+Shell\+Context\+Processor\+Callable = t.\+Callable\+[\+[$\,$]\+, dict\+[str, t.\+Any]\+]\+}
+
+\Hypertarget{namespaceflask_1_1typing_aec73140dc594803e721a2630ebb0d1ca}\index{flask.typing@{flask.typing}!TeardownCallable@{TeardownCallable}}
+\index{TeardownCallable@{TeardownCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{TeardownCallable}{TeardownCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_aec73140dc594803e721a2630ebb0d1ca} 
+flask.\+typing.\+Teardown\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[t.Optional[BaseException]],\ \textcolor{keywordtype}{None}],}
+\DoxyCodeLine{\ \ \ \ t.Callable[[t.Optional[BaseException]],\ t.Awaitable[\textcolor{keywordtype}{None}]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a1c7589715f86b0c0cf47e0ceb85e31e8}\index{flask.typing@{flask.typing}!TemplateContextProcessorCallable@{TemplateContextProcessorCallable}}
+\index{TemplateContextProcessorCallable@{TemplateContextProcessorCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{TemplateContextProcessorCallable}{TemplateContextProcessorCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a1c7589715f86b0c0cf47e0ceb85e31e8} 
+flask.\+typing.\+Template\+Context\+Processor\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Union[}
+\DoxyCodeLine{\ \ \ \ t.Callable[[],\ dict[str,\ t.Any]],}
+\DoxyCodeLine{\ \ \ \ t.Callable[[],\ t.Awaitable[dict[str,\ t.Any]]],}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}
+\Hypertarget{namespaceflask_1_1typing_a0ff6c65198189f56a3c603664eddeae4}\index{flask.typing@{flask.typing}!TemplateFilterCallable@{TemplateFilterCallable}}
+\index{TemplateFilterCallable@{TemplateFilterCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{TemplateFilterCallable}{TemplateFilterCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a0ff6c65198189f56a3c603664eddeae4} 
+flask.\+typing.\+Template\+Filter\+Callable = t.\+Callable\+[..., t.\+Any]\+}
+
+\Hypertarget{namespaceflask_1_1typing_a2062299a8e605590a99961fea3545078}\index{flask.typing@{flask.typing}!TemplateGlobalCallable@{TemplateGlobalCallable}}
+\index{TemplateGlobalCallable@{TemplateGlobalCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{TemplateGlobalCallable}{TemplateGlobalCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a2062299a8e605590a99961fea3545078} 
+flask.\+typing.\+Template\+Global\+Callable = t.\+Callable\+[..., t.\+Any]\+}
+
+\Hypertarget{namespaceflask_1_1typing_acde86870d1503e130ca2521eefb0f9a5}\index{flask.typing@{flask.typing}!TemplateTestCallable@{TemplateTestCallable}}
+\index{TemplateTestCallable@{TemplateTestCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{TemplateTestCallable}{TemplateTestCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_acde86870d1503e130ca2521eefb0f9a5} 
+flask.\+typing.\+Template\+Test\+Callable = t.\+Callable\+[..., bool]\+}
+
+\Hypertarget{namespaceflask_1_1typing_a797133995e03b9d0d684ac5fd0db84bc}\index{flask.typing@{flask.typing}!URLDefaultCallable@{URLDefaultCallable}}
+\index{URLDefaultCallable@{URLDefaultCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{URLDefaultCallable}{URLDefaultCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a797133995e03b9d0d684ac5fd0db84bc} 
+flask.\+typing.\+URLDefault\+Callable = t.\+Callable\+[\+[str, dict\+[str, t.\+Any]\+]\+, None]\+}
+
+\Hypertarget{namespaceflask_1_1typing_a28b93b2a42eea3a1444b0ace5e1d9262}\index{flask.typing@{flask.typing}!URLValuePreprocessorCallable@{URLValuePreprocessorCallable}}
+\index{URLValuePreprocessorCallable@{URLValuePreprocessorCallable}!flask.typing@{flask.typing}}
+\doxysubsubsection{\texorpdfstring{URLValuePreprocessorCallable}{URLValuePreprocessorCallable}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1typing_a28b93b2a42eea3a1444b0ace5e1d9262} 
+flask.\+typing.\+URLValue\+Preprocessor\+Callable}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ t.Callable[}
+\DoxyCodeLine{\ \ \ \ [t.Optional[str],\ t.Optional[dict[str,\ t.Any]]],\ \textcolor{keywordtype}{None}}
+\DoxyCodeLine{]}
+
+\end{DoxyCode}

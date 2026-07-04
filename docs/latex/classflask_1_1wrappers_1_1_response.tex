@@ -1,0 +1,85 @@
+\doxysection{flask.\+wrappers.\+Response Class Reference}
+\hypertarget{classflask_1_1wrappers_1_1_response}{}\label{classflask_1_1wrappers_1_1_response}\index{flask.wrappers.Response@{flask.wrappers.Response}}
+Inheritance diagram for flask.\+wrappers.\+Response:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1wrappers_1_1_response}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response_a1b114dcc1aeb3e773f5e5c92bc5bcc34}{max\+\_\+cookie\+\_\+size}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response_a0991620c5d05016b5d164c669eadf49b}{default\+\_\+mimetype}} = "{}text/\+html"{}
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response_a4f06dd1fecb00fc06966d09089fa6597}{json\+\_\+module}} = \doxymbox{\hyperlink{namespaceflask_1_1json}{json}}
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response_ae39377751701573fda20eedeb273bcad}{autocorrect\+\_\+location\+\_\+header}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The response object that is used by default in Flask.  Works like the
+response object from Werkzeug but is set to have an HTML mimetype by
+default.  Quite often you don't have to create this object yourself because
+:meth:`~flask.Flask.make_response` will take care of that for you.
+
+If you want to replace the response object used you can subclass this and
+set :attr:`~flask.Flask.response_class` to your subclass.
+
+.. versionchanged:: 1.0
+    JSON support is added to the response, like the request. This is useful
+    when testing to get the test client response data as JSON.
+
+.. versionchanged:: 1.0
+
+    Added :attr:`max_cookie_size`.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1wrappers_1_1_response_doc-func-members}
+\Hypertarget{classflask_1_1wrappers_1_1_response_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1wrappers_1_1_response_a1b114dcc1aeb3e773f5e5c92bc5bcc34}\index{flask.wrappers.Response@{flask.wrappers.Response}!max\_cookie\_size@{max\_cookie\_size}}
+\index{max\_cookie\_size@{max\_cookie\_size}!flask.wrappers.Response@{flask.wrappers.Response}}
+\doxysubsubsection{\texorpdfstring{max\_cookie\_size()}{max\_cookie\_size()}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_response_a1b114dcc1aeb3e773f5e5c92bc5bcc34} 
+ int flask.\+wrappers.\+Response.\+max\+\_\+cookie\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read-only view of the :data:`MAX_COOKIE_SIZE` config key.
+
+See :attr:`~werkzeug.wrappers.Response.max_cookie_size` in
+Werkzeug's docs.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1wrappers_1_1_response_doc-variable-members}
+\Hypertarget{classflask_1_1wrappers_1_1_response_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1wrappers_1_1_response_ae39377751701573fda20eedeb273bcad}\index{flask.wrappers.Response@{flask.wrappers.Response}!autocorrect\_location\_header@{autocorrect\_location\_header}}
+\index{autocorrect\_location\_header@{autocorrect\_location\_header}!flask.wrappers.Response@{flask.wrappers.Response}}
+\doxysubsubsection{\texorpdfstring{autocorrect\_location\_header}{autocorrect\_location\_header}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_response_ae39377751701573fda20eedeb273bcad} 
+bool flask.\+wrappers.\+Response.\+autocorrect\+\_\+location\+\_\+header = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1wrappers_1_1_response_a0991620c5d05016b5d164c669eadf49b}\index{flask.wrappers.Response@{flask.wrappers.Response}!default\_mimetype@{default\_mimetype}}
+\index{default\_mimetype@{default\_mimetype}!flask.wrappers.Response@{flask.wrappers.Response}}
+\doxysubsubsection{\texorpdfstring{default\_mimetype}{default\_mimetype}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_response_a0991620c5d05016b5d164c669eadf49b} 
+str flask.\+wrappers.\+Response.\+default\+\_\+mimetype = "{}text/\+html"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1wrappers_1_1_response_a4f06dd1fecb00fc06966d09089fa6597}\index{flask.wrappers.Response@{flask.wrappers.Response}!json\_module@{json\_module}}
+\index{json\_module@{json\_module}!flask.wrappers.Response@{flask.wrappers.Response}}
+\doxysubsubsection{\texorpdfstring{json\_module}{json\_module}}
+{\footnotesize\ttfamily \label{classflask_1_1wrappers_1_1_response_a4f06dd1fecb00fc06966d09089fa6597} 
+flask.\+wrappers.\+Response.\+json\+\_\+module = \doxymbox{\hyperlink{namespaceflask_1_1json}{json}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{wrappers_8py}{wrappers.\+py}}\end{DoxyCompactItemize}

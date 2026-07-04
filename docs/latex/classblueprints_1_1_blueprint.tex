@@ -1,0 +1,577 @@
+\doxysection{blueprints.\+Blueprint Class Reference}
+\hypertarget{classblueprints_1_1_blueprint}{}\label{classblueprints_1_1_blueprint}\index{blueprints.Blueprint@{blueprints.Blueprint}}
+Inheritance diagram for blueprints.\+Blueprint:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classblueprints_1_1_blueprint}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_a04c26731ce09105656b490a3b3a5e2c0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str name, str import\+\_\+name, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None static\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None static\+\_\+url\+\_\+path=None, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None template\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None url\+\_\+prefix=None, str\texorpdfstring{$\vert$}{|}None subdomain=None, dict\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None url\+\_\+defaults=None, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None, str\texorpdfstring{$\vert$}{|}None cli\+\_\+group=\+\_\+sentinel)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_afc9856ccbba346effa2c6230007acaf2}{record}} (self, \doxymbox{\hyperlink{namespaceblueprints_a9b327ceacc32effae550192f4bee8061}{Deferred\+Setup\+Function}} func)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a011c5c09faec222e9f92c3fa90533cc2}{record\+\_\+once}} (self, \doxymbox{\hyperlink{namespaceblueprints_a9b327ceacc32effae550192f4bee8061}{Deferred\+Setup\+Function}} func)
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state}{Blueprint\+Setup\+State}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a1fb3758608318e3819d57917f1112671}{make\+\_\+setup\+\_\+state}} (self, App app, dict\+[str, t.\+Any]\+ options, bool first\+\_\+registration=False)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_ae21f5c07c5523650bf7df162ef96c799}{register\+\_\+blueprint}} (self, \doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}} blueprint, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a1865f79500dae82133b1315f8aada174}{register}} (self, App app, dict\+[str, t.\+Any]\+ options)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a5ae4c069326e5a34c2145832299d10b4}{add\+\_\+url\+\_\+rule}} (self, str rule, str\texorpdfstring{$\vert$}{|}None endpoint=None, ft.\+Route\+Callable\texorpdfstring{$\vert$}{|}None view\+\_\+func=None, bool\texorpdfstring{$\vert$}{|}None provide\+\_\+automatic\+\_\+options=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_ae1cea061a95af877dcfd95f49be196c6}{T\+\_\+template\+\_\+filter}}]\+, \doxymbox{\hyperlink{namespaceblueprints_ae1cea061a95af877dcfd95f49be196c6}{T\+\_\+template\+\_\+filter}}]\+ \doxymbox{\hyperlink{classblueprints_1_1_blueprint_acb7d301721802b4a2221e65a23975ea8}{app\+\_\+template\+\_\+filter}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_af8cf282ee843db7f02e0375338b0103b}{add\+\_\+app\+\_\+template\+\_\+filter}} (self, ft.\+Template\+Filter\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_a44f1d1968c8b42a0167fefe62d26c721}{T\+\_\+template\+\_\+test}}]\+, \doxymbox{\hyperlink{namespaceblueprints_a44f1d1968c8b42a0167fefe62d26c721}{T\+\_\+template\+\_\+test}}]\+ \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a3d94aec6e50a000f3570609836ff975c}{app\+\_\+template\+\_\+test}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a77b8b6e432f0a516730fd53c8d2768ab}{add\+\_\+app\+\_\+template\+\_\+test}} (self, ft.\+Template\+Test\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_afc27a99631ee9f5dda9ce5ea27350705}{T\+\_\+template\+\_\+global}}]\+, \doxymbox{\hyperlink{namespaceblueprints_afc27a99631ee9f5dda9ce5ea27350705}{T\+\_\+template\+\_\+global}}]\+ \doxymbox{\hyperlink{classblueprints_1_1_blueprint_ab17c0de20cead048e30e031d4ca5abe9}{app\+\_\+template\+\_\+global}} (self, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_abbceab82a74fdf3ebab6ab622dba4c34}{add\+\_\+app\+\_\+template\+\_\+global}} (self, ft.\+Template\+Global\+Callable f, str\texorpdfstring{$\vert$}{|}None name=None)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_a9644dbdbd44ae89b891d91a5107333c7}{T\+\_\+before\+\_\+request}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a35138d970288d1f10ca16d67d2348e36}{before\+\_\+app\+\_\+request}} (self, \doxymbox{\hyperlink{namespaceblueprints_a9644dbdbd44ae89b891d91a5107333c7}{T\+\_\+before\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_a2a4e45bab8b4683d747c7fae5ae63c81}{T\+\_\+after\+\_\+request}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a1bfd0a1e7bbd4e6731786e14ef981de1}{after\+\_\+app\+\_\+request}} (self, \doxymbox{\hyperlink{namespaceblueprints_a2a4e45bab8b4683d747c7fae5ae63c81}{T\+\_\+after\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_a2ade25ba089023f294e8aadfb22c5078}{T\+\_\+teardown}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a4366585745aff0939bb59b446f14f479}{teardown\+\_\+app\+\_\+request}} (self, \doxymbox{\hyperlink{namespaceblueprints_a2ade25ba089023f294e8aadfb22c5078}{T\+\_\+teardown}} f)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_aacf3bc9593f25c1403be47632c727db5}{T\+\_\+template\+\_\+context\+\_\+processor}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a6700d6e70ae11f48918b642f95be18f9}{app\+\_\+context\+\_\+processor}} (self, \doxymbox{\hyperlink{namespaceblueprints_aacf3bc9593f25c1403be47632c727db5}{T\+\_\+template\+\_\+context\+\_\+processor}} f)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_a212ea279c4c46e5fe81890d656bc928b}{T\+\_\+error\+\_\+handler}}]\+, \doxymbox{\hyperlink{namespaceblueprints_a212ea279c4c46e5fe81890d656bc928b}{T\+\_\+error\+\_\+handler}}]\+ \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a2ddcdd2f9e958792d3a8a30cedf2391f}{app\+\_\+errorhandler}} (self, type\+[Exception]\+\texorpdfstring{$\vert$}{|}int code)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_a6a7647d983c2af76487ec8e95cf8a102}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a7d6ab97624b2f2294468c426a6964824}{app\+\_\+url\+\_\+value\+\_\+preprocessor}} (self, \doxymbox{\hyperlink{namespaceblueprints_a6a7647d983c2af76487ec8e95cf8a102}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} f)
+\item 
+\doxymbox{\hyperlink{namespaceblueprints_ac0b1823cd5ec26f53f06d9272cfccefe}{T\+\_\+url\+\_\+defaults}} \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a6e0fb95db681bb8e251674661cecde5c}{app\+\_\+url\+\_\+defaults}} (self, \doxymbox{\hyperlink{namespaceblueprints_ac0b1823cd5ec26f53f06d9272cfccefe}{T\+\_\+url\+\_\+defaults}} f)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a9c200c8c94eadd5837d8d3dcbe2552cb}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str import\+\_\+name, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None static\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None static\+\_\+url\+\_\+path=None, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None template\+\_\+folder=None, str\texorpdfstring{$\vert$}{|}None root\+\_\+path=None)
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a0a7fc956d2e523362515e2fe792c63ac}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a01aea2fc380a523604a4d83d9bf8e36f}{static\+\_\+folder}} (self)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab2146e5d44420275f30e45fb53b6b1b8}{static\+\_\+folder}} (self, str\texorpdfstring{$\vert$}{|}os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}None value)
+\item 
+bool \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6a1f33ff69342d44c1af6c703d530151}{has\+\_\+static\+\_\+folder}} (self)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_abe2a104857946e152a5f1a2545550ab7}{static\+\_\+url\+\_\+path}} (self)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a393b13a41f0dc397679507372b610d02}{static\+\_\+url\+\_\+path}} (self, str\texorpdfstring{$\vert$}{|}None value)
+\item 
+\doxymbox{\hyperlink{classjinja2_1_1loaders_1_1_base_loader}{Base\+Loader}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a1f7f49a57728e69eeae97b04c1dbcdde}{jinja\+\_\+loader}} (self)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_acadc7995410fa193945e56438d5e2b2e}{get}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a325b2a672738437bc5aa7300465f5705}{post}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a607ebfcb1bdb03b42a5dde85bc8d69e3}{put}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ad8b2355c0441251f9e4aa56fa424efba}{delete}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6f6ed03933024b22a2397e9755ad0115}{patch}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a285cc0d854951561496089ebcd250052}{route}} (self, str rule, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any options)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7d05fbf50f1397943e005e2c8a788a55}{F}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a33185677e2d2573626fb3e3b7f114e55}{endpoint}} (self, str endpoint)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}{T\+\_\+before\+\_\+request}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ad1546f508345e29b290998f9a465c6fe}{before\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_aed06e92674f14375a2a40dd4349ac7f6}{T\+\_\+before\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}{T\+\_\+after\+\_\+request}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a24ed4e468a0099bf681ba5f1058c6bee}{after\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_ad51561b916ef632d6e28c646095e9f13}{T\+\_\+after\+\_\+request}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}{T\+\_\+teardown}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a7c74a8687780d21df2ecdb780afc8b25}{teardown\+\_\+request}} (self, \doxymbox{\hyperlink{namespacescaffold_a75cbfb6f3c42ee49e4fe1cd66e9816f6}{T\+\_\+teardown}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}{T\+\_\+template\+\_\+context\+\_\+processor}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a3f6372e98460286444443a2e9d272396}{context\+\_\+processor}} (self, \doxymbox{\hyperlink{namespacescaffold_ab13707f8e0f796a3ebfb6d060a9d1689}{T\+\_\+template\+\_\+context\+\_\+processor}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a677110782eab2387f5dae4a1c40251af}{url\+\_\+value\+\_\+preprocessor}} (self, \doxymbox{\hyperlink{namespacescaffold_a3139db2cf8eb0ad7da1d29fafa56d7d8}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} f)
+\item 
+\doxymbox{\hyperlink{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}{T\+\_\+url\+\_\+defaults}} \doxymbox{\hyperlink{classscaffold_1_1_scaffold_afc7a17e1a930ad8763c7f05038c76dd3}{url\+\_\+defaults}} (self, \doxymbox{\hyperlink{namespacescaffold_a81ab75821f2eab7ae8c76dd2a0e336cf}{T\+\_\+url\+\_\+defaults}} f)
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}{T\+\_\+error\+\_\+handler}}]\+, \doxymbox{\hyperlink{namespacescaffold_ab68a621547f9be476de4b0711cbc5368}{T\+\_\+error\+\_\+handler}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a9ebf0e8ece66d2cfdec489bed6d415ca}{errorhandler}} (self, type\+[Exception]\+\texorpdfstring{$\vert$}{|}int code\+\_\+or\+\_\+exception)
+\item 
+None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_adfb04cc856af75d7d4d3f6ee9f585cd7}{register\+\_\+error\+\_\+handler}} (self, type\+[Exception]\+\texorpdfstring{$\vert$}{|}int code\+\_\+or\+\_\+exception, ft.\+Error\+Handler\+Callable f)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_a713111f3f066b5d5398962ca25994ee8}{name}} = name
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_a8c43d684eccdc13cbeea3d168231223d}{url\+\_\+prefix}} = url\+\_\+prefix
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_af20e1c744312adc4392f42c5ec45acd7}{subdomain}} = subdomain
+\item 
+list \doxymbox{\hyperlink{classblueprints_1_1_blueprint_aae87b3070c1af1515416728a6fbe3488}{deferred\+\_\+functions}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_a4357af9695f00939fef39aa34dd9d028}{url\+\_\+values\+\_\+defaults}} = \doxymbox{\hyperlink{classscaffold_1_1_scaffold_afc7a17e1a930ad8763c7f05038c76dd3}{url\+\_\+defaults}}
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_afbdceac3298eeda7085e3a56c0923c37}{cli\+\_\+group}} = cli\+\_\+group
+\item 
+\doxymbox{\hyperlink{classblueprints_1_1_blueprint_ae5682c3602870ba0d60e0e85f6046999}{cli}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a70fe9646e4a11501457bd2b0183a567c}{import\+\_\+name}} = import\+\_\+name
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac4851ea3bf9edad7f25ab94b882025b5}{static\+\_\+folder}} = static\+\_\+folder
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab6c6ea6ac4dfdfce5d76097c737fbbe9}{static\+\_\+url\+\_\+path}} = static\+\_\+url\+\_\+path
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_a0122c59050445d73bb8a6c2e8fd39d46}{template\+\_\+folder}} = template\+\_\+folder
+\item 
+\doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac408d68b2facaca0f88b8235269fb152}{root\+\_\+path}} = root\+\_\+path
+\item 
+dict \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab2504480ecc9f6a787b7f44f20444f97}{view\+\_\+functions}} = \{\}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac4632909f676b9bc155e10f373ad5426}{error\+\_\+handler\+\_\+spec}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a2c7ae86de91f588e84dbdf7b279c6011}{before\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab877dcc83d762dc78baa055ef513afed}{after\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a43497c1918d6055cbecaac1c5c52fade}{teardown\+\_\+request\+\_\+funcs}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ab22d56c8bd060739981757471595b2a6}{template\+\_\+context\+\_\+processors}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a22595a42a693976065a1b1cbc1c2c430}{url\+\_\+value\+\_\+preprocessors}}
+\item 
+dict\+[ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a6d5bb64d21df767a80118c1557c56c61}{url\+\_\+default\+\_\+functions}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a28aa7a3ae9bc54ca000a36866459a00b}{\+\_\+check\+\_\+setup\+\_\+finished}} (self, str f\+\_\+name)
+\item 
+None \doxymbox{\hyperlink{classblueprints_1_1_blueprint_aaff20de1a6a63e8d49bf3ec1e861b5ec}{\+\_\+merge\+\_\+blueprint\+\_\+funcs}} (self, App app, str name)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Callable\+[\+[\doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+, \doxymbox{\hyperlink{namespacescaffold_a7017790a8379cf472002e9bab4e39de6}{T\+\_\+route}}]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_affe0235bae4b947eece9f7d9c9e92532}{\+\_\+method\+\_\+route}} (self, str method, str rule, dict\+[str, t.\+Any]\+ options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a0d1094e72aad812e3bbecdea20faa4c8}{\+\_\+blueprints}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classblueprints_1_1_blueprint_a4e2daf150a90e5fc85973aa6b7a8496a}{\+\_\+got\+\_\+registered\+\_\+once}} = False
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_aed73996facad3e45651c89bd2faca075}{\+\_\+static\+\_\+folder}} = None
+\item 
+str \doxymbox{\hyperlink{classscaffold_1_1_scaffold_aac7655eb16238a01825f3360339769c1}{\+\_\+static\+\_\+url\+\_\+path}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Member Functions inherited from \doxymbox{\hyperlink{classscaffold_1_1_scaffold}{scaffold.\+Scaffold}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[type\+[Exception]\+, int\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a7be58c24cc765c952fe0290635797da1}{\+\_\+get\+\_\+exc\+\_\+class\+\_\+and\+\_\+code}} (type\+[Exception]\+\texorpdfstring{$\vert$}{|}int exc\+\_\+class\+\_\+or\+\_\+code)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a blueprint, a collection of routes and other
+app-related functions that can be registered on a real application
+later.
+
+A blueprint is an object that allows defining application functions
+without requiring an application object ahead of time. It uses the
+same decorators as :class:`~flask.Flask`, but defers the need for an
+application by recording them for later registration.
+
+Decorating a function with a blueprint creates a deferred function
+that is called with :class:`~flask.blueprints.BlueprintSetupState`
+when the blueprint is registered on an application.
+
+See :doc:`/blueprints` for more information.
+
+:param name: The name of the blueprint. Will be prepended to each
+    endpoint name.
+:param import_name: The name of the blueprint package, usually
+    ``__name__``. This helps locate the ``root_path`` for the
+    blueprint.
+:param static_folder: A folder with static files that should be
+    served by the blueprint's static route. The path is relative to
+    the blueprint's root path. Blueprint static files are disabled
+    by default.
+:param static_url_path: The url to serve static files from.
+    Defaults to ``static_folder``. If the blueprint does not have
+    a ``url_prefix``, the app's static route will take precedence,
+    and the blueprint's static files won't be accessible.
+:param template_folder: A folder with templates that should be added
+    to the app's template search path. The path is relative to the
+    blueprint's root path. Blueprint templates are disabled by
+    default. Blueprint templates have a lower precedence than those
+    in the app's templates folder.
+:param url_prefix: A path to prepend to all of the blueprint's URLs,
+    to make them distinct from the rest of the app's routes.
+:param subdomain: A subdomain that blueprint routes will match on by
+    default.
+:param url_defaults: A dict of default values that blueprint routes
+    will receive by default.
+:param root_path: By default, the blueprint will automatically set
+    this based on ``import_name``. In certain situations this
+    automatic detection can fail, so the path can be specified
+    manually instead.
+
+.. versionchanged:: 1.1.0
+    Blueprints have a ``cli`` group to register nested CLI commands.
+    The ``cli_group`` parameter controls the name of the group under
+    the ``flask`` command.
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ 
+
+\label{classblueprints_1_1_blueprint_doc-constructors}
+\Hypertarget{classblueprints_1_1_blueprint_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_a04c26731ce09105656b490a3b3a5e2c0}\index{blueprints.Blueprint@{blueprints.Blueprint}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a04c26731ce09105656b490a3b3a5e2c0} 
+blueprints.\+Blueprint.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{, }\item[{str}]{import\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{static\+\_\+folder}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{static\+\_\+url\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} os.\+Path\+Like\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{template\+\_\+folder}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{url\+\_\+prefix}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{subdomain}{ = {\ttfamily None}, }\item[{dict\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{url\+\_\+defaults}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{root\+\_\+path}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{cli\+\_\+group}{ = {\ttfamily \+\_\+sentinel}}\end{DoxyParamCaption})}
+
+
+
+\label{classblueprints_1_1_blueprint_doc-func-members}
+\Hypertarget{classblueprints_1_1_blueprint_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_a28aa7a3ae9bc54ca000a36866459a00b}\index{blueprints.Blueprint@{blueprints.Blueprint}!\_check\_setup\_finished@{\_check\_setup\_finished}}
+\index{\_check\_setup\_finished@{\_check\_setup\_finished}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_check\_setup\_finished()}{\_check\_setup\_finished()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a28aa7a3ae9bc54ca000a36866459a00b} 
+ None blueprints.\+Blueprint.\+\_\+check\+\_\+setup\+\_\+finished (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{f\+\_\+name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classscaffold_1_1_scaffold_a742d43785a00bf2ffcafc085d1aa60f2}{scaffold.\+Scaffold}}.
+
+\Hypertarget{classblueprints_1_1_blueprint_aaff20de1a6a63e8d49bf3ec1e861b5ec}\index{blueprints.Blueprint@{blueprints.Blueprint}!\_merge\_blueprint\_funcs@{\_merge\_blueprint\_funcs}}
+\index{\_merge\_blueprint\_funcs@{\_merge\_blueprint\_funcs}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_merge\_blueprint\_funcs()}{\_merge\_blueprint\_funcs()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_aaff20de1a6a63e8d49bf3ec1e861b5ec} 
+ None blueprints.\+Blueprint.\+\_\+merge\+\_\+blueprint\+\_\+funcs (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{App}]{app}{, }\item[{str}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblueprints_1_1_blueprint_af8cf282ee843db7f02e0375338b0103b}\index{blueprints.Blueprint@{blueprints.Blueprint}!add\_app\_template\_filter@{add\_app\_template\_filter}}
+\index{add\_app\_template\_filter@{add\_app\_template\_filter}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{add\_app\_template\_filter()}{add\_app\_template\_filter()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_af8cf282ee843db7f02e0375338b0103b} 
+ None blueprints.\+Blueprint.\+add\+\_\+app\+\_\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Filter\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template filter, available in any template rendered by the
+application. Works like the :meth:`app_template_filter` decorator. Equivalent to
+:meth:`.Flask.add_template_filter`.
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_abbceab82a74fdf3ebab6ab622dba4c34}\index{blueprints.Blueprint@{blueprints.Blueprint}!add\_app\_template\_global@{add\_app\_template\_global}}
+\index{add\_app\_template\_global@{add\_app\_template\_global}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{add\_app\_template\_global()}{add\_app\_template\_global()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_abbceab82a74fdf3ebab6ab622dba4c34} 
+ None blueprints.\+Blueprint.\+add\+\_\+app\+\_\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Global\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template global, available in any template rendered by the
+application. Works like the :meth:`app_template_global` decorator. Equivalent to
+:meth:`.Flask.add_template_global`.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a77b8b6e432f0a516730fd53c8d2768ab}\index{blueprints.Blueprint@{blueprints.Blueprint}!add\_app\_template\_test@{add\_app\_template\_test}}
+\index{add\_app\_template\_test@{add\_app\_template\_test}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{add\_app\_template\_test()}{add\_app\_template\_test()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a77b8b6e432f0a516730fd53c8d2768ab} 
+ None blueprints.\+Blueprint.\+add\+\_\+app\+\_\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{ft.\+Template\+Test\+Callable}]{f}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template test, available in any template rendered by the
+application. Works like the :meth:`app_template_test` decorator. Equivalent to
+:meth:`.Flask.add_template_test`.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a5ae4c069326e5a34c2145832299d10b4}\index{blueprints.Blueprint@{blueprints.Blueprint}!add\_url\_rule@{add\_url\_rule}}
+\index{add\_url\_rule@{add\_url\_rule}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{add\_url\_rule()}{add\_url\_rule()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a5ae4c069326e5a34c2145832299d10b4} 
+ None blueprints.\+Blueprint.\+add\+\_\+url\+\_\+rule (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{rule}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{endpoint}{ = {\ttfamily None}, }\item[{ft.\+Route\+Callable \texorpdfstring{$\vert$}{|} None }]{view\+\_\+func}{ = {\ttfamily None}, }\item[{bool \texorpdfstring{$\vert$}{|} None }]{provide\+\_\+automatic\+\_\+options}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a URL rule with the blueprint. See :meth:`.Flask.add_url_rule` for
+full documentation.
+
+The URL rule is prefixed with the blueprint's URL prefix. The endpoint name,
+used with :func:`url_for`, is prefixed with the blueprint's name.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classscaffold_1_1_scaffold_ac8068de2847188d4c12448257d4fa40f}{scaffold.\+Scaffold}}.
+
+\Hypertarget{classblueprints_1_1_blueprint_a1bfd0a1e7bbd4e6731786e14ef981de1}\index{blueprints.Blueprint@{blueprints.Blueprint}!after\_app\_request@{after\_app\_request}}
+\index{after\_app\_request@{after\_app\_request}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{after\_app\_request()}{after\_app\_request()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a1bfd0a1e7bbd4e6731786e14ef981de1} 
+ \doxymbox{\hyperlink{namespaceblueprints_a2a4e45bab8b4683d747c7fae5ae63c81}{T\+\_\+after\+\_\+request}} blueprints.\+Blueprint.\+after\+\_\+app\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a2a4e45bab8b4683d747c7fae5ae63c81}{T\+\_\+after\+\_\+request}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`after_request`, but after every request, not only those handled
+by the blueprint. Equivalent to :meth:`.Flask.after_request`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a6700d6e70ae11f48918b642f95be18f9}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_context\_processor@{app\_context\_processor}}
+\index{app\_context\_processor@{app\_context\_processor}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_context\_processor()}{app\_context\_processor()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a6700d6e70ae11f48918b642f95be18f9} 
+ \doxymbox{\hyperlink{namespaceblueprints_aacf3bc9593f25c1403be47632c727db5}{T\+\_\+template\+\_\+context\+\_\+processor}} blueprints.\+Blueprint.\+app\+\_\+context\+\_\+processor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_aacf3bc9593f25c1403be47632c727db5}{T\+\_\+template\+\_\+context\+\_\+processor}}     }]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`context_processor`, but for templates rendered by every view, not
+only by the blueprint. Equivalent to :meth:`.Flask.context_processor`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a2ddcdd2f9e958792d3a8a30cedf2391f}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_errorhandler@{app\_errorhandler}}
+\index{app\_errorhandler@{app\_errorhandler}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_errorhandler()}{app\_errorhandler()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a2ddcdd2f9e958792d3a8a30cedf2391f} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_a212ea279c4c46e5fe81890d656bc928b}{T\+\_\+error\+\_\+handler}}]\+, \doxymbox{\hyperlink{namespaceblueprints_a212ea279c4c46e5fe81890d656bc928b}{T\+\_\+error\+\_\+handler}}]\+ blueprints.\+Blueprint.\+app\+\_\+errorhandler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{type\+[Exception]\+ \texorpdfstring{$\vert$}{|} int     }]{code}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`errorhandler`, but for every request, not only those handled by
+the blueprint. Equivalent to :meth:`.Flask.errorhandler`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_acb7d301721802b4a2221e65a23975ea8}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_template\_filter@{app\_template\_filter}}
+\index{app\_template\_filter@{app\_template\_filter}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_template\_filter()}{app\_template\_filter()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_acb7d301721802b4a2221e65a23975ea8} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_ae1cea061a95af877dcfd95f49be196c6}{T\+\_\+template\+\_\+filter}}]\+, \doxymbox{\hyperlink{namespaceblueprints_ae1cea061a95af877dcfd95f49be196c6}{T\+\_\+template\+\_\+filter}}]\+ blueprints.\+Blueprint.\+app\+\_\+template\+\_\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template filter, available in any template rendered by the
+application. Equivalent to :meth:`.Flask.template_filter`.
+
+:param name: the optional name of the filter, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_ab17c0de20cead048e30e031d4ca5abe9}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_template\_global@{app\_template\_global}}
+\index{app\_template\_global@{app\_template\_global}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_template\_global()}{app\_template\_global()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_ab17c0de20cead048e30e031d4ca5abe9} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_afc27a99631ee9f5dda9ce5ea27350705}{T\+\_\+template\+\_\+global}}]\+, \doxymbox{\hyperlink{namespaceblueprints_afc27a99631ee9f5dda9ce5ea27350705}{T\+\_\+template\+\_\+global}}]\+ blueprints.\+Blueprint.\+app\+\_\+template\+\_\+global (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template global, available in any template rendered by the
+application. Equivalent to :meth:`.Flask.template_global`.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the global, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a3d94aec6e50a000f3570609836ff975c}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_template\_test@{app\_template\_test}}
+\index{app\_template\_test@{app\_template\_test}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_template\_test()}{app\_template\_test()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a3d94aec6e50a000f3570609836ff975c} 
+ t.\+Callable\+[\+[\doxymbox{\hyperlink{namespaceblueprints_a44f1d1968c8b42a0167fefe62d26c721}{T\+\_\+template\+\_\+test}}]\+, \doxymbox{\hyperlink{namespaceblueprints_a44f1d1968c8b42a0167fefe62d26c721}{T\+\_\+template\+\_\+test}}]\+ blueprints.\+Blueprint.\+app\+\_\+template\+\_\+test (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a template test, available in any template rendered by the
+application. Equivalent to :meth:`.Flask.template_test`.
+
+.. versionadded:: 0.10
+
+:param name: the optional name of the test, otherwise the
+             function name will be used.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a6e0fb95db681bb8e251674661cecde5c}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_url\_defaults@{app\_url\_defaults}}
+\index{app\_url\_defaults@{app\_url\_defaults}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_url\_defaults()}{app\_url\_defaults()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a6e0fb95db681bb8e251674661cecde5c} 
+ \doxymbox{\hyperlink{namespaceblueprints_ac0b1823cd5ec26f53f06d9272cfccefe}{T\+\_\+url\+\_\+defaults}} blueprints.\+Blueprint.\+app\+\_\+url\+\_\+defaults (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_ac0b1823cd5ec26f53f06d9272cfccefe}{T\+\_\+url\+\_\+defaults}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`url_defaults`, but for every request, not only those handled by
+the blueprint. Equivalent to :meth:`.Flask.url_defaults`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a7d6ab97624b2f2294468c426a6964824}\index{blueprints.Blueprint@{blueprints.Blueprint}!app\_url\_value\_preprocessor@{app\_url\_value\_preprocessor}}
+\index{app\_url\_value\_preprocessor@{app\_url\_value\_preprocessor}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{app\_url\_value\_preprocessor()}{app\_url\_value\_preprocessor()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a7d6ab97624b2f2294468c426a6964824} 
+ \doxymbox{\hyperlink{namespaceblueprints_a6a7647d983c2af76487ec8e95cf8a102}{T\+\_\+url\+\_\+value\+\_\+preprocessor}} blueprints.\+Blueprint.\+app\+\_\+url\+\_\+value\+\_\+preprocessor (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a6a7647d983c2af76487ec8e95cf8a102}{T\+\_\+url\+\_\+value\+\_\+preprocessor}}     }]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`url_value_preprocessor`, but for every request, not only those
+handled by the blueprint. Equivalent to :meth:`.Flask.url_value_preprocessor`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a35138d970288d1f10ca16d67d2348e36}\index{blueprints.Blueprint@{blueprints.Blueprint}!before\_app\_request@{before\_app\_request}}
+\index{before\_app\_request@{before\_app\_request}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{before\_app\_request()}{before\_app\_request()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a35138d970288d1f10ca16d67d2348e36} 
+ \doxymbox{\hyperlink{namespaceblueprints_a9644dbdbd44ae89b891d91a5107333c7}{T\+\_\+before\+\_\+request}} blueprints.\+Blueprint.\+before\+\_\+app\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a9644dbdbd44ae89b891d91a5107333c7}{T\+\_\+before\+\_\+request}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`before_request`, but before every request, not only those handled
+by the blueprint. Equivalent to :meth:`.Flask.before_request`.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a1fb3758608318e3819d57917f1112671}\index{blueprints.Blueprint@{blueprints.Blueprint}!make\_setup\_state@{make\_setup\_state}}
+\index{make\_setup\_state@{make\_setup\_state}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{make\_setup\_state()}{make\_setup\_state()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a1fb3758608318e3819d57917f1112671} 
+ \doxymbox{\hyperlink{classblueprints_1_1_blueprint_setup_state}{Blueprint\+Setup\+State}} blueprints.\+Blueprint.\+make\+\_\+setup\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{App}]{app}{, }\item[{dict\+[str, t.\+Any]\+}]{options}{, }\item[{bool }]{first\+\_\+registration}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates an instance of :meth:`~flask.blueprints.BlueprintSetupState`
+object that is later passed to the register callback functions.
+Subclasses can override this to return a subclass of the setup state.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_afc9856ccbba346effa2c6230007acaf2}\index{blueprints.Blueprint@{blueprints.Blueprint}!record@{record}}
+\index{record@{record}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_afc9856ccbba346effa2c6230007acaf2} 
+ None blueprints.\+Blueprint.\+record (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a9b327ceacc32effae550192f4bee8061}{Deferred\+Setup\+Function}}}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Registers a function that is called when the blueprint is
+registered on the application.  This function is called with the
+state as argument as returned by the :meth:`make_setup_state`
+method.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a011c5c09faec222e9f92c3fa90533cc2}\index{blueprints.Blueprint@{blueprints.Blueprint}!record\_once@{record\_once}}
+\index{record\_once@{record\_once}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{record\_once()}{record\_once()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a011c5c09faec222e9f92c3fa90533cc2} 
+ None blueprints.\+Blueprint.\+record\+\_\+once (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a9b327ceacc32effae550192f4bee8061}{Deferred\+Setup\+Function}}}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Works like :meth:`record` but wraps the function in another
+function that will ensure the function is only called once.  If the
+blueprint is registered a second time on the application, the
+function passed is not called.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a1865f79500dae82133b1315f8aada174}\index{blueprints.Blueprint@{blueprints.Blueprint}!register@{register}}
+\index{register@{register}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a1865f79500dae82133b1315f8aada174} 
+ None blueprints.\+Blueprint.\+register (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{App}]{app}{, }\item[{dict\+[str, t.\+Any]\+}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Called by :meth:`Flask.register_blueprint` to register all
+views and callbacks registered on the blueprint with the
+application. Creates a :class:`.BlueprintSetupState` and calls
+each :meth:`record` callback with it.
+
+:param app: The application this blueprint is being registered
+    with.
+:param options: Keyword arguments forwarded from
+    :meth:`~Flask.register_blueprint`.
+
+.. versionchanged:: 2.3
+    Nested blueprints now correctly apply subdomains.
+
+.. versionchanged:: 2.1
+    Registering the same blueprint with the same name multiple
+    times is an error.
+
+.. versionchanged:: 2.0.1
+    Nested blueprints are registered with their dotted name.
+    This allows different blueprints with the same name to be
+    nested at different locations.
+
+.. versionchanged:: 2.0.1
+    The ``name`` option can be used to change the (pre-dotted)
+    name the blueprint is registered with. This allows the same
+    blueprint to be registered multiple times with unique names
+    for ``url_for``.
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_ae21f5c07c5523650bf7df162ef96c799}\index{blueprints.Blueprint@{blueprints.Blueprint}!register\_blueprint@{register\_blueprint}}
+\index{register\_blueprint@{register\_blueprint}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{register\_blueprint()}{register\_blueprint()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_ae21f5c07c5523650bf7df162ef96c799} 
+ None blueprints.\+Blueprint.\+register\+\_\+blueprint (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classblueprints_1_1_blueprint}{Blueprint}}}]{blueprint}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Register a :class:`~flask.Blueprint` on this blueprint. Keyword
+arguments passed to this method will override the defaults set
+on the blueprint.
+
+.. versionchanged:: 2.0.1
+    The ``name`` option can be used to change the (pre-dotted)
+    name the blueprint is registered with. This allows the same
+    blueprint to be registered multiple times with unique names
+    for ``url_for``.
+
+.. versionadded:: 2.0
+\end{DoxyVerb}
+ \Hypertarget{classblueprints_1_1_blueprint_a4366585745aff0939bb59b446f14f479}\index{blueprints.Blueprint@{blueprints.Blueprint}!teardown\_app\_request@{teardown\_app\_request}}
+\index{teardown\_app\_request@{teardown\_app\_request}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{teardown\_app\_request()}{teardown\_app\_request()}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a4366585745aff0939bb59b446f14f479} 
+ \doxymbox{\hyperlink{namespaceblueprints_a2ade25ba089023f294e8aadfb22c5078}{T\+\_\+teardown}} blueprints.\+Blueprint.\+teardown\+\_\+app\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespaceblueprints_a2ade25ba089023f294e8aadfb22c5078}{T\+\_\+teardown}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like :meth:`teardown_request`, but after every request, not only those
+handled by the blueprint. Equivalent to :meth:`.Flask.teardown_request`.
+\end{DoxyVerb}
+ 
+
+\label{classblueprints_1_1_blueprint_doc-variable-members}
+\Hypertarget{classblueprints_1_1_blueprint_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classblueprints_1_1_blueprint_a0d1094e72aad812e3bbecdea20faa4c8}\index{blueprints.Blueprint@{blueprints.Blueprint}!\_blueprints@{\_blueprints}}
+\index{\_blueprints@{\_blueprints}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_blueprints}{\_blueprints}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a0d1094e72aad812e3bbecdea20faa4c8} 
+list blueprints.\+Blueprint.\+\_\+blueprints = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classblueprints_1_1_blueprint_a4e2daf150a90e5fc85973aa6b7a8496a}\index{blueprints.Blueprint@{blueprints.Blueprint}!\_got\_registered\_once@{\_got\_registered\_once}}
+\index{\_got\_registered\_once@{\_got\_registered\_once}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{\_got\_registered\_once}{\_got\_registered\_once}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a4e2daf150a90e5fc85973aa6b7a8496a} 
+bool blueprints.\+Blueprint.\+\_\+got\+\_\+registered\+\_\+once = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classblueprints_1_1_blueprint_ae5682c3602870ba0d60e0e85f6046999}\index{blueprints.Blueprint@{blueprints.Blueprint}!cli@{cli}}
+\index{cli@{cli}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{cli}{cli}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_ae5682c3602870ba0d60e0e85f6046999} 
+blueprints.\+Blueprint.\+cli}
+
+\Hypertarget{classblueprints_1_1_blueprint_afbdceac3298eeda7085e3a56c0923c37}\index{blueprints.Blueprint@{blueprints.Blueprint}!cli\_group@{cli\_group}}
+\index{cli\_group@{cli\_group}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{cli\_group}{cli\_group}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_afbdceac3298eeda7085e3a56c0923c37} 
+blueprints.\+Blueprint.\+cli\+\_\+group = cli\+\_\+group}
+
+\Hypertarget{classblueprints_1_1_blueprint_aae87b3070c1af1515416728a6fbe3488}\index{blueprints.Blueprint@{blueprints.Blueprint}!deferred\_functions@{deferred\_functions}}
+\index{deferred\_functions@{deferred\_functions}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{deferred\_functions}{deferred\_functions}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_aae87b3070c1af1515416728a6fbe3488} 
+list blueprints.\+Blueprint.\+deferred\+\_\+functions = \+[$\,$]\+}
+
+\Hypertarget{classblueprints_1_1_blueprint_a713111f3f066b5d5398962ca25994ee8}\index{blueprints.Blueprint@{blueprints.Blueprint}!name@{name}}
+\index{name@{name}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a713111f3f066b5d5398962ca25994ee8} 
+blueprints.\+Blueprint.\+name = name}
+
+\Hypertarget{classblueprints_1_1_blueprint_af20e1c744312adc4392f42c5ec45acd7}\index{blueprints.Blueprint@{blueprints.Blueprint}!subdomain@{subdomain}}
+\index{subdomain@{subdomain}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{subdomain}{subdomain}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_af20e1c744312adc4392f42c5ec45acd7} 
+blueprints.\+Blueprint.\+subdomain = subdomain}
+
+\Hypertarget{classblueprints_1_1_blueprint_a8c43d684eccdc13cbeea3d168231223d}\index{blueprints.Blueprint@{blueprints.Blueprint}!url\_prefix@{url\_prefix}}
+\index{url\_prefix@{url\_prefix}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{url\_prefix}{url\_prefix}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a8c43d684eccdc13cbeea3d168231223d} 
+blueprints.\+Blueprint.\+url\+\_\+prefix = url\+\_\+prefix}
+
+\Hypertarget{classblueprints_1_1_blueprint_a4357af9695f00939fef39aa34dd9d028}\index{blueprints.Blueprint@{blueprints.Blueprint}!url\_values\_defaults@{url\_values\_defaults}}
+\index{url\_values\_defaults@{url\_values\_defaults}!blueprints.Blueprint@{blueprints.Blueprint}}
+\doxysubsubsection{\texorpdfstring{url\_values\_defaults}{url\_values\_defaults}}
+{\footnotesize\ttfamily \label{classblueprints_1_1_blueprint_a4357af9695f00939fef39aa34dd9d028} 
+blueprints.\+Blueprint.\+url\+\_\+values\+\_\+defaults = \doxymbox{\hyperlink{classscaffold_1_1_scaffold_afc7a17e1a930ad8763c7f05038c76dd3}{url\+\_\+defaults}}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+sansio/\+\doxymbox{\hyperlink{sansio_2blueprints_8py}{blueprints.\+py}}\end{DoxyCompactItemize}

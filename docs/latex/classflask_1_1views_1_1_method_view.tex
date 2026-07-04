@@ -1,0 +1,86 @@
+\doxysection{flask.\+views.\+Method\+View Class Reference}
+\hypertarget{classflask_1_1views_1_1_method_view}{}\label{classflask_1_1views_1_1_method_view}\index{flask.views.MethodView@{flask.views.MethodView}}
+Inheritance diagram for flask.\+views.\+Method\+View:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1views_1_1_method_view}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1views_1_1_method_view_adb5fdee17385231f27ccb152ae9adc11}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+ft.\+Response\+Return\+Value \doxymbox{\hyperlink{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}{dispatch\+\_\+request}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+ft.\+Route\+Callable \doxymbox{\hyperlink{classflask_1_1views_1_1_view_a9d6a012b3994be83e019711e2ef0d3ca}{as\+\_\+view}} (cls, str name, \texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any class\+\_\+kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{classflask_1_1views_1_1_view}{flask.\+views.\+View}}}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_ad60f42849c8b0faf7c705d7b5e9ca852}{methods}} = None
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_a37709e8d353298b7ac04138fe59dd828}{provide\+\_\+automatic\+\_\+options}} = None
+\item 
+list \doxymbox{\hyperlink{classflask_1_1views_1_1_view_ad29bec70fad64d8e774e15e7e0da360e}{decorators}} = \+[$\,$]\+
+\item 
+t \doxymbox{\hyperlink{classflask_1_1views_1_1_view_afeac1f3682f5ce5665b97c4511ff5b3f}{init\+\_\+every\+\_\+request}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Dispatches request methods to the corresponding instance methods.
+For example, if you implement a ``get`` method, it will be used to
+handle ``GET`` requests.
+
+This can be useful for defining a REST API.
+
+:attr:`methods` is automatically set based on the methods defined on
+the class.
+
+See :doc:`views` for a detailed guide.
+
+.. code-block:: python
+
+    class CounterAPI(MethodView):
+        def get(self):
+            return str(session.get("counter", 0))
+
+        def post(self):
+            session["counter"] = session.get("counter", 0) + 1
+            return redirect(url_for("counter"))
+
+    app.add_url_rule(
+        "/counter", view_func=CounterAPI.as_view("counter")
+    )
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1views_1_1_method_view_doc-func-members}
+\Hypertarget{classflask_1_1views_1_1_method_view_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1views_1_1_method_view_adb5fdee17385231f27ccb152ae9adc11}\index{flask.views.MethodView@{flask.views.MethodView}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!flask.views.MethodView@{flask.views.MethodView}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_method_view_adb5fdee17385231f27ccb152ae9adc11} 
+ None flask.\+views.\+Method\+View.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842}\index{flask.views.MethodView@{flask.views.MethodView}!dispatch\_request@{dispatch\_request}}
+\index{dispatch\_request@{dispatch\_request}!flask.views.MethodView@{flask.views.MethodView}}
+\doxysubsubsection{\texorpdfstring{dispatch\_request()}{dispatch\_request()}}
+{\footnotesize\ttfamily \label{classflask_1_1views_1_1_method_view_aa532d2ee47791b6e5ebc7bfeba139842} 
+ ft.\+Response\+Return\+Value flask.\+views.\+Method\+View.\+dispatch\+\_\+request (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1views_1_1_view_ac39f1bca192978404f2f47d0b8c38c73}{flask.\+views.\+View}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+\doxymbox{\hyperlink{views_8py}{views.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,179 @@
+\doxysection{werkzeug.\+security Namespace Reference}
+\hypertarget{namespacewerkzeug_1_1security}{}\label{namespacewerkzeug_1_1security}\index{werkzeug.security@{werkzeug.security}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1security_acc8f8c3fd988fa668034392b1a29420a}{gen\+\_\+salt}} (int length)
+\item 
+tuple\+[str, str]\+ \doxymbox{\hyperlink{namespacewerkzeug_1_1security_a03784bf06f514dd974119985e8795625}{\+\_\+hash\+\_\+internal}} (str method, str salt, str password)
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1security_aaacedb89b039167e4462aa22747154f0}{generate\+\_\+password\+\_\+hash}} (str password, str method="{}scrypt"{}, int salt\+\_\+length=16)
+\item 
+bool \doxymbox{\hyperlink{namespacewerkzeug_1_1security_a1037b409e3ef1b5171d5365e3c7ad9ea}{check\+\_\+password\+\_\+hash}} (str pwhash, str password)
+\item 
+str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespacewerkzeug_1_1security_ae37c30aa203653b7a47f0a7135efd9db}{safe\+\_\+join}} (str directory, \texorpdfstring{$\ast$}{*}str untrusted)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacewerkzeug_1_1security_afd423731350943caaa2d355aaa41c324}{SALT\+\_\+\+CHARS}} = "{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"{}
+\item 
+int \doxymbox{\hyperlink{namespacewerkzeug_1_1security_a4da7d89d5be424b1c7ccb5e6f17d0c54}{DEFAULT\+\_\+\+PBKDF2\+\_\+\+ITERATIONS}} = 1\+\_\+000\+\_\+000
+\item 
+list \doxymbox{\hyperlink{namespacewerkzeug_1_1security_af2dec36bce0ed394c3ab5d09f62aafdc}{\+\_\+os\+\_\+alt\+\_\+seps}}
+\item 
+dict \doxymbox{\hyperlink{namespacewerkzeug_1_1security_a841e28cee9ce1bcfc00522846382db47}{\+\_\+windows\+\_\+device\+\_\+files}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacewerkzeug_1_1security_doc-func-members}
+\Hypertarget{namespacewerkzeug_1_1security_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacewerkzeug_1_1security_a03784bf06f514dd974119985e8795625}\index{werkzeug.security@{werkzeug.security}!\_hash\_internal@{\_hash\_internal}}
+\index{\_hash\_internal@{\_hash\_internal}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{\_hash\_internal()}{\_hash\_internal()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_a03784bf06f514dd974119985e8795625} 
+ tuple\+[str, str]\+ \+\_\+hash\+\_\+internal (\begin{DoxyParamCaption}\item[{str}]{method}{, }\item[{str}]{salt}{, }\item[{str}]{password}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacewerkzeug_1_1security_a1037b409e3ef1b5171d5365e3c7ad9ea}\index{werkzeug.security@{werkzeug.security}!check\_password\_hash@{check\_password\_hash}}
+\index{check\_password\_hash@{check\_password\_hash}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{check\_password\_hash()}{check\_password\_hash()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_a1037b409e3ef1b5171d5365e3c7ad9ea} 
+ bool check\+\_\+password\+\_\+hash (\begin{DoxyParamCaption}\item[{str}]{pwhash}{, }\item[{str}]{password}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Securely check that the given stored password hash, previously generated using
+:func:`generate_password_hash`, matches the given password.
+
+Methods may be deprecated and removed if they are no longer considered secure. To
+migrate old hashes, you may generate a new hash when checking an old hash, or you
+may contact users with a link to reset their password.
+
+:param pwhash: The hashed password.
+:param password: The plaintext password.
+
+.. versionchanged:: 2.3
+    All plain hashes are deprecated and will not be supported in Werkzeug 3.0.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1security_acc8f8c3fd988fa668034392b1a29420a}\index{werkzeug.security@{werkzeug.security}!gen\_salt@{gen\_salt}}
+\index{gen\_salt@{gen\_salt}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{gen\_salt()}{gen\_salt()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_acc8f8c3fd988fa668034392b1a29420a} 
+ str gen\+\_\+salt (\begin{DoxyParamCaption}\item[{int}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a random string of SALT_CHARS with specified ``length``.\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1security_aaacedb89b039167e4462aa22747154f0}\index{werkzeug.security@{werkzeug.security}!generate\_password\_hash@{generate\_password\_hash}}
+\index{generate\_password\_hash@{generate\_password\_hash}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{generate\_password\_hash()}{generate\_password\_hash()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_aaacedb89b039167e4462aa22747154f0} 
+ str generate\+\_\+password\+\_\+hash (\begin{DoxyParamCaption}\item[{str}]{password}{, }\item[{str }]{method}{ = {\ttfamily "{}scrypt"{}}, }\item[{int }]{salt\+\_\+length}{ = {\ttfamily 16}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Securely hash a password for storage. A password can be compared to a stored hash
+using :func:`check_password_hash`.
+
+The following methods are supported:
+
+-   ``scrypt``, the default. The parameters are ``n``, ``r``, and ``p``, the default
+    is ``scrypt:32768:8:1``. See :func:`hashlib.scrypt`.
+-   ``pbkdf2``, less secure. The parameters are ``hash_method`` and ``iterations``,
+    the default is ``pbkdf2:sha256:600000``. See :func:`hashlib.pbkdf2_hmac`.
+
+Default parameters may be updated to reflect current guidelines, and methods may be
+deprecated and removed if they are no longer considered secure. To migrate old
+hashes, you may generate a new hash when checking an old hash, or you may contact
+users with a link to reset their password.
+
+:param password: The plaintext password.
+:param method: The key derivation function and parameters.
+:param salt_length: The number of characters to generate for the salt.
+
+.. versionchanged:: 3.1
+    The default iterations for pbkdf2 was increased to 1,000,000.
+
+.. versionchanged:: 2.3
+    Scrypt support was added.
+
+.. versionchanged:: 2.3
+    The default iterations for pbkdf2 was increased to 600,000.
+
+.. versionchanged:: 2.3
+    All plain hashes are deprecated and will not be supported in Werkzeug 3.0.
+\end{DoxyVerb}
+ \Hypertarget{namespacewerkzeug_1_1security_ae37c30aa203653b7a47f0a7135efd9db}\index{werkzeug.security@{werkzeug.security}!safe\_join@{safe\_join}}
+\index{safe\_join@{safe\_join}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{safe\_join()}{safe\_join()}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_ae37c30aa203653b7a47f0a7135efd9db} 
+ str \texorpdfstring{$\vert$}{|} None safe\+\_\+join (\begin{DoxyParamCaption}\item[{str}]{directory}{, }\item[{\texorpdfstring{$\ast$}{*}str}]{untrusted}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Safely join zero or more untrusted path components to a trusted base
+directory to avoid escaping the base directory.
+
+The untrusted path is assumed to be from/for a URL, such as for serving
+files. Therefore, it should only use the forward slash ``/`` path separator,
+and will be joined using that separator. On Windows, the backslash ``\\``
+separator is not allowed.
+
+:param directory: The trusted base directory.
+:param untrusted: The untrusted path components relative to the
+    base directory.
+:return: A safe path, otherwise ``None``.
+
+.. versionchanged:: 3.1.6
+    Special device names in multi-segment paths are not allowed on Windows.
+
+.. versionchanged:: 3.1.5
+    More special device names, regardless of extension or trailing spaces,
+    are not allowed on Windows.
+
+.. versionchanged:: 3.1.4
+    Special device names are not allowed on Windows.
+\end{DoxyVerb}
+ 
+
+\label{namespacewerkzeug_1_1security_doc-var-members}
+\Hypertarget{namespacewerkzeug_1_1security_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacewerkzeug_1_1security_af2dec36bce0ed394c3ab5d09f62aafdc}\index{werkzeug.security@{werkzeug.security}!\_os\_alt\_seps@{\_os\_alt\_seps}}
+\index{\_os\_alt\_seps@{\_os\_alt\_seps}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{\_os\_alt\_seps}{\_os\_alt\_seps}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_af2dec36bce0ed394c3ab5d09f62aafdc} 
+list werkzeug.\+security.\+\_\+os\+\_\+alt\+\_\+seps\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ list(}
+\DoxyCodeLine{\ \ \ \ sep\ \textcolor{keywordflow}{for}\ sep\ \textcolor{keywordflow}{in}\ [os.sep,\ os.altsep]\ \textcolor{keywordflow}{if}\ sep\ \textcolor{keywordflow}{is}\ \textcolor{keywordflow}{not}\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{and}\ sep\ !=\ \textcolor{stringliteral}{"{}/"{}}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1security_a841e28cee9ce1bcfc00522846382db47}\index{werkzeug.security@{werkzeug.security}!\_windows\_device\_files@{\_windows\_device\_files}}
+\index{\_windows\_device\_files@{\_windows\_device\_files}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{\_windows\_device\_files}{\_windows\_device\_files}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_a841e28cee9ce1bcfc00522846382db47} 
+dict werkzeug.\+security.\+\_\+windows\+\_\+device\+\_\+files\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}AUX"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}CON"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}CONIN\$"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}CONOUT\$"{}},}
+\DoxyCodeLine{\ \ \ \ *(f\textcolor{stringliteral}{"{}COM\{c\}"{}}\ \textcolor{keywordflow}{for}\ c\ \textcolor{keywordflow}{in}\ \textcolor{stringliteral}{"{}123456789¹²³"{}}),}
+\DoxyCodeLine{\ \ \ \ *(f\textcolor{stringliteral}{"{}LPT\{c\}"{}}\ \textcolor{keywordflow}{for}\ c\ \textcolor{keywordflow}{in}\ \textcolor{stringliteral}{"{}123456789¹²³"{}}),}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}NUL"{}},}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{"{}PRN"{}},}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\Hypertarget{namespacewerkzeug_1_1security_a4da7d89d5be424b1c7ccb5e6f17d0c54}\index{werkzeug.security@{werkzeug.security}!DEFAULT\_PBKDF2\_ITERATIONS@{DEFAULT\_PBKDF2\_ITERATIONS}}
+\index{DEFAULT\_PBKDF2\_ITERATIONS@{DEFAULT\_PBKDF2\_ITERATIONS}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_PBKDF2\_ITERATIONS}{DEFAULT\_PBKDF2\_ITERATIONS}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_a4da7d89d5be424b1c7ccb5e6f17d0c54} 
+int werkzeug.\+security.\+DEFAULT\+\_\+\+PBKDF2\+\_\+\+ITERATIONS = 1\+\_\+000\+\_\+000}
+
+\Hypertarget{namespacewerkzeug_1_1security_afd423731350943caaa2d355aaa41c324}\index{werkzeug.security@{werkzeug.security}!SALT\_CHARS@{SALT\_CHARS}}
+\index{SALT\_CHARS@{SALT\_CHARS}!werkzeug.security@{werkzeug.security}}
+\doxysubsubsection{\texorpdfstring{SALT\_CHARS}{SALT\_CHARS}}
+{\footnotesize\ttfamily \label{namespacewerkzeug_1_1security_afd423731350943caaa2d355aaa41c324} 
+str werkzeug.\+security.\+SALT\+\_\+\+CHARS = "{}abcdefghijklmnopqrstuvwxyz\+ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"{}}
+

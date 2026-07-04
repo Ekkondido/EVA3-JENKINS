@@ -1,0 +1,108 @@
+\doxysection{flask.\+templating Namespace Reference}
+\hypertarget{namespaceflask_1_1templating}{}\label{namespaceflask_1_1templating}\index{flask.templating@{flask.templating}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1templating_1_1_environment}{Environment}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1templating_1_1_dispatching_jinja_loader}{Dispatching\+Jinja\+Loader}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{namespaceflask_1_1templating_a532d5e559165b2848885599eab0e4cd5}{\+\_\+default\+\_\+template\+\_\+ctx\+\_\+processor}} ()
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1templating_ad42e405ff2fef523ddfa476220f3d79c}{\+\_\+render}} (\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}} template, dict\+[str, t.\+Any]\+ context)
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1templating_aaf5cdf0e861b96e69a00610641e548b5}{render\+\_\+template}} (str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}\texorpdfstring{$\vert$}{|}list\+[str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}]\+ template\+\_\+name\+\_\+or\+\_\+list, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any context)
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1templating_a3e973c3988e5b1721d4ff802e6ee0e8d}{render\+\_\+template\+\_\+string}} (str source, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any context)
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespaceflask_1_1templating_a61b1e389dd8d2dee03f51afd2ea622ee}{\+\_\+stream}} (\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}} app, \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}} template, dict\+[str, t.\+Any]\+ context)
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespaceflask_1_1templating_a6d01ddbcfc968ff5875256bcdf1ba1fe}{stream\+\_\+template}} (str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}\texorpdfstring{$\vert$}{|}list\+[str\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}]\+ template\+\_\+name\+\_\+or\+\_\+list, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any context)
+\item 
+t.\+Iterator\+[str]\+ \doxymbox{\hyperlink{namespaceflask_1_1templating_a496f98a0d91ad1aca35d8a1cd7292736}{stream\+\_\+template\+\_\+string}} (str source, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any context)
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1templating_doc-func-members}
+\Hypertarget{namespaceflask_1_1templating_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1templating_a532d5e559165b2848885599eab0e4cd5}\index{flask.templating@{flask.templating}!\_default\_template\_ctx\_processor@{\_default\_template\_ctx\_processor}}
+\index{\_default\_template\_ctx\_processor@{\_default\_template\_ctx\_processor}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{\_default\_template\_ctx\_processor()}{\_default\_template\_ctx\_processor()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_a532d5e559165b2848885599eab0e4cd5} 
+ dict\+[str, t.\+Any]\+ \+\_\+default\+\_\+template\+\_\+ctx\+\_\+processor (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Default template context processor.  Replaces the ``request`` and ``g``
+proxies with their concrete objects for faster access.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1templating_ad42e405ff2fef523ddfa476220f3d79c}\index{flask.templating@{flask.templating}!\_render@{\_render}}
+\index{\_render@{\_render}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{\_render()}{\_render()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_ad42e405ff2fef523ddfa476220f3d79c} 
+ str \+\_\+render (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}}]{template}{, }\item[{dict\+[str, t.\+Any]\+}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1templating_a61b1e389dd8d2dee03f51afd2ea622ee}\index{flask.templating@{flask.templating}!\_stream@{\_stream}}
+\index{\_stream@{\_stream}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{\_stream()}{\_stream()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_a61b1e389dd8d2dee03f51afd2ea622ee} 
+ t.\+Iterator\+[str]\+ \+\_\+stream (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{classflask_1_1app_1_1_flask}{Flask}}}]{app}{, }\item[{\doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}}]{template}{, }\item[{dict\+[str, t.\+Any]\+ }]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1templating_aaf5cdf0e861b96e69a00610641e548b5}\index{flask.templating@{flask.templating}!render\_template@{render\_template}}
+\index{render\_template@{render\_template}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{render\_template()}{render\_template()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_aaf5cdf0e861b96e69a00610641e548b5} 
+ str render\+\_\+template (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}} \texorpdfstring{$\vert$}{|} list\+[str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}]\+}]{template\+\_\+name\+\_\+or\+\_\+list}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render a template by name with the given context.
+
+:param template_name_or_list: The name of the template to render. If
+    a list is given, the first name to exist will be rendered.
+:param context: The variables to make available in the template.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1templating_a3e973c3988e5b1721d4ff802e6ee0e8d}\index{flask.templating@{flask.templating}!render\_template\_string@{render\_template\_string}}
+\index{render\_template\_string@{render\_template\_string}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{render\_template\_string()}{render\_template\_string()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_a3e973c3988e5b1721d4ff802e6ee0e8d} 
+ str render\+\_\+template\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{source}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render a template from the given source string with the given
+context.
+
+:param source: The source code of the template to render.
+:param context: The variables to make available in the template.
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1templating_a6d01ddbcfc968ff5875256bcdf1ba1fe}\index{flask.templating@{flask.templating}!stream\_template@{stream\_template}}
+\index{stream\_template@{stream\_template}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{stream\_template()}{stream\_template()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_a6d01ddbcfc968ff5875256bcdf1ba1fe} 
+ t.\+Iterator\+[str]\+ stream\+\_\+template (\begin{DoxyParamCaption}\item[{str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}} \texorpdfstring{$\vert$}{|} list\+[str \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{classjinja2_1_1environment_1_1_template}{Template}}]\+}]{template\+\_\+name\+\_\+or\+\_\+list}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render a template by name with the given context as a stream.
+This returns an iterator of strings, which can be used as a
+streaming response from a view.
+
+:param template_name_or_list: The name of the template to render. If
+    a list is given, the first name to exist will be rendered.
+:param context: The variables to make available in the template.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1templating_a496f98a0d91ad1aca35d8a1cd7292736}\index{flask.templating@{flask.templating}!stream\_template\_string@{stream\_template\_string}}
+\index{stream\_template\_string@{stream\_template\_string}!flask.templating@{flask.templating}}
+\doxysubsubsection{\texorpdfstring{stream\_template\_string()}{stream\_template\_string()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1templating_a496f98a0d91ad1aca35d8a1cd7292736} 
+ t.\+Iterator\+[str]\+ stream\+\_\+template\+\_\+string (\begin{DoxyParamCaption}\item[{str}]{source}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{context}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render a template from the given source string with the given
+context as a stream. This returns an iterator of strings, which can
+be used as a streaming response from a view.
+
+:param source: The source code of the template to render.
+:param context: The variables to make available in the template.
+
+.. versionadded:: 2.2
+\end{DoxyVerb}
+ 

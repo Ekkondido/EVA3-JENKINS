@@ -1,0 +1,586 @@
+\doxysection{click.\+core.\+Command Class Reference}
+\hypertarget{classclick_1_1core_1_1_command}{}\label{classclick_1_1core_1_1_command}\index{click.core.Command@{click.core.Command}}
+Inheritance diagram for click.\+core.\+Command:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.909250cm]{classclick_1_1core_1_1_command}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ad40f8bbba6fdcec25c4c6eeb7919b69f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None name, cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+\texorpdfstring{$\vert$}{|}None context\+\_\+settings=None, t.\+Callable\+[..., t.\+Any]\+\texorpdfstring{$\vert$}{|}None callback=None, list\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+\texorpdfstring{$\vert$}{|}None params=None, str\texorpdfstring{$\vert$}{|}None help=None, str\texorpdfstring{$\vert$}{|}None epilog=None, str\texorpdfstring{$\vert$}{|}None short\+\_\+help=None, str\texorpdfstring{$\vert$}{|}None options\+\_\+metavar="{}\+[OPTIONS]\+"{}, bool add\+\_\+help\+\_\+option=True, bool no\+\_\+args\+\_\+is\+\_\+help=False, bool hidden=False, bool\texorpdfstring{$\vert$}{|}str deprecated=False)
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ab66f5d3a2558e90fe828368c5874a3ee}{to\+\_\+info\+\_\+dict}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a39d3b87b977ee8fce5f45feb8b822e24}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a84351e653034a2a8227285600e9ea063}{get\+\_\+usage}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+list\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a3515a3159c59d46e8cd2cca10a686fe4}{get\+\_\+params}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a3492bb62c59e3371a7db3bc20b1bb21b}{format\+\_\+usage}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_abeba5c8199f587e338774feb626f037e}{collect\+\_\+usage\+\_\+pieces}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a54a092712b83a93347acddba5a504449}{get\+\_\+help\+\_\+option\+\_\+names}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+Option\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_aa91b1bafb490cb134cc80a9e9869f861}{get\+\_\+help\+\_\+option}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+\doxymbox{\hyperlink{classclick_1_1parser_1_1___option_parser}{\+\_\+\+Option\+Parser}} \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a4d4cc2f8f098d901cca6955c01b51257}{make\+\_\+parser}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a5378ca64f18f4f8a5a97071ac02b5986}{get\+\_\+help}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_afb8b3754ad616a17c7daec1681cb3289}{get\+\_\+short\+\_\+help\+\_\+str}} (self, int limit=45)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a85227a41362345b943694946a0b06e12}{format\+\_\+help}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a1481cc8553728ec2a2dc17cf7a3c1ae4}{format\+\_\+help\+\_\+text}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ac6175efd86bcaa24dc2422a33ee2d23c}{format\+\_\+options}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a87a82c0a2f2427c6e1e5df331e6b8247}{format\+\_\+epilog}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, \doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}} formatter)
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a26074ed5514978a4489a7c373dd726c8}{make\+\_\+context}} (self, str\texorpdfstring{$\vert$}{|}None info\+\_\+name, list\+[str]\+ args, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\texorpdfstring{$\vert$}{|}None parent=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a3a81cd8b3f4f32f25a4d247bde58fed4}{parse\+\_\+args}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, list\+[str]\+ args)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_command_aff0ad907afa22e1479ca5abcd8b8e853}{invoke}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx)
+\item 
+list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ab8901ca68483b1df2433d790c58ac72b}{shell\+\_\+complete}} (self, \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} ctx, str incomplete)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a657879d3eead205eeadd1f9d4a8f9f4e}{main}} (self, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None args=None, str\texorpdfstring{$\vert$}{|}None prog\+\_\+name=None, str\texorpdfstring{$\vert$}{|}None complete\+\_\+var=None, t.\+Literal\+[True]\+ standalone\+\_\+mode=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ae6dc93bfb46bbd572bb3fd6011476ea0}{main}} (self, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None args=None, str\texorpdfstring{$\vert$}{|}None prog\+\_\+name=None, str\texorpdfstring{$\vert$}{|}None complete\+\_\+var=None, bool standalone\+\_\+mode=..., \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ac33fbe0a9d7259693223d5cf6f976a09}{main}} (self, cabc.\+Sequence\+[str]\+\texorpdfstring{$\vert$}{|}None args=None, str\texorpdfstring{$\vert$}{|}None prog\+\_\+name=None, str\texorpdfstring{$\vert$}{|}None complete\+\_\+var=None, bool standalone\+\_\+mode=True, bool windows\+\_\+expand\+\_\+args=True, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any extra)
+\item 
+t.\+Any \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a37a8cb42ea12299b02a3e46035e51e44}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_command_a65f00dbef08b7e7fe9180c8bb81cc8ae}{add\+\_\+help\+\_\+option}} = add\+\_\+help\+\_\+option
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_command_a9e043febfbfc5ca62019ad30703bf034}{no\+\_\+args\+\_\+is\+\_\+help}} = no\+\_\+args\+\_\+is\+\_\+help
+\item 
+\doxymbox{\hyperlink{classclick_1_1core_1_1_command_a238163dfe77b266aa0591a5b080ab47d}{hidden}} = hidden
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+type \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a1020e84f99f13dc83e73426fbfcd4025}{context\+\_\+class}} = \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a94024f4166ec7ac9301c2d2c9832b11f}{allow\+\_\+extra\+\_\+args}} = False
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a06c5be6e1361f19cafca06fb8369a42f}{allow\+\_\+interspersed\+\_\+args}} = True
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a9ce53350273ea883b7c5699c9740722c}{ignore\+\_\+unknown\+\_\+options}} = False
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a98a4a91905b2282735aca8199bb3548a}{name}} \texorpdfstring{$\vert$}{|} None
+\item 
+cabc \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a223e91dc0392a92a4ae216bad101e482}{context\+\_\+settings}} .Mutable\+Mapping\+[str, t.\+Any]\+
+\item 
+t \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a50dcae2646b5e50dc73eb6bef693b5c7}{callback}} .Callable\+[..., t.\+Any]\+ \texorpdfstring{$\vert$}{|} None
+\item 
+list \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a3cfc8f46eec2143dc273a634e31e0d6d}{params}} \+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a593a835efc79b5e95177d4cbe6524c43}{help}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a2134eae8eff934507316e018fb90413f}{epilog}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a824cea40cb1040ec152ca868222b9f2b}{options\+\_\+metavar}} \texorpdfstring{$\vert$}{|} None
+\item 
+str \doxymbox{\hyperlink{classclick_1_1core_1_1_command_aa0bf0c4d839471eae3b0f33759f70788}{short\+\_\+help}} \texorpdfstring{$\vert$}{|} None
+\item 
+bool \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ae790b8d16291ff3ca0a52117180997b8}{deprecated}} \texorpdfstring{$\vert$}{|} str
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classclick_1_1core_1_1_command_a2c597414b679d51054dc9163c575490a}{\+\_\+main\+\_\+shell\+\_\+completion}} (self, cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+ ctx\+\_\+args, str prog\+\_\+name, str\texorpdfstring{$\vert$}{|}None complete\+\_\+var=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Option \doxymbox{\hyperlink{classclick_1_1core_1_1_command_ab0767393e795411365315be54bac563e}{\+\_\+help\+\_\+option}} \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Commands are the basic building block of command line interfaces in
+Click.  A basic command handles command line parsing and might dispatch
+more parsing to commands nested below it.
+
+:param name: the name of the command to use unless a group overrides it.
+:param context_settings: an optional dictionary with defaults that are
+                         passed to the context object.
+:param callback: the callback to invoke.  This is optional.
+:param params: the parameters to register with this command.  This can
+               be either :class:`Option` or :class:`Argument` objects.
+:param help: the help string to use for this command.
+:param epilog: like the help string but it's printed at the end of the
+               help page after everything else.
+:param short_help: the short help to use for this command.  This is
+                   shown on the command listing of the parent command.
+:param add_help_option: by default each command registers a ``--help``
+                        option.  This can be disabled by this parameter.
+:param no_args_is_help: this controls what happens if no arguments are
+                        provided.  This option is disabled by default.
+                        If enabled this will add ``--help`` as argument
+                        if no arguments are passed
+:param hidden: hide this command from help outputs.
+:param deprecated: If ``True`` or non-empty string, issues a message
+                    indicating that the command is deprecated and highlights
+                    its deprecation in --help. The message can be customized
+                    by using a string as the value.
+
+.. versionchanged:: 8.2
+    This is the base class for all commands, not ``BaseCommand``.
+    ``deprecated`` can be set to a string as well to customize the
+    deprecation message.
+
+.. versionchanged:: 8.1
+    ``help``, ``epilog``, and ``short_help`` are stored unprocessed,
+    all formatting is done when outputting help text, not at init,
+    and is done even if not using the ``@command`` decorator.
+
+.. versionchanged:: 8.0
+    Added a ``repr`` showing the command name.
+
+.. versionchanged:: 7.1
+    Added the ``no_args_is_help`` parameter.
+
+.. versionchanged:: 2.0
+    Added the ``context_settings`` parameter.
+\end{DoxyVerb}
+ 
+
+\label{classclick_1_1core_1_1_command_doc-constructors}
+\Hypertarget{classclick_1_1core_1_1_command_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classclick_1_1core_1_1_command_ad40f8bbba6fdcec25c4c6eeb7919b69f}\index{click.core.Command@{click.core.Command}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ad40f8bbba6fdcec25c4c6eeb7919b69f} 
+ None click.\+core.\+Command.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{name}{, }\item[{cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{context\+\_\+settings}{ = {\ttfamily None}, }\item[{t.\+Callable\+[..., t.\+Any]\+ \texorpdfstring{$\vert$}{|} None }]{callback}{ = {\ttfamily None}, }\item[{list\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+ \texorpdfstring{$\vert$}{|} None }]{params}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{help}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{epilog}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{short\+\_\+help}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{options\+\_\+metavar}{ = {\ttfamily "{}\+[OPTIONS]\+"{}}, }\item[{bool }]{add\+\_\+help\+\_\+option}{ = {\ttfamily True}, }\item[{bool }]{no\+\_\+args\+\_\+is\+\_\+help}{ = {\ttfamily False}, }\item[{bool }]{hidden}{ = {\ttfamily False}, }\item[{bool \texorpdfstring{$\vert$}{|} str }]{deprecated}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+\label{classclick_1_1core_1_1_command_doc-func-members}
+\Hypertarget{classclick_1_1core_1_1_command_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classclick_1_1core_1_1_command_a37a8cb42ea12299b02a3e46035e51e44}\index{click.core.Command@{click.core.Command}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a37a8cb42ea12299b02a3e46035e51e44} 
+ t.\+Any click.\+core.\+Command.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Alias for :meth:`main`.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a39d3b87b977ee8fce5f45feb8b822e24}\index{click.core.Command@{click.core.Command}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a39d3b87b977ee8fce5f45feb8b822e24} 
+ str click.\+core.\+Command.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1core_1_1_command_a2c597414b679d51054dc9163c575490a}\index{click.core.Command@{click.core.Command}!\_main\_shell\_completion@{\_main\_shell\_completion}}
+\index{\_main\_shell\_completion@{\_main\_shell\_completion}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{\_main\_shell\_completion()}{\_main\_shell\_completion()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a2c597414b679d51054dc9163c575490a} 
+ None click.\+core.\+Command.\+\_\+main\+\_\+shell\+\_\+completion (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Mutable\+Mapping\+[str, t.\+Any]\+}]{ctx\+\_\+args}{, }\item[{str}]{prog\+\_\+name}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{complete\+\_\+var}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check if the shell is asking for tab completion, process
+that, then exit early. Called from :meth:`main` before the
+program is invoked.
+
+:param prog_name: Name of the executable in the shell.
+:param complete_var: Name of the environment variable that holds
+    the completion instruction. Defaults to
+    ``_{PROG_NAME}_COMPLETE``.
+
+.. versionchanged:: 8.2.0
+    Dots (``.``) in ``prog_name`` are replaced with underscores (``_``).
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_abeba5c8199f587e338774feb626f037e}\index{click.core.Command@{click.core.Command}!collect\_usage\_pieces@{collect\_usage\_pieces}}
+\index{collect\_usage\_pieces@{collect\_usage\_pieces}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{collect\_usage\_pieces()}{collect\_usage\_pieces()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_abeba5c8199f587e338774feb626f037e} 
+ list\+[str]\+ click.\+core.\+Command.\+collect\+\_\+usage\+\_\+pieces (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns all the pieces that go into the usage line and returns
+it as a list of strings.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_a56d4437a4ed1f0b1fef4c5417212f41f}{click.\+core.\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_a87a82c0a2f2427c6e1e5df331e6b8247}\index{click.core.Command@{click.core.Command}!format\_epilog@{format\_epilog}}
+\index{format\_epilog@{format\_epilog}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{format\_epilog()}{format\_epilog()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a87a82c0a2f2427c6e1e5df331e6b8247} 
+ None click.\+core.\+Command.\+format\+\_\+epilog (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}}]{formatter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the epilog into the formatter if it exists.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a85227a41362345b943694946a0b06e12}\index{click.core.Command@{click.core.Command}!format\_help@{format\_help}}
+\index{format\_help@{format\_help}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{format\_help()}{format\_help()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a85227a41362345b943694946a0b06e12} 
+ None click.\+core.\+Command.\+format\+\_\+help (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}}]{formatter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the help into the formatter if it exists.
+
+This is a low-level method called by :meth:`get_help`.
+
+This calls the following methods:
+
+-   :meth:`format_usage`
+-   :meth:`format_help_text`
+-   :meth:`format_options`
+-   :meth:`format_epilog`
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a1481cc8553728ec2a2dc17cf7a3c1ae4}\index{click.core.Command@{click.core.Command}!format\_help\_text@{format\_help\_text}}
+\index{format\_help\_text@{format\_help\_text}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{format\_help\_text()}{format\_help\_text()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a1481cc8553728ec2a2dc17cf7a3c1ae4} 
+ None click.\+core.\+Command.\+format\+\_\+help\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}}]{formatter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the help text to the formatter if it exists.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_ac6175efd86bcaa24dc2422a33ee2d23c}\index{click.core.Command@{click.core.Command}!format\_options@{format\_options}}
+\index{format\_options@{format\_options}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{format\_options()}{format\_options()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ac6175efd86bcaa24dc2422a33ee2d23c} 
+ None click.\+core.\+Command.\+format\+\_\+options (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}}]{formatter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes all the options into the formatter if they exist.\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_a873e11747600ec7571de80a0fe2abf74}{click.\+core.\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_a3492bb62c59e3371a7db3bc20b1bb21b}\index{click.core.Command@{click.core.Command}!format\_usage@{format\_usage}}
+\index{format\_usage@{format\_usage}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{format\_usage()}{format\_usage()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a3492bb62c59e3371a7db3bc20b1bb21b} 
+ None click.\+core.\+Command.\+format\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{\doxymbox{\hyperlink{classclick_1_1formatting_1_1_help_formatter}{Help\+Formatter}}}]{formatter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Writes the usage line into the formatter.
+
+This is a low-level method called by :meth:`get_usage`.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a5378ca64f18f4f8a5a97071ac02b5986}\index{click.core.Command@{click.core.Command}!get\_help@{get\_help}}
+\index{get\_help@{get\_help}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_help()}{get\_help()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a5378ca64f18f4f8a5a97071ac02b5986} 
+ str click.\+core.\+Command.\+get\+\_\+help (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Formats the help into a string and returns it.
+
+Calls :meth:`format_help` internally.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_aa91b1bafb490cb134cc80a9e9869f861}\index{click.core.Command@{click.core.Command}!get\_help\_option@{get\_help\_option}}
+\index{get\_help\_option@{get\_help\_option}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_help\_option()}{get\_help\_option()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_aa91b1bafb490cb134cc80a9e9869f861} 
+ Option \texorpdfstring{$\vert$}{|} None click.\+core.\+Command.\+get\+\_\+help\+\_\+option (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the help option object.
+
+Skipped if :attr:`add_help_option` is ``False``.
+
+.. versionchanged:: 8.1.8
+    The help option is now cached to avoid creating it multiple times.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a54a092712b83a93347acddba5a504449}\index{click.core.Command@{click.core.Command}!get\_help\_option\_names@{get\_help\_option\_names}}
+\index{get\_help\_option\_names@{get\_help\_option\_names}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_help\_option\_names()}{get\_help\_option\_names()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a54a092712b83a93347acddba5a504449} 
+ list\+[str]\+ click.\+core.\+Command.\+get\+\_\+help\+\_\+option\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the names for the help option.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a3515a3159c59d46e8cd2cca10a686fe4}\index{click.core.Command@{click.core.Command}!get\_params@{get\_params}}
+\index{get\_params@{get\_params}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_params()}{get\_params()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a3515a3159c59d46e8cd2cca10a686fe4} 
+ list\+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+ click.\+core.\+Command.\+get\+\_\+params (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1core_1_1_command_afb8b3754ad616a17c7daec1681cb3289}\index{click.core.Command@{click.core.Command}!get\_short\_help\_str@{get\_short\_help\_str}}
+\index{get\_short\_help\_str@{get\_short\_help\_str}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_short\_help\_str()}{get\_short\_help\_str()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_afb8b3754ad616a17c7daec1681cb3289} 
+ str click.\+core.\+Command.\+get\+\_\+short\+\_\+help\+\_\+str (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{limit}{ = {\ttfamily 45}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets short help for the command or makes it by shortening the
+long help string.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a84351e653034a2a8227285600e9ea063}\index{click.core.Command@{click.core.Command}!get\_usage@{get\_usage}}
+\index{get\_usage@{get\_usage}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{get\_usage()}{get\_usage()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a84351e653034a2a8227285600e9ea063} 
+ str click.\+core.\+Command.\+get\+\_\+usage (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Formats the usage line into a string and returns it.
+
+Calls :meth:`format_usage` internally.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_aff0ad907afa22e1479ca5abcd8b8e853}\index{click.core.Command@{click.core.Command}!invoke@{invoke}}
+\index{invoke@{invoke}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_aff0ad907afa22e1479ca5abcd8b8e853} 
+ t.\+Any click.\+core.\+Command.\+invoke (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Given a context, this invokes the attached callback (if it exists)
+in the right way.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_aa2b4ea6e007f63306052574462f3a0d9}{click.\+core.\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_ae6dc93bfb46bbd572bb3fd6011476ea0}\index{click.core.Command@{click.core.Command}!main@{main}}
+\index{main@{main}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ae6dc93bfb46bbd572bb3fd6011476ea0} 
+ t.\+Any click.\+core.\+Command.\+main (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{args}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{prog\+\_\+name}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{complete\+\_\+var}{ = {\ttfamily None}, }\item[{bool }]{standalone\+\_\+mode}{ = {\ttfamily ...}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1core_1_1_command_ac33fbe0a9d7259693223d5cf6f976a09}\index{click.core.Command@{click.core.Command}!main@{main}}
+\index{main@{main}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ac33fbe0a9d7259693223d5cf6f976a09} 
+ t.\+Any click.\+core.\+Command.\+main (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{args}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{prog\+\_\+name}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{complete\+\_\+var}{ = {\ttfamily None}, }\item[{bool }]{standalone\+\_\+mode}{ = {\ttfamily True}, }\item[{bool }]{windows\+\_\+expand\+\_\+args}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is the way to invoke a script with all the bells and
+whistles as a command line application.  This will always terminate
+the application after a call.  If this is not wanted, ``SystemExit``
+needs to be caught.
+
+This method is also available by directly calling the instance of
+a :class:`Command`.
+
+:param args: the arguments that should be used for parsing.  If not
+             provided, ``sys.argv[1:]`` is used.
+:param prog_name: the program name that should be used.  By default
+                  the program name is constructed by taking the file
+                  name from ``sys.argv[0]``.
+:param complete_var: the environment variable that controls the
+                     bash completion support.  The default is
+                     ``"_<prog_name>_COMPLETE"`` with prog_name in
+                     uppercase.
+:param standalone_mode: the default behavior is to invoke the script
+                        in standalone mode.  Click will then
+                        handle exceptions and convert them into
+                        error messages and the function will never
+                        return but shut down the interpreter.  If
+                        this is set to `False` they will be
+                        propagated to the caller and the return
+                        value of this function is the return value
+                        of :meth:`invoke`.
+:param windows_expand_args: Expand glob patterns, user dir, and
+    env vars in command line args on Windows.
+:param extra: extra keyword arguments are forwarded to the context
+              constructor.  See :class:`Context` for more information.
+
+.. versionchanged:: 8.0.1
+    Added the ``windows_expand_args`` parameter to allow
+    disabling command line arg expansion on Windows.
+
+.. versionchanged:: 8.0
+    When taking arguments from ``sys.argv`` on Windows, glob
+    patterns, user dir, and env vars are expanded.
+
+.. versionchanged:: 3.0
+   Added the ``standalone_mode`` parameter.
+\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a657879d3eead205eeadd1f9d4a8f9f4e}\index{click.core.Command@{click.core.Command}!main@{main}}
+\index{main@{main}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a657879d3eead205eeadd1f9d4a8f9f4e} 
+ t.\+No\+Return click.\+core.\+Command.\+main (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{cabc.\+Sequence\+[str]\+ \texorpdfstring{$\vert$}{|} None }]{args}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{prog\+\_\+name}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{complete\+\_\+var}{ = {\ttfamily None}, }\item[{t.\+Literal\+[True]\+ }]{standalone\+\_\+mode}{ = {\ttfamily True}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classclick_1_1core_1_1_command_a26074ed5514978a4489a7c373dd726c8}\index{click.core.Command@{click.core.Command}!make\_context@{make\_context}}
+\index{make\_context@{make\_context}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{make\_context()}{make\_context()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a26074ed5514978a4489a7c373dd726c8} 
+ \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} click.\+core.\+Command.\+make\+\_\+context (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{info\+\_\+name}{, }\item[{list\+[str]\+}]{args}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}} \texorpdfstring{$\vert$}{|} None }]{parent}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{extra}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function when given an info name and arguments will kick
+off the parsing and create a new :class:`Context`.  It does not
+invoke the actual command callback though.
+
+To quickly customize the context class used without overriding
+this method, set the :attr:`context_class` attribute.
+
+:param info_name: the info name for this invocation.  Generally this
+                  is the most descriptive name for the script or
+                  command.  For the toplevel script it's usually
+                  the name of the script, for commands below it's
+                  the name of the command.
+:param args: the arguments to parse as list of strings.
+:param parent: the parent context if available.
+:param extra: extra keyword arguments forwarded to the context
+              constructor.
+
+.. versionchanged:: 8.0
+    Added the :attr:`context_class` attribute.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classflask_1_1cli_1_1_flask_group_afa3e3f7c3f96083407652736faabef03}{flask.\+cli.\+Flask\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_a4d4cc2f8f098d901cca6955c01b51257}\index{click.core.Command@{click.core.Command}!make\_parser@{make\_parser}}
+\index{make\_parser@{make\_parser}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{make\_parser()}{make\_parser()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a4d4cc2f8f098d901cca6955c01b51257} 
+ \doxymbox{\hyperlink{classclick_1_1parser_1_1___option_parser}{\+\_\+\+Option\+Parser}} click.\+core.\+Command.\+make\+\_\+parser (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Creates the underlying option parser for this command.\end{DoxyVerb}
+ \Hypertarget{classclick_1_1core_1_1_command_a3a81cd8b3f4f32f25a4d247bde58fed4}\index{click.core.Command@{click.core.Command}!parse\_args@{parse\_args}}
+\index{parse\_args@{parse\_args}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{parse\_args()}{parse\_args()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a3a81cd8b3f4f32f25a4d247bde58fed4} 
+ list\+[str]\+ click.\+core.\+Command.\+parse\+\_\+args (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{list\+[str]\+}]{args}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_a4cf3f10e3bdf8aebd7bc067cab88079d}{click.\+core.\+Group}}, and \doxymbox{\hyperlink{classflask_1_1cli_1_1_flask_group_a927e814b024aafffe39ecc2904e40de7}{flask.\+cli.\+Flask\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_ab8901ca68483b1df2433d790c58ac72b}\index{click.core.Command@{click.core.Command}!shell\_complete@{shell\_complete}}
+\index{shell\_complete@{shell\_complete}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{shell\_complete()}{shell\_complete()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ab8901ca68483b1df2433d790c58ac72b} 
+ list\+[\doxymbox{\hyperlink{classclick_1_1shell__completion_1_1_completion_item}{Completion\+Item}}]\+ click.\+core.\+Command.\+shell\+\_\+complete (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{, }\item[{str}]{incomplete}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a list of completions for the incomplete value. Looks
+at the names of options and chained multi-commands.
+
+Any command could be part of a chained multi-command, so sibling
+commands are valid at any point during command completion.
+
+:param ctx: Invocation context for this command.
+:param incomplete: Value being completed. May be empty.
+
+.. versionadded:: 8.0
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_aaee28ecb9bb889b4e0dfeeabf5efc708}{click.\+core.\+Group}}.
+
+\Hypertarget{classclick_1_1core_1_1_command_ab66f5d3a2558e90fe828368c5874a3ee}\index{click.core.Command@{click.core.Command}!to\_info\_dict@{to\_info\_dict}}
+\index{to\_info\_dict@{to\_info\_dict}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{to\_info\_dict()}{to\_info\_dict()}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ab66f5d3a2558e90fe828368c5874a3ee} 
+ dict\+[str, t.\+Any]\+ click.\+core.\+Command.\+to\+\_\+info\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}}]{ctx}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classclick_1_1core_1_1_group_ad8a1616fdf792a3aab0240c79025fc8a}{click.\+core.\+Group}}.
+
+
+
+\label{classclick_1_1core_1_1_command_doc-variable-members}
+\Hypertarget{classclick_1_1core_1_1_command_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classclick_1_1core_1_1_command_ab0767393e795411365315be54bac563e}\index{click.core.Command@{click.core.Command}!\_help\_option@{\_help\_option}}
+\index{\_help\_option@{\_help\_option}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{\_help\_option}{\_help\_option}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ab0767393e795411365315be54bac563e} 
+Option click.\+core.\+Command.\+\_\+help\+\_\+option \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a65f00dbef08b7e7fe9180c8bb81cc8ae}\index{click.core.Command@{click.core.Command}!add\_help\_option@{add\_help\_option}}
+\index{add\_help\_option@{add\_help\_option}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{add\_help\_option}{add\_help\_option}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a65f00dbef08b7e7fe9180c8bb81cc8ae} 
+click.\+core.\+Command.\+add\+\_\+help\+\_\+option = add\+\_\+help\+\_\+option}
+
+\Hypertarget{classclick_1_1core_1_1_command_a94024f4166ec7ac9301c2d2c9832b11f}\index{click.core.Command@{click.core.Command}!allow\_extra\_args@{allow\_extra\_args}}
+\index{allow\_extra\_args@{allow\_extra\_args}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{allow\_extra\_args}{allow\_extra\_args}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a94024f4166ec7ac9301c2d2c9832b11f} 
+bool click.\+core.\+Command.\+allow\+\_\+extra\+\_\+args = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a06c5be6e1361f19cafca06fb8369a42f}\index{click.core.Command@{click.core.Command}!allow\_interspersed\_args@{allow\_interspersed\_args}}
+\index{allow\_interspersed\_args@{allow\_interspersed\_args}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{allow\_interspersed\_args}{allow\_interspersed\_args}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a06c5be6e1361f19cafca06fb8369a42f} 
+bool click.\+core.\+Command.\+allow\+\_\+interspersed\+\_\+args = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a50dcae2646b5e50dc73eb6bef693b5c7}\index{click.core.Command@{click.core.Command}!callback@{callback}}
+\index{callback@{callback}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{callback}{callback}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a50dcae2646b5e50dc73eb6bef693b5c7} 
+click.\+core.\+Command.\+callback .Callable\+[..., t.\+Any]\+ \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a1020e84f99f13dc83e73426fbfcd4025}\index{click.core.Command@{click.core.Command}!context\_class@{context\_class}}
+\index{context\_class@{context\_class}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{context\_class}{context\_class}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a1020e84f99f13dc83e73426fbfcd4025} 
+type click.\+core.\+Command.\+context\+\_\+class = \doxymbox{\hyperlink{classclick_1_1core_1_1_context}{Context}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a223e91dc0392a92a4ae216bad101e482}\index{click.core.Command@{click.core.Command}!context\_settings@{context\_settings}}
+\index{context\_settings@{context\_settings}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{context\_settings}{context\_settings}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a223e91dc0392a92a4ae216bad101e482} 
+cabc click.\+core.\+Command.\+context\+\_\+settings .Mutable\+Mapping\+[str, t.\+Any]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_ae790b8d16291ff3ca0a52117180997b8}\index{click.core.Command@{click.core.Command}!deprecated@{deprecated}}
+\index{deprecated@{deprecated}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{deprecated}{deprecated}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_ae790b8d16291ff3ca0a52117180997b8} 
+click.\+core.\+Command.\+deprecated \texorpdfstring{$\vert$}{|} str\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a2134eae8eff934507316e018fb90413f}\index{click.core.Command@{click.core.Command}!epilog@{epilog}}
+\index{epilog@{epilog}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{epilog}{epilog}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a2134eae8eff934507316e018fb90413f} 
+click.\+core.\+Command.\+epilog \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a593a835efc79b5e95177d4cbe6524c43}\index{click.core.Command@{click.core.Command}!help@{help}}
+\index{help@{help}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{help}{help}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a593a835efc79b5e95177d4cbe6524c43} 
+click.\+core.\+Command.\+help \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a238163dfe77b266aa0591a5b080ab47d}\index{click.core.Command@{click.core.Command}!hidden@{hidden}}
+\index{hidden@{hidden}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{hidden}{hidden}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a238163dfe77b266aa0591a5b080ab47d} 
+click.\+core.\+Command.\+hidden = hidden}
+
+\Hypertarget{classclick_1_1core_1_1_command_a9ce53350273ea883b7c5699c9740722c}\index{click.core.Command@{click.core.Command}!ignore\_unknown\_options@{ignore\_unknown\_options}}
+\index{ignore\_unknown\_options@{ignore\_unknown\_options}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{ignore\_unknown\_options}{ignore\_unknown\_options}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a9ce53350273ea883b7c5699c9740722c} 
+bool click.\+core.\+Command.\+ignore\+\_\+unknown\+\_\+options = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a98a4a91905b2282735aca8199bb3548a}\index{click.core.Command@{click.core.Command}!name@{name}}
+\index{name@{name}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a98a4a91905b2282735aca8199bb3548a} 
+click.\+core.\+Command.\+name \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a9e043febfbfc5ca62019ad30703bf034}\index{click.core.Command@{click.core.Command}!no\_args\_is\_help@{no\_args\_is\_help}}
+\index{no\_args\_is\_help@{no\_args\_is\_help}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{no\_args\_is\_help}{no\_args\_is\_help}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a9e043febfbfc5ca62019ad30703bf034} 
+click.\+core.\+Command.\+no\+\_\+args\+\_\+is\+\_\+help = no\+\_\+args\+\_\+is\+\_\+help}
+
+\Hypertarget{classclick_1_1core_1_1_command_a824cea40cb1040ec152ca868222b9f2b}\index{click.core.Command@{click.core.Command}!options\_metavar@{options\_metavar}}
+\index{options\_metavar@{options\_metavar}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{options\_metavar}{options\_metavar}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a824cea40cb1040ec152ca868222b9f2b} 
+str click.\+core.\+Command.\+options\+\_\+metavar \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_a3cfc8f46eec2143dc273a634e31e0d6d}\index{click.core.Command@{click.core.Command}!params@{params}}
+\index{params@{params}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_a3cfc8f46eec2143dc273a634e31e0d6d} 
+list click.\+core.\+Command.\+params \+[\doxymbox{\hyperlink{classclick_1_1core_1_1_parameter}{Parameter}}]\+\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classclick_1_1core_1_1_command_aa0bf0c4d839471eae3b0f33759f70788}\index{click.core.Command@{click.core.Command}!short\_help@{short\_help}}
+\index{short\_help@{short\_help}!click.core.Command@{click.core.Command}}
+\doxysubsubsection{\texorpdfstring{short\_help}{short\_help}}
+{\footnotesize\ttfamily \label{classclick_1_1core_1_1_command_aa0bf0c4d839471eae3b0f33759f70788} 
+click.\+core.\+Command.\+short\+\_\+help \texorpdfstring{$\vert$}{|} None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+click/\+\doxymbox{\hyperlink{click_2core_8py}{core.\+py}}\end{DoxyCompactItemize}

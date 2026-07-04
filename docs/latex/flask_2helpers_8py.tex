@@ -1,0 +1,46 @@
+\doxysection{venv/\+\+Lib/\+site-\/packages/\+flask/\+helpers.py File Reference}
+\hypertarget{flask_2helpers_8py}{}\label{flask_2helpers_8py}\index{venv/Lib/site-\/packages/flask/helpers.py@{venv/Lib/site-\/packages/flask/helpers.py}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespaceflask}{flask}}
+\item 
+namespace \doxymbox{\hyperlink{namespaceflask_1_1helpers}{flask.\+helpers}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1helpers_af04aeb7185354637f05e63fa2d876cd6}{flask.\+helpers.\+get\+\_\+debug\+\_\+flag}} ()
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1helpers_af9d6eeb63cebbafe2454179279c70c65}{flask.\+helpers.\+get\+\_\+load\+\_\+dotenv}} (bool default=True)
+\item 
+t.\+Iterator\+[t.\+Any\+Str]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_ab7d09a25413da2215ed4db909842ca46}{flask.\+helpers.\+stream\+\_\+with\+\_\+context}} (t.\+Iterator\+[t.\+Any\+Str]\+ generator\+\_\+or\+\_\+function)
+\item 
+t.\+Callable\+[\+[t.\+Iterator\+[t.\+Any\+Str]\+]\+, t.\+Iterator\+[t.\+Any\+Str]\+]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_a6b430f7e382af07a6d9365902a3f5d90}{flask.\+helpers.\+stream\+\_\+with\+\_\+context}} (t.\+Callable\+[..., t.\+Iterator\+[t.\+Any\+Str]\+]\+ generator\+\_\+or\+\_\+function)
+\item 
+t.\+Iterator\+[t.\+Any\+Str]\+\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[t.\+Iterator\+[t.\+Any\+Str]\+]\+, t.\+Iterator\+[t.\+Any\+Str]\+]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_a2dc28d2086b908635ec0f315952a0c22}{flask.\+helpers.\+stream\+\_\+with\+\_\+context}} (t.\+Iterator\+[t.\+Any\+Str]\+\texorpdfstring{$\vert$}{|}t.\+Callable\+[..., t.\+Iterator\+[t.\+Any\+Str]\+]\+ generator\+\_\+or\+\_\+function)
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \doxymbox{\hyperlink{namespaceflask_1_1helpers_a6c7cdef2e9822fc4f457bd5e06e74e54}{flask.\+helpers.\+make\+\_\+response}} (\texorpdfstring{$\ast$}{*}t.\+Any args)
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1helpers_af7ee426164bd283ad82ec8535c93b889}{flask.\+helpers.\+url\+\_\+for}} (str endpoint, \texorpdfstring{$\ast$}{*}, str\texorpdfstring{$\vert$}{|}None \+\_\+anchor=None, str\texorpdfstring{$\vert$}{|}None \+\_\+method=None, str\texorpdfstring{$\vert$}{|}None \+\_\+scheme=None, bool\texorpdfstring{$\vert$}{|}None \+\_\+external=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any values)
+\item 
+Base\+Response \doxymbox{\hyperlink{namespaceflask_1_1helpers_a3c2bb31d7856673c9bdfd73d53fa46bc}{flask.\+helpers.\+redirect}} (str location, int code=302, type\+[Base\+Response]\+\texorpdfstring{$\vert$}{|}None Response=None)
+\item 
+t.\+No\+Return \doxymbox{\hyperlink{namespaceflask_1_1helpers_acb49d637f02cf49742f05ab0a9320d56}{flask.\+helpers.\+abort}} (int\texorpdfstring{$\vert$}{|}Base\+Response code, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{namespaceflask_1_1helpers_addbee4e150d170bec883bd688ff28e57}{flask.\+helpers.\+get\+\_\+template\+\_\+attribute}} (str template\+\_\+name, str attribute)
+\item 
+None \doxymbox{\hyperlink{namespaceflask_1_1helpers_a3e10d3a5a47337187573aa608dc2e820}{flask.\+helpers.\+flash}} (str message, str category="{}message"{})
+\item 
+list\+[str]\+\texorpdfstring{$\vert$}{|}list\+[tuple\+[str, str]\+]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_ac13f4244630ca02aaa8f347637e50f54}{flask.\+helpers.\+get\+\_\+flashed\+\_\+messages}} (bool with\+\_\+categories=False, t.\+Iterable\+[str]\+ category\+\_\+filter=())
+\item 
+dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_a3f371bc0d70ac2aecc395b50d4a86b44}{flask.\+helpers.\+\_\+prepare\+\_\+send\+\_\+file\+\_\+kwargs}} (\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \doxymbox{\hyperlink{namespaceflask_1_1helpers_a1acff54b70f689043f9800c1894606de}{flask.\+helpers.\+send\+\_\+file}} (os.\+Path\+Like\+[t.\+Any\+Str]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}t.\+IO\+[bytes]\+ path\+\_\+or\+\_\+file, str\texorpdfstring{$\vert$}{|}None mimetype=None, bool as\+\_\+attachment=False, str\texorpdfstring{$\vert$}{|}None download\+\_\+name=None, bool conditional=True, bool\texorpdfstring{$\vert$}{|}str etag=True, datetime\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}None last\+\_\+modified=None, None\texorpdfstring{$\vert$}{|}(int\texorpdfstring{$\vert$}{|}t.\+Callable\+[\+[str\texorpdfstring{$\vert$}{|}None]\+, int\texorpdfstring{$\vert$}{|}None]\+) max\+\_\+age=None)
+\item 
+\doxymbox{\hyperlink{classflask_1_1wrappers_1_1_response}{Response}} \doxymbox{\hyperlink{namespaceflask_1_1helpers_a9ffd6ee04c91abb96fd20754cb45aa53}{flask.\+helpers.\+send\+\_\+from\+\_\+directory}} (os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str directory, os.\+Path\+Like\+[str]\+\texorpdfstring{$\vert$}{|}str path, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+str \doxymbox{\hyperlink{namespaceflask_1_1helpers_a455621be1a91b3566a3d626f44ea9f52}{flask.\+helpers.\+get\+\_\+root\+\_\+path}} (str import\+\_\+name)
+\item 
+list\+[str]\+ \doxymbox{\hyperlink{namespaceflask_1_1helpers_a303e9169029085f4369e9aec30c10119}{flask.\+helpers.\+\_\+split\+\_\+blueprint\+\_\+path}} (str name)
+\end{DoxyCompactItemize}

@@ -1,0 +1,103 @@
+\doxysection{werkzeug.\+debug.\+tbtools.\+Debug\+Traceback Class Reference}
+\hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback}{}\label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad573fd75840495eede7e9c974815e53c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Base\+Exception exc, traceback.\+Traceback\+Exception\texorpdfstring{$\vert$}{|}None te=None, \texorpdfstring{$\ast$}{*}, int skip=0, bool hide=True)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a538b0d8d3243c978c15e9974f50c7261}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+list\+[tuple\+[str\texorpdfstring{$\vert$}{|}None, traceback.\+Traceback\+Exception]\+]\+ \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a3ff569dbc892c6118f0761449770e067}{all\+\_\+tracebacks}} (self)
+\item 
+list\+[\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_frame_summary}{Debug\+Frame\+Summary}}]\+ \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae970c45e5a16f7f795570a08adc31a39}{all\+\_\+frames}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad3c2708acf37a0de4f3b86b0deffeb5a}{render\+\_\+traceback\+\_\+text}} (self)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a889bf1124dcf4f3084d22d2b36ef8c71}{render\+\_\+traceback\+\_\+html}} (self, bool include\+\_\+title=True)
+\item 
+str \doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae3d7c94feafe39c898ece77bee9474b1}{render\+\_\+debugger\+\_\+html}} (self, bool evalex, str secret, bool evalex\+\_\+trusted)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a15b168062f62a8ea7745f9a1652197b9}{all\+\_\+tracebacks}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a19d692ed73b19e3f2125ceaf8e290332}{\+\_\+te}} = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1tbtools_a07616922daa86af5a73180cf85ba5e12}{\+\_\+process\+\_\+traceback}}(exc, te, skip=skip, hide=hide)
+\end{DoxyCompactItemize}
+
+
+\label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-constructors}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad573fd75840495eede7e9c974815e53c}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad573fd75840495eede7e9c974815e53c} 
+ None werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Base\+Exception}]{exc}{, }\item[{traceback.\+Traceback\+Exception \texorpdfstring{$\vert$}{|} None }]{te}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{int }]{skip}{ = {\ttfamily 0}, }\item[{bool }]{hide}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-func-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a538b0d8d3243c978c15e9974f50c7261}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a538b0d8d3243c978c15e9974f50c7261} 
+ str werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae970c45e5a16f7f795570a08adc31a39}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!all\_frames@{all\_frames}}
+\index{all\_frames@{all\_frames}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{all\_frames()}{all\_frames()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae970c45e5a16f7f795570a08adc31a39} 
+ list\+[\doxymbox{\hyperlink{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_frame_summary}{Debug\+Frame\+Summary}}]\+ werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+all\+\_\+frames (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a3ff569dbc892c6118f0761449770e067}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!all\_tracebacks@{all\_tracebacks}}
+\index{all\_tracebacks@{all\_tracebacks}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{all\_tracebacks()}{all\_tracebacks()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a3ff569dbc892c6118f0761449770e067} 
+ list\+[tuple\+[str \texorpdfstring{$\vert$}{|} None, traceback.\+Traceback\+Exception]\+]\+ werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+all\+\_\+tracebacks (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae3d7c94feafe39c898ece77bee9474b1}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!render\_debugger\_html@{render\_debugger\_html}}
+\index{render\_debugger\_html@{render\_debugger\_html}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{render\_debugger\_html()}{render\_debugger\_html()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ae3d7c94feafe39c898ece77bee9474b1} 
+ str werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+render\+\_\+debugger\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{evalex}{, }\item[{str}]{secret}{, }\item[{bool     }]{evalex\+\_\+trusted}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a889bf1124dcf4f3084d22d2b36ef8c71}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!render\_traceback\_html@{render\_traceback\_html}}
+\index{render\_traceback\_html@{render\_traceback\_html}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{render\_traceback\_html()}{render\_traceback\_html()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a889bf1124dcf4f3084d22d2b36ef8c71} 
+ str werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+render\+\_\+traceback\+\_\+html (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool }]{include\+\_\+title}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad3c2708acf37a0de4f3b86b0deffeb5a}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!render\_traceback\_text@{render\_traceback\_text}}
+\index{render\_traceback\_text@{render\_traceback\_text}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{render\_traceback\_text()}{render\_traceback\_text()}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_ad3c2708acf37a0de4f3b86b0deffeb5a} 
+ str werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+render\+\_\+traceback\+\_\+text (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-variable-members}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a19d692ed73b19e3f2125ceaf8e290332}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!\_te@{\_te}}
+\index{\_te@{\_te}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{\_te}{\_te}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a19d692ed73b19e3f2125ceaf8e290332} 
+werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+\_\+te = \doxymbox{\hyperlink{namespacewerkzeug_1_1debug_1_1tbtools_a07616922daa86af5a73180cf85ba5e12}{\+\_\+process\+\_\+traceback}}(exc, te, skip=skip, hide=hide)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a15b168062f62a8ea7745f9a1652197b9}\index{werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}!all\_tracebacks@{all\_tracebacks}}
+\index{all\_tracebacks@{all\_tracebacks}!werkzeug.debug.tbtools.DebugTraceback@{werkzeug.debug.tbtools.DebugTraceback}}
+\doxysubsubsection{\texorpdfstring{all\_tracebacks}{all\_tracebacks}}
+{\footnotesize\ttfamily \label{classwerkzeug_1_1debug_1_1tbtools_1_1_debug_traceback_a15b168062f62a8ea7745f9a1652197b9} 
+werkzeug.\+debug.\+tbtools.\+Debug\+Traceback.\+all\+\_\+tracebacks}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+werkzeug/\+debug/\+\doxymbox{\hyperlink{tbtools_8py}{tbtools.\+py}}\end{DoxyCompactItemize}

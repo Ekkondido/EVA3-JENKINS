@@ -1,0 +1,152 @@
+\doxysection{flask.\+ctx Namespace Reference}
+\hypertarget{namespaceflask_1_1ctx}{}\label{namespaceflask_1_1ctx}\index{flask.ctx@{flask.ctx}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1ctx_1_1___app_ctx_globals}{\+\_\+\+App\+Ctx\+Globals}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1ctx_1_1_app_context}{App\+Context}}
+\item 
+class \doxymbox{\hyperlink{classflask_1_1ctx_1_1_request_context}{Request\+Context}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+ft.\+After\+Request\+Callable\+[t.\+Any]\+ \doxymbox{\hyperlink{namespaceflask_1_1ctx_a4499070ccde8a624e1cec4bcaa35fa62}{after\+\_\+this\+\_\+request}} (ft.\+After\+Request\+Callable\+[t.\+Any]\+ f)
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}{F}} \doxymbox{\hyperlink{namespaceflask_1_1ctx_ad5195861aa1724ce351bf7dc903a1d47}{copy\+\_\+current\+\_\+request\+\_\+context}} (\doxymbox{\hyperlink{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}{F}} f)
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1ctx_a8d127a5142f92f50382c5414a49944a5}{has\+\_\+request\+\_\+context}} ()
+\item 
+bool \doxymbox{\hyperlink{namespaceflask_1_1ctx_a6fe1fffa8cc9aa9361c5c83d2f6b302a}{has\+\_\+app\+\_\+context}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}{\+\_\+sentinel}} = object()
+\item 
+\doxymbox{\hyperlink{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}{F}} = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)
+\end{DoxyCompactItemize}
+
+
+\label{namespaceflask_1_1ctx_doc-func-members}
+\Hypertarget{namespaceflask_1_1ctx_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespaceflask_1_1ctx_a4499070ccde8a624e1cec4bcaa35fa62}\index{flask.ctx@{flask.ctx}!after\_this\_request@{after\_this\_request}}
+\index{after\_this\_request@{after\_this\_request}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{after\_this\_request()}{after\_this\_request()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_a4499070ccde8a624e1cec4bcaa35fa62} 
+ ft.\+After\+Request\+Callable\+[t.\+Any]\+ after\+\_\+this\+\_\+request (\begin{DoxyParamCaption}\item[{ft.\+After\+Request\+Callable\+[t.\+Any]\+}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Executes a function after this request.  This is useful to modify
+response objects.  The function is passed the response object and has
+to return the same or a new one.
+
+Example::
+
+    @app.route('/')
+    def index():
+        @after_this_request
+        def add_header(response):
+            response.headers['X-Foo'] = 'Parachute'
+            return response
+        return 'Hello World!'
+
+This is more useful if a function other than the view function wants to
+modify a response.  For instance think of a decorator that wants to add
+some headers without converting the return value into a response object.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1ctx_ad5195861aa1724ce351bf7dc903a1d47}\index{flask.ctx@{flask.ctx}!copy\_current\_request\_context@{copy\_current\_request\_context}}
+\index{copy\_current\_request\_context@{copy\_current\_request\_context}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{copy\_current\_request\_context()}{copy\_current\_request\_context()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_ad5195861aa1724ce351bf7dc903a1d47} 
+ \doxymbox{\hyperlink{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}{F}} copy\+\_\+current\+\_\+request\+\_\+context (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}{F}}}]{f}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}A helper function that decorates a function to retain the current
+request context.  This is useful when working with greenlets.  The moment
+the function is decorated a copy of the request context is created and
+then pushed when the function is called.  The current session is also
+included in the copied request context.
+
+Example::
+
+    import gevent
+    from flask import copy_current_request_context
+
+    @app.route('/')
+    def index():
+        @copy_current_request_context
+        def do_some_work():
+            # do some work here, it can access flask.request or
+            # flask.session like you would otherwise in the view function.
+            ...
+        gevent.spawn(do_some_work)
+        return 'Regular response'
+
+.. versionadded:: 0.10
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1ctx_a6fe1fffa8cc9aa9361c5c83d2f6b302a}\index{flask.ctx@{flask.ctx}!has\_app\_context@{has\_app\_context}}
+\index{has\_app\_context@{has\_app\_context}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{has\_app\_context()}{has\_app\_context()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_a6fe1fffa8cc9aa9361c5c83d2f6b302a} 
+ bool has\+\_\+app\+\_\+context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Works like :func:`has_request_context` but for the application
+context.  You can also just do a boolean check on the
+:data:`current_app` object instead.
+
+.. versionadded:: 0.9
+\end{DoxyVerb}
+ \Hypertarget{namespaceflask_1_1ctx_a8d127a5142f92f50382c5414a49944a5}\index{flask.ctx@{flask.ctx}!has\_request\_context@{has\_request\_context}}
+\index{has\_request\_context@{has\_request\_context}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{has\_request\_context()}{has\_request\_context()}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_a8d127a5142f92f50382c5414a49944a5} 
+ bool has\+\_\+request\+\_\+context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If you have code that wants to test if a request context is there or
+not this function can be used.  For instance, you may want to take advantage
+of request information if the request object is available, but fail
+silently if it is unavailable.
+
+::
+
+    class User(db.Model):
+
+        def __init__(self, username, remote_addr=None):
+            self.username = username
+            if remote_addr is None and has_request_context():
+                remote_addr = request.remote_addr
+            self.remote_addr = remote_addr
+
+Alternatively you can also just test any of the context bound objects
+(such as :class:`request` or :class:`g`) for truthness::
+
+    class User(db.Model):
+
+        def __init__(self, username, remote_addr=None):
+            self.username = username
+            if remote_addr is None and request:
+                remote_addr = request.remote_addr
+            self.remote_addr = remote_addr
+
+.. versionadded:: 0.7
+\end{DoxyVerb}
+ 
+
+\label{namespaceflask_1_1ctx_doc-var-members}
+\Hypertarget{namespaceflask_1_1ctx_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4}\index{flask.ctx@{flask.ctx}!\_sentinel@{\_sentinel}}
+\index{\_sentinel@{\_sentinel}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{\_sentinel}{\_sentinel}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_ae577cfbe17e6b797406b9ca242f356d4} 
+flask.\+ctx.\+\_\+sentinel = object()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094}\index{flask.ctx@{flask.ctx}!F@{F}}
+\index{F@{F}!flask.ctx@{flask.ctx}}
+\doxysubsubsection{\texorpdfstring{F}{F}}
+{\footnotesize\ttfamily \label{namespaceflask_1_1ctx_a41e493a4e0a34e50492bdf322bd63094} 
+flask.\+ctx.\+F = t.\+Type\+Var("{}F"{}, bound=t.\+Callable\+[..., t.\+Any]\+)}
+

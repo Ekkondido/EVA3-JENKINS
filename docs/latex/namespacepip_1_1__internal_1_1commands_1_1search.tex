@@ -1,0 +1,69 @@
+\doxysection{pip.\+\_\+internal.\+commands.\+search Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1commands_1_1search}{}\label{namespacepip_1_1__internal_1_1commands_1_1search}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1search_1_1_transformed_hit}{Transformed\+Hit}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1commands_1_1search_1_1_search_command}{Search\+Command}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+List\+["{}Transformed\+Hit"{}]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1commands_1_1search_ae8b11caa93259115d9c26f3c44e13e7a}{transform\+\_\+hits}} (List\+[Dict\+[str, str]\+]\+ hits)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1commands_1_1search_aaa64ef9e86abf53fd711eb806637aa8b}{print\+\_\+dist\+\_\+installation\+\_\+info}} (str name, str latest)
+\item 
+None \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1commands_1_1search_a421ba37b9ba0db03cc21c448681b97ec}{print\+\_\+results}} (List\+["{}Transformed\+Hit"{}]\+ hits, Optional\+[int]\+ name\+\_\+column\+\_\+width=None, Optional\+[int]\+ terminal\+\_\+width=None)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1commands_1_1search_a0d43a958c9afef3e9803edb77bda1770}{highest\+\_\+version}} (List\+[str]\+ versions)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1commands_1_1search_a5fbc5a05d0439034dab94ba276f9778b}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__internal_1_1commands_1_1search_doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_a0d43a958c9afef3e9803edb77bda1770}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}!highest\_version@{highest\_version}}
+\index{highest\_version@{highest\_version}!pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection{\texorpdfstring{highest\_version()}{highest\_version()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1commands_1_1search_a0d43a958c9afef3e9803edb77bda1770} 
+ str highest\+\_\+version (\begin{DoxyParamCaption}\item[{List\+[str]\+}]{versions}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_aaa64ef9e86abf53fd711eb806637aa8b}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}!print\_dist\_installation\_info@{print\_dist\_installation\_info}}
+\index{print\_dist\_installation\_info@{print\_dist\_installation\_info}!pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection{\texorpdfstring{print\_dist\_installation\_info()}{print\_dist\_installation\_info()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1commands_1_1search_aaa64ef9e86abf53fd711eb806637aa8b} 
+ None print\+\_\+dist\+\_\+installation\+\_\+info (\begin{DoxyParamCaption}\item[{str}]{name}{, }\item[{str}]{latest}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_a421ba37b9ba0db03cc21c448681b97ec}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}!print\_results@{print\_results}}
+\index{print\_results@{print\_results}!pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection{\texorpdfstring{print\_results()}{print\_results()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1commands_1_1search_a421ba37b9ba0db03cc21c448681b97ec} 
+ None print\+\_\+results (\begin{DoxyParamCaption}\item[{List\+["{}Transformed\+Hit"{}]\+}]{hits}{, }\item[{Optional\+[int]\+ }]{name\+\_\+column\+\_\+width}{ = {\ttfamily None}, }\item[{Optional\+[int]\+ }]{terminal\+\_\+width}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_ae8b11caa93259115d9c26f3c44e13e7a}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}!transform\_hits@{transform\_hits}}
+\index{transform\_hits@{transform\_hits}!pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection{\texorpdfstring{transform\_hits()}{transform\_hits()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1commands_1_1search_ae8b11caa93259115d9c26f3c44e13e7a} 
+ List\+["{}Transformed\+Hit"{}]\+ transform\+\_\+hits (\begin{DoxyParamCaption}\item[{List\+[Dict\+[str, str]\+]\+}]{hits}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The list from pypi is really a list of versions. We want a list of
+packages with the list of versions stored inline. This converts the
+list from pypi into one we can use.
+\end{DoxyVerb}
+ 
+
+\label{namespacepip_1_1__internal_1_1commands_1_1search_doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1commands_1_1search_a5fbc5a05d0439034dab94ba276f9778b}\index{pip.\_internal.commands.search@{pip.\_internal.commands.search}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.commands.search@{pip.\_internal.commands.search}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1commands_1_1search_a5fbc5a05d0439034dab94ba276f9778b} 
+pip.\+\_\+internal.\+commands.\+search.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

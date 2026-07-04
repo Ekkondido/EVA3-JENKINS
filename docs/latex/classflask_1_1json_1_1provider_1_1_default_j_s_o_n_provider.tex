@@ -1,0 +1,169 @@
+\doxysection{flask.\+json.\+provider.\+Default\+JSONProvider Class Reference}
+\hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider}{}\label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+Inheritance diagram for flask.\+json.\+provider.\+Default\+JSONProvider:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a38cd2b2d7e89a5434fecd24ee60e6fda}{dumps}} (self, t.\+Any obj, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a541deef047be4377f3f2fffccd2d47a9}{loads}} (self, str\texorpdfstring{$\vert$}{|}bytes s, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+\doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a68776241523861fb3334df373315ce7e}{response}} (self, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider}{flask.\+json.\+provider.\+JSONProvider}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_aaedcc5770db56af5452db0c9fc822ec0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, App app)
+\item 
+None \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_a80d3e6b75ef40dce9af926da84a5a986}{dump}} (self, t.\+Any obj, t.\+IO\+[str]\+ fp, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_affcfe88c6a8fac40a4100afab17f5b9c}{load}} (self, t.\+IO\+[t.\+Any\+Str]\+ fp, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+t \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a19a43e05991f4de0086111e1f24f1491}{default}} = staticmethod(\doxymbox{\hyperlink{namespaceflask_1_1json_1_1provider_a652bbe0b650b0ad56c8f4afe64ba12e1}{\+\_\+default}})
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a1c32fc7e0618115b4c77a5ec6879af44}{ensure\+\_\+ascii}} = True
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a5a74afa9bad19309b63762f8e021e38e}{sort\+\_\+keys}} = True
+\item 
+bool \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_ae3fad76361d1afdcbbdadbedeab39de8}{compact}} = None
+\item 
+str \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a94c2a85b8181a81bf81fb24933cf3560}{mimetype}} = "{}application/\+json"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider}{flask.\+json.\+provider.\+JSONProvider}}}
+\begin{DoxyCompactItemize}
+\item 
+t.\+Any \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_a1eabe903b8e47b102f9bc85627f7baf4}{\+\_\+prepare\+\_\+response\+\_\+obj}} (self, tuple\+[t.\+Any,...]\+ args, dict\+[str, t.\+Any]\+ kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider}{flask.\+json.\+provider.\+JSONProvider}}}
+\begin{DoxyCompactItemize}
+\item 
+App \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_a22d3a540925a6c5ae212a9abe710960d}{\+\_\+app}} = weakref.\+proxy(\doxymbox{\hyperlink{namespaceflask_1_1app}{app}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Provide JSON operations using Python's built-in :mod:`json`
+library. Serializes the following additional data types:
+
+-   :class:`datetime.datetime` and :class:`datetime.date` are
+    serialized to :rfc:`822` strings. This is the same as the HTTP
+    date format.
+-   :class:`uuid.UUID` is serialized to a string.
+-   :class:`dataclasses.dataclass` is passed to
+    :func:`dataclasses.asdict`.
+-   :class:`~markupsafe.Markup` (or any object with a ``__html__``
+    method) will call the ``__html__`` method to get a string.
+\end{DoxyVerb}
+ 
+
+\label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_doc-func-members}
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a38cd2b2d7e89a5434fecd24ee60e6fda}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!dumps@{dumps}}
+\index{dumps@{dumps}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{dumps()}{dumps()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a38cd2b2d7e89a5434fecd24ee60e6fda} 
+ str flask.\+json.\+provider.\+Default\+JSONProvider.\+dumps (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{t.\+Any}]{obj}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serialize data as JSON to a string.
+
+Keyword arguments are passed to :func:`json.dumps`. Sets some
+parameter defaults from the :attr:`default`,
+:attr:`ensure_ascii`, and :attr:`sort_keys` attributes.
+
+:param obj: The data to serialize.
+:param kwargs: Passed to :func:`json.dumps`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_a2a58321f8737d81194de7a6af70daf8c}{flask.\+json.\+provider.\+JSONProvider}}.
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a541deef047be4377f3f2fffccd2d47a9}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!loads@{loads}}
+\index{loads@{loads}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{loads()}{loads()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a541deef047be4377f3f2fffccd2d47a9} 
+ t.\+Any flask.\+json.\+provider.\+Default\+JSONProvider.\+loads (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{s}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Deserialize data as JSON from a string or bytes.
+
+:param s: Text or UTF-8 bytes.
+:param kwargs: Passed to :func:`json.loads`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_aa014f6cca43f3dbdb610ee1d75887619}{flask.\+json.\+provider.\+JSONProvider}}.
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a68776241523861fb3334df373315ce7e}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!response@{response}}
+\index{response@{response}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{response()}{response()}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a68776241523861fb3334df373315ce7e} 
+ \doxymbox{\hyperlink{classwerkzeug_1_1sansio_1_1response_1_1_response}{Response}} flask.\+json.\+provider.\+Default\+JSONProvider.\+response (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}t.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Serialize the given arguments as JSON, and return a
+:class:`~flask.Response` object with it. The response mimetype
+will be "application/json" and can be changed with
+:attr:`mimetype`.
+
+If :attr:`compact` is ``False`` or debug mode is enabled, the
+output will be formatted to be easier to read.
+
+Either positional or keyword arguments can be given, not both.
+If no arguments are given, ``None`` is serialized.
+
+:param args: A single value to serialize, or multiple values to
+    treat as a list to serialize.
+:param kwargs: Treat as a dict to serialize.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classflask_1_1json_1_1provider_1_1_j_s_o_n_provider_a4202c3d7088015f215a37d77c2e20423}{flask.\+json.\+provider.\+JSONProvider}}.
+
+
+
+\label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_doc-variable-members}
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_ae3fad76361d1afdcbbdadbedeab39de8}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!compact@{compact}}
+\index{compact@{compact}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{compact}{compact}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_ae3fad76361d1afdcbbdadbedeab39de8} 
+bool flask.\+json.\+provider.\+Default\+JSONProvider.\+compact = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a19a43e05991f4de0086111e1f24f1491}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!default@{default}}
+\index{default@{default}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{default}{default}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a19a43e05991f4de0086111e1f24f1491} 
+flask.\+json.\+provider.\+Default\+JSONProvider.\+default = staticmethod(\doxymbox{\hyperlink{namespaceflask_1_1json_1_1provider_a652bbe0b650b0ad56c8f4afe64ba12e1}{\+\_\+default}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a1c32fc7e0618115b4c77a5ec6879af44}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!ensure\_ascii@{ensure\_ascii}}
+\index{ensure\_ascii@{ensure\_ascii}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{ensure\_ascii}{ensure\_ascii}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a1c32fc7e0618115b4c77a5ec6879af44} 
+flask.\+json.\+provider.\+Default\+JSONProvider.\+ensure\+\_\+ascii = True\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a94c2a85b8181a81bf81fb24933cf3560}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!mimetype@{mimetype}}
+\index{mimetype@{mimetype}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{mimetype}{mimetype}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a94c2a85b8181a81bf81fb24933cf3560} 
+str flask.\+json.\+provider.\+Default\+JSONProvider.\+mimetype = "{}application/\+json"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a5a74afa9bad19309b63762f8e021e38e}\index{flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}!sort\_keys@{sort\_keys}}
+\index{sort\_keys@{sort\_keys}!flask.json.provider.DefaultJSONProvider@{flask.json.provider.DefaultJSONProvider}}
+\doxysubsubsection{\texorpdfstring{sort\_keys}{sort\_keys}}
+{\footnotesize\ttfamily \label{classflask_1_1json_1_1provider_1_1_default_j_s_o_n_provider_a5a74afa9bad19309b63762f8e021e38e} 
+flask.\+json.\+provider.\+Default\+JSONProvider.\+sort\+\_\+keys = True\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+venv/\+\+Lib/\+site-\/packages/\+flask/\+json/\+\doxymbox{\hyperlink{flask_2json_2provider_8py}{provider.\+py}}\end{DoxyCompactItemize}

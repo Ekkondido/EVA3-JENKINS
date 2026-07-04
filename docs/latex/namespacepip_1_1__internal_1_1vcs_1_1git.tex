@@ -1,0 +1,98 @@
+\doxysection{pip.\+\_\+internal.\+vcs.\+git Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git}{}\label{namespacepip_1_1__internal_1_1vcs_1_1git}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1vcs_1_1git_1_1_git}{Git}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_a4fd908b7732881ffd00631a2dce737be}{looks\+\_\+like\+\_\+hash}} (str sha)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_a56d76d75d45883c15dac10146ce28670}{urlsplit}} = urllib.\+parse.\+urlsplit
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_ab4786d779a145bbccc568182b4bc4df2}{urlunsplit}} = urllib.\+parse.\+urlunsplit
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_af227489ba32677d6b7094fa7a54dc061}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_a7cd386bf40e48c772b65970facb2598a}{GIT\+\_\+\+VERSION\+\_\+\+REGEX}}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_a4f35eb79e252be7497a0f1dbf8b582aa}{HASH\+\_\+\+REGEX}} = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}\+[a-\/fA-\/F0-\/9]\+\{40\}\$"{})
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1vcs_1_1git_a050dc755b5d38a663fabb69baa7c9629}{SCP\+\_\+\+REGEX}}
+\end{DoxyCompactItemize}
+
+
+\label{namespacepip_1_1__internal_1_1vcs_1_1git_doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_a4fd908b7732881ffd00631a2dce737be}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!looks\_like\_hash@{looks\_like\_hash}}
+\index{looks\_like\_hash@{looks\_like\_hash}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{looks\_like\_hash()}{looks\_like\_hash()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_a4fd908b7732881ffd00631a2dce737be} 
+ bool looks\+\_\+like\+\_\+hash (\begin{DoxyParamCaption}\item[{str}]{sha}{}\end{DoxyParamCaption})}
+
+
+
+\label{namespacepip_1_1__internal_1_1vcs_1_1git_doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_a7cd386bf40e48c772b65970facb2598a}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!GIT\_VERSION\_REGEX@{GIT\_VERSION\_REGEX}}
+\index{GIT\_VERSION\_REGEX@{GIT\_VERSION\_REGEX}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{GIT\_VERSION\_REGEX}{GIT\_VERSION\_REGEX}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_a7cd386bf40e48c772b65970facb2598a} 
+pip.\+\_\+internal.\+vcs.\+git.\+GIT\+\_\+\+VERSION\+\_\+\+REGEX}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{r"{}\string^git\ version\ "{}}\ \ \textcolor{comment}{\#\ Prefix.}}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{r"{}(\(\backslash\)d+)"{}}\ \ \textcolor{comment}{\#\ Major.}}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{r"{}\(\backslash\).(\(\backslash\)d+)"{}}\ \ \textcolor{comment}{\#\ Dot,\ minor.}}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{r"{}(?:\(\backslash\).(\(\backslash\)d+))?"{}}\ \ \textcolor{comment}{\#\ Optional\ dot,\ patch.}}
+\DoxyCodeLine{\ \ \ \ \textcolor{stringliteral}{r"{}.*\$"{}}\ \ \textcolor{comment}{\#\ Suffix,\ including\ any\ pre-\/\ and\ post-\/release\ segments\ we\ don't\ care\ about.}}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_a4f35eb79e252be7497a0f1dbf8b582aa}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!HASH\_REGEX@{HASH\_REGEX}}
+\index{HASH\_REGEX@{HASH\_REGEX}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{HASH\_REGEX}{HASH\_REGEX}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_a4f35eb79e252be7497a0f1dbf8b582aa} 
+pip.\+\_\+internal.\+vcs.\+git.\+HASH\+\_\+\+REGEX = re.\+compile("{}\texorpdfstring{$^\wedge$}{\string^}\+[a-\/fA-\/F0-\/9]\+\{40\}\$"{})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_af227489ba32677d6b7094fa7a54dc061}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_af227489ba32677d6b7094fa7a54dc061} 
+pip.\+\_\+internal.\+vcs.\+git.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_a050dc755b5d38a663fabb69baa7c9629}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!SCP\_REGEX@{SCP\_REGEX}}
+\index{SCP\_REGEX@{SCP\_REGEX}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{SCP\_REGEX}{SCP\_REGEX}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_a050dc755b5d38a663fabb69baa7c9629} 
+pip.\+\_\+internal.\+vcs.\+git.\+SCP\+\_\+\+REGEX}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ ,}
+\DoxyCodeLine{\ \ \ \ re.VERBOSE,}
+\DoxyCodeLine{)}
+
+\end{DoxyCode}
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_a56d76d75d45883c15dac10146ce28670}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!urlsplit@{urlsplit}}
+\index{urlsplit@{urlsplit}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{urlsplit}{urlsplit}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_a56d76d75d45883c15dac10146ce28670} 
+pip.\+\_\+internal.\+vcs.\+git.\+urlsplit = urllib.\+parse.\+urlsplit}
+
+\Hypertarget{namespacepip_1_1__internal_1_1vcs_1_1git_ab4786d779a145bbccc568182b4bc4df2}\index{pip.\_internal.vcs.git@{pip.\_internal.vcs.git}!urlunsplit@{urlunsplit}}
+\index{urlunsplit@{urlunsplit}!pip.\_internal.vcs.git@{pip.\_internal.vcs.git}}
+\doxysubsubsection{\texorpdfstring{urlunsplit}{urlunsplit}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1vcs_1_1git_ab4786d779a145bbccc568182b4bc4df2} 
+pip.\+\_\+internal.\+vcs.\+git.\+urlunsplit = urllib.\+parse.\+urlunsplit}
+
